@@ -57,19 +57,6 @@
                 <img src="{{ asset('images/daftar-dosen.png') }}" alt="Daftar Dosen Teknik Sipil UNSIL" class="w-full rounded-2xl shadow-sm mx-auto object-cover" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-slate-500\'><i class=\'fa-solid fa-users text-5xl text-slate-400 mb-3\'></i><p class=\'text-base font-bold text-slate-800\'>Daftar Dosen &amp; Tenaga Pengajar Teknik Sipil UNSIL</p><p class=\'text-xs text-slate-500 mt-1\'>Koleksi pengajar berpendidikan S-2 dan S-3 Fakultas Teknik Universitas Siliwangi</p></div>'">
             </div>
 
-            <!-- Konsultasi Akademik Banner -->
-            <div class="bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] rounded-2xl p-6 sm:p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
-                <div>
-                    <h3 class="text-lg font-bold">Jadwal Bimbingan &amp; Konsultasi Akademik</h3>
-                    <p class="text-slate-300 text-xs sm:text-sm mt-1 max-w-xl">
-                        Mahasiswa dapat melakukan konsultasi bimbingan akademik (KRS), kerja praktik (KP), dan skripsi tugas akhir secara berkala di ruang dosen Gedung FT UNSIL Kampus 2 Mugarsari.
-                    </p>
-                </div>
-                <a href="{{ route('layanan') }}" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs shadow-md transition whitespace-nowrap">
-                    Layanan Akademik
-                </a>
-            </div>
-
         </div>
     </section>
 @endsection
