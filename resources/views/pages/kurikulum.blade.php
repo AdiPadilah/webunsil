@@ -35,64 +35,88 @@
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Bidang Keahlian Akademik</h2>
                 <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
                 <p class="text-slate-600 mt-4 leading-relaxed text-sm">
-                    Kurikulum 144 SKS didistribusikan ke dalam empat pilar utama rekayasa sipil yang memadukan teori fundamental, praktikum laboratorium, dan studi perancangan nyata.
+                    Kurikulum 144 SKS didistribusikan ke dalam lima bidang keahlian utama rekayasa sipil yang memadukan teori fundamental, praktikum laboratorium, dan studi perancangan nyata.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 mb-16">
                 <!-- Card 1: Struktur -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-building"></i>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Struktur</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Analisis struktur gedung tahan gempa, beton bertulang dan prategang, jembatan baja, mekanika bahan, serta inovasi material konstruksi masa depan.
+                        </p>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Struktur &amp; Rekayasa Material</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Analisis struktur gedung tahan gempa, beton bertulang dan prategang, jembatan baja, mekanika bahan, serta inovasi material konstruksi masa depan.
-                    </p>
                     <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-blue-700 font-semibold flex items-center gap-1">
                         <i class="fa-solid fa-check text-[10px]"></i> SAP2000 &bull; ETABS &bull; SNI Gempa
                     </div>
                 </div>
 
-                <!-- Card 2: Geoteknik -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-mountain"></i>
+                <!-- Card 2: Sumber Daya Air -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Sumber Daya Air</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Hidrologi terapan, sistem drainase ramah lingkungan, rekayasa bendungan, saluran irigasi pertanian, pemodelan hidraulik sungai, dan mitigasi banjir.
+                        </p>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Geoteknik &amp; Rekayasa Pondasi</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Mekanika tanah, kestabilan lereng, perkuatan tanah lunak, daya dukung pondasi dangkal dan dalam, serta mitigasi bencana geologi dan tanah longsor.
-                    </p>
+                    <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-cyan-700 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-check text-[10px]"></i> HEC-RAS &bull; Saluran Terbuka
+                    </div>
+                </div>
+
+                <!-- Card 3: Geoteknik -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-mountain"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Geoteknik</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Mekanika tanah, kestabilan lereng, perkuatan tanah lunak, daya dukung pondasi dangkal dan dalam, serta mitigasi bencana geologi dan tanah longsor.
+                        </p>
+                    </div>
                     <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-amber-700 font-semibold flex items-center gap-1">
                         <i class="fa-solid fa-check text-[10px]"></i> Uji Sondir &bull; Geoteknik Terapan
                     </div>
                 </div>
 
-                <!-- Card 3: Transportasi -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-road"></i>
+                <!-- Card 4: Transportasi -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-road"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Transportasi</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Perencanaan geometrik jalan raya, teknologi perkerasan aspal dan kaku, manajemen rekayasa lalu lintas perkotaan, serta sistem transportasi berkelanjutan.
+                        </p>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Transportasi &amp; Jalan Raya</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Perencanaan geometrik jalan raya, teknologi perkerasan aspal dan kaku, manajemen rekayasa lalu lintas perkotaan, serta sistem transportasi berkelanjutan.
-                    </p>
                     <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-emerald-700 font-semibold flex items-center gap-1">
                         <i class="fa-solid fa-check text-[10px]"></i> Marshall Test &bull; Survei Lalin
                     </div>
                 </div>
 
-                <!-- Card 4: Keairan -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-water"></i>
+                <!-- Card 5: Management Konstruksi -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Management Konstruksi</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Perencanaan dan penjadwalan proyek, estimasi anggaran biaya (RAB), manajemen mutu dan risiko K3 konstruksi, metode pelaksanaan lapangan, serta Building Information Modelling (BIM).
+                        </p>
                     </div>
-                    <h3 class="text-base font-bold text-slate-900 mb-2">Keairan &amp; Sumber Daya Air</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Hidrologi terapan, sistem drainase ramah lingkungan, rekayasa bendungan, saluran irigasi pertanian, pemodelan hidraulik sungai, dan mitigasi banjir.
-                    </p>
-                    <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-cyan-700 font-semibold flex items-center gap-1">
-                        <i class="fa-solid fa-check text-[10px]"></i> HEC-RAS &bull; Saluran Terbuka
+                    <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-purple-700 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-check text-[10px]"></i> MS Project &bull; RAB &bull; BIM
                     </div>
                 </div>
             </div>
