@@ -131,9 +131,9 @@
                     <span class="block text-[10px] text-slate-400 mt-0.5">Magister &amp; Doktor</span>
                 </div>
                 <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300">
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="4">4</span>
-                    <span class="block text-xs font-semibold text-slate-200 mt-1 uppercase tracking-wide">KBK Keahlian</span>
-                    <span class="block text-[10px] text-slate-400 mt-0.5">Bidang Riset Utama</span>
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="5">5</span>
+                    <span class="block text-xs font-semibold text-slate-200 mt-1 uppercase tracking-wide">Bidang Keahlian</span>
+                    <span class="block text-[10px] text-slate-400 mt-0.5">Fokus Kurikulum S-1</span>
                 </div>
                 <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300">
                     <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="1200">1.200</span>
