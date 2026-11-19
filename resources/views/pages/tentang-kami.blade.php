@@ -47,63 +47,75 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                 
-                <!-- KOLOM KIRI & TENGAH: 6 Kartu Utama (Grid 2 Kolom Gaya ITS) -->
-                <div class="lg:col-span-2">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- KOLOM KIRI & TENGAH: Konten Utama -->
+                <div class="lg:col-span-2 space-y-8">
 
-                        <!-- KARTU 1: Sambutan Koordinator Program Studi -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
-                            <div class="relative h-48 overflow-hidden bg-slate-200">
-                                <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Sambutan Koordinator Program Studi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
-                                <div class="absolute top-3 left-3 bg-[#0B2A4A]/90 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm border border-amber-400/30">
-                                    <i class="fa-solid fa-bullhorn mr-1"></i> Kepemimpinan
+                    <!-- 1. Sambutan Koordinator Prodi (Layout Horizontal: Penjelasan di Pinggir Foto Tanpa Panel Modal) -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-200">
+                        <div class="grid grid-cols-1 md:grid-cols-12">
+                            <!-- Foto di Samping Kiri -->
+                            <div class="md:col-span-5 relative min-h-[260px] md:min-h-full bg-slate-900 overflow-hidden">
+                                <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" 
+                                     alt="Koordinator Program Studi Teknik Sipil FT UNSIL" 
+                                     class="w-full h-full object-cover"
+                                     onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/90 via-[#0B2A4A]/30 to-transparent"></div>
+                                <div class="absolute top-4 left-4">
+                                    <span class="inline-flex items-center gap-1.5 bg-[#0B2A4A]/90 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-full backdrop-blur-sm border border-amber-400/30 shadow-md">
+                                        <i class="fa-solid fa-bullhorn text-[10px]"></i> Kepemimpinan
+                                    </span>
+                                </div>
+                                <div class="absolute bottom-4 left-4 right-4 text-white">
+                                    <h4 class="text-sm font-bold text-white leading-tight">Koordinator Program Studi</h4>
+                                    <p class="text-[11px] text-slate-300">S-1 Teknik Sipil FT UNSIL</p>
                                 </div>
                             </div>
-                            <div class="bg-[#0B2A4A] p-5 text-white flex-1 flex flex-col justify-between">
-                                <div>
-                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-amber-400 transition">
-                                        Sambutan Koordinator Prodi
-                                    </h3>
-                                    <p class="text-xs sm:text-[13px] text-slate-300 mt-2 leading-relaxed line-clamp-3">
-                                        Penyampaian visi kepemimpinan, komitmen mutu tridharma perguruan tinggi, serta arah strategis pengembangan sarjana Teknik Sipil FT UNSIL yang berdaya saing.
-                                    </p>
-                                </div>
-                                <div class="pt-4">
-                                    <button type="button" onclick="openModal('modal-sambutan')" class="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-semibold rounded-lg shadow-sm transition">
-                                        <span>Selengkapnya</span>
-                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- KARTU 2: Struktur Organisasi -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
-                            <div class="relative h-48 overflow-hidden bg-slate-200">
-                                <img src="{{ asset('images/daftar-dosen.png') }}" alt="Struktur Organisasi" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute top-3 left-3 bg-[#0B2A4A]/90 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm border border-amber-400/30">
-                                    <i class="fa-solid fa-sitemap mr-1"></i> Organisasi
-                                </div>
-                            </div>
-                            <div class="bg-[#0B2A4A] p-5 text-white flex-1 flex flex-col justify-between">
+                            <!-- Penjelasan Sambutan di Pinggirnya Langsung -->
+                            <div class="md:col-span-7 p-6 sm:p-7 flex flex-col justify-between">
                                 <div>
-                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-amber-400 transition">
-                                        Struktur Organisasi
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                                        <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Pimpinan Program Studi</span>
+                                    </div>
+                                    <h3 class="text-xl sm:text-2xl font-black text-[#0B2A4A] font-heading leading-tight mb-3">
+                                        Sambutan Koordinator Program Studi
                                     </h3>
-                                    <p class="text-xs sm:text-[13px] text-slate-300 mt-2 leading-relaxed line-clamp-3">
-                                        Bagan kepemimpinan jurusan, pengelola 6 unit laboratorium, 4 kelompok bidang keahlian (KBK), dan seluruh jajaran dosen serta staf administrasi.
-                                    </p>
+                                    
+                                    <div class="text-xs sm:text-[13px] text-slate-600 space-y-3 leading-relaxed">
+                                        <p class="italic font-medium text-slate-700">
+                                            Assalamu’alaikum Warahmatullahi Wabarakatuh, Salam Sejahtera untuk Kita Semua.
+                                        </p>
+                                        <p>
+                                            Selamat datang di website resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi. Kami senantiasa berikhtiar menyelenggarakan pendidikan tinggi keteknikan yang adaptif terhadap perkembangan ilmu pengetahuan, teknologi terapan, dan dinamika industri infrastruktur masa kini.
+                                        </p>
+                                        <p>
+                                            Kurikulum kami dirancang berbasis <em>Outcome-Based Education</em> (OBE) yang terintegrasi dengan pembelajaran praktik di 6 laboratorium kejuruan serta magang industri. Kami membekali mahasiswa dengan kepiawaian kalkulasi struktural, geoteknik, dan manajemen konstruksi, serta integritas etika keinsinyuran dan jiwa kewirausahaan kebangsaan.
+                                        </p>
+                                        <p class="font-medium text-slate-800">
+                                            Mari bersama-sama membangun peradaban bangsa melalui karya infrastruktur yang tangguh, inovatif, dan berkelanjutan.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="pt-4">
-                                    <a href="{{ route('dosen') }}" class="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-semibold rounded-lg shadow-sm transition">
-                                        <span>Selengkapnya</span>
+
+                                <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <div class="flex items-center gap-2 text-[11px] text-slate-500 font-semibold">
+                                        <i class="fa-solid fa-building-columns text-amber-500"></i>
+                                        <span>Fakultas Teknik Universitas Siliwangi</span>
+                                    </div>
+                                    <a href="{{ route('visi-misi') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 transition">
+                                        <span>Visi &amp; Misi Prodi</span>
                                         <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- KARTU 4: Sejarah -->
+                    <!-- 2. Kartu Sejarah & Akreditasi (Grid 2 Kolom) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <!-- KARTU 1: Sejarah -->
                         <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                             <div class="relative h-48 overflow-hidden bg-slate-200">
                                 <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Sejarah Program Studi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -129,7 +141,7 @@
                             </div>
                         </div>
 
-                        <!-- KARTU 5: Akreditasi -->
+                        <!-- KARTU 2: Akreditasi -->
                         <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                             <div class="relative h-48 overflow-hidden bg-slate-200">
                                 <img src="{{ asset('images/lab-civil.jpg') }}" alt="Akreditasi Program Studi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -242,88 +254,7 @@
         </div>
     </section>
 
-    <!-- MODAL 1: Sambutan Koordinator Program Studi -->
-    <div id="modal-sambutan" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
-            <div class="relative bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] p-6 text-white rounded-t-3xl">
-                <button type="button" onclick="closeModal('modal-sambutan')" class="absolute top-5 right-5 text-slate-300 hover:text-white w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <span class="text-amber-400 text-[10px] font-bold uppercase tracking-widest block">Pimpinan Program Studi</span>
-                <h3 class="text-xl font-bold mt-1">Sambutan Koordinator Program Studi</h3>
-            </div>
-            <div class="p-6 sm:p-8 space-y-4 text-sm text-slate-700 leading-relaxed">
-                <div class="flex items-center gap-4 pb-4 border-b border-slate-100">
-                    <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" class="w-16 h-16 rounded-2xl object-cover border-2 border-amber-400">
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-base">Koordinator Program Studi S-1 Teknik Sipil</h4>
-                        <p class="text-xs text-slate-500">Fakultas Teknik Universitas Siliwangi</p>
-                    </div>
-                </div>
-                <p>
-                    <em>Assalamu’alaikum Warahmatullahi Wabarakatuh, Salam Sejahtera untuk Kita Semua.</em>
-                </p>
-                <p>
-                    Selamat datang di website resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi. Sebagai bagian integral dari universitas kebanggaan masyarakat Priangan Timur, kami senantiasa berikhtiar menyelenggarakan pendidikan tinggi keteknikan yang adaptif terhadap perkembangan ilmu pengetahuan, teknologi terapan, dan dinamika industri infrastruktur masa kini.
-                </p>
-                <p>
-                    Kurikulum kami dirancang berbasis <em>Outcome-Based Education</em> (OBE) yang terintegrasi dengan pembelajaran praktik di 6 laboratorium kejuruan serta magang industri. Kami membekali mahasiswa tidak hanya dengan kepiawaian kalkulasi struktural, geoteknik, dan manajemen konstruksi, namun juga etika keinsinyuran serta jiwa kewirausahaan kebangsaan.
-                </p>
-                <p class="font-medium text-slate-900">
-                    Mari bersama-sama membangun peradaban bangsa melalui karya infrastruktur yang tangguh, lestari, dan bermartabat.
-                </p>
-            </div>
-            <div class="p-4 bg-slate-50 rounded-b-3xl border-t border-slate-100 flex justify-end">
-                <button type="button" onclick="closeModal('modal-sambutan')" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-xl transition">
-                    Tutup
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL 2: Program Studi dalam Angka -->
-    <div id="modal-angka" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
-            <div class="relative bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] p-6 text-white rounded-t-3xl">
-                <button type="button" onclick="closeModal('modal-angka')" class="absolute top-5 right-5 text-slate-300 hover:text-white w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <span class="text-amber-400 text-[10px] font-bold uppercase tracking-widest block">Data &amp; Statistik</span>
-                <h3 class="text-xl font-bold mt-1">Program Studi dalam Angka</h3>
-            </div>
-            <div class="p-6 sm:p-8 space-y-4">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
-                        <span class="block text-3xl font-black text-[#0070BA]">144</span>
-                        <span class="text-xs text-slate-600 font-medium">Beban SKS Kelulusan</span>
-                    </div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
-                        <span class="block text-3xl font-black text-[#0070BA]">8</span>
-                        <span class="text-xs text-slate-600 font-medium">Semester Masa Tempuh</span>
-                    </div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
-                        <span class="block text-3xl font-black text-amber-500">6</span>
-                        <span class="text-xs text-slate-600 font-medium">Laboratorium Spesifik</span>
-                    </div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
-                        <span class="block text-3xl font-black text-amber-500">18+</span>
-                        <span class="text-xs text-slate-600 font-medium">Dosen &amp; Praktisi Ahli</span>
-                    </div>
-                </div>
-                <div class="bg-blue-50 p-4 rounded-2xl border border-blue-100 text-xs text-blue-900 leading-relaxed">
-                    <i class="fa-solid fa-circle-info mr-1 text-[#0070BA]"></i>
-                    Lulusan Teknik Sipil FT UNSIL telah terserap di berbagai instansi kementerian PUPR, konsultan perencana, kontraktor BUMN/swasta, perbankan, dan wirausaha jasa konstruksi nasional.
-                </div>
-            </div>
-            <div class="p-4 bg-slate-50 rounded-b-3xl border-t border-slate-100 flex justify-end">
-                <button type="button" onclick="closeModal('modal-angka')" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-xl transition">
-                    Tutup
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL 3: Akreditasi -->
+    <!-- MODAL: Akreditasi -->
     <div id="modal-akreditasi" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
             <div class="relative bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] p-6 text-white rounded-t-3xl">
