@@ -105,57 +105,26 @@
                 </div>
             </div>
 
-            <!-- Prosedur Pengajuan & Jam Kerja -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <div class="lg:col-span-7 bg-white rounded-3xl p-8 border border-slate-200 shadow-md">
-                    <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-                        <i class="fa-solid fa-list-check text-blue-700"></i> Alur Permohonan Layanan
-                    </h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-3">
-                            <span class="w-6 h-6 rounded-full bg-blue-700 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
-                            <div>
-                                <h4 class="text-xs font-bold text-slate-900">Unduh &amp; Isi Formulir</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">Unduh berkas permohonan melalui halaman Download, lalu lengkapi data dan tanda tangan dosen pembimbing.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="w-6 h-6 rounded-full bg-blue-700 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
-                            <div>
-                                <h4 class="text-xs font-bold text-slate-900">Serahkan Berkas ke Tata Usaha</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">Serahkan formulir ke loket administrasi Program Studi Teknik Sipil di Kampus 2 UNSIL Mugarsari atau kirimkan via email resmi.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="w-6 h-6 rounded-full bg-blue-700 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
-                            <div>
-                                <h4 class="text-xs font-bold text-slate-900">Proses &amp; Pengambilan Dokumen</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">Dokumen akan diverifikasi dan ditandatangani oleh Ketua Jurusan / Dekanat dalam waktu 1-2 hari kerja.</p>
-                            </div>
-                        </div>
+            <!-- Kontak Pelayanan -->
+            <div class="max-w-2xl mx-auto bg-gradient-to-br from-[#0B2A4A] to-[#154c79] rounded-3xl p-8 text-white shadow-md">
+                <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-headset text-amber-400"></i> Kontak Pelayanan
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed mb-6">
+                    Untuk konsultasi status permohonan surat atau legalisir, silakan hubungi bagian tata usaha program studi melalui saluran berikut:
+                </p>
+                <div class="space-y-3.5 text-xs">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-amber-400 w-4"></i>
+                        <span>sipil@unsil.ac.id</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-building-columns text-amber-400 w-4"></i>
+                        <span>Ruang Jurusan Teknik Sipil, Lantai 2 FT UNSIL Mugarsari</span>
                     </div>
                 </div>
-
-                <div class="lg:col-span-5 bg-gradient-to-br from-[#0B2A4A] to-[#154c79] rounded-3xl p-8 text-white shadow-md">
-                    <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-headset text-amber-400"></i> Kontak Pelayanan
-                    </h3>
-                    <p class="text-xs text-slate-300 leading-relaxed mb-6">
-                        Untuk konsultasi status permohonan surat atau legalisir, silakan hubungi bagian tata usaha program studi melalui saluran berikut:
-                    </p>
-                    <div class="space-y-3.5 text-xs">
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-envelope text-amber-400 w-4"></i>
-                            <span>sipil@unsil.ac.id</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-building-columns text-amber-400 w-4"></i>
-                            <span>Ruang Jurusan Teknik Sipil, Lantai 2 FT UNSIL Mugarsari</span>
-                        </div>
-                    </div>
-                    <div class="mt-6 pt-5 border-t border-blue-900 text-[11px] text-slate-400">
-                        Jam Operasional: Senin &ndash; Jumat, 07.30 &ndash; 16.00 WIB
-                    </div>
+                <div class="mt-6 pt-5 border-t border-blue-900 text-[11px] text-slate-400">
+                    Jam Operasional: Senin &ndash; Jumat, 07.30 &ndash; 16.00 WIB
                 </div>
             </div>
 
