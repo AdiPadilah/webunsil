@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Fasilitas & Laboratorium | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Fasilitas laboratorium terstandarisasi, studio komputasi BIM, ruang kelas modern, dan sarana penunjang akademik Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari.')
+@section('title', 'Fasilitas Laboratorium | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
+@section('meta_description', 'Fasilitas 6 laboratorium terstandarisasi Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari.')
 
 @section('content')
 
@@ -17,13 +17,13 @@
                 <span class="text-slate-200">Fasilitas</span>
             </nav>
             <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
-                Sarana &amp; Prasarana Kampus
+                Sarana &amp; Prasarana Kejuruan
             </span>
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight text-white mt-1 leading-tight">
-                Fasilitas &amp; <span class="text-amber-400">Laboratorium</span>
+                Fasilitas <span class="text-amber-400">Laboratorium</span>
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-4 max-w-3xl leading-relaxed">
-                Sarana pembelajaran komprehensif berstandar industri di Kampus 2 UNSIL Mugarsari guna menunjang praktikum keinsinyuran, pengujian material terstandarisasi SNI, riset inovatif dosen, serta komputasi rekayasa sipil.
+                Sarana pengujian bahan konstruksi dan komputasi rekayasa berstandar industri di Kampus 2 UNSIL Mugarsari guna menunjang praktikum keinsinyuran kurikulum 144 SKS serta penelitian tugas akhir mahasiswa.
             </p>
         </div>
     </section>
@@ -473,118 +473,7 @@
         </div>
     </section>
 
-    {{-- Section 2: Fasilitas Penunjang Akademik (2 Kolom Lebar) --}}
-    <section class="py-20 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Lingkungan Kampus</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Fasilitas Penunjang Akademik</h2>
-                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-500 mt-4 text-sm leading-relaxed">
-                    Sarana komunal dan ruang belajar terpadu untuk menunjang perkuliahan teori, kolaborasi penelitian tugas akhir, dan kreativitas mahasiswa.
-                </p>
-            </div>
-
-            {{-- 2 Kolom (2 - 2) --}}
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                {{-- Smart Classroom --}}
-                <div class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-60 overflow-hidden bg-slate-900">
-                            <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Smart Classroom"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Ruang Kuliah
-                            </span>
-                            <div class="absolute bottom-4 left-5">
-                                <h4 class="text-xl font-bold text-white">Smart Classroom Multimedia</h4>
-                                <p class="text-slate-300 text-xs mt-0.5">Ruang Kelas Ber-AC &amp; Smart Screen</p>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Ruang perkuliahan modern berpendingin udara (AC) yang dilengkapi LCD Smart Projector, sound system terintegrasi, dan jaringan internet kampus berkecepatan tinggi untuk model pembelajaran tatap muka maupun hybrid.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Ruang Baca & Referensi --}}
-                <div class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-60 overflow-hidden bg-slate-900">
-                            <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Ruang Baca & Referensi"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Pustaka &amp; Jurnal
-                            </span>
-                            <div class="absolute bottom-4 left-5">
-                                <h4 class="text-xl font-bold text-white">Ruang Baca &amp; Referensi Mandiri</h4>
-                                <p class="text-slate-300 text-xs mt-0.5">Koleksi Tugas Akhir &amp; Standar SNI</p>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Menyediakan ribuan judul buku teks keinsinyuran, jurnal ilmiah terakreditasi, standar perancangan struktur SNI/ASTM, serta arsip laporan skripsi/tugas akhir alumni untuk literatur mahasiswa.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Ruang Sidang --}}
-                <div class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-60 overflow-hidden bg-slate-900">
-                            <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Ruang Sidang"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Seminar &amp; Kolokium
-                            </span>
-                            <div class="absolute bottom-4 left-5">
-                                <h4 class="text-xl font-bold text-white">Ruang Sidang &amp; Aula Seminar</h4>
-                                <p class="text-slate-300 text-xs mt-0.5">Sidang Sarjana &amp; Kuliah Pakar Industri</p>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Ruangan representatif untuk seminar proposal, kolokium ilmiah berkala, kuliah tamu praktisi konstruksi nasional, serta ujian sidang pendadaran komprehensif calon sarjana teknik sipil.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Selasar & Gazebo Diskusi --}}
-                <div class="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-60 overflow-hidden bg-slate-900">
-                            <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Coworking & Gazebo"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Coworking Space
-                            </span>
-                            <div class="absolute bottom-4 left-5">
-                                <h4 class="text-xl font-bold text-white">Selasar &amp; Gazebo Diskusi</h4>
-                                <p class="text-slate-300 text-xs mt-0.5">Area Kolaborasi Mahasiswa (HMS)</p>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Ruang terbuka hijau dan selasar gedung berkanopi yang nyaman untuk belajar bersama, asistensi gambar rekayasa struktur dengan asisten, serta diskusi kegiatan Himpunan Mahasiswa Sipil.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    {{-- Section 3: Standar K3L Laboratorium --}}
+    {{-- Section 2: Standar K3L Laboratorium --}}
     <section class="py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
