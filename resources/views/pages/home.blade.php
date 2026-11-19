@@ -8,20 +8,6 @@
     <section id="beranda" class="hero-banner relative min-h-[560px] lg:min-h-[640px] flex items-center py-20 lg:py-28 border-b border-slate-800 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
             <div class="max-w-2xl lg:max-w-3xl space-y-4">
-                
-                <!-- Quick Tags -->
-                <div class="flex flex-wrap gap-2 mb-2">
-                    <span class="inline-flex items-center bg-amber-400 text-slate-950 text-xs font-bold px-4 py-1.5 rounded-full shadow">
-                        <i class="fa-solid fa-star mr-1.5 text-[10px]"></i> Selamat Datang
-                    </span>
-                    <a href="{{ route('visi-misi') }}" class="inline-flex items-center bg-white/20 hover:bg-white/30 text-white text-xs font-semibold px-4 py-1.5 rounded-full backdrop-blur-sm border border-white/20 transition">
-                        <i class="fa-solid fa-eye mr-1.5 text-[10px]"></i> Visi 2030
-                    </a>
-                    <a href="{{ route('kurikulum') }}" class="inline-flex items-center bg-white/20 hover:bg-white/30 text-white text-xs font-semibold px-4 py-1.5 rounded-full backdrop-blur-sm border border-white/20 transition">
-                        <i class="fa-solid fa-award mr-1.5 text-[10px]"></i> Kurikulum 144 SKS
-                    </a>
-                </div>
-
                 <span class="text-white/90 text-lg sm:text-xl font-medium tracking-wide block drop-shadow-md">
                     Selamat datang di
                 </span>
