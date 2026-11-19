@@ -168,55 +168,5 @@
         </div>
     </section>
 
-    {{-- Bidang Riset — dark navy --}}
-    <section class="py-16 bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] relative overflow-hidden">
-        <div class="absolute inset-0 opacity-[0.04] bg-repeat pointer-events-none"
-             style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 220px auto;"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Fokus Penelitian</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 font-heading">Bidang Riset Unggulan</h2>
-                <div class="w-14 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-300 mt-3 text-sm">Lima kluster riset utama yang menjadi keahlian dosen Program Studi Teknik Sipil FT UNSIL.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-blue-500/20 border border-blue-400/30 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-road text-blue-300 text-2xl"></i>
-                    </div>
-                    <h5 class="font-bold text-white text-sm">Transportasi &amp; Lalu Lintas</h5>
-                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Analisis simpang, manajemen parkir, keselamatan jalan</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-amber-500/20 border border-amber-400/30 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-building-columns text-amber-300 text-2xl"></i>
-                    </div>
-                    <h5 class="font-bold text-white text-sm">Struktur &amp; Material</h5>
-                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Struktur beton, baja, inovasi material konstruksi</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-cyan-500/20 border border-cyan-400/30 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-water text-cyan-300 text-2xl"></i>
-                    </div>
-                    <h5 class="font-bold text-white text-sm">Sumber Daya Air</h5>
-                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Hidrologi DAS, drainase perkotaan, mitigasi banjir</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-green-500/20 border border-green-400/30 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-layer-group text-green-300 text-2xl"></i>
-                    </div>
-                    <h5 class="font-bold text-white text-sm">Geoteknik</h5>
-                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">Perbaikan tanah, kestabilan lereng, fondasi &amp; longsor</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300 group">
-                    <div class="w-14 h-14 bg-purple-500/20 border border-purple-400/30 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-hard-hat text-purple-300 text-2xl"></i>
-                    </div>
-                    <h5 class="font-bold text-white text-sm">Manajemen Konstruksi</h5>
-                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">BIM, RAB, penjadwalan proyek, manajemen risiko</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
 @endsection
