@@ -38,22 +38,6 @@
                     Program Studi Teknik Sipil UNSIL berkomitmen pada keunggulan dalam pendidikan, penelitian, dan inovasi di bidang teknik sipil. Kami menghasilkan lulusan profesional, kompeten, dan berintegritas yang siap menghadapi tantangan dunia kerja serta berkontribusi dalam pembangunan infrastruktur yang berkelanjutan.
                 </p>
 
-                <!-- Tombol Aksi Cepat ke Halaman Terpisah -->
-                <div class="flex flex-wrap items-center gap-4 pt-6">
-                    <a href="{{ route('visi-misi') }}" class="px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-sm shadow-xl transition transform hover:-translate-y-0.5 inline-flex items-center">
-                        <span>Visi &amp; Misi</span>
-                        <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                    <a href="{{ route('kurikulum') }}" class="px-6 py-3 rounded-xl bg-white/20 hover:bg-white/30 text-white font-semibold text-sm backdrop-blur-md border border-white/30 transition inline-flex items-center">
-                        <i class="fa-solid fa-graduation-cap mr-2 text-xs"></i>
-                        <span>Kurikulum</span>
-                    </a>
-                    <a href="{{ route('fasilitas') }}" class="px-6 py-3 rounded-xl bg-blue-700/40 hover:bg-blue-700/60 text-white font-semibold text-sm backdrop-blur-md border border-blue-400/30 transition inline-flex items-center">
-                        <i class="fa-solid fa-flask mr-2 text-xs"></i>
-                        <span>Fasilitas Lab</span>
-                    </a>
-                </div>
-
             </div>
         </div>
     </section>
