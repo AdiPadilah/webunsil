@@ -24,37 +24,6 @@
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
                 Produktivitas keilmuan dosen Program Studi Teknik Sipil FT UNSIL dalam bentuk jurnal ilmiah terindeks SINTA dan buku referensi keinsinyuran ber-ISBN.
             </p>
-            <div class="flex flex-wrap gap-6 mt-8 pt-6 border-t border-white/10">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-blue-500/30 rounded-lg flex items-center justify-center">
-                        <i class="fa-solid fa-book-open-reader text-blue-300 text-sm"></i>
-                    </div>
-                    <div>
-                        <div class="text-white font-black text-lg leading-none">SINTA 4</div>
-                        <div class="text-slate-400 text-[11px]">Jurnal Akselerasi</div>
-                    </div>
-                </div>
-                <div class="w-px bg-white/10 hidden sm:block"></div>
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-amber-500/30 rounded-lg flex items-center justify-center">
-                        <i class="fa-solid fa-users text-amber-300 text-sm"></i>
-                    </div>
-                    <div>
-                        <div class="text-white font-black text-lg leading-none">26</div>
-                        <div class="text-slate-400 text-[11px]">Dosen Aktif</div>
-                    </div>
-                </div>
-                <div class="w-px bg-white/10 hidden sm:block"></div>
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-emerald-500/30 rounded-lg flex items-center justify-center">
-                        <i class="fa-solid fa-globe text-emerald-300 text-sm"></i>
-                    </div>
-                    <div>
-                        <div class="text-white font-black text-lg leading-none">Scopus</div>
-                        <div class="text-slate-400 text-[11px]">Kolaborasi Internasional</div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
