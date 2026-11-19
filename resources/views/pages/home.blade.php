@@ -314,6 +314,78 @@
                         </div>
                     </div>
 
+                    <!-- BLOK 3: FASILITAS LABORATORIUM UNGGULAN -->
+                    <div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+                            <div>
+                                <span class="text-blue-700 font-bold uppercase text-[11px] tracking-wider block">Peralatan Pengujian &amp; Komputasi</span>
+                                <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight mt-0.5">
+                                    Fasilitas Laboratorium
+                                </h2>
+                            </div>
+                            <a href="{{ route('fasilitas') }}" class="inline-flex items-center text-xs font-bold text-blue-700 hover:text-blue-900 bg-blue-50 hover:bg-blue-100 px-3.5 py-1.5 rounded-full border border-blue-200 transition gap-1.5 self-start sm:self-auto">
+                                <span>Lihat 6 Laboratorium</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                            <!-- Lab 1: TBK -->
+                            <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
+                                <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Bahan Konstruksi" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
+                                <span class="relative z-10 inline-flex items-center gap-1 text-[10px] font-bold text-amber-300 bg-amber-400/20 border border-amber-400/30 px-2 py-0.5 rounded-full mb-2 w-fit">
+                                    <i class="fa-solid fa-flask text-[9px]"></i> Pengujian SNI
+                                </span>
+                                <h3 class="relative z-10 text-base font-bold text-white leading-tight">
+                                    Lab. Teknologi Bahan Konstruksi
+                                </h3>
+                                <p class="relative z-10 text-xs text-slate-200 mt-2 line-clamp-3 leading-relaxed font-normal">
+                                    Uji mutu kuat tekan beton, tarik baja tulangan, agregat, dan standardisasi material konstruksi.
+                                </p>
+                                <a href="{{ route('fasilitas') }}" class="relative z-10 inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs px-5 py-2 rounded-lg shadow-md mt-4 transition text-center w-fit">
+                                    Selengkapnya
+                                </a>
+                            </div>
+
+                            <!-- Lab 2: Mekanika Tanah -->
+                            <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
+                                <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Laboratorium Mekanika Tanah" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
+                                <span class="relative z-10 inline-flex items-center gap-1 text-[10px] font-bold text-emerald-300 bg-emerald-400/20 border border-emerald-400/30 px-2 py-0.5 rounded-full mb-2 w-fit">
+                                    <i class="fa-solid fa-mountain text-[9px]"></i> Geoteknik
+                                </span>
+                                <h3 class="relative z-10 text-base font-bold text-white leading-tight">
+                                    Lab. Mekanika Tanah &amp; Geoteknik
+                                </h3>
+                                <p class="relative z-10 text-xs text-slate-200 mt-2 line-clamp-3 leading-relaxed font-normal">
+                                    Penyelidikan tanah lapangan (sondir, boring), analisis daya dukung fondasi, dan kestabilan lereng.
+                                </p>
+                                <a href="{{ route('fasilitas') }}" class="relative z-10 inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs px-5 py-2 rounded-lg shadow-md mt-4 transition text-center w-fit">
+                                    Selengkapnya
+                                </a>
+                            </div>
+
+                            <!-- Lab 3: Komputasi & BIM -->
+                            <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
+                                <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Studio Komputasi dan BIM" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
+                                <span class="relative z-10 inline-flex items-center gap-1 text-[10px] font-bold text-cyan-300 bg-cyan-400/20 border border-cyan-400/30 px-2 py-0.5 rounded-full mb-2 w-fit">
+                                    <i class="fa-solid fa-laptop-code text-[9px]"></i> Studio Digital
+                                </span>
+                                <h3 class="relative z-10 text-base font-bold text-white leading-tight">
+                                    Studio Komputasi &amp; BIM
+                                </h3>
+                                <p class="relative z-10 text-xs text-slate-200 mt-2 line-clamp-3 leading-relaxed font-normal">
+                                    Pemodelan struktur SAP2000, ETABS, perancangan CAD, dan integrasi Building Information Modeling (BIM).
+                                </p>
+                                <a href="{{ route('fasilitas') }}" class="relative z-10 inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs px-5 py-2 rounded-lg shadow-md mt-4 transition text-center w-fit">
+                                    Selengkapnya
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div><!-- end kolom kiri -->
 
                 <!-- KOLOM KANAN: AGENDA & INFORMASI (BERITA) -->
