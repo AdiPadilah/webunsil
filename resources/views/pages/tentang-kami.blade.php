@@ -103,32 +103,6 @@
                             </div>
                         </div>
 
-                        <!-- KARTU 3: Visi dan Misi -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
-                            <div class="relative h-48 overflow-hidden bg-slate-200">
-                                <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Visi dan Misi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute top-3 left-3 bg-[#0B2A4A]/90 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm border border-amber-400/30">
-                                    <i class="fa-solid fa-bullseye mr-1"></i> Visi 2030
-                                </div>
-                            </div>
-                            <div class="bg-[#0B2A4A] p-5 text-white flex-1 flex flex-col justify-between">
-                                <div>
-                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-amber-400 transition">
-                                        Visi dan Misi
-                                    </h3>
-                                    <p class="text-xs sm:text-[13px] text-slate-300 mt-2 leading-relaxed line-clamp-3">
-                                        Menjadi pusat keunggulan dalam pengembangan ilmu Teknik Sipil berwawasan kebangsaan dan berkarakter wirausaha tingkat nasional pada tahun 2030.
-                                    </p>
-                                </div>
-                                <div class="pt-4">
-                                    <a href="{{ route('visi-misi') }}" class="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-semibold rounded-lg shadow-sm transition">
-                                        <span>Selengkapnya</span>
-                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- KARTU 4: Sejarah -->
                         <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                             <div class="relative h-48 overflow-hidden bg-slate-200">
@@ -155,33 +129,7 @@
                             </div>
                         </div>
 
-                        <!-- KARTU 5: Departemen dalam Angka -->
-                        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
-                            <div class="relative h-48 overflow-hidden bg-slate-200">
-                                <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Program Studi dalam Angka" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute top-3 left-3 bg-[#0B2A4A]/90 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm border border-amber-400/30">
-                                    <i class="fa-solid fa-chart-simple mr-1"></i> Statistik
-                                </div>
-                            </div>
-                            <div class="bg-[#0B2A4A] p-5 text-white flex-1 flex flex-col justify-between">
-                                <div>
-                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-amber-400 transition">
-                                        Prodi dalam Angka
-                                    </h3>
-                                    <p class="text-xs sm:text-[13px] text-slate-300 mt-2 leading-relaxed line-clamp-3">
-                                        Statistik capaian: 144 SKS kurikulum OBE, 8 semester, 6 laboratorium terpadu, 18+ dosen bersertifikasi, dan 800+ alumni berkarya aktif.
-                                    </p>
-                                </div>
-                                <div class="pt-4">
-                                    <button type="button" onclick="openModal('modal-angka')" class="inline-flex items-center gap-1.5 px-4 py-2 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-semibold rounded-lg shadow-sm transition">
-                                        <span>Selengkapnya</span>
-                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- KARTU 6: Akreditasi -->
+                        <!-- KARTU 5: Akreditasi -->
                         <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                             <div class="relative h-48 overflow-hidden bg-slate-200">
                                 <img src="{{ asset('images/lab-civil.jpg') }}" alt="Akreditasi Program Studi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -283,21 +231,6 @@
                                 Lihat Semua Berita
                             </a>
                         </div>
-                    </div>
-
-                    <!-- Kotak Informasi Cepat Tambahan -->
-                    <div class="bg-gradient-to-br from-[#0B2A4A] to-[#071c32] rounded-2xl p-6 text-white shadow-md border border-blue-900">
-                        <div class="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
-                            <i class="fa-solid fa-headset"></i> Layanan Informasi
-                        </div>
-                        <h3 class="text-sm font-bold text-white">Butuh Informasi Akademik?</h3>
-                        <p class="text-slate-300 text-xs mt-1 leading-relaxed">
-                            Sekretariat Program Studi S-1 Teknik Sipil FT UNSIL melayani konsultasi akademik, surat pengantar, dan administrasi perkuliahan.
-                        </p>
-                        <a href="{{ route('layanan') }}" class="inline-flex items-center gap-1.5 mt-4 text-xs font-bold text-amber-400 hover:text-amber-300">
-                            <span>Hubungi Layanan Terpadu</span>
-                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </a>
                     </div>
                 </div>
 
