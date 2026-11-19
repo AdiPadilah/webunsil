@@ -622,45 +622,6 @@
                         </div>
                     </div>
 
-                    <!-- Box 2: Call to Action Laporkan Prestasi -->
-                    <div class="bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-2xl p-6 text-white shadow-md relative overflow-hidden">
-                        <div class="absolute -right-4 -bottom-4 text-white/5 text-8xl font-black">
-                            <i class="fa-solid fa-trophy"></i>
-                        </div>
-                        <div class="relative z-10">
-                            <span class="inline-block bg-amber-400 text-slate-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase mb-2">
-                                Layanan Kemahasiswaan
-                            </span>
-                            <h3 class="text-base font-bold font-heading">Raih Prestasi Baru?</h3>
-                            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                                Mahasiswa Teknik Sipil FT UNSIL yang meraih kejuaraan atau rekognisi dapat melaporkan sertifikat penghargaan untuk pencatatan Surat Keterangan Pendamping Ijazah (SKPI).
-                            </p>
-                            <a href="mailto:sipil@unsil.ac.id?subject=Laporan%20Prestasi%20Mahasiswa%20Teknik%20Sipil%20UNSIL" class="mt-4 inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-slate-950 text-xs font-bold px-4 py-2.5 rounded-xl transition shadow w-full">
-                                <i class="fa-solid fa-paper-plane text-xs"></i>
-                                <span>Laporkan Prestasi Anda</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Box 3: Komunitas Himpunan Mahasiswa Sipil (HMS) -->
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                        <div class="flex items-center space-x-3 mb-3">
-                            <div class="w-10 h-10 rounded-xl bg-pink-50 text-pink-600 flex items-center justify-center text-lg">
-                                <i class="fa-brands fa-instagram"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-bold text-slate-900">Dokumentasi @hmsftunsil</h4>
-                                <span class="text-[10px] text-slate-400">Liputan Ajang &amp; Delegasi Lomba</span>
-                            </div>
-                        </div>
-                        <p class="text-xs text-slate-600 leading-relaxed">
-                            Ikuti perkembangan terbaru perlombaan ketekniksipilan dan pembinaan delegasi mahasiswa di akun resmi HMS FT UNSIL.
-                        </p>
-                        <a href="https://instagram.com/hmsftunsil" target="_blank" class="mt-4 inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-pink-50 hover:text-pink-700 text-slate-700 text-xs font-bold px-4 py-2 rounded-xl transition w-full border border-slate-200">
-                            <span>Kunjungi @hmsftunsil</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
 
                 </aside>
 
