@@ -159,22 +159,6 @@
                 </div>
             </div>
 
-            
-            <div class="bg-gradient-to-r from-[#0B2A4A] to-[#154c79] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
-                <div>
-                    <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Keselamatan Praktikum &amp; Uji Bahan</span>
-                    <h3 class="text-xl sm:text-2xl font-bold mt-1">Layanan Pengujian Bahan bagi Industri Konstruksi</h3>
-                    <p class="text-slate-300 text-xs sm:text-sm mt-2 max-w-2xl leading-relaxed">
-                        Selain untuk praktikum mahasiswa, laboratorium Teknik Sipil UNSIL juga melayani uji mutu beton, uji tarik baja, dan survei penyelidikan tanah (soil investigation) bagi kontraktor, konsultan, dan instansi pemerintah daerah.
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-3">
-                    <a href="{{ route('layanan') }}" class="px-5 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs shadow-md transition whitespace-nowrap">
-                        Konsultasi Pengujian Lab
-                    </a>
-                </div>
-            </div>
-
         </div>
     </section>
 @endsection
