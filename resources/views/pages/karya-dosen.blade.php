@@ -30,14 +30,7 @@
     
     <section class="py-16 bg-slate-100 border-t border-slate-200 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Karya Cipta &amp; HKI</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Publikasi &amp; Inovasi</h2>
-                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-500 mt-3 text-sm leading-relaxed">
-                    Bukti nyata kontribusi akademisi Fakultas Teknik Universitas Siliwangi bagi kemajuan ilmu pengetahuan rekayasa sipil nasional.
-                </p>
-            </div>
+
 
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
@@ -114,20 +107,6 @@
             </div>
 
             
-            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="flex items-center gap-4">
-                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional" class="w-20 h-20 rounded-2xl object-cover shadow-sm hidden sm:block">
-                    <div>
-                        <span class="text-blue-700 font-bold uppercase text-[10px] bg-blue-50 px-2.5 py-0.5 rounded-full inline-block mb-1">Kolaborasi Global</span>
-                        <h3 class="text-base font-bold text-slate-900">Seminar Internasional "Bridging Futures" Indonesia-Taiwan</h3>
-                        <p class="text-xs text-slate-500 mt-1">Kegiatan ilmiah bersama narasumber Yanuar Haryanto, Ph.D. dari National Cheng Kung University (NCKU) Taiwan.</p>
-                    </div>
-                </div>
-                <a href="{{ route('berita.seminar-taiwan') }}" class="px-5 py-2.5 rounded-xl bg-[#0070BA] hover:bg-[#005a96] text-white font-bold text-xs shadow transition whitespace-nowrap self-start md:self-auto">
-                    Baca Berita Ilmiah &rarr;
-                </a>
-            </div>
-
             {{-- Bidang Riset Unggulan --}}
             <div class="mt-16">
                 <div class="text-center max-w-3xl mx-auto mb-10">
