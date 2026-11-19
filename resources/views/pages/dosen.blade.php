@@ -57,41 +57,6 @@
                 <img src="{{ asset('images/daftar-dosen.png') }}" alt="Daftar Dosen Teknik Sipil UNSIL" class="w-full rounded-2xl shadow-sm mx-auto object-cover" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-slate-500\'><i class=\'fa-solid fa-users text-5xl text-slate-400 mb-3\'></i><p class=\'text-base font-bold text-slate-800\'>Daftar Dosen &amp; Tenaga Pengajar Teknik Sipil UNSIL</p><p class=\'text-xs text-slate-500 mt-1\'>Koleksi pengajar berpendidikan S-2 dan S-3 Fakultas Teknik Universitas Siliwangi</p></div>'">
             </div>
 
-            <!-- 4 Kelompok Bidang Keahlian Dosen -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg mb-3">
-                        <i class="fa-solid fa-building"></i>
-                    </div>
-                    <h4 class="font-bold text-slate-900 text-sm">KBK Struktur &amp; Material</h4>
-                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Fokus pada perancangan bangunan tahan gempa, beton ramah lingkungan, komposit baja, dan integritas struktural.</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg mb-3">
-                        <i class="fa-solid fa-mountain"></i>
-                    </div>
-                    <h4 class="font-bold text-slate-900 text-sm">KBK Geoteknik &amp; Pondasi</h4>
-                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Fokus pada mekanika tanah lanjutan, stabilitas lereng mitigasi longsor, dan rekayasa pondasi dalam.</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg mb-3">
-                        <i class="fa-solid fa-road"></i>
-                    </div>
-                    <h4 class="font-bold text-slate-900 text-sm">KBK Transportasi &amp; Jalan</h4>
-                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Fokus pada perancangan geometrik jalan raya, teknologi aspal daur ulang, dan manajemen rekayasa lalu lintas.</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                    <div class="w-10 h-10 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-lg mb-3">
-                        <i class="fa-solid fa-water"></i>
-                    </div>
-                    <h4 class="font-bold text-slate-900 text-sm">KBK Keairan &amp; Sumber Daya Air</h4>
-                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Fokus pada hidrologi terapan, pemodelan banjir sungai, bendungan, saluran irigasi, dan drainase ramah lingkungan.</p>
-                </div>
-            </div>
-
             <!-- Konsultasi Akademik Banner -->
             <div class="bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] rounded-2xl p-6 sm:p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
                 <div>
