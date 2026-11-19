@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Dosen & Staf | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Daftar 27 dosen dan tenaga pengajar resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi berkualifikasi S-2 dan S-3.')
+@section('title', 'Dosen | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
+@section('meta_description', 'Daftar 27 dosen resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi berkualifikasi S-2 dan S-3.')
 
 @section('content')
 @php
@@ -218,7 +218,7 @@ $dosenList = [
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
                 <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-slate-200">Dosen &amp; Staf</span>
+                <span class="text-slate-200">Dosen</span>
             </nav>
             <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
                 Sumber Daya Manusia Unggul
