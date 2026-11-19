@@ -118,22 +118,23 @@
             </div>
 
             
+            {{-- Statistik Utama Program Studi --}}
             <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5">
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center">
-                    <span class="block text-3xl font-black text-amber-400">S-1</span>
-                    <span class="block text-xs text-slate-300 mt-1">Jenjang Program</span>
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal">
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="1200">1.200</span>
+                    <span class="block text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wide">Mahasiswa Aktif</span>
                 </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center">
-                    <span class="block text-3xl font-black text-amber-400">144</span>
-                    <span class="block text-xs text-slate-300 mt-1">Total SKS</span>
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal">
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="18">18</span>
+                    <span class="block text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wide">Dosen Aktif</span>
                 </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center">
-                    <span class="block text-3xl font-black text-amber-400">8</span>
-                    <span class="block text-xs text-slate-300 mt-1">Semester</span>
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal">
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="3500">3.500</span>
+                    <span class="block text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wide">Alumni Lulus</span>
                 </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center">
-                    <span class="block text-3xl font-black text-amber-400">Baik</span>
-                    <span class="block text-xs text-slate-300 mt-1">Akreditasi LAM Teknik</span>
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal">
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="40">40</span>
+                    <span class="block text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wide">Tahun Dedikasi (1984)</span>
                 </div>
             </div>
         </div>
