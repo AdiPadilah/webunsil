@@ -239,25 +239,25 @@ $dosenList = [
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
-            <!-- Tab Filter 5 Bidang Keahlian (Tema Resmi FT UNSIL: Navy & Gold Amber) -->
-            <div class="max-w-5xl mx-auto mb-12">
-                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 p-2 bg-slate-100/90 rounded-2xl border border-slate-200 shadow-inner">
-                    <button type="button" onclick="filterKbk('all', this)" class="kbk-tab-btn px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 shadow-md bg-[#0B2A4A] text-amber-400 border border-amber-400/40">
+            <!-- Tab Filter 5 Bidang Keahlian - Satu Baris Scrollable -->
+            <div class="mb-12 overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
+                <div class="flex items-center gap-2 p-2 bg-slate-100/90 rounded-2xl border border-slate-200 shadow-inner min-w-max mx-auto w-fit">
+                    <button type="button" onclick="filterKbk('all', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 shadow-md bg-[#0B2A4A] text-amber-400 border border-amber-400/40">
                         Semua Dosen (27)
                     </button>
-                    <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         Struktur &amp; Bahan (5)
                     </button>
-                    <button type="button" onclick="filterKbk('keairan', this)" class="kbk-tab-btn px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('keairan', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         Sumber Daya Air (6)
                     </button>
-                    <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         Geoteknik (3)
                     </button>
-                    <button type="button" onclick="filterKbk('transportasi', this)" class="kbk-tab-btn px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('transportasi', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         Transportasi (7)
                     </button>
-                    <button type="button" onclick="filterKbk('manajemen', this)" class="kbk-tab-btn px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('manajemen', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         Manajemen Konstruksi (5)
                     </button>
                 </div>
@@ -293,6 +293,13 @@ $dosenList = [
 
         </div>
     </section>
+
+    @push('styles')
+    <style>
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+    @endpush
 
     @push('scripts')
     <script>
