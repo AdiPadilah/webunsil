@@ -4,7 +4,7 @@
 @section('meta_description', 'Himpunan Mahasiswa Sipil FT-Unsil selenggarakan babak final National Bridge Design Competition dalam ajang bergengsi SCIENCE 2026.')
 
 @section('content')
-    <!-- Breadcrumb Header -->
+    
     <div class="bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 text-xs text-slate-500 flex items-center gap-2">
             <a href="{{ route('home') }}" class="hover:text-blue-700 transition flex items-center gap-1">
@@ -17,12 +17,12 @@
         </div>
     </div>
 
-    <!-- Article -->
+    
     <section class="py-12 bg-slate-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-                <!-- Konten Utama -->
+                
                 <article class="lg:col-span-2">
                     <div class="mb-6">
                         <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -107,7 +107,7 @@
                     </div>
                 </article>
 
-                <!-- Sidebar -->
+                
                 <aside class="space-y-6">
                     <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
                         <h3 class="text-xs font-black text-slate-900 uppercase tracking-wider mb-4 flex items-center gap-2">

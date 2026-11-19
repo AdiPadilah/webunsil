@@ -4,18 +4,18 @@
 @section('meta_description', 'Profil lengkap, sambutan pimpinan, struktur organisasi, visi misi, sejarah, serta akreditasi Program Studi S-1 Teknik Sipil FT Universitas Siliwangi.')
 
 @section('content')
-    <!-- 1. Page Header Banner (Gaya ITS: Hero Banner Gedung Kampus + Breadcrumb + Judul) -->
+    
     <section class="relative min-h-[260px] sm:min-h-[300px] flex items-center bg-[#0B2A4A] text-white overflow-hidden border-b border-blue-950">
-        <!-- Background Foto Kampus dengan Gradient Navy -->
+        
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/gedung-unsil.jpg') }}');"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-[#071c32]/95 via-[#0B2A4A]/85 to-[#0B2A4A]/60"></div>
         
-        <!-- Ornamen Corak Khas FT UNSIL -->
+        
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 220px auto;"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 w-full">
-            <!-- Breadcrumbs -->
+            
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
                 <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5 text-slate-300 hover:text-amber-400 transition">
                     <i class="fa-solid fa-house text-[11px]"></i> Beranda
@@ -37,19 +37,19 @@
         </div>
     </section>
 
-    <!-- Corak Daun Pita Tipis -->
+    
     <div class="h-3 bg-[#0a2038] border-b border-amber-400/20 overflow-hidden relative">
         <div class="absolute inset-0 opacity-20 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 12px;"></div>
     </div>
 
-    <!-- 2. Main Content Container (Full Width Sambutan & Kartu + Berita di Bagian Bawah) -->
+    
     <section class="py-12 lg:py-16 bg-slate-50 min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             
-            <!-- 1. Sambutan Koordinator Prodi (Layout Horizontal Lebar Penuh: Penjelasan di Pinggir Foto Tanpa Panel Modal) -->
+            
             <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-200">
                 <div class="grid grid-cols-1 lg:grid-cols-12">
-                    <!-- Foto di Samping Kiri -->
+                    
                     <div class="lg:col-span-4 md:col-span-5 relative min-h-[300px] lg:min-h-full bg-slate-900 overflow-hidden">
                         <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" 
                              alt="Koordinator Program Studi Teknik Sipil FT UNSIL" 
@@ -67,7 +67,7 @@
                         </div>
                     </div>
 
-                    <!-- Penjelasan Sambutan di Pinggirnya Langsung (Lebar & Leluasa) -->
+                    
                     <div class="lg:col-span-8 md:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center gap-2 mb-2.5">
@@ -108,10 +108,10 @@
                 </div>
             </div>
 
-            <!-- 2. Kartu Sejarah & Akreditasi (Grid 2 Kolom Lebar Penuh) -->
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <!-- KARTU 1: Sejarah -->
+                
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                     <div class="relative h-48 overflow-hidden bg-slate-200">
                         <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Sejarah Program Studi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -137,7 +137,7 @@
                     </div>
                 </div>
 
-                <!-- KARTU 2: Akreditasi -->
+                
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                     <div class="relative h-48 overflow-hidden bg-slate-200">
                         <img src="{{ asset('images/lab-civil.jpg') }}" alt="Akreditasi Program Studi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -165,9 +165,9 @@
 
             </div>
 
-            <!-- 3. BAGIAN BERITA TERKINI (DIPINDAH KE BAWAH: TAMPIL DALAM GRID 3 KOLOM) -->
+            
             <div class="space-y-6 pt-4">
-                <!-- Header Berita -->
+                
                 <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-slate-200">
                     <div>
                         <div class="flex items-center gap-2 mb-1.5">
@@ -185,10 +185,10 @@
                     </a>
                 </div>
 
-                <!-- Grid 3 Kolom Berita Terkini (Liputan Resmi unsil.ac.id) -->
+                
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                    <!-- Berita 1: Kunjungan Bendungan Leuwikeris -->
+                    
                     <article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                         <div class="relative h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -217,7 +217,7 @@
                         </div>
                     </article>
 
-                    <!-- Berita 2: Seminar Nasional SCIENCE Jalan Tol -->
+                    
                     <article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                         <div class="relative h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol SCIENCE 2026" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -246,7 +246,7 @@
                         </div>
                     </article>
 
-                    <!-- Berita 3: Babak Final Bridge Design Competition -->
+                    
                     <article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col group">
                         <div class="relative h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Babak Final National Bridge Design Competition SCIENCE 2026" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -281,7 +281,7 @@
         </div>
     </section>
 
-    <!-- MODAL: Akreditasi -->
+    
     <div id="modal-akreditasi" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
             <div class="relative bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] p-6 text-white rounded-t-3xl">

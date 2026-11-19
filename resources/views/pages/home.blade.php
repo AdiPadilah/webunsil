@@ -4,7 +4,7 @@
 @section('meta_description', 'Website Resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL) Tasikmalaya. Akreditasi BAIK LAM Teknik.')
 
 @section('content')
-    <!-- 1. HERO BERANDA -->
+    
     <section id="beranda" class="hero-banner relative min-h-[560px] lg:min-h-[640px] flex items-center py-20 lg:py-28 border-b border-slate-800 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
             <div class="max-w-2xl lg:max-w-3xl space-y-4">
@@ -27,12 +27,12 @@
         </div>
     </section>
 
-    <!-- Corak Pita Aksen Krawangan Daun Khas Tugu Fakultas Teknik UNSIL -->
+    
     <div class="h-4 bg-[#0a2038] border-y border-amber-400/30 overflow-hidden relative">
         <div class="absolute inset-0 opacity-25 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 16px;"></div>
     </div>
 
-    <!-- STATISTIK BAR (Di atas Profil Program Studi) -->
+    
     <div class="bg-[#0070BA] border-y border-blue-700 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -61,7 +61,7 @@
         </div>
     </div>
 
-    <!-- 2. CUPLIKAN PROFIL & VISI MISI PROGRAM STUDI -->
+    
     <section class="py-20 bg-[#0B2A4A] relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.035] bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 240px auto;"></div>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-                <!-- VISI 2030 -->
+                
                 <div class="bg-white rounded-3xl p-8 shadow-xl relative overflow-hidden flex flex-col justify-between">
                     <div class="absolute inset-0 opacity-[0.12] bg-repeat pointer-events-none"
                          style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 240px auto;"></div>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
 
-                <!-- MISI SINGKAT -->
+                
                 <div class="bg-white rounded-3xl p-8 shadow-xl relative overflow-hidden flex flex-col justify-between">
                     <div class="absolute inset-0 opacity-[0.12] bg-repeat pointer-events-none"
                          style="background-image: url('{{ asset('images/corak-daun-gold.png') }}'); background-size: 240px auto;"></div>
@@ -145,7 +145,7 @@
                 </div>
             </div>
 
-            <!-- Stats Row -->
+            
             <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5">
                 <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center">
                     <span class="block text-3xl font-black text-amber-400">S-1</span>
@@ -167,7 +167,7 @@
         </div>
     </section>
 
-    <!-- 3. KEUNGGULAN, KEGIATAN MAHASISWA, AGENDA & INFORMASI -->
+    
     <section class="py-16 bg-white border-b border-slate-200 relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.10] bg-repeat pointer-events-none"
              style="background-image: url('{{ asset('images/corak-daun-gold.png') }}'); background-size: 280px auto;"></div>
@@ -175,17 +175,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
                 
-                <!-- KOLOM KIRI (LEBAR: Program Studi & Kegiatan Mahasiswa) -->
+                
                 <div class="lg:col-span-8 space-y-12">
                     
-                    <!-- BLOK 1: Program Studi TEKNIK SIPIL -->
+                    
                     <div>
                         <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight mb-6">
                             Program Studi Teknik Sipil
                         </h2>
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                            <!-- Card 1: Capaian Pembelajaran Lulusan -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Capaian Pembelajaran Lulusan" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -200,7 +200,7 @@
                                 </a>
                             </div>
 
-                            <!-- Card 2: Profil Profesional Mandiri -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Profil Profesional Mandiri" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -215,7 +215,7 @@
                                 </a>
                             </div>
 
-                            <!-- Card 3: Prestasi Mahasiswa -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -232,7 +232,7 @@
                         </div>
                     </div>
 
-                    <!-- BLOK 2: KEGIATAN MAHASISWA -->
+                    
                     <div>
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
                             <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight">
@@ -249,7 +249,7 @@
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                            <!-- Card 1: SCIENCE Bridge Competition -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/event-1.jpg') }}" alt="Kompetisi Jembatan Nasional SCIENCE" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=600'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -264,7 +264,7 @@
                                 </a>
                             </div>
 
-                            <!-- Card 2: Organisasi HMS UNSIL -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Himpunan Mahasiswa Sipil FT UNSIL" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -279,7 +279,7 @@
                                 </a>
                             </div>
 
-                            <!-- Card 3: Seminar Internasional Taiwan -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan NCKU" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -299,7 +299,7 @@
                         </div>
                     </div>
 
-                    <!-- BLOK 3: FASILITAS LABORATORIUM UNGGULAN -->
+                    
                     <div>
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
                             <div>
@@ -315,7 +315,7 @@
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                            <!-- Lab 1: TBK -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Bahan Konstruksi" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -333,7 +333,7 @@
                                 </a>
                             </div>
 
-                            <!-- Lab 2: Mekanika Tanah -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Laboratorium Mekanika Tanah" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -351,7 +351,7 @@
                                 </a>
                             </div>
 
-                            <!-- Lab 3: Komputasi & BIM -->
+                            
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
                                 <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Studio Komputasi dan BIM" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
@@ -371,12 +371,12 @@
                         </div>
                     </div>
 
-                </div><!-- end kolom kiri -->
+                </div>
 
-                <!-- KOLOM KANAN: AGENDA & INFORMASI (BERITA) -->
+                
                 <div class="lg:col-span-4 space-y-10 lg:pl-2">
                     
-                    <!-- BLOK AGENDA -->
+                    
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight">
@@ -387,7 +387,7 @@
                             </span>
                         </div>
                         
-                        <!-- Card Agenda dengan Foto Workshop OBE -->
+                        
                         <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 group flex flex-col">
                             <div class="relative overflow-hidden bg-slate-100">
                                 <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE Teknik Sipil UNSIL" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
@@ -431,7 +431,7 @@
                         </div>
                     </div>
 
-                    <!-- BLOK INFORMASI / BERITA RESMI -->
+                    
                     <div>
                         <div class="flex items-center justify-between mb-5">
                             <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight">
@@ -446,7 +446,7 @@
                         </div>
 
                         <div class="space-y-5">
-                            <!-- Berita 1: Kunjungan Ilmiah Bendungan Leuwikeris (unsil.ac.id) -->
+                            
                             <article class="flex items-start space-x-3.5 group cursor-pointer">
                                 <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video block">
                                     <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -464,7 +464,7 @@
                                 </div>
                             </article>
 
-                            <!-- Berita 2: Seminar Nasional SCIENCE 2026 Jalan Tol (unsil.ac.id) -->
+                            
                             <article class="flex items-start space-x-3.5 group cursor-pointer">
                                 <a href="{{ route('berita.seminar-jalan-tol') }}" class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video block">
                                     <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol SCIENCE 2026" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -482,7 +482,7 @@
                                 </div>
                             </article>
 
-                            <!-- Berita 3: Babak Final National Bridge Design Competition (unsil.ac.id) -->
+                            
                             <article class="flex items-start space-x-3.5 group cursor-pointer">
                                 <a href="{{ route('berita.kompetisi-jembatan') }}" class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video block">
                                     <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Bridge Design Competition SCIENCE 2026" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -500,7 +500,7 @@
                                 </div>
                             </article>
 
-                            <!-- Berita 4: Seminar Internasional Taiwan (unsil.ac.id) -->
+                            
                             <article class="flex items-start space-x-3.5 group cursor-pointer">
                                 <a href="{{ route('berita.seminar-taiwan') }}" class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video block">
                                     <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
@@ -519,7 +519,7 @@
                             </article>
                         </div>
 
-                        <!-- Tombol Selengkapnya / Semua Berita -->
+                        
                         <div class="mt-6 pt-3">
                             <a href="{{ route('berita.index') }}" class="inline-flex items-center justify-center gap-2 w-full py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold rounded-xl shadow-sm transition">
                                 <span>Lihat Semua Berita &amp; Informasi</span>
@@ -535,7 +535,7 @@
     </section>
 
 
-    <!-- 5. LOKASI KAMPUS -->
+    
     <section id="lokasi" class="bg-white relative overflow-hidden border-t border-slate-100">
         <div class="absolute inset-0 opacity-[0.07] bg-repeat pointer-events-none"
              style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 240px auto;"></div>
@@ -559,7 +559,7 @@
                     </a>
                 </div>
 
-                <!-- Grid: Map + Info -->
+                
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
                     <div class="lg:col-span-2 h-80 lg:h-[420px]">
                         <iframe

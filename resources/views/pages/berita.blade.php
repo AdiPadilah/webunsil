@@ -4,18 +4,18 @@
 @section('meta_description', 'Portal berita, informasi kegiatan akademik, prestasi mahasiswa, seminar, dan agenda resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL).')
 
 @section('content')
-    <!-- 1. Page Header Banner -->
+    
     <section class="relative min-h-[260px] sm:min-h-[300px] flex items-center bg-[#0B2A4A] text-white overflow-hidden border-b border-blue-950">
-        <!-- Background Foto Kampus dengan Gradient Navy -->
+        
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/gedung-unsil.jpg') }}');"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-[#071c32]/95 via-[#0B2A4A]/85 to-[#0B2A4A]/60"></div>
         
-        <!-- Ornamen Corak Khas FT UNSIL -->
+        
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 220px auto;"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 w-full">
-            <!-- Breadcrumbs -->
+            
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
                 <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5 text-slate-300 hover:text-amber-400 transition">
                     <i class="fa-solid fa-house text-[10px]"></i> Beranda
@@ -37,20 +37,20 @@
         </div>
     </section>
 
-    <!-- Corak Daun Pita Tipis -->
+    
     <div class="h-3 bg-[#0a2038] border-b border-amber-400/20 overflow-hidden relative">
         <div class="absolute inset-0 opacity-20 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 12px;"></div>
     </div>
 
-    <!-- 2. Main News Content -->
+    
     <section class="py-12 lg:py-16 bg-slate-50 min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
 
-                <!-- KOLOM KIRI & TENGAH: Daftar Berita -->
+                
                 <div class="lg:col-span-2 space-y-8">
 
-                    <!-- Berita Utama / Featured News (Liputan unsil.ac.id) -->
+                    
                     <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 group">
                         <div class="relative h-64 sm:h-80 overflow-hidden bg-slate-900">
                             <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional SCIENCE 2026 Jalan Tol Berkelanjutan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -91,10 +91,10 @@
                         </div>
                     </div>
 
-                    <!-- Grid Berita Lainnya -->
+                    
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-                        <!-- Berita 1: Kunjungan Bendungan Leuwikeris (unsil.ac.id) -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -124,7 +124,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 2: National Bridge Design Competition SCIENCE (unsil.ac.id) -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -154,7 +154,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 3: Seminar Internasional Taiwan (unsil.ac.id) -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -184,7 +184,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 4: Workshop Penguatan Kurikulum OBE -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -214,7 +214,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 5: Kuliah Tamu BIM Infrastruktur Modern -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -244,7 +244,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 6: Wisuda Sarjana Teknik Sipil -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -274,7 +274,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 7: Fahmi Rahmat — Mahasiswa Ajaib Scopus Q1 (unsil.ac.id) -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -304,7 +304,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 8: Muhammad Raka — Lulusan Scopus (unsil.ac.id) -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -334,7 +334,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 9: Tim Tirta Adhipermana — Juara 1 NPC 2023 (unsil.ac.id) -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -364,7 +364,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 10: HATHI FGD Segara Anakan (unsil.ac.id) -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -394,7 +394,7 @@
                             </div>
                         </article>
 
-                        <!-- Berita 11: Seminar Nasional Perdana HATHI Sumber Daya Air (unsil.ac.id) -->
+                        
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -427,10 +427,10 @@
                     </div>
                 </div>
 
-                <!-- KOLOM KANAN: Sidebar -->
+                
                 <aside class="lg:col-span-1 space-y-6">
 
-                    <!-- Box Agenda Kegiatan (Pemisahan: Mendatang & Telah Selesai) -->
+                    
                     <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
                         <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
                             <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
@@ -442,7 +442,7 @@
                             </span>
                         </div>
 
-                        <!-- Tab Switcher: Mendatang vs Telah Selesai -->
+                        
                         <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl mb-4 text-xs">
                             <button type="button" onclick="switchAgendaTab('mendatang')" id="tab-btn-mendatang" class="flex-1 py-1.5 px-3 rounded-lg bg-white text-[#0070BA] shadow-sm font-bold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer">
                                 <i class="fa-solid fa-clock text-[#0070BA]"></i>
@@ -456,9 +456,9 @@
                             </button>
                         </div>
 
-                        <!-- PANEL 1: AGENDA MENDATANG (Upcoming) -->
+                        
                         <div id="panel-agenda-mendatang" class="space-y-3.5">
-                            <!-- Agenda Workshop OBE -->
+                            
                             <div class="p-3.5 rounded-xl bg-blue-50/80 border border-blue-200 hover:shadow-sm transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-bold text-blue-700 block uppercase">27 November 2026</span>
@@ -476,7 +476,7 @@
                                 </a>
                             </div>
 
-                            <!-- Agenda UAS Ganjil -->
+                            
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 hover:shadow-sm transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-bold text-indigo-700 block uppercase">15 &ndash; 24 Desember 2026</span>
@@ -491,9 +491,9 @@
                             </div>
                         </div>
 
-                        <!-- PANEL 2: AGENDA TELAH SELESAI (Completed / Past) -->
+                        
                         <div id="panel-agenda-selesai" class="hidden space-y-3">
-                            <!-- Selesai: Seminar Taiwan -->
+                            
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-90 hover:opacity-100 transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-semibold text-slate-500 block uppercase">12 Oktober 2026</span>
@@ -513,7 +513,7 @@
                                 </a>
                             </div>
 
-                            <!-- Selesai: Civil Expo -->
+                            
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-semibold text-slate-500 block uppercase">Juni 2026</span>
@@ -529,7 +529,7 @@
                                 </p>
                             </div>
 
-                            <!-- Selesai: Sidang TA -->
+                            
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-semibold text-slate-500 block uppercase">01 &ndash; 10 Mei 2026</span>
@@ -545,7 +545,7 @@
                                 </p>
                             </div>
 
-                            <!-- Selesai: UTS Genap -->
+                            
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-semibold text-slate-500 block uppercase">12 &ndash; 15 April 2026</span>
@@ -563,7 +563,7 @@
                         </div>
                     </div>
 
-                    <!-- Box Media Sosial Resmi -->
+                    
                     <div class="bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-2xl p-6 text-white shadow-md">
                         <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 block mb-1">Kanal Resmi</span>
                         <h3 class="text-base font-bold">Instagram @sipilunsil</h3>

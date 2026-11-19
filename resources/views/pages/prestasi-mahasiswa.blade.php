@@ -4,18 +4,18 @@
 @section('meta_description', 'Dokumentasi prestasi, penghargaan, kejuaraan nasional dan internasional mahasiswa Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')
 
 @section('content')
-    <!-- 1. Hero Header Banner (Navy & Gold Khas FT UNSIL) -->
+    
     <section class="relative min-h-[260px] sm:min-h-[300px] flex items-center bg-[#0B2A4A] text-white overflow-hidden border-b border-blue-950">
-        <!-- Background Foto Kampus dengan Gradient Navy -->
+        
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/gedung-unsil.jpg') }}');"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-[#071c32]/95 via-[#0B2A4A]/85 to-[#0B2A4A]/60"></div>
         
-        <!-- Ornamen Corak Khas FT UNSIL -->
+        
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 220px auto;"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 w-full">
-            <!-- Breadcrumbs -->
+            
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
                 <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5 text-slate-300 hover:text-amber-400 transition">
                     <i class="fa-solid fa-house text-[10px]"></i> Beranda
@@ -39,12 +39,12 @@
         </div>
     </section>
 
-    <!-- Corak Daun Pita Tipis Khas UNSIL -->
+    
     <div class="h-3 bg-[#0a2038] border-b border-amber-400/20 overflow-hidden relative">
         <div class="absolute inset-0 opacity-20 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 12px;"></div>
     </div>
 
-    <!-- 2. Highlight Angka Prestasi (Stat Bar) -->
+    
     <section class="bg-white border-b border-slate-200 py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -68,11 +68,11 @@
         </div>
     </section>
 
-    <!-- 3. Konten Utama: Daftar Prestasi & Sidebar -->
+    
     <section class="py-12 bg-slate-50 min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <!-- Filter Kategori Tombol Tab -->
+            
             <div class="flex flex-wrap items-center gap-2 mb-8">
                 <span class="text-xs font-bold text-slate-500 mr-1 flex items-center gap-1">
                     <i class="fa-solid fa-filter text-blue-600"></i> Filter Kategori:
@@ -96,24 +96,24 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
 
-                <!-- KOLOM KIRI & TENGAH: Daftar Kartu Prestasi (Desain Gambar 1 Lebih Menarik & Setema) -->
+                
                 <div class="lg:col-span-2 space-y-6">
 
-                    <!-- ITEM 1: ADPI Global Award & ICORAD Award (Sesuai Gambar 1 Pengguna) -->
+                    
                     <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="internasional">
-                        <!-- Foto di Kiri + Badge Tanggal di Pojok Kiri Atas Foto -->
+                        
                         <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
                             <img src="{{ asset('images/trophy-adpi.jpg') }}" alt="UNSIL Raih Dua Penghargaan Bergengsi ADPI Global Award" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
                             
-                            <!-- BADGE TANGGAL DI POJOK KIRI ATAS FOTO (Gaya Kalender Gambar 1) -->
+                            
                             <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
                                 <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">16</span>
                                 <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">NOV</span>
                                 <span class="block text-[8px] text-slate-400 leading-none">2026</span>
                             </div>
 
-                            <!-- Badge Kategori Juara -->
+                            
                             <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
                                 <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-md">
                                     <i class="fa-solid fa-award text-xs"></i> ICORAD &amp; ADPI Global Award
@@ -121,7 +121,7 @@
                             </div>
                         </div>
 
-                        <!-- Penjelasan di Sebelah Kanan Foto -->
+                        
                         <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                             <div>
                                 <div class="flex flex-wrap items-center gap-2 mb-2.5">
@@ -135,7 +135,7 @@
                                     UNSIL Raih Dua Penghargaan Bergengsi ADPI Global Award 2025 dan ICORAD Award 2026
                                 </h2>
 
-                                <!-- Rincian Kapan, Dimana, Jenis Kegiatan -->
+                                
                                 <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
                                     <p class="flex items-start gap-2">
                                         <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
@@ -169,21 +169,21 @@
                         </div>
                     </article>
 
-                    <!-- ITEM 2: Juara 1 KJI SCIENCE -->
+                    
                     <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="struktur">
-                        <!-- Foto di Kiri + Badge Tanggal di Pojok Kiri Atas Foto -->
+                        
                         <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
                             <img src="{{ asset('images/event-3.jpg') }}" alt="Juara 1 Kompetisi Rancang Jembatan Indonesia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
                             
-                            <!-- BADGE TANGGAL DI POJOK KIRI ATAS FOTO -->
+                            
                             <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
                                 <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">18</span>
                                 <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">OKT</span>
                                 <span class="block text-[8px] text-slate-400 leading-none">2026</span>
                             </div>
 
-                            <!-- Badge Kategori Juara -->
+                            
                             <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
                                 <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-md">
                                     <i class="fa-solid fa-trophy text-xs"></i> Juara 1 Nasional
@@ -191,7 +191,7 @@
                             </div>
                         </div>
 
-                        <!-- Penjelasan di Sebelah Kanan Foto -->
+                        
                         <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                             <div>
                                 <div class="flex flex-wrap items-center gap-2 mb-2.5">
@@ -207,7 +207,7 @@
                                     Juara 1 Nasional: Kompetisi Rancang Jembatan Indonesia (KJI) 2026
                                 </h2>
 
-                                <!-- Rincian Kapan, Dimana, Jenis Kegiatan -->
+                                
                                 <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
                                     <p class="flex items-start gap-2">
                                         <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
@@ -241,21 +241,21 @@
                         </div>
                     </article>
 
-                    <!-- ITEM 3: Juara 2 Beton Inovatif -->
+                    
                     <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="material">
-                        <!-- Foto di Kiri + Badge Tanggal di Pojok Kiri Atas Foto -->
+                        
                         <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
                             <img src="{{ asset('images/lab-civil.jpg') }}" alt="Juara 2 National Concrete Competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
                             
-                            <!-- BADGE TANGGAL DI POJOK KIRI ATAS FOTO -->
+                            
                             <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
                                 <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">24</span>
                                 <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">SEP</span>
                                 <span class="block text-[8px] text-slate-400 leading-none">2026</span>
                             </div>
 
-                            <!-- Badge Kategori Juara -->
+                            
                             <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
                                 <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-slate-800 text-amber-300 border border-amber-400/30 shadow-md">
                                     <i class="fa-solid fa-medal text-xs text-amber-400"></i> Juara 2 Nasional
@@ -263,7 +263,7 @@
                             </div>
                         </div>
 
-                        <!-- Penjelasan di Sebelah Kanan Foto -->
+                        
                         <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                             <div>
                                 <div class="flex flex-wrap items-center gap-2 mb-2.5">
@@ -279,7 +279,7 @@
                                     Juara 2 National Concrete Competition: Beton Mutu Tinggi Geopolimer Fly Ash
                                 </h2>
 
-                                <!-- Rincian Kapan, Dimana, Jenis Kegiatan -->
+                                
                                 <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
                                     <p class="flex items-start gap-2">
                                         <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
@@ -313,21 +313,21 @@
                         </div>
                     </article>
 
-                    <!-- ITEM 4: Pendanaan PKM-KC Kemendikbudristek -->
+                    
                     <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="pkm">
-                        <!-- Foto di Kiri + Badge Tanggal di Pojok Kiri Atas Foto -->
+                        
                         <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
                             <img src="{{ asset('images/event-2.jpg') }}" alt="Penerima Pendanaan PKM-KC Kemendikbudristek" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
                             
-                            <!-- BADGE TANGGAL DI POJOK KIRI ATAS FOTO -->
+                            
                             <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
                                 <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">10</span>
                                 <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">AGU</span>
                                 <span class="block text-[8px] text-slate-400 leading-none">2026</span>
                             </div>
 
-                            <!-- Badge Kategori Juara -->
+                            
                             <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
                                 <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-indigo-600 text-white shadow-md">
                                     <i class="fa-solid fa-lightbulb text-xs text-amber-300"></i> Hibah PKM-KC Diktiristek
@@ -335,7 +335,7 @@
                             </div>
                         </div>
 
-                        <!-- Penjelasan di Sebelah Kanan Foto -->
+                        
                         <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                             <div>
                                 <div class="flex flex-wrap items-center gap-2 mb-2.5">
@@ -351,7 +351,7 @@
                                     Lolos Pendanaan PKM-KC Kemendikbudristek: IoT Early Warning Sensor Retak Jembatan
                                 </h2>
 
-                                <!-- Rincian Kapan, Dimana, Jenis Kegiatan -->
+                                
                                 <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
                                     <p class="flex items-start gap-2">
                                         <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
@@ -385,21 +385,21 @@
                         </div>
                     </article>
 
-                    <!-- ITEM 5: Juara 1 LKTIN UNDIP -->
+                    
                     <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="pkm">
-                        <!-- Foto di Kiri + Badge Tanggal di Pojok Kiri Atas Foto -->
+                        
                         <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
                             <img src="{{ asset('images/event-1.jpg') }}" alt="Juara 1 LKTIN Infrastruktur Berkelanjutan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
                             
-                            <!-- BADGE TANGGAL DI POJOK KIRI ATAS FOTO -->
+                            
                             <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
                                 <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">14</span>
                                 <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">MEI</span>
                                 <span class="block text-[8px] text-slate-400 leading-none">2026</span>
                             </div>
 
-                            <!-- Badge Kategori Juara -->
+                            
                             <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
                                 <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-md">
                                     <i class="fa-solid fa-trophy text-xs"></i> Juara 1 &amp; Best Paper
@@ -407,7 +407,7 @@
                             </div>
                         </div>
 
-                        <!-- Penjelasan di Sebelah Kanan Foto -->
+                        
                         <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                             <div>
                                 <div class="flex flex-wrap items-center gap-2 mb-2.5">
@@ -423,7 +423,7 @@
                                     Juara 1 Lomba Karya Tulis Ilmiah Nasional: Eco-Drainase Ramah Lingkungan
                                 </h2>
 
-                                <!-- Rincian Kapan, Dimana, Jenis Kegiatan -->
+                                
                                 <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
                                     <p class="flex items-start gap-2">
                                         <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
@@ -457,21 +457,21 @@
                         </div>
                     </article>
 
-                    <!-- ITEM 6: Best Presenter International Conference -->
+                    
                     <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="internasional">
-                        <!-- Foto di Kiri + Badge Tanggal di Pojok Kiri Atas Foto -->
+                        
                         <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
                             <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Best Presenter International Conference" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
                             
-                            <!-- BADGE TANGGAL DI POJOK KIRI ATAS FOTO -->
+                            
                             <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
                                 <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">12</span>
                                 <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">OKT</span>
                                 <span class="block text-[8px] text-slate-400 leading-none">2026</span>
                             </div>
 
-                            <!-- Badge Kategori Juara -->
+                            
                             <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
                                 <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-cyan-700 text-white shadow-md">
                                     <i class="fa-solid fa-microphone text-xs text-amber-300"></i> Best Student Presenter
@@ -479,7 +479,7 @@
                             </div>
                         </div>
 
-                        <!-- Penjelasan di Sebelah Kanan Foto -->
+                        
                         <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                             <div>
                                 <div class="flex flex-wrap items-center gap-2 mb-2.5">
@@ -495,7 +495,7 @@
                                     Best Student Presenter: 5th International Conference on Civil &amp; Earthquake Engineering
                                 </h2>
 
-                                <!-- Rincian Kapan, Dimana, Jenis Kegiatan -->
+                                
                                 <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
                                     <p class="flex items-start gap-2">
                                         <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
@@ -531,10 +531,10 @@
 
                 </div>
 
-                <!-- KOLOM KANAN: SIDEBAR PRESTASI (Sesuai Referensi Gambar 1: TERBARU + Informasi Prestasi) -->
+                
                 <aside class="space-y-6">
 
-                    <!-- Box 1: PRESTASI TERBARU (Layout Mirip Bagian Kanan Gambar 1) -->
+                    
                     <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
                         <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
                             <h3 class="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2">
@@ -546,9 +546,9 @@
                             </span>
                         </div>
 
-                        <!-- List Prestasi Terbaru dengan Thumbnail Mini & Badge Tanggal -->
+                        
                         <div class="space-y-4">
-                            <!-- Item 1 -->
+                            
                             <div class="flex items-start gap-3 group cursor-pointer pb-3 border-b border-slate-100">
                                 <div class="relative w-16 h-16 rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">
                                     <img src="{{ asset('images/trophy-adpi.jpg') }}" alt="ADPI Award" class="w-full h-full object-cover group-hover:scale-105 transition">
@@ -566,7 +566,7 @@
                                 </div>
                             </div>
 
-                            <!-- Item 2 -->
+                            
                             <div class="flex items-start gap-3 group cursor-pointer pb-3 border-b border-slate-100">
                                 <div class="relative w-16 h-16 rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">
                                     <img src="{{ asset('images/event-3.jpg') }}" alt="KJI" class="w-full h-full object-cover group-hover:scale-105 transition">
@@ -584,7 +584,7 @@
                                 </div>
                             </div>
 
-                            <!-- Item 3 -->
+                            
                             <div class="flex items-start gap-3 group cursor-pointer pb-3 border-b border-slate-100">
                                 <div class="relative w-16 h-16 rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">
                                     <img src="{{ asset('images/lab-civil.jpg') }}" alt="Beton UGM" class="w-full h-full object-cover group-hover:scale-105 transition">
@@ -602,7 +602,7 @@
                                 </div>
                             </div>
 
-                            <!-- Item 4 -->
+                            
                             <div class="flex items-start gap-3 group cursor-pointer">
                                 <div class="relative w-16 h-16 rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">
                                     <img src="{{ asset('images/event-2.jpg') }}" alt="PKM-KC" class="w-full h-full object-cover group-hover:scale-105 transition">
@@ -629,7 +629,7 @@
         </div>
     </section>
 
-    <!-- Script Filter Kategori -->
+    
     @push('scripts')
     <script>
         function filterPrestasi(category) {

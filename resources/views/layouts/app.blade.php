@@ -7,12 +7,12 @@
     <meta name="description" content="@yield('meta_description', 'Website Resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL) Tasikmalaya.')">
     <link rel="icon" href="{{ asset('images/logo-unsil.png') }}" type="image/png">
     
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS CDN -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -38,7 +38,7 @@
         }
     </script>
     
-    <!-- Font Awesome Icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
@@ -97,11 +97,11 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-amber-500 selection:text-white flex flex-col min-h-screen">
 
-    <!-- Main Navigation Header (Deep Navy Style - Layout Asli) -->
+    
     <header class="bg-unsil-nav sticky top-0 z-50 shadow-md border-b border-blue-950">
         <div class="max-w-[1440px] mx-auto px-4 sm:px-6">
             <div class="flex justify-between items-center h-20">
-                <!-- Brand / Logo (Ukuran Program Studi sama persis dengan TEKNIK SIPIL) -->
+                
                 <a href="{{ route('home') }}" class="flex items-center space-x-3 group flex-shrink-0 py-2" title="Program Studi Teknik Sipil FT UNSIL">
                     <img src="{{ asset('images/logo-unsil.png') }}" alt="Logo UNSIL" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e0/Logo_Universitas_Siliwangi.png'">
                     <div class="border-l-2 border-slate-500/80 pl-3 flex flex-col justify-center font-heading" style="line-height:1.1; gap:0">
@@ -111,10 +111,10 @@
                     </div>
                 </a>
 
-                <!-- Desktop Menu -->
+                
                 <nav class="hidden xl:flex items-center space-x-0.5 2xl:space-x-1.5 text-[13px] lg:text-[13.5px] font-semibold text-slate-200 whitespace-nowrap">
 
-                    <!-- Tentang Kami Dropdown -->
+                    
                     <div class="relative dropdown">
                         <a href="{{ route('tentang-kami') }}" id="nav-tentang" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'active-nav text-amber-400' : '' }}">
                             <span>Tentang Kami</span>
@@ -127,7 +127,7 @@
                         </div>
                     </div>
 
-                    <!-- Akademik Dropdown -->
+                    
                     <div class="relative dropdown">
                         <a href="{{ route('akademik') }}" id="nav-akademik" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('akademik', 'kurikulum', 'prestasi-mahasiswa', 'layanan', 'download') ? 'active-nav text-amber-400' : '' }}">
                             <span>Akademik</span>
@@ -147,7 +147,7 @@
                     <a href="{{ route('mahasiswa-alumni') }}" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg transition whitespace-nowrap {{ request()->routeIs('mahasiswa-alumni') ? 'active-nav text-amber-400' : '' }}">Mahasiswa dan Alumni</a>
                 </nav>
 
-                <!-- Search & Language Widget (Fungsional) -->
+                
                 <div class="hidden lg:flex items-center space-x-3 text-xs text-slate-300">
                     <button type="button" onclick="openModal('modal-search-global')" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-amber-400 flex items-center justify-center transition shadow-sm" title="Cari halaman & informasi">
                         <i class="fa-solid fa-magnifying-glass text-xs"></i>
@@ -159,7 +159,7 @@
                     </div>
                 </div>
 
-                <!-- Mobile Nav Button -->
+                
                 <div class="flex xl:hidden items-center">
                     <button id="mobile-menu-btn" class="text-white hover:text-amber-400 p-2 rounded-lg focus:outline-none">
                         <i class="fa-solid fa-bars text-2xl"></i>
@@ -168,7 +168,7 @@
             </div>
         </div>
 
-        <!-- Mobile Drawer Menu (Layout Asli) -->
+        
         <div id="mobile-menu" class="hidden xl:hidden bg-slate-900 border-b border-slate-800 px-6 pt-3 pb-6 space-y-2 text-sm text-slate-200">
             <a href="{{ route('tentang-kami') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'text-amber-400 font-bold' : '' }}">Tentang Kami</a>
             <a href="{{ route('visi-misi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('visi-misi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Visi &amp; Misi</a>
@@ -186,7 +186,7 @@
             <a href="{{ route('karya-dosen') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('karya-dosen') ? 'text-amber-400 font-bold' : '' }}">Karya Dosen</a>
             <a href="{{ route('mahasiswa-alumni') }}" class="nav-link block py-2 hover:text-amber-400 {{ request()->routeIs('mahasiswa-alumni') ? 'text-amber-400 font-bold' : '' }}">Mahasiswa dan Alumni</a>
 
-            <!-- Mobile Language Switcher -->
+            
             <div class="pt-3 mt-2 border-t border-slate-800 flex items-center justify-between">
                 <span class="text-xs text-slate-400 font-medium">Bahasa / Language:</span>
                 <div class="flex items-center bg-slate-800 px-2.5 py-1 rounded-full text-xs font-bold border border-slate-700/50">
@@ -198,20 +198,20 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
+    
     <main class="flex-grow">
         @yield('content')
     </main>
 
-    <!-- Footer dengan Ornamen Krawangan FT UNSIL -->
+    
     <footer class="bg-unsil-nav text-slate-300 pt-16 pb-8 border-t border-slate-800 relative overflow-hidden mt-auto">
-        <!-- Background Texture Krawangan -->
+        
         <div class="absolute inset-0 opacity-[0.03] bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 240px auto;"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800 text-xs">
-                <!-- Brand & Deskripsi -->
+                
                 <div class="md:col-span-2">
                     <div class="flex items-center space-x-3 mb-4">
                         <img src="{{ asset('images/logo-unsil.png') }}" alt="Logo UNSIL" class="h-10 w-auto"
@@ -231,7 +231,7 @@
                     </p>
                 </div>
 
-                <!-- Kontak Resmi -->
+                
                 <div>
                     <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5 flex items-center gap-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Kontak Resmi
@@ -252,7 +252,7 @@
                     </ul>
                 </div>
 
-                <!-- Navigasi Cepat & Akreditasi -->
+                
                 <div>
                     <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5 flex items-center gap-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Halaman Utama
@@ -292,9 +292,7 @@
         </div>
     </footer>
 
-    <!-- ========================================================
-         MODAL 1: Detail Sertifikat & Akreditasi LAM Teknik
-         ======================================================== -->
+    
     <div id="modal-akreditasi-top" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
             <div class="relative bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] p-6 text-white rounded-t-3xl">
@@ -355,12 +353,10 @@
         </div>
     </div>
 
-    <!-- ========================================================
-         MODAL 2: Pencarian Cepat Global (Search Modal)
-         ======================================================== -->
+    
     <div id="modal-search-global" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-start justify-center p-4 pt-16 sm:pt-24">
         <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl border border-slate-200 flex flex-col">
-            <!-- Search Header -->
+            
             <div class="p-4 sm:p-5 border-b border-slate-200 flex items-center gap-3 bg-slate-50">
                 <i class="fa-solid fa-magnifying-glass text-slate-400 text-lg ml-2"></i>
                 <input type="text" id="global-search-input"
@@ -372,7 +368,7 @@
                 </button>
             </div>
 
-            <!-- Search Results List -->
+            
             <div id="search-results-container" class="overflow-y-auto p-4 space-y-1.5 flex-1 divide-y divide-slate-100">
                 <a href="{{ route('home') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="beranda home utama unsil fakultas teknik sipil">
                     <div class="flex items-center gap-3">
@@ -576,7 +572,7 @@
                 <p class="text-[11px] text-slate-400 mt-0.5">Coba kata kunci lain seperti: kurikulum, visi, dosen, atau layanan.</p>
             </div>
 
-            <!-- Footer hint -->
+            
             <div class="p-3 bg-slate-50 border-t border-slate-200 text-[11px] text-slate-500 flex justify-between items-center px-5">
                 <span>Tekan <kbd class="px-1.5 py-0.5 bg-slate-200 text-slate-700 rounded text-[10px] font-mono">ESC</kbd> untuk menutup</span>
                 <span class="text-blue-600 font-medium">14 Halaman &amp; Layanan Siap Diakses</span>
@@ -584,9 +580,7 @@
         </div>
     </div>
 
-    <!-- ========================================================
-         TOAST NOTIFICATION (Language switcher / alerts)
-         ======================================================== -->
+    
     <div id="toast-notification" class="fixed bottom-6 right-6 z-50 hidden max-w-sm bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700/80 flex items-start gap-3 transition-all duration-300">
         <div id="toast-icon" class="w-8 h-8 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
             <i class="fa-solid fa-info text-sm"></i>
@@ -600,7 +594,7 @@
         </button>
     </div>
 
-    <!-- Global Scripts -->
+    
     <script>
         // 1. Mobile Drawer Toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
@@ -841,7 +835,7 @@
     </script>
     @stack('scripts')
 
-    <!-- Hidden Google Translate Element Container -->
+    
     <div id="google_translate_element" style="display:none !important; visibility:hidden !important; height:0 !important; overflow:hidden !important;"></div>
 
     <script type="text/javascript">

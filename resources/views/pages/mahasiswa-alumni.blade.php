@@ -4,7 +4,7 @@
 @section('meta_description', 'Himpunan Mahasiswa Sipil (HMS), Ikatan Alumni, Tracer Study, dan Galeri Dokumentasi @sipilunsil Fakultas Teknik Universitas Siliwangi.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <!-- Konten Mahasiswa & Alumni -->
+    
     <section class="py-16 bg-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.08] bg-repeat pointer-events-none"
              style="background-image: url('{{ asset('images/corak-daun-gold.png') }}'); background-size: 260px auto;"></div>
@@ -42,9 +42,9 @@
                 </p>
             </div>
 
-            <!-- 2 Kartu Utama: HMS & Ikatan Alumni -->
+            
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 items-stretch">
-                <!-- HMS UNSIL -->
+                
                 <div class="bg-slate-50 rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-6">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-                <!-- Ikatan Alumni & Tracer Study -->
+                
                 <div id="tracer" class="bg-slate-50 rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-6">
@@ -121,7 +121,7 @@
                 </div>
             </div>
 
-            <!-- Galeri Instagram @sipilunsil -->
+            
             <div class="border-t border-slate-200 pt-16">
                 <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-10">
                     <div>
@@ -138,7 +138,7 @@
                     </a>
                 </div>
 
-                <!-- Grid 6 foto -->
+                
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5">
                     @php
                     $igPhotos = [

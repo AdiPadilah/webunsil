@@ -4,7 +4,7 @@
 @section('meta_description', 'Struktur kurikulum 144 SKS dan bidang keahlian akademik Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <!-- Konten Bidang Keahlian -->
+    
     <section class="py-16 bg-slate-100 border-t border-slate-200 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -40,7 +40,7 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
-                <!-- Card 1: Struktur -->
+                
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
 
-                <!-- Card 2: Sumber Daya Air -->
+                
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl mb-4">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Geoteknik -->
+                
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
 
-                <!-- Card 4: Transportasi -->
+                
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
 
-                <!-- Card 5: Management Konstruksi -->
+                
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4">

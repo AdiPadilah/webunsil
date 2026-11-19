@@ -4,7 +4,7 @@
 @section('meta_description', 'Fasilitas 6 laboratorium modern Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi Kampus 2 Mugarsari.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <!-- Konten Fasilitas Laboratorium -->
+    
     <section class="py-16 bg-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.08] bg-repeat pointer-events-none"
              style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 260px auto;"></div>
@@ -42,9 +42,9 @@
                 </p>
             </div>
 
-            <!-- Grid 6 Laboratorium -->
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <!-- Lab 1: TBK -->
+                
                 <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <!-- Lab 2: Perkerasan Jalan -->
+                
                 <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
@@ -82,7 +82,7 @@
                     </div>
                 </div>
 
-                <!-- Lab 3: Mekanika Tanah -->
+                
                 <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <!-- Lab 4: Hidrolika -->
+                
                 <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl mb-4">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <!-- Lab 5: Komputasi -->
+                
                 <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-xl mb-4">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
 
-                <!-- Lab 6: Perpetaan & Ukur Tanah -->
+                
                 <div class="p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center text-xl mb-4">
@@ -159,7 +159,7 @@
                 </div>
             </div>
 
-            <!-- Standar K3 & Pengujian Eksternal Banner -->
+            
             <div class="bg-gradient-to-r from-[#0B2A4A] to-[#154c79] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
                 <div>
                     <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Keselamatan Praktikum &amp; Uji Bahan</span>

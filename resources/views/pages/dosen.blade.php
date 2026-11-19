@@ -4,7 +4,7 @@
 @section('meta_description', 'Daftar dosen dan tenaga pengajar Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi berkualifikasi S-2 dan S-3.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,13 +27,13 @@
         </div>
     </section>
 
-    <!-- Konten Dosen & Tenaga Pengajar -->
+    
     <section class="py-16 bg-slate-50 relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.06] bg-repeat pointer-events-none"
              style="background-image: url('{{ asset('images/corak-daun-gold.png') }}'); background-size: 260px auto;"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <!-- Header Section -->
+            
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Kualifikasi Akademik</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Staf Pengajar Berkompeten</h2>
@@ -43,7 +43,7 @@
                 </p>
             </div>
 
-            <!-- Kartu Gambar Utama Daftar Dosen Resmi -->
+            
             <div class="max-w-5xl mx-auto bg-white rounded-3xl p-4 sm:p-8 border border-slate-200 text-center shadow-xl mb-14">
                 <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100 px-2">
                     <div class="text-left">

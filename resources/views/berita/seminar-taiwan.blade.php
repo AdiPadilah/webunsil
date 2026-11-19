@@ -4,7 +4,7 @@
 @section('meta_description', 'Seminar internasional Indonesia-Taiwan di Auditorium FT UNSIL, 12 Oktober 2026. Narasumber: Yanuar Haryanto, Ph.D. dari NCKU Taiwan.')
 
 @section('content')
-    <!-- Breadcrumb Header -->
+    
     <div class="bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 text-xs text-slate-500 flex items-center gap-2">
             <a href="{{ route('home') }}" class="hover:text-blue-700 transition flex items-center gap-1">
@@ -17,14 +17,14 @@
         </div>
     </div>
 
-    <!-- Article -->
+    
     <section class="py-12 bg-slate-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-                <!-- Konten Utama -->
+                
                 <article class="lg:col-span-2">
-                    <!-- Label & Judul -->
+                    
                     <div class="mb-6">
                         <div class="flex flex-wrap items-center gap-2 mb-3">
                             <span class="inline-flex items-center gap-1 bg-blue-700 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
@@ -45,7 +45,7 @@
                         </p>
                     </div>
 
-                    <!-- Foto Utama -->
+                    
                     <figure class="mb-8 rounded-2xl overflow-hidden shadow-lg border border-slate-200">
                         <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}"
                              alt="Seminar Internasional Bridging Futures - Narasumber Yanuar Haryanto Ph.D. dari NCKU Taiwan"
@@ -55,7 +55,7 @@
                         </figcaption>
                     </figure>
 
-                    <!-- Isi Berita -->
+                    
                     <div class="prose prose-sm max-w-none text-slate-700 leading-relaxed space-y-5">
                         <p>
                             Upaya peningkatan daya saing internasional terus diwujudkan Program Studi Teknik Sipil Fakultas Teknik Universitas Siliwangi melalui penyelenggaraan seminar internasional <strong>"Bridging Futures: Strengthening Indonesia-Taiwan Academic Collaboration"</strong> di Auditorium Fakultas Teknik Unsil, Senin (12/10/2026). Kegiatan ini mempertemukan sivitas akademika dengan informasi dan pengalaman nyata mengenai peluang melanjutkan studi magister (S2) dan doktor (S3) di universitas terkemuka di Taiwan.
@@ -70,7 +70,7 @@
                         </p>
                     </div>
 
-                    <!-- Info Narasumber Card -->
+                    
                     <div class="mt-10 bg-gradient-to-br from-[#0B2A4A] to-[#1a4a7a] rounded-2xl p-6 text-white shadow-xl">
                         <h3 class="text-xs font-black uppercase tracking-wider text-amber-400 mb-4 flex items-center gap-2">
                             <i class="fa-solid fa-chalkboard-user"></i> Profil Narasumber
@@ -104,7 +104,7 @@
                         </div>
                     </div>
 
-                    <!-- Share & Back -->
+                    
                     <div class="mt-8 pt-6 border-t border-slate-200 flex flex-wrap items-center gap-3">
                         <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Bagikan:</span>
                         <a href="https://instagram.com/sipilunsil" target="_blank"
@@ -120,9 +120,9 @@
                     </div>
                 </article>
 
-                <!-- Sidebar -->
+                
                 <aside class="space-y-6">
-                    <!-- Info Event Box -->
+                    
                     <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
                         <h3 class="text-xs font-black text-slate-900 uppercase tracking-wider mb-4 flex items-center gap-2">
                             <i class="fa-solid fa-circle-info text-blue-700"></i> Informasi Kegiatan
@@ -147,7 +147,7 @@
                         </ul>
                     </div>
 
-                    <!-- Kontak -->
+                    
                     <div class="bg-[#0B2A4A] rounded-2xl p-5 text-white">
                         <h3 class="text-xs font-black uppercase tracking-wider text-amber-400 mb-3">Info Lebih Lanjut</h3>
                         <p class="text-xs text-slate-300 leading-relaxed mb-3">
@@ -159,7 +159,7 @@
                         </a>
                     </div>
 
-                    <!-- Berita Terkait -->
+                    
                     <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
                         <h3 class="text-xs font-black text-slate-900 uppercase tracking-wider mb-4">Halaman Terkait</h3>
                         <div class="space-y-3">

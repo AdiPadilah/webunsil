@@ -4,7 +4,7 @@
 @section('meta_description', 'Sejarah dan rekam jejak perjalanan Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi sejak berdiri tahun 1984.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,13 +27,13 @@
         </div>
     </section>
 
-    <!-- Konten Sejarah & Timeline -->
+    
     <section class="py-16 bg-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.08] bg-repeat pointer-events-none"
              style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 260px auto;"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <!-- Intro Card -->
+            
             <div class="max-w-3xl mx-auto text-center mb-14">
                 <span class="text-amber-600 font-bold uppercase text-xs tracking-widest">Program Studi Teknik Sipil &bull; UNSIL</span>
                 <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0B2A4A] mt-2 font-heading">Tonggak Perjalanan Sejak 1984</h2>
@@ -43,12 +43,12 @@
                 </p>
             </div>
 
-            <!-- Timeline -->
+            
             <div class="relative max-w-5xl mx-auto">
-                <!-- Garis vertikal timeline -->
+                
                 <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-amber-400 via-blue-300 to-[#0B2A4A]/20"></div>
 
-                <!-- Item 1: Pendirian 1984 -->
+                
                 <div class="relative flex flex-col md:flex-row md:items-start md:gap-0 mb-10">
                     <div class="md:w-1/2 md:pr-14 md:text-right order-2 md:order-1">
                         <div class="bg-[#0B2A4A] text-white rounded-2xl p-6 sm:p-7 shadow-lg inline-block w-full text-left md:text-right">
@@ -61,17 +61,17 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Dot -->
+                    
                     <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-amber-400 border-4 border-white shadow-md items-center justify-center z-10 order-1 md:order-2 mt-4">
                         <i class="fa-solid fa-landmark text-white text-sm"></i>
                     </div>
                     <div class="md:w-1/2 md:pl-14 order-1 md:order-3"></div>
                 </div>
 
-                <!-- Item 2: Perkembangan 1990-an -->
+                
                 <div class="relative flex flex-col md:flex-row md:items-start md:gap-0 mb-10">
                     <div class="md:w-1/2 md:pr-14 order-2 md:order-1"></div>
-                    <!-- Dot -->
+                    
                     <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-blue-600 border-4 border-white shadow-md items-center justify-center z-10 mt-4">
                         <i class="fa-solid fa-file-contract text-white text-sm"></i>
                     </div>
@@ -88,7 +88,7 @@
                     </div>
                 </div>
 
-                <!-- Item 3: Akreditasi BAN-PT 2000-an -->
+                
                 <div class="relative flex flex-col md:flex-row md:items-start md:gap-0 mb-10">
                     <div class="md:w-1/2 md:pr-14 md:text-right order-2 md:order-1">
                         <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 shadow-md inline-block w-full text-left md:text-right">
@@ -101,17 +101,17 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Dot -->
+                    
                     <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-green-500 border-4 border-white shadow-md items-center justify-center z-10 mt-4">
                         <i class="fa-solid fa-award text-white text-sm"></i>
                     </div>
                     <div class="md:w-1/2 md:pl-14 order-1 md:order-2"></div>
                 </div>
 
-                <!-- Item 4: Modernisasi Lab 2010-an -->
+                
                 <div class="relative flex flex-col md:flex-row md:items-start md:gap-0 mb-10">
                     <div class="md:w-1/2 md:pr-14 order-2 md:order-1"></div>
-                    <!-- Dot -->
+                    
                     <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-indigo-600 border-4 border-white shadow-md items-center justify-center z-10 mt-4">
                         <i class="fa-solid fa-flask text-white text-sm"></i>
                     </div>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <!-- Item 5: Kini / Akreditasi LAM Teknik -->
+                
                 <div class="relative flex flex-col md:flex-row md:items-start md:gap-0">
                     <div class="md:w-1/2 md:pr-14 md:text-right order-2 md:order-1">
                         <div class="bg-gradient-to-br from-[#0B2A4A] to-[#154c79] text-white rounded-2xl p-6 sm:p-7 shadow-lg inline-block w-full text-left md:text-right">
@@ -142,7 +142,7 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Dot -->
+                    
                     <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-amber-400 border-4 border-white shadow-md items-center justify-center z-10 mt-4">
                         <i class="fa-solid fa-star text-white text-sm"></i>
                     </div>
@@ -150,7 +150,7 @@
                 </div>
             </div>
 
-            <!-- Bottom stat strip -->
+            
             <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-5 max-w-5xl mx-auto">
                 <div class="bg-[#0B2A4A] rounded-2xl p-5 text-center text-white shadow">
                     <div class="text-3xl font-black text-amber-400">1984</div>

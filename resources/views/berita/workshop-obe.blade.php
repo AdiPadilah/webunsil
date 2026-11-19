@@ -4,7 +4,7 @@
 @section('meta_description', 'Workshop Penguatan Kurikulum Teknik Sipil Berbasis Outcome-Based Education (OBE) menghadirkan Dr. Eng. Ir. Halwan Alfisa Saifullah, ST., MT., IPU. di Universitas Siliwangi.')
 
 @section('content')
-    <!-- Breadcrumb Header -->
+    
     <div class="bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 text-xs text-slate-500 flex items-center gap-2">
             <a href="{{ route('home') }}" class="hover:text-blue-700 transition flex items-center gap-1">
@@ -17,12 +17,12 @@
         </div>
     </div>
 
-    <!-- Article -->
+    
     <section class="py-12 bg-slate-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-                <!-- Konten Utama -->
+                
                 <article class="lg:col-span-2">
                     <div class="mb-6">
                         <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -44,7 +44,7 @@
                         </p>
                     </div>
 
-                    <!-- Poster / Gambar Kegiatan -->
+                    
                     <figure class="mb-8 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
                         <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Poster Workshop Penguatan Kurikulum OBE Teknik Sipil UNSIL" class="w-full max-h-[600px] object-contain mx-auto bg-slate-100">
                         <figcaption class="bg-slate-100 text-slate-600 text-xs px-4 py-2.5 leading-relaxed text-center">
@@ -52,7 +52,7 @@
                         </figcaption>
                     </figure>
 
-                    <!-- Ringkasan Jadwal & Narasumber Box -->
+                    
                     <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5 mb-8">
                         <h3 class="text-sm font-bold text-blue-900 flex items-center gap-2 mb-3">
                             <i class="fa-solid fa-circle-info text-blue-600"></i>
@@ -89,7 +89,7 @@
                         </div>
                     </div>
 
-                    <!-- Konten Deskripsi -->
+                    
                     <div class="prose prose-sm max-w-none text-slate-700 leading-relaxed space-y-5">
                         <p class="text-base font-medium text-slate-900 leading-relaxed">
                             <strong>TASIKMALAYA</strong> &mdash; Dalam rangka mengakselerasi peningkatan mutu lulusan keteknikan dan memenuhi standar akreditasi internasional IABEE (Indonesian Accreditation Board for Engineering Education) serta LAM Teknik, Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi akan menyelenggarakan agenda penting berupa <strong>Workshop Penguatan Kurikulum Berbasis Outcome-Based Education (OBE)</strong>.
@@ -128,7 +128,7 @@
                         </div>
                     </div>
 
-                    <!-- Tombol Kembali -->
+                    
                     <div class="mt-8 pt-6 border-t border-slate-200 flex items-center justify-between">
                         <a href="{{ route('berita.index') }}" class="inline-flex items-center gap-2 text-xs font-bold text-blue-700 hover:text-blue-900">
                             <i class="fa-solid fa-arrow-left"></i>
@@ -141,7 +141,7 @@
                     </div>
                 </article>
 
-                <!-- Sidebar Kanan -->
+                
                 <aside class="space-y-6">
                     <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
                         <h3 class="text-sm font-bold text-slate-900 pb-3 border-b border-slate-200 mb-4 flex items-center gap-2">

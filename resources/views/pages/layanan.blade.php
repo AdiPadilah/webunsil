@@ -4,7 +4,7 @@
 @section('meta_description', 'Layanan terpadu administrasi akademik, surat pengantar survei, bebas lab, dan legalisir Program Studi Teknik Sipil FT UNSIL.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <!-- Konten Layanan Terpadu -->
+    
     <section class="py-16 bg-slate-100 border-t border-slate-200 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -39,9 +39,9 @@
                 </p>
             </div>
 
-            <!-- Grid 3 Layanan Utama -->
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-                <!-- Layanan 1 -->
+                
                 <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-md hover:shadow-lg transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <!-- Layanan 2 -->
+                
                 <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-md hover:shadow-lg transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
 
-                <!-- Layanan 3 -->
+                
                 <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-md hover:shadow-lg transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <!-- Kontak Pelayanan -->
+            
             <div class="max-w-2xl mx-auto bg-gradient-to-br from-[#0B2A4A] to-[#154c79] rounded-3xl p-8 text-white shadow-md">
                 <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
                     <i class="fa-solid fa-headset text-amber-400"></i> Kontak Pelayanan

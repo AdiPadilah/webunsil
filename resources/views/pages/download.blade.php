@@ -4,7 +4,7 @@
 @section('meta_description', 'Pusat unduhan dokumen resmi, modul praktikum, panduan kerja praktik, pedoman skripsi, dan SOP Program Studi Teknik Sipil FT UNSIL.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <!-- Konten Download -->
+    
     <section class="py-16 bg-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.08] bg-repeat pointer-events-none"
              style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 260px auto;"></div>
@@ -42,9 +42,9 @@
                 </p>
             </div>
 
-            <!-- Grid 4 Kategori Utama -->
+            
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                <!-- Modul Praktikum -->
+                
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-2xl mb-4">
@@ -61,7 +61,7 @@
                     </a>
                 </div>
 
-                <!-- Panduan KP -->
+                
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-4">
@@ -78,7 +78,7 @@
                     </a>
                 </div>
 
-                <!-- Pedoman Skripsi -->
+                
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-4">
@@ -95,7 +95,7 @@
                     </a>
                 </div>
 
-                <!-- SOP Laboratorium -->
+                
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mb-4">
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <!-- Tabel Daftar Berkas Lengkap -->
+            
             <div id="tabel-unduhan" class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg">
                 <div class="bg-[#0B2A4A] px-6 py-4 text-white flex items-center justify-between">
                     <div>

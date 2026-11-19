@@ -4,7 +4,7 @@
 @section('meta_description', 'Publikasi jurnal ilmiah terindeks SINTA Akselerasi, paten inovasi HKI, dan buku ajar dosen Program Studi Teknik Sipil FT UNSIL.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <!-- Konten Karya Dosen -->
+    
     <section class="py-16 bg-slate-100 border-t border-slate-200 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-14">
@@ -39,9 +39,9 @@
                 </p>
             </div>
 
-            <!-- Grid 3 Kategori Karya -->
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-                <!-- Jurnal Ilmiah -->
+                
                 <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
 
-                <!-- Paten & HKI -->
+                
                 <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
 
-                <!-- Buku Ajar -->
+                
                 <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <!-- Highlight Seminar Internasional -->
+            
             <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-4">
                     <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional" class="w-20 h-20 rounded-2xl object-cover shadow-sm hidden sm:block">

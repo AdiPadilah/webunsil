@@ -4,7 +4,7 @@
 @section('meta_description', 'Visi 2030 dan Misi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL) Tasikmalaya.')
 
 @section('content')
-    <!-- Page Header Banner -->
+    
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <!-- Konten Visi & Misi -->
+    
     <section class="py-16 bg-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.08] bg-repeat pointer-events-none"
              style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 260px auto;"></div>
@@ -35,7 +35,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-14">
                 
-                <!-- VISI 2030 -->
+                
                 <div class="bg-gradient-to-br from-white to-slate-50 rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200 relative overflow-hidden flex flex-col justify-between">
                     <div class="absolute inset-0 opacity-[0.10] bg-repeat pointer-events-none"
                          style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 240px auto;"></div>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
 
-                <!-- MISI PROGRAM STUDI -->
+                
                 <div class="bg-gradient-to-br from-white to-slate-50 rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200 relative overflow-hidden flex flex-col justify-between">
                     <div class="absolute inset-0 opacity-[0.10] bg-repeat pointer-events-none"
                          style="background-image: url('{{ asset('images/corak-daun-gold.png') }}'); background-size: 240px auto;"></div>
@@ -122,7 +122,7 @@
 
             </div>
 
-            <!-- TUJUAN & NILAI KEJUANGAN -->
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
                 <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
                     <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg mb-3">
@@ -155,7 +155,7 @@
                 </div>
             </div>
 
-            <!-- Stats Bar -->
+            
             <div class="bg-[#0B2A4A] rounded-3xl p-8 text-white shadow-xl">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                     <div>
