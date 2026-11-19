@@ -94,6 +94,36 @@
                     <!-- Grid Berita Lainnya -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
+                        <!-- Berita: Workshop Penguatan Kurikulum OBE -->
+                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <span class="absolute top-3 left-3 bg-[#0070BA] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
+                                        Agenda Workshop
+                                    </span>
+                                </div>
+                                <div class="p-5">
+                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
+                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> Jum'at, 27 November 2026
+                                    </span>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Workshop Penguatan Kurikulum Teknik Sipil Berbasis Outcome-Based Education (OBE)
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Menghadirkan Dr. Eng. Ir. Halwan Alfisa Saifullah, ST., MT., IPU. (UNS) membahas penyelarasan kurikulum OBE, CPL, dan akreditasi internasional IABEE di Kampus 2 UNSIL.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">@sipilunsil</span>
+                                <a href="{{ route('berita.workshop-obe') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
                         <!-- Berita 2: National Bridge Design Competition SCIENCE -->
                         <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
@@ -232,6 +262,20 @@
                             </span>
                         </div>
                         <div class="space-y-4">
+                            <!-- Agenda Workshop OBE Unggulan -->
+                            <div class="p-3.5 rounded-xl bg-blue-50/80 border border-blue-200">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[10px] font-bold text-blue-700 block uppercase">27 November 2026</span>
+                                    <span class="text-[9px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Segera Hadir</span>
+                                </div>
+                                <h4 class="text-xs font-bold text-slate-900 mt-1">Workshop Kurikulum Berbasis OBE</h4>
+                                <p class="text-[11px] text-slate-600 mt-0.5">Narasumber: Dr. Eng. Ir. Halwan Alfisa S. (UNS) &bull; Kampus 2 UNSIL</p>
+                                <a href="{{ route('berita.workshop-obe') }}" class="inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 hover:text-blue-900 mt-2">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                </a>
+                            </div>
+
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
                                 <span class="text-[10px] font-bold text-blue-700 block uppercase">12 &ndash; 15 April 2026</span>
                                 <h4 class="text-xs font-bold text-slate-900 mt-0.5">Ujian Tengah Semester (UTS) Genap</h4>

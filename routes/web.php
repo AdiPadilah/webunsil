@@ -100,3 +100,7 @@ Route::get('/berita/pelepasan-calon-wisudawan-teknik-sipil', function () {
 Route::get('/berita/kuliah-tamu-bim-infrastruktur-modern', function () {
     return view('berita.kuliah-tamu-bim');
 })->name('berita.kuliah-tamu-bim');
+
+Route::get('/berita/workshop-penguatan-kurikulum-obe-2026', function () {
+    return view('berita.workshop-obe');
+})->name('berita.workshop-obe');

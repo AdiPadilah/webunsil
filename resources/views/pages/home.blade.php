@@ -337,29 +337,56 @@
                     
                     <!-- BLOK AGENDA -->
                     <div>
-                        <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight">
-                            Agenda
-                        </h2>
-                        
-                        <div class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full inline-block">
+                        <div class="flex items-center justify-between mb-4">
+                            <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight">
+                                Agenda
+                            </h2>
+                            <span class="text-[11px] font-bold text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                                 Segera Hadir
                             </span>
-                            <h4 class="text-xs font-bold text-slate-900 leading-snug">
-                                SCIENCE: National Bridge Design &amp; Concrete Competition
-                            </h4>
-                            <p class="text-[11px] text-slate-500">
-                                <i class="fa-solid fa-calendar-day text-blue-700 mr-1"></i> Rangkaian kegiatan tahunan HMS FT UNSIL
-                            </p>
                         </div>
-
-                        <div class="mt-4 flex flex-wrap gap-2">
-                            <a href="{{ route('mahasiswa-alumni') }}" class="inline-block bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-sm transition">
-                                Lihat Info Kegiatan
-                            </a>
-                            <a href="https://instagram.com/hmsftunsil" target="_blank" class="inline-flex items-center text-xs font-bold text-pink-700 bg-pink-50 hover:bg-pink-100 px-3 py-2 rounded-lg border border-pink-200 transition">
-                                <i class="fa-brands fa-instagram mr-1.5"></i> @hmsftunsil
-                            </a>
+                        
+                        <!-- Card Agenda dengan Foto Workshop OBE -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 group flex flex-col">
+                            <div class="relative overflow-hidden bg-slate-100">
+                                <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE Teknik Sipil UNSIL" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 left-3 bg-[#0B2A4A]/90 backdrop-blur-sm text-amber-400 border border-amber-400/40 text-[10px] font-bold px-2.5 py-1 rounded-lg shadow-md flex items-center gap-1">
+                                    <i class="fa-solid fa-calendar-day text-[9px]"></i> 27 Nov 2026
+                                </span>
+                            </div>
+                            <div class="p-4 space-y-3">
+                                <div>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md inline-block mb-1.5">
+                                        Workshop &amp; Kurikulum
+                                    </span>
+                                    <h4 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-blue-700 transition leading-snug">
+                                        Workshop Penguatan Kurikulum Teknik Sipil Berbasis Outcome-Based Education (OBE)
+                                    </h4>
+                                </div>
+                                <div class="text-[11px] text-slate-600 space-y-1.5 pt-1 border-t border-slate-100">
+                                    <p class="flex items-start gap-1.5">
+                                        <i class="fa-solid fa-user-tie text-blue-700 mt-0.5 flex-shrink-0"></i>
+                                        <span><strong>Narasumber:</strong> Dr. Eng. Ir. Halwan Alfisa S., ST., MT., IPU. (UNS)</span>
+                                    </p>
+                                    <p class="flex items-center gap-1.5">
+                                        <i class="fa-regular fa-clock text-amber-600 flex-shrink-0"></i>
+                                        <span>Jum'at, 27 Nov 2026 &bull; 08.00 WIB s.d. Selesai</span>
+                                    </p>
+                                    <p class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-location-dot text-rose-600 flex-shrink-0"></i>
+                                        <span>Kampus 2 Universitas Siliwangi</span>
+                                    </p>
+                                </div>
+                                <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+                                    <a href="{{ route('berita.workshop-obe') }}" class="inline-flex items-center gap-1.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold px-4 py-2 rounded-xl shadow-sm transition">
+                                        <span>Selengkapnya</span>
+                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </a>
+                                    <a href="https://instagram.com/sipilunsil" target="_blank" class="inline-flex items-center text-xs font-semibold text-pink-700 hover:underline gap-1">
+                                        <i class="fa-brands fa-instagram text-sm"></i> @sipilunsil
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
