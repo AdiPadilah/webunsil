@@ -86,90 +86,99 @@
         </div>
     </section>
 
-    {{-- Fokus Riset + PKM — dark navy bg --}}
-    <section class="py-16 bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] relative overflow-hidden">
-        <div class="absolute inset-0 opacity-[0.04] bg-repeat pointer-events-none"
-             style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 220px auto;"></div>
+    {{-- Fokus Riset + PKM — White / Light --}}
+    <section class="py-16 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Inovasi &amp; Bakti</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 font-heading">Riset &amp; Pengabdian Masyarakat</h2>
-                <div class="w-14 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Inovasi &amp; Bakti</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Riset &amp; Pengabdian Masyarakat</h2>
+                <div class="w-14 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-500 mt-3 text-sm leading-relaxed">Karya nyata penelitian dosen dan pengabdian sivitas akademika bagi masyarakat luas.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
                 {{-- Fokus Penelitian --}}
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl overflow-hidden">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Fokus Penelitian Dosen"
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/80 to-transparent"></div>
-                        <div class="absolute bottom-4 left-5">
-                            <span class="text-[10px] text-blue-300 font-bold uppercase tracking-wider">Inovasi Keilmuan</span>
-                            <h3 class="text-lg font-black text-white">Fokus Penelitian Dosen</h3>
+                <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Fokus Penelitian Dosen"
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/30 to-transparent"></div>
+                            <div class="absolute bottom-4 left-5">
+                                <span class="text-[10px] text-blue-300 font-bold uppercase tracking-wider">Inovasi Keilmuan</span>
+                                <h3 class="text-lg font-black text-white">Fokus Penelitian Dosen</h3>
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-7">
+                            <ul class="space-y-3.5 text-xs text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5 text-sm shrink-0"></i>
+                                    <span>Pemanfaatan fly ash dan geopolimer untuk beton berkelanjutan ramah lingkungan beremisi karbon rendah.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5 text-sm shrink-0"></i>
+                                    <span>Stabilisasi tanah lempung ekspansif dengan bahan tambah mineral lokal Priangan Timur untuk fondasi jalan dan lereng.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5 text-sm shrink-0"></i>
+                                    <span>Kajian kinerja campuran aspal panas daur ulang (Reclaimed Asphalt Pavement) untuk konstruksi jalan raya efisien.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-blue-600 mt-0.5 text-sm shrink-0"></i>
+                                    <span>Pemodelan hidraulik limpasan hujan dan tata kelola drainase perkotaan adaptif terhadap perubahan iklim.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <ul class="space-y-3 text-xs text-slate-300">
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-blue-400 mt-0.5 text-sm shrink-0"></i>
-                                <span>Pemanfaatan fly ash dan geopolimer untuk beton berkelanjutan ramah lingkungan beremisi karbon rendah.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-blue-400 mt-0.5 text-sm shrink-0"></i>
-                                <span>Stabilisasi tanah lempung ekspansif dengan bahan tambah mineral lokal Priangan Timur untuk fondasi jalan dan lereng.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-blue-400 mt-0.5 text-sm shrink-0"></i>
-                                <span>Kajian kinerja campuran aspal panas daur ulang (Reclaimed Asphalt Pavement) untuk konstruksi jalan raya efisien.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-blue-400 mt-0.5 text-sm shrink-0"></i>
-                                <span>Pemodelan hidraulik limpasan hujan dan tata kelola drainase perkotaan adaptif terhadap perubahan iklim.</span>
-                            </li>
-                        </ul>
-                        <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                            <span class="text-[11px] text-slate-400">Publikasi Riset Terindeks SINTA</span>
-                            <a href="{{ route('karya-dosen') }}" class="text-xs font-bold text-amber-400 hover:text-amber-300 transition">Lihat Karya Dosen &rarr;</a>
-                        </div>
+                    <div class="px-6 sm:px-7 pb-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-[11px] text-slate-500 font-medium">Publikasi Riset Terindeks SINTA</span>
+                        <a href="{{ route('karya-dosen') }}" class="text-xs font-bold text-blue-700 hover:text-blue-900 transition flex items-center gap-1.5">
+                            <span>Lihat Karya Dosen</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
                     </div>
                 </div>
 
                 {{-- PKM --}}
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl overflow-hidden">
-                    <div class="relative h-48 overflow-hidden">
-                        <img src="{{ asset('images/event-1.jpg') }}" alt="Pengabdian Kepada Masyarakat"
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/80 to-transparent"></div>
-                        <div class="absolute bottom-4 left-5">
-                            <span class="text-[10px] text-amber-300 font-bold uppercase tracking-wider">Bakti Masyarakat</span>
-                            <h3 class="text-lg font-black text-white">Pengabdian Kepada Masyarakat (PKM)</h3>
+                <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="{{ asset('images/event-1.jpg') }}" alt="Pengabdian Kepada Masyarakat"
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/30 to-transparent"></div>
+                            <div class="absolute bottom-4 left-5">
+                                <span class="text-[10px] text-amber-300 font-bold uppercase tracking-wider">Bakti Masyarakat</span>
+                                <h3 class="text-lg font-black text-white">Pengabdian Kepada Masyarakat (PKM)</h3>
+                            </div>
+                        </div>
+                        <div class="p-6 sm:p-7">
+                            <ul class="space-y-3.5 text-xs text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-0.5 text-sm shrink-0"></i>
+                                    <span>Pendampingan teknis pembangunan dan pemeliharaan sarana jembatan perintis dan jalan desa terisolir.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-0.5 text-sm shrink-0"></i>
+                                    <span>Sosialisasi dan pelatihan konstruksi rumah sederhana tahan gempa bagi tukang bangunan dan masyarakat pedesaan.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-0.5 text-sm shrink-0"></i>
+                                    <span>Perencanaan saluran drainase penanggulangan genangan air dan penataan sanitasi di kawasan pemukiman padat.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-amber-500 mt-0.5 text-sm shrink-0"></i>
+                                    <span>Edukasi mitigasi risiko tanah longsor bagi warga di perbukitan rawan bencana wilayah Tasikmalaya dan sekitarnya.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <ul class="space-y-3 text-xs text-slate-300">
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-sm shrink-0"></i>
-                                <span>Pendampingan teknis pembangunan dan pemeliharaan sarana jembatan perintis dan jalan desa terisolir.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-sm shrink-0"></i>
-                                <span>Sosialisasi dan pelatihan konstruksi rumah sederhana tahan gempa bagi tukang bangunan dan masyarakat pedesaan.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-sm shrink-0"></i>
-                                <span>Perencanaan saluran drainase penanggulangan genangan air dan penataan sanitasi di kawasan pemukiman padat.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-sm shrink-0"></i>
-                                <span>Edukasi mitigasi risiko tanah longsor bagi warga di perbukitan rawan bencana wilayah Tasikmalaya dan sekitarnya.</span>
-                            </li>
-                        </ul>
-                        <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                            <span class="text-[11px] text-slate-400">Bakti Nyata Sivitas Akademika UNSIL</span>
-                            <a href="{{ route('home') }}#lokasi" class="text-xs font-bold text-amber-400 hover:text-amber-300 transition">Lokasi Pengabdian &rarr;</a>
-                        </div>
+                    <div class="px-6 sm:px-7 pb-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-[11px] text-slate-500 font-medium">Bakti Nyata Sivitas Akademika UNSIL</span>
+                        <a href="{{ route('home') }}#lokasi" class="text-xs font-bold text-amber-600 hover:text-amber-700 transition flex items-center gap-1.5">
+                            <span>Lokasi Pengabdian</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
                     </div>
                 </div>
 
