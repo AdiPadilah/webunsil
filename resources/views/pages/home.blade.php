@@ -120,32 +120,32 @@
             
             {{-- Statistik Profil Teknik Sipil UNSIL (Kampus 2 Mugarsari) --}}
             <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-5">
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300">
+                <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-5 border border-white/15 text-center reveal hover:bg-white/[0.12] hover:border-amber-400/50 hover:shadow-lg transition-all duration-300">
                     <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="6">6</span>
                     <span class="block text-xs font-semibold text-slate-200 mt-1 uppercase tracking-wide">Laboratorium</span>
                     <span class="block text-[10px] text-slate-400 mt-0.5">Kampus 2 Mugarsari</span>
                 </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300">
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="18">18</span>
+                <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-5 border border-white/15 text-center reveal hover:bg-white/[0.12] hover:border-amber-400/50 hover:shadow-lg transition-all duration-300">
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="27">27</span>
                     <span class="block text-xs font-semibold text-slate-200 mt-1 uppercase tracking-wide">Dosen Tetap</span>
                     <span class="block text-[10px] text-slate-400 mt-0.5">Magister &amp; Doktor</span>
                 </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300">
+                <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-5 border border-white/15 text-center reveal hover:bg-white/[0.12] hover:border-amber-400/50 hover:shadow-lg transition-all duration-300">
                     <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="5">5</span>
                     <span class="block text-xs font-semibold text-slate-200 mt-1 uppercase tracking-wide">Bidang Keahlian</span>
                     <span class="block text-[10px] text-slate-400 mt-0.5">Fokus Kurikulum S-1</span>
                 </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300">
+                <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-5 border border-white/15 text-center reveal hover:bg-white/[0.12] hover:border-amber-400/50 hover:shadow-lg transition-all duration-300">
                     <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="1200">1.200</span>
                     <span class="block text-xs font-semibold text-slate-200 mt-1 uppercase tracking-wide">Mahasiswa Aktif</span>
                     <span class="block text-[10px] text-slate-400 mt-0.5">Sivitas Akademika</span>
                 </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300">
+                <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-5 border border-white/15 text-center reveal hover:bg-white/[0.12] hover:border-amber-400/50 hover:shadow-lg transition-all duration-300">
                     <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="3500">3.500</span>
                     <span class="block text-xs font-semibold text-slate-200 mt-1 uppercase tracking-wide">Alumni Lulus</span>
                     <span class="block text-[10px] text-slate-400 mt-0.5">Kiprah Nasional</span>
                 </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal hover:bg-white/10 hover:border-amber-400/40 transition-all duration-300">
+                <div class="bg-white/[0.07] backdrop-blur-sm rounded-2xl p-5 border border-white/15 text-center reveal hover:bg-white/[0.12] hover:border-amber-400/50 hover:shadow-lg transition-all duration-300">
                     <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="40">40</span>
                     <span class="block text-xs font-semibold text-slate-200 mt-1 uppercase tracking-wide">Tahun Dedikasi</span>
                     <span class="block text-[10px] text-slate-400 mt-0.5">Berdiri Sejak 1984</span>
