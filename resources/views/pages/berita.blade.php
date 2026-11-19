@@ -250,46 +250,135 @@
                 <!-- KOLOM KANAN: Sidebar -->
                 <aside class="lg:col-span-1 space-y-6">
 
-                    <!-- Box Agenda & Event Mendatang -->
+                    <!-- Box Agenda Kegiatan (Pemisahan: Mendatang & Telah Selesai) -->
                     <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                        <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
                             <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
-                                <i class="fa-solid fa-calendar-check text-[#0070BA]"></i>
-                                <span>Agenda Mendatang</span>
+                                <i class="fa-solid fa-calendar-days text-[#0070BA]"></i>
+                                <span>Agenda Kegiatan</span>
                             </h3>
                             <span class="text-[10px] font-semibold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">
-                                2026
+                                2026 &bull; 2027
                             </span>
                         </div>
-                        <div class="space-y-4">
-                            <!-- Agenda Workshop OBE Unggulan -->
-                            <div class="p-3.5 rounded-xl bg-blue-50/80 border border-blue-200">
+
+                        <!-- Tab Switcher: Mendatang vs Telah Selesai -->
+                        <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl mb-4 text-xs">
+                            <button type="button" onclick="switchAgendaTab('mendatang')" id="tab-btn-mendatang" class="flex-1 py-1.5 px-3 rounded-lg bg-white text-[#0070BA] shadow-sm font-bold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer">
+                                <i class="fa-solid fa-clock text-[#0070BA]"></i>
+                                <span>Mendatang</span>
+                                <span class="bg-blue-100 text-[#0070BA] text-[10px] px-1.5 py-0.2 rounded-full font-extrabold">2</span>
+                            </button>
+                            <button type="button" onclick="switchAgendaTab('selesai')" id="tab-btn-selesai" class="flex-1 py-1.5 px-3 rounded-lg text-slate-500 hover:text-slate-800 font-semibold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer">
+                                <i class="fa-solid fa-circle-check text-slate-400"></i>
+                                <span>Telah Selesai</span>
+                                <span class="bg-slate-200 text-slate-700 text-[10px] px-1.5 py-0.2 rounded-full font-extrabold">4</span>
+                            </button>
+                        </div>
+
+                        <!-- PANEL 1: AGENDA MENDATANG (Upcoming) -->
+                        <div id="panel-agenda-mendatang" class="space-y-3.5">
+                            <!-- Agenda Workshop OBE -->
+                            <div class="p-3.5 rounded-xl bg-blue-50/80 border border-blue-200 hover:shadow-sm transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-bold text-blue-700 block uppercase">27 November 2026</span>
                                     <span class="text-[9px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Segera Hadir</span>
                                 </div>
-                                <h4 class="text-xs font-bold text-slate-900 mt-1">Workshop Kurikulum Berbasis OBE</h4>
-                                <p class="text-[11px] text-slate-600 mt-0.5">Narasumber: Dr. Eng. Ir. Halwan Alfisa S. (UNS) &bull; Kampus 2 UNSIL</p>
+                                <h4 class="text-xs font-bold text-slate-900 mt-1 leading-snug">
+                                    Workshop Kurikulum Berbasis Outcome-Based Education (OBE)
+                                </h4>
+                                <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">
+                                    Narasumber: Dr. Eng. Ir. Halwan Alfisa S., ST., MT., IPU. (UNS) &bull; Kampus 2 UNSIL
+                                </p>
                                 <a href="{{ route('berita.workshop-obe') }}" class="inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 hover:text-blue-900 mt-2">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[9px]"></i>
                                 </a>
                             </div>
 
-                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-[10px] font-bold text-blue-700 block uppercase">12 &ndash; 15 April 2026</span>
-                                <h4 class="text-xs font-bold text-slate-900 mt-0.5">Ujian Tengah Semester (UTS) Genap</h4>
-                                <p class="text-[11px] text-slate-500 mt-1">Pelaksanaan UTS Genap T.A. 2025/2026 seluruh angkatan.</p>
+                            <!-- Agenda UAS Ganjil -->
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 hover:shadow-sm transition">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[10px] font-bold text-indigo-700 block uppercase">15 &ndash; 24 Desember 2026</span>
+                                    <span class="text-[9px] font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded-full">Mendatang</span>
+                                </div>
+                                <h4 class="text-xs font-bold text-slate-900 mt-1 leading-snug">
+                                    Ujian Akhir Semester (UAS) Ganjil T.A. 2026/2027
+                                </h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed">
+                                    Pelaksanaan evaluasi akhir semester seluruh mata kuliah keahlian teknik sipil.
+                                </p>
                             </div>
-                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-[10px] font-bold text-emerald-700 block uppercase">01 &ndash; 10 Mei 2026</span>
-                                <h4 class="text-xs font-bold text-slate-900 mt-0.5">Pendaftaran Seminar Proposal &amp; Sidang TA</h4>
-                                <p class="text-[11px] text-slate-500 mt-1">Verifikasi berkas persyaratan sidang skripsi periode kedua.</p>
+                        </div>
+
+                        <!-- PANEL 2: AGENDA TELAH SELESAI (Completed / Past) -->
+                        <div id="panel-agenda-selesai" class="hidden space-y-3">
+                            <!-- Selesai: Seminar Taiwan -->
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-90 hover:opacity-100 transition">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[10px] font-semibold text-slate-500 block uppercase">12 Oktober 2026</span>
+                                    <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                        <i class="fa-solid fa-check text-[8px]"></i> Selesai
+                                    </span>
+                                </div>
+                                <h4 class="text-xs font-bold text-slate-800 mt-1 leading-snug">
+                                    Seminar Internasional Indonesia - Taiwan (NCKU)
+                                </h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed">
+                                    Kuliah pakar gempa dan info beasiswa S2/S3 bersama Yanuar Haryanto, Ph.D.
+                                </p>
+                                <a href="{{ route('berita.seminar-taiwan') }}" class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-600 hover:text-blue-700 mt-1.5">
+                                    <span>Lihat Dokumentasi</span>
+                                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                </a>
                             </div>
-                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-[10px] font-bold text-purple-700 block uppercase">Juni 2026</span>
-                                <h4 class="text-xs font-bold text-slate-900 mt-0.5">Civil Expo &amp; Seminar Nasional 2026</h4>
-                                <p class="text-[11px] text-slate-500 mt-1">Pameran karya mahasiswa dan seminar nasional keteknikan.</p>
+
+                            <!-- Selesai: Civil Expo -->
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[10px] font-semibold text-slate-500 block uppercase">Juni 2026</span>
+                                    <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                        <i class="fa-solid fa-check text-[8px]"></i> Selesai
+                                    </span>
+                                </div>
+                                <h4 class="text-xs font-bold text-slate-800 mt-1 leading-snug">
+                                    Civil Expo &amp; Seminar Nasional 2026
+                                </h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed">
+                                    Pameran karya maket rekayasa mahasiswa dan seminar infrastruktur.
+                                </p>
+                            </div>
+
+                            <!-- Selesai: Sidang TA -->
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[10px] font-semibold text-slate-500 block uppercase">01 &ndash; 10 Mei 2026</span>
+                                    <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                        <i class="fa-solid fa-check text-[8px]"></i> Selesai
+                                    </span>
+                                </div>
+                                <h4 class="text-xs font-bold text-slate-800 mt-1 leading-snug">
+                                    Pendaftaran Seminar Proposal &amp; Sidang TA
+                                </h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed">
+                                    Verifikasi berkas persyaratan sidang skripsi periode kedua.
+                                </p>
+                            </div>
+
+                            <!-- Selesai: UTS Genap -->
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[10px] font-semibold text-slate-500 block uppercase">12 &ndash; 15 April 2026</span>
+                                    <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                        <i class="fa-solid fa-check text-[8px]"></i> Selesai
+                                    </span>
+                                </div>
+                                <h4 class="text-xs font-bold text-slate-800 mt-1 leading-snug">
+                                    Ujian Tengah Semester (UTS) Genap
+                                </h4>
+                                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed">
+                                    Pelaksanaan UTS Genap T.A. 2025/2026 seluruh angkatan.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -346,4 +435,29 @@
             </div>
         </div>
     </section>
+
+    @push('scripts')
+    <script>
+        function switchAgendaTab(tab) {
+            const pMendatang = document.getElementById('panel-agenda-mendatang');
+            const pSelesai = document.getElementById('panel-agenda-selesai');
+            const bMendatang = document.getElementById('tab-btn-mendatang');
+            const bSelesai = document.getElementById('tab-btn-selesai');
+
+            if (!pMendatang || !pSelesai) return;
+
+            if (tab === 'mendatang') {
+                pMendatang.classList.remove('hidden');
+                pSelesai.classList.add('hidden');
+                bMendatang.className = 'flex-1 py-1.5 px-3 rounded-lg bg-white text-[#0070BA] shadow-sm font-bold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer';
+                bSelesai.className = 'flex-1 py-1.5 px-3 rounded-lg text-slate-500 hover:text-slate-800 font-semibold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer';
+            } else {
+                pMendatang.classList.add('hidden');
+                pSelesai.classList.remove('hidden');
+                bMendatang.className = 'flex-1 py-1.5 px-3 rounded-lg text-slate-500 hover:text-slate-800 font-semibold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer';
+                bSelesai.className = 'flex-1 py-1.5 px-3 rounded-lg bg-white text-emerald-700 shadow-sm font-bold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer';
+            }
+        }
+    </script>
+    @endpush
 @endsection
