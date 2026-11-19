@@ -63,6 +63,35 @@
         <div class="absolute inset-0 opacity-25 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 16px;"></div>
     </div>
 
+    <!-- STATISTIK BAR (Di atas Profil Program Studi) -->
+    <div class="bg-[#0070BA] border-y border-blue-700 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
+             style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
+        <div class="absolute top-0 left-0 right-0 h-1 opacity-20 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 8px;"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-1 opacity-20 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 8px;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-9 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+                <div class="reveal">
+                    <span class="block text-3xl sm:text-4xl font-black counter-num" data-target="1200">0</span>
+                    <span class="block text-xs font-semibold text-blue-100 mt-1 uppercase tracking-wide">Mahasiswa Aktif</span>
+                </div>
+                <div class="reveal">
+                    <span class="block text-3xl sm:text-4xl font-black counter-num" data-target="18">0</span>
+                    <span class="block text-xs font-semibold text-blue-100 mt-1 uppercase tracking-wide">Dosen Aktif</span>
+                </div>
+                <div class="reveal">
+                    <span class="block text-3xl sm:text-4xl font-black counter-num" data-target="3500">0</span>
+                    <span class="block text-xs font-semibold text-blue-100 mt-1 uppercase tracking-wide">Alumni Lulus</span>
+                </div>
+                <div class="reveal">
+                    <span class="block text-3xl sm:text-4xl font-black counter-num" data-target="40">0</span>
+                    <span class="block text-xs font-semibold text-blue-100 mt-1 uppercase tracking-wide">Tahun Dedikasi (1984)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- 2. CUPLIKAN PROFIL & VISI MISI PROGRAM STUDI -->
     <section class="py-20 bg-[#0B2A4A] relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.035] bg-repeat pointer-events-none mix-blend-screen"
@@ -421,34 +450,6 @@
         </div>
     </section>
 
-    <!-- 4. STATISTIK BAR -->
-    <div class="bg-[#0070BA] border-y border-blue-700 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
-             style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
-        <div class="absolute top-0 left-0 right-0 h-1 opacity-20 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 8px;"></div>
-        <div class="absolute bottom-0 left-0 right-0 h-1 opacity-20 bg-repeat-x" style="background-image: url('{{ asset('images/corak-daun-white.png') }}'); background-size: auto 8px;"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-9 relative z-10">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
-                <div class="reveal">
-                    <span class="block text-3xl sm:text-4xl font-black counter-num" data-target="1200">0</span>
-                    <span class="block text-xs font-semibold text-blue-100 mt-1 uppercase tracking-wide">Mahasiswa Aktif</span>
-                </div>
-                <div class="reveal">
-                    <span class="block text-3xl sm:text-4xl font-black counter-num" data-target="18">0</span>
-                    <span class="block text-xs font-semibold text-blue-100 mt-1 uppercase tracking-wide">Dosen Aktif</span>
-                </div>
-                <div class="reveal">
-                    <span class="block text-3xl sm:text-4xl font-black counter-num" data-target="3500">0</span>
-                    <span class="block text-xs font-semibold text-blue-100 mt-1 uppercase tracking-wide">Alumni Lulus</span>
-                </div>
-                <div class="reveal">
-                    <span class="block text-3xl sm:text-4xl font-black counter-num" data-target="40">0</span>
-                    <span class="block text-xs font-semibold text-blue-100 mt-1 uppercase tracking-wide">Tahun Dedikasi (1984)</span>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- 5. LOKASI KAMPUS -->
     <section id="lokasi" class="bg-white relative overflow-hidden border-t border-slate-100">
