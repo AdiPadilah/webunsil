@@ -267,12 +267,12 @@ $dosenList = [
             <div id="dosen-grid" class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-7 mb-14">
                 @foreach($dosenList as $dosen)
                 <div class="dosen-item bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200 hover:border-blue-300 transition-all duration-300 flex flex-col group text-center hover:-translate-y-1" data-kbk="{{ $dosen['kbk'] }}">
-                    <!-- Foto Area (Bulat Sempurna Tanpa Terpotong) -->
+                    <!-- Foto Area (Bulat Presisi HD dengan Ring Frame Elegan) -->
                     <div class="pt-6 pb-2 px-4 bg-gradient-to-b from-slate-50/80 via-white to-white flex items-center justify-center relative">
-                        <div class="relative w-36 h-36 sm:w-40 sm:h-40 flex items-center justify-center">
-                            <img src="{{ asset('images/dosen/' . $dosen['slug'] . '.png') }}" 
+                        <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-white shadow-md ring-4 ring-slate-100 group-hover:ring-blue-400 group-hover:shadow-lg transition-all duration-300 flex items-center justify-center overflow-hidden">
+                            <img src="{{ asset('images/dosen/' . $dosen['slug'] . '.png') }}?v={{ @filemtime(public_path('images/dosen/' . $dosen['slug'] . '.png')) ?: 2 }}" 
                                  alt="{{ $dosen['nama'] }}" 
-                                 class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300 pointer-events-none" 
+                                 class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300 pointer-events-none" 
                                  loading="lazy">
                         </div>
                     </div>
