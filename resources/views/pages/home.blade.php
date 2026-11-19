@@ -7,22 +7,46 @@
     <!-- 1. HERO BERANDA -->
     <section id="beranda" class="hero-banner relative min-h-[560px] lg:min-h-[640px] flex items-center py-20 lg:py-28 border-b border-slate-800 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-            <div class="max-w-2xl lg:max-w-3xl space-y-4">
-                <span class="text-white/90 text-lg sm:text-xl font-medium tracking-wide block drop-shadow-md">
-                    Selamat datang di
+            <div class="max-w-2xl lg:max-w-3xl space-y-3.5">
+                <!-- Tagline Akreditasi & Jenjang -->
+                <div class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-400/25 via-amber-400/10 to-transparent border-l-4 border-amber-400 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-amber-300 backdrop-blur-sm">
+                    <i class="fa-solid fa-graduation-cap text-amber-400 text-xs"></i>
+                    <span>Program Sarjana (S-1) &bull; Akreditasi Baik LAM Teknik</span>
+                </div>
+
+                <span class="text-white/80 text-base sm:text-lg font-medium tracking-wide block drop-shadow-sm pt-1">
+                    Selamat datang di Website Resmi
                 </span>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white font-heading tracking-tight leading-tight drop-shadow-lg">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white font-heading tracking-tight leading-none drop-shadow-lg">
                     Program Studi<br><span class="text-amber-400">Teknik Sipil</span>
                 </h1>
 
-                <p class="text-xl sm:text-2xl text-slate-100 font-bold drop-shadow-md pb-1">
+                <p class="text-xl sm:text-2xl text-slate-100 font-bold drop-shadow-md">
                     Fakultas Teknik Universitas Siliwangi
                 </p>
 
-                <p class="text-slate-100 text-base sm:text-lg leading-relaxed text-justify sm:text-left font-normal pt-2 drop-shadow-md max-w-2xl">
-                    Program Studi Teknik Sipil UNSIL berkomitmen pada keunggulan dalam pendidikan, penelitian, dan inovasi di bidang teknik sipil. Kami menghasilkan lulusan profesional, kompeten, dan berintegritas yang siap menghadapi tantangan dunia kerja serta berkontribusi dalam pembangunan infrastruktur yang berkelanjutan.
+                <div class="w-20 h-1 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full"></div>
+
+                <p class="text-slate-100 text-base sm:text-lg leading-relaxed text-justify sm:text-left font-normal drop-shadow-md max-w-2xl pt-1">
+                    Pusat keunggulan pendidikan, riset, dan rekayasa keteknikan di bidang struktur, geoteknik, sumber daya air, transportasi, serta manajemen konstruksi. Berkomitmen menghasilkan sarjana teknik sipil profesional, adaptif, dan berdaya saing global untuk mendukung pembangunan infrastruktur nasional yang berkelanjutan.
                 </p>
+
+                <!-- Poin Keunggulan / Informasi Ringkas -->
+                <div class="pt-4 border-t border-white/15 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl text-xs text-slate-200">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-amber-400 text-sm flex-shrink-0"></i>
+                        <span>Kurikulum OBE <strong>144 SKS</strong></span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-amber-400 text-sm flex-shrink-0"></i>
+                        <span><strong>6 Laboratorium</strong> Kejuruan</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-amber-400 text-sm flex-shrink-0"></i>
+                        <span>Kampus 2 <strong>Mugarsari</strong></span>
+                    </div>
+                </div>
 
             </div>
         </div>
