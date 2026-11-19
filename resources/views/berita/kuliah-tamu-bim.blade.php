@@ -11,7 +11,7 @@
                 <i class="fa-solid fa-house text-[10px]"></i> Beranda
             </a>
             <i class="fa-solid fa-chevron-right text-[9px]"></i>
-            <a href="{{ route('berita.index') }}" class="hover:text-blue-700 transition">Berita</a>
+            <a href="{{ route('berita.index') }}" class="hover:text-blue-700 transition">Berita &amp; Informasi</a>
             <i class="fa-solid fa-chevron-right text-[9px]"></i>
             <span class="text-slate-800 font-semibold truncate">Kuliah Tamu BIM Infrastruktur</span>
         </div>

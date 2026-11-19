@@ -376,9 +376,17 @@
 
                     <!-- BLOK INFORMASI / BERITA RESMI -->
                     <div>
-                        <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight mb-5">
-                            Informasi &amp; Berita
-                        </h2>
+                        <div class="flex items-center justify-between mb-5">
+                            <h2 class="text-3xl sm:text-4xl font-bold text-[#154c79] font-heading tracking-tight">
+                                <a href="{{ route('berita.index') }}" class="hover:text-blue-700 transition" title="Buka Portal Berita &amp; Informasi">
+                                    Informasi &amp; Berita
+                                </a>
+                            </h2>
+                            <a href="{{ route('berita.index') }}" class="text-xs font-bold text-[#0070BA] hover:underline flex items-center gap-1">
+                                <span>Semua Berita</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
 
                         <div class="space-y-5">
                             <!-- Berita 1: Seminar Internasional Taiwan -->

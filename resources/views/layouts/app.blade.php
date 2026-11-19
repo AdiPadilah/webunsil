@@ -110,6 +110,7 @@
                     <a href="{{ route('riset') }}" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg transition whitespace-nowrap {{ request()->routeIs('riset') ? 'active-nav text-amber-400' : '' }}">Riset dan Kolaborasi</a>
                     <a href="{{ route('karya-dosen') }}" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg transition whitespace-nowrap {{ request()->routeIs('karya-dosen') ? 'active-nav text-amber-400' : '' }}">Karya Dosen</a>
                     <a href="{{ route('mahasiswa-alumni') }}" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg transition whitespace-nowrap {{ request()->routeIs('mahasiswa-alumni') ? 'active-nav text-amber-400' : '' }}">Mahasiswa dan Alumni</a>
+                    <a href="{{ route('berita.index') }}" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg transition whitespace-nowrap {{ request()->routeIs('berita.*') ? 'active-nav text-amber-400' : '' }}">Berita</a>
                 </nav>
 
                 <!-- Search & Language Widget (Fungsional) -->
@@ -148,7 +149,8 @@
             <a href="{{ route('fasilitas') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('fasilitas') ? 'text-amber-400 font-bold' : '' }}">Fasilitas</a>
             <a href="{{ route('riset') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('riset') ? 'text-amber-400 font-bold' : '' }}">Riset dan Kolaborasi</a>
             <a href="{{ route('karya-dosen') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('karya-dosen') ? 'text-amber-400 font-bold' : '' }}">Karya Dosen</a>
-            <a href="{{ route('mahasiswa-alumni') }}" class="nav-link block py-2 hover:text-amber-400 {{ request()->routeIs('mahasiswa-alumni') ? 'text-amber-400 font-bold' : '' }}">Mahasiswa dan Alumni</a>
+            <a href="{{ route('mahasiswa-alumni') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('mahasiswa-alumni') ? 'text-amber-400 font-bold' : '' }}">Mahasiswa dan Alumni</a>
+            <a href="{{ route('berita.index') }}" class="nav-link block py-2 hover:text-amber-400 {{ request()->routeIs('berita.*') ? 'text-amber-400 font-bold' : '' }}">Berita &amp; Informasi</a>
         </div>
     </header>
 
@@ -228,6 +230,7 @@
                         <a href="{{ route('riset') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Riset</a>
                         <a href="{{ route('karya-dosen') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Karya</a>
                         <a href="{{ route('mahasiswa-alumni') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Mahasiswa</a>
+                        <a href="{{ route('berita.index') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Berita &amp; Informasi</a>
                     </div>
                 </div>
             </div>

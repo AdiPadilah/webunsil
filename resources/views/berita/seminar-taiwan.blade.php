@@ -11,7 +11,7 @@
                 <i class="fa-solid fa-house text-[10px]"></i> Beranda
             </a>
             <i class="fa-solid fa-chevron-right text-[9px]"></i>
-            <a href="{{ route('home') }}#informasi" class="hover:text-blue-700 transition">Informasi</a>
+            <a href="{{ route('berita.index') }}" class="hover:text-blue-700 transition">Berita &amp; Informasi</a>
             <i class="fa-solid fa-chevron-right text-[9px]"></i>
             <span class="text-slate-800 font-semibold truncate">Seminar Internasional Indonesia-Taiwan 2026</span>
         </div>
@@ -111,8 +111,11 @@
                            class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xs font-bold px-4 py-2 rounded-full hover:opacity-90 transition">
                             <i class="fa-brands fa-instagram"></i> @sipilunsil
                         </a>
+                        <a href="{{ route('berita.index') }}" class="inline-flex items-center gap-2 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold px-4 py-2 rounded-full transition">
+                            <i class="fa-solid fa-newspaper"></i> Kembali ke Berita
+                        </a>
                         <a href="{{ route('home') }}" class="inline-flex items-center gap-2 bg-[#0B2A4A] text-white text-xs font-bold px-4 py-2 rounded-full hover:opacity-90 transition">
-                            <i class="fa-solid fa-house"></i> Kembali ke Beranda
+                            <i class="fa-solid fa-house"></i> Beranda
                         </a>
                     </div>
                 </article>

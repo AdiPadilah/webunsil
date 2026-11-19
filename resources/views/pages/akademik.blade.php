@@ -177,8 +177,8 @@
 
                         <!-- Tombol Biru di Bawah Sidebar Persis Gaya ITS (Label: Informasi >) -->
                         <div class="pt-3">
-                            <a href="{{ route('layanan') }}" class="block w-full py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold text-center rounded-xl transition shadow-sm hover:shadow flex items-center justify-center gap-2">
-                                <span>Informasi</span>
+                            <a href="{{ route('berita.index') }}" class="block w-full py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold text-center rounded-xl transition shadow-sm hover:shadow flex items-center justify-center gap-2">
+                                <span>Semua Berita &amp; Informasi</span>
                                 <i class="fa-solid fa-chevron-right text-[10px]"></i>
                             </a>
                         </div>
