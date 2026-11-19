@@ -232,7 +232,7 @@
 
                             <!-- Card 3: Prestasi Mahasiswa -->
                             <div class="relative rounded-2xl overflow-hidden shadow-md group h-96 flex flex-col justify-end p-5 bg-slate-900">
-                                <img src="{{ asset('images/event-2.jpg') }}" alt="Prestasi Mahasiswa" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=600'">
+                                <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-[#0c2f52]/95 via-[#0c2f52]/65 to-transparent"></div>
                                 <h3 class="relative z-10 text-base font-bold text-white leading-tight">
                                     Prestasi Mahasiswa
@@ -240,7 +240,7 @@
                                 <p class="relative z-10 text-xs text-slate-200 mt-2 line-clamp-3 leading-relaxed font-normal">
                                     Prestasi dan capaian membanggakan mahasiswa Teknik Sipil Universitas Siliwangi di tingkat nasional dan regional.
                                 </p>
-                                <a href="{{ route('mahasiswa-alumni') }}" class="relative z-10 inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs px-5 py-2 rounded-lg shadow-md mt-4 transition text-center w-fit">
+                                <a href="{{ route('prestasi-mahasiswa') }}" class="relative z-10 inline-block bg-white hover:bg-slate-100 text-slate-900 font-bold text-xs px-5 py-2 rounded-lg shadow-md mt-4 transition text-center w-fit">
                                     Selengkapnya
                                 </a>
                             </div>

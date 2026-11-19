@@ -45,6 +45,11 @@ Route::get('/kurikulum', function () {
     return view('pages.kurikulum');
 })->name('kurikulum');
 
+// Prestasi Mahasiswa
+Route::get('/prestasi-mahasiswa', function () {
+    return view('pages.prestasi-mahasiswa');
+})->name('prestasi-mahasiswa');
+
 // 6. Layanan Terpadu
 Route::get('/layanan', function () {
     return view('pages.layanan');
