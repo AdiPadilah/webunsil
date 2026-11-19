@@ -100,76 +100,6 @@
                 <div class="lg:col-span-2 space-y-6">
 
                     
-                    <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="internasional">
-                        
-                        <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
-                            <img src="{{ asset('images/trophy-adpi.jpg') }}" alt="UNSIL Raih Dua Penghargaan Bergengsi ADPI Global Award" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
-                            
-                            
-                            <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
-                                <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">16</span>
-                                <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">NOV</span>
-                                <span class="block text-[8px] text-slate-400 leading-none">2026</span>
-                            </div>
-
-                            
-                            <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
-                                <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-md">
-                                    <i class="fa-solid fa-award text-xs"></i> ICORAD &amp; ADPI Global Award
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-                            <div>
-                                <div class="flex flex-wrap items-center gap-2 mb-2.5">
-                                    <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">
-                                        <i class="fa-solid fa-earth-americas text-[9px]"></i> Tingkat Internasional
-                                    </span>
-                                    <span class="text-[10px] text-slate-400 font-medium">Pengabdian &amp; Riset Terapan</span>
-                                </div>
-
-                                <h2 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-700 transition leading-snug font-heading">
-                                    UNSIL Raih Dua Penghargaan Bergengsi ADPI Global Award 2025 dan ICORAD Award 2026
-                                </h2>
-
-                                
-                                <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Kapan:</strong> 14 &ndash; 16 November 2026</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-location-dot text-rose-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Dimana:</strong> Jakarta &bull; Hotel Aryaduta Convention</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-shapes text-blue-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Jenis:</strong> ADPI Global Award &amp; ICORAD Inovasi Infrastruktur Tepat Guna</span>
-                                    </p>
-                                </div>
-
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Humas UNSIL &mdash; Universitas Siliwangi (UNSIL) melalui kolaborasi dosen dan mahasiswa Teknik Sipil berhasil menorehkan prestasi membanggakan dengan meraih dua penghargaan sekaligus dalam ajang konferensi internasional pengabdian dan inovasi rekayasa masyarakat.
-                                </p>
-                            </div>
-
-                            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-users text-blue-600"></i>
-                                    <strong>Tim:</strong> Mahasiswa Kolaborasi Riset LPPM
-                                </span>
-                                <span class="text-[11px] text-blue-700 font-bold group-hover:translate-x-0.5 transition flex items-center gap-1">
-                                    <span>Prestasi Unggulan</span>
-                                    <i class="fa-solid fa-chevron-right text-[9px]"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    
                     <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="struktur">
                         
                         <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
@@ -548,24 +478,6 @@
 
                         
                         <div class="space-y-4">
-                            
-                            <div class="flex items-start gap-3 group cursor-pointer pb-3 border-b border-slate-100">
-                                <div class="relative w-16 h-16 rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">
-                                    <img src="{{ asset('images/trophy-adpi.jpg') }}" alt="ADPI Award" class="w-full h-full object-cover group-hover:scale-105 transition">
-                                    <div class="absolute inset-0 bg-slate-900/40"></div>
-                                    <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-                                        <span class="text-xs font-black text-amber-400 leading-none">16</span>
-                                        <span class="text-[8px] font-bold uppercase">Nov</span>
-                                    </div>
-                                </div>
-                                <div class="flex-1">
-                                    <h4 class="text-xs font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
-                                        UNSIL Raih Dua Penghargaan Bergengsi ADPI Global Award &amp; ICORAD Award
-                                    </h4>
-                                    <span class="text-[10px] text-slate-400 mt-1 block">Tingkat Internasional</span>
-                                </div>
-                            </div>
-
                             
                             <div class="flex items-start gap-3 group cursor-pointer pb-3 border-b border-slate-100">
                                 <div class="relative w-16 h-16 rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">
