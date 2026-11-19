@@ -63,36 +63,6 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-amber-500 selection:text-white flex flex-col min-h-screen">
 
-    <!-- Topbar Berfungsi Penuh (Akreditasi Modal, Lokasi Google Maps, Email, Portal UNSIL) -->
-    <div class="bg-[#071c32] text-slate-300 text-[11px] py-1.5 border-b border-blue-950/80 hidden sm:block">
-        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <button type="button" onclick="openModal('modal-akreditasi-top')" class="flex items-center gap-1.5 hover:text-amber-300 transition cursor-pointer text-left group" title="Klik untuk melihat detail Sertifikat Akreditasi LAM Teknik">
-                    <i class="fa-solid fa-graduation-cap text-amber-400 group-hover:scale-110 transition-transform"></i>
-                    <span class="underline decoration-dotted decoration-amber-400/50 underline-offset-2">Akreditasi BAIK &bull; LAM Teknik</span>
-                    <i class="fa-solid fa-circle-info text-[9px] text-amber-400/70"></i>
-                </button>
-                <span class="text-slate-600">|</span>
-                <a href="https://maps.app.goo.gl/szSbqfg9FWsZnMc67" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:text-amber-300 transition cursor-pointer group" title="Buka Lokasi Kampus 2 di Google Maps">
-                    <i class="fa-solid fa-location-dot text-amber-400 group-hover:scale-110 transition-transform"></i>
-                    <span>Kampus 2 UNSIL Mugarsari, Tasikmalaya</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-slate-500 group-hover:text-amber-300"></i>
-                </a>
-            </div>
-            <div class="flex items-center space-x-3">
-                <a href="mailto:sipil@unsil.ac.id" class="hover:text-amber-300 transition flex items-center gap-1.5" title="Kirim Email ke sipil@unsil.ac.id">
-                    <i class="fa-solid fa-envelope text-[10px] text-amber-400"></i>
-                    <span>sipil@unsil.ac.id</span>
-                </a>
-                <span class="text-slate-600">|</span>
-                <a href="https://unsil.ac.id" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition flex items-center gap-1" title="Kunjungi Portal Resmi Universitas Siliwangi">
-                    <span>Portal UNSIL</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-slate-500"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
     <!-- Main Navigation Header (Deep Navy Style - Layout Asli) -->
     <header class="bg-unsil-nav sticky top-0 z-50 shadow-md border-b border-blue-950">
         <div class="max-w-[1440px] mx-auto px-4 sm:px-6">
