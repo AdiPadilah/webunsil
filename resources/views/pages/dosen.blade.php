@@ -34,15 +34,6 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
-            <div class="text-center max-w-3xl mx-auto mb-10">
-                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Kualifikasi Akademik</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Staf Pengajar &amp; Tenaga Pendidik</h2>
-                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-600 mt-3 text-sm leading-relaxed">
-                    Dosen-dosen Program Studi S-1 Teknik Sipil FT UNSIL terdistribusi ke dalam 5 Kelompok Bidang Keahlian (KBK) untuk mendukung tridharma perguruan tinggi dan bimbingan akademik mahasiswa.
-                </p>
-            </div>
-
             <!-- Tab Filter 5 Bidang Keahlian (Sesuai Tata Letak DTSI UGM) -->
             <div class="max-w-6xl mx-auto mb-10">
                 <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 p-2 bg-slate-100/90 rounded-2xl border border-slate-200 shadow-inner">
