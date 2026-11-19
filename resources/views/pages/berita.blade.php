@@ -274,6 +274,156 @@
                             </div>
                         </article>
 
+                        <!-- Berita 7: Fahmi Rahmat — Mahasiswa Ajaib Scopus Q1 (unsil.ac.id) -->
+                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat Amanulloh Mahasiswa Teknik Sipil UNSIL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
+                                        Liputan unsil.ac.id
+                                    </span>
+                                </div>
+                                <div class="p-5">
+                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
+                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 23 Oktober 2025
+                                    </span>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        "Mahasiswa Ajaib" dari UNSIL: Fahmi Rahmat Amanulloh Tembus 3 Jurnal Scopus &amp; 2 Nasional di Semester 7
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Mahasiswa semester 7 Teknik Sipil UNSIL ini mencetak rekor dengan 5 publikasi ilmiah sebelum lulus — termasuk Scopus Q1 di Journal of Natural Hazards Research.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Prestasi Riset &bull; unsil.ac.id</span>
+                                <a href="{{ route('berita.fahmi-rahmat') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Berita 8: Muhammad Raka — Lulusan Scopus (unsil.ac.id) -->
+                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka El Ghifari Lulusan Teknik Sipil UNSIL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
+                                        Liputan unsil.ac.id
+                                    </span>
+                                </div>
+                                <div class="p-5">
+                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
+                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 22 Agustus 2025
+                                    </span>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Lulusan Teknik Sipil UNSIL Taklukkan Dua Jurnal Internasional Bereputasi Scopus: Muhammad Raka El Ghifari
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Putra Garut kelahiran 2003 ini membuktikan bahwa mimpi besar bisa lahir dari kampus daerah dengan dua publikasi Scopus dan satu artikel Sinta sebelum wisuda.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Prestasi Riset &bull; unsil.ac.id</span>
+                                <a href="{{ route('berita.muhammad-raka') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Berita 9: Tim Tirta Adhipermana — Juara 1 NPC 2023 (unsil.ac.id) -->
+                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 NPC 2023" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <span class="absolute top-3 left-3 bg-pink-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
+                                        Liputan unsil.ac.id
+                                    </span>
+                                </div>
+                                <div class="p-5">
+                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
+                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 9 November 2023
+                                    </span>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1 National Paper Competition 2023 di Aceh
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Menyisihkan 81 peserta dari seluruh Indonesia dalam AISCE 2023, tim ini membawa topik inovatif sumur artesis sebagai solusi krisis air bersih pasca-gempa bumi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Prestasi Kompetisi &bull; unsil.ac.id</span>
+                                <a href="{{ route('berita.tirta-adhipermana') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Berita 10: HATHI FGD Segara Anakan (unsil.ac.id) -->
+                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="HATHI FGD Sedimentasi Segara Anakan Teknik Sipil UNSIL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <span class="absolute top-3 left-3 bg-cyan-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
+                                        Liputan unsil.ac.id
+                                    </span>
+                                </div>
+                                <div class="p-5">
+                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
+                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 22 Maret 2024
+                                    </span>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Pelantikan HATHI Cabang Banjar &amp; FGD Penanganan Sedimentasi Segara Anakan bersama Teknik Sipil UNSIL
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        BBWS Citanduy berkolaborasi dengan Jurusan Teknik Sipil UNSIL dalam FGD bertema Sedimentasi Laguna Segara Anakan, memperingati Hari Air Dunia ke-32.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Kolaborasi &bull; unsil.ac.id</span>
+                                <a href="{{ route('berita.hathi-segara-anakan') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Berita 11: Seminar Nasional Perdana HATHI Sumber Daya Air (unsil.ac.id) -->
+                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar Nasional HATHI Sumber Daya Air Berkelanjutan 2024" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <span class="absolute top-3 left-3 bg-blue-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
+                                        Liputan unsil.ac.id
+                                    </span>
+                                </div>
+                                <div class="p-5">
+                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
+                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 3 Juni 2024
+                                    </span>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Seminar Nasional Perdana HATHI: Pemanfaatan Teknologi Modern untuk Pengelolaan Sumber Daya Air Berkelanjutan
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        HATHI Cabang Banjar bersama Jurusan Teknik Sipil UNSIL menyelenggarakan seminar nasional perdana yang mempertemukan pakar, akademisi, dan pemangku kebijakan sumber daya air.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Seminar &bull; unsil.ac.id</span>
+                                <a href="{{ route('berita.seminar-hathi-air') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
                     </div>
                 </div>
 

@@ -113,3 +113,24 @@ Route::get('/berita/kuliah-tamu-bim-infrastruktur-modern', function () {
 Route::get('/berita/workshop-penguatan-kurikulum-obe-2026', function () {
     return view('berita.workshop-obe');
 })->name('berita.workshop-obe');
+
+// Berita dari unsil.ac.id — Teknik Sipil
+Route::get('/berita/fahmi-rahmat-el-ghifari-teknik-sipil-scopus', function () {
+    return view('berita.fahmi-rahmat');
+})->name('berita.fahmi-rahmat');
+
+Route::get('/berita/muhammad-raka-el-ghifari-lulusan-scopus-teknik-sipil-unsil', function () {
+    return view('berita.muhammad-raka');
+})->name('berita.muhammad-raka');
+
+Route::get('/berita/tim-tirta-adhipermana-juara-1-national-paper-competition-2023', function () {
+    return view('berita.tirta-adhipermana');
+})->name('berita.tirta-adhipermana');
+
+Route::get('/berita/hathi-fgd-sedimentasi-segara-anakan-teknik-sipil-unsil-2024', function () {
+    return view('berita.hathi-segara-anakan');
+})->name('berita.hathi-segara-anakan');
+
+Route::get('/berita/seminar-nasional-hathi-sumber-daya-air-berkelanjutan-2024', function () {
+    return view('berita.seminar-hathi-air');
+})->name('berita.seminar-hathi-air');
