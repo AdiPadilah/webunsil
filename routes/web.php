@@ -94,6 +94,10 @@ Route::get('/berita/kompetisi-jembatan-nasional-science-2026', function () {
     return view('berita.kompetisi-jembatan');
 })->name('berita.kompetisi-jembatan');
 
+Route::get('/berita/seminar-nasional-science-2026-jalan-tol-berkelanjutan', function () {
+    return view('berita.seminar-jalan-tol');
+})->name('berita.seminar-jalan-tol');
+
 Route::get('/berita/kunjungan-ilmiah-bendungan-leuwikeris', function () {
     return view('berita.kunjungan-leuwikeris');
 })->name('berita.kunjungan-leuwikeris');

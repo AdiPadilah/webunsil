@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Kunjungan Ilmiah Proyek Bendungan Leuwikeris | Teknik Sipil UNSIL')
-@section('meta_description', 'Studi lapangan mahasiswa dan dosen Teknik Sipil Universitas Siliwangi ke Proyek Strategis Nasional Bendungan Leuwikeris bersama Balai Besar Wilayah Sungai (BBWS) Citanduy.')
+@section('title', 'Kunjungan Ilmiah Bendungan Leuwikeris HMS UNSIL | Teknik Sipil UNSIL')
+@section('meta_description', 'Himpunan Mahasiswa Sipil Universitas Siliwangi perluas wawasan keteknikan melalui kunjungan ilmiah ke Bendungan Leuwikeris dalam rangkaian SCIENCE 2026.')
 
 @section('content')
     <!-- Breadcrumb Header -->
@@ -29,51 +29,55 @@
                             <span class="inline-flex items-center gap-1 bg-cyan-700 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                                 <i class="fa-solid fa-water text-[9px]"></i> Sumber Daya Air
                             </span>
-                            <span class="inline-flex items-center gap-1 bg-slate-200 text-slate-700 text-[10px] font-semibold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-calendar text-[9px]"></i> 18 November 2025
+                            <span class="inline-flex items-center gap-1 bg-amber-100 text-amber-800 text-[10px] font-bold px-3 py-1 rounded-full">
+                                <i class="fa-solid fa-calendar text-[9px]"></i> 23 Oktober 2026
                             </span>
                             <span class="inline-flex items-center gap-1 bg-slate-200 text-slate-700 text-[10px] font-semibold px-3 py-1 rounded-full">
                                 <i class="fa-solid fa-location-dot text-[9px]"></i> Bendungan Leuwikeris, Tasikmalaya - Ciamis
                             </span>
                         </div>
                         <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-heading leading-tight">
-                            Kunjungan Ilmiah ke Proyek Strategis Bendungan Leuwikeris bersama BBWS Citanduy
+                            Himpunan Mahasiswa Sipil Universitas Siliwangi Perluas Wawasan Keteknikan melalui Kunjungan Ilmiah ke Bendungan Leuwikeris
                         </h1>
                         <p class="text-sm text-slate-500 mt-3">
-                            Ditulis oleh <strong class="text-slate-700">KBK Keairan &amp; Sumber Daya Air FT UNSIL</strong> &bull; Sumber: <a href="https://instagram.com/sipilunsil" target="_blank" class="text-pink-600 font-semibold hover:underline">@sipilunsil</a>
+                            Ditulis oleh <strong class="text-slate-700">Humas UNSIL</strong> &bull; Sumber: <a href="https://unsil.ac.id/2026/10/23/himpunan-mahasiswa-sipil-universitas-siliwangi-perluas-wawasan-keteknikan-melalui-kunjungan-ilmiah-ke-bendungan-leuwikeris/" target="_blank" class="text-blue-700 font-semibold hover:underline">unsil.ac.id</a>
                         </p>
                     </div>
 
                     <figure class="mb-8 rounded-2xl overflow-hidden shadow-lg border border-slate-200">
-                        <img src="{{ asset('images/event-1.jpg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full object-cover" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
+                        <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Ilmiah Mahasiswa Teknik Sipil ke Bendungan Leuwikeris" class="w-full object-cover">
                         <figcaption class="bg-slate-100 text-slate-600 text-xs px-4 py-2.5 leading-relaxed">
-                            Rombongan mahasiswa dan dosen Teknik Sipil FT UNSIL bersama tim satuan kerja BBWS Citanduy saat meninjau langsung area spillway dan tubuh bendungan Leuwikeris.
+                            Rombongan Himpunan Mahasiswa Sipil (HMS) dan dosen Teknik Sipil Universitas Siliwangi berfoto bersama di area puncak Bendungan Leuwikeris didampingi tim Unit Pengelola Bendungan (UPB) Leuwikeris.
                         </figcaption>
                     </figure>
 
                     <div class="prose prose-sm max-w-none text-slate-700 leading-relaxed space-y-5">
                         <p class="text-base font-medium text-slate-900 leading-relaxed">
-                            <strong>TASIKMALAYA</strong> &mdash; Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi menyelenggarakan kegiatan <em>field study</em> dan kunjungan ilmiah mahasiswa mata kuliah Rekayasa Bangunan Air dan Hidrologi ke Proyek Strategis Nasional (PSN) <strong>Bendungan Leuwikeris</strong>.
+                            <strong>Humas UNSIL</strong> &mdash; Himpunan Mahasiswa Sipil (HMS) Universitas Siliwangi melaksanakan Kunjungan Ilmiah ke Bendungan Leuwikeris pada Kamis (22/10/2026). Kegiatan ini merupakan bagian dari rangkaian Siliwangi Civil Engineering Creativity (SCIENCE) 2026 yang bertujuan memperluas wawasan mahasiswa melalui pembelajaran langsung mengenai konstruksi dan pengelolaan infrastruktur sumber daya air.
                         </p>
 
                         <p>
-                            Kunjungan ini bertujuan untuk menyelaraskan teori perkuliahan perancangan hidraulika, stabilitas lereng bendungan urugan, dan manajemen sumber daya air dengan kondisi nyata di proyek lapangan berskala besar. Rombongan diterima secara resmi oleh pihak Balai Besar Wilayah Sungai (BBWS) Citanduy Kementerian PUPR.
-                        </p>
-
-                        <h3 class="text-lg font-bold text-slate-900 mt-6 mb-2">Peninjauan Teknis dan Diskusi Bersama Ahli</h3>
-                        <p>
-                            Para mahasiswa berkesempatan mendengarkan pemaparan mendalam dari para insinyur pelaksana mengenai sistem instrumentasi bendungan, pemantauan rembesan (seepage monitoring), konstruksi terowongan pengelak (diversion tunnel), serta fungsi multi-guna bendungan untuk suplai air baku, irigasi 11.200 hektar, dan reduksi banjir di wilayah hilir Sungai Citanduy.
+                            Kunjungan tersebut disambut oleh Kepala Unit Pengelola Bendungan (UPB) Leuwikeris, <strong>Soni Senjaya Efendi, S.T., M.T.</strong>, beserta jajaran. Turut hadir perwakilan dosen Teknik Sipil Universitas Siliwangi, yakni Galih Rahmat Jatnika, S.T., M.T.; Raden Roro Dita Arviananda, S.Pd., M.Eng.; Muhamad Anugerah Ramadhan, S.T., M.T.; dan Kartika Seinari Manggala, S.T., M.T. Kegiatan ini juga dihadiri oleh Ketua Pelaksana, Restu Ramadhan, Ketua HMS, Muhammad Naufal Alwan, serta panitia dan peserta mahasiswa.
                         </p>
 
                         <div class="p-5 bg-cyan-50 border-l-4 border-cyan-700 rounded-r-xl my-6">
                             <p class="text-sm font-semibold text-cyan-950 italic">
-                                "Pengalaman melihat langsung rekayasa geoteknik dan konstruksi hidrolika di lapangan memberikan pemahaman komprehensif bagi calon sarjana teknik sipil UNSIL yang tidak dapat digantikan hanya dengan pembelajaran kelas."
+                                "Melalui Kunjungan Ilmiah dalam rangka SCIENCE 2026 ini, mahasiswa diharapkan mampu menghubungkan teori perkuliahan dengan praktik keteknikan secara nyata, khususnya dalam aspek konstruksi, pemantauan deformasi, keamanan, dan pengelolaan bendungan modern."
                             </p>
-                            <span class="text-xs text-cyan-800 font-bold block mt-2">&mdash; Dosen Pengampu Mata Kuliah Rekayasa Keairan FT UNSIL</span>
+                            <span class="text-xs text-cyan-800 font-bold block mt-2">&mdash; Tim Dosen Pembimbing Teknik Sipil FT UNSIL</span>
                         </div>
 
+                        <h3 class="text-lg font-bold text-slate-900 mt-6 mb-2">Pemaparan Teknis &amp; Peninjauan Lapangan</h3>
                         <p>
-                            Kegiatan lapangan ini merupakan bagian dari kurikulum Outcome-Based Education (OBE) Teknik Sipil FT UNSIL yang konsisten mendorong keterlibatan mahasiswa dalam proyek-proyek infrastruktur strategis nasional di Jawa Barat.
+                            Rangkaian kegiatan diawali dengan pembukaan dan sambutan dari pihak UPB Leuwikeris serta perwakilan kampus, dilanjutkan dengan pemaparan materi mengenai gambaran umum, fungsi, dan aspek teknis pengelolaan Bendungan Leuwikeris. Materi juga mencakup instrumentasi bendungan, pemantauan deformasi dan rembesan, serta sistem peringatan dini sebagai bagian dari upaya menjaga keamanan dan mendukung operasional bendungan.
+                        </p>
+
+                        <p>
+                            Para peserta juga melakukan peninjauan langsung ke bangunan bendungan dan fasilitas pendukungnya serta diperkenalkan dengan bagian-bagian utama bendungan, bangunan pelimpah (<em>spillway</em>), pintu air, serta instrumen pemantauan kondisi bendungan.
+                        </p>
+
+                        <p>
+                            Kegiatan ini sekaligus menjadi upaya HMS Universitas Siliwangi untuk memperluas wawasan akademik mahasiswa serta mempererat hubungan dengan UPB Leuwikeris dalam mendukung pembelajaran berbasis pengalaman lapangan di bidang rekayasa sumber daya air dan keinsinyuran sipil.
                         </p>
                     </div>
 
@@ -99,27 +103,31 @@
                         <ul class="space-y-3 text-xs text-slate-600">
                             <li class="flex items-start gap-2.5">
                                 <i class="fa-solid fa-calendar-day text-blue-700 mt-0.5 w-4"></i>
-                                <span><strong class="text-slate-800">18 November 2025</strong></span>
+                                <span><strong class="text-slate-800">Kamis, 22 Oktober 2026</strong></span>
                             </li>
                             <li class="flex items-start gap-2.5">
                                 <i class="fa-solid fa-location-dot text-blue-700 mt-0.5 w-4"></i>
-                                <span>Proyek Bendungan Leuwikeris, Kab. Ciamis &amp; Tasikmalaya</span>
+                                <span>Bendungan Leuwikeris, Kab. Ciamis &amp; Tasikmalaya</span>
                             </li>
                             <li class="flex items-start gap-2.5">
                                 <i class="fa-solid fa-handshake text-blue-700 mt-0.5 w-4"></i>
-                                <span>Mitra: BBWS Citanduy Kementerian PUPR</span>
+                                <span>Penyambut: Soni Senjaya Efendi, S.T., M.T. (Kepala UPB)</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-users text-blue-700 mt-0.5 w-4"></i>
+                                <span>Penyelenggara: HMS FT UNSIL &bull; SCIENCE 2026</span>
                             </li>
                         </ul>
                     </div>
 
                     <div class="bg-[#0B2A4A] rounded-2xl p-5 text-white">
-                        <h3 class="text-xs font-black uppercase tracking-wider text-amber-400 mb-3">Laboratorium Keairan</h3>
+                        <h3 class="text-xs font-black uppercase tracking-wider text-amber-400 mb-3">Portal Resmi UNSIL</h3>
                         <p class="text-xs text-slate-300 leading-relaxed mb-3">
-                            Pelajari fasilitas pengujian hidrolika, saluran terbuka, dan analisis kualitas air di laboratorium keairan kami.
+                            Berita ini diliput resmi oleh Humas Universitas Siliwangi dan terbit di portal unsil.ac.id.
                         </p>
-                        <a href="{{ route('fasilitas') }}" class="inline-flex items-center gap-2 bg-[#0070BA] hover:bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition w-full justify-center">
-                            <span>Lihat Fasilitas Lab</span>
-                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        <a href="https://unsil.ac.id/2026/10/23/himpunan-mahasiswa-sipil-universitas-siliwangi-perluas-wawasan-keteknikan-melalui-kunjungan-ilmiah-ke-bendungan-leuwikeris/" target="_blank" class="inline-flex items-center gap-2 bg-[#0070BA] hover:bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition w-full justify-center">
+                            <span>Baca di unsil.ac.id</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                         </a>
                     </div>
                 </aside>
