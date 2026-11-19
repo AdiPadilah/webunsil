@@ -58,6 +58,40 @@
         .img-fallback { background: linear-gradient(135deg, #0B2A4A 0%, #1e4d8c 100%); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Sembunyikan elemen bawaan Google Translate & Banner */
+        .goog-te-banner-frame.skiptranslate,
+        .goog-te-banner-frame,
+        iframe.goog-te-banner-frame {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            opacity: 0 !important;
+        }
+        body {
+            top: 0px !important;
+            position: static !important;
+        }
+        body > .skiptranslate {
+            display: none !important;
+        }
+        #goog-gt-tt, 
+        .goog-te-balloon-frame, 
+        .goog-tooltip, 
+        .goog-tooltip:hover {
+            display: none !important;
+        }
+        .goog-text-highlight {
+            background: none !important;
+            box-shadow: none !important;
+        }
+        #google_translate_element {
+            display: none !important;
+        }
+        .VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+        .VIpgJd-ZVi9od-aZ2wEe-OiiCO {
+            display: none !important;
+        }
     </style>
     @stack('styles')
 </head>
@@ -151,6 +185,16 @@
             <a href="{{ route('riset') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('riset') ? 'text-amber-400 font-bold' : '' }}">Riset dan Kolaborasi</a>
             <a href="{{ route('karya-dosen') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('karya-dosen') ? 'text-amber-400 font-bold' : '' }}">Karya Dosen</a>
             <a href="{{ route('mahasiswa-alumni') }}" class="nav-link block py-2 hover:text-amber-400 {{ request()->routeIs('mahasiswa-alumni') ? 'text-amber-400 font-bold' : '' }}">Mahasiswa dan Alumni</a>
+
+            <!-- Mobile Language Switcher -->
+            <div class="pt-3 mt-2 border-t border-slate-800 flex items-center justify-between">
+                <span class="text-xs text-slate-400 font-medium">Bahasa / Language:</span>
+                <div class="flex items-center bg-slate-800 px-2.5 py-1 rounded-full text-xs font-bold border border-slate-700/50">
+                    <button type="button" onclick="switchLanguage('ID')" id="mobile-lang-btn-id" class="text-amber-400 px-1 font-extrabold cursor-pointer transition">ID</button>
+                    <span class="text-slate-600">|</span>
+                    <button type="button" onclick="switchLanguage('EN')" id="mobile-lang-btn-en" class="text-slate-400 px-1 hover:text-white cursor-pointer transition">EN</button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -632,20 +676,107 @@
             }
         }
 
-        // 4. Language Switcher
-        function switchLanguage(lang) {
-            const btnId = document.getElementById('lang-btn-id');
-            const btnEn = document.getElementById('lang-btn-en');
-            if (lang === 'EN') {
-                if (btnEn) btnEn.className = 'text-amber-400 px-1 font-extrabold cursor-pointer transition';
-                if (btnId) btnId.className = 'text-slate-400 px-1 hover:text-white cursor-pointer transition';
-                showToast('Language: English', 'English version is currently under preparation. Full content remains in Bahasa Indonesia.');
-            } else {
-                if (btnId) btnId.className = 'text-amber-400 px-1 font-extrabold cursor-pointer transition';
-                if (btnEn) btnEn.className = 'text-slate-400 px-1 hover:text-white cursor-pointer transition';
-                showToast('Bahasa Indonesia', 'Website resmi ditampilkan dalam Bahasa Indonesia.');
+        // 4. Language Switcher (Google Translate Integration)
+        function setTranslateCookie(val) {
+            document.cookie = "googtrans=" + val + "; path=/;";
+            const host = window.location.hostname;
+            if (host) {
+                document.cookie = "googtrans=" + val + "; path=/; domain=" + host + ";";
+                const parts = host.split('.');
+                if (parts.length > 2) {
+                    document.cookie = "googtrans=" + val + "; path=/; domain=." + parts.slice(-2).join('.') + ";";
+                }
             }
         }
+
+        function clearTranslateCookie() {
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            const host = window.location.hostname;
+            if (host) {
+                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + host + ";";
+                const parts = host.split('.');
+                if (parts.length > 2) {
+                    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + parts.slice(-2).join('.') + ";";
+                }
+            }
+        }
+
+        function updateLangButtons(lang) {
+            const isEn = (lang === 'EN');
+            ['lang-btn-id', 'mobile-lang-btn-id'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.className = isEn ? 'text-slate-400 px-1 hover:text-white cursor-pointer transition' : 'text-amber-400 px-1 font-extrabold cursor-pointer transition';
+            });
+            ['lang-btn-en', 'mobile-lang-btn-en'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.className = isEn ? 'text-amber-400 px-1 font-extrabold cursor-pointer transition' : 'text-slate-400 px-1 hover:text-white cursor-pointer transition';
+            });
+        }
+
+        function switchLanguage(lang) {
+            if (lang === 'EN') {
+                localStorage.setItem('app_lang', 'EN');
+                setTranslateCookie('/id/en');
+                updateLangButtons('EN');
+
+                const select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    select.value = 'en';
+                    select.dispatchEvent(new Event('change'));
+                    showToast('Language: English', 'Website telah dialihkan ke Bahasa Inggris.');
+                } else {
+                    showToast('Language: English', 'Menerapkan Bahasa Inggris...');
+                    let attempts = 0;
+                    const checkInterval = setInterval(() => {
+                        attempts++;
+                        const s = document.querySelector('.goog-te-combo');
+                        if (s) {
+                            clearInterval(checkInterval);
+                            s.value = 'en';
+                            s.dispatchEvent(new Event('change'));
+                        } else if (attempts > 15) {
+                            clearInterval(checkInterval);
+                            location.reload();
+                        }
+                    }, 100);
+                }
+            } else {
+                localStorage.setItem('app_lang', 'ID');
+                clearTranslateCookie();
+                setTranslateCookie('/id/id');
+                updateLangButtons('ID');
+                showToast('Bahasa Indonesia', 'Mengembalikan ke Bahasa Indonesia...');
+                setTimeout(() => {
+                    location.reload();
+                }, 200);
+            }
+        }
+
+        // Sinkronisasi status bahasa saat pertama kali halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('app_lang');
+            const hasEnCookie = document.cookie.indexOf('googtrans=/id/en') !== -1;
+            if (savedLang === 'EN' || hasEnCookie) {
+                updateLangButtons('EN');
+                setTranslateCookie('/id/en');
+                let attempts = 0;
+                const checkInterval = setInterval(() => {
+                    attempts++;
+                    const s = document.querySelector('.goog-te-combo');
+                    if (s) {
+                        clearInterval(checkInterval);
+                        if (s.value !== 'en') {
+                            s.value = 'en';
+                            s.dispatchEvent(new Event('change'));
+                        }
+                    } else if (attempts > 20) {
+                        clearInterval(checkInterval);
+                    }
+                }, 150);
+            } else {
+                updateLangButtons('ID');
+            }
+        });
 
         let toastTimer = null;
         function showToast(title, message) {
@@ -709,5 +840,19 @@
         }
     </script>
     @stack('scripts')
+
+    <!-- Hidden Google Translate Element Container -->
+    <div id="google_translate_element" style="display:none !important; visibility:hidden !important; height:0 !important; overflow:hidden !important;"></div>
+
+    <script type="text/javascript">
+        window.googleTranslateElementInit = function() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'id',
+                includedLanguages: 'en,id',
+                autoDisplay: false
+            }, 'google_translate_element');
+        };
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
