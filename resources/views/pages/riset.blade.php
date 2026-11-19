@@ -175,7 +175,7 @@
                     </div>
                     <div class="px-6 sm:px-7 pb-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                         <span class="text-[11px] text-slate-500 font-medium">Bakti Nyata Sivitas Akademika UNSIL</span>
-                        <a href="{{ route('home') }}#lokasi" class="text-xs font-bold text-amber-600 hover:text-amber-700 transition flex items-center gap-1.5">
+                        <a href="{{ route('home') }}#lokasi" class="text-xs font-bold text-blue-700 hover:text-blue-900 transition flex items-center gap-1.5">
                             <span>Lokasi Pengabdian</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
