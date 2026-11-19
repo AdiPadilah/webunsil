@@ -118,23 +118,37 @@
             </div>
 
             
-            {{-- Statistik Utama Program Studi --}}
-            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5">
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal">
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="1200">1.200</span>
-                    <span class="block text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wide">Mahasiswa Aktif</span>
-                </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal">
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="18">18</span>
-                    <span class="block text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wide">Dosen Aktif</span>
-                </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal">
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="3500">3.500</span>
-                    <span class="block text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wide">Alumni Lulus</span>
-                </div>
-                <div class="bg-white/5 backdrop-blur rounded-2xl p-5 border border-blue-800/30 text-center reveal">
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num" data-target="40">40</span>
-                    <span class="block text-xs font-semibold text-slate-300 mt-1 uppercase tracking-wide">Tahun Dedikasi (1984)</span>
+            {{-- Statistik Fakultas / Program Studi (Kuning Emas UNSIL & Biru Teknik) --}}
+            <div class="mt-12 bg-gradient-to-r from-[#F6BC47] via-[#F8C862] to-[#F6BC47] rounded-3xl p-6 sm:p-8 lg:p-8 shadow-2xl border border-amber-300 relative overflow-hidden">
+                <!-- Ornamen Halus Khas FT UNSIL -->
+                <div class="absolute inset-0 opacity-15 bg-repeat pointer-events-none mix-blend-multiply"
+                     style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 180px auto;"></div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-5 relative z-10">
+                    <div class="bg-white/40 hover:bg-white/60 backdrop-blur-sm rounded-2xl p-4 sm:p-5 text-center shadow-sm border border-amber-200/60 transition-all duration-300 reveal flex flex-col justify-center items-center">
+                        <span class="block text-3xl sm:text-4xl lg:text-5xl font-black text-[#005fa3] font-heading tracking-tight counter-num" data-target="7">7</span>
+                        <span class="block text-xs sm:text-sm font-bold text-slate-900 mt-2 tracking-tight">Program Studi</span>
+                    </div>
+                    <div class="bg-white/40 hover:bg-white/60 backdrop-blur-sm rounded-2xl p-4 sm:p-5 text-center shadow-sm border border-amber-200/60 transition-all duration-300 reveal flex flex-col justify-center items-center">
+                        <span class="block text-3xl sm:text-4xl lg:text-5xl font-black text-[#005fa3] font-heading tracking-tight counter-num" data-target="8">8</span>
+                        <span class="block text-xs sm:text-sm font-bold text-slate-900 mt-2 tracking-tight">Laboratorium</span>
+                    </div>
+                    <div class="bg-white/40 hover:bg-white/60 backdrop-blur-sm rounded-2xl p-4 sm:p-5 text-center shadow-sm border border-amber-200/60 transition-all duration-300 reveal flex flex-col justify-center items-center">
+                        <span class="block text-3xl sm:text-4xl lg:text-5xl font-black text-[#005fa3] font-heading tracking-tight counter-num" data-target="17">17</span>
+                        <span class="block text-xs sm:text-sm font-bold text-slate-900 mt-2 tracking-tight">Guru Besar</span>
+                    </div>
+                    <div class="bg-white/40 hover:bg-white/60 backdrop-blur-sm rounded-2xl p-4 sm:p-5 text-center shadow-sm border border-amber-200/60 transition-all duration-300 reveal flex flex-col justify-center items-center">
+                        <span class="block text-3xl sm:text-4xl lg:text-5xl font-black text-[#005fa3] font-heading tracking-tight counter-num" data-target="61">61</span>
+                        <span class="block text-xs sm:text-sm font-bold text-slate-900 mt-2 tracking-tight">Dosen</span>
+                    </div>
+                    <div class="bg-white/40 hover:bg-white/60 backdrop-blur-sm rounded-2xl p-4 sm:p-5 text-center shadow-sm border border-amber-200/60 transition-all duration-300 reveal flex flex-col justify-center items-center">
+                        <span class="block text-3xl sm:text-4xl lg:text-5xl font-black text-[#005fa3] font-heading tracking-tight counter-num" data-target="1300">1.300</span>
+                        <span class="block text-xs sm:text-sm font-bold text-slate-900 mt-2 tracking-tight">Mahasiswa</span>
+                    </div>
+                    <div class="bg-white/40 hover:bg-white/60 backdrop-blur-sm rounded-2xl p-4 sm:p-5 text-center shadow-sm border border-amber-200/60 transition-all duration-300 reveal flex flex-col justify-center items-center">
+                        <span class="block text-3xl sm:text-4xl lg:text-5xl font-black text-[#005fa3] font-heading tracking-tight counter-num" data-target="4500">4.500</span>
+                        <span class="block text-xs sm:text-sm font-bold text-slate-900 mt-2 tracking-tight">Alumni</span>
+                    </div>
                 </div>
             </div>
         </div>
