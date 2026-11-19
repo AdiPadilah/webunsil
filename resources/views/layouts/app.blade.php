@@ -483,6 +483,19 @@
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
                 </a>
 
+                <a href="{{ route('berita.index') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="berita informasi agenda kegiatan seminar kompetensi lomba wisuda pengumuman">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                            <i class="fa-solid fa-bullhorn text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Berita &amp; Informasi</p>
+                            <p class="text-[11px] text-slate-500">Portal berita resmi, seminar, prestasi kompetisi, dan agenda akademik</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
+                </a>
+
                 <a href="{{ route('mahasiswa-alumni') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="mahasiswa alumni himpunan hms prestasi ikatan alumni lulusan karir">
                     <div class="flex items-center gap-3">
                         <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">

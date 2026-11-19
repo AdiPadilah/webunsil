@@ -193,12 +193,14 @@
 
                             <!-- Item Berita 2 -->
                             <article class="flex gap-3.5 items-start pb-4 border-b border-slate-100 last:border-0 group">
-                                <img src="{{ asset('images/event-1.jpg') }}" alt="Kunjungan Industri" class="w-20 h-20 rounded-xl object-cover flex-shrink-0 bg-slate-100 group-hover:opacity-90 transition">
+                                <a href="{{ route('berita.kuliah-tamu-bim') }}" class="w-20 h-20 rounded-xl overflow-hidden bg-slate-100 flex-shrink-0 block">
+                                    <img src="{{ asset('images/event-1.jpg') }}" alt="Kunjungan Industri" class="w-full h-full object-cover group-hover:scale-105 transition">
+                                </a>
                                 <div class="flex-1 min-w-0">
                                     <span class="text-[10px] font-semibold text-amber-600 block uppercase tracking-wide">
                                         08 Januari 2026
                                     </span>
-                                    <a href="{{ route('home') }}#berita" class="text-xs font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5 transition block">
+                                    <a href="{{ route('berita.kuliah-tamu-bim') }}" class="text-xs font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5 transition block">
                                         Kuliah Tamu Building Information Modelling (BIM) untuk Infrastruktur Modern
                                     </a>
                                     <p class="text-[11px] text-slate-500 line-clamp-2 mt-1 leading-relaxed">
@@ -209,12 +211,14 @@
 
                             <!-- Item Berita 3 -->
                             <article class="flex gap-3.5 items-start pb-4 border-b border-slate-100 last:border-0 group">
-                                <img src="{{ asset('images/event-2.jpg') }}" alt="Prestasi Mahasiswa" class="w-20 h-20 rounded-xl object-cover flex-shrink-0 bg-slate-100 group-hover:opacity-90 transition">
+                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="w-20 h-20 rounded-xl overflow-hidden bg-slate-100 flex-shrink-0 block">
+                                    <img src="{{ asset('images/event-2.jpg') }}" alt="Prestasi Mahasiswa" class="w-full h-full object-cover group-hover:scale-105 transition">
+                                </a>
                                 <div class="flex-1 min-w-0">
                                     <span class="text-[10px] font-semibold text-amber-600 block uppercase tracking-wide">
                                         20 Desember 2025
                                     </span>
-                                    <a href="{{ route('home') }}#berita" class="text-xs font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5 transition block">
+                                    <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5 transition block">
                                         Mahasiswa Teknik Sipil UNSIL Sabet Juara di Kompetisi Jembatan Nasional
                                     </a>
                                     <p class="text-[11px] text-slate-500 line-clamp-2 mt-1 leading-relaxed">
@@ -227,7 +231,7 @@
 
                         <!-- Tombol Biru di Bawah Sidebar Persis Gaya ITS -->
                         <div class="pt-3">
-                            <a href="{{ route('home') }}#berita" class="block w-full py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold text-center rounded-xl transition shadow-sm hover:shadow">
+                            <a href="{{ route('berita.index') }}" class="block w-full py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold text-center rounded-xl transition shadow-sm hover:shadow">
                                 Lihat Semua Berita
                             </a>
                         </div>

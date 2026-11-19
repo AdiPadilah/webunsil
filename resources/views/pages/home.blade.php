@@ -390,15 +390,15 @@
 
                             <!-- Berita 2: National Bridge Design Competition SCIENCE -->
                             <article class="flex items-start space-x-3.5 group cursor-pointer">
-                                <div class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video">
+                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video block">
                                     <img src="{{ asset('images/event-3.jpg') }}" alt="Bridge Design Competition" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" onerror="this.style.opacity='0.4'">
-                                </div>
+                                </a>
                                 <div class="flex-1">
                                     <span class="inline-flex items-center gap-1 text-pink-700 font-bold text-[10px] bg-pink-50 border border-pink-200 px-2 py-0.5 rounded-full mb-1">
                                         <i class="fa-brands fa-instagram text-[9px]"></i> @hmsftunsil
                                     </span>
                                     <h3 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5">
-                                        Babak Final National Bridge Design Competition SCIENCE di FT UNSIL
+                                        <a href="{{ route('berita.kompetisi-jembatan') }}" class="hover:underline">Babak Final National Bridge Design Competition SCIENCE di FT UNSIL</a>
                                     </h3>
                                     <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
                                         Kompetisi rancang jembatan nasional mempertemukan finalis dari berbagai perguruan tinggi se-Indonesia.
@@ -408,15 +408,15 @@
 
                             <!-- Berita 3: Kunjungan Ilmiah Bendungan Leuwikeris -->
                             <article class="flex items-start space-x-3.5 group cursor-pointer">
-                                <div class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video">
+                                <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video block">
                                     <img src="{{ asset('images/event-1.jpg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" onerror="this.style.opacity='0.4'">
-                                </div>
+                                </a>
                                 <div class="flex-1">
                                     <span class="inline-flex items-center gap-1 text-blue-700 font-bold text-[10px] bg-blue-50 border border-blue-200 px-2 py-0.5 rounded-full mb-1">
                                         <i class="fa-brands fa-instagram text-[9px]"></i> @sipilunsil
                                     </span>
                                     <h3 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5">
-                                        Kunjungan Ilmiah ke Proyek Strategis Bendungan Leuwikeris bersama BBWS
+                                        <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="hover:underline">Kunjungan Ilmiah ke Proyek Strategis Bendungan Leuwikeris bersama BBWS</a>
                                     </h3>
                                     <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
                                         Studi lapangan metode konstruksi tubuh bendungan dan konservasi sumber daya air.
@@ -426,21 +426,29 @@
 
                             <!-- Berita 4: Pelepasan Calon Wisudawan Sarjana Teknik Sipil -->
                             <article class="flex items-start space-x-3.5 group cursor-pointer">
-                                <div class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video">
+                                <a href="{{ route('berita.wisuda-sarjana') }}" class="w-24 sm:w-28 flex-shrink-0 rounded-xl overflow-hidden bg-slate-200 aspect-video block">
                                     <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Pelepasan Calon Wisudawan Teknik Sipil" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-                                </div>
+                                </a>
                                 <div class="flex-1">
                                     <span class="inline-flex items-center gap-1 text-blue-700 font-bold text-[10px] bg-blue-50 border border-blue-200 px-2 py-0.5 rounded-full mb-1">
                                         <i class="fa-solid fa-graduation-cap text-[9px]"></i> Periode Wisuda &bull; @sipilunsil
                                     </span>
                                     <h3 class="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5">
-                                        Pelepasan Calon Wisudawan Program Studi Teknik Sipil Fakultas Teknik UNSIL
+                                        <a href="{{ route('berita.wisuda-sarjana') }}" class="hover:underline">Pelepasan Calon Wisudawan Program Studi Teknik Sipil Fakultas Teknik UNSIL</a>
                                     </h3>
                                     <p class="text-[11px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
                                         Mencetak lulusan sarjana teknik yang kompeten, beretika, dan siap berkontribusi di industri konstruksi nasional.
                                     </p>
                                 </div>
                             </article>
+                        </div>
+
+                        <!-- Tombol Selengkapnya / Semua Berita -->
+                        <div class="mt-6 pt-3">
+                            <a href="{{ route('berita.index') }}" class="inline-flex items-center justify-center gap-2 w-full py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold rounded-xl shadow-sm transition">
+                                <span>Lihat Semua Berita &amp; Informasi</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
                         </div>
                     </div>
 

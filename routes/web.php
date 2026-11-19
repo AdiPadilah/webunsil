@@ -75,7 +75,28 @@ Route::get('/mahasiswa-alumni', function () {
     return view('pages.mahasiswa-alumni');
 })->name('mahasiswa-alumni');
 
+// 12. Portal Berita & Informasi
+Route::get('/berita', function () {
+    return view('pages.berita');
+})->name('berita.index');
+
 // Berita & Informasi Spesifik
 Route::get('/berita/seminar-internasional-indonesia-taiwan-2026', function () {
     return view('berita.seminar-taiwan');
 })->name('berita.seminar-taiwan');
+
+Route::get('/berita/kompetisi-jembatan-nasional-science-2026', function () {
+    return view('berita.kompetisi-jembatan');
+})->name('berita.kompetisi-jembatan');
+
+Route::get('/berita/kunjungan-ilmiah-bendungan-leuwikeris', function () {
+    return view('berita.kunjungan-leuwikeris');
+})->name('berita.kunjungan-leuwikeris');
+
+Route::get('/berita/pelepasan-calon-wisudawan-teknik-sipil', function () {
+    return view('berita.wisuda-sarjana');
+})->name('berita.wisuda-sarjana');
+
+Route::get('/berita/kuliah-tamu-bim-infrastruktur-modern', function () {
+    return view('berita.kuliah-tamu-bim');
+})->name('berita.kuliah-tamu-bim');

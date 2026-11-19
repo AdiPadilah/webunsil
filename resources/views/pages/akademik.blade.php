@@ -125,12 +125,14 @@
 
                             <!-- Item 1: Wisuda / Prestasi -->
                             <article class="flex gap-3.5 items-start pb-4 border-b border-slate-100 last:border-0 group">
-                                <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Wisuda Sarjana" class="w-20 h-20 rounded-xl object-cover flex-shrink-0 bg-slate-100 group-hover:opacity-90 transition">
+                                <a href="{{ route('berita.wisuda-sarjana') }}" class="w-20 h-20 rounded-xl overflow-hidden bg-slate-100 flex-shrink-0 block">
+                                    <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Wisuda Sarjana" class="w-full h-full object-cover group-hover:scale-105 transition">
+                                </a>
                                 <div class="flex-1 min-w-0">
                                     <span class="text-[10px] font-semibold text-amber-600 block uppercase tracking-wide">
                                         24 Oktober 2025
                                     </span>
-                                    <a href="{{ route('home') }}#berita" class="text-xs font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5 transition block">
+                                    <a href="{{ route('berita.wisuda-sarjana') }}" class="text-xs font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 mt-0.5 transition block">
                                         Selamat dan Sukses Wisuda Sarjana Teknik Sipil FT Universitas Siliwangi
                                     </a>
                                     <p class="text-[11px] text-slate-500 line-clamp-2 mt-1 leading-relaxed">
