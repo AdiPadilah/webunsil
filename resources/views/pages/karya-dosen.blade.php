@@ -22,119 +22,152 @@
                 Karya &amp; Publikasi Dosen
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Produktivitas keilmuan dosen Program Studi Teknik Sipil FT UNSIL dalam bentuk jurnal ilmiah terindeks SINTA, paten hak kekayaan intelektual (HKI), dan buku referensi keinsinyuran.
+                Produktivitas keilmuan dosen Program Studi Teknik Sipil FT UNSIL dalam bentuk jurnal ilmiah terindeks SINTA, hak kekayaan intelektual (HKI), dan buku referensi keinsinyuran.
             </p>
+            {{-- Stats bar --}}
+            <div class="flex flex-wrap gap-6 mt-8 pt-6 border-t border-white/10">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-blue-500/30 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-book-open-reader text-blue-300 text-sm"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-black text-lg leading-none">SINTA 5</div>
+                        <div class="text-slate-400 text-[11px]">Jurnal Akselerasi</div>
+                    </div>
+                </div>
+                <div class="w-px bg-white/10 hidden sm:block"></div>
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-amber-500/30 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-lightbulb text-amber-300 text-sm"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-black text-lg leading-none">26</div>
+                        <div class="text-slate-400 text-[11px]">Dosen Aktif</div>
+                    </div>
+                </div>
+                <div class="w-px bg-white/10 hidden sm:block"></div>
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-emerald-500/30 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-globe text-emerald-300 text-sm"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-black text-lg leading-none">Scopus</div>
+                        <div class="text-slate-400 text-[11px]">Kolaborasi Internasional</div>
+                    </div>
+                </div>
+                <div class="w-px bg-white/10 hidden sm:block"></div>
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-purple-500/30 rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-shield-halved text-purple-300 text-sm"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-black text-lg leading-none">DJKI</div>
+                        <div class="text-slate-400 text-[11px]">HKI Terdaftar</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    {{-- Kartu Publikasi --}}
-    <section class="py-16 bg-white border-t border-slate-100">
+    {{-- Featured Karya — Magazine Layout --}}
+    <section class="py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Karya Cipta &amp; HKI</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Publikasi &amp; Inovasi</h2>
+                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Karya Cipta &amp; Inovasi</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Publikasi Unggulan</h2>
                 <div class="w-14 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                <div class="group bg-white rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
-                    <div class="h-1.5 bg-gradient-to-r from-blue-500 to-blue-700"></div>
-                    <div class="p-7 flex flex-col flex-grow">
-                        <div class="flex items-center justify-between mb-5">
-                            <span class="text-[10px] font-bold text-blue-700 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider">Jurnal Ilmiah · SINTA</span>
-                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center group-hover:bg-blue-100 transition">
-                                <i class="fa-solid fa-book-open-reader text-blue-600"></i>
-                            </div>
-                        </div>
-                        <h4 class="text-lg font-bold text-slate-900 leading-snug">Akselerasi: Jurnal Ilmiah Teknik Sipil</h4>
-                        <p class="text-xs text-slate-500 mt-3 leading-relaxed flex-grow">
-                            Jurnal berkala resmi Program Studi Teknik Sipil FT UNSIL yang menerbitkan artikel riset mutakhir bidang rekayasa struktur, transportasi, geoteknik, manajemen konstruksi, dan sumber daya air.
+            {{-- Baris 1: Jurnal besar + HKI kecil --}}
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 mb-5">
+
+                {{-- Jurnal — Kartu besar kiri --}}
+                <div class="lg:col-span-3 group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 min-h-[340px] flex flex-col">
+                    <img src="{{ asset('images/unsil-prestasi-scopus-sipil.png') }}" alt="Jurnal Akselerasi"
+                         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/95 via-[#0B2A4A]/50 to-transparent"></div>
+                    <div class="relative z-10 mt-auto p-7">
+                        <span class="inline-flex items-center gap-1.5 bg-blue-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                            <i class="fa-solid fa-book-open-reader text-[9px]"></i> Jurnal Ilmiah · SINTA 5
+                        </span>
+                        <h3 class="text-2xl font-black text-white leading-tight mb-2">Akselerasi: Jurnal Ilmiah Teknik Sipil</h3>
+                        <p class="text-slate-300 text-xs leading-relaxed mb-4 max-w-md">
+                            Jurnal berkala resmi Prodi Teknik Sipil FT UNSIL yang menerbitkan riset mutakhir bidang struktur, transportasi, geoteknik, manajemen konstruksi, dan sumber daya air.
                         </p>
-                        <div class="mt-5 grid grid-cols-2 gap-2 text-center">
-                            <div class="bg-blue-50 rounded-xl p-3">
-                                <div class="text-xs font-black text-blue-700">SINTA 5</div>
-                                <div class="text-[10px] text-slate-500 mt-0.5">Akreditasi</div>
-                            </div>
-                            <div class="bg-blue-50 rounded-xl p-3">
-                                <div class="text-xs font-black text-blue-700">3× / Tahun</div>
-                                <div class="text-[10px] text-slate-500 mt-0.5">Mar, Jul, Nov</div>
-                            </div>
-                        </div>
-                        <div class="mt-5 pt-4 border-t border-slate-100">
-                            <div class="text-[11px] text-slate-500 mb-3"><strong class="text-slate-700">E-ISSN:</strong> 2715-7296</div>
-                            <a href="https://jurnal.unsil.ac.id" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 transition">
-                                <span>Kunjungi Portal Jurnal (OJS)</span>
-                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        <div class="flex flex-wrap items-center gap-3">
+                            <span class="bg-white/10 backdrop-blur-sm text-white text-[10px] font-semibold px-3 py-1 rounded-full border border-white/20">E-ISSN: 2715-7296</span>
+                            <span class="bg-white/10 backdrop-blur-sm text-white text-[10px] font-semibold px-3 py-1 rounded-full border border-white/20">3× / Tahun</span>
+                            <a href="https://jurnal.unsil.ac.id" target="_blank"
+                               class="ml-auto bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-xs px-4 py-2 rounded-xl transition flex items-center gap-1.5">
+                                Buka OJS <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="group bg-white rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
-                    <div class="h-1.5 bg-gradient-to-r from-amber-400 to-amber-600"></div>
-                    <div class="p-7 flex flex-col flex-grow">
-                        <div class="flex items-center justify-between mb-5">
-                            <span class="text-[10px] font-bold text-amber-700 bg-amber-50 px-3 py-1 rounded-full uppercase tracking-wider">Paten &amp; HKI</span>
-                            <div class="w-10 h-10 bg-amber-50 rounded-xl flex items-center justify-center group-hover:bg-amber-100 transition">
-                                <i class="fa-solid fa-lightbulb text-amber-500"></i>
-                            </div>
-                        </div>
-                        <h4 class="text-lg font-bold text-slate-900 leading-snug">Hak Cipta Inovasi Material &amp; Metode</h4>
-                        <p class="text-xs text-slate-500 mt-3 leading-relaxed flex-grow">
-                            Paten terdaftar dan hak cipta karya inovasi dosen, meliputi metode perkuatan tanah lempung lunak, formula campuran beton ramah lingkungan ekonomis, dan perangkat lunak bantu analisis struktur.
-                        </p>
-                        <div class="mt-5 grid grid-cols-2 gap-2 text-center">
-                            <div class="bg-amber-50 rounded-xl p-3">
-                                <div class="text-xs font-black text-amber-700">Paten</div>
-                                <div class="text-[10px] text-slate-500 mt-0.5">Sederhana</div>
-                            </div>
-                            <div class="bg-amber-50 rounded-xl p-3">
-                                <div class="text-xs font-black text-amber-700">Hak Cipta</div>
-                                <div class="text-[10px] text-slate-500 mt-0.5">Karya Ilmiah</div>
-                            </div>
-                        </div>
-                        <div class="mt-5 pt-4 border-t border-slate-100">
-                            <div class="text-[11px] text-slate-500 mb-3"><strong class="text-slate-700">Lembaga:</strong> DJKI Kemenkumham RI</div>
-                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700">
-                                <i class="fa-solid fa-shield-halved text-[10px]"></i> Terdaftar Resmi di DJKI
+                {{-- HKI + Buku — Kolom kanan --}}
+                <div class="lg:col-span-2 flex flex-col gap-5">
+
+                    {{-- HKI --}}
+                    <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex-1 min-h-[160px] flex flex-col">
+                        <img src="{{ asset('images/workshop-obe.jpg') }}" alt="HKI Inovasi"
+                             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-amber-900/90 via-amber-900/50 to-transparent"></div>
+                        <div class="relative z-10 mt-auto p-6">
+                            <span class="inline-flex items-center gap-1.5 bg-amber-400 text-slate-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+                                <i class="fa-solid fa-lightbulb text-[9px]"></i> Paten &amp; HKI
                             </span>
+                            <h3 class="text-base font-black text-white leading-tight">Hak Cipta Inovasi Material &amp; Metode</h3>
+                            <p class="text-amber-100 text-[11px] mt-1">Terdaftar resmi di DJKI Kemenkumham RI</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="group bg-white rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col">
-                    <div class="h-1.5 bg-gradient-to-r from-emerald-500 to-emerald-700"></div>
-                    <div class="p-7 flex flex-col flex-grow">
-                        <div class="flex items-center justify-between mb-5">
-                            <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full uppercase tracking-wider">Buku Ajar &amp; Monograf</span>
-                            <div class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center group-hover:bg-emerald-100 transition">
-                                <i class="fa-solid fa-book text-emerald-600"></i>
-                            </div>
-                        </div>
-                        <h4 class="text-lg font-bold text-slate-900 leading-snug">Buku Referensi Keinsinyuran</h4>
-                        <p class="text-xs text-slate-500 mt-3 leading-relaxed flex-grow">
-                            Buku teks ber-ISBN karya dosen Teknik Sipil UNSIL, mencakup Mekanika Rekayasa, Analisis Struktur Lanjut, BIM, RAB, Penjadwalan Proyek, Mekanika Tanah, dan Hidrologi.
-                        </p>
-                        <div class="mt-5 grid grid-cols-2 gap-2 text-center">
-                            <div class="bg-emerald-50 rounded-xl p-3">
-                                <div class="text-xs font-black text-emerald-700">UNSIL Press</div>
-                                <div class="text-[10px] text-slate-500 mt-0.5">Penerbit</div>
-                            </div>
-                            <div class="bg-emerald-50 rounded-xl p-3">
-                                <div class="text-xs font-black text-emerald-700">Nasional</div>
-                                <div class="text-[10px] text-slate-500 mt-0.5">Distribusi</div>
-                            </div>
-                        </div>
-                        <div class="mt-5 pt-4 border-t border-slate-100">
-                            <div class="text-[11px] text-slate-500 mb-3"><strong class="text-slate-700">Distribusi:</strong> Perpustakaan &amp; Sivitas Akademika</div>
-                            <a href="{{ route('download') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-900 transition">
-                                <span>Lihat Bahan Ajar Mahasiswa</span>
-                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                            </a>
+                    {{-- Buku --}}
+                    <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex-1 min-h-[160px] flex flex-col">
+                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Buku Referensi"
+                             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/50 to-transparent"></div>
+                        <div class="relative z-10 mt-auto p-6">
+                            <span class="inline-flex items-center gap-1.5 bg-emerald-400 text-slate-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+                                <i class="fa-solid fa-book text-[9px]"></i> Buku Ajar &amp; Monograf
+                            </span>
+                            <h3 class="text-base font-black text-white leading-tight">Buku Referensi Keinsinyuran</h3>
+                            <p class="text-emerald-100 text-[11px] mt-1">UNSIL Press &amp; Penerbit Nasional, ber-ISBN</p>
                         </div>
                     </div>
-                </div>
 
+                </div>
+            </div>
+
+            {{-- Baris 2: 3 kartu foto kegiatan ilmiah --}}
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col">
+                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Taiwan"
+                         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
+                    <div class="relative z-10 mt-auto p-5">
+                        <span class="text-[10px] text-blue-300 font-bold uppercase tracking-wider">Kolaborasi Global</span>
+                        <h4 class="text-sm font-bold text-white mt-0.5 leading-snug">Seminar Internasional "Bridging Futures" Indonesia–Taiwan</h4>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col">
+                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar HATHI"
+                         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
+                    <div class="relative z-10 mt-auto p-5">
+                        <span class="text-[10px] text-cyan-300 font-bold uppercase tracking-wider">Seminar Nasional</span>
+                        <h4 class="text-sm font-bold text-white mt-0.5 leading-snug">Seminar HATHI — Himpunan Ahli Teknik Hidraulik Indonesia</h4>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col">
+                    <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Jalan Tol"
+                         class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
+                    <div class="relative z-10 mt-auto p-5">
+                        <span class="text-[10px] text-emerald-300 font-bold uppercase tracking-wider">Riset Transportasi</span>
+                        <h4 class="text-sm font-bold text-white mt-0.5 leading-snug">Kajian Rekayasa Jalan &amp; Infrastruktur Transportasi</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -148,7 +181,7 @@
                 <span class="text-amber-400 font-bold uppercase text-xs tracking-wider">Fokus Penelitian</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 font-heading">Bidang Riset Unggulan</h2>
                 <div class="w-14 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-300 mt-3 text-sm leading-relaxed">Lima kluster riset utama yang menjadi keahlian dosen Program Studi Teknik Sipil FT UNSIL.</p>
+                <p class="text-slate-300 mt-3 text-sm">Lima kluster riset utama yang menjadi keahlian dosen Program Studi Teknik Sipil FT UNSIL.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                 <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300 group">
@@ -191,7 +224,7 @@
     </section>
 
     {{-- Dosen Peneliti --}}
-    <section class="py-16 bg-slate-50">
+    <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Peneliti Aktif</span>
@@ -259,43 +292,6 @@
                     <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                     Lihat Semua Dosen di SINTA Kemdikbud
                 </a>
-            </div>
-        </div>
-    </section>
-
-    {{-- Galeri --}}
-    <section class="py-16 bg-white border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Dokumentasi</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Galeri Kegiatan Ilmiah</h2>
-                <div class="w-14 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="group relative rounded-2xl overflow-hidden aspect-video md:aspect-square shadow-sm">
-                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Taiwan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent flex items-end p-3">
-                        <span class="text-white text-[11px] font-semibold">Seminar Internasional Taiwan</span>
-                    </div>
-                </div>
-                <div class="group relative rounded-2xl overflow-hidden aspect-video md:aspect-square shadow-sm">
-                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop OBE" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent flex items-end p-3">
-                        <span class="text-white text-[11px] font-semibold">Workshop OBE</span>
-                    </div>
-                </div>
-                <div class="group relative rounded-2xl overflow-hidden aspect-video md:aspect-square shadow-sm">
-                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar HATHI Air" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent flex items-end p-3">
-                        <span class="text-white text-[11px] font-semibold">Seminar HATHI Air</span>
-                    </div>
-                </div>
-                <div class="group relative rounded-2xl overflow-hidden aspect-video md:aspect-square shadow-sm">
-                    <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Teknik Sipil" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent flex items-end p-3">
-                        <span class="text-white text-[11px] font-semibold">Laboratorium Teknik Sipil</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
