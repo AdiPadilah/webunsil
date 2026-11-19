@@ -396,39 +396,6 @@
                         </a>
                     </div>
 
-                    <!-- Box Layanan Mahasiswa Cepat -->
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                        <h3 class="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-link text-[#0070BA]"></i>
-                            <span>Tautan Cepat</span>
-                        </h3>
-                        <ul class="space-y-2.5 text-xs text-slate-600">
-                            <li>
-                                <a href="{{ route('kurikulum') }}" class="hover:text-blue-700 flex items-center justify-between group py-1">
-                                    <span>Kurikulum &amp; Silabus OBE</span>
-                                    <i class="fa-solid fa-chevron-right text-[9px] text-slate-400 group-hover:text-blue-700"></i>
-                                </a>
-                            </li>
-                            <li class="border-t border-slate-100 pt-2">
-                                <a href="{{ route('layanan') }}" class="hover:text-blue-700 flex items-center justify-between group py-1">
-                                    <span>Layanan Persuratan &amp; Akademik</span>
-                                    <i class="fa-solid fa-chevron-right text-[9px] text-slate-400 group-hover:text-blue-700"></i>
-                                </a>
-                            </li>
-                            <li class="border-t border-slate-100 pt-2">
-                                <a href="{{ route('download') }}" class="hover:text-blue-700 flex items-center justify-between group py-1">
-                                    <span>Download Buku Pedoman &amp; Format SK</span>
-                                    <i class="fa-solid fa-chevron-right text-[9px] text-slate-400 group-hover:text-blue-700"></i>
-                                </a>
-                            </li>
-                            <li class="border-t border-slate-100 pt-2">
-                                <a href="{{ route('fasilitas') }}" class="hover:text-blue-700 flex items-center justify-between group py-1">
-                                    <span>6 Laboratorium Kejuruan</span>
-                                    <i class="fa-solid fa-chevron-right text-[9px] text-slate-400 group-hover:text-blue-700"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
 
                 </aside>
 
