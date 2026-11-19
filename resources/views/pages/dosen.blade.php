@@ -34,25 +34,25 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
-            <!-- Tab Filter 5 Bidang Keahlian (Sesuai Tata Letak DTSI UGM) -->
+            <!-- Tab Filter 5 Bidang Keahlian (Sesuai Tema Resmi FT UNSIL) -->
             <div class="max-w-6xl mx-auto mb-10">
                 <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 p-2 bg-slate-100/90 rounded-2xl border border-slate-200 shadow-inner">
-                    <button type="button" onclick="filterKbk('all', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 shadow-md bg-orange-600 text-white">
+                    <button type="button" onclick="filterKbk('all', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 shadow-md bg-[#0B2A4A] text-amber-400 border border-amber-400/40">
                         Semua Dosen
                     </button>
-                    <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-slate-200 text-slate-700 border border-slate-200">
+                    <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         KBK Struktur
                     </button>
-                    <button type="button" onclick="filterKbk('keairan', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-slate-200 text-slate-700 border border-slate-200">
+                    <button type="button" onclick="filterKbk('keairan', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         KBK Sumber Daya Air
                     </button>
-                    <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-slate-200 text-slate-700 border border-slate-200">
+                    <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         KBK Geoteknik
                     </button>
-                    <button type="button" onclick="filterKbk('transportasi', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-slate-200 text-slate-700 border border-slate-200">
+                    <button type="button" onclick="filterKbk('transportasi', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         KBK Transportasi
                     </button>
-                    <button type="button" onclick="filterKbk('manajemen', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-slate-200 text-slate-700 border border-slate-200">
+                    <button type="button" onclick="filterKbk('manajemen', this)" class="kbk-tab-btn px-4 sm:px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
                         KBK Manajemen Konstruksi
                     </button>
                 </div>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="inline-block text-[10px] font-bold text-orange-600 uppercase tracking-wider mb-1">KBK Transportasi</span>
+                            <span class="inline-block text-[10px] font-bold text-emerald-700 uppercase tracking-wider mb-1">KBK Transportasi</span>
                             <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug group-hover:text-blue-700 transition">
                                 Ir. Pengki Irawan, S.T., M.T.
                             </h3>
@@ -292,7 +292,7 @@
                     <div class="relative aspect-[3/4] bg-gradient-to-b from-slate-100 to-slate-200 overflow-hidden flex items-center justify-center">
                         <img src="{{ asset('images/dosen/hidayanto.jpg') }}" alt="Hidayanto, S.T., M.T." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.parentElement.querySelector('.fallback-avatar').classList.remove('hidden'); this.classList.add('hidden');">
                         <div class="fallback-avatar hidden flex flex-col items-center justify-center text-slate-400 p-4 text-center">
-                            <div class="w-20 h-20 rounded-full bg-orange-100 text-orange-800 flex items-center justify-center text-3xl mb-2 font-black shadow-inner">
+                            <div class="w-20 h-20 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-3xl mb-2 font-black shadow-inner">
                                 HD
                             </div>
                             <span class="text-[11px] font-semibold text-slate-500">Foto Siap Ditambahkan</span>
@@ -300,7 +300,7 @@
                     </div>
                     <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="inline-block text-[10px] font-bold text-orange-600 uppercase tracking-wider mb-1">KBK Transportasi</span>
+                            <span class="inline-block text-[10px] font-bold text-emerald-700 uppercase tracking-wider mb-1">KBK Transportasi</span>
                             <h3 class="font-bold text-slate-900 text-sm sm:text-base leading-snug group-hover:text-blue-700 transition">
                                 Hidayanto, S.T., M.T.
                             </h3>
@@ -339,14 +339,14 @@
     @push('scripts')
     <script>
         function filterKbk(category, btn) {
-            // Update tampilan tombol tab aktif
+            // Update tampilan tombol tab aktif (Tema Resmi FT UNSIL: Navy #0B2A4A & Gold Amber)
             const buttons = document.querySelectorAll('.kbk-tab-btn');
             buttons.forEach(b => {
-                b.classList.remove('bg-orange-600', 'text-white', 'shadow-md');
-                b.classList.add('bg-white', 'text-slate-700', 'hover:bg-slate-200');
+                b.classList.remove('bg-[#0B2A4A]', 'text-amber-400', 'border-amber-400/40', 'shadow-md');
+                b.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
             });
-            btn.classList.remove('bg-white', 'text-slate-700', 'hover:bg-slate-200');
-            btn.classList.add('bg-orange-600', 'text-white', 'shadow-md');
+            btn.classList.remove('bg-white', 'text-slate-700', 'border-slate-200');
+            btn.classList.add('bg-[#0B2A4A]', 'text-amber-400', 'border-amber-400/40', 'shadow-md');
 
             // Filter kartu dosen berdasarkan data-kbk
             const items = document.querySelectorAll('.dosen-item');
