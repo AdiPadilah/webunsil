@@ -39,7 +39,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
                 <!-- Card 1: Struktur -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
@@ -117,45 +117,6 @@
                     </div>
                     <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-purple-700 font-semibold flex items-center gap-1">
                         <i class="fa-solid fa-check text-[10px]"></i> MS Project &bull; RAB &bull; BIM
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ringkasan Struktur 8 Semester -->
-            <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-slate-200">
-                <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 mb-8 border-b border-slate-200 gap-4">
-                    <div>
-                        <h3 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading">Distribusi Kurikulum 144 SKS</h3>
-                        <p class="text-xs sm:text-sm text-slate-500 mt-1">Rancangan tahapan akademik dari pengenalan dasar hingga karya tugas akhir sarjana.</p>
-                    </div>
-                    <a href="{{ route('download') }}" class="inline-flex items-center gap-2 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow transition self-start md:self-auto">
-                        <i class="fa-solid fa-file-pdf"></i> Download Panduan Akademik
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
-                        <span class="text-xs font-black text-blue-700 bg-blue-100 px-2 py-0.5 rounded-full uppercase">Tahun 1 (Sem 1-2)</span>
-                        <h4 class="text-sm font-bold text-slate-900 mt-3">Fondasi Dasar Sains &amp; Rekayasa</h4>
-                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Kalkulus, Fisika Dasar, Kimia Dasar, Menggambar Rekayasa, dan Mekanika Rekayasa Dasar.</p>
-                    </div>
-
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
-                        <span class="text-xs font-black text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full uppercase">Tahun 2 (Sem 3-4)</span>
-                        <h4 class="text-sm font-bold text-slate-900 mt-3">Keilmuan Inti &amp; Praktikum</h4>
-                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Teknologi Bahan Konstruksi, Mekanika Fluida, Mekanika Tanah 1, Analisis Struktur, dan Ukur Tanah.</p>
-                    </div>
-
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
-                        <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full uppercase">Tahun 3 (Sem 5-6)</span>
-                        <h4 class="text-sm font-bold text-slate-900 mt-3">Perancangan Lanjut &amp; MBKM</h4>
-                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Struktur Beton Lanjut, Struktur Baja, Rekayasa Pondasi, Geometrik Jalan, Irigasi &amp; Bangunan Air.</p>
-                    </div>
-
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
-                        <span class="text-xs font-black text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full uppercase">Tahun 4 (Sem 7-8)</span>
-                        <h4 class="text-sm font-bold text-slate-900 mt-3">Kerja Praktik &amp; Tugas Akhir</h4>
-                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Manajemen Konstruksi, Aspek Hukum Proyek, Seminar Proposal, Kerja Praktik (KP), dan Skripsi/TA.</p>
                     </div>
                 </div>
             </div>
