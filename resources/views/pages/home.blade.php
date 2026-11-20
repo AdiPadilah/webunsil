@@ -60,7 +60,7 @@
                             </div>
                         </div>
 
-                        <blockquote class="text-slate-800 text-base leading-relaxed italic font-normal bg-slate-50/80 p-6 rounded-2xl border-l-4 border-amber-500 my-4 shadow-sm">
+                        <blockquote class="text-slate-800 text-base sm:text-lg leading-relaxed italic font-serif bg-slate-50/80 p-6 rounded-2xl border-l-4 border-amber-500 my-4 shadow-sm">
                             "Menjadi pusat keunggulan dalam pengembangan ilmu Teknik Sipil yang berwawasan kebangsaan, berkarakter wirausaha, dan inovatif di tingkat nasional pada tahun 2030."
                         </blockquote>
                     </div>

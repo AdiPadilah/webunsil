@@ -10,7 +10,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
     
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,8 +19,10 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        heading: ['"Montserrat"', 'sans-serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                        heading: ['"Outfit"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Lora"', 'Georgia', 'serif'],
+                        academic: ['"Lora"', 'Georgia', 'serif'],
                     },
                     colors: {
                         unsil: {
@@ -42,6 +44,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
+        /* University-Grade Typography & Rendering Engine */
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
+        body {
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+        .font-heading {
+            letter-spacing: -0.025em;
+        }
+        h1, h2, h3 {
+            letter-spacing: -0.025em;
+            text-wrap: balance;
+        }
         .dropdown:hover > .dropdown-menu,
         .dropdown:focus-within > .dropdown-menu { display: block; }
         .sub-dropdown:hover > .sub-dropdown-menu,
