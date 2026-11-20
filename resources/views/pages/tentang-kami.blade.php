@@ -64,7 +64,7 @@
                         </div>
                         <div class="absolute bottom-4 left-4 right-4 text-white">
                             <h4 class="text-sm sm:text-base font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
-                            <p class="text-xs text-amber-300 font-medium mt-0.5">Koordinator Program Studi S-1 Teknik Sipil</p>
+                            <p class="text-xs text-amber-300 font-medium mt-0.5">Ketua Program Studi S-1 Teknik Sipil</p>
                         </div>
                     </div>
 
@@ -76,25 +76,26 @@
                                 <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Pimpinan Program Studi</span>
                             </div>
                             <h2 class="text-2xl sm:text-3xl font-black text-[#0B2A4A] font-heading leading-tight mb-4">
-                                Sambutan Koordinator Program Studi
+                                Sambutan Ketua Program Studi
                             </h2>
                             
                             <div class="text-sm sm:text-[15px] text-slate-600 space-y-3.5 leading-relaxed">
-                                <p class="italic font-medium text-slate-800">
-                                    Assalamu’alaikum Warahmatullahi Wabarakatuh, Salam Sejahtera untuk Kita Semua.
+                                <p class="font-semibold text-slate-800">
+                                    Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
                                 </p>
                                 <p>
-                                    Selamat datang di website resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi. Kami senantiasa berikhtiar menyelenggarakan pendidikan tinggi keteknikan yang adaptif terhadap perkembangan ilmu pengetahuan, teknologi terapan, dan dinamika industri infrastruktur masa kini.
+                                    Perkembangan teknologi, transformasi digital, dan tantangan lingkungan terus mengubah wajah dunia teknik sipil. Kondisi ini membuka peluang baru bagi pengembangan ilmu pengetahuan, inovasi rekayasa, dan solusi infrastruktur yang lebih cerdas, tangguh, serta berkelanjutan. Teknik Sipil Universitas Siliwangi hadir sebagai ruang akademik untuk mengeksplorasi potensi tersebut melalui pendidikan, penelitian, dan pengembangan teknologi.
                                 </p>
                                 <p>
-                                    Kurikulum kami dirancang berbasis <em>Outcome-Based Education</em> (OBE) yang terintegrasi dengan pembelajaran praktik di 6 laboratorium kejuruan serta magang industri. Kami membekali mahasiswa dengan kepiawaian kalkulasi struktural, geoteknik, dan manajemen konstruksi, serta integritas etika keinsinyuran dan jiwa kewirausahaan kebangsaan.
+                                    Ke depan, pengembangan program studi diarahkan pada penguatan kualitas pendidikan, riset inovatif, pemanfaatan teknologi, serta kolaborasi dengan berbagai mitra di tingkat nasional dan internasional. Lingkungan akademik yang terbuka dan kolaboratif menjadi fondasi untuk mendorong lahirnya gagasan, karya, dan kontribusi yang relevan dengan perkembangan dunia rekayasa. Peningkatan mutu dan daya saing akademik menjadi bagian penting dalam perjalanan menuju program studi yang semakin progresif dan berwawasan global.
                                 </p>
-                                <p class="font-medium text-slate-900">
-                                    Mari bersama-sama membangun peradaban bangsa melalui karya infrastruktur yang tangguh, inovatif, dan berkelanjutan.
+                                <p>
+                                    Masa depan Teknik Sipil Universitas Siliwangi dibangun melalui semangat untuk terus belajar, berinovasi, berkolaborasi, dan memberikan dampak nyata. Setiap gagasan, penelitian, prestasi, dan kontribusi sivitas akademika merupakan bagian dari perjalanan tersebut. Mari menjadi bagian dari perjalanan Teknik Sipil UNSIL dalam membangun pengetahuan, menciptakan inovasi, dan menghadirkan masa depan infrastruktur yang lebih baik.
                                 </p>
                                 <div class="pt-2">
                                     <p class="font-bold text-slate-900 text-sm">Andhy Romdani, S.T., M.Eng., Ph.D.</p>
-                                    <p class="text-xs text-slate-500">Koordinator Program Studi S-1 Teknik Sipil FT UNSIL</p>
+                                    <p class="text-xs text-slate-500">Ketua Program Studi Teknik Sipil</p>
+                                    <p class="text-xs text-slate-400">Fakultas Teknik Universitas Siliwangi</p>
                                 </div>
                             </div>
                         </div>
