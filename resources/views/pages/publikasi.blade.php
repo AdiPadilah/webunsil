@@ -28,20 +28,6 @@
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
                 Karya publikasi ilmiah berkala sivitas akademika Program Studi S-1 Teknik Sipil FT UNSIL pada jurnal terindeks SINTA 4, publikasi internasional bereputasi Scopus, dan prosiding seminar nasional.
             </p>
-
-            {{-- Link silang ke Buku & Penelitian --}}
-            <div class="flex flex-wrap items-center gap-3 mt-6 pt-6 border-t border-white/10">
-                <span class="text-xs text-slate-300 font-semibold">Tautan Terkait:</span>
-                <a href="{{ route('penelitian') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-microscope text-[10px]"></i> Peta Jalan Penelitian
-                </a>
-                <a href="{{ route('buku') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-400 text-[#0B2A4A] text-xs font-bold transition shadow-sm">
-                    <i class="fa-solid fa-book text-[10px]"></i> Katalog Buku Dosen
-                </a>
-                <a href="{{ route('karya-dosen') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-graduation-cap text-[10px]"></i> Hub Karya Dosen
-                </a>
-            </div>
         </div>
     </section>
 

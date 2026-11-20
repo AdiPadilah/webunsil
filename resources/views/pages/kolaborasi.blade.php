@@ -26,23 +26,6 @@
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
                 Membangun jejaring sinergis antara dunia akademik, industri jasa konstruksi nasional, kementerian teknis, dan mitra global guna mempercepat transfer teknologi dan kesiapan kerja lulusan.
             </p>
-
-            {{-- Link navigasi ke turunan lainnya --}}
-            <div class="flex flex-wrap items-center gap-3 mt-6 pt-6 border-t border-white/10">
-                <span class="text-xs text-slate-300 font-semibold">Navigasi Riset:</span>
-                <a href="{{ route('penelitian') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-microscope text-[10px]"></i> Penelitian
-                </a>
-                <a href="{{ route('pengabdian') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-people-carry-box text-[10px]"></i> Pengabdian (PkM)
-                </a>
-                <a href="{{ route('buku') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-book text-[10px]"></i> Buku
-                </a>
-                <a href="{{ route('publikasi') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-newspaper text-[10px]"></i> Publikasi
-                </a>
-            </div>
         </div>
     </section>
 

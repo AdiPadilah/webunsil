@@ -24,26 +24,6 @@
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
                 Membangun sinergi antara perguruan tinggi, industri konstruksi nasional, lembaga riset, dan pemerintah daerah untuk percepatan pembangunan infrastruktur berkelanjutan.
             </p>
-
-            {{-- Quick Links Turunan Riset & Kolaborasi --}}
-            <div class="flex flex-wrap items-center gap-2.5 mt-6 pt-6 border-t border-white/10">
-                <span class="text-xs text-slate-300 font-semibold mr-1">Menu Terkait:</span>
-                <a href="{{ route('penelitian') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-microscope text-[10px]"></i> Penelitian
-                </a>
-                <a href="{{ route('buku') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-book text-[10px]"></i> Buku
-                </a>
-                <a href="{{ route('publikasi') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-newspaper text-[10px]"></i> Publikasi
-                </a>
-                <a href="{{ route('kolaborasi') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-handshake text-[10px]"></i> Kolaborasi
-                </a>
-                <a href="{{ route('pengabdian') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
-                    <i class="fa-solid fa-people-carry-box text-[10px]"></i> Pengabdian
-                </a>
-            </div>
         </div>
     </section>
 
