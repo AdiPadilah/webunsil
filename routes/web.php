@@ -130,6 +130,31 @@ Route::get('/mahasiswa-alumni', function () {
     return view('pages.mahasiswa-alumni');
 })->name('mahasiswa-alumni');
 
+// 11a. Alur Pengurusan Kerja Praktik & Skripsi
+Route::get('/alur-pengurusan-kp-skripsi', function () {
+    return view('pages.alur-pengurusan-kp-skripsi');
+})->name('alur-pengurusan-kp-skripsi');
+
+// 11b. Jadwal Sidang Skripsi
+Route::get('/jadwal-sidang-skripsi', function () {
+    return view('pages.jadwal-sidang-skripsi');
+})->name('jadwal-sidang-skripsi');
+
+// 11c. Seminar Proposal
+Route::get('/seminar-proposal', function () {
+    return view('pages.seminar-proposal');
+})->name('seminar-proposal');
+
+// 11d. Seminar Hasil
+Route::get('/seminar-hasil', function () {
+    return view('pages.seminar-hasil');
+})->name('seminar-hasil');
+
+// 11e. Sidang Akhir
+Route::get('/sidang-akhir', function () {
+    return view('pages.sidang-akhir');
+})->name('sidang-akhir');
+
 // 12. Portal Berita & Informasi
 Route::get('/berita', function () {
     return view('pages.berita');
