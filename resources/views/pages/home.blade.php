@@ -8,10 +8,6 @@
     <section id="beranda" class="hero-banner relative min-h-[560px] lg:min-h-[640px] flex items-center py-20 lg:py-28 border-b border-slate-800 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
             <div class="max-w-2xl lg:max-w-3xl space-y-4">
-                <span class="text-white/90 text-lg sm:text-xl font-medium tracking-wide block drop-shadow-md">
-                    Selamat datang di
-                </span>
-
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white font-heading tracking-tight leading-tight drop-shadow-lg">
                     Program Studi<br><span class="text-amber-400">Teknik Sipil</span>
                 </h1>
@@ -21,7 +17,7 @@
                 </p>
 
                 <p class="text-slate-100 text-base sm:text-lg leading-relaxed text-justify sm:text-left font-normal pt-2 drop-shadow-md max-w-2xl">
-                    Program Studi Teknik Sipil UNSIL berkomitmen pada keunggulan dalam pendidikan, penelitian, dan inovasi di bidang teknik sipil. Kami menghasilkan lulusan profesional, kompeten, dan berintegritas yang siap menghadapi tantangan dunia kerja serta berkontribusi dalam pembangunan infrastruktur yang berkelanjutan.
+                    Mengembangkan ilmu pengetahuan, teknologi, dan inovasi untuk menjawab tantangan di bidang infrastruktur, teknologi, dan lingkungan. Menghadirkan gagasan, penelitian, dan karya rekayasa yang mendorong terciptanya infrastruktur yang tangguh, cerdas, dan berkelanjutan.
                 </p>
             </div>
         </div>
