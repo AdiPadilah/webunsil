@@ -158,32 +158,18 @@
                         </div>
                     </div>
                     
-                    {{-- Riset dan Kolaborasi (Dropdown dengan turunan Penelitian, Kolaborasi, Pengabdian, serta Buku & Publikasi) --}}
+                    {{-- Riset dan Kolaborasi (Dropdown: Penelitian, Kolaborasi, Pengabdian) --}}
                     <div class="relative dropdown">
-                        <a href="{{ route('riset') }}" id="nav-riset" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian', 'buku', 'publikasi') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('riset') }}" id="nav-riset" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'active-nav text-amber-400' : '' }}">
                             <span>Riset dan Kolaborasi</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
                         <div class="dropdown-menu hidden absolute top-full left-0 w-48 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
-                            
-                            {{-- Turunan 1: Penelitian (memiliki turunan Buku dan Publikasi) --}}
-                            <div class="relative sub-dropdown group/sub">
-                                <a href="{{ route('penelitian') }}" class="nav-link flex items-center justify-between px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('penelitian', 'buku', 'publikasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                    <span>Penelitian</span>
-                                    <i class="fa-solid fa-chevron-right text-[8px] text-slate-400 group-hover/sub:text-blue-600 group-hover/sub:translate-x-0.5 transition-transform"></i>
-                                </a>
-                                {{-- Submenu Turunan Penelitian: Buku & Publikasi (Flyout ke kanan) --}}
-                                <div class="sub-dropdown-menu hidden absolute top-0 left-full pl-1.5 w-44 z-50">
-                                    <div class="bg-white border border-slate-200 shadow-2xl rounded-xl py-2 text-slate-800">
-                                        <a href="{{ route('buku') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('buku') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                            Buku
-                                        </a>
-                                        <a href="{{ route('publikasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('publikasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                            Publikasi
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+
+                            {{-- Turunan 1: Penelitian --}}
+                            <a href="{{ route('penelitian') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('penelitian') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                Penelitian
+                            </a>
 
                             {{-- Turunan 2: Kolaborasi --}}
                             <a href="{{ route('kolaborasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kolaborasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
@@ -198,7 +184,21 @@
                         </div>
                     </div>
 
-                    <a href="{{ route('karya-dosen') }}" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg transition whitespace-nowrap {{ request()->routeIs('karya-dosen') ? 'active-nav text-amber-400' : '' }}">Karya Dosen</a>
+                    {{-- Karya Dosen (Dropdown: Buku, Publikasi) --}}
+                    <div class="relative dropdown">
+                        <a href="{{ route('karya-dosen') }}" id="nav-karya-dosen" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('karya-dosen', 'buku', 'publikasi') ? 'active-nav text-amber-400' : '' }}">
+                            <span>Karya Dosen</span>
+                            <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
+                        </a>
+                        <div class="dropdown-menu hidden absolute top-full left-0 w-44 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
+                            <a href="{{ route('buku') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('buku') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                Buku
+                            </a>
+                            <a href="{{ route('publikasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('publikasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                Publikasi
+                            </a>
+                        </div>
+                    </div>
                     
                     {{-- Mahasiswa dan Alumni (Dropdown dengan turunan Prestasi Mahasiswa, HMS, Ikatan Alumni, Tracer Study) --}}
                     <div class="relative dropdown">
@@ -254,13 +254,13 @@
             <a href="{{ route('aula') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('aula') ? 'text-amber-400 font-bold' : '' }}">&mdash; Aula</a>
             <a href="{{ route('kantin') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kantin') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kantin</a>
             <a href="{{ route('auditorium') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('auditorium') ? 'text-amber-400 font-bold' : '' }}">&mdash; Auditorium</a>
-            <a href="{{ route('riset') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian', 'buku', 'publikasi') ? 'text-amber-400 font-bold' : '' }}">Riset dan Kolaborasi</a>
+            <a href="{{ route('riset') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'text-amber-400 font-bold' : '' }}">Riset dan Kolaborasi</a>
             <a href="{{ route('penelitian') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('penelitian') ? 'text-amber-400 font-bold' : '' }}">&mdash; Penelitian</a>
-            <a href="{{ route('buku') }}" class="nav-link block py-1 pl-8 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-[11px] {{ request()->routeIs('buku') ? 'text-amber-400 font-bold' : '' }}">&bull; Buku</a>
-            <a href="{{ route('publikasi') }}" class="nav-link block py-1 pl-8 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-[11px] {{ request()->routeIs('publikasi') ? 'text-amber-400 font-bold' : '' }}">&bull; Publikasi</a>
             <a href="{{ route('kolaborasi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kolaborasi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kolaborasi</a>
             <a href="{{ route('pengabdian') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('pengabdian') ? 'text-amber-400 font-bold' : '' }}">&mdash; Pengabdian</a>
-            <a href="{{ route('karya-dosen') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('karya-dosen') ? 'text-amber-400 font-bold' : '' }}">Karya Dosen</a>
+            <a href="{{ route('karya-dosen') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('karya-dosen', 'buku', 'publikasi') ? 'text-amber-400 font-bold' : '' }}">Karya Dosen</a>
+            <a href="{{ route('buku') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('buku') ? 'text-amber-400 font-bold' : '' }}">&mdash; Buku</a>
+            <a href="{{ route('publikasi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('publikasi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Publikasi</a>
             <a href="{{ route('mahasiswa-alumni') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('mahasiswa-alumni', 'prestasi-mahasiswa') ? 'text-amber-400 font-bold' : '' }}">Mahasiswa dan Alumni</a>
             <a href="{{ route('prestasi-mahasiswa') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('prestasi-mahasiswa') ? 'text-amber-400 font-bold' : '' }}">&mdash; Prestasi Mahasiswa</a>
             <a href="{{ route('mahasiswa-alumni') }}#hms" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs">&mdash; Himpunan Mahasiswa (HMS)</a>
