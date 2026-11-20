@@ -58,7 +58,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {{-- Program 1 --}}
                 <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
                     <div>
@@ -124,31 +124,6 @@
                     </div>
                     <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-blue-700 font-semibold">
                         KBK Transportasi &amp; MK
-                    </div>
-                </div>
-            </div>
-
-            {{-- Stat Banner PkM --}}
-            <div class="bg-[#0B2A4A] text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
-                <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none"
-                     style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
-
-                <div class="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <div class="text-3xl sm:text-4xl font-black text-amber-400 font-heading">50+</div>
-                        <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider font-semibold">Desa Dampingan</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl sm:text-4xl font-black text-emerald-400 font-heading">1.200+</div>
-                        <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider font-semibold">Tukang &amp; Warga Terlatih</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl sm:text-4xl font-black text-blue-400 font-heading">100%</div>
-                        <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider font-semibold">Keterlibatan Dosen</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl sm:text-4xl font-black text-purple-400 font-heading">40+ Thn</div>
-                        <div class="text-xs text-slate-300 mt-1 uppercase tracking-wider font-semibold">Bakti di Priangan Timur</div>
                     </div>
                 </div>
             </div>
