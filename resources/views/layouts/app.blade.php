@@ -152,42 +152,35 @@
                             <span>Riset dan Kolaborasi</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
-                        <div class="dropdown-menu hidden absolute top-full left-0 w-56 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
+                        <div class="dropdown-menu hidden absolute top-full left-0 w-48 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
                             
                             {{-- Turunan 1: Penelitian (memiliki turunan Buku dan Publikasi) --}}
                             <div class="relative sub-dropdown group/sub">
                                 <a href="{{ route('penelitian') }}" class="nav-link flex items-center justify-between px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('penelitian', 'buku', 'publikasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                    <span class="flex items-center gap-2">
-                                        <i class="fa-solid fa-microscope text-[11px] text-blue-600 w-3.5 text-center"></i>
-                                        <span>Penelitian</span>
-                                    </span>
+                                    <span>Penelitian</span>
                                     <i class="fa-solid fa-chevron-right text-[8px] text-slate-400 group-hover/sub:text-blue-600 group-hover/sub:translate-x-0.5 transition-transform"></i>
                                 </a>
                                 {{-- Submenu Turunan Penelitian: Buku & Publikasi (Flyout ke kanan) --}}
-                                <div class="sub-dropdown-menu hidden absolute top-0 left-full pl-1.5 w-48 z-50">
+                                <div class="sub-dropdown-menu hidden absolute top-0 left-full pl-1.5 w-44 z-50">
                                     <div class="bg-white border border-slate-200 shadow-2xl rounded-xl py-2 text-slate-800">
-                                        <a href="{{ route('buku') }}" class="nav-link flex items-center gap-2 px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('buku') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                            <i class="fa-solid fa-book text-[11px] text-emerald-600 w-3.5 text-center"></i>
-                                            <span>Buku</span>
+                                        <a href="{{ route('buku') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('buku') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                            Buku
                                         </a>
-                                        <a href="{{ route('publikasi') }}" class="nav-link flex items-center gap-2 px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('publikasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                            <i class="fa-solid fa-newspaper text-[11px] text-blue-600 w-3.5 text-center"></i>
-                                            <span>Publikasi</span>
+                                        <a href="{{ route('publikasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('publikasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                            Publikasi
                                         </a>
                                     </div>
                                 </div>
                             </div>
 
                             {{-- Turunan 2: Kolaborasi --}}
-                            <a href="{{ route('kolaborasi') }}" class="nav-link flex items-center gap-2 px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kolaborasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                <i class="fa-solid fa-handshake text-[11px] text-amber-600 w-3.5 text-center"></i>
-                                <span>Kolaborasi</span>
+                            <a href="{{ route('kolaborasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kolaborasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                Kolaborasi
                             </a>
 
                             {{-- Turunan 3: Pengabdian --}}
-                            <a href="{{ route('pengabdian') }}" class="nav-link flex items-center gap-2 px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('pengabdian') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                <i class="fa-solid fa-people-carry-box text-[11px] text-purple-600 w-3.5 text-center"></i>
-                                <span>Pengabdian</span>
+                            <a href="{{ route('pengabdian') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('pengabdian') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                Pengabdian
                             </a>
 
                         </div>
