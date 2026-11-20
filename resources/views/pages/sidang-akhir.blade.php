@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Sidang Akhir (Komprehensif) | Program Studi S-1 Teknik Sipil FT UNSIL')
-@section('meta_description', 'Informasi, syarat yudisium, dan pelaksanaan Sidang Akhir Komprehensif Skripsi Program Studi Teknik Sipil FT Universitas Siliwangi.')
+@section('title', 'Sidang Akhir | Program Studi S-1 Teknik Sipil FT UNSIL')
+@section('meta_description', 'Informasi, syarat yudisium, dan pelaksanaan Sidang Akhir Skripsi Program Studi Teknik Sipil FT Universitas Siliwangi.')
 
 @section('content')
     {{-- Hero Banner --}}
@@ -21,10 +21,10 @@
                 Tahapan Skripsi 3 (Kelulusan)
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
-                Sidang Akhir (Komprehensif)
+                Sidang Akhir
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Ujian pendadaran skripsi dan evaluasi komprehensif penentu kelulusan derajat sarjana teknik (S-1) Program Studi Teknik Sipil Universitas Siliwangi.
+                Ujian pendadaran skripsi dan evaluasi penentu kelulusan derajat sarjana teknik (S-1) Program Studi Teknik Sipil Universitas Siliwangi.
             </p>
         </div>
     </section>
