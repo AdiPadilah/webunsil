@@ -210,34 +210,28 @@ $dosenList = [
 @endphp
 
     <!-- Hero Header -->
-    <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
-        <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
-             style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="bg-[#0B2A4A] text-white py-12 md:py-16 border-b border-blue-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
-                <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
+                <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5 text-slate-300 hover:text-amber-400 transition"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Dosen</span>
             </nav>
-            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
-                Sumber Daya Manusia Unggul
-            </span>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
+            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+                Tenaga Pengajar
+            </p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Dosen &amp; Tenaga Pengajar
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
+            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
                 Didukung oleh 27 staf pengajar berkualifikasi Magister (S-2) dan Doktor (S-3) lulusan perguruan tinggi terkemuka di dalam dan luar negeri, terdistribusi ke dalam 5 Kelompok Bidang Keahlian (KBK) keinsinyuran sipil.
             </p>
         </div>
     </section>
 
     <!-- Main Content Section -->
-    <section class="py-14 sm:py-16 bg-slate-50 relative overflow-hidden min-h-screen">
-        <div class="absolute inset-0 opacity-[0.06] bg-repeat pointer-events-none"
-             style="background-image: url('{{ asset('images/corak-daun-gold.png') }}'); background-size: 260px auto;"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="py-12 sm:py-14 bg-slate-50 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Tab Filter 5 Bidang Keahlian - Satu Baris Scrollable -->
             <div class="mb-12 overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
