@@ -13,9 +13,7 @@
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
                 <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <a href="{{ route('riset') }}" class="hover:underline text-slate-300">Riset dan Kolaborasi</a>
-                <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <a href="{{ route('penelitian') }}" class="hover:underline text-slate-300">Penelitian</a>
+                <a href="{{ route('karya-dosen') }}" class="hover:underline text-slate-300">Karya Dosen</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-white font-semibold">Buku</span>
             </nav>
