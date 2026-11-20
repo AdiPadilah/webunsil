@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Auditorium Gedung Mandala | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Fasilitas Auditorium Gedung Mandala Universitas Siliwangi berkapasitas 2.500+ orang untuk wisuda sarjana, rapat terbuka senat, dan konferensi internasional.')
+@section('title', 'Ruang Seminar & Sidang Teknik Sipil | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
+@section('meta_description', 'Fasilitas Ruang Seminar dan Sidang Tugas Akhir Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari — dilengkapi proyektor, AC, sound system, dan layar motorized.')
 
 @section('content')
 
@@ -16,29 +16,29 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <a href="{{ route('fasilitas') }}" class="hover:underline text-slate-300">Fasilitas</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-white font-semibold">Auditorium</span>
+                <span class="text-white font-semibold">Ruang Seminar & Sidang</span>
             </nav>
             <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
-                Landmark &amp; Gedung Pertemuan Akbar
+                Ruang Presentasi & Sidang Ilmiah
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
-                Auditorium <span class="text-amber-400">Gedung Mandala</span>
+                Ruang Seminar <span class="text-amber-400">&amp; Sidang</span>
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Gedung pertemuan utama dan kebanggaan Universitas Siliwangi dengan daya tampung hingga 2.500+ orang, dilengkapi panggung megah, sistem pendingin udara sentral, tata akustik profesional, serta area tribun bertingkat yang menjadi saksi sejarah pengukuhan sarjana teknik sipil dan perhelatan akbar tingkat internasional.
+                Fasilitas ruang seminar dan sidang tugas akhir di Gedung Fakultas Teknik Kampus 2 UNSIL Mugarsari dengan kapasitas 60–100 orang, dilengkapi peralatan audiovisual modern, pendingin udara, dan tata suara profesional untuk mendukung sidang ilmiah, seminar jurusan, serta kuliah pakar Teknik Sipil.
             </p>
         </div>
     </section>
 
-    {{-- Section Spesifikasi & Keunggulan Auditorium --}}
+    {{-- Section Spesifikasi & Keunggulan --}}
     <section class="py-12 md:py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Kemegahan &amp; Skala Akbar</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Fasilitas Gedung Mandala</h2>
+                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Sarana Ilmiah Kampus 2 Mugarsari</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Fasilitas Ruang Seminar & Sidang</h2>
                 <div class="w-14 h-1 bg-amber-500 mx-auto mt-3.5 rounded-full"></div>
                 <p class="text-slate-500 mt-3 text-xs sm:text-sm leading-relaxed">
-                    Dirancang sebagai sarana serbaguna dengan standar infrastruktur gedung konvensi modern di wilayah Priangan Timur.
+                    Dirancang untuk mendukung kegiatan akademik formal Program Studi Teknik Sipil, mulai dari sidang tugas akhir hingga seminar nasional di lingkungan Kampus 2 FT UNSIL Mugarsari.
                 </p>
             </div>
 
@@ -48,16 +48,16 @@
                 {{-- Card 1 --}}
                 <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-users-viewfinder"></i>
                         </div>
-                        <h3 class="font-bold text-slate-900 text-base font-heading">Kapasitas 2.500+ Orang</h3>
+                        <h3 class="font-bold text-slate-900 text-base font-heading">Kapasitas 60–100 Orang</h3>
                         <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                            Terbagi atas area lantai utama (lantai bawah) untuk wisudawan dan senat, serta tribun melingkar lantai 2 untuk keluarga dan undangan umum.
+                            Penataan kursi fleksibel model teater dan classroom, cocok untuk sidang tugas akhir, seminar terbuka, maupun kuliah tamu program studi.
                         </p>
                     </div>
-                    <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-amber-600 font-semibold">
-                        Lantai Utama + Tribun
+                    <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-purple-600 font-semibold">
+                        Layout Fleksibel
                     </div>
                 </div>
 
@@ -67,29 +67,29 @@
                         <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-temperature-arrow-down"></i>
                         </div>
-                        <h3 class="font-bold text-slate-900 text-base font-heading">AC Sentral Berdaya Tinggi</h3>
+                        <h3 class="font-bold text-slate-900 text-base font-heading">AC & Sirkulasi Udara</h3>
                         <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                            Sistem pendingin udara chiller sentral terintegrasi yang menjamin kesejukan merata ke seluruh sudut ruangan meski terisi ribuan orang.
+                            Pendingin udara split yang menjamin kenyamanan suhu selama sesi sidang tugas akhir maupun seminar yang berlangsung berjam-jam.
                         </p>
                     </div>
                     <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-blue-600 font-semibold">
-                        Central Chiller System
+                        AC Ruangan Full
                     </div>
                 </div>
 
                 {{-- Card 3 --}}
                 <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-tower-broadcast"></i>
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-display"></i>
                         </div>
-                        <h3 class="font-bold text-slate-900 text-base font-heading">Akustik Berstandar Konser</h3>
+                        <h3 class="font-bold text-slate-900 text-base font-heading">Proyektor & Layar Motorized</h3>
                         <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                            Panel peredam suara khusus yang meminimalisir gema, menghasilkan kejernihan vokal pidato senat, orasi ilmiah, hingga alunan paduan suara universitas.
+                            Proyektor Full HD dengan layar motorized berukuran besar untuk presentasi materi seminar, penayangan video penelitian, dan sidang tugas akhir.
                         </p>
                     </div>
-                    <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-purple-600 font-semibold">
-                        Acoustic Wall Treatment
+                    <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-amber-600 font-semibold">
+                        Full HD Projector
                     </div>
                 </div>
 
@@ -97,88 +97,122 @@
                 <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-car-rear"></i>
+                            <i class="fa-solid fa-sliders"></i>
                         </div>
-                        <h3 class="font-bold text-slate-900 text-base font-heading">Parkir &amp; Lobi Luas</h3>
+                        <h3 class="font-bold text-slate-900 text-base font-heading">Sound System Wireless</h3>
                         <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                            Lobi depan megah untuk registrasi dan pameran, didukung kantong parkir mobil dan motor berkapasitas ratusan kendaraan.
+                            Sistem tata suara digital dengan mikrofon wireless UHF untuk meja penguji dan podium presentasi mahasiswa, memastikan kejelasan suara di seluruh ruangan.
                         </p>
                     </div>
                     <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-emerald-600 font-semibold">
-                        Akses Leluasa
+                        Wireless UHF Mic
                     </div>
                 </div>
 
             </div>
 
-            {{-- Feature Showcase Foto Wisuda & Gedung Mandala --}}
+            {{-- Feature Showcase: Kegiatan di Ruang Seminar --}}
             <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm">
                 <div class="grid grid-cols-1 lg:grid-cols-12">
                     
-                    {{-- Foto Wisuda Besar --}}
+                    {{-- Foto Utama --}}
                     <div class="lg:col-span-7 relative min-h-[340px] lg:min-h-[460px] bg-slate-900 overflow-hidden">
-                        <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Suasana Sidang Senat Terbuka Wisuda Sarjana di Auditorium Gedung Mandala UNSIL"
-                             class="w-full h-full object-cover">
+                        <img src="{{ asset('images/event-2.jpg') }}" alt="Seminar Nasional & Kuliah Tamu Teknik Sipil FT UNSIL Kampus 2 Mugarsari"
+                             class="w-full h-full object-cover"
+                             onerror="this.src='{{ asset('images/workshop-obe.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6 text-white">
                             <span class="inline-block bg-amber-400 text-slate-900 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
-                                <i class="fa-solid fa-graduation-cap mr-1"></i> Sidang Senat Terbuka Wisuda Sarjana
+                                <i class="fa-solid fa-chalkboard-user mr-1"></i> Seminar & Kuliah Tamu
                             </span>
-                            <h3 class="text-xl sm:text-2xl font-black leading-tight">Auditorium Gedung Mandala Universitas Siliwangi</h3>
+                            <h3 class="text-xl sm:text-2xl font-black leading-tight">Ruang Seminar Teknik Sipil FT UNSIL</h3>
                             <p class="text-slate-300 text-xs mt-1.5 leading-relaxed">
-                                Tempat dilantiknya ribuan sarjana teknik sipil UNSIL yang kini berkiprah di BUMN karya, kementerian, konsultan perencana, dan kontraktor nasional.
+                                Kampus 2 Mugarsari, Jl. Siliwangi No. 24 Tasikmalaya — pusat kegiatan ilmiah dan sidang akademik Program Studi Teknik Sipil.
                             </p>
                         </div>
                     </div>
 
-                    {{-- Kolom Kanan: Agenda Akbar --}}
+                    {{-- Kolom Kanan: Agenda --}}
                     <div class="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-between">
                         <div>
-                            <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Perhelatan Akbar</span>
-                            <h3 class="text-2xl font-black text-slate-900 font-heading mt-1">Penggunaan Gedung Mandala</h3>
+                            <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Kegiatan Akademik</span>
+                            <h3 class="text-2xl font-black text-slate-900 font-heading mt-1">Penggunaan Ruang Seminar</h3>
                             <p class="text-xs sm:text-sm text-slate-600 mt-2.5 leading-relaxed">
-                                Menjadi episentrum berbagai perhelatan resmi berskala besar di lingkungan Universitas Siliwangi.
+                                Menjadi pusat kegiatan ilmiah dan seremonial akademik di lingkungan Program Studi Teknik Sipil Kampus 2 FT UNSIL Mugarsari.
                             </p>
 
                             <div class="space-y-4 mt-6">
                                 <div class="flex items-start gap-3">
                                     <div class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-sm font-bold mt-0.5">
-                                        <i class="fa-solid fa-user-graduate"></i>
+                                        <i class="fa-solid fa-scroll"></i>
                                     </div>
                                     <div>
-                                        <h4 class="text-xs font-bold text-slate-900">Wisuda Sarjana &amp; Pascasarjana</h4>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Digelar secara berkala 3 kali dalam setahun untuk melantik lulusan seluruh fakultas di UNSIL.</p>
+                                        <h4 class="text-xs font-bold text-slate-900">Sidang Tugas Akhir (TA)</h4>
+                                        <p class="text-[11px] text-slate-500 mt-0.5">Sidang komprehensif mahasiswa di hadapan tim penguji dosen, digelar secara rutin setiap periode kelulusan.</p>
                                     </div>
                                 </div>
 
                                 <div class="flex items-start gap-3">
                                     <div class="w-8 h-8 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-sm font-bold mt-0.5">
-                                        <i class="fa-solid fa-earth-asia"></i>
+                                        <i class="fa-solid fa-chalkboard-teacher"></i>
                                     </div>
                                     <div>
-                                        <h4 class="text-xs font-bold text-slate-900">Konferensi Internasional &amp; Kuliah Perdana</h4>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Menghadirkan menteri kabinet, pakar keinsinyuran dunia, dan delegasi peneliti internasional.</p>
+                                        <h4 class="text-xs font-bold text-slate-900">Seminar Nasional & Kuliah Pakar</h4>
+                                        <p class="text-[11px] text-slate-500 mt-0.5">Menghadirkan praktisi BUMN Karya, konsultan, dan akademisi nasional dalam forum ilmiah terbuka.</p>
                                     </div>
                                 </div>
 
                                 <div class="flex items-start gap-3">
                                     <div class="w-8 h-8 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center shrink-0 text-sm font-bold mt-0.5">
-                                        <i class="fa-solid fa-cake-candles"></i>
+                                        <i class="fa-solid fa-people-group"></i>
                                     </div>
                                     <div>
-                                        <h4 class="text-xs font-bold text-slate-900">Dies Natalis &amp; Peringatan Hari Jadi</h4>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Rangkaian upacara kehormatan hari lahir Universitas Siliwangi serta penganugerahan penghargaan prestasi.</p>
+                                        <h4 class="text-xs font-bold text-slate-900">Rapat & Musyawarah Prodi</h4>
+                                        <p class="text-[11px] text-slate-500 mt-0.5">Forum resmi rapat pimpinan, musyawarah besar HMS, dan pertemuan koordinasi civitas akademika Teknik Sipil.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                            <span>Lokasi: <strong>Kampus 1 UNSIL Tasikmalaya</strong></span>
-                            <span class="text-blue-700 font-bold">Kapasitas 2.500 Kursi</span>
+                            <span>Lokasi: <strong>Kampus 2 FT UNSIL Mugarsari</strong></span>
+                            <span class="text-purple-700 font-bold">Kapasitas 60–100 Kursi</span>
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+            {{-- Galeri Agenda --}}
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group relative rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/event-1.jpg') }}" alt="Seminar Nasional Teknik Sipil" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <span class="text-[10px] font-bold bg-amber-400 text-slate-900 px-2 py-0.5 rounded-full uppercase">Seminar Nasional</span>
+                        <h4 class="text-sm font-bold mt-1">Seminar Infrastruktur Berkelanjutan</h4>
+                        <p class="text-[11px] text-slate-300 mt-0.5">Dihadiri praktisi LPJK & akademisi nasional</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/event-3.jpg') }}" alt="Sidang Tugas Akhir Teknik Sipil" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <span class="text-[10px] font-bold bg-purple-400 text-white px-2 py-0.5 rounded-full uppercase">Sidang TA</span>
+                        <h4 class="text-sm font-bold mt-1">Sidang Tugas Akhir Mahasiswa</h4>
+                        <p class="text-[11px] text-slate-300 mt-0.5">Presentasi di hadapan tim dosen penguji</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop & Pelatihan Teknik Sipil" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <span class="text-[10px] font-bold bg-blue-400 text-white px-2 py-0.5 rounded-full uppercase">Workshop</span>
+                        <h4 class="text-sm font-bold mt-1">Workshop & Pelatihan Kurikulum OBE</h4>
+                        <p class="text-[11px] text-slate-300 mt-0.5">Peningkatan kompetensi sivitas akademika</p>
+                    </div>
                 </div>
             </div>
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Fasilitas & Sarana Prasarana | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Fasilitas lengkap Program Studi S-1 Teknik Sipil FT Universitas Siliwangi: 6 Laboratorium terpadu, Ruang Kelas ber-AC, Aula Fakultas Teknik, Kantin Sehat, dan Auditorium Gedung Mandala.')
+@section('meta_description', 'Fasilitas lengkap Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari: 6 Laboratorium terpadu, Ruang Kelas ber-AC, Aula Fakultas Teknik, Kantin Sehat, dan Ruang Seminar Teknik Sipil.')
 
 @section('content')
 
@@ -23,7 +23,7 @@
                 Fasilitas <span class="text-amber-400">Teknik Sipil</span>
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Sarana dan prasarana modern berstandar pendidikan tinggi teknik di Kampus FT UNSIL Mugarsari dan Kampus 1 guna menunjang proses belajar-mengajar, pengujian material konstruksi, riset sivitas akademika, serta pengembangan karakter mahasiswa.
+                Sarana dan prasarana modern di Kampus 2 Fakultas Teknik UNSIL Mugarsari, Jl. Siliwangi No. 24 Tasikmalaya, yang menunjang kegiatan belajar-mengajar, pengujian material konstruksi, riset sivitas akademika, serta pengembangan karakter mahasiswa Teknik Sipil.
             </p>
         </div>
     </section>
@@ -208,40 +208,41 @@
                     </div>
                 </div>
 
-                {{-- 5. Auditorium --}}
+                {{-- 5. Ruang Seminar & Sidang --}}
                 <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="relative h-60 overflow-hidden bg-slate-900">
-                            <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Auditorium Gedung Mandala UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <img src="{{ asset('images/event-2.jpg') }}" alt="Ruang Seminar & Sidang Teknik Sipil"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                 onerror="this.src='{{ asset('images/workshop-obe.jpg') }}'">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
                             <span class="absolute top-4 left-4 bg-purple-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                2.500+ Kursi &bull; Megah
+                                Seminar &bull; Sidang TA
                             </span>
 
                             <div class="absolute bottom-4 left-5 right-5">
-                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">Auditorium Gedung Mandala</h3>
-                                <p class="text-slate-300 text-xs mt-0.5">Convention Hall Utama &bull; Kampus 1 UNSIL</p>
+                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">Ruang Seminar & Sidang</h3>
+                                <p class="text-slate-300 text-xs mt-0.5">Gedung FT &bull; Kampus 2 Mugarsari</p>
                             </div>
                         </div>
 
                         <div class="p-6">
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Gedung konvensi megah berkapasitas 2.500+ orang dengan pendingin udara sentral, tata akustik profesional, dan tribun bertingkat untuk wisuda sarjana serta konferensi internasional.
+                                Ruang seminar dan sidang tugas akhir ber-AC dengan kapasitas 60–100 orang, dilengkapi proyektor, sound system, dan layar motorized untuk presentasi ilmiah mahasiswa.
                             </p>
                             <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-slate-500">
-                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Wisuda Sarjana &amp; Pasca</span>
-                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Sidang Senat Terbuka</span>
-                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">AC Sentral Chiller</span>
-                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Akustik Berstandar Konser</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Sidang Tugas Akhir</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Seminar Jurusan</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">AC & Proyektor</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">60–100 Kapasitas</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="p-6 pt-0">
                         <a href="{{ route('auditorium') }}" class="w-full inline-flex items-center justify-center gap-2 bg-[#0B2A4A] hover:bg-blue-800 text-amber-400 font-bold text-xs py-2.5 rounded-xl transition shadow-sm">
-                            <span>Buka Auditorium Mandala</span>
+                            <span>Buka Ruang Seminar</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
