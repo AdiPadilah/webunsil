@@ -24,11 +24,31 @@
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
                 Membangun sinergi antara perguruan tinggi, industri konstruksi nasional, lembaga riset, dan pemerintah daerah untuk percepatan pembangunan infrastruktur berkelanjutan.
             </p>
+
+            {{-- Quick Links Turunan Riset & Kolaborasi --}}
+            <div class="flex flex-wrap items-center gap-2.5 mt-6 pt-6 border-t border-white/10">
+                <span class="text-xs text-slate-300 font-semibold mr-1">Menu Terkait:</span>
+                <a href="{{ route('penelitian') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
+                    <i class="fa-solid fa-microscope text-[10px]"></i> Penelitian
+                </a>
+                <a href="{{ route('buku') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
+                    <i class="fa-solid fa-book text-[10px]"></i> Buku
+                </a>
+                <a href="{{ route('publikasi') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
+                    <i class="fa-solid fa-newspaper text-[10px]"></i> Publikasi
+                </a>
+                <a href="{{ route('kolaborasi') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
+                    <i class="fa-solid fa-handshake text-[10px]"></i> Kolaborasi
+                </a>
+                <a href="{{ route('pengabdian') }}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-amber-400 hover:text-[#0B2A4A] text-xs font-bold text-white transition border border-white/15">
+                    <i class="fa-solid fa-people-carry-box text-[10px]"></i> Pengabdian
+                </a>
+            </div>
         </div>
     </section>
 
     {{-- Jejaring Kerja Sama — foto besar + 3 kartu --}}
-    <section class="py-16 bg-white">
+    <section id="kolaborasi" class="py-16 bg-white scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Kemitraan Strategis</span>
@@ -99,7 +119,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
                 {{-- Fokus Penelitian --}}
-                <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div id="penelitian" class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between scroll-mt-24">
                     <div>
                         <div class="relative h-48 overflow-hidden">
                             <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Fokus Penelitian Dosen"
@@ -132,16 +152,16 @@
                         </div>
                     </div>
                     <div class="px-6 sm:px-7 pb-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-[11px] text-slate-500 font-medium">Publikasi Riset Terindeks SINTA</span>
-                        <a href="{{ route('karya-dosen') }}" class="text-xs font-bold text-blue-700 hover:text-blue-900 transition flex items-center gap-1.5">
-                            <span>Lihat Karya Dosen</span>
+                        <span class="text-[11px] text-slate-500 font-medium">Peta Jalan 5 KBK &amp; Hibah</span>
+                        <a href="{{ route('penelitian') }}" class="text-xs font-bold text-blue-700 hover:text-blue-900 transition flex items-center gap-1.5">
+                            <span>Buka Halaman Penelitian</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
                 {{-- PKM --}}
-                <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div id="pengabdian" class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between scroll-mt-24">
                     <div>
                         <div class="relative h-48 overflow-hidden">
                             <img src="{{ asset('images/event-1.jpg') }}" alt="Pengabdian Kepada Masyarakat"
@@ -175,8 +195,8 @@
                     </div>
                     <div class="px-6 sm:px-7 pb-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                         <span class="text-[11px] text-slate-500 font-medium">Bakti Nyata Sivitas Akademika UNSIL</span>
-                        <a href="{{ route('home') }}#lokasi" class="text-xs font-bold text-blue-700 hover:text-blue-900 transition flex items-center gap-1.5">
-                            <span>Lokasi Pengabdian</span>
+                        <a href="{{ route('pengabdian') }}" class="text-xs font-bold text-blue-700 hover:text-blue-900 transition flex items-center gap-1.5">
+                            <span>Buka Halaman Pengabdian</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>

@@ -213,7 +213,7 @@ $dosenList = [
     <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-12 md:py-16 relative overflow-hidden border-b border-blue-950">
         <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
              style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
                 <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
@@ -238,7 +238,7 @@ $dosenList = [
              style="background-image: url('{{ asset('images/corak-daun-gold.png') }}'); background-size: 260px auto;"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            
+
             <!-- Tab Filter 5 Bidang Keahlian - Satu Baris Scrollable -->
             <div class="mb-12 overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
                 <div class="flex items-center gap-2 p-2 bg-slate-100/90 rounded-2xl border border-slate-200 shadow-inner min-w-max mx-auto w-fit">
@@ -270,9 +270,9 @@ $dosenList = [
                     <!-- Foto Area (Bulat Presisi HD dengan Ring Frame Elegan) -->
                     <div class="pt-6 pb-2 px-4 bg-gradient-to-b from-slate-50/80 via-white to-white flex items-center justify-center relative">
                         <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-white shadow-md ring-4 ring-slate-100 group-hover:ring-blue-400 group-hover:shadow-lg transition-all duration-300 flex items-center justify-center overflow-hidden">
-                            <img src="{{ asset('images/dosen/' . $dosen['slug'] . '.png') }}?v={{ @filemtime(public_path('images/dosen/' . $dosen['slug'] . '.png')) ?: 2 }}" 
-                                 alt="{{ $dosen['nama'] }}" 
-                                 class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300 pointer-events-none" 
+                            <img src="{{ asset('images/dosen/' . $dosen['slug'] . '.png') }}?v={{ @filemtime(public_path('images/dosen/' . $dosen['slug'] . '.png')) ?: 2 }}"
+                                 alt="{{ $dosen['nama'] }}"
+                                 class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300 pointer-events-none"
                                  loading="lazy">
                         </div>
                     </div>
@@ -325,5 +325,6 @@ $dosenList = [
             });
         }
     </script>
+    
     @endpush
 @endsection

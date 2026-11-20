@@ -28,7 +28,7 @@
     </section>
 
     {{-- Publikasi Unggulan --}}
-    <section class="py-16 bg-slate-50">
+    <section class="py-16 bg-slate-50" id="publikasi">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Karya Cipta &amp; Inovasi</span>
@@ -64,7 +64,7 @@
                 </div>
 
                 {{-- Buku ber-ISBN — Kolom kanan --}}
-                <div class="lg:col-span-2 flex flex-col gap-5">
+                <div class="lg:col-span-2 flex flex-col gap-5" id="buku">
 
                     {{-- Buku 1 --}}
                     <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex-1 min-h-[160px] flex flex-col">

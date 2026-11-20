@@ -65,10 +65,35 @@ Route::get('/fasilitas', function () {
     return view('pages.fasilitas');
 })->name('fasilitas');
 
-// 9. Riset dan Kolaborasi
+// 9. Riset dan Kolaborasi (Hub Page)
 Route::get('/riset', function () {
     return view('pages.riset');
 })->name('riset');
+
+// 9a. Turunan Riset & Kolaborasi: Penelitian
+Route::get('/penelitian', function () {
+    return view('pages.penelitian');
+})->name('penelitian');
+
+// 9b. Turunan Riset & Kolaborasi: Kolaborasi
+Route::get('/kolaborasi', function () {
+    return view('pages.kolaborasi');
+})->name('kolaborasi');
+
+// 9c. Turunan Riset & Kolaborasi: Pengabdian (PkM)
+Route::get('/pengabdian', function () {
+    return view('pages.pengabdian');
+})->name('pengabdian');
+
+// 9d. Turunan Penelitian / Riset: Buku
+Route::get('/buku', function () {
+    return view('pages.buku');
+})->name('buku');
+
+// 9e. Turunan Penelitian / Riset: Publikasi
+Route::get('/publikasi', function () {
+    return view('pages.publikasi');
+})->name('publikasi');
 
 // 10. Karya Dosen
 Route::get('/karya-dosen', function () {
