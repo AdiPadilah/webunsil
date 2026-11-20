@@ -105,28 +105,7 @@
                 </div>
             </div>
 
-            
-            <div class="max-w-2xl mx-auto bg-gradient-to-br from-[#0B2A4A] to-[#154c79] rounded-3xl p-8 text-white shadow-md">
-                <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-headset text-amber-400"></i> Kontak Pelayanan
-                </h3>
-                <p class="text-xs text-slate-300 leading-relaxed mb-6">
-                    Untuk konsultasi status permohonan surat atau legalisir, silakan hubungi bagian tata usaha program studi melalui saluran berikut:
-                </p>
-                <div class="space-y-3.5 text-xs">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-envelope text-amber-400 w-4"></i>
-                        <span>sipil@unsil.ac.id</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-building-columns text-amber-400 w-4"></i>
-                        <span>Ruang Jurusan Teknik Sipil, Lantai 2 FT UNSIL Mugarsari</span>
-                    </div>
-                </div>
-                <div class="mt-6 pt-5 border-t border-blue-900 text-[11px] text-slate-400">
-                    Jam Operasional: Senin &ndash; Jumat, 07.30 &ndash; 16.00 WIB
-                </div>
-            </div>
+
 
         </div>
     </section>
