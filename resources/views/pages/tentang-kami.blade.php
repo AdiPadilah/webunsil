@@ -50,20 +50,21 @@
             <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-200">
                 <div class="grid grid-cols-1 lg:grid-cols-12">
                     
-                    <div class="lg:col-span-4 md:col-span-5 relative min-h-[300px] lg:min-h-full bg-slate-900 overflow-hidden">
-                        <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" 
-                             alt="Koordinator Program Studi Teknik Sipil FT UNSIL" 
-                             class="w-full h-full object-cover min-h-[300px] lg:min-h-[420px]"
-                             onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/90 via-[#0B2A4A]/30 to-transparent"></div>
+                    {{-- Foto Pimpinan / Koordinator Program Studi --}}
+                    <div class="lg:col-span-4 md:col-span-5 relative min-h-[340px] lg:min-h-full bg-slate-100 overflow-hidden">
+                        <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
+                             alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Koordinator Program Studi Teknik Sipil FT UNSIL" 
+                             class="w-full h-full object-cover object-center min-h-[340px] lg:min-h-[440px]"
+                             onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/90 via-transparent to-transparent"></div>
                         <div class="absolute top-4 left-4">
                             <span class="inline-flex items-center gap-1.5 bg-[#0B2A4A]/90 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-full backdrop-blur-sm border border-amber-400/30 shadow-md">
                                 <i class="fa-solid fa-bullhorn text-[10px]"></i> Kepemimpinan
                             </span>
                         </div>
                         <div class="absolute bottom-4 left-4 right-4 text-white">
-                            <h4 class="text-sm sm:text-base font-bold text-white leading-tight">Koordinator Program Studi</h4>
-                            <p class="text-xs text-slate-300">S-1 Teknik Sipil FT UNSIL</p>
+                            <h4 class="text-sm sm:text-base font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
+                            <p class="text-xs text-amber-300 font-medium mt-0.5">Koordinator Program Studi S-1 Teknik Sipil</p>
                         </div>
                     </div>
 
@@ -91,6 +92,10 @@
                                 <p class="font-medium text-slate-900">
                                     Mari bersama-sama membangun peradaban bangsa melalui karya infrastruktur yang tangguh, inovatif, dan berkelanjutan.
                                 </p>
+                                <div class="pt-2">
+                                    <p class="font-bold text-slate-900 text-sm">Andhy Romdani, S.T., M.Eng., Ph.D.</p>
+                                    <p class="text-xs text-slate-500">Koordinator Program Studi S-1 Teknik Sipil FT UNSIL</p>
+                                </div>
                             </div>
                         </div>
 
