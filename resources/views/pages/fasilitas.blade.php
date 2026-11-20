@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Fasilitas Laboratorium | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Fasilitas 6 laboratorium kejuruan Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari.')
+@section('title', 'Fasilitas & Sarana Prasarana | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
+@section('meta_description', 'Fasilitas lengkap Program Studi S-1 Teknik Sipil FT Universitas Siliwangi: 6 Laboratorium terpadu, Ruang Kelas ber-AC, Aula Fakultas Teknik, Kantin Sehat, dan Auditorium Gedung Mandala.')
 
 @section('content')
 
@@ -14,401 +14,239 @@
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
                 <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-slate-200">Fasilitas</span>
+                <span class="text-white font-semibold">Fasilitas</span>
             </nav>
             <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
-                Sarana &amp; Prasarana Kejuruan
+                Infrastruktur &amp; Ekosistem Akademik
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
-                Fasilitas <span class="text-amber-400">Laboratorium</span>
+                Fasilitas <span class="text-amber-400">Teknik Sipil</span>
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Fasilitas pengujian bahan dan komputasi rekayasa di Kampus 2 UNSIL Mugarsari untuk mendukung kegiatan praktikum kurikulum 144 SKS serta penelitian tugas akhir mahasiswa.
+                Sarana dan prasarana modern berstandar pendidikan tinggi teknik di Kampus FT UNSIL Mugarsari dan Kampus 1 guna menunjang proses belajar-mengajar, pengujian material konstruksi, riset sivitas akademika, serta pengembangan karakter mahasiswa.
             </p>
         </div>
     </section>
 
-    {{-- Section: 6 Laboratorium Kejuruan --}}
-    <section class="py-12 md:py-14 bg-slate-50">
+    {{-- 5 Klaster Fasilitas Utama --}}
+    <section class="py-12 md:py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Laboratorium Kejuruan</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">6 Laboratorium Teknik Sipil</h2>
+                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Pilihan Fasilitas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Sarana Kampus Terpadu</h2>
                 <div class="w-14 h-1 bg-amber-500 mx-auto mt-3.5 rounded-full"></div>
                 <p class="text-slate-500 mt-3 text-xs sm:text-sm leading-relaxed">
-                    Setiap laboratorium dikelola oleh kepala laboratorium dan pranata laboratorium (laboran) untuk mendukung praktikum serta pengujian material.
+                    Eksplorasi seluruh sarana penunjang akademik, pengujian keinsinyuran, hingga ruang komunal mahasiswa Program Studi S-1 Teknik Sipil UNSIL.
                 </p>
             </div>
 
-            {{-- Grid 2 Kolom --}}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-7">
+            {{-- Grid 5 Fasilitas (3 Atas + 2 Bawah) --}}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 
-                {{-- 1. Lab TBK --}}
-                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                {{-- 1. Laboratorium --}}
+                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="relative h-60 sm:h-64 overflow-hidden bg-slate-900">
-                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000" alt="Lab. Teknologi Bahan Konstruksi"
+                        <div class="relative h-56 overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000" alt="Laboratorium Teknik Sipil"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/lab-civil.jpg') }}'">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
                             <span class="absolute top-4 left-4 bg-blue-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Struktur &amp; Bahan
+                                6 Unit Lab
                             </span>
 
                             <div class="absolute bottom-4 left-5 right-5">
-                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
-                                    Lab. Teknologi Bahan Konstruksi (TBK)
-                                </h3>
-                                <p class="text-slate-300 text-xs mt-1">Gedung FT UNSIL &bull; Kampus 2 Mugarsari</p>
+                                <h3 class="text-xl font-black text-white leading-tight">Laboratorium</h3>
+                                <p class="text-slate-300 text-xs mt-0.5">Gedung Lab FT &bull; Kampus 2 Mugarsari</p>
                             </div>
                         </div>
 
-                        <div class="p-5 sm:p-6">
+                        <div class="p-6">
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Melayani praktikum dan pengujian sifat fisis maupun mekanis bahan bangunan seperti beton, semen, agregat, dan baja tulangan.
+                                Pusat pengujian material, mekanika tanah, hidraulika, aspal transportasi, pemodelan struktur SAP2000, dan pengukuran topografi berstandar SNI &amp; ASTM.
                             </p>
-
-                            <div class="mt-4 pt-3.5 border-t border-slate-100">
-                                <div class="text-xs font-bold text-slate-700 mb-2">Peralatan utama:</div>
-                                <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-600">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0"></span>
-                                        <span>Mesin Uji Tekan Beton</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0"></span>
-                                        <span>Universal Testing Machine (UTM)</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0"></span>
-                                        <span>Sieve Shaker &amp; Oven Pengering</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0"></span>
-                                        <span>Slump Cone &amp; Cetakan Uji</span>
-                                    </div>
-                                </div>
+                            <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-slate-500">
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Lab TBK</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Lab Mekanika Tanah</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Lab Hidraulika</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Lab Transportasi</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Lab Komputasi</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Lab Ukur Tanah</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                        <span>Standar Pengujian: <strong>SNI &bull; ASTM</strong></span>
-                        <span class="text-emerald-700 font-semibold text-[11px]">Aktif Praktikum</span>
+                    <div class="p-6 pt-0">
+                        <a href="{{ route('laboratorium') }}" class="w-full inline-flex items-center justify-center gap-2 bg-[#0B2A4A] hover:bg-blue-800 text-amber-400 font-bold text-xs py-2.5 rounded-xl transition shadow-sm">
+                            <span>Buka Laboratorium</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
                     </div>
                 </div>
 
-                {{-- 2. Lab Perkerasan Jalan --}}
-                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                {{-- 2. Ruang Kelas --}}
+                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="relative h-60 sm:h-64 overflow-hidden bg-slate-900">
-                            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?q=80&w=1000" alt="Lab. Perkerasan Jalan & Aspal"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
-                            
-                            <span class="absolute top-4 left-4 bg-amber-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Transportasi &amp; Jalan
-                            </span>
-
-                            <div class="absolute bottom-4 left-5 right-5">
-                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
-                                    Lab. Perkerasan Jalan &amp; Aspal
-                                </h3>
-                                <p class="text-slate-300 text-xs mt-1">Gedung FT UNSIL &bull; Kampus 2 Mugarsari</p>
-                            </div>
-                        </div>
-
-                        <div class="p-5 sm:p-6">
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Pengujian karakteristik aspal dan campuran perkerasan jalan lentur maupun kaku untuk menunjang rekayasa perkerasan jalan raya.
-                            </p>
-
-                            <div class="mt-4 pt-3.5 border-t border-slate-100">
-                                <div class="text-xs font-bold text-slate-700 mb-2">Peralatan utama:</div>
-                                <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-600">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-amber-600 shrink-0"></span>
-                                        <span>Marshall Test Compactor</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-amber-600 shrink-0"></span>
-                                        <span>Penetrometer &amp; Titik Lembek</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-amber-600 shrink-0"></span>
-                                        <span>Centrifuge Extractor Aspal</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-amber-600 shrink-0"></span>
-                                        <span>Mesin Abrasi Los Angeles</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                        <span>Standar Pengujian: <strong>Bina Marga &bull; SNI</strong></span>
-                        <span class="text-emerald-700 font-semibold text-[11px]">Aktif Praktikum</span>
-                    </div>
-                </div>
-
-                {{-- 3. Lab Mekanika Tanah --}}
-                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-60 sm:h-64 overflow-hidden bg-slate-900">
-                            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1000" alt="Lab. Mekanika Tanah & Geoteknik"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='{{ asset('images/lab-civil.jpg') }}'">
+                        <div class="relative h-56 overflow-hidden bg-slate-900">
+                            <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Ruang Kelas & Perkuliahan"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
                             <span class="absolute top-4 left-4 bg-emerald-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Geoteknik
+                                Full AC &bull; Smart Class
                             </span>
 
                             <div class="absolute bottom-4 left-5 right-5">
-                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
-                                    Lab. Mekanika Tanah &amp; Geoteknik
-                                </h3>
-                                <p class="text-slate-300 text-xs mt-1">Gedung FT UNSIL &bull; Kampus 2 Mugarsari</p>
+                                <h3 class="text-xl font-black text-white leading-tight">Ruang Kelas</h3>
+                                <p class="text-slate-300 text-xs mt-0.5">Gedung FT UNSIL Lantai 1 &ndash; 3</p>
                             </div>
                         </div>
 
-                        <div class="p-5 sm:p-6">
+                        <div class="p-6">
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Pengujian parameter fisis dan mekanis tanah, kapasitas daya dukung pondasi, konsolidasi, dan analisis kestabilan lereng.
+                                Ruang perkuliahan berpenyejuk udara (AC), proyektor multimedia, smart display, kursi ergonomis, dan koneksi internet wireless Eduroam untuk implementasi kurikulum OBE.
                             </p>
-
-                            <div class="mt-4 pt-3.5 border-t border-slate-100">
-                                <div class="text-xs font-bold text-slate-700 mb-2">Peralatan utama:</div>
-                                <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-600">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0"></span>
-                                        <span>Mesin Sondir Hidrolik (CPT)</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0"></span>
-                                        <span>Direct Shear &amp; Triaxial Test</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0"></span>
-                                        <span>Oedometer Konsolidasi Tanah</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0"></span>
-                                        <span>Alat Pemadatan Proctor</span>
-                                    </div>
-                                </div>
+                            <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-slate-500">
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">40-50 Kursi/Kelas</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">LCD Projector Full HD</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Wi-Fi Eduroam</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Ruang Seminar Sidang</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                        <span>Standar Pengujian: <strong>SNI &bull; ASTM</strong></span>
-                        <span class="text-emerald-700 font-semibold text-[11px]">Aktif Praktikum</span>
+                    <div class="p-6 pt-0">
+                        <a href="{{ route('kelas') }}" class="w-full inline-flex items-center justify-center gap-2 bg-[#0B2A4A] hover:bg-blue-800 text-amber-400 font-bold text-xs py-2.5 rounded-xl transition shadow-sm">
+                            <span>Buka Ruang Kelas</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
                     </div>
                 </div>
 
-                {{-- 4. Lab Hidrolika & SDA --}}
-                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                {{-- 3. Aula FT --}}
+                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="relative h-60 sm:h-64 overflow-hidden bg-slate-900">
-                            <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="Lab. Hidrolika & Sumber Daya Air"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000'">
+                        <div class="relative h-56 overflow-hidden bg-slate-900">
+                            <img src="{{ asset('images/event-1.jpg') }}" alt="Aula Fakultas Teknik"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
-                            <span class="absolute top-4 left-4 bg-cyan-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Keairan &amp; Hidrologi
+                            <span class="absolute top-4 left-4 bg-amber-500/95 text-slate-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                300 Kursi
                             </span>
 
                             <div class="absolute bottom-4 left-5 right-5">
-                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
-                                    Lab. Hidrolika &amp; Sumber Daya Air
-                                </h3>
-                                <p class="text-slate-300 text-xs mt-1">Gedung FT UNSIL &bull; Kampus 2 Mugarsari</p>
+                                <h3 class="text-xl font-black text-white leading-tight">Aula Fakultas Teknik</h3>
+                                <p class="text-slate-300 text-xs mt-0.5">Gedung FT &bull; Kampus 2 Mugarsari</p>
                             </div>
                         </div>
 
-                        <div class="p-5 sm:p-6">
+                        <div class="p-6">
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Praktikum mekanika fluida, simulasi hidraulika saluran terbuka, debit aliran pipa, dan model bangunan pelimpah bendung.
+                                Gedung pertemuan serbaguna untuk penyelenggaraan seminar nasional, kuliah pakar BUMN karya, pelepasan yudisium sarjana, dan musyawarah mahasiswa sipil.
                             </p>
-
-                            <div class="mt-4 pt-3.5 border-t border-slate-100">
-                                <div class="text-xs font-bold text-slate-700 mb-2">Peralatan utama:</div>
-                                <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-600">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0"></span>
-                                        <span>Open Channel Flume Aliran</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0"></span>
-                                        <span>Venturimeter &amp; Pipa Bernoulli</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0"></span>
-                                        <span>Model Pelimpah Bendung</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-cyan-600 shrink-0"></span>
-                                        <span>Current Meter Debit Air</span>
-                                    </div>
-                                </div>
+                            <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-slate-500">
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Panggung Kehormatan</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Dual Screen Proyektor</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Sound System Digital</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Transit VIP</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                        <span>Standar Pengujian: <strong>SNI &bull; Kriteria Irigasi KP</strong></span>
-                        <span class="text-emerald-700 font-semibold text-[11px]">Aktif Praktikum</span>
-                    </div>
-                </div>
-
-                {{-- 5. Lab Komputasi & BIM --}}
-                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-60 sm:h-64 overflow-hidden bg-slate-900">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000" alt="Lab. Komputasi Rekayasa Sipil & BIM"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
-                            
-                            <span class="absolute top-4 left-4 bg-purple-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Komputasi &amp; BIM
-                            </span>
-
-                            <div class="absolute bottom-4 left-5 right-5">
-                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
-                                    Lab. Komputasi Rekayasa &amp; BIM
-                                </h3>
-                                <p class="text-slate-300 text-xs mt-1">Gedung FT Lantai 2 &bull; Kampus 2 Mugarsari</p>
-                            </div>
-                        </div>
-
-                        <div class="p-5 sm:p-6">
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Ruang komputer untuk pemodelan struktur tahan gempa, perancangan gambar teknik CAD, analisis hidrologi, dan Building Information Modeling.
-                            </p>
-
-                            <div class="mt-4 pt-3.5 border-t border-slate-100">
-                                <div class="text-xs font-bold text-slate-700 mb-2">Software utama:</div>
-                                <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-600">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-purple-600 shrink-0"></span>
-                                        <span>SAP2000 &amp; ETABS</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-purple-600 shrink-0"></span>
-                                        <span>AutoCAD &amp; Civil 3D</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-purple-600 shrink-0"></span>
-                                        <span>HEC-RAS Hidraulika</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-purple-600 shrink-0"></span>
-                                        <span>ArcGIS Pemetaan</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                        <span>Fasilitas: <strong>Workstation PC &bull; LAN</strong></span>
-                        <span class="text-emerald-700 font-semibold text-[11px]">Aktif Praktikum</span>
-                    </div>
-                </div>
-
-                {{-- 6. Lab Perpetaan & Ukur Tanah --}}
-                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-60 sm:h-64 overflow-hidden bg-slate-900">
-                            <img src="https://images.unsplash.com/photo-1508873696983-2df5293cb395?q=80&w=1000" alt="Lab. Perpetaan & Ukur Tanah"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
-                            
-                            <span class="absolute top-4 left-4 bg-rose-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Geomatika &amp; Survei
-                            </span>
-
-                            <div class="absolute bottom-4 left-5 right-5">
-                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
-                                    Lab. Perpetaan &amp; Ukur Tanah
-                                </h3>
-                                <p class="text-slate-300 text-xs mt-1">Gedung FT UNSIL &bull; Kampus 2 Mugarsari</p>
-                            </div>
-                        </div>
-
-                        <div class="p-5 sm:p-6">
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Praktikum pengukuran situasi kontur, penentuan koordinat poligon, elevasi trase jalan raya dan saluran irigasi, serta pemetaan topografi.
-                            </p>
-
-                            <div class="mt-4 pt-3.5 border-t border-slate-100">
-                                <div class="text-xs font-bold text-slate-700 mb-2">Peralatan utama:</div>
-                                <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-slate-600">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-rose-600 shrink-0"></span>
-                                        <span>Total Station Digital</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-rose-600 shrink-0"></span>
-                                        <span>Theodolite Digital &amp; Rambu</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-rose-600 shrink-0"></span>
-                                        <span>Automatic Waterpass</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-rose-600 shrink-0"></span>
-                                        <span>GPS Geodetik Navigasi</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                        <span>Standar Pengujian: <strong>SNI &bull; Standar BIG</strong></span>
-                        <span class="text-emerald-700 font-semibold text-[11px]">Aktif Praktikum</span>
+                    <div class="p-6 pt-0">
+                        <a href="{{ route('aula') }}" class="w-full inline-flex items-center justify-center gap-2 bg-[#0B2A4A] hover:bg-blue-800 text-amber-400 font-bold text-xs py-2.5 rounded-xl transition shadow-sm">
+                            <span>Buka Aula FT</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
                     </div>
                 </div>
 
             </div>
 
-            {{-- Banner K3 Terpadu di Bawah Kartu --}}
-            <div class="mt-10 sm:mt-12 bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-3xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden">
-                <div class="absolute inset-0 opacity-[0.03] bg-repeat pointer-events-none"
-                     style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
+            {{-- Baris 2: Kantin & Auditorium (2 Kolom Lebar) --}}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
-                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div class="max-w-2xl">
-                        <span class="text-amber-400 font-bold uppercase text-[10px] tracking-wider block mb-1">
-                            Keselamatan Kerja Laboratorium
-                        </span>
-                        <h4 class="text-lg sm:text-xl font-bold font-heading">
-                            Standar K3L (Kesehatan &amp; Keselamatan Kerja)
-                        </h4>
-                        <p class="text-slate-300 text-xs mt-1.5 leading-relaxed">
-                            Praktikum wajib menerapkan SOP K3L: wajib memakai APD lengkap (helm proyek, rompi, sepatu safety), serta tersedianya APAR dan kotak P3K di setiap laboratorium.
-                        </p>
+                {{-- 4. Kantin --}}
+                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-60 overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000" alt="Kantin Kampus FT UNSIL"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                 onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
+                            
+                            <span class="absolute top-4 left-4 bg-teal-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Halal &amp; Higienis
+                            </span>
+
+                            <div class="absolute bottom-4 left-5 right-5">
+                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">Kantin Kampus</h3>
+                                <p class="text-slate-300 text-xs mt-0.5">Area Kuliner &bull; Kampus 2 Mugarsari</p>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Pusat santap kuliner sehat dan higienis bersuasana semi-outdoor dengan semilir udara perbukitan Mugarsari. Menyediakan hidangan bergizi terjangkau serta fasilitas transaksi non-tunai QRIS.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-slate-500">
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Harga Mahasiswa</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Cashless QRIS</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Meja Komunal Diskusi</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Wastafel Antiseptik</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center gap-3 shrink-0">
-                        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 text-center">
-                            <i class="fa-solid fa-helmet-safety text-amber-400 text-xl mb-1 block"></i>
-                            <span class="text-[11px] font-bold text-white block">Wajib APD</span>
-                        </div>
-                        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 text-center">
-                            <i class="fa-solid fa-fire-extinguisher text-amber-400 text-xl mb-1 block"></i>
-                            <span class="text-[11px] font-bold text-white block">APAR Siaga</span>
-                        </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="{{ route('kantin') }}" class="w-full inline-flex items-center justify-center gap-2 bg-[#0B2A4A] hover:bg-blue-800 text-amber-400 font-bold text-xs py-2.5 rounded-xl transition shadow-sm">
+                            <span>Buka Kantin Kampus</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
                     </div>
                 </div>
+
+                {{-- 5. Auditorium --}}
+                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-60 overflow-hidden bg-slate-900">
+                            <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Auditorium Gedung Mandala UNSIL"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
+                            
+                            <span class="absolute top-4 left-4 bg-purple-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                2.500+ Kursi &bull; Megah
+                            </span>
+
+                            <div class="absolute bottom-4 left-5 right-5">
+                                <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">Auditorium Gedung Mandala</h3>
+                                <p class="text-slate-300 text-xs mt-0.5">Convention Hall Utama &bull; Kampus 1 UNSIL</p>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Gedung konvensi megah berkapasitas 2.500+ orang dengan pendingin udara sentral, tata akustik profesional, dan tribun bertingkat untuk wisuda sarjana serta konferensi internasional.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5 text-[11px] text-slate-500">
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Wisuda Sarjana &amp; Pasca</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Sidang Senat Terbuka</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">AC Sentral Chiller</span>
+                                <span class="bg-slate-100 px-2.5 py-1 rounded-lg">Akustik Berstandar Konser</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="{{ route('auditorium') }}" class="w-full inline-flex items-center justify-center gap-2 bg-[#0B2A4A] hover:bg-blue-800 text-amber-400 font-bold text-xs py-2.5 rounded-xl transition shadow-sm">
+                            <span>Buka Auditorium Mandala</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
         </div>

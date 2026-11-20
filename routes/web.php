@@ -60,10 +60,35 @@ Route::get('/download', function () {
     return view('pages.download');
 })->name('download');
 
-// 8. Fasilitas Laboratorium
+// 8. Fasilitas (Hub Page)
 Route::get('/fasilitas', function () {
     return view('pages.fasilitas');
 })->name('fasilitas');
+
+// 8a. Turunan Fasilitas: Laboratorium
+Route::get('/laboratorium', function () {
+    return view('pages.laboratorium');
+})->name('laboratorium');
+
+// 8b. Turunan Fasilitas: Kelas
+Route::get('/kelas', function () {
+    return view('pages.kelas');
+})->name('kelas');
+
+// 8c. Turunan Fasilitas: Aula
+Route::get('/aula', function () {
+    return view('pages.aula');
+})->name('aula');
+
+// 8d. Turunan Fasilitas: Kantin
+Route::get('/kantin', function () {
+    return view('pages.kantin');
+})->name('kantin');
+
+// 8e. Turunan Fasilitas: Auditorium
+Route::get('/auditorium', function () {
+    return view('pages.auditorium');
+})->name('auditorium');
 
 // 9. Riset dan Kolaborasi (Hub Page)
 Route::get('/riset', function () {
