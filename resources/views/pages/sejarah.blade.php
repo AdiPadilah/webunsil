@@ -5,75 +5,52 @@
 
 @section('content')
     <!-- Hero Header -->
-    <section class="bg-gradient-to-r from-[#0B2A4A] via-[#0e355c] to-[#133E6C] text-white py-14 md:py-20 relative overflow-hidden border-b border-blue-950">
-        <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none mix-blend-screen"
-             style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <nav class="flex items-center gap-2 text-xs text-amber-400 mb-4 font-medium">
-                <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
+    <section class="bg-[#0B2A4A] text-white py-12 md:py-16 border-b border-blue-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
+                <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5 text-slate-300 hover:text-amber-400 transition"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-slate-300">Tentang Kami</span>
+                <a href="{{ route('tentang-kami') }}" class="hover:underline text-slate-300 hover:text-amber-400 transition">Tentang Kami</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-white font-semibold">Sejarah Program Studi</span>
+                <span class="text-slate-200">Sejarah Program Studi</span>
             </nav>
-            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[11px] font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">
-                <i class="fa-solid fa-landmark text-[10px] mr-1.5"></i> Empat Dekade Dedikasi &bull; Sejak 1984
-            </span>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1 leading-tight">
+            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+                Rekam Jejak
+            </p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1 leading-tight">
                 Sejarah Program Studi S-1 Teknik Sipil
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base md:text-lg mt-4 max-w-3xl leading-relaxed">
-                Menyusuri rekam jejak dedikasi keinsinyuran: Dari pilar perintis pendidikan teknik di Priangan Timur hingga bertransformasi menjadi Perguruan Tinggi Negeri terdepan dengan pusat riset modern di Kampus 2 Mugarsari.
+            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
+                Menyusuri perjalanan dedikasi keinsinyuran: Dari pilar perintis pendidikan teknik di Priangan Timur hingga bertransformasi menjadi Perguruan Tinggi Negeri dengan pusat riset di Kampus 2 Mugarsari.
             </p>
         </div>
     </section>
 
     <!-- Ringkasan Angka & Tonggak Penting -->
-    <section class="relative z-20 -mt-8 sm:-mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
-            <div class="bg-white rounded-2xl p-5 shadow-lg border border-slate-200/80 hover:shadow-xl transition-all duration-300 group">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Tahun Berdiri</span>
-                    <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-sm group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-calendar-day"></i>
-                    </div>
-                </div>
-                <div class="text-2xl sm:text-3xl font-black text-[#0B2A4A] mt-2 font-heading">1984</div>
-                <p class="text-[11px] text-slate-500 mt-1">SK Pembina YUS 31 Des 1984</p>
+    <section class="relative z-20 -mt-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+            <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-slate-200">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Tahun Berdiri</span>
+                <div class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] mt-1 font-heading">1984</div>
+                <p class="text-[11px] text-slate-500 mt-0.5">SK Pembina YUS 31 Des 1984</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-5 shadow-lg border border-slate-200/80 hover:shadow-xl transition-all duration-300 group">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Status Negeri (PTN)</span>
-                    <div class="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-sm group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-scale-balanced"></i>
-                    </div>
-                </div>
-                <div class="text-2xl sm:text-3xl font-black text-blue-700 mt-2 font-heading">2014</div>
-                <p class="text-[11px] text-slate-500 mt-1">Perpres RI No. 24 Tahun 2014</p>
+            <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-slate-200">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Status Negeri (PTN)</span>
+                <div class="text-2xl sm:text-3xl font-bold text-[#0070BA] mt-1 font-heading">2014</div>
+                <p class="text-[11px] text-slate-500 mt-0.5">Perpres RI No. 24 Tahun 2014</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-5 shadow-lg border border-slate-200/80 hover:shadow-xl transition-all duration-300 group">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Masa Pengabdian</span>
-                    <div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-sm group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                </div>
-                <div class="text-2xl sm:text-3xl font-black text-emerald-700 mt-2 font-heading">40+ Tahun</div>
-                <p class="text-[11px] text-slate-500 mt-1">Membangun Infrastruktur Bangsa</p>
+            <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-slate-200">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Masa Pengabdian</span>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-800 mt-1 font-heading">40+ Tahun</div>
+                <p class="text-[11px] text-slate-500 mt-0.5">Membangun Bangsa</p>
             </div>
 
-            <div class="bg-white rounded-2xl p-5 shadow-lg border border-slate-200/80 hover:shadow-xl transition-all duration-300 group">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Kiprah Alumni</span>
-                    <div class="w-9 h-9 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-sm group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-user-graduate"></i>
-                    </div>
-                </div>
-                <div class="text-2xl sm:text-3xl font-black text-purple-700 mt-2 font-heading">3.500+</div>
-                <p class="text-[11px] text-slate-500 mt-1">Insinyur &amp; Praktisi Nasional</p>
+            <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-slate-200">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Kiprah Alumni</span>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-800 mt-1 font-heading">3.500+</div>
+                <p class="text-[11px] text-slate-500 mt-0.5">Insinyur &amp; Praktisi</p>
             </div>
         </div>
     </section>
