@@ -52,7 +52,7 @@
                         </span>
                     </div>
 
-                    <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#0B2A4A] font-heading leading-tight tracking-tight">
+                    <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#0B2A4A] font-sans leading-tight tracking-tight">
                         Empat Dekade Teknik Sipil FT UNSIL Membangun Infrastruktur dan Peradaban Bangsa
                     </h2>
 
