@@ -45,7 +45,8 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 items-stretch">
                 
-                <div class="bg-slate-50 rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm flex flex-col justify-between">
+                {{-- HMS --}}
+                <div id="hms" class="bg-slate-50 rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm flex flex-col justify-between scroll-mt-28">
                     <div>
                         <div class="flex items-center justify-between mb-6">
                             <div class="flex items-center space-x-3">
@@ -82,7 +83,8 @@
                 </div>
 
                 
-                <div id="tracer" class="bg-slate-50 rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm flex flex-col justify-between">
+                {{-- Alumni & Tracer --}}
+                <div id="alumni" class="bg-slate-50 rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm flex flex-col justify-between scroll-mt-28">
                     <div>
                         <div class="flex items-center justify-between mb-6">
                             <div class="flex items-center space-x-3">
@@ -101,7 +103,7 @@
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                             Jejaring ribuan alumni Sarjana Teknik Sipil UNSIL yang berkarier di BUMN konstruksi terkemuka (Wika, PP, Adhi Karya, Waskita, Hutama Karya), konsultan perencana dan pengawas nasional, kementerian PUPR, perbankan, serta wiraswasta di bidang jasa konstruksi.
                         </p>
-                        <div class="mt-6 p-4 bg-white rounded-2xl border border-slate-200 space-y-2 text-xs">
+                        <div id="tracer" class="mt-6 p-4 bg-white rounded-2xl border border-slate-200 space-y-2 text-xs scroll-mt-28">
                             <div class="font-bold text-slate-800 flex items-center gap-2">
                                 <i class="fa-solid fa-chart-line text-blue-600"></i> Program Tracer Study UNSIL:
                             </div>

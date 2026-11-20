@@ -18,7 +18,7 @@
                     <i class="fa-solid fa-house text-[10px]"></i> Beranda
                 </a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <a href="{{ route('akademik') }}" class="hover:underline text-slate-300 hover:text-amber-400 transition">Akademik</a>
+                <a href="{{ route('mahasiswa-alumni') }}" class="hover:underline text-slate-300 hover:text-amber-400 transition">Mahasiswa &amp; Alumni</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-amber-400 font-bold">Prestasi Mahasiswa</span>
             </nav>
