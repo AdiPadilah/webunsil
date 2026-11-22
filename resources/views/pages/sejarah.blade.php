@@ -29,27 +29,27 @@
     <!-- Ringkasan Angka & Tonggak Penting -->
     <section class="relative z-20 -mt-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-            <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-slate-200">
-                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Tahun Berdiri</span>
-                <div class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] mt-1 font-heading">1984</div>
+            <div class="bg-white rounded-lg p-4 sm:p-5 border border-slate-200">
+                <span class="text-xs font-medium text-slate-400 block">Tahun Berdiri</span>
+                <div class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] mt-1 font-heading">-</div>
                 <p class="text-[11px] text-slate-500 mt-0.5">SK Pembina YUS 31 Des 1984</p>
             </div>
 
-            <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-slate-200">
-                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Status Negeri (PTN)</span>
-                <div class="text-2xl sm:text-3xl font-bold text-[#0070BA] mt-1 font-heading">2014</div>
+            <div class="bg-white rounded-lg p-4 sm:p-5 border border-slate-200">
+                <span class="text-xs font-medium text-slate-400 block">Status Negeri (PTN)</span>
+                <div class="text-2xl sm:text-3xl font-bold text-[#0070BA] mt-1 font-heading">-</div>
                 <p class="text-[11px] text-slate-500 mt-0.5">Perpres RI No. 24 Tahun 2014</p>
             </div>
 
-            <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-slate-200">
-                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Masa Pengabdian</span>
-                <div class="text-2xl sm:text-3xl font-bold text-slate-800 mt-1 font-heading">40+ Tahun</div>
+            <div class="bg-white rounded-lg p-4 sm:p-5 border border-slate-200">
+                <span class="text-xs font-medium text-slate-400 block">Masa Pengabdian</span>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-800 mt-1 font-heading">-</div>
                 <p class="text-[11px] text-slate-500 mt-0.5">Membangun Bangsa</p>
             </div>
 
-            <div class="bg-white rounded-xl p-4 sm:p-5 shadow-sm border border-slate-200">
-                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Kiprah Alumni</span>
-                <div class="text-2xl sm:text-3xl font-bold text-slate-800 mt-1 font-heading">3.500+</div>
+            <div class="bg-white rounded-lg p-4 sm:p-5 border border-slate-200">
+                <span class="text-xs font-medium text-slate-400 block">Kiprah Alumni</span>
+                <div class="text-2xl sm:text-3xl font-bold text-slate-800 mt-1 font-heading">-</div>
                 <p class="text-[11px] text-slate-500 mt-0.5">Insinyur &amp; Praktisi</p>
             </div>
         </div>
