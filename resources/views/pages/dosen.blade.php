@@ -12,42 +12,42 @@ $dosenList = [
         'nama' => 'Dr. Ir. Empung, S.T., M.T.',
         'kbk' => 'keairan',
         'kbk_label' => 'Teknik Sumber Daya Air',
-        'badge_class' => 'text-cyan-800 bg-cyan-50 border-cyan-200',
+        'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'andhy-romdani',
         'nama' => 'Andhy Romdani, S.T., M.Eng., Ph.D.',
         'kbk' => 'keairan',
         'kbk_label' => 'Teknik Sumber Daya Air',
-        'badge_class' => 'text-cyan-800 bg-cyan-50 border-cyan-200',
+        'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'pengki-irawan',
         'nama' => 'Ir. Pengki Irawan, S.TP., M.Si.',
         'kbk' => 'keairan',
         'kbk_label' => 'Teknik Sumber Daya Air',
-        'badge_class' => 'text-cyan-800 bg-cyan-50 border-cyan-200',
+        'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'novia-komala-sari',
         'nama' => 'Novia Komala Sari, S.Pd., M.T.',
         'kbk' => 'keairan',
         'kbk_label' => 'Teknik Sumber Daya Air',
-        'badge_class' => 'text-cyan-800 bg-cyan-50 border-cyan-200',
+        'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'galih-rahmat-jatnika',
         'nama' => 'Galih Rahmat Jatnika, S.T., M.T.',
         'kbk' => 'keairan',
         'kbk_label' => 'Teknik Sumber Daya Air',
-        'badge_class' => 'text-cyan-800 bg-cyan-50 border-cyan-200',
+        'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'raden-roro-dita',
         'nama' => 'Raden Roro Dita Arviananda, S.Pd., M.Eng.',
         'kbk' => 'keairan',
         'kbk_label' => 'Teknik Sumber Daya Air',
-        'badge_class' => 'text-cyan-800 bg-cyan-50 border-cyan-200',
+        'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
 
     // 2. Rekayasa Transportasi (7 dosen)
@@ -56,49 +56,49 @@ $dosenList = [
         'nama' => 'Ir. Nina Herlina, Dra., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi',
-        'badge_class' => 'text-emerald-800 bg-emerald-50 border-emerald-200',
+        'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'gary-raya-prima',
         'nama' => 'Gary Raya Prima, S.Pd., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi',
-        'badge_class' => 'text-emerald-800 bg-emerald-50 border-emerald-200',
+        'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'hendra',
         'nama' => 'Ir. Hendra, S.T., M.Sc.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi',
-        'badge_class' => 'text-emerald-800 bg-emerald-50 border-emerald-200',
+        'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'herianto',
         'nama' => 'Herianto, S.T., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi',
-        'badge_class' => 'text-emerald-800 bg-emerald-50 border-emerald-200',
+        'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'muhamad-anugerah',
         'nama' => 'Muhamad Anugerah Ramadhan, S.T., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi',
-        'badge_class' => 'text-emerald-800 bg-emerald-50 border-emerald-200',
+        'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'indrajathie-aziz',
         'nama' => 'Indrajathie Aziz, S.T., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi',
-        'badge_class' => 'text-emerald-800 bg-emerald-50 border-emerald-200',
+        'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'kartika-seinari',
         'nama' => 'Kartika Seinari Manggala, S.T., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi',
-        'badge_class' => 'text-emerald-800 bg-emerald-50 border-emerald-200',
+        'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
 
     // 3. Rekayasa Struktur & Bahan (5 dosen)
@@ -107,35 +107,35 @@ $dosenList = [
         'nama' => 'Dr. Ir. Yusep Ramdani, S.T., M.T.',
         'kbk' => 'struktur',
         'kbk_label' => 'Rekayasa Struktur & Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50 border-blue-200',
+        'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'rosi-nursani',
         'nama' => 'Rosi Nursani, S.T., M.T.',
         'kbk' => 'struktur',
         'kbk_label' => 'Rekayasa Struktur & Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50 border-blue-200',
+        'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'syarif-al-huseiny',
         'nama' => 'Mohammad Syarif Al-Huseiny, S.T., M.T.',
         'kbk' => 'struktur',
         'kbk_label' => 'Rekayasa Struktur & Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50 border-blue-200',
+        'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'intan-nuriskha',
         'nama' => 'Intan Nuriskha Rachma, S.T., M.T.',
         'kbk' => 'struktur',
         'kbk_label' => 'Rekayasa Struktur & Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50 border-blue-200',
+        'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'sri-wanto',
         'nama' => 'Sri Wanto, S.T., M.T.',
         'kbk' => 'struktur',
         'kbk_label' => 'Rekayasa Struktur & Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50 border-blue-200',
+        'badge_class' => 'text-blue-800 bg-blue-50',
     ],
 
     // 4. Geoteknik (3 dosen)
@@ -144,21 +144,21 @@ $dosenList = [
         'nama' => 'Dr. Ir. Iman Handiman, S.T., M.T.',
         'kbk' => 'geoteknik',
         'kbk_label' => 'Geoteknik',
-        'badge_class' => 'text-amber-800 bg-amber-50 border-amber-200',
+        'badge_class' => 'text-amber-800 bg-amber-50',
     ],
     [
         'slug' => 'fitriana-sarifah',
         'nama' => 'Ir. Fitriana Sarifah, S.T., M.T.',
         'kbk' => 'geoteknik',
         'kbk_label' => 'Geoteknik',
-        'badge_class' => 'text-amber-800 bg-amber-50 border-amber-200',
+        'badge_class' => 'text-amber-800 bg-amber-50',
     ],
     [
         'slug' => 'zakwan-gusnadi',
         'nama' => 'Zakwan Gusnadi, S.T., M.T.',
         'kbk' => 'geoteknik',
         'kbk_label' => 'Geoteknik',
-        'badge_class' => 'text-amber-800 bg-amber-50 border-amber-200',
+        'badge_class' => 'text-amber-800 bg-amber-50',
     ],
 
     // 5. Manajemen Konstruksi (3 dosen)
@@ -167,21 +167,21 @@ $dosenList = [
         'nama' => 'Hidayanto, S.T., M.T.',
         'kbk' => 'manajemen',
         'kbk_label' => 'Manajemen Konstruksi',
-        'badge_class' => 'text-purple-800 bg-purple-50 border-purple-200',
+        'badge_class' => 'text-purple-800 bg-purple-50',
     ],
     [
         'slug' => 'shanti-astri-noviani',
         'nama' => 'Shanti Astri Noviani, S.Pd., M.T.',
         'kbk' => 'manajemen',
         'kbk_label' => 'Manajemen Konstruksi',
-        'badge_class' => 'text-purple-800 bg-purple-50 border-purple-200',
+        'badge_class' => 'text-purple-800 bg-purple-50',
     ],
     [
         'slug' => 'ridha-al-mustafa',
         'nama' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.',
         'kbk' => 'manajemen',
         'kbk_label' => 'Manajemen Konstruksi',
-        'badge_class' => 'text-purple-800 bg-purple-50 border-purple-200',
+        'badge_class' => 'text-purple-800 bg-purple-50',
     ],
 ];
 @endphp
@@ -212,23 +212,23 @@ $dosenList = [
 
             <!-- Tab Filter 5 Bidang Keahlian - Satu Baris Scrollable -->
             <div class="mb-12 overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
-                <div class="flex items-center gap-2 p-2 bg-slate-100/90 rounded-2xl border border-slate-200 shadow-inner min-w-max mx-auto w-fit">
+                <div class="flex items-center gap-2 p-2 bg-slate-100/90 rounded-2xl border shadow-inner min-w-max mx-auto w-fit">
                     <button type="button" onclick="filterKbk('all', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 shadow-md bg-[#0B2A4A] text-amber-400 border border-amber-400/40">
                         Semua Dosen
                     </button>
-                    <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
                         Struktur &amp; Bahan (5)
                     </button>
-                    <button type="button" onclick="filterKbk('keairan', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('keairan', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
                         Sumber Daya Air (6)
                     </button>
-                    <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
                         Geoteknik (3)
                     </button>
-                    <button type="button" onclick="filterKbk('transportasi', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('transportasi', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
                         Transportasi (7)
                     </button>
-                    <button type="button" onclick="filterKbk('manajemen', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border border-slate-200">
+                    <button type="button" onclick="filterKbk('manajemen', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
                         Manajemen Konstruksi (3)
                     </button>
                 </div>
@@ -237,7 +237,7 @@ $dosenList = [
             <!-- Grid Kartu Dosen (Responsif: 1 col HP, 2 col Tablet, 4 col Desktop) -->
             <div id="dosen-grid" class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-7 mb-14">
                 @foreach($dosenList as $dosen)
-                <div class="dosen-item bg-white rounded-lg overflow-hidden border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all duration-200 flex flex-col group" data-kbk="{{ $dosen['kbk'] }}">
+                <div class="dosen-item bg-white rounded-lg overflow-hidden border hover:border-slate-300 hover:shadow-md transition-all duration-200 flex flex-col group" data-kbk="{{ $dosen['kbk'] }}">
                     <!-- Foto Portrait Persegi -->
                     <div class="aspect-square overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/dosen/' . $dosen['slug'] . '.jpg') }}?v={{ @filemtime(public_path('images/dosen/' . $dosen['slug'] . '.jpg')) ?: 2 }}"
@@ -246,12 +246,12 @@ $dosenList = [
                              loading="lazy">
                     </div>
                     <!-- Info Dosen -->
-                    <div class="p-4 flex-1 flex flex-col justify-between">
+                    <div class="p-4 flex-1 flex flex-col items-center text-center">
                         <div>
-                            <span class="inline-block text-[10px] font-semibold px-2.5 py-0.5 rounded uppercase tracking-wider mb-2 border {{ $dosen['badge_class'] }}">
+                            <span class="inline-block text-[10px] font-medium px-2 py-0.5 rounded-sm bg-opacity-60 mb-2 {{ $dosen['badge_class'] }} border-0 tracking-wide uppercase opacity-75">
                                 {{ $dosen['kbk_label'] }}
                             </span>
-                            <h3 class="font-bold text-slate-900 text-sm leading-snug group-hover:text-[#0070BA] transition line-clamp-2">
+                            <h3 class="font-semibold text-slate-800 text-sm leading-snug group-hover:text-[#0070BA] transition line-clamp-2">
                                 {{ $dosen['nama'] }}
                             </h3>
                         </div>
