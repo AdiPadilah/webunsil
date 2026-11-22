@@ -52,29 +52,27 @@
     </section>
 
     <!-- Section 1: Narasi Sejarah Komprehensif (Editorial 2 Kolom) -->
-    <section class="py-16 sm:py-20 bg-slate-50 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-[0.05] bg-repeat pointer-events-none"
-             style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 260px auto;"></div>
+    <section class="py-16 sm:py-20 bg-slate-50">
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
                 
                 <!-- Kolom Kiri: Narasi Sejarah Mendalam (7 Kolom) -->
                 <div class="lg:col-span-7">
-                    <span class="text-amber-600 font-bold uppercase text-xs tracking-widest block mb-2">
+                    <span class="text-[#0070BA] font-medium text-xs block mb-2">
                         Rekam Jejak Historis
                     </span>
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2A4A] font-heading leading-tight">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B2A4A] font-heading leading-tight">
                         Jejak Langkah Teknik Sipil di Tanah Siliwangi
                     </h2>
-                    <div class="w-20 h-1.5 bg-gradient-to-r from-amber-400 to-[#0B2A4A] mt-3 mb-6 rounded-full"></div>
+                    <div class="w-12 h-0.5 bg-[#0B2A4A] mt-3 mb-6"></div>
 
                     <div class="space-y-5 text-slate-700 text-sm sm:text-base leading-relaxed text-justify">
                         <p>
                             Kebutuhan mendesak akan tenaga ahli rekayasa infrastruktur di kawasan Priangan Timurâ€”yang mencakup Tasikmalaya, Ciamis, Garut, Banjar, dan Pangandaranâ€”menjadi latar belakang historis berdirinya pendidikan teknik di Universitas Siliwangi. Para pendiri universitas yang diprakarsai oleh pejuang dan tokoh Kodam Siliwangi memandang penting hadirnya institusi keteknikan yang sanggup menjawab tantangan pembangunan fisik daerah.
                         </p>
                         
-                        <div class="bg-blue-50/80 border-l-4 border-[#0B2A4A] p-4 sm:p-5 rounded-r-xl">
+                        <div class="bg-blue-50/80 border-l-4 border-[#0B2A4A] p-4 sm:p-5 rounded-r-md">
                             <p class="font-medium text-[#0B2A4A] text-sm sm:text-base italic">
                                 &ldquo;Fakultas Teknik resmi didirikan melalui Surat Keputusan Yayasan Pembina Universitas Siliwangi (YUS) Nomor: 05/Kep/I-1/YUS/1984 pada tanggal 31 Desember 1984. Program Studi Teknik Sipil menjadi program studi rekayasa pertama dan tertua yang melandasi berdirinya fakultas ini.&rdquo;
                             </p>
@@ -102,82 +100,75 @@
                 <div class="lg:col-span-5 space-y-6">
                     
                     <!-- Foto Tugu & Gedung Kebanggaan -->
-                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 group">
+                    <div class="bg-white rounded-lg overflow-hidden border border-slate-200">
                         <div class="relative h-60 sm:h-72 overflow-hidden">
                             <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" 
                                  alt="Tugu Fakultas Teknik Universitas Siliwangi" 
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/80 via-transparent to-transparent"></div>
-                            <span class="absolute top-4 left-4 bg-amber-400 text-[#0B2A4A] text-xs font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wider">
-                                Landmark FT UNSIL
-                            </span>
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/70 via-transparent to-transparent"></div>
                             <div class="absolute bottom-4 left-4 right-4 text-white">
                                 <h4 class="font-bold text-base sm:text-lg leading-snug">Gedung &amp; Tugu Fakultas Teknik</h4>
                                 <p class="text-xs text-slate-200 mt-0.5">Pusat Pembelajaran &amp; Riset Rekayasa Sipil</p>
                             </div>
                         </div>
-                        <div class="p-5 bg-gradient-to-br from-white to-slate-50 text-xs text-slate-600 leading-relaxed border-t border-slate-100">
-                            <i class="fa-solid fa-circle-info text-blue-600 mr-1.5"></i>
+                        <div class="p-4 text-xs text-slate-600 leading-relaxed border-t border-slate-100">
+                            <i class="fa-solid fa-circle-info text-slate-400 mr-1.5"></i>
                             Tugu Fakultas Teknik Universitas Siliwangi berdiri tegak sebagai simbol semangat perjuangan insinyur muda berjiwa Ksatria Siliwangi.
                         </div>
                     </div>
 
                     <!-- Card Landasan Hukum & Milestone Resmi -->
-                    <div class="bg-[#0B2A4A] text-white rounded-3xl p-6 sm:p-7 shadow-xl border border-blue-900 relative overflow-hidden">
-                        <div class="absolute inset-0 opacity-10 bg-repeat pointer-events-none"
-                             style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 180px auto;"></div>
+                    <div class="bg-[#0B2A4A] text-white rounded-lg p-6 sm:p-7 border border-blue-900">
                         
-                        <div class="relative z-10">
-                            <div class="flex items-center gap-3 mb-5">
-                                <div class="w-10 h-10 rounded-xl bg-amber-400 text-[#0B2A4A] flex items-center justify-center text-lg font-bold shadow-md">
-                                    <i class="fa-solid fa-scroll"></i>
-                                </div>
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-9 h-9 rounded-md bg-amber-400/20 text-amber-400 flex items-center justify-center text-base">
+                                <i class="fa-solid fa-scroll"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-white">Landasan Hukum Institusi</h4>
+                                <span class="text-xs text-slate-400">Legalitas &amp; Status Resmi</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3.5 text-xs">
+                            <div class="flex items-start gap-3 p-3 rounded-md bg-white/[0.06] border border-white/10">
+                                <i class="fa-solid fa-file-signature text-amber-400 mt-1"></i>
                                 <div>
-                                    <h4 class="font-bold text-base text-white">Landasan Hukum Institusi</h4>
-                                    <span class="text-xs text-amber-400">Legalitas &amp; Status Resmi</span>
+                                    <div class="font-bold text-white">SK Pendirian Fakultas &amp; Prodi</div>
+                                    <div class="text-slate-300 mt-0.5">No. 05/Kep/I-1/YUS/1984 &bull; 31 Desember 1984</div>
                                 </div>
                             </div>
 
-                            <div class="space-y-3.5 text-xs">
-                                <div class="flex items-start gap-3 p-3 rounded-xl bg-white/[0.06] border border-white/10">
-                                    <i class="fa-solid fa-file-signature text-amber-400 mt-1"></i>
-                                    <div>
-                                        <div class="font-bold text-white">SK Pendirian Fakultas &amp; Prodi</div>
-                                        <div class="text-slate-300 mt-0.5">No. 05/Kep/I-1/YUS/1984 &bull; 31 Desember 1984</div>
-                                    </div>
+                            <div class="flex items-start gap-3 p-3 rounded-md bg-white/[0.06] border border-white/10">
+                                <i class="fa-solid fa-landmark-flag text-amber-400 mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">Izin Operasional Dirjen Dikti</div>
+                                    <div class="text-slate-300 mt-0.5">SK Dirjen Dikti Depdikbud No. 0389/0/1986</div>
                                 </div>
+                            </div>
 
-                                <div class="flex items-start gap-3 p-3 rounded-xl bg-white/[0.06] border border-white/10">
-                                    <i class="fa-solid fa-landmark-flag text-amber-400 mt-1"></i>
-                                    <div>
-                                        <div class="font-bold text-white">Izin Operasional Dirjen Dikti</div>
-                                        <div class="text-slate-300 mt-0.5">SK Dirjen Dikti Depdikbud No. 0389/0/1986</div>
-                                    </div>
+                            <div class="flex items-start gap-3 p-3 rounded-md bg-white/[0.06] border border-white/10">
+                                <i class="fa-solid fa-building-columns text-amber-400 mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">Penegerian Menjadi PTN</div>
+                                    <div class="text-slate-300 mt-0.5">Peraturan Presiden RI No. 24 Tahun 2014 &bull; 2 April 2014</div>
                                 </div>
+                            </div>
 
-                                <div class="flex items-start gap-3 p-3 rounded-xl bg-white/[0.06] border border-white/10">
-                                    <i class="fa-solid fa-building-columns text-amber-400 mt-1"></i>
-                                    <div>
-                                        <div class="font-bold text-white">Penegerian Menjadi PTN</div>
-                                        <div class="text-slate-300 mt-0.5">Peraturan Presiden RI No. 24 Tahun 2014 &bull; 2 April 2014</div>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start gap-3 p-3 rounded-xl bg-white/[0.06] border border-white/10">
-                                    <i class="fa-solid fa-certificate text-amber-400 mt-1"></i>
-                                    <div>
-                                        <div class="font-bold text-white">Akreditasi Program Studi</div>
-                                        <div class="text-amber-300 font-medium mt-0.5">Peringkat &ldquo;Baik Sekali&rdquo; &bull; LAM Teknik</div>
-                                    </div>
+                            <div class="flex items-start gap-3 p-3 rounded-md bg-white/[0.06] border border-white/10">
+                                <i class="fa-solid fa-certificate text-amber-400 mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">Akreditasi Program Studi</div>
+                                    <div class="text-amber-300 font-medium mt-0.5">Peringkat &ldquo;Baik Sekali&rdquo; &bull; LAM Teknik</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card Lokasi Kampus 2 -->
-                    <div class="bg-white rounded-3xl p-6 shadow-md border border-slate-200">
+                    <div class="bg-white rounded-lg p-6 border border-slate-200">
                         <div class="flex items-center gap-3 mb-3">
-                            <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0B2A4A] flex items-center justify-center text-lg">
+                            <div class="w-9 h-9 rounded-md bg-slate-100 text-[#0B2A4A] flex items-center justify-center text-base">
                                 <i class="fa-solid fa-map-location-dot"></i>
                             </div>
                             <div>
@@ -196,18 +187,16 @@
     </section>
 
     <!-- Section 2: Garis Waktu Perjalanan (Milestone Timeline Modern & Proporsional) -->
-    <section class="py-16 sm:py-24 bg-white relative overflow-hidden border-t border-slate-200">
-        <div class="absolute inset-0 opacity-[0.06] bg-repeat pointer-events-none"
-             style="background-image: url('{{ asset('images/corak-busur-gold.png') }}'); background-size: 260px auto;"></div>
+    <section class="py-16 sm:py-24 bg-white border-t border-slate-200">
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="max-w-3xl mx-auto text-center mb-16 sm:mb-20">
-                <span class="text-amber-600 font-bold uppercase text-xs tracking-widest block">Garis Waktu Historis</span>
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2A4A] mt-2 font-heading">
+                <span class="text-[#0070BA] font-medium text-xs block">Garis Waktu</span>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B2A4A] mt-2 font-heading">
                     Tonggak Perjalanan &amp; Prestasi (1984 &mdash; Kini)
                 </h2>
-                <div class="w-20 h-1.5 bg-amber-400 mx-auto mt-3 mb-4 rounded-full"></div>
+                <div class="w-12 h-0.5 bg-[#0B2A4A] mx-auto mt-3 mb-4"></div>
                 <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
                     Setiap babak menandai konsistensi dan dedikasi civitas akademika Teknik Sipil UNSIL dalam memajukan ilmu keteknikan dan mengabdi untuk bangsa.
                 </p>
@@ -348,14 +337,14 @@
     </section>
 
     <!-- Section 3: Nilai Dasar & Karakter Siliwangi -->
-    <section class="py-16 sm:py-20 bg-slate-50 relative overflow-hidden border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center mb-12">
-                <span class="text-amber-600 font-bold uppercase text-xs tracking-widest block">Identitas &amp; Nilai Luhur</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0B2A4A] mt-2 font-heading">
+                <span class="text-[#0070BA] font-medium text-xs block">Identitas &amp; Nilai</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] mt-2 font-heading">
                     Karakter Keinsinyuran Ksatria Siliwangi
                 </h2>
-                <div class="w-16 h-1 bg-amber-400 mx-auto mt-3 mb-4 rounded-full"></div>
+                <div class="w-12 h-0.5 bg-[#0B2A4A] mx-auto mt-3 mb-4"></div>
                 <p class="text-slate-600 text-sm leading-relaxed">
                     Setiap lulusan Teknik Sipil Universitas Siliwangi dibekali dengan tiga pilar nilai utama yang menjadi pembeda di dunia profesional dan industri konstruksi.
                 </p>
@@ -363,8 +352,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Pilar 1 -->
-                <div class="bg-white rounded-3xl p-7 shadow-md border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-5 shadow-sm">
+                <div class="bg-white rounded-lg p-6 border border-slate-200 hover:border-slate-300 transition">
+                    <div class="w-10 h-10 rounded-md bg-slate-100 text-[#0B2A4A] flex items-center justify-center text-lg mb-4">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <h3 class="text-lg font-bold text-[#0B2A4A] mb-2 font-heading">Berwawasan Kebangsaan</h3>
@@ -374,8 +363,8 @@
                 </div>
 
                 <!-- Pilar 2 -->
-                <div class="bg-white rounded-3xl p-7 shadow-md border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-5 shadow-sm">
+                <div class="bg-white rounded-lg p-6 border border-slate-200 hover:border-slate-300 transition">
+                    <div class="w-10 h-10 rounded-md bg-slate-100 text-[#0B2A4A] flex items-center justify-center text-lg mb-4">
                         <i class="fa-solid fa-lightbulb"></i>
                     </div>
                     <h3 class="text-lg font-bold text-[#0B2A4A] mb-2 font-heading">Berkarakter Wirausaha</h3>
@@ -385,8 +374,8 @@
                 </div>
 
                 <!-- Pilar 3 -->
-                <div class="bg-white rounded-3xl p-7 shadow-md border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-5 shadow-sm">
+                <div class="bg-white rounded-lg p-6 border border-slate-200 hover:border-slate-300 transition">
+                    <div class="w-10 h-10 rounded-md bg-slate-100 text-[#0B2A4A] flex items-center justify-center text-lg mb-4">
                         <i class="fa-solid fa-leaf"></i>
                     </div>
                     <h3 class="text-lg font-bold text-[#0B2A4A] mb-2 font-heading">Rekayasa Berkelanjutan</h3>
@@ -399,9 +388,9 @@
     </section>
 
     <!-- Section 4: Navigasi Tautan Terkait (CTA) -->
-    <section class="py-14 bg-gradient-to-r from-[#0B2A4A] to-[#123861] text-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h3 class="text-xl sm:text-2xl md:text-3xl font-extrabold font-heading text-white">
+    <section class="py-14 bg-[#0B2A4A] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold font-heading text-white">
                 Kenali Lebih Dekat Program Studi Teknik Sipil UNSIL
             </h3>
             <p class="text-slate-300 text-xs sm:text-sm mt-2 max-w-2xl mx-auto">
@@ -409,19 +398,19 @@
             </p>
             <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-7">
                 <a href="{{ route('visi-misi') }}" 
-                   class="px-5 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#0B2A4A] font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
+                   class="px-5 py-3 rounded-lg bg-amber-400 hover:bg-amber-300 text-[#0B2A4A] font-bold text-xs transition">
                     <i class="fa-solid fa-eye mr-1.5"></i> Visi &amp; Misi 2030
                 </a>
                 <a href="{{ route('dosen') }}" 
-                   class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider border border-white/20 transition-all duration-200">
+                   class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
                     <i class="fa-solid fa-user-tie mr-1.5"></i> Profil 27 Dosen
                 </a>
                 <a href="{{ route('fasilitas') }}" 
-                   class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider border border-white/20 transition-all duration-200">
+                   class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
                     <i class="fa-solid fa-building-columns mr-1.5"></i> Fasilitas Kampus 2
                 </a>
                 <a href="{{ route('kurikulum') }}" 
-                   class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider border border-white/20 transition-all duration-200">
+                   class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
                     <i class="fa-solid fa-book-bookmark mr-1.5"></i> Kurikulum 5 KBK
                 </a>
             </div>
