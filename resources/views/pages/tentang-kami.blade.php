@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Tentang Kami | Program Studi S-1 Teknik Sipil FT Universitas Siliwangi')
 @section('meta_description', 'Profil lengkap, sambutan pimpinan, struktur organisasi, visi misi, sejarah, serta akreditasi Program Studi S-1 Teknik Sipil FT Universitas Siliwangi.')
@@ -15,7 +15,7 @@
                 <span class="text-slate-200">Tentang Kami</span>
             </nav>
 
-            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Profil Program Studi
             </p>
 
@@ -51,9 +51,8 @@
                     
                     <div class="lg:col-span-8 md:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
                         <div>
-                            <div class="flex items-center gap-2 mb-2.5">
-                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
-                                <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Pimpinan Program Studi</span>
+                            <div class="mb-4">
+                                <span class="text-xs font-semibold text-[#0070BA] uppercase tracking-wide">Pimpinan Program Studi</span>
                             </div>
                             <h2 class="text-2xl sm:text-3xl font-black text-[#0B2A4A] font-heading leading-tight mb-4">
                                 Sambutan Ketua Program Studi
@@ -97,13 +96,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 
-                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col group">
+                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col">
                     <div class="h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Sejarah Program Studi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Sejarah Program Studi" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Perjalanan Prodi</span>
+                            <span class="text-xs text-slate-400 font-medium">Perjalanan Prodi</span>
                             <h3 class="text-lg font-bold text-slate-900 mt-1">
                                 Sejarah Program Studi
                             </h3>
@@ -121,15 +120,15 @@
                 </div>
 
                 
-                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col group">
+                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col">
                     <div class="h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Akreditasi Program Studi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Akreditasi Program Studi" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Penjaminan Mutu</span>
+                            <span class="text-xs text-slate-400 font-medium">Penjaminan Mutu</span>
                             <h3 class="text-lg font-bold text-slate-900 mt-1">
-                                Akreditasi &amp; Mutu Akademik
+                                Akreditasi & Mutu Akademik
                             </h3>
                             <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
                                 Program Studi Teknik Sipil S-1 telah terakreditasi BAIK oleh Lembaga Akreditasi Mandiri Program Studi Keteknikan (LAM Teknik) berlaku hingga tahun 2028.
@@ -156,7 +155,7 @@
                         </h2>
                     </div>
                     <a href="{{ route('berita.index') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                        Lihat Semua Berita →
+                        Lihat Semua Berita â†’
                     </a>
                 </div>
 
@@ -164,9 +163,9 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                     
-                    <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col group">
+                    <article class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col group">
                         <div class="h-48 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-1 flex flex-col justify-between">
                             <div>
@@ -182,16 +181,16 @@
                             </div>
                             <div class="pt-4 mt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya →
+                                    Baca Selengkapnya â†’
                                 </a>
                             </div>
                         </div>
                     </article>
 
                     
-                    <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col group">
+                    <article class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col group">
                         <div class="h-48 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol" class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-1 flex flex-col justify-between">
                             <div>
@@ -207,16 +206,16 @@
                             </div>
                             <div class="pt-4 mt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya →
+                                    Baca Selengkapnya â†’
                                 </a>
                             </div>
                         </div>
                     </article>
 
                     
-                    <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col group">
+                    <article class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col group">
                         <div class="h-48 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Bridge Design Competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Bridge Design Competition" class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-1 flex flex-col justify-between">
                             <div>
@@ -232,7 +231,7 @@
                             </div>
                             <div class="pt-4 mt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya →
+                                    Baca Selengkapnya â†’
                                 </a>
                             </div>
                         </div>
@@ -246,21 +245,21 @@
 
     
     <div id="modal-akreditasi" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
-            <div class="relative bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] p-6 text-white rounded-t-3xl">
+        <div class="bg-white rounded-xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+            <div class="relative bg-[#0B2A4A] p-6 text-white rounded-t-xl">
                 <button type="button" onclick="closeModal('modal-akreditasi')" class="absolute top-5 right-5 text-slate-300 hover:text-white w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-                <span class="text-amber-400 text-[10px] font-bold uppercase tracking-widest block">Sertifikasi &amp; Legalitas</span>
+                <span class="text-amber-400 text-[10px] font-bold uppercase tracking-wider block">Sertifikasi &amp; Legalitas</span>
                 <h3 class="text-xl font-bold mt-1">Status Akreditasi LAM Teknik</h3>
             </div>
             <div class="p-6 sm:p-8 space-y-4 text-sm text-slate-700 leading-relaxed">
-                <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-2xl flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg flex-shrink-0">
+                <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-lg flex-shrink-0">
                         <i class="fa-solid fa-certificate"></i>
                     </div>
                     <div>
-                        <span class="block text-xs font-bold text-emerald-800 uppercase tracking-wide">Peringkat Akreditasi</span>
+                        <span class="block text-xs font-bold text-emerald-800">Peringkat Akreditasi</span>
                         <span class="block text-lg font-black text-emerald-900">BAIK (LAM Teknik)</span>
                     </div>
                 </div>
@@ -271,16 +270,17 @@
                     <p><strong>Masa Berlaku:</strong> Hingga 20 Agustus 2028</p>
                 </div>
                 <div class="pt-3">
-                    <a href="{{ route('download') }}" class="inline-flex items-center gap-2 px-4 py-2 bg-[#0B2A4A] hover:bg-blue-900 text-white text-xs font-semibold rounded-xl transition">
+                    <a href="{{ route('download') }}" class="inline-flex items-center gap-2 px-4 py-2 bg-[#0B2A4A] hover:bg-blue-900 text-white text-xs font-semibold rounded-lg transition">
                         <i class="fa-solid fa-file-arrow-down text-amber-400"></i> Unduh Salinan Sertifikat Akreditasi
                     </a>
                 </div>
             </div>
-            <div class="p-4 bg-slate-50 rounded-b-3xl border-t border-slate-100 flex justify-end">
-                <button type="button" onclick="closeModal('modal-akreditasi')" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-xl transition">
+            <div class="p-4 bg-slate-50 rounded-b-xl border-t border-slate-100 flex justify-end">
+                <button type="button" onclick="closeModal('modal-akreditasi')" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-lg transition">
                     Tutup
                 </button>
             </div>
         </div>
     </div>
 @endsection
+

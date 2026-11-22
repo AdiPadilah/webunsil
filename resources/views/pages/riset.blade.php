@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Riset dan Kolaborasi | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Kemitraan strategis industri BUMN, instansi pemerintah PUPR, asosiasi profesi PII, riset unggulan dosen, dan PKM Teknik Sipil FT UNSIL.')
@@ -13,7 +13,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Riset &amp; Kolaborasi</span>
             </nav>
-            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Inovasi, Industri &amp; Pengabdian
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
@@ -38,12 +38,12 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
 
                 {{-- Foto kiri --}}
-                <div class="relative rounded-xl overflow-hidden min-h-[320px] bg-slate-100 border border-slate-200">
+                <div class="relative rounded-lg overflow-hidden min-h-[320px] bg-slate-100 border border-slate-200">
                     <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kerja Sama Industri"
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/90 via-[#0B2A4A]/30 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/80 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6 text-white">
-                        <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider block mb-1">Kolaborasi Lapangan</span>
+                        <span class="text-xs text-amber-400 font-medium block mb-1">Kolaborasi Lapangan</span>
                         <h3 class="text-xl font-bold leading-tight">Kunjungan &amp; Studi Lapangan Bersama Industri</h3>
                         <p class="text-slate-300 text-xs mt-1.5 leading-relaxed">Sinergi perkuliahan dengan proyek infrastruktur nyata bersama kontraktor dan pengelola bendungan.</p>
                     </div>
@@ -51,8 +51,8 @@
 
                 {{-- 3 kartu kanan --}}
                 <div class="flex flex-col gap-4">
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-blue-100 text-[#0070BA] flex items-center justify-center text-lg shrink-0">
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-md bg-slate-100 text-slate-600 flex items-center justify-center text-lg shrink-0">
                             <i class="fa-solid fa-building-flag"></i>
                         </div>
                         <div>
@@ -60,8 +60,8 @@
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Program magang industri bersertifikat MBKM, rekrutmen lulusan, serta kuliah tamu pakar konstruksi nasional.</p>
                         </div>
                     </div>
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-lg shrink-0">
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-md bg-slate-100 text-slate-600 flex items-center justify-center text-lg shrink-0">
                             <i class="fa-solid fa-landmark"></i>
                         </div>
                         <div>
@@ -69,8 +69,8 @@
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Sinergi bersama Dinas Bina Marga & Penataan Ruang, BBWS Citanduy, dan Pemda dalam kajian infrastruktur dan mitigasi SDA.</p>
                         </div>
                     </div>
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg shrink-0">
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-md bg-slate-100 text-slate-600 flex items-center justify-center text-lg shrink-0">
                             <i class="fa-solid fa-certificate"></i>
                         </div>
                         <div>
@@ -103,7 +103,7 @@
                                  class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">Inovasi Keilmuan</span>
+                            <span class="text-xs text-slate-400 font-medium block mb-1">Inovasi Keilmuan</span>
                             <h3 class="text-lg font-bold text-slate-900 mb-3">Fokus Penelitian Dosen</h3>
                             <ul class="space-y-2.5 text-xs text-slate-600">
                                 <li class="flex items-start gap-2.5">
@@ -141,7 +141,7 @@
                                  class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">Bakti Masyarakat</span>
+                            <span class="text-xs text-slate-400 font-medium block mb-1">Bakti Masyarakat</span>
                             <h3 class="text-lg font-bold text-slate-900 mb-3">Pengabdian Kepada Masyarakat (PKM)</h3>
                             <ul class="space-y-2.5 text-xs text-slate-600">
                                 <li class="flex items-start gap-2.5">
@@ -176,3 +176,5 @@
     </section>
 
 @endsection
+
+

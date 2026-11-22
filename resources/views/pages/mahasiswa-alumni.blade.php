@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Mahasiswa dan Alumni | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Himpunan Mahasiswa Sipil (HMS), Ikatan Alumni, dan Galeri Dokumentasi @sipilunsil Fakultas Teknik Universitas Siliwangi.')
@@ -12,7 +12,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Mahasiswa &amp; Alumni</span>
             </nav>
-            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Komunitas &amp; Jejak Lulusan
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
@@ -109,7 +109,7 @@
                     <a href="https://instagram.com/sipilunsil" target="_blank"
                        class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-pink-600 transition">
                         <i class="fa-brands fa-instagram text-sm"></i>
-                        Instagram @sipilunsil →
+                        Instagram @sipilunsil â†’
                     </a>
                 </div>
 
@@ -138,3 +138,4 @@
         </div>
     </section>
 @endsection
+

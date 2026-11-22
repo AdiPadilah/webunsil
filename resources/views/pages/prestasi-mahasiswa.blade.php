@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Prestasi Mahasiswa | Program Studi S-1 Teknik Sipil FT Universitas Siliwangi')
 @section('meta_description', 'Dokumentasi prestasi, penghargaan kejuaraan nasional, dan publikasi jurnal internasional bereputasi mahasiswa Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')
@@ -23,7 +23,7 @@
                 <span class="text-amber-400 font-bold">Prestasi Mahasiswa</span>
             </nav>
 
-            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+            <span class="text-amber-400 text-xs font-medium mb-2">
                 <i class="fa-solid fa-trophy mr-1 text-amber-400"></i> Prestasi Riil Sivitas Akademika
             </span>
 
@@ -662,3 +662,4 @@
     </script>
     @endpush
 @endsection
+

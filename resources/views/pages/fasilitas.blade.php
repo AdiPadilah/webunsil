@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Fasilitas & Sarana Prasarana | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Fasilitas lengkap Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari: 6 Laboratorium terpadu, Ruang Kelas ber-AC, Aula Fakultas Teknik, Kantin Sehat, dan Ruang Seminar.')
@@ -13,7 +13,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Fasilitas</span>
             </nav>
-            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Sarana &amp; Prasarana
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
@@ -39,15 +39,15 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 
                 {{-- 1. Laboratorium --}}
-                <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group">
+                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Teknik Sipil"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                 class="w-full h-full object-cover ">
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">6 Unit Lab</span>
+                            <span class="text-xs text-slate-400 font-medium block mb-1">6 Unit Lab</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Laboratorium Terpadu</h3>
                             <p class="text-xs text-slate-500 mt-0.5 mb-3">Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -65,15 +65,15 @@
                 </div>
 
                 {{-- 2. Ruang Kelas --}}
-                <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group">
+                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Ruang Kelas & Perkuliahan"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                 class="w-full h-full object-cover ">
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">Ruang Kuliah</span>
+                            <span class="text-xs text-slate-400 font-medium block mb-1">Ruang Kuliah</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Ruang Kelas Ber-AC</h3>
                             <p class="text-xs text-slate-500 mt-0.5 mb-3">Gedung FT UNSIL Lantai 1 &ndash; 3</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -91,15 +91,15 @@
                 </div>
 
                 {{-- 3. Aula FT --}}
-                <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group">
+                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/event-1.jpg') }}" alt="Aula Fakultas Teknik"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                 class="w-full h-full object-cover ">
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">Kapasitas 300 Kursi</span>
+                            <span class="text-xs text-slate-400 font-medium block mb-1">Kapasitas 300 Kursi</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Aula Fakultas Teknik</h3>
                             <p class="text-xs text-slate-500 mt-0.5 mb-3">Gedung FT &bull; Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -117,15 +117,15 @@
                 </div>
 
                 {{-- 4. Kantin --}}
-                <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group">
+                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Kantin Kampus FT UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                 class="w-full h-full object-cover ">
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">Area Kuliner</span>
+                            <span class="text-xs text-slate-400 font-medium block mb-1">Area Kuliner</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Kantin Kampus</h3>
                             <p class="text-xs text-slate-500 mt-0.5 mb-3">Area Kuliner Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -143,15 +143,15 @@
                 </div>
 
                 {{-- 5. Ruang Seminar & Sidang --}}
-                <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group">
+                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/event-2.jpg') }}" alt="Ruang Seminar & Sidang Teknik Sipil"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                 class="w-full h-full object-cover ">
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">Ruang Sidang</span>
+                            <span class="text-xs text-slate-400 font-medium block mb-1">Ruang Sidang</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Auditorium &amp; Ruang Sidang</h3>
                             <p class="text-xs text-slate-500 mt-0.5 mb-3">Gedung FT &bull; Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -174,3 +174,4 @@
     </section>
 
 @endsection
+

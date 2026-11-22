@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Aula Pertemuan Fakultas Teknik | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Fasilitas Aula Fakultas Teknik Universitas Siliwangi untuk seminar nasional keteknikan, kuliah umum praktisi, yudisium kelulusan, dan kegiatan kemahasiswaan.')
@@ -18,7 +18,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-white font-semibold">Aula</span>
             </nav>
-            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+            <span class="text-amber-400 text-xs font-medium mb-2">
                 Pusat Pertemuan &amp; Konferensi Akademik
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
@@ -158,3 +158,4 @@
     </section>
 
 @endsection
+

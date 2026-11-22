@@ -1,7 +1,7 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Akademik | Program Studi S-1 Teknik Sipil FT Universitas Siliwangi')
-@section('meta_description', 'Pusat informasi akademik Program Studi S-1 Teknik Sipil FT Universitas Siliwangi — kurikulum OBE, peraturan & kalender akademik, layanan terpadu, dan unduhan.')
+@section('meta_description', 'Pusat informasi akademik Program Studi S-1 Teknik Sipil FT Universitas Siliwangi â€” kurikulum OBE, peraturan & kalender akademik, layanan terpadu, dan unduhan.')
 
 @section('content')
     
@@ -15,7 +15,7 @@
                 <span class="text-slate-200">Akademik</span>
             </nav>
 
-            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Pendidikan &amp; Kurikulum
             </p>
 
@@ -38,13 +38,13 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                         
-                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
+                        <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
                             <div class="h-48 overflow-hidden bg-slate-100">
-                                <img src="{{ asset('images/lab-civil.jpg') }}" alt="Program Studi Teknik Sipil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
+                                <img src="{{ asset('images/lab-civil.jpg') }}" alt="Program Studi Teknik Sipil" class="w-full h-full object-cover " onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
                             </div>
                             <div class="p-6 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">Sarjana (S-1)</span>
+                                    <span class="text-xs text-slate-400 font-medium block mb-1">Sarjana (S-1)</span>
                                     <h3 class="text-lg font-bold text-slate-900 leading-tight">
                                         Kurikulum &amp; Struktur Studi
                                     </h3>
@@ -62,13 +62,13 @@
                         </div>
 
                         
-                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
+                        <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
                             <div class="h-48 overflow-hidden bg-slate-100">
-                                <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Peraturan dan Informasi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Peraturan dan Informasi" class="w-full h-full object-cover ">
                             </div>
                             <div class="p-6 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block mb-1">Pedoman Akademik</span>
+                                    <span class="text-xs text-slate-400 font-medium block mb-1">Pedoman Akademik</span>
                                     <h3 class="text-lg font-bold text-slate-900 leading-tight">
                                         Peraturan &amp; Informasi
                                     </h3>
@@ -208,3 +208,4 @@
         </div>
     </div>
 @endsection
+

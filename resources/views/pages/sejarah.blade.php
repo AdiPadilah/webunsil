@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Sejarah | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Sejarah dan rekam jejak perjalanan Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi sejak berdiri tahun 1984 hingga penegerian PTN tahun 2014 dan era Kampus 2 Mugarsari.')
@@ -14,7 +14,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Sejarah Program Studi</span>
             </nav>
-            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Rekam Jejak
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1 leading-tight">
@@ -75,7 +75,7 @@
 
                     <div class="space-y-5 text-slate-700 text-sm sm:text-base leading-relaxed text-justify">
                         <p>
-                            Kebutuhan mendesak akan tenaga ahli rekayasa infrastruktur di kawasan Priangan Timur—yang mencakup Tasikmalaya, Ciamis, Garut, Banjar, dan Pangandaran—menjadi latar belakang historis berdirinya pendidikan teknik di Universitas Siliwangi. Para pendiri universitas yang diprakarsai oleh pejuang dan tokoh Kodam Siliwangi memandang penting hadirnya institusi keteknikan yang sanggup menjawab tantangan pembangunan fisik daerah.
+                            Kebutuhan mendesak akan tenaga ahli rekayasa infrastruktur di kawasan Priangan Timurâ€”yang mencakup Tasikmalaya, Ciamis, Garut, Banjar, dan Pangandaranâ€”menjadi latar belakang historis berdirinya pendidikan teknik di Universitas Siliwangi. Para pendiri universitas yang diprakarsai oleh pejuang dan tokoh Kodam Siliwangi memandang penting hadirnya institusi keteknikan yang sanggup menjawab tantangan pembangunan fisik daerah.
                         </p>
                         
                         <div class="bg-blue-50/80 border-l-4 border-[#0B2A4A] p-4 sm:p-5 rounded-r-xl">
@@ -486,3 +486,4 @@
         </div>
     </section>
 @endsection
+

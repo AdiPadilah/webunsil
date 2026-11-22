@@ -1,7 +1,7 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Ruang Seminar & Sidang Teknik Sipil | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Fasilitas Ruang Seminar dan Sidang Tugas Akhir Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari — dilengkapi proyektor, AC, sound system, dan layar motorized.')
+@section('meta_description', 'Fasilitas Ruang Seminar dan Sidang Tugas Akhir Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari â€” dilengkapi proyektor, AC, sound system, dan layar motorized.')
 
 @section('content')
 
@@ -18,14 +18,14 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-white font-semibold">Ruang Seminar & Sidang</span>
             </nav>
-            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+            <span class="text-amber-400 text-xs font-medium mb-2">
                 Ruang Presentasi & Sidang Ilmiah
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Ruang Seminar <span class="text-amber-400">&amp; Sidang</span>
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Fasilitas ruang seminar dan sidang tugas akhir di Gedung Fakultas Teknik Kampus 2 UNSIL Mugarsari dengan kapasitas 60–100 orang, dilengkapi peralatan audiovisual modern, pendingin udara, dan tata suara profesional untuk mendukung sidang ilmiah, seminar jurusan, serta kuliah pakar Teknik Sipil.
+                Fasilitas ruang seminar dan sidang tugas akhir di Gedung Fakultas Teknik Kampus 2 UNSIL Mugarsari dengan kapasitas 60â€“100 orang, dilengkapi peralatan audiovisual modern, pendingin udara, dan tata suara profesional untuk mendukung sidang ilmiah, seminar jurusan, serta kuliah pakar Teknik Sipil.
             </p>
         </div>
     </section>
@@ -51,7 +51,7 @@
                         <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-users-viewfinder"></i>
                         </div>
-                        <h3 class="font-bold text-slate-900 text-base font-heading">Kapasitas 60–100 Orang</h3>
+                        <h3 class="font-bold text-slate-900 text-base font-heading">Kapasitas 60â€“100 Orang</h3>
                         <p class="text-xs text-slate-600 mt-2 leading-relaxed">
                             Penataan kursi fleksibel model teater dan classroom, cocok untuk sidang tugas akhir, seminar terbuka, maupun kuliah tamu program studi.
                         </p>
@@ -127,7 +127,7 @@
                             </span>
                             <h3 class="text-xl sm:text-2xl font-black leading-tight">Ruang Seminar Teknik Sipil FT UNSIL</h3>
                             <p class="text-slate-300 text-xs mt-1.5 leading-relaxed">
-                                Kampus 2 Mugarsari, Jl. Siliwangi No. 24 Tasikmalaya — pusat kegiatan ilmiah dan sidang akademik Program Studi Teknik Sipil.
+                                Kampus 2 Mugarsari, Jl. Siliwangi No. 24 Tasikmalaya â€” pusat kegiatan ilmiah dan sidang akademik Program Studi Teknik Sipil.
                             </p>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
 
                         <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
                             <span>Lokasi: <strong>Kampus 2 FT UNSIL Mugarsari</strong></span>
-                            <span class="text-purple-700 font-bold">Kapasitas 60–100 Kursi</span>
+                            <span class="text-purple-700 font-bold">Kapasitas 60â€“100 Kursi</span>
                         </div>
                     </div>
 
@@ -220,3 +220,4 @@
     </section>
 
 @endsection
+

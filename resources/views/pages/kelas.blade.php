@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Ruang Kelas & Perkuliahan | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Fasilitas ruang kelas representatif ber-AC, proyektor multimedia, dan smart classroom di Gedung Fakultas Teknik UNSIL Kampus 2 Mugarsari.')
@@ -18,7 +18,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-white font-semibold">Kelas</span>
             </nav>
-            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+            <span class="text-amber-400 text-xs font-medium mb-2">
                 Lingkungan Pembelajaran Interaktif
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
@@ -199,3 +199,4 @@
     </section>
 
 @endsection
+

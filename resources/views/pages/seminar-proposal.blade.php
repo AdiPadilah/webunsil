@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Seminar Proposal | Program Studi S-1 Teknik Sipil FT UNSIL')
 @section('meta_description', 'Informasi, jadwal, dan persyaratan pendaftaran Seminar Proposal Skripsi Program Studi Teknik Sipil FT Universitas Siliwangi.')
@@ -13,7 +13,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Seminar Proposal</span>
             </nav>
-            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Tahapan Skripsi 1
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
@@ -25,3 +25,4 @@
         </div>
     </section>
 @endsection
+

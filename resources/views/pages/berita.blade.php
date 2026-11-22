@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Berita & Informasi Terkini | Program Studi S-1 Teknik Sipil FT Universitas Siliwangi')
 @section('meta_description', 'Portal berita, informasi kegiatan akademik, prestasi mahasiswa, seminar, dan agenda resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL).')
@@ -15,7 +15,7 @@
                 <span class="text-slate-200">Berita &amp; Informasi</span>
             </nav>
 
-            <p class="text-[#0070BA] font-semibold text-xs uppercase tracking-wide">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Warta Sivitas Akademika
             </p>
 
@@ -48,11 +48,11 @@
                                 <a href="{{ route('berita.seminar-jalan-tol') }}">Seminar Nasional SCIENCE 2026 Himpunan Mahasiswa Sipil UNSIL Angkat Strategi Pembangunan Jalan Tol Berkelanjutan</a>
                             </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                                Himpunan Mahasiswa Sipil (HMS) Fakultas Teknik Universitas Siliwangi menggelar Seminar Nasional bertajuk “Managing the Future for a Greater Indonesia” dengan menghadirkan praktisi BUMN PT Adhi Karya (Persero) Tbk. guna mengupas strategi konstruksi jalan tol berkelanjutan.
+                                Himpunan Mahasiswa Sipil (HMS) Fakultas Teknik Universitas Siliwangi menggelar Seminar Nasional bertajuk â€œManaging the Future for a Greater Indonesiaâ€ dengan menghadirkan praktisi BUMN PT Adhi Karya (Persero) Tbk. guna mengupas strategi konstruksi jalan tol berkelanjutan.
                             </p>
                             <div class="mt-4 pt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya →
+                                    Baca Selengkapnya â†’
                                 </a>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
+                                    <span>Selengkapnya â†’</span>
                                 </a>
                             </div>
                         </article>
@@ -108,7 +108,7 @@
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
+                                    <span>Selengkapnya â†’</span>
                                 </a>
                             </div>
                         </article>
@@ -134,7 +134,7 @@
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[11px] text-slate-400">Kerja Sama NCKU</span>
                                 <a href="{{ route('berita.seminar-taiwan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
+                                    <span>Selengkapnya â†’</span>
                                 </a>
                             </div>
                         </article>
@@ -248,7 +248,7 @@
                                         "Mahasiswa Ajaib" dari UNSIL: Fahmi Rahmat Amanulloh Tembus 3 Jurnal Scopus &amp; 2 Nasional di Semester 7
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        Mahasiswa semester 7 Teknik Sipil UNSIL ini mencetak rekor dengan 5 publikasi ilmiah sebelum lulus — termasuk Scopus Q1 di Journal of Natural Hazards Research.
+                                        Mahasiswa semester 7 Teknik Sipil UNSIL ini mencetak rekor dengan 5 publikasi ilmiah sebelum lulus â€” termasuk Scopus Q1 di Journal of Natural Hazards Research.
                                     </p>
                                 </div>
                             </div>
@@ -565,3 +565,4 @@
     </script>
     @endpush
 @endsection
+

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Penelitian | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Peta jalan penelitian, fokus riset 5 Kelompok Bidang Keahlian (KBK), dan skema hibah riset dosen Program Studi S-1 Teknik Sipil FT Universitas Siliwangi.')
@@ -17,7 +17,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Penelitian</span>
             </nav>
-            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+            <span class="text-amber-400 text-xs font-medium mb-2">
                 Tridharma &bull; Inovasi &amp; Pengembangan
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
@@ -29,3 +29,4 @@
         </div>
     </section>
 @endsection
+

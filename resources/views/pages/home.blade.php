@@ -30,7 +30,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
                 
                 <div>
-                    <div class="rounded-xl overflow-hidden shadow-md bg-slate-100">
+                    <div class="rounded-lg overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/sejarah-singkat-beranda.jpg') }}?v={{ time() }}" 
                              alt="Sejarah Singkat Program Studi S-1 Teknik Sipil FT UNSIL" 
                              class="w-full h-auto object-cover">
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="space-y-4">
-                    <p class="text-[#0070BA] font-semibold text-sm uppercase tracking-wide">
+                    <p class="text-[#0070BA] font-semibold text-sm">
                         Sejarah Singkat
                     </p>
 
@@ -55,7 +55,7 @@
                     </p>
 
                     <div class="pt-1">
-                        <a href="{{ route('sejarah') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-sm font-semibold rounded-lg transition">
+                        <a href="{{ route('sejarah') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-sm font-semibold rounded-md transition">
                             Baca Selengkapnya
                             <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
@@ -67,32 +67,32 @@
     </section>
 
     {{-- Statistik --}}
-    <section class="py-10 bg-[#0B2A4A] border-b border-blue-950">
+    <section class="py-8 bg-[#0B2A4A] border-b border-blue-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="6">6</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Laboratorium</span>
+            <div class="flex flex-wrap justify-between gap-y-4 text-center">
+                <div class="w-1/3 sm:w-auto px-3 py-2">
+                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="6">6</span>
+                    <span class="block text-[11px] text-slate-400 mt-0.5">Laboratorium</span>
                 </div>
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="27">27</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Dosen Tetap</span>
+                <div class="w-1/3 sm:w-auto px-3 py-2">
+                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="27">27</span>
+                    <span class="block text-[11px] text-slate-400 mt-0.5">Dosen Tetap</span>
                 </div>
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="5">5</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Bidang Keahlian</span>
+                <div class="w-1/3 sm:w-auto px-3 py-2">
+                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="5">5</span>
+                    <span class="block text-[11px] text-slate-400 mt-0.5">Bidang Keahlian</span>
                 </div>
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="1200">1.200+</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Mahasiswa Aktif</span>
+                <div class="w-1/3 sm:w-auto px-3 py-2">
+                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="1200">1.200+</span>
+                    <span class="block text-[11px] text-slate-400 mt-0.5">Mahasiswa Aktif</span>
                 </div>
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="3500">3.500+</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Alumni</span>
+                <div class="w-1/3 sm:w-auto px-3 py-2">
+                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="3500">3.500+</span>
+                    <span class="block text-[11px] text-slate-400 mt-0.5">Alumni</span>
                 </div>
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="40">40</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Tahun Berdiri</span>
+                <div class="w-1/3 sm:w-auto px-3 py-2">
+                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="40">40</span>
+                    <span class="block text-[11px] text-slate-400 mt-0.5">Tahun Berdiri</span>
                 </div>
             </div>
         </div>
@@ -114,9 +114,9 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
                                 <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Capaian Pembelajaran Lulusan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
+                                    <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Capaian Pembelajaran Lulusan" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
                                 </div>
                                 <div class="p-4">
                                     <h3 class="text-sm font-bold text-slate-900 leading-snug">
@@ -132,9 +132,9 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
                                 <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Profil Profesional Mandiri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
+                                    <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Profil Profesional Mandiri" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
                                 </div>
                                 <div class="p-4">
                                     <h3 class="text-sm font-bold text-slate-900 leading-snug">
@@ -150,9 +150,9 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
                                 <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
+                                    <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
                                 </div>
                                 <div class="p-4">
                                     <h3 class="text-sm font-bold text-slate-900 leading-snug">
@@ -188,9 +188,9 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
                                 <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/event-1.jpg') }}" alt="Kompetisi Jembatan Nasional SCIENCE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=600'">
+                                    <img src="{{ asset('images/event-1.jpg') }}" alt="Kompetisi Jembatan Nasional SCIENCE" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=600'">
                                 </div>
                                 <div class="p-4">
                                     <h3 class="text-sm font-bold text-slate-900 leading-snug">
@@ -206,9 +206,9 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
                                 <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Himpunan Mahasiswa Sipil FT UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600'">
+                                    <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Himpunan Mahasiswa Sipil FT UNSIL" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600'">
                                 </div>
                                 <div class="p-4">
                                     <h3 class="text-sm font-bold text-slate-900 leading-snug">
@@ -224,7 +224,7 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white group">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan NCKU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 </div>
@@ -259,9 +259,9 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
                                 <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Bahan Konstruksi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
+                                    <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Bahan Konstruksi" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
                                 </div>
                                 <div class="p-4">
                                     <h3 class="text-sm font-bold text-slate-900 leading-snug">
@@ -277,9 +277,9 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
                                 <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Laboratorium Mekanika Tanah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
+                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Laboratorium Mekanika Tanah" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
                                 </div>
                                 <div class="p-4">
                                     <h3 class="text-sm font-bold text-slate-900 leading-snug">
@@ -295,9 +295,9 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
                                 <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Studio Komputasi dan BIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
+                                    <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Studio Komputasi dan BIM" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
                                 </div>
                                 <div class="p-4">
                                     <h3 class="text-sm font-bold text-slate-900 leading-snug">
@@ -328,9 +328,9 @@
                         </div>
                         
                         
-                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
+                        <div class="bg-white rounded-lg overflow-hidden border border-slate-200">
                             <div class="overflow-hidden bg-slate-100">
-                                <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop OBE" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop OBE" class="w-full h-auto object-cover">
                             </div>
                             <div class="p-4 space-y-3">
                                 <div>
@@ -366,7 +366,7 @@
                             
                             <article class="flex items-start gap-3 group">
                                 <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover">
                                 </a>
                                 <div class="flex-1 min-w-0">
                                     <span class="text-[11px] text-slate-400 block mb-0.5">23 Oktober 2026</span>
@@ -378,7 +378,7 @@
 
                             <article class="flex items-start gap-3 group">
                                 <a href="{{ route('berita.seminar-jalan-tol') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                    <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol" class="w-full h-full object-cover">
                                 </a>
                                 <div class="flex-1 min-w-0">
                                     <span class="text-[11px] text-slate-400 block mb-0.5">20 Oktober 2026</span>
@@ -390,7 +390,7 @@
 
                             <article class="flex items-start gap-3 group">
                                 <a href="{{ route('berita.kompetisi-jembatan') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Bridge Design Competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Bridge Design Competition" class="w-full h-full object-cover">
                                 </a>
                                 <div class="flex-1 min-w-0">
                                     <span class="text-[11px] text-slate-400 block mb-0.5">20 Oktober 2026</span>
@@ -402,7 +402,7 @@
 
                             <article class="flex items-start gap-3 group">
                                 <a href="{{ route('berita.seminar-taiwan') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan" class="w-full h-full object-cover">
                                 </a>
                                 <div class="flex-1 min-w-0">
                                     <span class="text-[11px] text-slate-400 block mb-0.5">12 Oktober 2026</span>
@@ -433,22 +433,19 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                 <div>
-                    <p class="text-amber-600 font-semibold uppercase text-xs tracking-wider">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading">
                         Lokasi Kampus
-                    </p>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] mt-1 font-heading">
-                        UNSIL Kampus 2 Mugarsari &mdash; Fakultas Teknik
                     </h2>
-                    <p class="text-slate-500 text-sm mt-1">Universitas Siliwangi, Tasikmalaya, Jawa Barat</p>
+                    <p class="text-slate-500 text-sm mt-1">UNSIL Kampus 2 Mugarsari &mdash; Fakultas Teknik, Tasikmalaya, Jawa Barat</p>
                 </div>
                 <a href="https://maps.app.goo.gl/szSbqfg9FWsZnMc67" target="_blank"
-                   class="inline-flex items-center gap-2 bg-[#0B2A4A] hover:bg-[#133E6C] text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-sm transition whitespace-nowrap self-start md:self-auto">
+                   class="inline-flex items-center gap-2 bg-[#0B2A4A] hover:bg-[#133E6C] text-white text-xs font-semibold px-4 py-2 rounded-lg transition whitespace-nowrap self-start md:self-auto">
                     <i class="fa-solid fa-location-arrow text-amber-400"></i>
                     Buka Google Maps
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 rounded-xl overflow-hidden shadow-sm border border-slate-200">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 rounded-lg overflow-hidden border border-slate-200">
                 <div class="lg:col-span-2 h-72 lg:h-[380px]">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.883726715206!2d108.24907807499997!3d-7.379663392629738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5817bf80530b%3A0x170d075986c8ed42!2sUNIVERSITAS%20SILIWANGI%20-%20KAMPUS%202%20MUGARSARI!5e0!3m2!1sid!2sid!4v1731900000000!5m2!1sid!2sid"

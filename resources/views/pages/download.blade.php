@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Download Berkas | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Pusat unduhan dokumen resmi, modul praktikum, panduan kerja praktik, pedoman skripsi, dan SOP Program Studi Teknik Sipil FT UNSIL.')
@@ -15,7 +15,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Download</span>
             </nav>
-            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+            <span class="text-amber-400 text-xs font-medium mb-2">
                 Dokumen &amp; Berkas Resmi
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
@@ -170,3 +170,4 @@
         </div>
     </section>
 @endsection
+

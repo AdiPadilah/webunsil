@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -294,12 +294,8 @@
     </main>
 
     
-    <footer class="bg-unsil-nav text-slate-300 pt-16 pb-8 border-t border-slate-800 relative overflow-hidden mt-auto">
-        
-        <div class="absolute inset-0 opacity-[0.03] bg-repeat pointer-events-none mix-blend-screen"
-             style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 240px auto;"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <footer class="bg-unsil-nav text-slate-300 pt-14 pb-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800 text-xs">
                 
                 <div class="md:col-span-2">
@@ -323,9 +319,7 @@
 
                 
                 <div>
-                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5 flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Kontak Resmi
-                    </h4>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5">Kontak Resmi</h4>
                     <ul class="space-y-3 text-slate-400">
                         <li class="flex items-start gap-2">
                             <i class="fa-solid fa-envelope text-amber-400 mt-0.5 w-4"></i>
@@ -344,11 +338,9 @@
 
                 
                 <div>
-                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5 flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Halaman Utama
-                    </h4>
-                    <div class="bg-amber-400/10 border border-amber-400/20 rounded-xl p-3 mb-4">
-                        <span class="text-amber-400 font-black text-sm block">AKREDITASI: BAIK</span>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5">Halaman Utama</h4>
+                    <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-3 mb-4">
+                        <span class="text-amber-400 font-bold text-sm block">AKREDITASI: BAIK</span>
                         <p class="text-slate-400 text-[11px] leading-relaxed mt-0.5">
                             LAM Teknik No. 0018/SK/LAM Teknik/AS/IV/2023
                         </p>
@@ -384,20 +376,18 @@
 
     
     <div id="modal-akreditasi-top" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
-            <div class="relative bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] p-6 text-white rounded-t-3xl">
+        <div class="bg-white rounded-xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+            <div class="relative bg-[#0B2A4A] p-6 text-white rounded-t-xl">
                 <button type="button" onclick="closeModal('modal-akreditasi-top')" class="absolute top-5 right-5 text-slate-300 hover:text-white w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition" title="Tutup">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-                <div class="inline-flex items-center gap-1.5 bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
-                    <i class="fa-solid fa-certificate"></i> Akreditasi Resmi
-                </div>
+                <span class="text-amber-400 text-[10px] font-bold uppercase tracking-wider block mb-2">Akreditasi Resmi</span>
                 <h3 class="text-xl font-bold">Akreditasi Program Studi</h3>
                 <p class="text-slate-300 text-xs mt-1">S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi</p>
             </div>
             <div class="p-6 space-y-4 text-sm text-slate-700">
-                <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl flex items-center gap-4">
-                    <div class="w-12 h-12 bg-emerald-500 text-white rounded-xl flex items-center justify-center text-xl flex-shrink-0 shadow-md">
+                <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center gap-4">
+                    <div class="w-10 h-10 bg-emerald-500 text-white rounded-lg flex items-center justify-center text-lg flex-shrink-0">
                         <i class="fa-solid fa-award"></i>
                     </div>
                     <div>
@@ -427,15 +417,15 @@
                 </div>
 
                 <div class="pt-4 flex flex-wrap gap-2.5">
-                    <a href="{{ route('download') }}" class="inline-flex items-center gap-2 px-4 py-2.5 bg-[#0B2A4A] hover:bg-blue-900 text-white text-xs font-semibold rounded-xl transition shadow">
+                    <a href="{{ route('download') }}" class="inline-flex items-center gap-2 px-4 py-2.5 bg-[#0B2A4A] hover:bg-blue-900 text-white text-xs font-semibold rounded-lg transition">
                         <i class="fa-solid fa-download text-amber-400"></i> Unduh Sertifikat &amp; SK (PDF)
                     </a>
-                    <a href="{{ route('tentang-kami') }}" class="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold rounded-xl transition">
-                        <i class="fa-solid fa-circle-info text-blue-600"></i> Profil Lengkap Prodi
+                    <a href="{{ route('tentang-kami') }}" class="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold rounded-lg transition">
+                        Profil Lengkap Prodi
                     </a>
                 </div>
             </div>
-            <div class="p-4 bg-slate-50 rounded-b-3xl border-t border-slate-100 flex justify-end">
+            <div class="p-4 bg-slate-50 rounded-b-xl border-t border-slate-100 flex justify-end">
                 <button type="button" onclick="closeModal('modal-akreditasi-top')" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-xl transition">
                     Tutup
                 </button>
@@ -445,7 +435,7 @@
 
     
     <div id="modal-search-global" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-start justify-center p-4 pt-16 sm:pt-24">
-        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl border border-slate-200 flex flex-col">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl border border-slate-200 flex flex-col">
             
             <div class="p-4 sm:p-5 border-b border-slate-200 flex items-center gap-3 bg-slate-50">
                 <i class="fa-solid fa-magnifying-glass text-slate-400 text-lg ml-2"></i>
@@ -462,7 +452,7 @@
             <div id="search-results-container" class="overflow-y-auto p-4 space-y-1.5 flex-1 divide-y divide-slate-100">
                 <a href="{{ route('home') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="beranda home utama unsil fakultas teknik sipil">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-house text-sm"></i>
                         </div>
                         <div>
@@ -475,7 +465,7 @@
 
                 <a href="{{ route('tentang-kami') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="tentang kami profil jurusan sambutan struktur organisasi akreditasi">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-building-columns text-sm"></i>
                         </div>
                         <div>
@@ -488,7 +478,7 @@
 
                 <a href="{{ route('visi-misi') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="visi misi sasaran tujuan 2030 kompetensi keunggulan wirausaha">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-bullseye text-sm"></i>
                         </div>
                         <div>
@@ -501,7 +491,7 @@
 
                 <a href="{{ route('sejarah') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="sejarah rekam jejak berdirinya 1984 penegerian unsil mugarsari">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-clock-rotate-left text-sm"></i>
                         </div>
                         <div>
@@ -514,7 +504,7 @@
 
                 <a href="{{ route('dosen') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="dosen pengajar staf tenaga kependidikan kbk struktur guru besar lektor">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-cyan-50 text-cyan-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-user-tie text-sm"></i>
                         </div>
                         <div>
@@ -527,7 +517,7 @@
 
                 <a href="{{ route('akademik') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="akademik pendidikan perkuliahan kalender peraturan sarjana s1">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-graduation-cap text-sm"></i>
                         </div>
                         <div>
@@ -540,7 +530,7 @@
 
                 <a href="{{ route('kurikulum') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="kurikulum mata kuliah sks obe silabus semester struktur konsentrasi prasyarat">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-orange-50 text-orange-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-book-open text-sm"></i>
                         </div>
                         <div>
@@ -553,7 +543,7 @@
 
                 <a href="{{ route('layanan') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="layanan surat permohonan pengajuan krs cuti bebas lab tugas akhir skripsi sidang yudisium">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-bell-concierge text-sm"></i>
                         </div>
                         <div>
@@ -566,7 +556,7 @@
 
                 <a href="{{ route('download') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="download unduh berkas pdf panduan format pedoman akademik formulir skripsi">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-red-50 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-file-arrow-down text-sm"></i>
                         </div>
                         <div>
@@ -579,7 +569,7 @@
 
                 <a href="{{ route('fasilitas') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="fasilitas laboratorium alat uji struktur tanah hidrolika ukur tanah transportasi komputasi">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-flask-vial text-sm"></i>
                         </div>
                         <div>
@@ -592,7 +582,7 @@
 
                 <a href="{{ route('riset') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="riset kolaborasi penelitian pengabdian kerjasama industri bumn pemda lp2m hibah">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-handshake text-sm"></i>
                         </div>
                         <div>
@@ -605,7 +595,7 @@
 
                 <a href="{{ route('karya-dosen') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="karya dosen publikasi jurnal scopus sinta prosiding buku ajar paten hki">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-newspaper text-sm"></i>
                         </div>
                         <div>
@@ -618,7 +608,7 @@
 
                 <a href="{{ route('berita.index') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="berita informasi agenda kegiatan seminar kompetensi lomba wisuda pengumuman">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-bullhorn text-sm"></i>
                         </div>
                         <div>
@@ -631,7 +621,7 @@
 
                 <a href="{{ route('mahasiswa-alumni') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="mahasiswa alumni himpunan hms prestasi ikatan alumni lulusan karir">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-users text-sm"></i>
                         </div>
                         <div>
@@ -644,7 +634,7 @@
 
                 <a href="{{ route('home') }}#lokasi" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="lokasi alamat maps google peta kampus 2 unsil mugarsari tamansari tasikmalaya">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-xl bg-red-50 text-red-700 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-amber-400 transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-map-location-dot text-sm"></i>
                         </div>
                         <div>
@@ -671,8 +661,8 @@
     </div>
 
     
-    <div id="toast-notification" class="fixed bottom-6 right-6 z-50 hidden max-w-sm bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700/80 flex items-start gap-3 transition-all duration-300">
-        <div id="toast-icon" class="w-8 h-8 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+    <div id="toast-notification" class="fixed bottom-6 right-6 z-50 hidden max-w-sm bg-slate-900 text-white p-4 rounded-lg shadow-2xl border border-slate-700/80 flex items-start gap-3 transition-all duration-300">
+        <div id="toast-icon" class="w-8 h-8 rounded-lg bg-amber-400/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
             <i class="fa-solid fa-info text-sm"></i>
         </div>
         <div class="flex-1 min-w-0">
@@ -940,3 +930,5 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
+
+
