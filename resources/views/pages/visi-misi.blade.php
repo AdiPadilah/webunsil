@@ -47,11 +47,6 @@
                             Visi ini mencerminkan tekad Program Studi Teknik Sipil FT UNSIL untuk melahirkan insinyur berdaya saing tinggi yang tidak hanya mahir dalam perencanaan dan pelaksanaan konstruksi, tetapi juga berintegritas dan siap berwirausaha secara mandiri.
                         </p>
                     </div>
-
-                    <div class="mt-8 pt-4 border-t border-slate-100 flex justify-between text-xs text-slate-500">
-                        <span>Program Studi Teknik Sipil</span>
-                        <span>Universitas Siliwangi</span>
-                    </div>
                 </div>
 
                 
@@ -93,39 +88,9 @@
                             </li>
                         </ol>
                     </div>
-
-                    <div class="mt-8 pt-4 border-t border-slate-100 flex justify-between text-xs text-slate-500">
-                        <span>Fakultas Teknik</span>
-                        <span>Universitas Siliwangi</span>
-                    </div>
                 </div>
 
             </div>
-
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-sm">
-                    <h3 class="text-base font-bold text-slate-900">Tujuan Pendidikan</h3>
-                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                        Membentuk sarjana teknik sipil yang menguasai dasar-dasar keilmuan sipil, mampu menganalisis permasalahan rekayasa, dan siap merancang solusi infrastruktur yang aman, efisien, dan ramah lingkungan.
-                    </p>
-                </div>
-
-                <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-sm">
-                    <h3 class="text-base font-bold text-slate-900">Karakter Wirausaha</h3>
-                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                        Menanamkan jiwa kepemimpinan, kemandirian, etika profesi yang kokoh, dan kemampuan melihat peluang usaha di sektor jasa konstruksi, konsultan perencana, dan inovasi bahan bangunan lokal.
-                    </p>
-                </div>
-
-                <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-sm">
-                    <h3 class="text-base font-bold text-slate-900">Nilai Kejuangan Siliwangi</h3>
-                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                        Menjiwai semangat juang Siliwangi: pantang menyerah, jujur, setia pada bangsa dan negara, serta menjunjung tinggi kearifan budaya Sunda dan kesetiakawanan sosial.
-                    </p>
-                </div>
-            </div>
-
         </div>
     </section>
 @endsection

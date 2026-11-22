@@ -89,55 +89,30 @@
             </div>
 
             
+            {{-- 2 Card Sejarah & Dosen (Gaya Gambar 2: Full-bleed Image, Rounded-2xl, Judul di Kiri Bawah) --}}
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                
-                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col">
-                    <div class="h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Sejarah Program Studi" class="w-full h-full object-cover">
+                {{-- Card 1: Sejarah Program Studi --}}
+                <a href="{{ route('sejarah') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-md transition bg-slate-900">
+                    <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Sejarah Program Studi" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight drop-shadow-md text-white">
+                            Sejarah Program Studi
+                        </h3>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs text-slate-400 font-medium">Perjalanan Prodi</span>
-                            <h3 class="text-lg font-bold text-slate-900 mt-1">
-                                Sejarah Program Studi
-                            </h3>
-                            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                                Rekam jejak perjalanan lebih dari 4 dekade sejak berdirinya Jurusan Teknik Sipil tahun 1984, penegerian UNSIL tahun 2014, hingga pengembangan kampus Mugarsari.
-                            </p>
-                        </div>
-                        <div class="pt-4">
-                            <a href="{{ route('sejarah') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline">
-                                <span>Baca Selengkapnya</span>
-                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </a>
 
-                
-                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col">
-                    <div class="h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Akreditasi Program Studi" class="w-full h-full object-cover">
+                {{-- Card 2: Dosen & Tenaga Pengajar --}}
+                <a href="{{ route('dosen') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-md transition bg-slate-900">
+                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Dosen & Tenaga Pengajar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight drop-shadow-md text-white">
+                            Dosen &amp; Tenaga Pengajar
+                        </h3>
                     </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs text-slate-400 font-medium">Penjaminan Mutu</span>
-                            <h3 class="text-lg font-bold text-slate-900 mt-1">
-                                Akreditasi & Mutu Akademik
-                            </h3>
-                            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                                Program Studi Teknik Sipil S-1 telah terakreditasi BAIK oleh Lembaga Akreditasi Mandiri Program Studi Keteknikan (LAM Teknik) berlaku hingga tahun 2028.
-                            </p>
-                        </div>
-                        <div class="pt-4">
-                            <button type="button" onclick="openModal('modal-akreditasi')" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline">
-                                <span>Lihat Detail Sertifikat</span>
-                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                </a>
 
             </div>
 
@@ -151,7 +126,7 @@
                         </h2>
                     </div>
                     <a href="{{ route('berita.index') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                        Lihat Semua Berita â†’
+                        Lihat Semua Berita &rarr;
                     </a>
                 </div>
 
@@ -177,7 +152,7 @@
                             </div>
                             <div class="pt-4 mt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya â†’
+                                    Baca Selengkapnya &rarr;
                                 </a>
                             </div>
                         </div>
@@ -202,7 +177,7 @@
                             </div>
                             <div class="pt-4 mt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya â†’
+                                    Baca Selengkapnya &rarr;
                                 </a>
                             </div>
                         </div>
@@ -227,7 +202,7 @@
                             </div>
                             <div class="pt-4 mt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya â†’
+                                    Baca Selengkapnya &rarr;
                                 </a>
                             </div>
                         </div>
