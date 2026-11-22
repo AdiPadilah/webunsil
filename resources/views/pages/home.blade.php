@@ -488,28 +488,26 @@
                     <div class="space-y-4">
                         {{-- Agenda 1 --}}
                         <div class="bg-white rounded-xl p-4 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4">
-                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-[#0B2A4A]">
-                                <div class="bg-[#0B2A4A] text-amber-400 text-[10px] font-bold py-1 uppercase tracking-wider">
-                                    NOV
+                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-200">
+                                <div class="bg-slate-700 text-slate-300 text-[10px] font-bold py-1 uppercase tracking-wider">
+                                    -
                                 </div>
-                                <div class="bg-white text-[#0B2A4A] text-xl font-bold py-1.5 font-heading">
-                                    27
+                                <div class="bg-white text-slate-700 text-xl font-bold py-1.5 font-heading">
+                                    -
                                 </div>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                                    <a href="{{ route('berita.workshop-obe') }}" class="hover:text-[#0070BA] transition">
-                                        Workshop Penguatan Kurikulum Berbasis OBE
-                                    </a>
+                                    -
                                 </h4>
                                 <div class="text-[11px] text-slate-500 space-y-0.5 mt-1.5">
                                     <p class="flex items-center gap-1.5">
                                         <i class="fa-regular fa-clock text-slate-400 text-[10px]"></i>
-                                        <span>08.00 WIB s.d. Selesai</span>
+                                        <span>-</span>
                                     </p>
                                     <p class="flex items-center gap-1.5">
                                         <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i>
-                                        <span>Kampus 2 Universitas Siliwangi</span>
+                                        <span>-</span>
                                     </p>
                                 </div>
                             </div>
@@ -517,26 +515,26 @@
 
                         {{-- Agenda 2 --}}
                         <div class="bg-white rounded-xl p-4 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4">
-                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-300">
-                                <div class="bg-slate-700 text-white text-[10px] font-bold py-1 uppercase tracking-wider">
-                                    DES
+                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-200">
+                                <div class="bg-slate-700 text-slate-300 text-[10px] font-bold py-1 uppercase tracking-wider">
+                                    -
                                 </div>
-                                <div class="bg-white text-slate-800 text-xl font-bold py-1.5 font-heading">
-                                    15
+                                <div class="bg-white text-slate-700 text-xl font-bold py-1.5 font-heading">
+                                    -
                                 </div>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                                    Ujian Akhir Semester (UAS) Ganjil
+                                    -
                                 </h4>
                                 <div class="text-[11px] text-slate-500 space-y-0.5 mt-1.5">
                                     <p class="flex items-center gap-1.5">
                                         <i class="fa-regular fa-clock text-slate-400 text-[10px]"></i>
-                                        <span>15 &ndash; 24 Desember 2026</span>
+                                        <span>-</span>
                                     </p>
                                     <p class="flex items-center gap-1.5">
                                         <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i>
-                                        <span>Kampus 2 Mugarsari</span>
+                                        <span>-</span>
                                     </p>
                                 </div>
                             </div>
@@ -544,28 +542,26 @@
 
                         {{-- Agenda 3 --}}
                         <div class="bg-white rounded-xl p-4 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4">
-                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-300">
-                                <div class="bg-slate-700 text-white text-[10px] font-bold py-1 uppercase tracking-wider">
-                                    JAN
+                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-200">
+                                <div class="bg-slate-700 text-slate-300 text-[10px] font-bold py-1 uppercase tracking-wider">
+                                    -
                                 </div>
-                                <div class="bg-white text-slate-800 text-xl font-bold py-1.5 font-heading">
-                                    08
+                                <div class="bg-white text-slate-700 text-xl font-bold py-1.5 font-heading">
+                                    -
                                 </div>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                                    <a href="{{ route('berita.kuliah-tamu-bim') }}" class="hover:text-[#0070BA] transition">
-                                        Kuliah Tamu Building Information Modelling (BIM)
-                                    </a>
+                                    -
                                 </h4>
                                 <div class="text-[11px] text-slate-500 space-y-0.5 mt-1.5">
                                     <p class="flex items-center gap-1.5">
                                         <i class="fa-regular fa-clock text-slate-400 text-[10px]"></i>
-                                        <span>09.00 WIB &bull; Gedung Labtek</span>
+                                        <span>-</span>
                                     </p>
                                     <p class="flex items-center gap-1.5">
                                         <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i>
-                                        <span>Kampus 2 Mugarsari</span>
+                                        <span>-</span>
                                     </p>
                                 </div>
                             </div>
