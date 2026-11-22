@@ -213,18 +213,16 @@
                 </p>
             </div>
 
-            <!-- Timeline Container: Vertikal Sejajar -->
-            <div class="relative max-w-3xl mx-auto">
+            <!-- Timeline Container: Dua Sisi (Kiri & Kanan di Desktop) -->
+            <div class="relative max-w-5xl mx-auto">
                 
-                <!-- Garis Vertikal Tunggal -->
-                <div class="absolute left-5 sm:left-6 top-3 bottom-6 w-0.5 bg-slate-200"></div>
+                <!-- Garis Tengah Vertikal -->
+                <div class="absolute left-6 md:left-1/2 top-4 bottom-6 w-0.5 -translate-x-1/2 bg-slate-200"></div>
 
-                <!-- Milestone 1: 1984 -->
-                <div class="relative flex items-start mb-8 sm:mb-10">
-                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-400 border-4 border-white shadow-md flex items-center justify-center text-[#0B2A4A] text-sm sm:text-base">
-                        <i class="fa-solid fa-flag"></i>
-                    </div>
-                    <div class="ml-4 sm:ml-6 flex-1">
+                <!-- Milestone 1: 1984 (Kiri) -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
+                    <!-- Sisi Kiri (Konten di Desktop) -->
+                    <div class="w-full md:w-1/2 pl-14 md:pl-0 md:pr-12 order-2 md:order-1">
                         <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
                             <div class="flex flex-wrap items-center gap-2 mb-2">
                                 <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded">
@@ -243,14 +241,28 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Marker Tengah -->
+                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-400 border-4 border-white shadow-md flex items-center justify-center text-[#0B2A4A] text-sm sm:text-base order-1 md:order-2">
+                        <i class="fa-solid fa-flag"></i>
+                    </div>
+
+                    <!-- Sisi Kanan (Kosong di Desktop) -->
+                    <div class="hidden md:block md:w-1/2 md:pl-12 order-3"></div>
                 </div>
 
-                <!-- Milestone 2: 1990-an -->
-                <div class="relative flex items-start mb-8 sm:mb-10">
-                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0070BA] border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base">
+                <!-- Milestone 2: 1990-an (Kanan) -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
+                    <!-- Sisi Kiri (Kosong di Desktop) -->
+                    <div class="hidden md:block md:w-1/2 md:pr-12 order-1"></div>
+
+                    <!-- Marker Tengah -->
+                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0070BA] border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base order-1 md:order-2">
                         <i class="fa-solid fa-flask"></i>
                     </div>
-                    <div class="ml-4 sm:ml-6 flex-1">
+
+                    <!-- Sisi Kanan (Konten di Desktop) -->
+                    <div class="w-full md:w-1/2 pl-14 md:pl-12 order-2 md:order-3">
                         <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
                             <div class="flex flex-wrap items-center gap-2 mb-2">
                                 <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-0.5 rounded">
@@ -271,12 +283,10 @@
                     </div>
                 </div>
 
-                <!-- Milestone 3: 2000-an -->
-                <div class="relative flex items-start mb-8 sm:mb-10">
-                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-600 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <div class="ml-4 sm:ml-6 flex-1">
+                <!-- Milestone 3: 2000-an (Kiri) -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
+                    <!-- Sisi Kiri (Konten di Desktop) -->
+                    <div class="w-full md:w-1/2 pl-14 md:pl-0 md:pr-12 order-2 md:order-1">
                         <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
                             <div class="flex flex-wrap items-center gap-2 mb-2">
                                 <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded">
@@ -295,14 +305,28 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Marker Tengah -->
+                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-600 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base order-1 md:order-2">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <!-- Sisi Kanan (Kosong di Desktop) -->
+                    <div class="hidden md:block md:w-1/2 md:pl-12 order-3"></div>
                 </div>
 
-                <!-- Milestone 4: 2014 (Tonggak Penegerian) -->
-                <div class="relative flex items-start mb-8 sm:mb-10">
-                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-500 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base">
+                <!-- Milestone 4: 2014 (Kanan - Tonggak Penegerian) -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
+                    <!-- Sisi Kiri (Kosong di Desktop) -->
+                    <div class="hidden md:block md:w-1/2 md:pr-12 order-1"></div>
+
+                    <!-- Marker Tengah -->
+                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-500 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base order-1 md:order-2">
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <div class="ml-4 sm:ml-6 flex-1">
+
+                    <!-- Sisi Kanan (Konten di Desktop) -->
+                    <div class="w-full md:w-1/2 pl-14 md:pl-12 order-2 md:order-3">
                         <div class="bg-[#0B2A4A] text-white rounded-xl p-5 sm:p-6 shadow-sm border border-blue-900">
                             <div class="flex flex-wrap items-center gap-2 mb-2">
                                 <span class="bg-amber-400 text-[#0B2A4A] text-xs font-bold px-2.5 py-0.5 rounded">
@@ -323,12 +347,10 @@
                     </div>
                 </div>
 
-                <!-- Milestone 5: 2019 -->
-                <div class="relative flex items-start mb-8 sm:mb-10">
-                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-indigo-600 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base">
-                        <i class="fa-solid fa-building"></i>
-                    </div>
-                    <div class="ml-4 sm:ml-6 flex-1">
+                <!-- Milestone 5: 2019 (Kiri) -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
+                    <!-- Sisi Kiri (Konten di Desktop) -->
+                    <div class="w-full md:w-1/2 pl-14 md:pl-0 md:pr-12 order-2 md:order-1">
                         <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
                             <div class="flex flex-wrap items-center gap-2 mb-2">
                                 <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2.5 py-0.5 rounded">
@@ -347,14 +369,28 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Marker Tengah -->
+                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-indigo-600 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base order-1 md:order-2">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <!-- Sisi Kanan (Kosong di Desktop) -->
+                    <div class="hidden md:block md:w-1/2 md:pl-12 order-3"></div>
                 </div>
 
-                <!-- Milestone 6: 2023 - Kini -->
-                <div class="relative flex items-start">
-                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0B2A4A] border-4 border-white shadow-md flex items-center justify-center text-amber-400 text-sm sm:text-base">
+                <!-- Milestone 6: 2023 - Kini (Kanan) -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center">
+                    <!-- Sisi Kiri (Kosong di Desktop) -->
+                    <div class="hidden md:block md:w-1/2 md:pr-12 order-1"></div>
+
+                    <!-- Marker Tengah -->
+                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0B2A4A] border-4 border-white shadow-md flex items-center justify-center text-amber-400 text-sm sm:text-base order-1 md:order-2">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
-                    <div class="ml-4 sm:ml-6 flex-1">
+
+                    <!-- Sisi Kanan (Konten di Desktop) -->
+                    <div class="w-full md:w-1/2 pl-14 md:pl-12 order-2 md:order-3">
                         <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
                             <div class="flex flex-wrap items-center gap-2 mb-2">
                                 <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded">
