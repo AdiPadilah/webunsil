@@ -66,6 +66,70 @@
         </div>
     </section>
 
+    {{-- Section Pimpinan (Inspirasi Layout ITB dengan Foto Bulat & Daftar Struktur) --}}
+    <section class="py-16 lg:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            {{-- Header Title Section ala ITB --}}
+            <div class="mb-10 lg:mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 font-heading tracking-tight">
+                    Pimpinan
+                </h2>
+                <div class="w-12 h-1 bg-[#0070BA] mt-2.5"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+                
+                {{-- Sisi Kiri: Profil & List Pimpinan --}}
+                <div class="lg:col-span-7 space-y-4">
+                    <p class="text-slate-600 font-medium text-sm sm:text-base">
+                        Ketua Program Studi
+                    </p>
+
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 font-heading leading-snug">
+                        Andhy Romdani, S.T., M.Eng., Ph.D.
+                    </h3>
+
+                    <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed min-h-[4.5rem]">
+                        -
+                    </p>
+
+                    <div class="pt-2">
+                        <a href="{{ route('tentang-kami') }}" class="inline-block px-5 py-2 border border-slate-700 hover:border-[#0070BA] hover:bg-[#0070BA] text-slate-800 hover:text-white text-xs sm:text-sm font-medium rounded-md transition duration-200">
+                            Selengkapnya
+                        </a>
+                    </div>
+
+                    {{-- List Struktur & Jajaran (Divider Garis Horizontal ala ITB) --}}
+                    <div class="pt-6 border-t border-slate-200 divide-y divide-slate-200">
+                        <a href="{{ route('tentang-kami') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
+                            Sekretaris Program Studi
+                        </a>
+                        <a href="{{ route('tentang-kami') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
+                            Pimpinan Fakultas Teknik
+                        </a>
+                        <a href="{{ route('kurikulum') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
+                            Kelompok Bidang Keahlian (KBK)
+                        </a>
+                        <a href="{{ route('dosen') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
+                            Dosen &amp; Tenaga Pengajar
+                        </a>
+                    </div>
+                </div>
+
+                {{-- Sisi Kanan: Foto Pimpinan Lingkaran Besar (Circular Crop ala ITB) --}}
+                <div class="lg:col-span-5 flex justify-center lg:justify-end items-center">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden bg-slate-100 shadow-xl border-4 sm:border-8 border-slate-100 flex-shrink-0">
+                        <img src="{{ asset('images/pimpinan-prodi.jpg') }}?v={{ time() }}" 
+                             alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi S-1 Teknik Sipil FT UNSIL" 
+                             class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     {{-- Statistik --}}
     <section class="py-8 bg-[#0B2A4A] border-b border-blue-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,328 +163,421 @@
     </section>
 
     
-    <section class="py-14 bg-slate-50 border-b border-slate-200">
+    {{-- Section Program Studi, Kegiatan & Fasilitas (Bento Grid 2x2 Proporsional Persis UNPAD) --}}
+    <section class="py-16 lg:py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            
+            {{-- 1. Program Studi Teknik Sipil (Bento Grid 2x2 Proporsi UNPAD) --}}
+            <div>
+                <div class="flex items-center justify-between mb-6 pb-2 border-b border-slate-200">
+                    <div>
+                        <span class="text-xs font-bold text-[#0070BA] uppercase tracking-wider block">Pendidikan &amp; Kompetensi</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading mt-0.5">
+                            Program Studi Teknik Sipil
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-5 lg:gap-6">
+                    
+                    {{-- Baris 1: Card Kiri (4 Kolom ~ Persis rasio card kiri UNPAD) --}}
+                    <a href="{{ route('kurikulum') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-3xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-slate-900">
+                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Capaian Pembelajaran Lulusan" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Capaian Pembelajaran Lulusan
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 1: Card Kanan (8 Kolom ~ Persis rasio card kanan UNPAD) --}}
+                    <a href="{{ route('visi-misi') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-3xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-slate-900">
+                        <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Profil Profesional Mandiri" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Profil Profesional Mandiri
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 2: Card Kiri (8 Kolom ~ Bersilangan dengan baris 1) --}}
+                    <a href="{{ route('kurikulum') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-3xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-slate-900">
+                        <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Kurikulum Berbasis Outcome-Based Education (OBE)" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Kurikulum Berbasis OBE &amp; MBKM
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 2: Card Kanan (4 Kolom ~ Bersilangan dengan baris 1) --}}
+                    <a href="{{ route('prestasi-mahasiswa') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-3xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-slate-900">
+                        <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa Teknik Sipil" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Prestasi Mahasiswa
+                            </h3>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            {{-- 2. Kegiatan Mahasiswa (Bento Grid 2x2 Proporsi UNPAD) --}}
+            <div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-2 border-b border-slate-200">
+                    <div>
+                        <span class="text-xs font-bold text-[#0070BA] uppercase tracking-wider block">Aktivitas &amp; Organisasi</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading mt-0.5">
+                            Kegiatan Mahasiswa
+                        </h2>
+                    </div>
+                    <div class="flex items-center gap-4 text-xs font-semibold text-slate-500">
+                        <a href="https://instagram.com/hmsftunsil" target="_blank" rel="noopener noreferrer" class="hover:text-[#0070BA] transition flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs">
+                            <i class="fa-brands fa-instagram text-pink-600 text-sm"></i> @hmsftunsil
+                        </a>
+                        <a href="https://instagram.com/sipilunsil" target="_blank" rel="noopener noreferrer" class="hover:text-[#0070BA] transition flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs">
+                            <i class="fa-brands fa-instagram text-pink-600 text-sm"></i> @sipilunsil
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-5 lg:gap-6">
+                    
+                    {{-- Baris 1: Card Kiri (4 Kolom) --}}
+                    <a href="{{ route('berita.kompetisi-jembatan') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
+                        <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="SCIENCE Bridge Competition" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                SCIENCE: Bridge Competition
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 1: Card Kanan (8 Kolom) --}}
+                    <a href="{{ route('mahasiswa-alumni') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
+                        <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Organisasi HMS FT UNSIL" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Organisasi HMS FT UNSIL
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 2: Card Kiri (8 Kolom) --}}
+                    <a href="{{ route('berita.seminar-taiwan') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
+                        <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan NCKU" class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Seminar Internasional Indonesia-Taiwan
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 2: Card Kanan (4 Kolom) --}}
+                    <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
+                        <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Ilmiah Mahasiswa Bendungan Leuwikeris" class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Kunjungan Ilmiah Leuwikeris
+                            </h3>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            {{-- 3. Fasilitas Laboratorium (Bento Grid 2x2 Persis UNPAD) --}}
+            <div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-2 border-b border-slate-200">
+                    <div>
+                        <span class="text-xs font-bold text-[#0070BA] uppercase tracking-wider block">Sarana Riset &amp; Pengujian</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading mt-0.5">
+                            Fasilitas Laboratorium
+                        </h2>
+                    </div>
+                    <a href="{{ route('laboratorium') }}" class="text-xs sm:text-sm font-semibold text-[#0070BA] hover:text-[#0B2A4A] transition inline-flex items-center gap-1.5">
+                        <span>Lihat Semua Fasilitas</span>
+                        <i class="fa-solid fa-arrow-right text-[11px]"></i>
+                    </a>
+                </div>
+
+                {{-- Layout Asimetris Bento Grid Persis UNPAD (Row 1: 4 & 8 | Row 2: 8 & 4) --}}
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-5 lg:gap-6">
+                    
+                    {{-- Baris 1: Card Kiri (4 Kolom ~ Persis 'Kawasan Sains dan Teknologi' di UNPAD) --}}
+                    <a href="{{ route('laboratorium') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
+                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Bahan Konstruksi" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Lab. Teknologi Bahan Konstruksi
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 1: Card Kanan (8 Kolom ~ Persis 'Laboratorium Sentral' di UNPAD) --}}
+                    <a href="{{ route('laboratorium') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
+                        <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Laboratorium Mekanika Tanah dan Geoteknik" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Lab. Mekanika Tanah &amp; Geoteknik
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 2: Card Kiri (8 Kolom ~ Persis 'Transportasi Kampus' di UNPAD) --}}
+                    <a href="{{ route('fasilitas') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
+                        <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Studio Komputasi dan BIM" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Studio Komputasi &amp; BIM
+                            </h3>
+                        </div>
+                    </a>
+
+                    {{-- Baris 2: Card Kanan (4 Kolom ~ Persis 'Masjid Raya Unpad' di UNPAD) --}}
+                    <a href="{{ route('fasilitas') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
+                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Sarana Kampus Terpadu Mugarsari" class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
+                                Sarana Kampus Mugarsari
+                            </h3>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {{-- Section Berita & Agenda Terkini --}}
+    <section class="py-14 sm:py-18 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
                 
-                
-                <div class="lg:col-span-8 space-y-10">
-                    
-                    
-                    <div>
-                        <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading mb-5">
-                            Program Studi Teknik Sipil
-                        </h2>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Capaian Pembelajaran Lulusan" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
-                                        Capaian Pembelajaran Lulusan
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        Capaian Pembelajaran Lulusan mahasiswa Program Studi Teknik Sipil Universitas Siliwangi.
-                                    </p>
-                                    <a href="{{ route('kurikulum') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
-                                    </a>
-                                </div>
-                            </div>
-
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Profil Profesional Mandiri" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
-                                        Profil Profesional Mandiri
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        Cerminan pencapaian kualitas yang diharapkan dari lulusan Teknik Sipil UNSIL.
-                                    </p>
-                                    <a href="{{ route('visi-misi') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
-                                    </a>
-                                </div>
-                            </div>
-
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
-                                        Prestasi Mahasiswa
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        Prestasi dan capaian membanggakan mahasiswa Teknik Sipil di tingkat nasional dan regional.
-                                    </p>
-                                    <a href="{{ route('prestasi-mahasiswa') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
-                            <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading">
-                                Kegiatan Mahasiswa
+                {{-- Kolom Kiri: Berita Terkini (8 Kolom) --}}
+                <div class="lg:col-span-8">
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-6">
+                        <div>
+                            <span class="text-[#0070BA] font-medium text-xs block">Warta Sivitas Akademika</span>
+                            <h2 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading mt-0.5">
+                                Berita Terkini
                             </h2>
-                            <div class="flex items-center space-x-2">
-                                <a href="https://instagram.com/hmsftunsil" target="_blank" class="inline-flex items-center text-xs font-semibold text-slate-600 hover:text-pink-600 gap-1 transition">
-                                    <i class="fa-brands fa-instagram text-sm"></i> @hmsftunsil
-                                </a>
-                                <span class="text-slate-300">|</span>
-                                <a href="https://instagram.com/sipilunsil" target="_blank" class="inline-flex items-center text-xs font-semibold text-slate-600 hover:text-pink-600 gap-1 transition">
-                                    <i class="fa-brands fa-instagram text-sm"></i> @sipilunsil
-                                </a>
-                            </div>
                         </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/event-1.jpg') }}" alt="Kompetisi Jembatan Nasional SCIENCE" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=600'">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
-                                        SCIENCE: Bridge Competition
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        Ajang tahunan bergengsi National Bridge Design Competition & Lomba Kuat Tekan Beton.
-                                    </p>
-                                    <a href="{{ route('mahasiswa-alumni') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
-                                    </a>
-                                </div>
-                            </div>
-
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Himpunan Mahasiswa Sipil FT UNSIL" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600'">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
-                                        Organisasi HMS FT UNSIL
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        Wadah pengembangan kepemimpinan, keprofesian, dan solidaritas mahasiswa Teknik Sipil UNSIL.
-                                    </p>
-                                    <a href="{{ route('mahasiswa-alumni') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
-                                    </a>
-                                </div>
-                            </div>
-
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white group">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan NCKU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                </div>
-                                <div class="p-4">
-                                    <span class="text-[11px] font-semibold text-slate-400">12 Oktober 2026</span>
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug mt-0.5">
-                                        Seminar Internasional Indonesia-Taiwan
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        "Bridging Futures" — Peluang studi S2 & S3 di Taiwan bersama Yanuar Haryanto, Ph.D. dari NCKU.
-                                    </p>
-                                    <a href="{{ route('berita.seminar-taiwan') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="{{ route('berita.index') }}" class="text-xs font-semibold text-[#0070BA] hover:text-[#0B2A4A] flex items-center gap-1.5 transition">
+                            <span>Lihat Semua Berita</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
                     </div>
 
-                    
-                    <div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
-                            <div>
-                                <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading">
-                                    Fasilitas Laboratorium
-                                </h2>
-                            </div>
-                            <a href="{{ route('fasilitas') }}" class="text-xs font-semibold text-[#0070BA] hover:underline self-start sm:self-auto">
-                                Lihat Laboratorium →
+                    {{-- Berita Utama (Featured News) --}}
+                    <article class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 hover:border-slate-300 transition mb-6 group">
+                        <div class="grid grid-cols-1 md:grid-cols-12">
+                            <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="md:col-span-6 block overflow-hidden bg-slate-200 aspect-[16/10] md:aspect-auto h-full min-h-[220px]">
+                                <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" 
+                                     alt="Kunjungan Ilmiah Mahasiswa Sipil ke Bendungan Leuwikeris" 
+                                     class="w-full h-full object-cover">
                             </a>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Bahan Konstruksi" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
-                                        Lab. Teknologi Bahan Konstruksi
+                            <div class="md:col-span-6 p-5 sm:p-6 flex flex-col justify-between">
+                                <div>
+                                    <span class="text-[11px] font-medium text-[#0070BA] block mb-1.5">
+                                        23 Oktober 2026 &bull; Liputan Kampus
+                                    </span>
+                                    <h3 class="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug transition mb-2">
+                                        <a href="{{ route('berita.kunjungan-leuwikeris') }}">
+                                            Kunjungan Ilmiah Mahasiswa Sipil ke Bendungan Leuwikeris
+                                        </a>
                                     </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        Uji mutu kuat tekan beton, tarik baja tulangan, agregat, dan material konstruksi.
+                                    <p class="text-xs sm:text-sm text-slate-600 line-clamp-3 leading-relaxed">
+                                        Rombongan mahasiswa dan dosen Teknik Sipil UNSIL meninjau langsung struktur bendungan, instrumen rembesan, serta sistem monitoring geoteknik di Bendungan Leuwikeris bersama tim UPB.
                                     </p>
-                                    <a href="{{ route('fasilitas') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
-                                    </a>
                                 </div>
-                            </div>
-
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Laboratorium Mekanika Tanah" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
-                                        Lab. Mekanika Tanah & Geoteknik
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        Penyelidikan tanah lapangan, analisis daya dukung fondasi, dan kestabilan lereng.
-                                    </p>
-                                    <a href="{{ route('fasilitas') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
-                                    </a>
-                                </div>
-                            </div>
-
-                            
-                            <div class="rounded-lg overflow-hidden border border-slate-200 bg-white">
-                                <div class="h-44 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Studio Komputasi dan BIM" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
-                                        Studio Komputasi & BIM
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
-                                        Pemodelan struktur SAP2000, ETABS, perancangan CAD, dan Building Information Modeling.
-                                    </p>
-                                    <a href="{{ route('fasilitas') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline mt-3">
-                                        Selengkapnya →
+                                <div class="pt-4 mt-3 border-t border-slate-200/70">
+                                    <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:text-[#0B2A4A] transition">
+                                        <span>Baca Selengkapnya</span>
+                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
+                    </article>
+
+                    {{-- 2 Berita Pendamping (Grid 2 Kolom) --}}
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        {{-- Sub Berita 1 --}}
+                        <article class="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-slate-300 transition flex flex-col justify-between group">
+                            <div>
+                                <a href="{{ route('berita.seminar-jalan-tol') }}" class="block overflow-hidden bg-slate-100 aspect-video">
+                                    <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" 
+                                         alt="Seminar Nasional Jalan Tol" 
+                                         class="w-full h-full object-cover">
+                                </a>
+                                <div class="p-4 sm:p-5">
+                                    <span class="text-[11px] font-medium text-slate-500 block mb-1">20 Oktober 2026</span>
+                                    <h4 class="text-sm sm:text-[15px] font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
+                                        <a href="{{ route('berita.seminar-jalan-tol') }}">Seminar Nasional SCIENCE 2026: Strategi Jalan Tol Berkelanjutan</a>
+                                    </h4>
+                                    <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+                                        Menghadirkan praktisi BUMN PT Adhi Karya guna mengupas tuntas inovasi struktur perkerasan jalan tol modern di Indonesia.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-4 sm:px-5 pb-4 pt-2 border-t border-slate-100">
+                                <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-semibold text-[#0070BA] hover:underline inline-flex items-center gap-1">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-chevron-right text-[9px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        {{-- Sub Berita 2 --}}
+                        <article class="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-slate-300 transition flex flex-col justify-between group">
+                            <div>
+                                <a href="{{ route('berita.seminar-taiwan') }}" class="block overflow-hidden bg-slate-100 aspect-video">
+                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" 
+                                         alt="Seminar Internasional Indonesia-Taiwan" 
+                                         class="w-full h-full object-cover">
+                                </a>
+                                <div class="p-4 sm:p-5">
+                                    <span class="text-[11px] font-medium text-slate-500 block mb-1">12 Oktober 2026</span>
+                                    <h4 class="text-sm sm:text-[15px] font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
+                                        <a href="{{ route('berita.seminar-taiwan') }}">Seminar Internasional "Bridging Futures" Bersama NCKU Taiwan</a>
+                                    </h4>
+                                    <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
+                                        Peluang kolaborasi riset rekayasa kegempaan dan beasiswa studi lanjut bagi alumni dan mahasiswa Teknik Sipil UNSIL.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-4 sm:px-5 pb-4 pt-2 border-t border-slate-100">
+                                <a href="{{ route('berita.seminar-taiwan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline inline-flex items-center gap-1">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-chevron-right text-[9px]"></i>
+                                </a>
+                            </div>
+                        </article>
                     </div>
-
                 </div>
 
-                
-                <div class="lg:col-span-4 space-y-8 lg:pl-2">
-                    
-                    
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <h2 class="text-2xl font-bold text-[#0B2A4A] font-heading">
-                                Agenda
+                {{-- Kolom Kanan: Agenda Akademik & Kegiatan (4 Kolom) --}}
+                <div class="lg:col-span-4">
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-6">
+                        <div>
+                            <span class="text-amber-600 font-medium text-xs block">Jadwal &amp; Kalender</span>
+                            <h2 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading mt-0.5">
+                                Agenda Sivitas
                             </h2>
                         </div>
-                        
-                        
-                        <div class="bg-white rounded-lg overflow-hidden border border-slate-200">
-                            <div class="overflow-hidden bg-slate-100">
-                                <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop OBE" class="w-full h-auto object-cover">
+                        <span class="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
+                            Mendatang
+                        </span>
+                    </div>
+
+                    <div class="space-y-4">
+                        {{-- Agenda 1 --}}
+                        <div class="bg-white rounded-xl p-4 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4">
+                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-[#0B2A4A]">
+                                <div class="bg-[#0B2A4A] text-amber-400 text-[10px] font-bold py-1 uppercase tracking-wider">
+                                    NOV
+                                </div>
+                                <div class="bg-white text-[#0B2A4A] text-xl font-bold py-1.5 font-heading">
+                                    27
+                                </div>
                             </div>
-                            <div class="p-4 space-y-3">
-                                <div>
-                                    <span class="text-[11px] font-semibold text-slate-400 block mb-1">27 November 2026</span>
-                                    <h4 class="text-sm font-bold text-slate-900 leading-snug">
-                                        Workshop Penguatan Kurikulum Teknik Sipil Berbasis OBE
-                                    </h4>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                                    <a href="{{ route('berita.workshop-obe') }}" class="hover:text-[#0070BA] transition">
+                                        Workshop Penguatan Kurikulum Berbasis OBE
+                                    </a>
+                                </h4>
+                                <div class="text-[11px] text-slate-500 space-y-0.5 mt-1.5">
+                                    <p class="flex items-center gap-1.5">
+                                        <i class="fa-regular fa-clock text-slate-400 text-[10px]"></i>
+                                        <span>08.00 WIB s.d. Selesai</span>
+                                    </p>
+                                    <p class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i>
+                                        <span>Kampus 2 Universitas Siliwangi</span>
+                                    </p>
                                 </div>
-                                <div class="text-xs text-slate-500 space-y-1 pt-1 border-t border-slate-100">
-                                    <p><strong>Narasumber:</strong> Dr. Eng. Ir. Halwan Alfisa S., ST., MT., IPU. (UNS)</p>
-                                    <p>Jum'at, 27 Nov 2026 · 08.00 WIB s.d. Selesai</p>
-                                    <p>Kampus 2 Universitas Siliwangi</p>
+                            </div>
+                        </div>
+
+                        {{-- Agenda 2 --}}
+                        <div class="bg-white rounded-xl p-4 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4">
+                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-300">
+                                <div class="bg-slate-700 text-white text-[10px] font-bold py-1 uppercase tracking-wider">
+                                    DES
                                 </div>
-                                <a href="{{ route('berita.workshop-obe') }}" class="inline-block text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Selengkapnya →
-                                </a>
+                                <div class="bg-white text-slate-800 text-xl font-bold py-1.5 font-heading">
+                                    15
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                                    Ujian Akhir Semester (UAS) Ganjil
+                                </h4>
+                                <div class="text-[11px] text-slate-500 space-y-0.5 mt-1.5">
+                                    <p class="flex items-center gap-1.5">
+                                        <i class="fa-regular fa-clock text-slate-400 text-[10px]"></i>
+                                        <span>15 &ndash; 24 Desember 2026</span>
+                                    </p>
+                                    <p class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i>
+                                        <span>Kampus 2 Mugarsari</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- Agenda 3 --}}
+                        <div class="bg-white rounded-xl p-4 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4">
+                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-300">
+                                <div class="bg-slate-700 text-white text-[10px] font-bold py-1 uppercase tracking-wider">
+                                    JAN
+                                </div>
+                                <div class="bg-white text-slate-800 text-xl font-bold py-1.5 font-heading">
+                                    08
+                                </div>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                                    <a href="{{ route('berita.kuliah-tamu-bim') }}" class="hover:text-[#0070BA] transition">
+                                        Kuliah Tamu Building Information Modelling (BIM)
+                                    </a>
+                                </h4>
+                                <div class="text-[11px] text-slate-500 space-y-0.5 mt-1.5">
+                                    <p class="flex items-center gap-1.5">
+                                        <i class="fa-regular fa-clock text-slate-400 text-[10px]"></i>
+                                        <span>09.00 WIB &bull; Gedung Labtek</span>
+                                    </p>
+                                    <p class="flex items-center gap-1.5">
+                                        <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i>
+                                        <span>Kampus 2 Mugarsari</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <h2 class="text-2xl font-bold text-[#0B2A4A] font-heading">
-                                Berita
-                            </h2>
-                            <a href="{{ route('berita.index') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                Semua →
-                            </a>
-                        </div>
-
-                        <div class="space-y-4">
-                            
-                            <article class="flex items-start gap-3 group">
-                                <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover">
-                                </a>
-                                <div class="flex-1 min-w-0">
-                                    <span class="text-[11px] text-slate-400 block mb-0.5">23 Oktober 2026</span>
-                                    <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                        <a href="{{ route('berita.kunjungan-leuwikeris') }}">Kunjungan Ilmiah Mahasiswa Sipil ke Bendungan Leuwikeris</a>
-                                    </h3>
-                                </div>
-                            </article>
-
-                            <article class="flex items-start gap-3 group">
-                                <a href="{{ route('berita.seminar-jalan-tol') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol" class="w-full h-full object-cover">
-                                </a>
-                                <div class="flex-1 min-w-0">
-                                    <span class="text-[11px] text-slate-400 block mb-0.5">20 Oktober 2026</span>
-                                    <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                        <a href="{{ route('berita.seminar-jalan-tol') }}">Seminar Nasional SCIENCE 2026: Strategi Jalan Tol Berkelanjutan</a>
-                                    </h3>
-                                </div>
-                            </article>
-
-                            <article class="flex items-start gap-3 group">
-                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Bridge Design Competition" class="w-full h-full object-cover">
-                                </a>
-                                <div class="flex-1 min-w-0">
-                                    <span class="text-[11px] text-slate-400 block mb-0.5">20 Oktober 2026</span>
-                                    <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                        <a href="{{ route('berita.kompetisi-jembatan') }}">Final National Bridge Design Competition SCIENCE 2026</a>
-                                    </h3>
-                                </div>
-                            </article>
-
-                            <article class="flex items-start gap-3 group">
-                                <a href="{{ route('berita.seminar-taiwan') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan" class="w-full h-full object-cover">
-                                </a>
-                                <div class="flex-1 min-w-0">
-                                    <span class="text-[11px] text-slate-400 block mb-0.5">12 Oktober 2026</span>
-                                    <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                        <a href="{{ route('berita.seminar-taiwan') }}">Seminar Internasional "Bridging Futures" Bersama NCKU Taiwan</a>
-                                    </h3>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="mt-5">
-                            <a href="{{ route('berita.index') }}" class="inline-flex items-center justify-center gap-1.5 w-full py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg transition">
-                                <span>Lihat Semua Berita</span>
-                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
+                    <div class="mt-5">
+                        <a href="{{ route('berita.index') }}" class="inline-flex items-center justify-center gap-2 w-full py-2.5 bg-slate-50 hover:bg-[#0B2A4A] hover:text-white text-slate-700 text-xs font-semibold rounded-lg border border-slate-200 hover:border-[#0B2A4A] transition duration-200">
+                            <span>Lihat Seluruh Agenda &amp; Warta</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
                     </div>
-
                 </div>
 
             </div>

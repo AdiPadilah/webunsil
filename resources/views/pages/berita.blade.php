@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Berita & Informasi Terkini | Program Studi S-1 Teknik Sipil FT Universitas Siliwangi')
 @section('meta_description', 'Portal berita, informasi kegiatan akademik, prestasi mahasiswa, seminar, dan agenda resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL).')
@@ -39,7 +39,7 @@
                     
                     <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
                         <div class="h-64 sm:h-72 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional SCIENCE 2026 Jalan Tol Berkelanjutan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional SCIENCE 2026 Jalan Tol Berkelanjutan" class="w-full h-full object-cover  ">
                         </div>
 
                         <div class="p-6">
@@ -48,11 +48,11 @@
                                 <a href="{{ route('berita.seminar-jalan-tol') }}">Seminar Nasional SCIENCE 2026 Himpunan Mahasiswa Sipil UNSIL Angkat Strategi Pembangunan Jalan Tol Berkelanjutan</a>
                             </h2>
                             <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                                Himpunan Mahasiswa Sipil (HMS) Fakultas Teknik Universitas Siliwangi menggelar Seminar Nasional bertajuk â€œManaging the Future for a Greater Indonesiaâ€ dengan menghadirkan praktisi BUMN PT Adhi Karya (Persero) Tbk. guna mengupas strategi konstruksi jalan tol berkelanjutan.
+                                Himpunan Mahasiswa Sipil (HMS) Fakultas Teknik Universitas Siliwangi menggelar Seminar Nasional bertajuk “Managing the Future for a Greater Indonesia” dengan menghadirkan praktisi BUMN PT Adhi Karya (Persero) Tbk. guna mengupas strategi konstruksi jalan tol berkelanjutan.
                             </p>
                             <div class="mt-4 pt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya â†’
+                                    Baca Selengkapnya →
                                 </a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Ilmiah Bendungan Leuwikeris" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Ilmiah Bendungan Leuwikeris" class="w-full h-full object-cover  ">
                                 </div>
                                 <div class="p-5">
                                     <span class="text-[11px] text-slate-400 block mb-1">
@@ -82,7 +82,7 @@
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya â†’</span>
+                                    <span>Selengkapnya →</span>
                                 </a>
                             </div>
                         </article>
@@ -91,7 +91,7 @@
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Babak Final National Bridge Design Competition SCIENCE 2026" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Babak Final National Bridge Design Competition SCIENCE 2026" class="w-full h-full object-cover  ">
                                 </div>
                                 <div class="p-5">
                                     <span class="text-[11px] text-slate-400 block mb-1">
@@ -108,7 +108,7 @@
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya â†’</span>
+                                    <span>Selengkapnya →</span>
                                 </a>
                             </div>
                         </article>
@@ -117,7 +117,7 @@
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan" class="w-full h-full object-cover  ">
                                 </div>
                                 <div class="p-5">
                                     <span class="text-[11px] text-slate-400 block mb-1">
@@ -134,7 +134,7 @@
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[11px] text-slate-400">Kerja Sama NCKU</span>
                                 <a href="{{ route('berita.seminar-taiwan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya â†’</span>
+                                    <span>Selengkapnya →</span>
                                 </a>
                             </div>
                         </article>
@@ -142,10 +142,10 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE" class="w-full h-full object-cover  ">
                                     <span class="absolute top-3 left-3 bg-[#0070BA] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
                                         Agenda Workshop
                                     </span>
@@ -172,10 +172,10 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/lab-civil.jpg') }}" alt="Kuliah Tamu BIM" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
+                                    <img src="{{ asset('images/lab-civil.jpg') }}" alt="Kuliah Tamu BIM" class="w-full h-full object-cover  " onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
                                     <span class="absolute top-3 left-3 bg-purple-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
                                         Kuliah Tamu
                                     </span>
@@ -202,10 +202,10 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Pelepasan Calon Wisudawan Teknik Sipil" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
+                                    <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Pelepasan Calon Wisudawan Teknik Sipil" class="w-full h-full object-cover  " onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
                                     <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
                                         Wisuda &amp; Alumni
                                     </span>
@@ -232,10 +232,10 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat Amanulloh Mahasiswa Teknik Sipil UNSIL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat Amanulloh Mahasiswa Teknik Sipil UNSIL" class="w-full h-full object-cover  ">
                                     <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
                                         Liputan unsil.ac.id
                                     </span>
@@ -248,7 +248,7 @@
                                         "Mahasiswa Ajaib" dari UNSIL: Fahmi Rahmat Amanulloh Tembus 3 Jurnal Scopus &amp; 2 Nasional di Semester 7
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        Mahasiswa semester 7 Teknik Sipil UNSIL ini mencetak rekor dengan 5 publikasi ilmiah sebelum lulus â€” termasuk Scopus Q1 di Journal of Natural Hazards Research.
+                                        Mahasiswa semester 7 Teknik Sipil UNSIL ini mencetak rekor dengan 5 publikasi ilmiah sebelum lulus — termasuk Scopus Q1 di Journal of Natural Hazards Research.
                                     </p>
                                 </div>
                             </div>
@@ -262,10 +262,10 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka El Ghifari Lulusan Teknik Sipil UNSIL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka El Ghifari Lulusan Teknik Sipil UNSIL" class="w-full h-full object-cover  ">
                                     <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
                                         Liputan unsil.ac.id
                                     </span>
@@ -292,10 +292,10 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 NPC 2023" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 NPC 2023" class="w-full h-full object-cover  ">
                                     <span class="absolute top-3 left-3 bg-pink-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
                                         Liputan unsil.ac.id
                                     </span>
@@ -322,10 +322,10 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="HATHI FGD Sedimentasi Segara Anakan Teknik Sipil UNSIL" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="HATHI FGD Sedimentasi Segara Anakan Teknik Sipil UNSIL" class="w-full h-full object-cover  ">
                                     <span class="absolute top-3 left-3 bg-cyan-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
                                         Liputan unsil.ac.id
                                     </span>
@@ -352,10 +352,10 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar Nasional HATHI Sumber Daya Air Berkelanjutan 2024" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar Nasional HATHI Sumber Daya Air Berkelanjutan 2024" class="w-full h-full object-cover  ">
                                     <span class="absolute top-3 left-3 bg-blue-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
                                         Liputan unsil.ac.id
                                     </span>
@@ -388,7 +388,7 @@
                 <aside class="lg:col-span-1 space-y-6">
 
                     
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
                         <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
                             <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
                                 <i class="fa-solid fa-calendar-days text-[#0070BA]"></i>
@@ -521,7 +521,7 @@
                     </div>
 
                     
-                    <div class="bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-2xl p-6 text-white shadow-md">
+                    <div class="bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-xl p-6 text-white shadow-md">
                         <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 block mb-1">Kanal Resmi</span>
                         <h3 class="text-base font-bold">Instagram @sipilunsil</h3>
                         <p class="text-xs text-slate-300 mt-2 leading-relaxed">
