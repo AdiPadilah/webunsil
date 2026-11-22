@@ -193,34 +193,5 @@
         </div>
     </section>
 
-    <!-- Section 4: Navigasi Tautan Terkait (CTA) -->
-    <section class="py-14 bg-[#0B2A4A] text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold font-heading text-white">
-                Kenali Lebih Dekat Program Studi Teknik Sipil UNSIL
-            </h3>
-            <p class="text-slate-300 text-xs sm:text-sm mt-2 max-w-2xl mx-auto">
-                Pelajari pedoman visi ke depan, susunan kurikulum, laboratorium terpadu, dan profil staf pengajar kami.
-            </p>
-            <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-7">
-                <a href="{{ route('visi-misi') }}" 
-                   class="px-5 py-3 rounded-lg bg-amber-400 hover:bg-amber-300 text-[#0B2A4A] font-bold text-xs transition">
-                    <i class="fa-solid fa-eye mr-1.5"></i> Visi &amp; Misi
-                </a>
-                <a href="{{ route('dosen') }}" 
-                   class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
-                    <i class="fa-solid fa-user-tie mr-1.5"></i> Profil Dosen
-                </a>
-                <a href="{{ route('fasilitas') }}" 
-                   class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
-                    <i class="fa-solid fa-building-columns mr-1.5"></i> Fasilitas Kampus 2
-                </a>
-                <a href="{{ route('kurikulum') }}" 
-                   class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
-                    <i class="fa-solid fa-book-bookmark mr-1.5"></i> Kurikulum
-                </a>
-            </div>
-        </div>
-    </section>
 @endsection
 
