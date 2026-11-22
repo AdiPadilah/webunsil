@@ -488,26 +488,28 @@
                     <div class="space-y-4">
                         {{-- Agenda 1 --}}
                         <div class="bg-white rounded-xl p-4 border border-slate-200 hover:border-slate-300 transition flex items-start gap-4">
-                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-200">
-                                <div class="bg-slate-700 text-slate-300 text-[10px] font-bold py-1 uppercase tracking-wider">
-                                    -
+                            <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-[#0B2A4A]">
+                                <div class="bg-[#0B2A4A] text-amber-400 text-[10px] font-bold py-1 uppercase tracking-wider">
+                                    NOV
                                 </div>
-                                <div class="bg-white text-slate-700 text-xl font-bold py-1.5 font-heading">
-                                    -
+                                <div class="bg-white text-[#0B2A4A] text-xl font-bold py-1.5 font-heading">
+                                    27
                                 </div>
                             </div>
                             <div class="flex-1 min-w-0">
                                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                                    -
+                                    <a href="{{ route('berita.workshop-obe') }}" class="hover:text-[#0070BA] transition">
+                                        Workshop Penguatan Kurikulum Berbasis OBE
+                                    </a>
                                 </h4>
                                 <div class="text-[11px] text-slate-500 space-y-0.5 mt-1.5">
                                     <p class="flex items-center gap-1.5">
                                         <i class="fa-regular fa-clock text-slate-400 text-[10px]"></i>
-                                        <span>-</span>
+                                        <span>08.00 WIB s.d. Selesai</span>
                                     </p>
                                     <p class="flex items-center gap-1.5">
                                         <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i>
-                                        <span>-</span>
+                                        <span>Kampus 2 Universitas Siliwangi</span>
                                     </p>
                                 </div>
                             </div>
