@@ -126,28 +126,6 @@
                 </div>
             </div>
 
-            
-            <div class="bg-[#0B2A4A] rounded-xl p-8 text-white shadow-sm">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <span class="block text-3xl font-bold text-amber-400">S-1</span>
-                        <span class="block text-xs text-slate-300 mt-1 uppercase tracking-wide">Jenjang Program</span>
-                    </div>
-                    <div>
-                        <span class="block text-3xl font-bold text-amber-400">144</span>
-                        <span class="block text-xs text-slate-300 mt-1 uppercase tracking-wide">Beban SKS Lulus</span>
-                    </div>
-                    <div>
-                        <span class="block text-3xl font-bold text-amber-400">8</span>
-                        <span class="block text-xs text-slate-300 mt-1 uppercase tracking-wide">Semester Tempuh</span>
-                    </div>
-                    <div>
-                        <span class="block text-3xl font-bold text-amber-400">BAIK</span>
-                        <span class="block text-xs text-slate-300 mt-1 uppercase tracking-wide">Akreditasi LAM Teknik</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 @endsection
