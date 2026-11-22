@@ -534,7 +534,7 @@
                             <i class="fa-solid fa-book-open text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Kurikulum OBE 144 SKS</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Kurikulum OBE</p>
                             <p class="text-[11px] text-slate-500">Sebaran 8 semester, 4 peminatan KBK, dan silabus mata kuliah</p>
                         </div>
                     </div>

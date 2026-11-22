@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
 @section('title', 'Kurikulum | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Struktur kurikulum 144 SKS dan bidang keahlian akademik Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')
+@section('meta_description', 'Struktur kurikulum dan bidang keahlian akademik Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')
 
 @section('content')
     
@@ -16,7 +16,7 @@
                 <span class="text-slate-200">Kurikulum</span>
             </nav>
             <span class="text-amber-400 text-xs font-medium mb-2">
-                Pendidikan Sarjana (S-1) &bull; 144 SKS
+                Pendidikan Sarjana (S-1)
             </span>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Kurikulum &amp; Pembelajaran
@@ -35,7 +35,7 @@
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Bidang Keahlian Akademik</h2>
                 <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
                 <p class="text-slate-600 mt-4 leading-relaxed text-sm">
-                    Kurikulum 144 SKS didistribusikan ke dalam lima bidang keahlian utama rekayasa sipil yang memadukan teori fundamental, praktikum laboratorium, dan studi perancangan nyata.
+                    Kurikulum didistribusikan ke dalam bidang keahlian utama rekayasa sipil yang memadukan teori fundamental, praktikum laboratorium, dan studi perancangan nyata.
                 </p>
             </div>
 

@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Sejarah | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Sejarah dan rekam jejak perjalanan Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi sejak berdiri tahun 1984 hingga penegerian PTN tahun 2014 dan era Kampus 2 Mugarsari.')
@@ -68,30 +68,8 @@
                     <div class="w-12 h-0.5 bg-[#0B2A4A] mt-3 mb-6"></div>
 
                     <div class="space-y-5 text-slate-700 text-sm sm:text-base leading-relaxed text-justify">
-                        <p>
-                            Kebutuhan mendesak akan tenaga ahli rekayasa infrastruktur di kawasan Priangan Timurâ€”yang mencakup Tasikmalaya, Ciamis, Garut, Banjar, dan Pangandaranâ€”menjadi latar belakang historis berdirinya pendidikan teknik di Universitas Siliwangi. Para pendiri universitas yang diprakarsai oleh pejuang dan tokoh Kodam Siliwangi memandang penting hadirnya institusi keteknikan yang sanggup menjawab tantangan pembangunan fisik daerah.
-                        </p>
-                        
-                        <div class="bg-blue-50/80 border-l-4 border-[#0B2A4A] p-4 sm:p-5 rounded-r-md">
-                            <p class="font-medium text-[#0B2A4A] text-sm sm:text-base italic">
-                                &ldquo;Fakultas Teknik resmi didirikan melalui Surat Keputusan Yayasan Pembina Universitas Siliwangi (YUS) Nomor: 05/Kep/I-1/YUS/1984 pada tanggal 31 Desember 1984. Program Studi Teknik Sipil menjadi program studi rekayasa pertama dan tertua yang melandasi berdirinya fakultas ini.&rdquo;
-                            </p>
-                        </div>
-
-                        <p>
-                            Pada dekade 1980-an hingga 1990-an, perkuliahan berpusat di Kampus 1 Jalan Siliwangi No. 24 Kahuripan, Kota Tasikmalaya. Dengan fasilitas perintisan, civitas akademika mendirikan Laboratorium Pengujian Bahan Konstruksi dan Mekanika Tanah pertama di wilayah Priangan Timur. Laboratorium ini tidak hanya menjadi kawah candradimuka praktikum mahasiswa, tetapi juga rujukan pengujian mutu beton, agregat, dan daya dukung tanah bagi proyek-proyek strategis dinas pekerjaan umum setempat.
-                        </p>
-
-                        <p>
-                            Perjalanan berlanjut dengan pencapaian akreditasi nasional dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) pada era 2000-an. Kurikulum secara berkesinambungan diselaraskan dengan standar Badan Kerja Sama Jurusan Teknik Sipil (BKS-TS) Indonesia dan kebutuhan industri jasa konstruksi nasional.
-                        </p>
-
-                        <p>
-                            Titik tolak paling monumental dalam sejarah institusi terjadi pada tanggal <strong>2 April 2014</strong>, ketika Presiden Republik Indonesia Dr. H. Susilo Bambang Yudhoyono menetapkan <strong>Peraturan Presiden (Perpres) Nomor 24 Tahun 2014</strong> tentang Pendirian Universitas Siliwangi sebagai <strong>Perguruan Tinggi Negeri (PTN)</strong>. Penegerian ini membuka babak baru akselerasi mutu: rekrutmen dosen-dosen bergelar Doktor (S-3) lulusan kampus top nasional dan mancanegara, perluasan riset terapan, serta pembiayaan sarana prasarana modern dari APBN.
-                        </p>
-
-                        <p>
-                            Kini, memasuki era industri konstruksi cerdas dan digital, Program Studi Teknik Sipil UNSIL telah memusatkan perkuliahan dan pusat laboratorium terpadu di <strong>Kampus 2 Mugarsari, Tamansari, Kota Tasikmalaya</strong>. Dengan perolehan akreditasi <strong>&ldquo;Baik Sekali&rdquo;</strong> dari Lembaga Akreditasi Mandiri Teknik (LAM Teknik), program studi terus bertransformasi mengimplementasikan kurikulum <em>Outcome-Based Education</em> (OBE) berstandar IABEE demi mewujudkan Visi 2030 sebagai pusat keunggulan keteknikan sipil yang berwawasan kebangsaan dan berkarakter wirausaha.
+                        <p class="text-slate-400 italic">
+                            Konten narasi sejarah akan diperbarui dengan data resmi dari Program Studi.
                         </p>
                     </div>
                 </div>
@@ -129,7 +107,7 @@
                             </div>
                         </div>
                         <p class="text-xs text-slate-600 leading-relaxed">
-                            Beralamat di Kelurahan Mugarsari, Kecamatan Tamansari, Kota Tasikmalaya, Jawa Barat 46196. Menampung Gedung Perkuliahan Fakultas Teknik dan Gedung Laboratorium Teknik (Labtek) terpadu seluas ribuan meter persegi.
+                            Kampus 2 Mugarsari, Tamansari, Kota Tasikmalaya, Jawa Barat.
                         </p>
                     </div>
 
@@ -155,134 +133,10 @@
             </div>
 
             <!-- Grid Garis Waktu: Kiri & Kanan Sejajar (2 Kolom) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-
-                <!-- Milestone 1: 1984 -->
-                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
-                    <div>
-                        <div class="flex items-center justify-between gap-3 mb-3">
-                            <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-1 rounded">
-                                31 Desember 1984
-                            </span>
-                            <span class="text-xs text-slate-500 font-medium">Fase Perintisan</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                            Pendirian Jurusan Teknik Sipil Pertama
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Berdiri resmi berdasarkan SK Yayasan Pembina Universitas Siliwangi No. 05/Kep/I-1/YUS/1984. Menjadi program studi rekayasa perdana di lingkungan Fakultas Teknik untuk mencetak insinyur sipil di Priangan Timur.
-                        </p>
-                    </div>
-                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-500">
-                        <i class="fa-solid fa-map-pin text-[#0070BA]"></i> Kampus 1 Jl. Siliwangi No. 24 Tasikmalaya
-                    </div>
-                </div>
-
-                <!-- Milestone 2: 1990-an -->
-                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
-                    <div>
-                        <div class="flex items-center justify-between gap-3 mb-3">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded">
-                                Dekade 1990-an
-                            </span>
-                            <span class="text-xs text-slate-500 font-medium">Standardisasi Lab</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                            Perintisan Laboratorium &amp; Kurikulum Konsorsium
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Menyesuaikan kurikulum dengan Konsorsium Keteknikan Nasional. Mengoperasikan Laboratorium Uji Bahan dan Mekanika Tanah pertama di kawasan Priangan Timur guna menunjang praktikum dan uji mutu konstruksi daerah.
-                        </p>
-                    </div>
-                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-blue-700 font-medium">
-                        <i class="fa-solid fa-check-circle"></i> Mitra Dinas PU &amp; Kontraktor Daerah
-                    </div>
-                </div>
-
-                <!-- Milestone 3: 2000-an -->
-                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
-                    <div>
-                        <div class="flex items-center justify-between gap-3 mb-3">
-                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">
-                                Dekade 2000-an
-                            </span>
-                            <span class="text-xs text-slate-500 font-medium">Pengakuan Nasional</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                            Akreditasi Nasional BAN-PT &amp; Prestasi Mahasiswa
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Meraih status akreditasi resmi dari BAN-PT. Mahasiswa mulai aktif menorehkan prestasi kompetisi rancang jembatan, karya ilmiah, serta pengabdian mitigasi kebencanaan di berbagai penjuru Jawa Barat.
-                        </p>
-                    </div>
-                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-emerald-700 font-medium">
-                        <i class="fa-solid fa-trophy"></i> Himpunan Mahasiswa Sipil (HMS) Berprestasi
-                    </div>
-                </div>
-
-                <!-- Milestone 4: 2014 -->
-                <div class="bg-[#0B2A4A] text-white border border-blue-900 rounded-xl p-6 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between gap-3 mb-3">
-                            <span class="bg-amber-400 text-[#0B2A4A] text-xs font-bold px-2.5 py-1 rounded">
-                                2 April 2014
-                            </span>
-                            <span class="text-xs text-amber-300 font-medium">Tonggak Bersejarah</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-white font-heading mb-2">
-                            Penegerian UNSIL Menjadi PTN
-                        </h3>
-                        <p class="text-slate-200 text-sm leading-relaxed">
-                            Melalui <strong>Peraturan Presiden RI Nomor 24 Tahun 2014</strong> yang diteken oleh Presiden RI Susilo Bambang Yudhoyono, Universitas Siliwangi resmi bertransformasi menjadi Perguruan Tinggi Negeri. Akselerasi fasilitas, riset dosen doktor, dan kuota seleksi nasional melonjak drastis.
-                        </p>
-                    </div>
-                    <div class="pt-3 mt-4 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300">
-                        <i class="fa-solid fa-stamp"></i> Perpres No. 24/2014 &bull; Di Bawah Kemendikbudristek
-                    </div>
-                </div>
-
-                <!-- Milestone 5: 2019 -->
-                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
-                    <div>
-                        <div class="flex items-center justify-between gap-3 mb-3">
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2.5 py-1 rounded">
-                                Tahun 2019
-                            </span>
-                            <span class="text-xs text-slate-500 font-medium">Fasilitas Baru</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                            Pemusatan Perkuliahan &amp; Labtek di Kampus 2 Mugarsari
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Fakultas Teknik membangun dan mengoperasikan kompleks gedung perkuliahan serta Gedung Laboratorium Teknik (Labtek) terpadu di Kampus 2 Mugarsari, Tamansari, Kota Tasikmalaya dengan peralatan uji modern berstandar SNI.
-                        </p>
-                    </div>
-                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-indigo-700 font-medium">
-                        <i class="fa-solid fa-compass-drafting"></i> 6 Laboratorium Terpadu Kampus 2 Mugarsari
-                    </div>
-                </div>
-
-                <!-- Milestone 6: 2023 - Kini -->
-                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
-                    <div>
-                        <div class="flex items-center justify-between gap-3 mb-3">
-                            <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-1 rounded">
-                                2023 &mdash; Kini
-                            </span>
-                            <span class="text-xs text-slate-500 font-medium">Mutu Akademik</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                            Akreditasi LAM Teknik &amp; Penerapan Kurikulum OBE
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Meraih akreditasi <strong>BAIK</strong> dari Lembaga Akreditasi Mandiri Program Studi Keteknikan (LAM Teknik). Menerapkan kurikulum <em>Outcome-Based Education</em> (OBE), program MBKM dengan BUMN Karya &amp; PUPR, serta penguatan riset civitas akademika menuju standar mutu berkelanjutan.
-                        </p>
-                    </div>
-                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-600 font-medium">
-                        <i class="fa-solid fa-certificate text-amber-500"></i> Akreditasi LAM Teknik &bull; Kurikulum OBE
-                    </div>
-                </div>
-
+            <div class="max-w-5xl mx-auto">
+                <p class="text-slate-400 italic text-sm text-center">
+                    Konten garis waktu akan diperbarui dengan data resmi dari Program Studi.
+                </p>
             </div>
 
         </div>
@@ -346,16 +200,16 @@
                 Kenali Lebih Dekat Program Studi Teknik Sipil UNSIL
             </h3>
             <p class="text-slate-300 text-xs sm:text-sm mt-2 max-w-2xl mx-auto">
-                Pelajari pedoman visi ke depan, susunan kurikulum 144 SKS, laboratorium terpadu, dan profil staf pengajar kami.
+                Pelajari pedoman visi ke depan, susunan kurikulum, laboratorium terpadu, dan profil staf pengajar kami.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-7">
                 <a href="{{ route('visi-misi') }}" 
                    class="px-5 py-3 rounded-lg bg-amber-400 hover:bg-amber-300 text-[#0B2A4A] font-bold text-xs transition">
-                    <i class="fa-solid fa-eye mr-1.5"></i> Visi &amp; Misi 2030
+                    <i class="fa-solid fa-eye mr-1.5"></i> Visi &amp; Misi
                 </a>
                 <a href="{{ route('dosen') }}" 
                    class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
-                    <i class="fa-solid fa-user-tie mr-1.5"></i> Profil 27 Dosen
+                    <i class="fa-solid fa-user-tie mr-1.5"></i> Profil Dosen
                 </a>
                 <a href="{{ route('fasilitas') }}" 
                    class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
@@ -363,7 +217,7 @@
                 </a>
                 <a href="{{ route('kurikulum') }}" 
                    class="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/20 transition">
-                    <i class="fa-solid fa-book-bookmark mr-1.5"></i> Kurikulum 5 KBK
+                    <i class="fa-solid fa-book-bookmark mr-1.5"></i> Kurikulum
                 </a>
             </div>
         </div>

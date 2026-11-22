@@ -77,7 +77,7 @@
                                 <h3 class="text-xl font-bold text-slate-900 mt-0.5">Ikatan Alumni Teknik Sipil</h3>
                             </div>
                             <span class="text-xs text-slate-500">
-                                3.500+ Alumni
+                                - Alumni
                             </span>
                         </div>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">

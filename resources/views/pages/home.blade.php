@@ -47,11 +47,11 @@
                     </h2>
 
                     <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed">
-                        Berdiri sejak 31 Desember 1984 di bawah naungan Yayasan Universitas Siliwangi dan resmi bertransformasi menjadi Perguruan Tinggi Negeri (PTN) melalui Perpres RI No. 24 Tahun 2014, Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi telah mencetak lebih dari 3.500 alumni yang berkiprah di sektor konstruksi nasional maupun internasional.
+                        Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi merupakan program studi rekayasa pertama di lingkungan Fakultas Teknik UNSIL. Kini telah bertransformasi menjadi Perguruan Tinggi Negeri (PTN) dan terus mencetak lulusan yang berkiprah di sektor konstruksi nasional maupun internasional.
                     </p>
 
                     <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed">
-                        Kini berpusat di Kampus 2 Mugarsari dengan fasilitas 6 laboratorium modern terakreditasi LAM Teknik, kami berkomitmen menyelenggarakan pendidikan tinggi keteknikan yang unggul berbasis <em>Outcome-Based Education</em> (OBE), adaptif terhadap perkembangan teknologi terapan, dan berjiwa wirausaha kebangsaan.
+                        Berpusat di Kampus 2 Mugarsari dengan fasilitas laboratorium modern terakreditasi LAM Teknik, kami berkomitmen menyelenggarakan pendidikan tinggi keteknikan yang unggul berbasis <em>Outcome-Based Education</em> (OBE), adaptif terhadap perkembangan teknologi terapan, dan berjiwa wirausaha kebangsaan.
                     </p>
 
                     <div class="pt-1">
@@ -71,27 +71,27 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-wrap justify-between gap-y-4 text-center">
                 <div class="w-1/3 sm:w-auto px-3 py-2">
-                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="6">6</span>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">-</span>
                     <span class="block text-[11px] text-slate-400 mt-0.5">Laboratorium</span>
                 </div>
                 <div class="w-1/3 sm:w-auto px-3 py-2">
-                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="27">27</span>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">-</span>
                     <span class="block text-[11px] text-slate-400 mt-0.5">Dosen Tetap</span>
                 </div>
                 <div class="w-1/3 sm:w-auto px-3 py-2">
-                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="5">5</span>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">-</span>
                     <span class="block text-[11px] text-slate-400 mt-0.5">Bidang Keahlian</span>
                 </div>
                 <div class="w-1/3 sm:w-auto px-3 py-2">
-                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="1200">1.200+</span>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">-</span>
                     <span class="block text-[11px] text-slate-400 mt-0.5">Mahasiswa Aktif</span>
                 </div>
                 <div class="w-1/3 sm:w-auto px-3 py-2">
-                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="3500">3.500+</span>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">-</span>
                     <span class="block text-[11px] text-slate-400 mt-0.5">Alumni</span>
                 </div>
                 <div class="w-1/3 sm:w-auto px-3 py-2">
-                    <span class="block text-2xl sm:text-3xl font-bold text-white counter-num" data-target="40">40</span>
+                    <span class="block text-2xl sm:text-3xl font-bold text-white">-</span>
                     <span class="block text-[11px] text-slate-400 mt-0.5">Tahun Berdiri</span>
                 </div>
             </div>
@@ -253,7 +253,7 @@
                                 </h2>
                             </div>
                             <a href="{{ route('fasilitas') }}" class="text-xs font-semibold text-[#0070BA] hover:underline self-start sm:self-auto">
-                                Lihat 6 Laboratorium →
+                                Lihat Laboratorium →
                             </a>
                         </div>
 

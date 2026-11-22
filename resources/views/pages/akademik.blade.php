@@ -23,7 +23,7 @@
                 Akademik
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
-                Penyelenggaraan pendidikan tinggi keteknikan dengan kurikulum Outcome-Based Education (OBE), 6 laboratorium terpadu, dan bimbingan akademik terstruktur.
+                Penyelenggaraan pendidikan tinggi keteknikan dengan kurikulum Outcome-Based Education (OBE), laboratorium terpadu, dan bimbingan akademik terstruktur.
             </p>
         </div>
     </section>
@@ -49,7 +49,7 @@
                                         Kurikulum &amp; Struktur Studi
                                     </h3>
                                     <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                                        Kurikulum 144 SKS berbasis Outcome-Based Education (OBE) yang mencakup 5 bidang keahlian rekayasa sipil.
+                                        Kurikulum berbasis Outcome-Based Education (OBE) yang mencakup bidang keahlian rekayasa sipil.
                                     </p>
                                 </div>
                                 <div class="pt-4">
@@ -172,7 +172,7 @@
                         Ketentuan Beban Studi &amp; Evaluasi
                     </h4>
                     <p class="text-xs text-slate-600 leading-relaxed">
-                        Mahasiswa diwajibkan menyelesaikan minimum 144 SKS dengan IPK kelulusan minimal 2.00 dan tanpa nilai mutu E. Evaluasi keberhasilan studi dilaksanakan secara berkala pada akhir semester ke-4 dan semester ke-8.
+                        Mahasiswa diwajibkan menyelesaikan beban SKS yang ditetapkan dengan IPK kelulusan sesuai ketentuan yang berlaku dan tanpa nilai mutu E. Evaluasi keberhasilan studi dilaksanakan secara berkala.
                     </p>
                 </div>
 

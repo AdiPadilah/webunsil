@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
 @section('title', 'Laboratorium Kejuruan | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Fasilitas 6 laboratorium kejuruan Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari.')
+@section('meta_description', 'Fasilitas laboratorium kejuruan Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari.')
 
 @section('content')
 
@@ -25,17 +25,17 @@
                 Laboratorium <span class="text-amber-400">Teknik Sipil</span>
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Fasilitas 6 laboratorium modern di Gedung Laboratorium Kampus 2 UNSIL Mugarsari guna mendukung kegiatan praktikum kurikulum 144 SKS, penelitian tugas akhir mahasiswa, serta pengujian material konstruksi berstandar SNI dan ASTM.
+                Fasilitas laboratorium modern di Gedung Laboratorium Kampus 2 UNSIL Mugarsari guna mendukung kegiatan praktikum, penelitian tugas akhir mahasiswa, serta pengujian material konstruksi berstandar SNI dan ASTM.
             </p>
         </div>
     </section>
 
-    {{-- Section: 6 Laboratorium Kejuruan --}}
+    {{-- Section: Laboratorium Kejuruan --}}
     <section class="py-12 md:py-16 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Prasarana Unggulan</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">6 Laboratorium Terpadu</h2>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Laboratorium Terpadu</h2>
                 <div class="w-14 h-1 bg-amber-500 mx-auto mt-3.5 rounded-full"></div>
                 <p class="text-slate-500 mt-3 text-xs sm:text-sm leading-relaxed">
                     Setiap laboratorium dibina oleh kepala laboratorium dan pranata laboratorium bersertifikat untuk memastikan presisi pengujian dan kelancaran praktikum.
