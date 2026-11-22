@@ -69,7 +69,7 @@
 
                     <div class="space-y-5 text-slate-700 text-sm sm:text-base leading-relaxed text-justify">
                         <p class="text-slate-400 italic">
-                            Konten narasi sejarah akan diperbarui dengan data resmi dari Program Studi.
+                            Nanti nyusul.
                         </p>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
             <!-- Grid Garis Waktu: Kiri & Kanan Sejajar (2 Kolom) -->
             <div class="max-w-5xl mx-auto">
                 <p class="text-slate-400 italic text-sm text-center">
-                    Konten garis waktu akan diperbarui dengan data resmi dari Program Studi.
+                    Nanti nyusul.
                 </p>
             </div>
 
