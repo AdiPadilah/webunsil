@@ -33,62 +33,58 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             
             
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200">
-                <div class="grid grid-cols-1 lg:grid-cols-12">
+            {{-- Sambutan Ketua Program Studi (Proporsional & Relevan) --}}
+            <div class="max-w-5xl mx-auto bg-white rounded-xl overflow-hidden border border-slate-200">
+                <div class="grid grid-cols-1 md:grid-cols-12">
                     
-                    {{-- Foto Pimpinan / Koordinator Program Studi --}}
-                    <div class="lg:col-span-4 md:col-span-5 bg-slate-100 flex flex-col justify-end relative">
-                        <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
-                             alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
-                             class="w-full h-full object-cover min-h-[320px] lg:min-h-[420px]"
-                             onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
-                        <div class="p-4 bg-slate-900/90 text-white border-t border-slate-800">
-                            <h4 class="text-sm font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
-                            <p class="text-xs text-amber-400 font-medium mt-0.5">Ketua Program Studi S-1 Teknik Sipil</p>
+                    {{-- Foto Pimpinan / Ketua Program Studi --}}
+                    <div class="md:col-span-4 bg-slate-900 flex flex-col justify-between">
+                        <div class="relative w-full aspect-[4/5] md:aspect-auto md:h-full overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
+                                 alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
+                                 class="w-full h-full object-cover object-top"
+                                 onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
+                        </div>
+                        <div class="p-3.5 sm:p-4 bg-[#0B2A4A] text-white border-t border-blue-900 flex-shrink-0 text-center md:text-left">
+                            <h4 class="text-xs sm:text-sm font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
+                            <p class="text-[11px] text-amber-400 font-medium mt-0.5">Ketua Program Studi S-1 Teknik Sipil</p>
                         </div>
                     </div>
 
-                    
-                    <div class="lg:col-span-8 md:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
+                    {{-- Isi Sambutan --}}
+                    <div class="md:col-span-8 p-5 sm:p-6 lg:p-7 flex flex-col justify-between">
                         <div>
-                            <div class="mb-4">
-                                <span class="text-xs font-semibold text-[#0070BA] uppercase tracking-wide">Pimpinan Program Studi</span>
-                            </div>
-                            <h2 class="text-2xl sm:text-3xl font-black text-[#0B2A4A] font-heading leading-tight mb-4">
+                            <span class="text-[11px] font-semibold text-[#0070BA] uppercase tracking-wider block mb-1">
+                                Pimpinan Program Studi
+                            </span>
+                            <h2 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading leading-tight mb-3">
                                 Sambutan Ketua Program Studi
                             </h2>
                             
-                            <div class="text-sm sm:text-[15px] text-slate-600 space-y-3.5 leading-relaxed">
+                            <div class="text-xs sm:text-[13px] text-slate-600 space-y-2.5 leading-relaxed text-justify">
                                 <p class="font-semibold text-slate-800">
-                                    Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
+                                    Selamat datang di Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.
                                 </p>
                                 <p>
-                                    Perkembangan teknologi, transformasi digital, dan tantangan lingkungan terus mengubah wajah dunia teknik sipil. Kondisi ini membuka peluang baru bagi pengembangan ilmu pengetahuan, inovasi rekayasa, dan solusi infrastruktur yang lebih cerdas, tangguh, serta berkelanjutan. Teknik Sipil Universitas Siliwangi hadir sebagai ruang akademik untuk mengeksplorasi potensi tersebut melalui pendidikan, penelitian, dan pengembangan teknologi.
+                                    Perkembangan teknologi, transformasi digital, dan tantangan keberlanjutan lingkungan terus mengubah lanskap dunia rekayasa infrastruktur. Teknik Sipil Universitas Siliwangi hadir sebagai ruang akademik untuk mengeksplorasi potensi tersebut melalui pendidikan berstandar mutu, riset terapan, dan penguatan fasilitas laboratorium di Kampus 2 Mugarsari.
                                 </p>
                                 <p>
-                                    Ke depan, pengembangan program studi diarahkan pada penguatan kualitas pendidikan, riset inovatif, pemanfaatan teknologi, serta kolaborasi dengan berbagai mitra di tingkat nasional dan internasional. Lingkungan akademik yang terbuka dan kolaboratif menjadi fondasi untuk mendorong lahirnya gagasan, karya, dan kontribusi yang relevan dengan perkembangan dunia rekayasa. Peningkatan mutu dan daya saing akademik menjadi bagian penting dalam perjalanan menuju program studi yang semakin progresif dan berwawasan global.
+                                    Kami berkomitmen memperkuat kualitas pembelajaran berbasis Outcome-Based Education (OBE), mendorong lahirnya inovasi keteknikan yang relevan, serta memperluas kolaborasi dengan industri jasa konstruksi dan para alumni. Mari bersama-sama membangun masa depan infrastruktur bangsa yang tangguh dan berwawasan kebangsaan.
                                 </p>
-                                <p>
-                                    Masa depan Teknik Sipil Universitas Siliwangi dibangun melalui semangat untuk terus belajar, berinovasi, berkolaborasi, dan memberikan dampak nyata. Setiap gagasan, penelitian, prestasi, dan kontribusi sivitas akademika merupakan bagian dari perjalanan tersebut. Mari menjadi bagian dari perjalanan Teknik Sipil UNSIL dalam membangun pengetahuan, menciptakan inovasi, dan menghadirkan masa depan infrastruktur yang lebih baik.
-                                </p>
-                                <div class="pt-2">
-                                    <p class="font-bold text-slate-900 text-sm">Andhy Romdani, S.T., M.Eng., Ph.D.</p>
-                                    <p class="text-xs text-slate-500">Ketua Program Studi Teknik Sipil</p>
-                                    <p class="text-xs text-slate-400">Fakultas Teknik Universitas Siliwangi</p>
-                                </div>
                             </div>
                         </div>
 
-                        <div class="mt-6 pt-5 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4">
-                            <span class="text-xs text-slate-500 font-medium">
-                                Fakultas Teknik Universitas Siliwangi
-                            </span>
+                        <div class="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between gap-4">
+                            <div class="text-[11px] text-slate-500">
+                                <span class="font-semibold text-slate-700">Fakultas Teknik UNSIL</span>
+                            </div>
                             <a href="{{ route('visi-misi') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline">
                                 <span>Lihat Visi &amp; Misi Prodi</span>
                                 <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
 
