@@ -213,62 +213,55 @@
                 </p>
             </div>
 
-            <!-- Timeline Container: Lebar Proporsional, Dua Sisi di Desktop -->
-            <div class="relative max-w-5xl mx-auto">
+            <!-- Timeline Container: Vertikal Sejajar -->
+            <div class="relative max-w-3xl mx-auto">
                 
-                <!-- Garis Tengah (Hanya di Layar Desktop/Tablet) -->
-                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-4 bottom-4 w-1 bg-gradient-to-b from-amber-400 via-blue-400 to-[#0B2A4A] rounded-full"></div>
+                <!-- Garis Vertikal Tunggal -->
+                <div class="absolute left-5 sm:left-6 top-3 bottom-6 w-0.5 bg-slate-200"></div>
 
                 <!-- Milestone 1: 1984 -->
-                <div class="relative flex flex-col md:flex-row md:items-center mb-12 sm:mb-16">
-                    <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
-                        <div class="bg-gradient-to-br from-[#0B2A4A] to-[#123861] text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-blue-900 inline-block w-full hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex items-center gap-2 mb-2 md:justify-end">
-                                <span class="bg-amber-400 text-[#0B2A4A] text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">
+                <div class="relative flex items-start mb-8 sm:mb-10">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-400 border-4 border-white shadow-md flex items-center justify-center text-[#0B2A4A] text-sm sm:text-base">
+                        <i class="fa-solid fa-flag"></i>
+                    </div>
+                    <div class="ml-4 sm:ml-6 flex-1">
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded">
                                     31 Desember 1984
                                 </span>
-                                <span class="text-xs text-slate-300 font-semibold">Fase Perintisan</span>
+                                <span class="text-xs text-slate-500 font-medium">Fase Perintisan</span>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-white mb-2 font-heading">
+                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
                                 Pendirian Jurusan Teknik Sipil Pertama
                             </h3>
-                            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
                                 Berdiri resmi berdasarkan SK Yayasan Pembina Universitas Siliwangi No. 05/Kep/I-1/YUS/1984. Menjadi program studi rekayasa perdana di lingkungan Fakultas Teknik untuk mencetak insinyur sipil di Priangan Timur.
                             </p>
-                            <div class="pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-amber-300 md:justify-end">
-                                <i class="fa-solid fa-map-pin"></i> Kampus 1 Jl. Siliwangi No. 24 Tasikmalaya
+                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-slate-500">
+                                <i class="fa-solid fa-map-pin text-[#0070BA]"></i> Kampus 1 Jl. Siliwangi No. 24 Tasikmalaya
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Lingkaran Marker Tengah -->
-                    <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-amber-400 border-4 border-white shadow-lg items-center justify-center z-10 text-[#0B2A4A] font-bold text-base order-1 md:order-2">
-                        <i class="fa-solid fa-flag"></i>
-                    </div>
-                    <div class="md:w-1/2 md:pl-12 order-1 md:order-3"></div>
                 </div>
 
                 <!-- Milestone 2: 1990-an -->
-                <div class="relative flex flex-col md:flex-row md:items-center mb-12 sm:mb-16">
-                    <div class="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
-                    
-                    <!-- Lingkaran Marker Tengah -->
-                    <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-blue-600 border-4 border-white shadow-lg items-center justify-center z-10 text-white font-bold text-base">
+                <div class="relative flex items-start mb-8 sm:mb-10">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0070BA] border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base">
                         <i class="fa-solid fa-flask"></i>
                     </div>
-
-                    <div class="md:w-1/2 md:pl-12 order-1 md:order-2">
-                        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="bg-blue-100 text-blue-800 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">
+                    <div class="ml-4 sm:ml-6 flex-1">
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-0.5 rounded">
                                     Dekade 1990-an
                                 </span>
-                                <span class="text-xs text-slate-500 font-semibold">Standardisasi Lab</span>
+                                <span class="text-xs text-slate-500 font-medium">Standardisasi Lab</span>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] mb-2 font-heading">
+                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
                                 Perintisan Laboratorium &amp; Kurikulum Konsorsium
                             </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
                                 Menyesuaikan kurikulum dengan Konsorsium Keteknikan Nasional. Mengoperasikan Laboratorium Uji Bahan dan Mekanika Tanah pertama di kawasan Priangan Timur guna menunjang praktikum dan uji mutu konstruksi daerah.
                             </p>
                             <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-blue-700 font-medium">
@@ -279,58 +272,51 @@
                 </div>
 
                 <!-- Milestone 3: 2000-an -->
-                <div class="relative flex flex-col md:flex-row md:items-center mb-12 sm:mb-16">
-                    <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
-                        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 inline-block w-full">
-                            <div class="flex items-center gap-2 mb-2 md:justify-end">
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">
+                <div class="relative flex items-start mb-8 sm:mb-10">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-600 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="ml-4 sm:ml-6 flex-1">
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded">
                                     Dekade 2000-an
                                 </span>
-                                <span class="text-xs text-slate-500 font-semibold">Pengakuan Nasional</span>
+                                <span class="text-xs text-slate-500 font-medium">Pengakuan Nasional</span>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] mb-2 font-heading">
+                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
                                 Akreditasi Nasional BAN-PT &amp; Prestasi Mahasiswa
                             </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
                                 Meraih status akreditasi resmi dari BAN-PT. Mahasiswa mulai aktif menorehkan prestasi kompetisi rancang jembatan, karya ilmiah, serta pengabdian mitigasi kebencanaan di berbagai penjuru Jawa Barat.
                             </p>
-                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-emerald-700 font-medium md:justify-end">
+                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-emerald-700 font-medium">
                                 <i class="fa-solid fa-trophy"></i> Himpunan Mahasiswa Sipil (HMS) Berprestasi
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Lingkaran Marker Tengah -->
-                    <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-emerald-500 border-4 border-white shadow-lg items-center justify-center z-10 text-white font-bold text-base">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <div class="md:w-1/2 md:pl-12 order-1 md:order-3"></div>
                 </div>
 
                 <!-- Milestone 4: 2014 (Tonggak Penegerian) -->
-                <div class="relative flex flex-col md:flex-row md:items-center mb-12 sm:mb-16">
-                    <div class="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
-                    
-                    <!-- Lingkaran Marker Tengah -->
-                    <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-amber-400 border-4 border-white shadow-2xl items-center justify-center z-10 text-[#0B2A4A] font-extrabold text-xl animate-pulse">
+                <div class="relative flex items-start mb-8 sm:mb-10">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-500 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base">
                         <i class="fa-solid fa-star"></i>
                     </div>
-
-                    <div class="md:w-1/2 md:pl-12 order-1 md:order-2">
-                        <div class="bg-gradient-to-br from-[#0B2A4A] via-[#0d345c] to-[#124275] text-white rounded-3xl p-6 sm:p-8 shadow-2xl border-2 border-amber-400/50 hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="bg-amber-400 text-[#0B2A4A] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow">
+                    <div class="ml-4 sm:ml-6 flex-1">
+                        <div class="bg-[#0B2A4A] text-white rounded-xl p-5 sm:p-6 shadow-sm border border-blue-900">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="bg-amber-400 text-[#0B2A4A] text-xs font-bold px-2.5 py-0.5 rounded">
                                     2 April 2014
                                 </span>
-                                <span class="text-xs text-amber-300 font-bold">Tonggak Bersejarah</span>
+                                <span class="text-xs text-amber-300 font-medium">Tonggak Bersejarah</span>
                             </div>
-                            <h3 class="text-xl sm:text-2xl font-black text-white mb-2 font-heading">
+                            <h3 class="text-base sm:text-lg font-bold text-white font-heading mb-2">
                                 Penegerian UNSIL Menjadi PTN
                             </h3>
-                            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-4">
+                            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-3">
                                 Melalui <strong>Peraturan Presiden RI Nomor 24 Tahun 2014</strong> yang diteken oleh Presiden RI Susilo Bambang Yudhoyono, Universitas Siliwangi resmi bertransformasi menjadi Perguruan Tinggi Negeri. Akselerasi fasilitas, riset dosen doktor, dan kuota seleksi nasional melonjak drastis.
                             </p>
-                            <div class="pt-3 border-t border-white/15 flex items-center gap-2 text-xs text-amber-300 font-semibold">
+                            <div class="pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-amber-300">
                                 <i class="fa-solid fa-stamp"></i> Perpres No. 24/2014 &bull; Di Bawah Kemendikbudristek
                             </div>
                         </div>
@@ -338,59 +324,52 @@
                 </div>
 
                 <!-- Milestone 5: 2019 -->
-                <div class="relative flex flex-col md:flex-row md:items-center mb-12 sm:mb-16">
-                    <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
-                        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 inline-block w-full">
-                            <div class="flex items-center gap-2 mb-2 md:justify-end">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">
+                <div class="relative flex items-start mb-8 sm:mb-10">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-indigo-600 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div class="ml-4 sm:ml-6 flex-1">
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2.5 py-0.5 rounded">
                                     Tahun 2019
                                 </span>
-                                <span class="text-xs text-slate-500 font-semibold">Fasilitas Baru</span>
+                                <span class="text-xs text-slate-500 font-medium">Fasilitas Baru</span>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] mb-2 font-heading">
+                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
                                 Pemusatan Perkuliahan &amp; Labtek di Kampus 2 Mugarsari
                             </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
                                 Fakultas Teknik membangun dan mengoperasikan kompleks gedung perkuliahan serta Gedung Laboratorium Teknik (Labtek) terpadu di Kampus 2 Mugarsari, Tamansari, Kota Tasikmalaya dengan peralatan uji modern berstandar SNI.
                             </p>
-                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-indigo-700 font-medium md:justify-end">
-                                <i class="fa-solid fa-compass-drafting"></i> 6 Laboratorium Terpadu Kampus 2
+                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-indigo-700 font-medium">
+                                <i class="fa-solid fa-compass-drafting"></i> 6 Laboratorium Terpadu Kampus 2 Mugarsari
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Lingkaran Marker Tengah -->
-                    <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-indigo-600 border-4 border-white shadow-lg items-center justify-center z-10 text-white font-bold text-base">
-                        <i class="fa-solid fa-building"></i>
-                    </div>
-                    <div class="md:w-1/2 md:pl-12 order-1 md:order-3"></div>
                 </div>
 
                 <!-- Milestone 6: 2023 - Kini -->
-                <div class="relative flex flex-col md:flex-row md:items-center">
-                    <div class="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
-                    
-                    <!-- Lingkaran Marker Tengah -->
-                    <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-[#0B2A4A] border-4 border-amber-400 shadow-xl items-center justify-center z-10 text-amber-400 font-bold text-base">
+                <div class="relative flex items-start">
+                    <div class="relative z-10 flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0B2A4A] border-4 border-white shadow-md flex items-center justify-center text-amber-400 text-sm sm:text-base">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
-
-                    <div class="md:w-1/2 md:pl-12 order-1 md:order-2">
-                        <div class="bg-gradient-to-br from-white to-amber-50/50 border border-amber-300 rounded-3xl p-6 sm:p-8 shadow-xl hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="bg-[#0B2A4A] text-amber-400 text-xs font-black px-3.5 py-1 rounded-full uppercase tracking-wider">
+                    <div class="ml-4 sm:ml-6 flex-1">
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded">
                                     2023 &mdash; Kini
                                 </span>
-                                <span class="text-xs text-amber-700 font-bold">Visi 2030</span>
+                                <span class="text-xs text-slate-500 font-medium">Mutu Akademik</span>
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] mb-2 font-heading">
+                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
                                 Akreditasi LAM Teknik &amp; Penerapan Kurikulum OBE
                             </h3>
-                            <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-4">
-                                Meraih akreditasi <strong>&ldquo;Baik Sekali&rdquo;</strong> dari Lembaga Akreditasi Mandiri Teknik (LAM Teknik). Menerapkan kurikulum <em>Outcome-Based Education</em> (OBE), MBKM dengan BUMN Karya &amp; PUPR, serta riset internasional (NCKU Taiwan, dsb.) menuju akreditasi IABEE.
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
+                                Meraih akreditasi <strong>BAIK</strong> dari Lembaga Akreditasi Mandiri Program Studi Keteknikan (LAM Teknik). Menerapkan kurikulum <em>Outcome-Based Education</em> (OBE), program MBKM dengan BUMN Karya &amp; PUPR, serta penguatan riset civitas akademika menuju standar mutu berkelanjutan.
                             </p>
-                            <div class="pt-3 border-t border-amber-200/80 flex items-center gap-2 text-xs text-amber-800 font-semibold">
-                                <i class="fa-solid fa-certificate text-amber-600"></i> Akreditasi LAM Teknik &bull; Visi Pusat Unggulan 2030
+                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-slate-600 font-medium">
+                                <i class="fa-solid fa-certificate text-amber-500"></i> Akreditasi LAM Teknik &bull; Kurikulum OBE
                             </div>
                         </div>
                     </div>
