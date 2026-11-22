@@ -117,54 +117,6 @@
                         </div>
                     </div>
 
-                    <!-- Card Landasan Hukum & Milestone Resmi -->
-                    <div class="bg-[#0B2A4A] text-white rounded-lg p-6 sm:p-7 border border-blue-900">
-                        
-                        <div class="flex items-center gap-3 mb-5">
-                            <div class="w-9 h-9 rounded-md bg-amber-400/20 text-amber-400 flex items-center justify-center text-base">
-                                <i class="fa-solid fa-scroll"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-base text-white">Landasan Hukum Institusi</h4>
-                                <span class="text-xs text-slate-400">Legalitas &amp; Status Resmi</span>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3.5 text-xs">
-                            <div class="flex items-start gap-3 p-3 rounded-md bg-white/[0.06] border border-white/10">
-                                <i class="fa-solid fa-file-signature text-amber-400 mt-1"></i>
-                                <div>
-                                    <div class="font-bold text-white">SK Pendirian Fakultas &amp; Prodi</div>
-                                    <div class="text-slate-300 mt-0.5">No. 05/Kep/I-1/YUS/1984 &bull; 31 Desember 1984</div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3 p-3 rounded-md bg-white/[0.06] border border-white/10">
-                                <i class="fa-solid fa-landmark-flag text-amber-400 mt-1"></i>
-                                <div>
-                                    <div class="font-bold text-white">Izin Operasional Dirjen Dikti</div>
-                                    <div class="text-slate-300 mt-0.5">SK Dirjen Dikti Depdikbud No. 0389/0/1986</div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3 p-3 rounded-md bg-white/[0.06] border border-white/10">
-                                <i class="fa-solid fa-building-columns text-amber-400 mt-1"></i>
-                                <div>
-                                    <div class="font-bold text-white">Penegerian Menjadi PTN</div>
-                                    <div class="text-slate-300 mt-0.5">Peraturan Presiden RI No. 24 Tahun 2014 &bull; 2 April 2014</div>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-3 p-3 rounded-md bg-white/[0.06] border border-white/10">
-                                <i class="fa-solid fa-certificate text-amber-400 mt-1"></i>
-                                <div>
-                                    <div class="font-bold text-white">Akreditasi Program Studi</div>
-                                    <div class="text-amber-300 font-medium mt-0.5">Peringkat &ldquo;Baik Sekali&rdquo; &bull; LAM Teknik</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Card Lokasi Kampus 2 -->
                     <div class="bg-white rounded-lg p-6 border border-slate-200">
                         <div class="flex items-center gap-3 mb-3">
