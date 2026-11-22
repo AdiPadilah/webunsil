@@ -33,16 +33,6 @@
     <section class="py-12 sm:py-16 lg:py-20 bg-white min-h-screen">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            {{-- Title & Subtitle Persis Gambar Pertama (UNPAD) --}}
-            <div class="mb-8 sm:mb-10 max-w-3xl">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-slate-900">
-                    Studi di <span class="text-[#EAA315]">Teknik Sipil</span>
-                </h2>
-                <p class="text-slate-500 text-sm sm:text-base mt-3 leading-relaxed">
-                    -
-                </p>
-            </div>
-
             {{-- Layout Bento Grid Persis Gambar Pertama (1 Kartu Tinggi Kiri, 2 Kartu Ditumpuk Kanan) --}}
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch">
 
