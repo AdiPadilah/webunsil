@@ -213,201 +213,132 @@
                 </p>
             </div>
 
-            <!-- Timeline Container: Dua Sisi (Kiri & Kanan di Desktop) -->
-            <div class="relative max-w-5xl mx-auto">
-                
-                <!-- Garis Tengah Vertikal -->
-                <div class="absolute left-6 md:left-1/2 top-4 bottom-6 w-0.5 -translate-x-1/2 bg-slate-200"></div>
+            <!-- Grid Garis Waktu: Kiri & Kanan Sejajar (2 Kolom) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
 
-                <!-- Milestone 1: 1984 (Kiri) -->
-                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
-                    <!-- Sisi Kiri (Konten di Desktop) -->
-                    <div class="w-full md:w-1/2 pl-14 md:pl-0 md:pr-12 order-2 md:order-1">
-                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded">
-                                    31 Desember 1984
-                                </span>
-                                <span class="text-xs text-slate-500 font-medium">Fase Perintisan</span>
-                            </div>
-                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                                Pendirian Jurusan Teknik Sipil Pertama
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
-                                Berdiri resmi berdasarkan SK Yayasan Pembina Universitas Siliwangi No. 05/Kep/I-1/YUS/1984. Menjadi program studi rekayasa perdana di lingkungan Fakultas Teknik untuk mencetak insinyur sipil di Priangan Timur.
-                            </p>
-                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-slate-500">
-                                <i class="fa-solid fa-map-pin text-[#0070BA]"></i> Kampus 1 Jl. Siliwangi No. 24 Tasikmalaya
-                            </div>
+                <!-- Milestone 1: 1984 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-3">
+                            <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-1 rounded">
+                                31 Desember 1984
+                            </span>
+                            <span class="text-xs text-slate-500 font-medium">Fase Perintisan</span>
                         </div>
+                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
+                            Pendirian Jurusan Teknik Sipil Pertama
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Berdiri resmi berdasarkan SK Yayasan Pembina Universitas Siliwangi No. 05/Kep/I-1/YUS/1984. Menjadi program studi rekayasa perdana di lingkungan Fakultas Teknik untuk mencetak insinyur sipil di Priangan Timur.
+                        </p>
                     </div>
-
-                    <!-- Marker Tengah -->
-                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-400 border-4 border-white shadow-md flex items-center justify-center text-[#0B2A4A] text-sm sm:text-base order-1 md:order-2">
-                        <i class="fa-solid fa-flag"></i>
-                    </div>
-
-                    <!-- Sisi Kanan (Kosong di Desktop) -->
-                    <div class="hidden md:block md:w-1/2 md:pl-12 order-3"></div>
-                </div>
-
-                <!-- Milestone 2: 1990-an (Kanan) -->
-                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
-                    <!-- Sisi Kiri (Kosong di Desktop) -->
-                    <div class="hidden md:block md:w-1/2 md:pr-12 order-1"></div>
-
-                    <!-- Marker Tengah -->
-                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0070BA] border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base order-1 md:order-2">
-                        <i class="fa-solid fa-flask"></i>
-                    </div>
-
-                    <!-- Sisi Kanan (Konten di Desktop) -->
-                    <div class="w-full md:w-1/2 pl-14 md:pl-12 order-2 md:order-3">
-                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-0.5 rounded">
-                                    Dekade 1990-an
-                                </span>
-                                <span class="text-xs text-slate-500 font-medium">Standardisasi Lab</span>
-                            </div>
-                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                                Perintisan Laboratorium &amp; Kurikulum Konsorsium
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
-                                Menyesuaikan kurikulum dengan Konsorsium Keteknikan Nasional. Mengoperasikan Laboratorium Uji Bahan dan Mekanika Tanah pertama di kawasan Priangan Timur guna menunjang praktikum dan uji mutu konstruksi daerah.
-                            </p>
-                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-blue-700 font-medium">
-                                <i class="fa-solid fa-check-circle"></i> Mitra Dinas PU &amp; Kontraktor Daerah
-                            </div>
-                        </div>
+                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-500">
+                        <i class="fa-solid fa-map-pin text-[#0070BA]"></i> Kampus 1 Jl. Siliwangi No. 24 Tasikmalaya
                     </div>
                 </div>
 
-                <!-- Milestone 3: 2000-an (Kiri) -->
-                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
-                    <!-- Sisi Kiri (Konten di Desktop) -->
-                    <div class="w-full md:w-1/2 pl-14 md:pl-0 md:pr-12 order-2 md:order-1">
-                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded">
-                                    Dekade 2000-an
-                                </span>
-                                <span class="text-xs text-slate-500 font-medium">Pengakuan Nasional</span>
-                            </div>
-                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                                Akreditasi Nasional BAN-PT &amp; Prestasi Mahasiswa
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
-                                Meraih status akreditasi resmi dari BAN-PT. Mahasiswa mulai aktif menorehkan prestasi kompetisi rancang jembatan, karya ilmiah, serta pengabdian mitigasi kebencanaan di berbagai penjuru Jawa Barat.
-                            </p>
-                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-emerald-700 font-medium">
-                                <i class="fa-solid fa-trophy"></i> Himpunan Mahasiswa Sipil (HMS) Berprestasi
-                            </div>
+                <!-- Milestone 2: 1990-an -->
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded">
+                                Dekade 1990-an
+                            </span>
+                            <span class="text-xs text-slate-500 font-medium">Standardisasi Lab</span>
                         </div>
+                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
+                            Perintisan Laboratorium &amp; Kurikulum Konsorsium
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Menyesuaikan kurikulum dengan Konsorsium Keteknikan Nasional. Mengoperasikan Laboratorium Uji Bahan dan Mekanika Tanah pertama di kawasan Priangan Timur guna menunjang praktikum dan uji mutu konstruksi daerah.
+                        </p>
                     </div>
-
-                    <!-- Marker Tengah -->
-                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-600 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base order-1 md:order-2">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-
-                    <!-- Sisi Kanan (Kosong di Desktop) -->
-                    <div class="hidden md:block md:w-1/2 md:pl-12 order-3"></div>
-                </div>
-
-                <!-- Milestone 4: 2014 (Kanan - Tonggak Penegerian) -->
-                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
-                    <!-- Sisi Kiri (Kosong di Desktop) -->
-                    <div class="hidden md:block md:w-1/2 md:pr-12 order-1"></div>
-
-                    <!-- Marker Tengah -->
-                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-amber-500 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base order-1 md:order-2">
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <!-- Sisi Kanan (Konten di Desktop) -->
-                    <div class="w-full md:w-1/2 pl-14 md:pl-12 order-2 md:order-3">
-                        <div class="bg-[#0B2A4A] text-white rounded-xl p-5 sm:p-6 shadow-sm border border-blue-900">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="bg-amber-400 text-[#0B2A4A] text-xs font-bold px-2.5 py-0.5 rounded">
-                                    2 April 2014
-                                </span>
-                                <span class="text-xs text-amber-300 font-medium">Tonggak Bersejarah</span>
-                            </div>
-                            <h3 class="text-base sm:text-lg font-bold text-white font-heading mb-2">
-                                Penegerian UNSIL Menjadi PTN
-                            </h3>
-                            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-3">
-                                Melalui <strong>Peraturan Presiden RI Nomor 24 Tahun 2014</strong> yang diteken oleh Presiden RI Susilo Bambang Yudhoyono, Universitas Siliwangi resmi bertransformasi menjadi Perguruan Tinggi Negeri. Akselerasi fasilitas, riset dosen doktor, dan kuota seleksi nasional melonjak drastis.
-                            </p>
-                            <div class="pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-amber-300">
-                                <i class="fa-solid fa-stamp"></i> Perpres No. 24/2014 &bull; Di Bawah Kemendikbudristek
-                            </div>
-                        </div>
+                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-blue-700 font-medium">
+                        <i class="fa-solid fa-check-circle"></i> Mitra Dinas PU &amp; Kontraktor Daerah
                     </div>
                 </div>
 
-                <!-- Milestone 5: 2019 (Kiri) -->
-                <div class="relative flex flex-col md:flex-row items-start md:items-center mb-10 sm:mb-14">
-                    <!-- Sisi Kiri (Konten di Desktop) -->
-                    <div class="w-full md:w-1/2 pl-14 md:pl-0 md:pr-12 order-2 md:order-1">
-                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2.5 py-0.5 rounded">
-                                    Tahun 2019
-                                </span>
-                                <span class="text-xs text-slate-500 font-medium">Fasilitas Baru</span>
-                            </div>
-                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                                Pemusatan Perkuliahan &amp; Labtek di Kampus 2 Mugarsari
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
-                                Fakultas Teknik membangun dan mengoperasikan kompleks gedung perkuliahan serta Gedung Laboratorium Teknik (Labtek) terpadu di Kampus 2 Mugarsari, Tamansari, Kota Tasikmalaya dengan peralatan uji modern berstandar SNI.
-                            </p>
-                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-indigo-700 font-medium">
-                                <i class="fa-solid fa-compass-drafting"></i> 6 Laboratorium Terpadu Kampus 2 Mugarsari
-                            </div>
+                <!-- Milestone 3: 2000-an -->
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-3">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">
+                                Dekade 2000-an
+                            </span>
+                            <span class="text-xs text-slate-500 font-medium">Pengakuan Nasional</span>
                         </div>
+                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
+                            Akreditasi Nasional BAN-PT &amp; Prestasi Mahasiswa
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Meraih status akreditasi resmi dari BAN-PT. Mahasiswa mulai aktif menorehkan prestasi kompetisi rancang jembatan, karya ilmiah, serta pengabdian mitigasi kebencanaan di berbagai penjuru Jawa Barat.
+                        </p>
                     </div>
-
-                    <!-- Marker Tengah -->
-                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-indigo-600 border-4 border-white shadow-md flex items-center justify-center text-white text-sm sm:text-base order-1 md:order-2">
-                        <i class="fa-solid fa-building"></i>
+                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-emerald-700 font-medium">
+                        <i class="fa-solid fa-trophy"></i> Himpunan Mahasiswa Sipil (HMS) Berprestasi
                     </div>
-
-                    <!-- Sisi Kanan (Kosong di Desktop) -->
-                    <div class="hidden md:block md:w-1/2 md:pl-12 order-3"></div>
                 </div>
 
-                <!-- Milestone 6: 2023 - Kini (Kanan) -->
-                <div class="relative flex flex-col md:flex-row items-start md:items-center">
-                    <!-- Sisi Kiri (Kosong di Desktop) -->
-                    <div class="hidden md:block md:w-1/2 md:pr-12 order-1"></div>
-
-                    <!-- Marker Tengah -->
-                    <div class="absolute left-6 md:left-1/2 -translate-x-1/2 top-0 md:top-auto z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0B2A4A] border-4 border-white shadow-md flex items-center justify-center text-amber-400 text-sm sm:text-base order-1 md:order-2">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-
-                    <!-- Sisi Kanan (Konten di Desktop) -->
-                    <div class="w-full md:w-1/2 pl-14 md:pl-12 order-2 md:order-3">
-                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded">
-                                    2023 &mdash; Kini
-                                </span>
-                                <span class="text-xs text-slate-500 font-medium">Mutu Akademik</span>
-                            </div>
-                            <h3 class="text-base sm:text-lg font-bold text-[#0B2A4A] font-heading mb-2">
-                                Akreditasi LAM Teknik &amp; Penerapan Kurikulum OBE
-                            </h3>
-                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
-                                Meraih akreditasi <strong>BAIK</strong> dari Lembaga Akreditasi Mandiri Program Studi Keteknikan (LAM Teknik). Menerapkan kurikulum <em>Outcome-Based Education</em> (OBE), program MBKM dengan BUMN Karya &amp; PUPR, serta penguatan riset civitas akademika menuju standar mutu berkelanjutan.
-                            </p>
-                            <div class="pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] text-slate-600 font-medium">
-                                <i class="fa-solid fa-certificate text-amber-500"></i> Akreditasi LAM Teknik &bull; Kurikulum OBE
-                            </div>
+                <!-- Milestone 4: 2014 -->
+                <div class="bg-[#0B2A4A] text-white border border-blue-900 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-3">
+                            <span class="bg-amber-400 text-[#0B2A4A] text-xs font-bold px-2.5 py-1 rounded">
+                                2 April 2014
+                            </span>
+                            <span class="text-xs text-amber-300 font-medium">Tonggak Bersejarah</span>
                         </div>
+                        <h3 class="text-lg font-bold text-white font-heading mb-2">
+                            Penegerian UNSIL Menjadi PTN
+                        </h3>
+                        <p class="text-slate-200 text-sm leading-relaxed">
+                            Melalui <strong>Peraturan Presiden RI Nomor 24 Tahun 2014</strong> yang diteken oleh Presiden RI Susilo Bambang Yudhoyono, Universitas Siliwangi resmi bertransformasi menjadi Perguruan Tinggi Negeri. Akselerasi fasilitas, riset dosen doktor, dan kuota seleksi nasional melonjak drastis.
+                        </p>
+                    </div>
+                    <div class="pt-3 mt-4 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300">
+                        <i class="fa-solid fa-stamp"></i> Perpres No. 24/2014 &bull; Di Bawah Kemendikbudristek
+                    </div>
+                </div>
+
+                <!-- Milestone 5: 2019 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-3">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2.5 py-1 rounded">
+                                Tahun 2019
+                            </span>
+                            <span class="text-xs text-slate-500 font-medium">Fasilitas Baru</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
+                            Pemusatan Perkuliahan &amp; Labtek di Kampus 2 Mugarsari
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Fakultas Teknik membangun dan mengoperasikan kompleks gedung perkuliahan serta Gedung Laboratorium Teknik (Labtek) terpadu di Kampus 2 Mugarsari, Tamansari, Kota Tasikmalaya dengan peralatan uji modern berstandar SNI.
+                        </p>
+                    </div>
+                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-indigo-700 font-medium">
+                        <i class="fa-solid fa-compass-drafting"></i> 6 Laboratorium Terpadu Kampus 2 Mugarsari
+                    </div>
+                </div>
+
+                <!-- Milestone 6: 2023 - Kini -->
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col justify-between hover:border-slate-300 transition">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-3">
+                            <span class="bg-[#0B2A4A] text-amber-400 text-xs font-bold px-2.5 py-1 rounded">
+                                2023 &mdash; Kini
+                            </span>
+                            <span class="text-xs text-slate-500 font-medium">Mutu Akademik</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#0B2A4A] font-heading mb-2">
+                            Akreditasi LAM Teknik &amp; Penerapan Kurikulum OBE
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Meraih akreditasi <strong>BAIK</strong> dari Lembaga Akreditasi Mandiri Program Studi Keteknikan (LAM Teknik). Menerapkan kurikulum <em>Outcome-Based Education</em> (OBE), program MBKM dengan BUMN Karya &amp; PUPR, serta penguatan riset civitas akademika menuju standar mutu berkelanjutan.
+                        </p>
+                    </div>
+                    <div class="pt-3 mt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-600 font-medium">
+                        <i class="fa-solid fa-certificate text-amber-500"></i> Akreditasi LAM Teknik &bull; Kurikulum OBE
                     </div>
                 </div>
 
