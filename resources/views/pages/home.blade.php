@@ -102,9 +102,8 @@
 
                     {{-- List Struktur & Jajaran (Divider Garis Horizontal) --}}
                     <div class="pt-6 border-t border-slate-200 divide-y divide-slate-200">
-                        <div class="py-3.5 text-slate-700 text-sm flex justify-between items-center font-medium">
-                            <span>Sekretaris Program Studi</span>
-                            <span class="text-slate-400 font-semibold">-</span>
+                        <div class="py-3.5 text-slate-400 text-sm font-medium">
+                            -
                         </div>
                         <a href="{{ route('tentang-kami') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
                             Pimpinan Fakultas Teknik
