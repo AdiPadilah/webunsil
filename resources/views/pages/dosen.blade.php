@@ -6,181 +6,181 @@
 @section('content')
 @php
 $dosenList = [
-    // 1. Teknik Sumber Daya Air (6 dosen)
+    // 1. Rekayasa Sumber Daya Air (6 dosen)
     [
         'slug' => 'empung',
         'nama' => 'Dr. Ir. Empung, S.T., M.T.',
         'kbk' => 'keairan',
-        'kbk_label' => 'Teknik Sumber Daya Air',
+        'kbk_label' => 'Rekayasa Sumber Daya Air',
         'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'andhy-romdani',
         'nama' => 'Andhy Romdani, S.T., M.Eng., Ph.D.',
         'kbk' => 'keairan',
-        'kbk_label' => 'Teknik Sumber Daya Air',
+        'kbk_label' => 'Rekayasa Sumber Daya Air',
         'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'pengki-irawan',
         'nama' => 'Ir. Pengki Irawan, S.TP., M.Si.',
         'kbk' => 'keairan',
-        'kbk_label' => 'Teknik Sumber Daya Air',
+        'kbk_label' => 'Rekayasa Sumber Daya Air',
         'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'novia-komala-sari',
         'nama' => 'Novia Komala Sari, S.Pd., M.T.',
         'kbk' => 'keairan',
-        'kbk_label' => 'Teknik Sumber Daya Air',
+        'kbk_label' => 'Rekayasa Sumber Daya Air',
         'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'galih-rahmat-jatnika',
         'nama' => 'Galih Rahmat Jatnika, S.T., M.T.',
         'kbk' => 'keairan',
-        'kbk_label' => 'Teknik Sumber Daya Air',
+        'kbk_label' => 'Rekayasa Sumber Daya Air',
         'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
     [
         'slug' => 'raden-roro-dita',
         'nama' => 'Raden Roro Dita Arviananda, S.Pd., M.Eng.',
         'kbk' => 'keairan',
-        'kbk_label' => 'Teknik Sumber Daya Air',
+        'kbk_label' => 'Rekayasa Sumber Daya Air',
         'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
 
-    // 2. Rekayasa Transportasi (7 dosen)
+    // 2. Rekayasa Transportasi dan Jalan Raya (7 dosen)
     [
         'slug' => 'nina-herlina',
         'nama' => 'Ir. Nina Herlina, Dra., M.T.',
         'kbk' => 'transportasi',
-        'kbk_label' => 'Rekayasa Transportasi',
+        'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'herianto',
         'nama' => 'Herianto, S.T., M.T.',
         'kbk' => 'transportasi',
-        'kbk_label' => 'Rekayasa Transportasi',
+        'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'hendra',
         'nama' => 'Ir. Hendra, S.T., M.Sc.',
         'kbk' => 'transportasi',
-        'kbk_label' => 'Rekayasa Transportasi',
+        'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'gary-raya-prima',
         'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.',
         'kbk' => 'transportasi',
-        'kbk_label' => 'Rekayasa Transportasi',
+        'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'muhamad-anugerah',
         'nama' => 'Muhamad Anugerah Ramadhan, S.T., M.T.',
         'kbk' => 'transportasi',
-        'kbk_label' => 'Rekayasa Transportasi',
+        'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'indrajathie-aziz',
         'nama' => 'Indrajathie Aziz, S.T., M.T.',
         'kbk' => 'transportasi',
-        'kbk_label' => 'Rekayasa Transportasi',
+        'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
         'slug' => 'kartika-seinari',
         'nama' => 'Kartika Seinari Manggala, S.T., M.T.',
         'kbk' => 'transportasi',
-        'kbk_label' => 'Rekayasa Transportasi',
+        'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
 
-    // 3. Rekayasa Struktur & Bahan (5 dosen)
+    // 3. Rekayasa Struktur dan Bahan (5 dosen)
     [
         'slug' => 'yusep-ramdani',
         'nama' => 'Dr. Ir. Yusep Ramdani, S.T., M.T.',
         'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur & Bahan',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
         'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'rosi-nursani',
         'nama' => 'Rosi Nursani, S.T., M.T.',
         'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur & Bahan',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
         'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'syarif-al-huseiny',
         'nama' => 'Mohammad Syarif Al-Huseiny, S.T., M.T.',
         'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur & Bahan',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
         'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'intan-nuriskha',
         'nama' => 'Intan Nuriskha Rachma, S.T., M.T.',
         'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur & Bahan',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
         'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'sri-wanto',
         'nama' => 'Sri Wanto, S.T., M.T.',
         'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur & Bahan',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
         'badge_class' => 'text-blue-800 bg-blue-50',
     ],
 
-    // 4. Geoteknik (3 dosen)
+    // 4. Rekayasa Geoteknik (3 dosen)
     [
         'slug' => 'iman-handiman',
         'nama' => 'Dr. Ir. Iman Handiman, S.T., M.T.',
         'kbk' => 'geoteknik',
-        'kbk_label' => 'Geoteknik',
+        'kbk_label' => 'Rekayasa Geoteknik',
         'badge_class' => 'text-amber-800 bg-amber-50',
     ],
     [
         'slug' => 'fitriana-sarifah',
         'nama' => 'Ir. Fitriana Sarifah, S.T., M.T.',
         'kbk' => 'geoteknik',
-        'kbk_label' => 'Geoteknik',
+        'kbk_label' => 'Rekayasa Geoteknik',
         'badge_class' => 'text-amber-800 bg-amber-50',
     ],
     [
         'slug' => 'zakwan-gusnadi',
         'nama' => 'Zakwan Gusnadi, S.T., M.T.',
         'kbk' => 'geoteknik',
-        'kbk_label' => 'Geoteknik',
+        'kbk_label' => 'Rekayasa Geoteknik',
         'badge_class' => 'text-amber-800 bg-amber-50',
     ],
 
-    // 5. Manajemen Konstruksi (3 dosen)
+    // 5. Manajemen Rekayasa Konstruksi (3 dosen)
     [
         'slug' => 'hidayanto',
         'nama' => 'Hidayanto, S.T., M.T.',
         'kbk' => 'manajemen',
-        'kbk_label' => 'Manajemen Konstruksi',
+        'kbk_label' => 'Manajemen Rekayasa Konstruksi',
         'badge_class' => 'text-purple-800 bg-purple-50',
     ],
     [
         'slug' => 'shanti-astri-noviani',
         'nama' => 'Shanti Astri Noviani, S.Pd., M.T.',
         'kbk' => 'manajemen',
-        'kbk_label' => 'Manajemen Konstruksi',
+        'kbk_label' => 'Manajemen Rekayasa Konstruksi',
         'badge_class' => 'text-purple-800 bg-purple-50',
     ],
     [
         'slug' => 'ridha-al-mustafa',
         'nama' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.',
         'kbk' => 'manajemen',
-        'kbk_label' => 'Manajemen Konstruksi',
+        'kbk_label' => 'Manajemen Rekayasa Konstruksi',
         'badge_class' => 'text-purple-800 bg-purple-50',
     ],
 ];
@@ -217,19 +217,19 @@ $dosenList = [
                         Semua Dosen
                     </button>
                     <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
-                        Struktur &amp; Bahan (5)
+                        Rekayasa Struktur dan Bahan (5)
                     </button>
                     <button type="button" onclick="filterKbk('keairan', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
-                        Sumber Daya Air (6)
+                        Rekayasa Sumber Daya Air (6)
                     </button>
                     <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
-                        Geoteknik (3)
+                        Rekayasa Geoteknik (3)
                     </button>
                     <button type="button" onclick="filterKbk('transportasi', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
-                        Transportasi (7)
+                        Rekayasa Transportasi dan Jalan Raya (7)
                     </button>
                     <button type="button" onclick="filterKbk('manajemen', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
-                        Manajemen Konstruksi (3)
+                        Manajemen Rekayasa Konstruksi (3)
                     </button>
                 </div>
             </div>
