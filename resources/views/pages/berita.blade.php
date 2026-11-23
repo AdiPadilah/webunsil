@@ -167,6 +167,11 @@
                         </article>
 
                         
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE" class="w-full h-full object-cover">
+                                </div>
                                 <div class="p-5">
                                     <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
                                         Agenda Workshop &bull; 27 November 2026
