@@ -54,11 +54,10 @@
                                  onerror="this.src='{{ asset('images/lab-civil.jpg') }}'">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
-                            <span class="absolute top-4 left-4 bg-blue-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Struktur &amp; Bahan
-                            </span>
-
                             <div class="absolute bottom-4 left-5 right-5">
+                                <p class="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1">
+                                    Struktur &amp; Bahan
+                                </p>
                                 <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
                                     Lab. Teknologi Bahan Konstruksi (TBK)
                                 </h3>
@@ -110,11 +109,10 @@
                                  onerror="this.src='{{ asset('images/unsil-seminar-hathi-air.jpg') }}'">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
-                            <span class="absolute top-4 left-4 bg-cyan-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Sumber Daya Air
-                            </span>
-
                             <div class="absolute bottom-4 left-5 right-5">
+                                <p class="text-[11px] font-bold text-cyan-400 uppercase tracking-wider mb-1">
+                                    Sumber Daya Air
+                                </p>
                                 <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
                                     Lab. Hidraulika &amp; Bangunan Air
                                 </h3>
@@ -166,11 +164,10 @@
                                  onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
-                            <span class="absolute top-4 left-4 bg-emerald-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Geoteknik
-                            </span>
-
                             <div class="absolute bottom-4 left-5 right-5">
+                                <p class="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1">
+                                    Geoteknik
+                                </p>
                                 <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
                                     Lab. Mekanika Tanah &amp; Geoteknik
                                 </h3>
@@ -222,11 +219,10 @@
                                  onerror="this.src='{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}'">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
-                            <span class="absolute top-4 left-4 bg-amber-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Transportasi
-                            </span>
-
                             <div class="absolute bottom-4 left-5 right-5">
+                                <p class="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1">
+                                    Transportasi
+                                </p>
                                 <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
                                     Lab. Transportasi &amp; Jalan Raya
                                 </h3>
@@ -278,11 +274,10 @@
                                  onerror="this.src='{{ asset('images/workshop-obe.jpg') }}'">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/25 to-transparent"></div>
                             
-                            <span class="absolute top-4 left-4 bg-purple-600/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                Desain &amp; Komputasi BIM
-                            </span>
-
                             <div class="absolute bottom-4 left-5 right-5">
+                                <p class="text-[11px] font-bold text-purple-300 uppercase tracking-wider mb-1">
+                                    Desain &amp; Komputasi BIM
+                                </p>
                                 <h3 class="text-xl sm:text-2xl font-black text-white leading-tight">
                                     Lab. Komputasi &amp; Pemodelan Struktur
                                 </h3>
