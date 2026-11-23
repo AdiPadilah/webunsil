@@ -35,7 +35,7 @@
                     <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-7 text-white">
                         <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Inovasi Keilmuan</span>
                         <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight text-white group-hover:text-amber-300 transition-colors">
-                            Fokus Penelitian Dosen
+                            Penelitian
                         </h3>
                     </div>
                 </a>
@@ -47,7 +47,7 @@
                     <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-7 text-white">
                         <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Kemitraan Strategis</span>
                         <h3 class="text-lg sm:text-xl sm:text-2xl font-bold font-heading leading-tight text-white group-hover:text-amber-300 transition-colors">
-                            Jejaring Kerja Sama Industri
+                            Kolaborasi
                         </h3>
                     </div>
                 </a>
@@ -59,7 +59,7 @@
                     <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-7 text-white">
                         <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Bakti Masyarakat</span>
                         <h3 class="text-lg sm:text-xl sm:text-2xl font-bold font-heading leading-tight text-white group-hover:text-amber-300 transition-colors">
-                            Pengabdian Kepada Masyarakat (PKM)
+                            Pengabdian
                         </h3>
                     </div>
                 </a>
