@@ -64,139 +64,7 @@
                     {{-- Halaman 1: Grid Berita --}}
                     <div id="berita-page-1" class="grid grid-cols-1 sm:grid-cols-2 gap-6 {{ $initialPage == 2 ? 'hidden' : '' }}">
 
-                        
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
-                            <div>
-                                <div class="h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Ilmiah Bendungan Leuwikeris" class="w-full h-full object-cover  ">
-                                </div>
-                                <div class="p-5">
-                                    <span class="text-[11px] text-slate-400 block mb-1">
-                                        23 Oktober 2026
-                                    </span>
-                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
-                                        Himpunan Mahasiswa Sipil Universitas Siliwangi Perluas Wawasan Keteknikan melalui Kunjungan Ilmiah ke Bendungan Leuwikeris
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        Rombongan HMS dan dosen Teknik Sipil UNSIL meninjau langsung struktur bendungan, instrumen rembesan, dan sistem pemantauan di Bendungan Leuwikeris bersama tim UPB.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
-                                <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
-                                </a>
-                            </div>
-                        </article>
-
-                        
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
-                            <div>
-                                <div class="h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Babak Final National Bridge Design Competition SCIENCE 2026" class="w-full h-full object-cover  ">
-                                </div>
-                                <div class="p-5">
-                                    <span class="text-[11px] text-slate-400 block mb-1">
-                                        20 Oktober 2026
-                                    </span>
-                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
-                                        Himpunan Mahasiswa Sipil FT-Unsil Selenggarakan Babak Final National Bridge Design Competition dalam Ajang Bergengsi SCIENCE 2026
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        Kompetisi rancang jembatan nasional di Aula Gedung Teknik Sipil UNSIL mempertemukan tim perancang jembatan terbaik dari UNDIP dan Universitas Tidar.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
-                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
-                                </a>
-                            </div>
-                        </article>
-
-                        
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
-                            <div>
-                                <div class="h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/seminar-taiwan-cover.jpg') }}" alt="Seminar Internasional Bridging Futures Indonesia-Taiwan FT UNSIL" class="w-full h-full object-cover">
-                                </div>
-                                <div class="p-5">
-                                    <span class="text-[11px] text-slate-400 block mb-1">
-                                        12 Oktober 2026
-                                    </span>
-                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
-                                        Seminar Internasional "Bridging Futures: Indonesia - Taiwan Academic Collaboration" di FT UNSIL
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        Narasumber Yanuar Haryanto, Ph.D. dari National Cheng Kung University (NCKU) memaparkan peluang beasiswa S2/S3 dan riset gempa bagi lulusan Teknik Sipil FT UNSIL.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Kerja Sama NCKU</span>
-                                <a href="{{ route('berita.seminar-taiwan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
-                                </a>
-                            </div>
-                        </article>
-
-                        
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
-                            <div>
-                                <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/seminar-hasil-uns/foto-2.jpg') }}" alt="Dosen UNSIL Penguji Eksternal Seminar Hasil Disertasi UNS" class="w-full h-full object-cover">
-                                </div>
-                                <div class="p-5">
-                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
-                                        Riset &amp; Kolaborasi &bull; 29 Oktober 2026
-                                    </p>
-                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
-                                        Dosen Teknik Sipil UNSIL Diundang sebagai Penguji Eksternal Seminar Hasil Disertasi di Pascasarjana FT UNS
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        Pengakuan kompetensi keilmuan dosen UNSIL di tingkat nasional melalui peran sebagai penguji eksternal dalam sidang seminar hasil disertasi Program Doktor Teknik Sipil FT UNS, Surakarta.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Kolaborasi Nasional</span>
-                                <a href="{{ route('berita.seminar-hasil-uns') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
-                                    <span>Selengkapnya</span>
-                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                                </a>
-                            </div>
-                        </article>
-
-                        {{-- Card: Workshop Penulisan Artikel Jurnal Q1 (PASTI-Q1) --}}
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
-                            <div>
-                                <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/workshop-jurnal-q1/foto-2.jpg') }}" alt="Workshop Penulisan Artikel Submit to Journal International Q1 2026" class="w-full h-full object-cover">
-                                </div>
-                                <div class="p-5">
-                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
-                                        Publikasi &amp; Riset &bull; 02 Oktober 2026
-                                    </p>
-                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
-                                        Dosen Teknik Sipil UNSIL Terpilih Ikuti Workshop Penulisan Artikel Jurnal Internasional Q1 (PASTI-Q1) 2026 di Bogor
-                                    </h3>
-                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        Kemendiktisaintek gandeng Universitas Pakuan gelar program percepatan publikasi Scopus Q1, delegasi dosen Teknik Sipil UNSIL ikuti pendampingan intensif naskah ilmiah bereputasi global.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Kemendiktisaintek</span>
-                                <a href="{{ route('berita.workshop-pasti-q1') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
-                                    <span>Selengkapnya</span>
-                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                                </a>
-                            </div>
-                        </article>
-
-                        
+                        {{-- 1. 27 November 2026 - Workshop OBE --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -223,12 +91,144 @@
                             </div>
                         </article>
 
+                        {{-- 2. 29 Oktober 2026 - Seminar Hasil Disertasi UNS --}}
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/seminar-hasil-uns/foto-2.jpg') }}" alt="Dosen UNSIL Penguji Eksternal Seminar Hasil Disertasi UNS" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5">
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Riset &amp; Kolaborasi &bull; 29 Oktober 2026
+                                    </p>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Dosen Teknik Sipil UNSIL Diundang sebagai Penguji Eksternal Seminar Hasil Disertasi di Pascasarjana FT UNS
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Pengakuan kompetensi keilmuan dosen UNSIL di tingkat nasional melalui peran sebagai penguji eksternal dalam sidang seminar hasil disertasi Program Doktor Teknik Sipil FT UNS, Surakarta.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Kolaborasi Nasional</span>
+                                <a href="{{ route('berita.seminar-hasil-uns') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        {{-- 3. 23 Oktober 2026 - Kunjungan Leuwikeris --}}
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Ilmiah Bendungan Leuwikeris" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5">
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Kunjungan Lapangan &bull; 23 Oktober 2026
+                                    </p>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
+                                        Himpunan Mahasiswa Sipil Universitas Siliwangi Perluas Wawasan Keteknikan melalui Kunjungan Ilmiah ke Bendungan Leuwikeris
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Rombongan HMS dan dosen Teknik Sipil UNSIL meninjau langsung struktur bendungan, instrumen rembesan, dan sistem pemantauan di Bendungan Leuwikeris bersama tim UPB.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
+                                <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
+                                    <span>Selengkapnya →</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        {{-- 4. 20 Oktober 2026 - National Bridge Competition SCIENCE 2026 --}}
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Babak Final National Bridge Design Competition SCIENCE 2026" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5">
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Kompetisi Nasional &bull; 20 Oktober 2026
+                                    </p>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
+                                        Himpunan Mahasiswa Sipil FT-Unsil Selenggarakan Babak Final National Bridge Design Competition dalam Ajang Bergengsi SCIENCE 2026
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Kompetisi rancang jembatan nasional di Aula Gedung Teknik Sipil UNSIL mempertemukan tim perancang jembatan terbaik dari UNDIP dan Universitas Tidar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
+                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
+                                    <span>Selengkapnya →</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        {{-- 5. 12 Oktober 2026 - Seminar Taiwan --}}
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/seminar-taiwan-cover.jpg') }}" alt="Seminar Internasional Bridging Futures Indonesia-Taiwan FT UNSIL" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5">
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Seminar Internasional &bull; 12 Oktober 2026
+                                    </p>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
+                                        Seminar Internasional "Bridging Futures: Indonesia - Taiwan Academic Collaboration" di FT UNSIL
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Narasumber Yanuar Haryanto, Ph.D. dari National Cheng Kung University (NCKU) memaparkan peluang beasiswa S2/S3 dan riset gempa bagi lulusan Teknik Sipil FT UNSIL.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Kerja Sama NCKU</span>
+                                <a href="{{ route('berita.seminar-taiwan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
+                                    <span>Selengkapnya →</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        {{-- 6. 02 Oktober 2026 - Workshop PASTI-Q1 --}}
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/workshop-jurnal-q1/foto-2.jpg') }}" alt="Workshop Penulisan Artikel Submit to Journal International Q1 2026" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5">
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Publikasi &amp; Riset &bull; 02 Oktober 2026
+                                    </p>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Dosen Teknik Sipil UNSIL Terpilih Ikuti Workshop Penulisan Artikel Jurnal Internasional Q1 (PASTI-Q1) 2026 di Bogor
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Kemendiktisaintek gandeng Universitas Pakuan gelar program percepatan publikasi Scopus Q1, delegasi dosen Teknik Sipil UNSIL ikuti pendampingan intensif naskah ilmiah bereputasi global.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Kemendiktisaintek</span>
+                                <a href="{{ route('berita.workshop-pasti-q1') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
                     </div>
 
                     {{-- Halaman 2: Grid Berita --}}
                     <div id="berita-page-2" class="grid grid-cols-1 sm:grid-cols-2 gap-6 {{ $initialPage == 1 ? 'hidden' : '' }}">
 
-                        {{-- Card: Kuliah Tamu BIM --}}
+                        {{-- 7. 08 Januari 2026 - Kuliah Tamu BIM --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -255,7 +255,7 @@
                             </div>
                         </article>
 
-                        
+                        {{-- 8. 24 Oktober 2025 - Wisuda --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -282,7 +282,7 @@
                             </div>
                         </article>
 
-                        
+                        {{-- 9. 23 Oktober 2025 - Fahmi Rahmat --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -309,7 +309,7 @@
                             </div>
                         </article>
 
-                        
+                        {{-- 10. 22 Agustus 2025 - Muhammad Raka --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -336,34 +336,34 @@
                             </div>
                         </article>
 
-                        
+                        {{-- 11. 03 Juni 2024 - Seminar HATHI Air --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 NPC 2023" class="w-full h-full object-cover">
+                                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar Nasional HATHI Sumber Daya Air Berkelanjutan 2024" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
                                     <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
-                                        Prestasi Kompetisi &bull; 9 November 2023
+                                        Seminar Ilmiah &bull; 03 Juni 2024
                                     </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
-                                        Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1 National Paper Competition 2023 di Aceh
+                                        Seminar Nasional Perdana HATHI: Pemanfaatan Teknologi Modern untuk Pengelolaan Sumber Daya Air Berkelanjutan
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        Menyisihkan 81 peserta dari seluruh Indonesia dalam AISCE 2023, tim ini membawa topik inovatif sumur artesis sebagai solusi krisis air bersih pasca-gempa bumi.
+                                        HATHI Cabang Banjar bersama Jurusan Teknik Sipil UNSIL menyelenggarakan seminar nasional perdana yang mempertemukan pakar, akademisi, dan pemangku kebijakan sumber daya air.
                                     </p>
                                 </div>
                             </div>
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
-                                <a href="{{ route('berita.tirta-adhipermana') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                <a href="{{ route('berita.seminar-hathi-air') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </article>
 
-                        
+                        {{-- 12. 22 Maret 2024 - HATHI Segara Anakan --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -390,27 +390,27 @@
                             </div>
                         </article>
 
-                        
+                        {{-- 13. 09 November 2023 - Tim Tirta Adhipermana --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar Nasional HATHI Sumber Daya Air Berkelanjutan 2024" class="w-full h-full object-cover">
+                                    <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 NPC 2023" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
                                     <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
-                                        Seminar Ilmiah &bull; 3 Juni 2024
+                                        Prestasi Kompetisi &bull; 09 November 2023
                                     </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
-                                        Seminar Nasional Perdana HATHI: Pemanfaatan Teknologi Modern untuk Pengelolaan Sumber Daya Air Berkelanjutan
+                                        Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1 National Paper Competition 2023 di Aceh
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
-                                        HATHI Cabang Banjar bersama Jurusan Teknik Sipil UNSIL menyelenggarakan seminar nasional perdana yang mempertemukan pakar, akademisi, dan pemangku kebijakan sumber daya air.
+                                        Menyisihkan 81 peserta dari seluruh Indonesia dalam AISCE 2023, tim ini membawa topik inovatif sumur artesis sebagai solusi krisis air bersih pasca-gempa bumi.
                                     </p>
                                 </div>
                             </div>
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
                                 <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
-                                <a href="{{ route('berita.seminar-hathi-air') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                <a href="{{ route('berita.tirta-adhipermana') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
