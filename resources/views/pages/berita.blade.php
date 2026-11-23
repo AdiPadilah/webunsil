@@ -4,6 +4,10 @@
 @section('meta_description', 'Portal berita, informasi kegiatan akademik, prestasi mahasiswa, seminar, dan agenda resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL).')
 
 @section('content')
+@php
+    $initialPage = (int) request()->get('page', 1);
+    if ($initialPage !== 2) $initialPage = 1;
+@endphp
     
     <section class="bg-[#0B2A4A] text-white py-12 md:py-16 border-b border-blue-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,32 +35,34 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
 
                 
-                <div class="lg:col-span-2 space-y-8">
+                <div class="lg:col-span-2 space-y-8" id="daftar-berita">
 
-                    
-                    <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
-                        <div class="h-64 sm:h-72 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional SCIENCE 2026 Jalan Tol Berkelanjutan" class="w-full h-full object-cover  ">
-                        </div>
+                    {{-- Featured Article (Hanya tampil di Halaman 1) --}}
+                    <div id="berita-featured" class="{{ $initialPage == 2 ? 'hidden' : '' }}">
+                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
+                            <div class="h-64 sm:h-72 overflow-hidden bg-slate-100">
+                                <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional SCIENCE 2026 Jalan Tol Berkelanjutan" class="w-full h-full object-cover  ">
+                            </div>
 
-                        <div class="p-6">
-                            <span class="text-xs text-slate-400 block mb-1">20 Oktober 2026 &bull; Auditorium Rektorat UNSIL</span>
-                            <h2 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-[#0070BA] transition leading-snug">
-                                <a href="{{ route('berita.seminar-jalan-tol') }}">Seminar Nasional SCIENCE 2026 Himpunan Mahasiswa Sipil UNSIL Angkat Strategi Pembangunan Jalan Tol Berkelanjutan</a>
-                            </h2>
-                            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                                Himpunan Mahasiswa Sipil (HMS) Fakultas Teknik Universitas Siliwangi menggelar Seminar Nasional bertajuk “Managing the Future for a Greater Indonesia” dengan menghadirkan praktisi BUMN PT Adhi Karya (Persero) Tbk. guna mengupas strategi konstruksi jalan tol berkelanjutan.
-                            </p>
-                            <div class="mt-4 pt-3 border-t border-slate-100">
-                                <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya →
-                                </a>
+                            <div class="p-6">
+                                <span class="text-xs text-slate-400 block mb-1">20 Oktober 2026 &bull; Auditorium Rektorat UNSIL</span>
+                                <h2 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-[#0070BA] transition leading-snug">
+                                    <a href="{{ route('berita.seminar-jalan-tol') }}">Seminar Nasional SCIENCE 2026 Himpunan Mahasiswa Sipil UNSIL Angkat Strategi Pembangunan Jalan Tol Berkelanjutan</a>
+                                </h2>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                                    Himpunan Mahasiswa Sipil (HMS) Fakultas Teknik Universitas Siliwangi menggelar Seminar Nasional bertajuk “Managing the Future for a Greater Indonesia” dengan menghadirkan praktisi BUMN PT Adhi Karya (Persero) Tbk. guna mengupas strategi konstruksi jalan tol berkelanjutan.
+                                </p>
+                                <div class="mt-4 pt-3 border-t border-slate-100">
+                                    <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
+                                        Baca Selengkapnya →
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {{-- Halaman 1: Grid Berita --}}
+                    <div id="berita-page-1" class="grid grid-cols-1 sm:grid-cols-2 gap-6 {{ $initialPage == 2 ? 'hidden' : '' }}">
 
                         
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
@@ -217,7 +223,12 @@
                             </div>
                         </article>
 
-                        
+                    </div>
+
+                    {{-- Halaman 2: Grid Berita --}}
+                    <div id="berita-page-2" class="grid grid-cols-1 sm:grid-cols-2 gap-6 {{ $initialPage == 1 ? 'hidden' : '' }}">
+
+                        {{-- Card: Kuliah Tamu BIM --}}
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
@@ -407,6 +418,22 @@
                         </article>
 
                     </div>
+
+                    {{-- Navigasi Pagination: < 1, 2 > --}}
+                    <div class="pt-8 border-t border-slate-200 flex items-center justify-center gap-2">
+                        <button type="button" id="btn-prev" onclick="goToPage(currentPage - 1)" class="w-10 h-10 rounded-xl flex items-center justify-center font-semibold text-sm transition {{ $initialPage == 1 ? 'opacity-30 cursor-not-allowed text-slate-400 bg-slate-100 border border-slate-200' : 'bg-white text-slate-700 hover:bg-blue-50 hover:text-[#0070BA] border border-slate-200 cursor-pointer' }}" aria-label="Halaman Sebelumnya">
+                            <i class="fa-solid fa-chevron-left text-xs"></i>
+                        </button>
+                        <button type="button" id="btn-page-1" onclick="goToPage(1)" class="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm transition cursor-pointer {{ $initialPage == 1 ? 'bg-[#0B2A4A] text-amber-400 shadow-sm border border-[#0B2A4A]' : 'bg-white text-slate-700 hover:bg-blue-50 hover:text-[#0070BA] border border-slate-200' }}">
+                            1
+                        </button>
+                        <button type="button" id="btn-page-2" onclick="goToPage(2)" class="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm transition cursor-pointer {{ $initialPage == 2 ? 'bg-[#0B2A4A] text-amber-400 shadow-sm border border-[#0B2A4A]' : 'bg-white text-slate-700 hover:bg-blue-50 hover:text-[#0070BA] border border-slate-200' }}">
+                            2
+                        </button>
+                        <button type="button" id="btn-next" onclick="goToPage(currentPage + 1)" class="w-10 h-10 rounded-xl flex items-center justify-center font-semibold text-sm transition {{ $initialPage == 2 ? 'opacity-30 cursor-not-allowed text-slate-400 bg-slate-100 border border-slate-200' : 'bg-white text-slate-700 hover:bg-blue-50 hover:text-[#0070BA] border border-slate-200 cursor-pointer' }}" aria-label="Halaman Selanjutnya">
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
                 </div>
 
                 
@@ -546,6 +573,57 @@
 
     @push('scripts')
     <script>
+        let currentPage = {{ $initialPage }};
+
+        function goToPage(page) {
+            if (page < 1 || page > 2 || page === currentPage) return;
+            currentPage = page;
+
+            const featured = document.getElementById('berita-featured');
+            const p1 = document.getElementById('berita-page-1');
+            const p2 = document.getElementById('berita-page-2');
+            const bPrev = document.getElementById('btn-prev');
+            const bNext = document.getElementById('btn-next');
+            const b1 = document.getElementById('btn-page-1');
+            const b2 = document.getElementById('btn-page-2');
+
+            const activeClass = 'w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm transition cursor-pointer bg-[#0B2A4A] text-amber-400 shadow-sm border border-[#0B2A4A]';
+            const inactiveClass = 'w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm transition cursor-pointer bg-white text-slate-700 hover:bg-blue-50 hover:text-[#0070BA] border border-slate-200';
+            const disabledNavClass = 'w-10 h-10 rounded-xl flex items-center justify-center font-semibold text-sm transition opacity-30 cursor-not-allowed text-slate-400 bg-slate-100 border border-slate-200';
+            const activeNavClass = 'w-10 h-10 rounded-xl flex items-center justify-center font-semibold text-sm transition cursor-pointer bg-white text-slate-700 hover:bg-blue-50 hover:text-[#0070BA] border border-slate-200';
+
+            if (page === 1) {
+                if (featured) featured.classList.remove('hidden');
+                if (p1) p1.classList.remove('hidden');
+                if (p2) p2.classList.add('hidden');
+
+                if (b1) b1.className = activeClass;
+                if (b2) b2.className = inactiveClass;
+                if (bPrev) bPrev.className = disabledNavClass;
+                if (bNext) bNext.className = activeNavClass;
+            } else {
+                if (featured) featured.classList.add('hidden');
+                if (p1) p1.classList.add('hidden');
+                if (p2) p2.classList.remove('hidden');
+
+                if (b1) b1.className = inactiveClass;
+                if (b2) b2.className = activeClass;
+                if (bPrev) bPrev.className = activeNavClass;
+                if (bNext) bNext.className = disabledNavClass;
+            }
+
+            // Update URL tanpa reload
+            const url = new URL(window.location);
+            url.searchParams.set('page', page);
+            window.history.pushState({}, '', url);
+
+            // Scroll ke atas container daftar berita
+            const target = document.getElementById('daftar-berita');
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
         function switchAgendaTab(tab) {
             const pMendatang = document.getElementById('panel-agenda-mendatang');
             const pSelesai = document.getElementById('panel-agenda-selesai');
