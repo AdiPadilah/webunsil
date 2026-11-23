@@ -111,48 +111,6 @@
 
             </div>
 
-            {{-- Galeri Agenda di Aula --}}
-            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
-                <div class="text-center max-w-xl mx-auto mb-8">
-                    <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Aktivitas &amp; Agenda</span>
-                    <h3 class="text-2xl font-black text-slate-900 font-heading mt-1">Kegiatan Berkala di Aula FT</h3>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {{-- Foto 1 --}}
-                    <div class="group relative rounded-2xl overflow-hidden shadow-md">
-                        <img src="{{ asset('images/event-1.jpg') }}" alt="Seminar Nasional Teknik Sipil" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-white">
-                            <span class="text-[10px] font-bold bg-amber-400 text-slate-900 px-2 py-0.5 rounded-full uppercase">Seminar Nasional</span>
-                            <h4 class="text-sm font-bold mt-1">Seminar &amp; Lokakarya Infrastruktur Berkelanjutan</h4>
-                            <p class="text-[11px] text-slate-300 mt-0.5">Dihadiri praktisi LPJK &amp; akademisi nasional</p>
-                        </div>
-                    </div>
-
-                    {{-- Foto 2 --}}
-                    <div class="group relative rounded-2xl overflow-hidden shadow-md">
-                        <img src="{{ asset('images/event-2.jpg') }}" alt="Kuliah Dosen Tamu" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-white">
-                            <span class="text-[10px] font-bold bg-blue-400 text-white px-2 py-0.5 rounded-full uppercase">Kuliah Pakar</span>
-                            <h4 class="text-sm font-bold mt-1">Kuliah Tamu Praktisi Industri BUMN Karya</h4>
-                            <p class="text-[11px] text-slate-300 mt-0.5">Transfer teknologi metode konstruksi terkini</p>
-                        </div>
-                    </div>
-
-                    {{-- Foto 3 --}}
-                    <div class="group relative rounded-2xl overflow-hidden shadow-md">
-                        <img src="{{ asset('images/event-3.jpg') }}" alt="Pelepasan Yudisium Sarjana" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-white">
-                            <span class="text-[10px] font-bold bg-emerald-400 text-slate-900 px-2 py-0.5 rounded-full uppercase">Yudisium Kelulusan</span>
-                            <h4 class="text-sm font-bold mt-1">Pelepasan Calon Wisudawan Sarjana Teknik Sipil</h4>
-                            <p class="text-[11px] text-slate-300 mt-0.5">Momen sakral pengukuhan gelar S.T.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </section>
