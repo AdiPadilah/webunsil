@@ -33,7 +33,6 @@
                     <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Fokus Penelitian Dosen" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-7 text-white">
-                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Inovasi Keilmuan</span>
                         <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight text-white group-hover:text-amber-300 transition-colors">
                             Penelitian
                         </h3>
@@ -56,7 +55,6 @@
                     <img src="{{ asset('images/event-1.jpg') }}" alt="Pengabdian Kepada Masyarakat" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-7 text-white">
-                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Bakti Masyarakat</span>
                         <h3 class="text-lg sm:text-xl sm:text-2xl font-bold font-heading leading-tight text-white group-hover:text-amber-300 transition-colors">
                             Pengabdian
                         </h3>
@@ -68,7 +66,6 @@
                     <img src="{{ asset('images/lab-civil.jpg') }}" alt="Fasilitas Laboratorium Riset" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-7 text-white">
-                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Fasilitas Penunjang</span>
                         <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight text-white group-hover:text-amber-300 transition-colors">
                             Laboratorium Riset &amp; Uji Bahan
                         </h3>
