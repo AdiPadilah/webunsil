@@ -112,16 +112,7 @@
                         </ul>
                     </div>
 
-                    <div class="bg-[#0B2A4A] rounded-2xl p-5 text-white">
-                        <h3 class="text-xs font-black uppercase tracking-wider text-amber-400 mb-3">Portal Resmi UNSIL</h3>
-                        <p class="text-xs text-slate-300 leading-relaxed mb-3">
-                            Berita ini diliput resmi oleh Humas Universitas Siliwangi dan terbit di portal unsil.ac.id.
-                        </p>
-                        <a href="https://unsil.ac.id/2026/10/23/himpunan-mahasiswa-sipil-universitas-siliwangi-perluas-wawasan-keteknikan-melalui-kunjungan-ilmiah-ke-bendungan-leuwikeris/" target="_blank" class="inline-flex items-center gap-2 bg-[#0070BA] hover:bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition w-full justify-center">
-                            <span>Baca di unsil.ac.id</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
+
                 </aside>
 
             </div>
