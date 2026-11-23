@@ -106,18 +106,15 @@
                             <span>Sekretaris Program Studi</span>
                             <span class="text-slate-400 font-semibold">-</span>
                         </div>
-                        <div class="py-3.5 text-slate-700 text-sm flex justify-between items-center font-medium">
-                            <span>Pimpinan Fakultas Teknik</span>
-                            <span class="text-slate-400 font-semibold">-</span>
-                        </div>
-                        <div class="py-3.5 text-slate-700 text-sm flex justify-between items-center font-medium">
-                            <span>Kelompok Bidang Keahlian (KBK)</span>
-                            <span class="text-slate-400 font-semibold">-</span>
-                        </div>
-                        <div class="py-3.5 text-slate-700 text-sm flex justify-between items-center font-medium">
-                            <span>Dosen &amp; Tenaga Pengajar</span>
-                            <span class="text-slate-400 font-semibold">-</span>
-                        </div>
+                        <a href="{{ route('tentang-kami') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
+                            Pimpinan Fakultas Teknik
+                        </a>
+                        <a href="{{ route('kurikulum') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
+                            Kelompok Bidang Keahlian (KBK)
+                        </a>
+                        <a href="{{ route('dosen') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
+                            Dosen &amp; Tenaga Pengajar
+                        </a>
                     </div>
                 </div>
 
