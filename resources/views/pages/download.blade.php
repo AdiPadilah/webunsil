@@ -11,13 +11,13 @@
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
-                <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
+                <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5 text-slate-300 hover:text-amber-400 transition"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Download</span>
             </nav>
-            <span class="text-amber-400 text-xs font-medium mb-2">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Dokumen &amp; Berkas Resmi
-            </span>
+            </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Pusat Unduhan (Download)
             </h1>
