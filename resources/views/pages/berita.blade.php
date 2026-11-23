@@ -117,7 +117,7 @@
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan" class="w-full h-full object-cover  ">
+                                    <img src="{{ asset('images/seminar-taiwan-cover.jpg') }}" alt="Seminar Internasional Bridging Futures Indonesia-Taiwan FT UNSIL" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
                                     <span class="text-[11px] text-slate-400 block mb-1">

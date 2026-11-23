@@ -272,7 +272,7 @@
 
                     {{-- Baris 2: Card Kiri (8 Kolom) --}}
                     <a href="{{ route('berita.seminar-taiwan') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Kegiatan Mahasiswa" class="w-full h-full object-cover object-center">
+                        <img src="{{ asset('images/seminar-taiwan-cover.jpg') }}" alt="Seminar Internasional FT UNSIL" class="w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
@@ -447,8 +447,8 @@
                         <article class="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-slate-300 transition flex flex-col justify-between group">
                             <div>
                                 <a href="{{ route('berita.seminar-taiwan') }}" class="block overflow-hidden bg-slate-100 aspect-video">
-                                    <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" 
-                                         alt="Seminar Internasional Indonesia-Taiwan" 
+                                    <img src="{{ asset('images/seminar-taiwan-cover.jpg') }}" 
+                                         alt="Seminar Internasional Indonesia-Taiwan FT UNSIL" 
                                          class="w-full h-full object-cover">
                                 </a>
                                 <div class="p-4 sm:p-5">
