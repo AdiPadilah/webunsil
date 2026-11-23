@@ -105,15 +105,15 @@
                         <div class="py-3.5 text-slate-400 text-sm font-medium">
                             -
                         </div>
-                        <a href="{{ route('tentang-kami') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
-                            Pimpinan Fakultas Teknik
-                        </a>
-                        <a href="{{ route('kurikulum') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
-                            Kelompok Bidang Keahlian (KBK)
-                        </a>
-                        <a href="{{ route('dosen') }}" class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm block transition font-medium">
-                            Dosen &amp; Tenaga Pengajar
-                        </a>
+                        <div class="py-3.5 text-slate-400 text-sm font-medium">
+                            -
+                        </div>
+                        <div class="py-3.5 text-slate-400 text-sm font-medium">
+                            -
+                        </div>
+                        <div class="py-3.5 text-slate-400 text-sm font-medium">
+                            -
+                        </div>
                     </div>
                 </div>
 
