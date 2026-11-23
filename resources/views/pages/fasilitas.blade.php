@@ -68,9 +68,7 @@
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-medium block mb-1">Ruang Kuliah</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Ruang Kelas Ber-AC</h3>
-                            <p class="text-xs text-slate-500 mt-0.5 mb-3">Gedung FT UNSIL Lantai 1 &ndash; 3</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Ruang perkuliahan nyaman berpenyejuk udara, proyektor multimedia, kursi kuliah ergonomis, dan akses internet nirkabel Eduroam.
                             </p>
