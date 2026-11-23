@@ -44,9 +44,7 @@
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-medium block mb-1">6 Unit Lab</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Laboratorium Terpadu</h3>
-                            <p class="text-xs text-slate-500 mt-0.5 mb-3">Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Pusat pengujian material beton & baja, mekanika tanah, hidraulika, aspal transportasi, pemodelan struktur SAP2000, dan pengukuran topografi.
                             </p>
@@ -96,9 +94,7 @@
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-medium block mb-1">Kapasitas 300 Kursi</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Aula Fakultas Teknik</h3>
-                            <p class="text-xs text-slate-500 mt-0.5 mb-3">Gedung FT &bull; Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Gedung pertemuan serbaguna untuk penyelenggaraan seminar nasional, kuliah tamu praktisi BUMN, yudisium, dan acara kemahasiswaan.
                             </p>
@@ -122,9 +118,7 @@
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-medium block mb-1">Area Kuliner</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Kantin Kampus</h3>
-                            <p class="text-xs text-slate-500 mt-0.5 mb-3">Area Kuliner Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Pusat santap kuliner mahasiswa dengan sajian higienis terjangkau dan area semi-outdoor untuk bersantai di sela perkuliahan.
                             </p>
@@ -148,9 +142,7 @@
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-medium block mb-1">Ruang Sidang</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Auditorium &amp; Ruang Sidang</h3>
-                            <p class="text-xs text-slate-500 mt-0.5 mb-3">Gedung FT &bull; Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Ruang khusus pelaksanaan seminar proposal, seminar hasil, dan sidang akhir skripsi mahasiswa sarjana Teknik Sipil.
                             </p>
@@ -174,9 +166,7 @@
                         </div>
 
                         <div class="p-6">
-                            <span class="text-xs text-slate-400 font-medium block mb-1">Kapasitas 20&ndash;30 Orang</span>
                             <h3 class="text-lg font-bold text-slate-900 leading-tight">Ruang Rapat &amp; Diskusi</h3>
-                            <p class="text-xs text-slate-500 mt-0.5 mb-3">Gedung FT &bull; Kampus 2 Mugarsari</p>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Sarana ruang rapat boardroom representatif dengan fasilitas hybrid meeting, smart display, pendingin udara, dan koneksi internet stabil untuk koordinasi prodi.
                             </p>
