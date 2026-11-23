@@ -110,7 +110,7 @@
                         <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4">
                             <i class="fa-solid fa-helmet-safety"></i>
                         </div>
-                        <h3 class="text-base font-bold text-slate-900 mb-2">Management Konstruksi</h3>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Manajemen Rekayasa Konstruksi</h3>
                         <p class="text-xs text-slate-600 leading-relaxed">
                             Perencanaan dan penjadwalan proyek, estimasi anggaran biaya (RAB), manajemen mutu dan risiko K3 konstruksi, metode pelaksanaan lapangan, serta Building Information Modelling (BIM).
                         </p>

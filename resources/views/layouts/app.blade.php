@@ -530,7 +530,7 @@
                         </div>
                         <div>
                             <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Kurikulum OBE</p>
-                            <p class="text-[11px] text-slate-500">Sebaran 8 semester, 4 peminatan KBK, dan silabus mata kuliah</p>
+                            <p class="text-[11px] text-slate-500">Sebaran 8 semester, 5 peminatan KBK, dan silabus mata kuliah</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
