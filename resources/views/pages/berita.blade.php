@@ -419,6 +419,7 @@
                                 <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed">
                                     Pelaksanaan evaluasi akhir semester seluruh mata kuliah keahlian teknik sipil.
                                 </p>
+                                <span class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-400 mt-2">-</span>
                             </div>
                         </div>
 
