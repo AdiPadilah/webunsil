@@ -293,38 +293,6 @@
         @yield('content')
     </main>
 
-    {{-- Strip Afiliasi & Kelembagaan --}}
-    <section class="relative overflow-hidden bg-[#0B2A4A] py-5">
-        <div class="absolute inset-0">
-            <img src="{{ asset('images/banner-afiliasi-kelembagaan.jpg') }}"
-                 alt="" aria-hidden="true"
-                 class="w-full h-full object-cover object-center opacity-20">
-        </div>
-        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-[9px] font-semibold text-slate-400 uppercase tracking-widest mb-4">Di bawah naungan &amp; didukung oleh</p>
-            <div class="flex items-center justify-center gap-10 sm:gap-16 md:gap-20 flex-wrap">
-                {{-- Tut Wuri Handayani / Kemendikti --}}
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tut_Wuri_Handayani.svg/200px-Tut_Wuri_Handayani.svg.png"
-                     alt="Tut Wuri Handayani"
-                     class="h-14 w-auto object-contain brightness-200 opacity-90">
-                {{-- Logo UNSIL --}}
-                <img src="{{ asset('images/logo-unsil.png') }}"
-                     alt="Universitas Siliwangi"
-                     class="h-14 w-auto object-contain brightness-200 opacity-90">
-                {{-- BLU Speed --}}
-                <img src="https://www.unsil.ac.id/files/logo/blu-speed.png"
-                     alt="BLU Speed"
-                     class="h-12 w-auto object-contain brightness-200 opacity-90"
-                     onerror="this.style.display='none'">
-                {{-- Diktisaintek Berdampak --}}
-                <img src="https://www.unsil.ac.id/files/logo/diktisaintek.png"
-                     alt="Diktisaintek Berdampak"
-                     class="h-14 w-auto object-contain brightness-200 opacity-90"
-                     onerror="this.style.display='none'">
-            </div>
-        </div>
-    </section>
-
     <footer class="bg-unsil-nav text-slate-300 pt-14 pb-8 border-t border-slate-800 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800 text-xs">
