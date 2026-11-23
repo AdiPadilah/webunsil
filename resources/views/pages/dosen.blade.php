@@ -74,7 +74,7 @@ $dosenList = [
     ],
     [
         'slug' => 'gary-raya-prima',
-        'nama' => 'Gary Raya Prima, S.Pd., M.T.',
+        'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
