@@ -340,12 +340,6 @@
                 
                 <div>
                     <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5">Halaman Utama</h4>
-                    <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-3 mb-4">
-                        <span class="text-amber-400 font-bold text-sm block">AKREDITASI: BAIK</span>
-                        <p class="text-slate-400 text-[11px] leading-relaxed mt-0.5">
-                            LAM Teknik No. 0018/SK/LAM Teknik/AS/IV/2023
-                        </p>
-                    </div>
                     <div class="grid grid-cols-2 gap-x-2 gap-y-1.5 text-slate-400">
                         <a href="{{ route('visi-misi') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Visi Misi</a>
                         <a href="{{ route('sejarah') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Sejarah</a>
