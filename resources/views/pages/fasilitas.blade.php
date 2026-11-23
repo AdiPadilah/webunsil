@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Laboratorium Terpadu</h3>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Laboratorium</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Pusat pengujian material beton & baja, mekanika tanah, hidraulika, aspal transportasi, pemodelan struktur SAP2000, dan pengukuran topografi.
                             </p>
@@ -68,7 +68,7 @@
                         </div>
 
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Ruang Kelas Ber-AC</h3>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Kelas</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Ruang perkuliahan nyaman berpenyejuk udara, proyektor multimedia, kursi kuliah ergonomis, dan akses internet nirkabel Eduroam.
                             </p>
@@ -92,7 +92,7 @@
                         </div>
 
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Aula Fakultas Teknik</h3>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Aula</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Gedung pertemuan serbaguna untuk penyelenggaraan seminar nasional, kuliah tamu praktisi BUMN, yudisium, dan acara kemahasiswaan.
                             </p>
@@ -116,7 +116,7 @@
                         </div>
 
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Kantin Kampus</h3>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Kantin</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Pusat santap kuliner mahasiswa dengan sajian higienis terjangkau dan area semi-outdoor untuk bersantai di sela perkuliahan.
                             </p>
@@ -140,7 +140,7 @@
                         </div>
 
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Auditorium &amp; Ruang Sidang</h3>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Auditorium</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Ruang khusus pelaksanaan seminar proposal, seminar hasil, dan sidang akhir skripsi mahasiswa sarjana Teknik Sipil.
                             </p>
@@ -164,7 +164,7 @@
                         </div>
 
                         <div class="p-6">
-                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Ruang Rapat &amp; Diskusi</h3>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Ruang Rapat</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Sarana ruang rapat boardroom representatif dengan fasilitas hybrid meeting, smart display, pendingin udara, dan koneksi internet stabil untuk koordinasi prodi.
                             </p>
