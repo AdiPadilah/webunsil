@@ -242,7 +242,7 @@ $dosenList = [
                     <div class="aspect-square overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/dosen/' . $dosen['slug'] . '.jpg') }}?v={{ @filemtime(public_path('images/dosen/' . $dosen['slug'] . '.jpg')) ?: 2 }}"
                              alt="{{ $dosen['nama'] }}"
-                             class="w-full h-full object-cover object-top pointer-events-none"
+                             class="w-full h-full object-cover object-center pointer-events-none"
                              loading="lazy">
                     </div>
                     <!-- Info Dosen -->
