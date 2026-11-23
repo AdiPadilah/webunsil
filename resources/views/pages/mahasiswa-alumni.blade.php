@@ -37,14 +37,9 @@
                 {{-- HMS --}}
                 <div id="hms" class="bg-white rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between scroll-mt-28">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <div>
-                                <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block">Organisasi Kemahasiswaan</span>
-                                <h3 class="text-xl font-bold text-slate-900 mt-0.5">Himpunan Mahasiswa Sipil (HMS)</h3>
-                            </div>
-                            <a href="https://instagram.com/hmsftunsil" target="_blank" class="text-xs font-semibold text-pink-600 hover:underline">
-                                <i class="fa-brands fa-instagram mr-1"></i> @hmsftunsil
-                            </a>
+                        <div class="mb-4">
+                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block">Organisasi Kemahasiswaan</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-0.5">Himpunan Mahasiswa Sipil (HMS)</h3>
                         </div>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                             Organisasi kemahasiswaan tingkat program studi yang aktif mengembangkan kepemimpinan, kompetensi teknis, dan kebersamaan mahasiswa. HMS rutin menyelenggarakan seminar rekayasa infrastruktur, kegiatan pengabdian masyarakat, dan kompetisi rancang jembatan nasional (SCIENCE).

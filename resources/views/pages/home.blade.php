@@ -237,9 +237,6 @@
                         </h2>
                     </div>
                     <div class="flex items-center gap-4 text-xs font-semibold text-slate-500">
-                        <a href="https://instagram.com/hmsftunsil" target="_blank" rel="noopener noreferrer" class="hover:text-[#0070BA] transition flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs">
-                            <i class="fa-brands fa-instagram text-pink-600 text-sm"></i> @hmsftunsil
-                        </a>
                         <a href="https://instagram.com/sipilunsil" target="_blank" rel="noopener noreferrer" class="hover:text-[#0070BA] transition flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs">
                             <i class="fa-brands fa-instagram text-pink-600 text-sm"></i> @sipilunsil
                         </a>
