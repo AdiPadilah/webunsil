@@ -37,9 +37,6 @@
                 <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Dokumentasi Ruangan</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Galeri Ruang Rapat</h2>
                 <div class="w-14 h-1 bg-amber-500 mx-auto mt-3.5 rounded-full"></div>
-                <p class="text-slate-500 mt-3 text-xs sm:text-sm leading-relaxed">
-                    Kondisi riil interior ruang rapat, konfigurasi meja konferensi, dan area pendukung di Gedung FT UNSIL Kampus 2 Mugarsari.
-                </p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
