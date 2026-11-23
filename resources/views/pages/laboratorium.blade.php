@@ -35,139 +35,38 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             {{-- Header Pengantar --}}
-            <div class="max-w-3xl mb-10 sm:mb-12">
+            <div class="max-w-3xl mb-8 sm:mb-10">
                 <p class="text-xs font-bold text-[#0070BA] tracking-wider uppercase mb-1.5">
                     Fasilitas Praktikum &amp; Riset Terpadu
                 </p>
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading tracking-tight">
-                    6 Unit Laboratorium Teknik Sipil UNSIL
+                    Unit Laboratorium Teknik Sipil UNSIL
                 </h2>
                 <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
-                    Setiap laboratorium dikelola oleh dosen pembina dan pranata laboratorium bersertifikat untuk menjamin keselamatan kerja, akurasi data uji, serta kesesuaian dengan standar industri konstruksi nasional.
+                    Daftar unit laboratorium keinsinyuran yang beroperasi aktif di lingkungan Program Studi S-1 Teknik Sipil Fakultas Teknik Kampus 2 UNSIL Mugarsari:
                 </p>
             </div>
 
-            {{-- Daftar Laboratorium: Alternating Editorial Rows --}}
-            <div class="space-y-16 lg:space-y-24 border-t border-slate-200 pt-12 sm:pt-16">
-
-                {{-- 01. Lab TBK (Foto Kiri, Teks Kanan) --}}
-                <article id="lab-tbk" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                    <div class="lg:col-span-6">
-                        <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
-                            <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}"
-                                 alt="Lab - Teknologi Bahan Konstruksi FT UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='{{ asset('images/lab-civil.jpg') }}'">
-                        </div>
-                    </div>
-                    <div class="lg:col-span-6">
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Teknologi Bahan Konstruksi
-                        </h3>
-                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Melayani praktikum dan pengujian sifat fisis maupun mekanis bahan bangunan seperti beton, semen, agregat kasar/halus, serta baja tulangan untuk memastikan keandalan mutu konstruksi sipil.
-                        </p>
-                    </div>
-                </article>
-
-                {{-- 02. Lab Hidraulika (Teks Kiri, Foto Kanan) --}}
-                <article id="lab-hidraulika" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                    <div class="lg:col-span-6 lg:order-2">
-                        <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
-                            <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}"
-                                 alt="Lab - Hidraulika & Bangunan Air FT UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='{{ asset('images/unsil-seminar-hathi-air.jpg') }}'">
-                        </div>
-                    </div>
-                    <div class="lg:col-span-6 lg:order-1">
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Hidraulika &amp; Bangunan Air
-                        </h3>
-                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Pusat pengujian dinamika fluida saluran terbuka dan tertutup, debit limpasan pelimpah bendung, fenomena hidraulis peredam energi (kolam olak), serta kalibrasi debit pintu air irigasi.
-                        </p>
-                    </div>
-                </article>
-
-                {{-- 03. Lab Mekanika Tanah (Foto Kiri, Teks Kanan) --}}
-                <article id="lab-geoteknik" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                    <div class="lg:col-span-6">
-                        <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
-                            <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}"
-                                 alt="Lab - Mekanika Tanah & Geoteknik FT UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        </div>
-                    </div>
-                    <div class="lg:col-span-6">
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Mekanika Tanah &amp; Geoteknik
-                        </h3>
-                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Menganalisis sifat fisis tanah (kadar air, berat jenis, batas-batas Atterberg) dan kekuatan mekanis tanah (uji geser langsung, daya dukung fondasi, konsolidasi, dan permeabilitas).
-                        </p>
-                    </div>
-                </article>
-
-                {{-- 04. Lab Transportasi (Teks Kiri, Foto Kanan) --}}
-                <article id="lab-transportasi" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                    <div class="lg:col-span-6 lg:order-2">
-                        <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
-                            <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}"
-                                 alt="Lab - Transportasi & Jalan Raya FT UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
-                        </div>
-                    </div>
-                    <div class="lg:col-span-6 lg:order-1">
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Transportasi &amp; Jalan Raya
-                        </h3>
-                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Pengujian mutu material aspal (penetrasi, daktilitas, titik nyala, titik lembek) dan perancangan proporsi campuran aspal beton (hot mix) menggunakan pengujian Marshall Test.
-                        </p>
-                    </div>
-                </article>
-
-                {{-- 05. Lab Komputasi (Foto Kiri, Teks Kanan) --}}
-                <article id="lab-komputasi" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                    <div class="lg:col-span-6">
-                        <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
-                            <img src="{{ asset('images/workshop-obe.jpg') }}"
-                                 alt="Lab - Komputasi & Pemodelan Struktur FT UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                 onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
-                        </div>
-                    </div>
-                    <div class="lg:col-span-6">
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Komputasi &amp; Pemodelan Struktur
-                        </h3>
-                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Sarana komputasi rekayasa untuk analisis elemen hingga (FEA) gedung bertingkat tahan gempa, simulasi hidraulika saluran banjir, pemodelan lereng, serta gambar kerja perancangan sipil berbasis CAD dan BIM.
-                        </p>
-                    </div>
-                </article>
-
-                {{-- 06. Lab Perpetaan (Teks Kiri, Foto Kanan) --}}
-                <article id="lab-perpetaan" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                    <div class="lg:col-span-6 lg:order-2">
-                        <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
-                            <img src="{{ asset('images/gedung-unsil.jpg') }}"
-                                 alt="Lab - Perpetaan & Ukur Tanah FT UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        </div>
-                    </div>
-                    <div class="lg:col-span-6 lg:order-1">
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Perpetaan &amp; Ukur Tanah
-                        </h3>
-                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Pelatihan pemetaan terestris lapangan, penentuan koordinat poligon tertutup/terbuka, pengukuran profil memanjang/melintang trase infrastruktur, serta pembuatan peta kontur topografi digital.
-                        </p>
-                    </div>
-                </article>
-
+            {{-- List Laboratorium Bersih dengan Garis Divider Horizontal --}}
+            <div class="max-w-3xl border-t border-b border-slate-200 divide-y divide-slate-200">
+                <div class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm sm:text-base font-medium transition cursor-default">
+                    Lab Teknologi Bahan Konstruksi
+                </div>
+                <div class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm sm:text-base font-medium transition cursor-default">
+                    Lab Hidraulika &amp; Bangunan Air
+                </div>
+                <div class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm sm:text-base font-medium transition cursor-default">
+                    Lab Mekanika Tanah &amp; Geoteknik
+                </div>
+                <div class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm sm:text-base font-medium transition cursor-default">
+                    Lab Transportasi &amp; Jalan Raya
+                </div>
+                <div class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm sm:text-base font-medium transition cursor-default">
+                    Lab Komputasi &amp; Pemodelan Struktur
+                </div>
+                <div class="py-3.5 text-slate-700 hover:text-[#0070BA] text-sm sm:text-base font-medium transition cursor-default">
+                    Lab Perpetaan &amp; Ukur Tanah
+                </div>
             </div>
 
         </div>
