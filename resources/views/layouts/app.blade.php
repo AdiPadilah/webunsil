@@ -143,9 +143,9 @@
                         </div>
                     </div>
 
-                    {{-- Fasilitas (Dropdown dengan turunan Laboratorium, Kelas, Aula, Kantin, Auditorium) --}}
+                    {{-- Fasilitas (Dropdown dengan turunan Laboratorium, Kelas, Aula, Kantin, Auditorium, Ruang Rapat) --}}
                     <div class="relative dropdown">
-                        <a href="{{ route('fasilitas') }}" id="nav-fasilitas" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('fasilitas') }}" id="nav-fasilitas" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'active-nav text-amber-400' : '' }}">
                             <span>Fasilitas</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
@@ -155,6 +155,7 @@
                             <a href="{{ route('aula') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('aula') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Aula</a>
                             <a href="{{ route('kantin') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kantin') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kantin</a>
                             <a href="{{ route('auditorium') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('auditorium') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Auditorium</a>
+                            <a href="{{ route('ruang-rapat') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('ruang-rapat') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Ruang Rapat</a>
                         </div>
                     </div>
                     
@@ -253,12 +254,13 @@
             <a href="{{ route('layanan') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('layanan') ? 'text-amber-400 font-bold' : '' }}">&mdash; Layanan Terpadu</a>
             <a href="{{ route('download') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('download') ? 'text-amber-400 font-bold' : '' }}">&mdash; Download</a>
 
-            <a href="{{ route('fasilitas') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium') ? 'text-amber-400 font-bold' : '' }}">Fasilitas</a>
+            <a href="{{ route('fasilitas') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'text-amber-400 font-bold' : '' }}">Fasilitas</a>
             <a href="{{ route('laboratorium') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('laboratorium') ? 'text-amber-400 font-bold' : '' }}">&mdash; Laboratorium</a>
             <a href="{{ route('kelas') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kelas') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kelas</a>
             <a href="{{ route('aula') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('aula') ? 'text-amber-400 font-bold' : '' }}">&mdash; Aula</a>
             <a href="{{ route('kantin') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kantin') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kantin</a>
             <a href="{{ route('auditorium') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('auditorium') ? 'text-amber-400 font-bold' : '' }}">&mdash; Auditorium</a>
+            <a href="{{ route('ruang-rapat') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('ruang-rapat') ? 'text-amber-400 font-bold' : '' }}">&mdash; Ruang Rapat</a>
             <a href="{{ route('riset') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'text-amber-400 font-bold' : '' }}">Riset dan Kolaborasi</a>
             <a href="{{ route('penelitian') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('penelitian') ? 'text-amber-400 font-bold' : '' }}">&mdash; Penelitian</a>
             <a href="{{ route('kolaborasi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kolaborasi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kolaborasi</a>

@@ -90,6 +90,11 @@ Route::get('/auditorium', function () {
     return view('pages.auditorium');
 })->name('auditorium');
 
+// 8f. Turunan Fasilitas: Ruang Rapat
+Route::get('/ruang-rapat', function () {
+    return view('pages.ruang-rapat');
+})->name('ruang-rapat');
+
 // 9. Riset dan Kolaborasi (Hub Page)
 Route::get('/riset', function () {
     return view('pages.riset');

@@ -1,7 +1,7 @@
 ﻿@extends('layouts.app')
 
 @section('title', 'Fasilitas & Sarana Prasarana | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Fasilitas lengkap Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari: Laboratorium terpadu, Ruang Kelas ber-AC, Aula Fakultas Teknik, Kantin Sehat, dan Ruang Seminar.')
+@section('meta_description', 'Fasilitas lengkap Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari: Laboratorium terpadu, Ruang Kelas ber-AC, Aula Fakultas Teknik, Kantin Sehat, Ruang Seminar, dan Ruang Rapat.')
 
 @section('content')
 
@@ -163,6 +163,32 @@
                     <div class="p-6 pt-0">
                         <a href="{{ route('auditorium') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline">
                             <span>Lihat Detail Ruang Sidang</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                {{-- 6. Ruang Rapat & Diskusi --}}
+                <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/event-3.jpg') }}" alt="Ruang Rapat &amp; Diskusi Teknik Sipil"
+                                 class="w-full h-full object-cover">
+                        </div>
+
+                        <div class="p-6">
+                            <span class="text-xs text-slate-400 font-medium block mb-1">Kapasitas 20&ndash;30 Orang</span>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">Ruang Rapat &amp; Diskusi</h3>
+                            <p class="text-xs text-slate-500 mt-0.5 mb-3">Gedung FT &bull; Kampus 2 Mugarsari</p>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Sarana ruang rapat boardroom representatif dengan fasilitas hybrid meeting, smart display, pendingin udara, dan koneksi internet stabil untuk koordinasi prodi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="{{ route('ruang-rapat') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline">
+                            <span>Lihat Detail Ruang Rapat</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
