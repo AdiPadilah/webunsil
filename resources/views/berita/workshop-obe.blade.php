@@ -25,17 +25,9 @@
                 
                 <article class="lg:col-span-2">
                     <div class="mb-6">
-                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 bg-[#0070BA] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                                <i class="fa-solid fa-chalkboard-user text-[9px]"></i> Workshop &amp; Kurikulum
-                            </span>
-                            <span class="inline-flex items-center gap-1 bg-amber-100 text-amber-800 text-[10px] font-bold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-calendar-day text-[9px]"></i> Jum'at, 27 November 2026
-                            </span>
-                            <span class="inline-flex items-center gap-1 bg-slate-200 text-slate-700 text-[10px] font-semibold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-location-dot text-[9px]"></i> Kampus 2 UNSIL Mugarsari
-                            </span>
-                        </div>
+                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                            Workshop &amp; Kurikulum · 27 November 2026 · Kampus 2 UNSIL Mugarsari
+                        </p>
                         <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-heading leading-tight">
                             Workshop Penguatan Kurikulum Teknik Sipil Berbasis Outcome-Based Education (OBE)
                         </h1>

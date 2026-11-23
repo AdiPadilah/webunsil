@@ -26,17 +26,9 @@
                 <article class="lg:col-span-2">
                     
                     <div class="mb-6">
-                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 bg-blue-700 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                                <i class="fa-solid fa-globe text-[9px]"></i> Internasional
-                            </span>
-                            <span class="inline-flex items-center gap-1 bg-slate-200 text-slate-700 text-[10px] font-semibold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-calendar text-[9px]"></i> Senin, 12 Oktober 2026
-                            </span>
-                            <span class="inline-flex items-center gap-1 bg-slate-200 text-slate-700 text-[10px] font-semibold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-location-dot text-[9px]"></i> Auditorium FT UNSIL
-                            </span>
-                        </div>
+                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                            Internasional · 12 Oktober 2026 · Auditorium FT UNSIL
+                        </p>
                         <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-heading leading-tight">
                             Seminar Internasional "Bridging Futures: Strengthening Indonesia-Taiwan Academic Collaboration"
                         </h1>
@@ -108,13 +100,15 @@
                     <div class="mt-8 pt-6 border-t border-slate-200 flex flex-wrap items-center gap-3">
                         <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Bagikan:</span>
                         <a href="https://instagram.com/sipilunsil" target="_blank"
-                           class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xs font-bold px-4 py-2 rounded-full hover:opacity-90 transition">
+                           class="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 text-xs font-semibold transition">
                             <i class="fa-brands fa-instagram"></i> @sipilunsil
                         </a>
-                        <a href="{{ route('berita.index') }}" class="inline-flex items-center gap-2 bg-[#0070BA] hover:bg-[#005a96] text-white text-xs font-bold px-4 py-2 rounded-full transition">
+                        <span class="text-slate-300">·</span>
+                        <a href="{{ route('berita.index') }}" class="inline-flex items-center gap-2 text-[#0070BA] hover:text-[#005a96] text-xs font-semibold transition">
                             <i class="fa-solid fa-newspaper"></i> Kembali ke Berita
                         </a>
-                        <a href="{{ route('home') }}" class="inline-flex items-center gap-2 bg-[#0B2A4A] text-white text-xs font-bold px-4 py-2 rounded-full hover:opacity-90 transition">
+                        <span class="text-slate-300">·</span>
+                        <a href="{{ route('home') }}" class="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 text-xs font-semibold transition">
                             <i class="fa-solid fa-house"></i> Beranda
                         </a>
                     </div>
@@ -154,7 +148,7 @@
                             Ikuti akun Instagram resmi untuk update kegiatan akademik dan kemahasiswaan terbaru Program Studi Teknik Sipil UNSIL.
                         </p>
                         <a href="https://instagram.com/sipilunsil" target="_blank"
-                           class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xs font-bold px-4 py-2 rounded-full hover:opacity-90 transition w-full justify-center">
+                           class="inline-flex items-center gap-2 text-slate-300 hover:text-white text-xs font-semibold transition w-full justify-center">
                             <i class="fa-brands fa-instagram"></i> @sipilunsil
                         </a>
                     </div>

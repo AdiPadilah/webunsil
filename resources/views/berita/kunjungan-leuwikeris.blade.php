@@ -25,17 +25,9 @@
                 
                 <article class="lg:col-span-2">
                     <div class="mb-6">
-                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 bg-cyan-700 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                                <i class="fa-solid fa-water text-[9px]"></i> Sumber Daya Air
-                            </span>
-                            <span class="inline-flex items-center gap-1 bg-amber-100 text-amber-800 text-[10px] font-bold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-calendar text-[9px]"></i> 23 Oktober 2026
-                            </span>
-                            <span class="inline-flex items-center gap-1 bg-slate-200 text-slate-700 text-[10px] font-semibold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-location-dot text-[9px]"></i> Bendungan Leuwikeris, Tasikmalaya - Ciamis
-                            </span>
-                        </div>
+                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                            Sumber Daya Air · 23 Oktober 2026 · Bendungan Leuwikeris, Tasikmalaya–Ciamis
+                        </p>
                         <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-heading leading-tight">
                             Himpunan Mahasiswa Sipil Universitas Siliwangi Perluas Wawasan Keteknikan melalui Kunjungan Ilmiah ke Bendungan Leuwikeris
                         </h1>

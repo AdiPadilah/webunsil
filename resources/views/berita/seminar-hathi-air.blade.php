@@ -25,17 +25,9 @@
                 
                 <article class="lg:col-span-2">
                     <div class="mb-6">
-                        <div class="flex flex-wrap items-center gap-2 mb-3">
-                            <span class="inline-flex items-center gap-1 bg-blue-700 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                                <i class="fa-solid fa-chalkboard-user text-[9px]"></i> Seminar &amp; Kolaborasi
-                            </span>
-                            <span class="inline-flex items-center gap-1 bg-amber-100 text-amber-800 text-[10px] font-bold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-calendar text-[9px]"></i> 3 Juni 2024
-                            </span>
-                            <span class="inline-flex items-center gap-1 bg-slate-200 text-slate-700 text-[10px] font-semibold px-3 py-1 rounded-full">
-                                <i class="fa-solid fa-water text-[9px]"></i> Sumber Daya Air
-                            </span>
-                        </div>
+                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                            Seminar &amp; Kolaborasi · 3 Juni 2024 · Sumber Daya Air
+                        </p>
                         <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-heading leading-tight">
                             Seminar Nasional Perdana HATHI: Menyoroti Pemanfaatan Teknologi Modern untuk Pengelolaan Sumber Daya Air Berkelanjutan
                         </h1>
