@@ -75,17 +75,17 @@
                     <div class="lg:col-span-6 lg:order-2">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}"
-                                 alt="Lab - Hidraulika & Bangunan Air FT UNSIL"
+                                 alt="Hidraulika & Bangunan Air FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/unsil-seminar-hathi-air.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6 lg:order-1">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Hidraulika &amp; Bangunan Air
+                            Hidraulika &amp; Bangunan Air
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Pusat pengujian dinamika fluida saluran terbuka dan tertutup, debit limpasan pelimpah bendung, fenomena hidraulis peredam energi (kolam olak), serta kalibrasi debit pintu air irigasi.
+                            -
                         </p>
                     </div>
                 </article>
@@ -95,16 +95,16 @@
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}"
-                                 alt="Lab - Mekanika Tanah & Geoteknik FT UNSIL"
+                                 alt="Mekanika Tanah & Geoteknik FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                     </div>
                     <div class="lg:col-span-6">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Mekanika Tanah &amp; Geoteknik
+                            Mekanika Tanah &amp; Geoteknik
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Menganalisis sifat fisis tanah (kadar air, berat jenis, batas-batas Atterberg) dan kekuatan mekanis tanah (uji geser langsung, daya dukung fondasi, konsolidasi, dan permeabilitas).
+                            -
                         </p>
                     </div>
                 </article>
@@ -114,17 +114,17 @@
                     <div class="lg:col-span-6 lg:order-2">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}"
-                                 alt="Lab - Transportasi & Jalan Raya FT UNSIL"
+                                 alt="Transportasi & Jalan Raya FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6 lg:order-1">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Transportasi &amp; Jalan Raya
+                            Transportasi &amp; Jalan Raya
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Pengujian mutu material aspal (penetrasi, daktilitas, titik nyala, titik lembek) dan perancangan proporsi campuran aspal beton (hot mix) menggunakan pengujian Marshall Test.
+                            -
                         </p>
                     </div>
                 </article>
@@ -134,17 +134,17 @@
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/workshop-obe.jpg') }}"
-                                 alt="Lab - Komputasi & Pemodelan Struktur FT UNSIL"
+                                 alt="Komputasi & Pemodelan Struktur FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Komputasi &amp; Pemodelan Struktur
+                            Komputasi &amp; Pemodelan Struktur
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Sarana komputasi rekayasa untuk analisis elemen hingga (FEA) gedung bertingkat tahan gempa, simulasi hidraulika saluran banjir, pemodelan lereng, serta gambar kerja perancangan sipil berbasis CAD dan BIM.
+                            -
                         </p>
                     </div>
                 </article>
@@ -154,16 +154,16 @@
                     <div class="lg:col-span-6 lg:order-2">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/gedung-unsil.jpg') }}"
-                                 alt="Lab - Perpetaan & Ukur Tanah FT UNSIL"
+                                 alt="Perpetaan & Ukur Tanah FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                     </div>
                     <div class="lg:col-span-6 lg:order-1">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Perpetaan &amp; Ukur Tanah
+                            Perpetaan &amp; Ukur Tanah
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Pelatihan pemetaan terestris lapangan, penentuan koordinat poligon tertutup/terbuka, pengukuran profil memanjang/melintang trase infrastruktur, serta pembuatan peta kontur topografi digital.
+                            -
                         </p>
                     </div>
                 </article>
