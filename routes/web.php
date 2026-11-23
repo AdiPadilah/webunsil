@@ -218,3 +218,7 @@ Route::get('/berita/seminar-nasional-hathi-sumber-daya-air-berkelanjutan-2024', 
 Route::get('/berita/dosen-penguji-eksternal-seminar-hasil-disertasi-uns-2026', function () {
     return view('berita.seminar-hasil-uns');
 })->name('berita.seminar-hasil-uns');
+
+Route::get('/berita/workshop-penulisan-artikel-jurnal-internasional-q1-pasti-2026', function () {
+    return view('berita.workshop-pasti-q1');
+})->name('berita.workshop-pasti-q1');

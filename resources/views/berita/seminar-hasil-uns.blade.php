@@ -51,23 +51,23 @@
                     {{-- Isi Berita --}}
                     <div class="prose prose-sm max-w-none text-slate-700 leading-relaxed space-y-5">
                         <p>
-                            Dosen Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL) mendapat kepercayaan untuk tampil sebagai <strong>Penguji Eksternal</strong> dalam kegiatan <em>Seminar Hasil Disertasi</em> yang diselenggarakan oleh <strong>Program Studi Pascasarjana Teknik Sipil, Fakultas Teknik, Universitas Sebelas Maret (UNS), Surakarta</strong>, pada Rabu (29/10/2026).
+                            Ketua Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL), <strong>Andhy Romdani, S.T., M.Eng., Ph.D.</strong>, mendapat kepercayaan untuk tampil sebagai <strong>Penguji Eksternal</strong> dalam kegiatan <em>Seminar Hasil Disertasi</em> yang diselenggarakan oleh <strong>Program Studi Pascasarjana Teknik Sipil, Fakultas Teknik, Universitas Sebelas Maret (UNS), Surakarta</strong>, pada Rabu (29/10/2026).
                         </p>
 
                         <p>
-                            Seminar Hasil merupakan tahapan penting dalam proses penyelesaian Program Doktor (S-3), di mana kandidat doktor mempresentasikan hasil penelitian disertasinya di hadapan tim penguji yang terdiri dari promotor, ko-promotor, penguji internal, dan penguji eksternal dari perguruan tinggi lain.
+                            Seminar Hasil merupakan tahapan krusial dalam proses penyelesaian Program Doktor (S-3), di mana kandidat doktor mempresentasikan hasil penelitian disertasinya di hadapan dewan penguji. Pada kesempatan istimewa ini, disertasi tersebut dipresentasikan oleh <strong>Sri Wanto, S.T., M.T.</strong>, yang juga merupakan dosen di Program Studi Teknik Sipil FT UNSIL yang tengah menempuh studi doktoral di UNS.
                         </p>
 
                         <p>
-                            Disertasi yang diseminarkan berjudul <em>"Optimasi Kekuatan Mekanik dan Peningkatan Ketahanan Paparan Cuaca Sambungan Ethylene Propylene Diene Monomer (EPDM) untuk Peningkatan Performa Sambungan Ekspansi Jembatan Kareta"</em>. Penelitian ini berfokus pada material rekayasa jembatan dan optimasi performa sambungan ekspansi yang sangat relevan dengan kebutuhan infrastruktur jalan nasional.
+                            Disertasi yang diseminarkan berjudul <em>"Optimasi Kekuatan Mekanik dan Peningkatan Ketahanan Paparan Cuaca Sambungan Ethylene Propylene Diene Monomer (EPDM) untuk Peningkatan Performa Sambungan Ekspansi Jembatan Kareta"</em>. Penelitian ini berfokus pada inovasi material rekayasa jembatan dan optimasi performa sambungan ekspansi yang sangat aplikatif untuk menunjang keandalan infrastruktur jembatan nasional.
                         </p>
 
                         <p>
-                            Keterlibatan dosen UNSIL sebagai penguji eksternal dalam sidang doktoral di UNS mencerminkan pengakuan atas kompetensi keilmuan dan rekam jejak riset yang dimiliki oleh sivitas akademika Program Studi Teknik Sipil FT UNSIL di tingkat nasional. Hal ini sekaligus memperkuat jaringan kolaborasi akademik antar-perguruan tinggi teknik di Indonesia.
+                            Keterlibatan pimpinan prodi dan dosen UNSIL dalam sidang doktoral di UNS mencerminkan pengakuan atas kompetensi keilmuan, kepakaran rekayasa, dan rekam jejak riset sivitas akademika Program Studi Teknik Sipil FT UNSIL di tingkat nasional. Hal ini sekaligus mempererat jalinan kolaborasi riset dan akademik antara FT UNSIL dan FT UNS.
                         </p>
 
                         <p>
-                            Kegiatan seminar berlangsung di ruang sidang Program Studi Pascasarjana Teknik Sipil FT UNS dan berjalan dengan lancar. Seluruh tim penguji memberikan masukan konstruktif kepada kandidat doktor guna penyempurnaan naskah disertasi sebelum sidang terbuka.
+                            Kegiatan seminar berlangsung secara khidmat di ruang sidang Program Studi Pascasarjana Teknik Sipil FT UNS dan berjalan dengan sukses. Seluruh tim penguji memberikan masukan konstruktif guna penyempurnaan naskah disertasi sebelum melangkah ke tahapan ujian terbuka/promosi doktor.
                         </p>
                     </div>
 

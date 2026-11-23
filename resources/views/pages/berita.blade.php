@@ -166,6 +166,33 @@
                             </div>
                         </article>
 
+                        {{-- Card: Workshop Penulisan Artikel Jurnal Q1 (PASTI-Q1) --}}
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/workshop-jurnal-q1/foto-2.jpg') }}" alt="Workshop Penulisan Artikel Submit to Journal International Q1 2026" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5">
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Publikasi &amp; Riset &bull; 02 Oktober 2026
+                                    </p>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Dosen Teknik Sipil UNSIL Terpilih Ikuti Workshop Penulisan Artikel Jurnal Internasional Q1 (PASTI-Q1) 2026 di Bogor
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Kemendiktisaintek gandeng Universitas Pakuan gelar program percepatan publikasi Scopus Q1, delegasi dosen Teknik Sipil UNSIL ikuti pendampingan intensif naskah ilmiah bereputasi global.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Kemendiktisaintek</span>
+                                <a href="{{ route('berita.workshop-pasti-q1') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
                         
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
