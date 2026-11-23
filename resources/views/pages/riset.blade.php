@@ -45,7 +45,6 @@
                     <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Jejaring Kerja Sama Industri" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-7 text-white">
-                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Kemitraan Strategis</span>
                         <h3 class="text-lg sm:text-xl sm:text-2xl font-bold font-heading leading-tight text-white group-hover:text-amber-300 transition-colors">
                             Kolaborasi
                         </h3>
