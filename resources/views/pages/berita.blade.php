@@ -273,8 +273,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Alumni S-1 Sipil</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.wisuda-sarjana') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>

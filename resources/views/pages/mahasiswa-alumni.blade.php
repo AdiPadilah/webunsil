@@ -56,12 +56,6 @@
                             </p>
                         </div>
                     </div>
-                    <div class="pt-5 border-t border-slate-100 mt-5 flex items-center justify-between text-xs">
-                        <span class="text-slate-500 font-medium">Fakultas Teknik Universitas Siliwangi</span>
-                        <a href="https://instagram.com/hmsftunsil" target="_blank" class="font-semibold text-[#0070BA] hover:underline flex items-center gap-1">
-                            Instagram HMS <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
                 </div>
 
                 
