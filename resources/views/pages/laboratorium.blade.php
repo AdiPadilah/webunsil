@@ -12,15 +12,15 @@
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <nav class="flex items-center gap-2 text-xs text-amber-400 mb-3 font-medium">
-                <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
+                <a href="{{ route('home') }}" class="hover:underline flex items-center gap-1.5 text-slate-300 hover:text-amber-400 transition"><i class="fa-solid fa-house text-[10px]"></i> Beranda</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <a href="{{ route('fasilitas') }}" class="hover:underline text-slate-300">Fasilitas</a>
+                <a href="{{ route('fasilitas') }}" class="hover:underline text-slate-300 hover:text-amber-400 transition">Fasilitas</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-white font-semibold">Laboratorium</span>
+                <span class="text-slate-200">Laboratorium</span>
             </nav>
-            <span class="text-amber-400 text-xs font-medium mb-2">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Pusat Pengujian &amp; Komputasi Kejuruan
-            </span>
+            </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Laboratorium <span class="text-amber-400">Teknik Sipil</span>
             </h1>
@@ -62,10 +62,10 @@
                     </div>
                     <div class="lg:col-span-6">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Lab - Teknologi Bahan Konstruksi
+                            Teknologi Bahan Konstruksi
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            Melayani praktikum dan pengujian sifat fisis maupun mekanis bahan bangunan seperti beton, semen, agregat kasar/halus, serta baja tulangan untuk memastikan keandalan mutu konstruksi sipil.
+                            -
                         </p>
                     </div>
                 </article>
