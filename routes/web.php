@@ -214,3 +214,7 @@ Route::get('/berita/hathi-fgd-sedimentasi-segara-anakan-teknik-sipil-unsil-2024'
 Route::get('/berita/seminar-nasional-hathi-sumber-daya-air-berkelanjutan-2024', function () {
     return view('berita.seminar-hathi-air');
 })->name('berita.seminar-hathi-air');
+
+Route::get('/berita/dosen-penguji-eksternal-seminar-hasil-disertasi-uns-2026', function () {
+    return view('berita.seminar-hasil-uns');
+})->name('berita.seminar-hasil-uns');

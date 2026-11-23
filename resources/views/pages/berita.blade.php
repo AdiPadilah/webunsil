@@ -143,8 +143,30 @@
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE" class="w-full h-full object-cover">
+                                    <img src="{{ asset('images/seminar-hasil-uns/foto-2.jpg') }}" alt="Dosen UNSIL Penguji Eksternal Seminar Hasil Disertasi UNS" class="w-full h-full object-cover">
                                 </div>
+                                <div class="p-5">
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Riset &amp; Kolaborasi &bull; 29 Oktober 2026
+                                    </p>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
+                                        Dosen Teknik Sipil UNSIL Diundang sebagai Penguji Eksternal Seminar Hasil Disertasi di Pascasarjana FT UNS
+                                    </h3>
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">
+                                        Pengakuan kompetensi keilmuan dosen UNSIL di tingkat nasional melalui peran sebagai penguji eksternal dalam sidang seminar hasil disertasi Program Doktor Teknik Sipil FT UNS, Surakarta.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Kolaborasi Nasional</span>
+                                <a href="{{ route('berita.seminar-hasil-uns') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        
                                 <div class="p-5">
                                     <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
                                         Agenda Workshop &bull; 27 November 2026
