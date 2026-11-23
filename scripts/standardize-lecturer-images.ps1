@@ -1,5 +1,4 @@
-﻿Add-Type -AssemblyName System.Drawing
-using namespace System.Drawing
+﻿using namespace System.Drawing
 Add-Type -AssemblyName System.Drawing
 
 # Target canvas size (square)
