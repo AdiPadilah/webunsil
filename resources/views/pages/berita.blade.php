@@ -521,17 +521,7 @@
                     </div>
 
                     
-                    <div class="bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-xl p-6 text-white shadow-md">
-                        <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 block mb-1">Kanal Resmi</span>
-                        <h3 class="text-base font-bold">Instagram @sipilunsil</h3>
-                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                            Dapatkan liputan foto kegiatan harian, pengumuman perkuliahan cepat, dan dokumentasi akademik melalui akun Instagram resmi kami.
-                        </p>
-                        <a href="https://instagram.com/sipilunsil" target="_blank" class="mt-4 inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow transition w-full justify-center">
-                            <i class="fa-brands fa-instagram text-sm"></i>
-                            <span>Follow @sipilunsil</span>
-                        </a>
-                    </div>
+
 
 
                 </aside>
