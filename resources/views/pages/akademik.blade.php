@@ -56,7 +56,7 @@
                 <div class="grid grid-rows-2 gap-6 sm:gap-7">
 
                     {{-- Kanan Atas: Peraturan & Informasi --}}
-                    <a href="#peraturan" class="group relative rounded-3xl overflow-hidden block min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end">
+                    <a href="{{ route('download') }}" class="group relative rounded-3xl overflow-hidden block min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end">
                         <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Peraturan & Informasi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 via-50% to-transparent"></div>
                         <div class="relative z-10 p-5 sm:p-6">
@@ -105,201 +105,90 @@
                     </p>
                 </div>
 
-                {{-- Bento Grid 5 Bidang Keahlian --}}
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 sm:gap-6 items-stretch">
+                {{-- Bagian Atas: Bento Grid 1 Tinggi Kiri, 2 Tumpuk Kanan (Persis Image 1 UNPAD) --}}
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch">
 
-                    {{-- 1. Rekayasa Struktur & Material (Lebar: 7 Kolom) --}}
-                    <div class="lg:col-span-7 group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[260px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 sm:p-8">
-                        <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Rekayasa Struktur & Material" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/lab-civil.jpg') }}'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+                    {{-- Kolom Kiri: 1 Kartu Tinggi (Pilar 01: Struktur & Material) --}}
+                    <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 sm:p-8">
+                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Rekayasa Struktur & Material" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/unsil-final-bridge-competition.jpeg') }}'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
                             <p class="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1.5">
                                 Pilar 01 &bull; Struktur &amp; Material
                             </p>
-                            <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
                                 Rekayasa Struktur &amp; Material Konstruksi
                             </h3>
                         </div>
                     </div>
 
-                    {{-- 2. Geoteknik & Mekanika Tanah (Lebar: 5 Kolom) --}}
-                    <div class="lg:col-span-5 group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[260px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 sm:p-8">
-                        <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Geoteknik & Mekanika Tanah" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
-                        <div class="relative z-10">
-                            <p class="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1.5">
-                                Pilar 02 &bull; Geoteknik
-                            </p>
-                            <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
-                                Geoteknik &amp; Mekanika Tanah
-                            </h3>
+                    {{-- Kolom Kanan: 2 Kartu Ditumpuk Vertikal --}}
+                    <div class="grid grid-rows-2 gap-6 sm:gap-7">
+
+                        {{-- Pilar 02: Geoteknik & Mekanika Tanah --}}
+                        <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-5 sm:p-6">
+                            <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Geoteknik & Mekanika Tanah" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
+                            <div class="relative z-10">
+                                <p class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-1">
+                                    Pilar 02 &bull; Geoteknik
+                                </p>
+                                <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
+                                    Geoteknik &amp; Mekanika Tanah
+                                </h3>
+                            </div>
                         </div>
+
+                        {{-- Pilar 03: Teknik Sumber Daya Air --}}
+                        <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-5 sm:p-6">
+                            <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Teknik Sumber Daya Air" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
+                            <div class="relative z-10">
+                                <p class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider mb-1">
+                                    Pilar 03 &bull; Keairan
+                                </p>
+                                <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-cyan-300 transition-colors">
+                                    Teknik Sumber Daya Air
+                                </h3>
+                            </div>
+                        </div>
+
                     </div>
 
-                    {{-- 3. Teknik Sumber Daya Air (Lebar: 4 Kolom) --}}
-                    <div class="lg:col-span-4 group relative rounded-3xl overflow-hidden min-h-[200px] sm:min-h-[220px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
-                        <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Teknik Sumber Daya Air" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
-                        <div class="relative z-10">
-                            <p class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider mb-1">
-                                Pilar 03 &bull; Keairan
-                            </p>
-                            <h3 class="text-lg sm:text-xl font-bold text-white font-heading leading-tight group-hover:text-cyan-300 transition-colors">
-                                Teknik Sumber Daya Air
-                            </h3>
-                        </div>
-                    </div>
+                </div>
 
-                    {{-- 4. Rekayasa Transportasi & Jalan Raya (Lebar: 4 Kolom) --}}
-                    <div class="lg:col-span-4 group relative rounded-3xl overflow-hidden min-h-[200px] sm:min-h-[220px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
+                {{-- Bagian Bawah: 2 Kartu Berdampingan (Persis Image 2, Tanpa Tulisan Selengkapnya) --}}
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 mt-6 sm:mt-7">
+
+                    {{-- Pilar 04: Rekayasa Transportasi --}}
+                    <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[240px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
                         <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Rekayasa Transportasi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
                             <p class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-1">
                                 Pilar 04 &bull; Transportasi
                             </p>
-                            <h3 class="text-lg sm:text-xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
                                 Rekayasa Transportasi
                             </h3>
                         </div>
                     </div>
 
-                    {{-- 5. Manajemen Rekayasa Konstruksi (Lebar: 4 Kolom) --}}
-                    <div class="lg:col-span-4 group relative rounded-3xl overflow-hidden min-h-[200px] sm:min-h-[220px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
+                    {{-- Pilar 05: Manajemen Konstruksi --}}
+                    <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[240px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
                         <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Manajemen Rekayasa Konstruksi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
                             <p class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider mb-1">
                                 Pilar 05 &bull; Konstruksi
                             </p>
-                            <h3 class="text-lg sm:text-xl font-bold text-white font-heading leading-tight group-hover:text-emerald-300 transition-colors">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-emerald-300 transition-colors">
                                 Manajemen Konstruksi
                             </h3>
                         </div>
                     </div>
 
                 </div>
-            </div>
-
-            {{-- Seksi Peraturan & Informasi Akademik Resmi (#peraturan) --}}
-            <div id="peraturan" class="mt-16 sm:mt-20 pt-12 border-t border-slate-200 scroll-mt-24">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
-                    <div class="max-w-2xl">
-                        <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1">
-                            Regulasi &amp; Panduan Studi
-                        </p>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading tracking-tight">
-                            Peraturan &amp; Informasi Akademik
-                        </h2>
-                        <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
-                            Ketentuan baku akademik Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi yang wajib dipedomani oleh seluruh mahasiswa.
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <a href="{{ route('download') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0B2A4A] hover:bg-[#133E6C] text-white text-xs font-semibold rounded-xl transition shadow-sm">
-                            <i class="fa-solid fa-file-arrow-down text-amber-400"></i>
-                            <span>Unduh Buku Pedoman (PDF)</span>
-                        </a>
-                    </div>
-                </div>
-
-                {{-- Grid 4 Pilar Peraturan --}}
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-                    {{-- 1. Beban & Masa Studi --}}
-                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 hover:shadow-sm transition">
-                        <div>
-                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-[#0070BA] flex items-center justify-center text-lg mb-4">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div>
-                            <h3 class="text-base font-bold text-slate-900">Beban &amp; Masa Studi</h3>
-                            <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
-                                Beban studi jenjang Sarjana (S-1) dirancang minimal 144 SKS yang ditempuh dalam 8 semester reguler, dengan batas masa studi maksimal 14 semester (7 tahun).
-                            </p>
-                        </div>
-                        <div class="mt-5 pt-4 border-t border-slate-200/70 text-[11px] text-slate-500 font-medium">
-                            <span class="text-slate-700 font-bold">Gelar:</span> Sarjana Teknik (S.T.)
-                        </div>
-                    </div>
-
-                    {{-- 2. Evaluasi Studi Berkala --}}
-                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 hover:shadow-sm transition">
-                        <div>
-                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg mb-4">
-                                <i class="fa-solid fa-chart-line"></i>
-                            </div>
-                            <h3 class="text-base font-bold text-slate-900">Evaluasi Studi</h3>
-                            <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
-                                Evaluasi keberhasilan studi dilaksanakan berkala: Tahap I (Sem. 2 min. 24 SKS), Tahap II (Sem. 4 min. 48 SKS), dengan IPK minimal 2.00 dan tanpa nilai mutu E.
-                            </p>
-                        </div>
-                        <div class="mt-5 pt-4 border-t border-slate-200/70 text-[11px] text-slate-500 font-medium">
-                            <span class="text-slate-700 font-bold">Standar:</span> IPK Kelulusan &ge; 2.00
-                        </div>
-                    </div>
-
-                    {{-- 3. Kerja Praktik (KP) --}}
-                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 hover:shadow-sm transition">
-                        <div>
-                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg mb-4">
-                                <i class="fa-solid fa-helmet-safety"></i>
-                            </div>
-                            <h3 class="text-base font-bold text-slate-900">Kerja Praktik (KP)</h3>
-                            <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
-                                Wajib dilaksanakan di proyek konstruksi lapangan aktif (jalan, jembatan, gedung, atau keairan) minimal 2 bulan setelah menyelesaikan min. 90 SKS dan praktikum kejuruan.
-                            </p>
-                        </div>
-                        <div class="mt-5 pt-4 border-t border-slate-200/70">
-                            <a href="{{ route('alur-pengurusan-kp-skripsi') }}" class="text-[11px] font-bold text-[#0070BA] hover:underline inline-flex items-center gap-1">
-                                <span>Alur &amp; Prosedur KP</span>
-                                <i class="fa-solid fa-arrow-right text-[9px]"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    {{-- 4. Tugas Akhir / Skripsi --}}
-                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 hover:shadow-sm transition">
-                        <div>
-                            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg mb-4">
-                                <i class="fa-solid fa-book-bookmark"></i>
-                            </div>
-                            <h3 class="text-base font-bold text-slate-900">Tugas Akhir / Skripsi</h3>
-                            <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">
-                                Syarat minimal 110 SKS, lulus Metodologi Penelitian, dan seluruh praktikum lab. Meliputi 3 tahapan: Seminar Proposal, Seminar Hasil, dan Sidang Akhir Munaqasyah.
-                            </p>
-                        </div>
-                        <div class="mt-5 pt-4 border-t border-slate-200/70">
-                            <a href="{{ route('jadwal-sidang-skripsi') }}" class="text-[11px] font-bold text-[#0070BA] hover:underline inline-flex items-center gap-1">
-                                <span>Jadwal Sidang &amp; Ujian</span>
-                                <i class="fa-solid fa-arrow-right text-[9px]"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                {{-- Banner Layanan & Cuti Akademik Ringkas --}}
-                <div class="mt-8 bg-slate-900 rounded-2xl p-6 sm:p-8 text-white flex flex-col md:flex-row md:items-center justify-between gap-6 border border-slate-800">
-                    <div class="max-w-2xl">
-                        <div class="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
-                            <i class="fa-solid fa-circle-info"></i>
-                            <span>Administrasi &amp; Cuti Akademik</span>
-                        </div>
-                        <h4 class="text-lg font-bold text-white">Butuh Pengurusan Surat Izin atau Cuti Akademik?</h4>
-                        <p class="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed">
-                            Permohonan cuti kuliah diajukan maksimal 2 semester sebelum masa pembayaran UKT semester aktif. Pengurusan surat izin survei, rekomendasi, dan legalisir dapat diakses melalui Layanan Terpadu.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
-                        <a href="{{ route('layanan') }}" class="px-5 py-2.5 bg-[#EAA315] hover:bg-[#d4910b] text-slate-950 text-xs font-bold rounded-xl transition shadow">
-                            Buka Layanan Terpadu
-                        </a>
-                        <a href="{{ route('download') }}" class="px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white text-xs font-semibold rounded-xl transition border border-white/10">
-                            Formulir Akademik
-                        </a>
-                    </div>
-                </div>
-
             </div>
 
         </div>
