@@ -378,35 +378,7 @@
 
             </div>
 
-            {{-- Banner K3 Terpadu --}}
-            <div class="mt-10 sm:mt-12 bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-3xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden">
-                <div class="absolute inset-0 opacity-[0.03] bg-repeat pointer-events-none"
-                     style="background-image: url('{{ asset('images/corak-busur-white.png') }}'); background-size: 200px auto;"></div>
-                
-                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div class="max-w-2xl">
-                        <span class="text-amber-400 font-bold uppercase text-[10px] tracking-wider block mb-1">
-                            Keselamatan Kerja Laboratorium
-                        </span>
-                        <h4 class="text-lg sm:text-xl font-bold font-heading">
-                            Standar K3L (Kesehatan &amp; Keselamatan Kerja)
-                        </h4>
-                        <p class="text-slate-300 text-xs mt-1.5 leading-relaxed">
-                            Praktikum wajib menerapkan SOP K3L: wajib memakai APD lengkap (helm proyek, rompi, sepatu safety), serta tersedianya APAR dan kotak P3K di setiap laboratorium.
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-3 shrink-0">
-                        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 text-center">
-                            <i class="fa-solid fa-helmet-safety text-amber-400 text-xl mb-1 block"></i>
-                            <span class="text-[11px] font-bold text-white block">Wajib APD</span>
-                        </div>
-                        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 text-center">
-                            <i class="fa-solid fa-fire-extinguisher text-amber-400 text-xl mb-1 block"></i>
-                            <span class="text-[11px] font-bold text-white block">APAR Siaga</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
         </div>
     </section>

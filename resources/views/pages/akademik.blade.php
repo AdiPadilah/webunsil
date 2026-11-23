@@ -108,16 +108,16 @@
                 {{-- Bagian Atas: Bento Grid 1 Tinggi Kiri, 2 Tumpuk Kanan (Persis Image 1 UNPAD) --}}
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch">
 
-                    {{-- Kolom Kiri: 1 Kartu Tinggi (Pilar 01: Struktur & Material) --}}
+                    {{-- Kolom Kiri: 1 Kartu Tinggi (Pilar 01: Struktur & Bahan) --}}
                     <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 sm:p-8">
-                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Rekayasa Struktur & Material" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/unsil-final-bridge-competition.jpeg') }}'">
+                        <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Struktur &amp; Bahan" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
                             <p class="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1.5">
-                                Pilar 01 &bull; Struktur &amp; Material
+                                Pilar 01 &bull; Struktur &amp; Bahan
                             </p>
                             <h3 class="text-2xl sm:text-3xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
-                                Rekayasa Struktur &amp; Material Konstruksi
+                                Struktur &amp; Bahan
                             </h3>
                         </div>
                     </div>
@@ -125,30 +125,30 @@
                     {{-- Kolom Kanan: 2 Kartu Ditumpuk Vertikal --}}
                     <div class="grid grid-rows-2 gap-6 sm:gap-7">
 
-                        {{-- Pilar 02: Geoteknik & Mekanika Tanah --}}
+                        {{-- Pilar 02: Sumber Daya Air --}}
                         <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-5 sm:p-6">
-                            <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Geoteknik & Mekanika Tanah" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Sumber Daya Air" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                             <div class="relative z-10">
-                                <p class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-1">
-                                    Pilar 02 &bull; Geoteknik
+                                <p class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider mb-1">
+                                    Pilar 02 &bull; Sumber Daya Air
                                 </p>
-                                <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
-                                    Geoteknik &amp; Mekanika Tanah
+                                <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-cyan-300 transition-colors">
+                                    Sumber Daya Air
                                 </h3>
                             </div>
                         </div>
 
-                        {{-- Pilar 03: Teknik Sumber Daya Air --}}
+                        {{-- Pilar 03: Geoteknik --}}
                         <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-5 sm:p-6">
-                            <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Teknik Sumber Daya Air" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Geoteknik" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                             <div class="relative z-10">
-                                <p class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider mb-1">
-                                    Pilar 03 &bull; Keairan
+                                <p class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-1">
+                                    Pilar 03 &bull; Geoteknik
                                 </p>
-                                <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-cyan-300 transition-colors">
-                                    Teknik Sumber Daya Air
+                                <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
+                                    Geoteknik
                                 </h3>
                             </div>
                         </div>
@@ -160,27 +160,27 @@
                 {{-- Bagian Bawah: 2 Kartu Berdampingan (Persis Image 2, Tanpa Tulisan Selengkapnya) --}}
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 mt-6 sm:mt-7">
 
-                    {{-- Pilar 04: Rekayasa Transportasi --}}
+                    {{-- Pilar 04: Transportasi --}}
                     <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[240px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
-                        <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Rekayasa Transportasi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Transportasi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
                             <p class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-1">
                                 Pilar 04 &bull; Transportasi
                             </p>
                             <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
-                                Rekayasa Transportasi
+                                Transportasi
                             </h3>
                         </div>
                     </div>
 
                     {{-- Pilar 05: Manajemen Konstruksi --}}
                     <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[240px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
-                        <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Manajemen Rekayasa Konstruksi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
+                        <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Manajemen Konstruksi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
                             <p class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider mb-1">
-                                Pilar 05 &bull; Konstruksi
+                                Pilar 05 &bull; Manajemen Konstruksi
                             </p>
                             <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-emerald-300 transition-colors">
                                 Manajemen Konstruksi
