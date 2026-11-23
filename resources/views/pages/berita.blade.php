@@ -476,17 +476,31 @@
                             </div>
 
                             
-                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 hover:shadow-sm transition">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-[10px] font-bold text-slate-700 block uppercase">15 &ndash; 24 Desember 2026</span>
-                                    <span class="text-[10px] font-medium text-slate-500">Mendatang</span>
+                            {{-- Agenda Mendatang 2 (Belum Fix) --}}
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 hover:shadow-sm transition flex items-start gap-4">
+                                <div class="flex-shrink-0 w-14 text-center rounded-lg overflow-hidden border border-slate-200">
+                                    <div class="bg-slate-700 text-slate-300 text-[10px] font-bold py-1 uppercase tracking-wider">
+                                        -
+                                    </div>
+                                    <div class="bg-white text-slate-700 text-xl font-bold py-1.5 font-heading">
+                                        -
+                                    </div>
                                 </div>
-                                <h4 class="text-xs font-bold text-slate-900 mt-1 leading-snug">
-                                    Ujian Akhir Semester (UAS) Ganjil T.A. 2026/2027
-                                </h4>
-                                <p class="text-[11px] text-slate-500 mt-0.5 leading-relaxed">
-                                    Pelaksanaan evaluasi akhir semester seluruh mata kuliah keahlian teknik sipil.
-                                </p>
+                                <div class="flex-1 min-w-0">
+                                    <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                                        -
+                                    </h4>
+                                    <div class="text-[11px] text-slate-500 space-y-0.5 mt-1.5">
+                                        <p class="flex items-center gap-1.5">
+                                            <i class="fa-regular fa-clock text-slate-400 text-[10px]"></i>
+                                            <span>-</span>
+                                        </p>
+                                        <p class="flex items-center gap-1.5">
+                                            <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i>
+                                            <span>-</span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
