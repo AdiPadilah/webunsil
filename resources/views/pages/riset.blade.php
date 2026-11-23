@@ -77,18 +77,6 @@
                 </a>
 
 
-                {{-- Baris 3: Card Full Width — Dosen & Peneliti --}}
-                <a href="{{ route('dosen') }}" class="col-span-1 sm:col-span-12 group relative rounded-2xl sm:rounded-3xl overflow-hidden block h-56 sm:h-64 lg:h-[280px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900">
-                    <img src="{{ asset('images/daftar-dosen.png') }}" alt="Dosen Peneliti Teknik Sipil UNSIL" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-7 text-white">
-                        <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block mb-1">Profil Peneliti</span>
-                        <h3 class="text-lg sm:text-2xl font-bold font-heading leading-tight text-white group-hover:text-amber-300 transition-colors">
-                            Dosen &amp; Peneliti Teknik Sipil UNSIL
-                        </h3>
-                    </div>
-                </a>
-
             </div>
 
         </div>
