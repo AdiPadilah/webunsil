@@ -24,9 +24,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Aula Fakultas <span class="text-amber-400">Teknik</span>
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Gedung aula representatif di lingkungan Fakultas Teknik Kampus 2 UNSIL Mugarsari dengan kapasitas hingga 300 kursi, dilengkapi sistem tata suara profesional, pendingin ruangan (AC sentral), panggung kehormatan, dan fasilitas audiovisual untuk mendukung berbagai agenda seremonial dan keilmuan keteknikan.
-            </p>
         </div>
     </section>
 

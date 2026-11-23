@@ -21,9 +21,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Kurikulum &amp; Pembelajaran
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Struktur kurikulum berbasis capaian pembelajaran (OBE) dirancang komprehensif selama 8 semester untuk menghasilkan lulusan yang adaptif, kompeten, dan siap bersaing di pasar kerja konstruksi modern.
-            </p>
         </div>
     </section>
 

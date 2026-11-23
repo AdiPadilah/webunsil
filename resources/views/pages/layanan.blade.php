@@ -21,9 +21,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Layanan Terpadu
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Pusat layanan administrasi akademik, perizinan penelitian kerja praktik, pengesahan dokumen, dan surat keterangan resmi Program Studi Teknik Sipil FT UNSIL.
-            </p>
         </div>
     </section>
 

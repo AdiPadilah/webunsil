@@ -20,9 +20,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Prestasi Mahasiswa
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
-                Catatan pencapaian mahasiswa Teknik Sipil UNSIL di kompetisi nasional, publikasi jurnal internasional, dan kegiatan ilmiah.
-            </p>
         </div>
     </section>
 

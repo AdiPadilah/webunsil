@@ -24,9 +24,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Ruang Kelas <span class="text-amber-400">&amp; Perkuliahan</span>
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Ruang perkuliahan modern di Gedung Fakultas Teknik Kampus 2 UNSIL Mugarsari yang didesain ergonomis, dilengkapi penyejuk udara (AC), perangkat multimedia interaktif, dan jaringan Wi-Fi berkecepatan tinggi guna mendukung implementasi kurikulum OBE (Outcome-Based Education).
-            </p>
         </div>
     </section>
 

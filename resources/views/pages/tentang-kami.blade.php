@@ -22,9 +22,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Tentang Kami
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
-                Mengenal lebih dekat Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi &mdash; komitmen pada integritas keilmuan, keunggulan pendidikan keteknikan, dan dedikasi pembangunan berkelanjutan.
-            </p>
         </div>
     </section>
 

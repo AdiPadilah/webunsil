@@ -24,9 +24,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Kantin Kampus <span class="text-amber-400">FT UNSIL</span>
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Pusat kuliner sehat sivitas akademika Fakultas Teknik di Kampus 2 UNSIL Mugarsari yang menyajikan aneka hidangan nusantara bergizi, higienis, dan terjangkau, dengan suasana santap semi-outdoor berhawa sejuk serta area interaksi sosial yang nyaman.
-            </p>
         </div>
     </section>
 

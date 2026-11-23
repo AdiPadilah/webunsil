@@ -23,9 +23,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Kolaborasi Industri &amp; Instansi
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Membangun jejaring sinergis antara dunia akademik, industri jasa konstruksi nasional, kementerian teknis, dan mitra global guna mempercepat transfer teknologi dan kesiapan kerja lulusan.
-            </p>
         </div>
     </section>
 @endsection

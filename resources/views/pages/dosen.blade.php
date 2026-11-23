@@ -200,9 +200,6 @@ $dosenList = [
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Dosen &amp; Tenaga Pengajar
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Didukung oleh staf pengajar berkualifikasi Magister (S-2) dan Doktor (S-3) lulusan perguruan tinggi terkemuka di dalam dan luar negeri, terdistribusi ke dalam Kelompok Bidang Keahlian (KBK) keinsinyuran sipil.
-            </p>
         </div>
     </section>
 

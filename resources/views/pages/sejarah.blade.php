@@ -20,9 +20,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1 leading-tight">
                 Sejarah Program Studi S-1 Teknik Sipil
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Menyusuri perjalanan dedikasi keinsinyuran: Dari pilar perintis pendidikan teknik di Priangan Timur hingga bertransformasi menjadi Perguruan Tinggi Negeri dengan pusat riset di Kampus 2 Mugarsari.
-            </p>
         </div>
     </section>
 

@@ -23,9 +23,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Pengabdian Kepada Masyarakat (PkM)
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Menerapkan kepakaran keinsinyuran teknik sipil secara nyata untuk membantu problem lingkungan masyarakat, mitigasi bencana alam, dan pembangunan infrastruktur desa di wilayah Priangan Timur.
-            </p>
         </div>
     </section>
 @endsection

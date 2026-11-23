@@ -20,9 +20,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Visi &amp; Misi Program Studi
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Arah kebijakan dan pedoman penyelenggaraan Tri Dharma Perguruan Tinggi Jurusan Teknik Sipil Fakultas Teknik Universitas Siliwangi menuju keunggulan nasional.
-            </p>
         </div>
     </section>
 

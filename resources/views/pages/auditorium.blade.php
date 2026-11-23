@@ -24,9 +24,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Ruang Seminar <span class="text-amber-400">&amp; Sidang</span>
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Fasilitas ruang seminar dan sidang tugas akhir di Gedung Fakultas Teknik Kampus 2 UNSIL Mugarsari dengan kapasitas 60â€“100 orang, dilengkapi peralatan audiovisual modern, pendingin udara, dan tata suara profesional untuk mendukung sidang ilmiah, seminar jurusan, serta kuliah pakar Teknik Sipil.
-            </p>
         </div>
     </section>
 

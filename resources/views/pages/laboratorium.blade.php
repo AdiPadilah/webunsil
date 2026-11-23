@@ -24,9 +24,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Laboratorium <span class="text-amber-400">Teknik Sipil</span>
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Fasilitas laboratorium keinsinyuran modern di Gedung FT Kampus 2 UNSIL Mugarsari guna mendukung kegiatan praktikum mahasiswa, penelitian tugas akhir, dan pengujian material konstruksi berstandar SNI dan ASTM.
-            </p>
         </div>
     </section>
 

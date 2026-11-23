@@ -19,9 +19,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Buku Ajar &amp; Referensi Dosen
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Koleksi buku ber-ISBN hasil riset dan pengalaman praktis dosen Program Studi S-1 Teknik Sipil FT UNSIL sebagai pegangan kuliah dan rujukan profesi insinyur di industri konstruksi.
-            </p>
         </div>
     </section>
 @endsection

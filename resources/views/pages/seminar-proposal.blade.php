@@ -19,9 +19,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Seminar Proposal (Sempro)
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Pemaparan usulan penelitian tugas akhir skripsi di hadapan dosen pembimbing dan dosen penguji Program Studi Teknik Sipil Universitas Siliwangi.
-            </p>
         </div>
     </section>
 @endsection

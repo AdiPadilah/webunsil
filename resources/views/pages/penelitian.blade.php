@@ -23,9 +23,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Penelitian &amp; Inovasi Keteknikan
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Pengembangan riset terapan berwawasan lingkungan dan mitigasi bencana pada 5 Kelompok Bidang Keahlian (KBK) guna menjawab tantangan pembangunan infrastruktur berkelanjutan di tingkat regional dan nasional.
-            </p>
         </div>
     </section>
 @endsection

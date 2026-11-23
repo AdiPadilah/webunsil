@@ -19,9 +19,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Sidang Akhir
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Ujian pendadaran skripsi dan evaluasi penentu kelulusan derajat sarjana teknik (S-1) Program Studi Teknik Sipil Universitas Siliwangi.
-            </p>
         </div>
     </section>
 @endsection

@@ -19,9 +19,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Seminar Hasil (Semhas)
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Pemaparan hasil penelitian, analisis data pengujian laboratorium/lapangan, dan pembahasan skripsi mahasiswa Program Studi Teknik Sipil Universitas Siliwangi.
-            </p>
         </div>
     </section>
 @endsection

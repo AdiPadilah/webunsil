@@ -24,9 +24,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
                 Ruang Rapat <span class="text-amber-400">&amp; Diskusi</span>
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-3 max-w-3xl leading-relaxed">
-                Sarana ruang rapat representatif di Gedung Fakultas Teknik Kampus 2 UNSIL Mugarsari dengan konfigurasi boardroom berkapasitas 20&ndash;30 orang, dilengkapi fasilitas hybrid meeting, smart display, pendingin udara, dan koneksi internet stabil untuk mendukung koordinasi prodi, rapat kurikulum, serta audiensi kelembagaan.
-            </p>
         </div>
     </section>
 

@@ -19,9 +19,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Alur Pengurusan Kerja Praktik &amp; Skripsi
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Panduan lengkap tahapan dan prosedur pengurusan Kerja Praktik dan Skripsi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.
-            </p>
         </div>
     </section>
 @endsection

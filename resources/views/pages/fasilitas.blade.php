@@ -19,9 +19,6 @@
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Fasilitas Teknik Sipil
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Sarana dan prasarana di Kampus 2 Fakultas Teknik UNSIL Mugarsari yang menunjang kegiatan perkuliahan, praktikum pengujian material konstruksi, riset sivitas akademika, dan kegiatan mahasiswa.
-            </p>
         </div>
     </section>
 
