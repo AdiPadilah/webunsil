@@ -82,8 +82,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">@sipilunsil</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.workshop-obe') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -109,8 +108,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Kolaborasi Nasional</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.seminar-hasil-uns') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -136,10 +134,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
-                                <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
+                                <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </article>
@@ -162,10 +160,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
-                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
+                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </article>
@@ -188,10 +186,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Kerja Sama NCKU</span>
-                                <a href="{{ route('berita.seminar-taiwan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    <span>Selengkapnya →</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
+                                <a href="{{ route('berita.seminar-taiwan') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </article>
@@ -214,8 +212,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Kemendiktisaintek</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.workshop-pasti-q1') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -246,8 +243,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Akademik &amp; Industri</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.kuliah-tamu-bim') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -299,8 +295,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.fahmi-rahmat') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -326,8 +321,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.muhammad-raka') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -353,8 +347,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.seminar-hathi-air') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -380,8 +373,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.hathi-segara-anakan') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -407,8 +399,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
                                 <a href="{{ route('berita.tirta-adhipermana') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
