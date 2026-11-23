@@ -81,48 +81,6 @@
                             </p>
                         </div>
                     </div>
-                    <div class="pt-5 border-t border-slate-100 mt-5 flex items-center justify-between text-xs">
-                        <span class="text-slate-500 font-medium">Kiprah Sejak 1984</span>
-                        <a href="https://unsil.ac.id" target="_blank" class="font-semibold text-[#0070BA] hover:underline flex items-center gap-1">
-                            Portal Tracer Study <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="border-t border-slate-200 pt-10">
-                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
-                    <div>
-                        <h2 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading">Dokumentasi Kegiatan</h2>
-                        <p class="text-slate-500 text-xs sm:text-sm mt-0.5">Potret aktivitas akademik, seminar, praktikum, dan kehidupan kampus.</p>
-                    </div>
-                    <a href="https://instagram.com/sipilunsil" target="_blank"
-                       class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-pink-600 transition">
-                        <i class="fa-brands fa-instagram text-sm"></i>
-                        Instagram @sipilunsil â†’
-                    </a>
-                </div>
-
-                
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-                    @php
-                    $igPhotos = [
-                        ['img' => 'seminar-taiwan-ncku.jpg',       'caption' => 'Seminar Internasional NCKU Taiwan'],
-                        ['img' => 'tugu-fakultas-teknik-unsil.jpg', 'caption' => 'Fakultas Teknik Universitas Siliwangi'],
-                        ['img' => 'event-1.jpg',                   'caption' => 'Kunjungan Ilmiah Bendungan Leuwikeris'],
-                        ['img' => 'event-3.jpg',                   'caption' => 'National Bridge Design Competition'],
-                        ['img' => 'hms-unsil.jpg',                 'caption' => 'Himpunan Mahasiswa Sipil FT UNSIL'],
-                        ['img' => 'wisuda-unsil.jpg',              'caption' => 'Wisuda Sarjana Teknik Sipil'],
-                    ];
-                    @endphp
-                    @foreach($igPhotos as $p)
-                    <div class="aspect-square rounded-lg overflow-hidden bg-slate-200 border border-slate-200 group">
-                        <img src="{{ asset('images/' . $p['img']) }}" alt="{{ $p['caption'] }}"
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                             onerror="this.style.display='none'">
-                    </div>
-                    @endforeach
                 </div>
             </div>
 
