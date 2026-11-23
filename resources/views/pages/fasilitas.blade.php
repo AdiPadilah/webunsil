@@ -172,7 +172,7 @@
                 <div class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col justify-between">
                     <div>
                         <div class="h-48 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/event-3.jpg') }}" alt="Ruang Rapat &amp; Diskusi Teknik Sipil"
+                            <img src="{{ asset('images/ruang-rapat-1.jpg') }}" alt="Ruang Rapat &amp; Diskusi Teknik Sipil"
                                  class="w-full h-full object-cover">
                         </div>
 

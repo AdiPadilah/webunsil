@@ -111,6 +111,63 @@
 
             </div>
 
+            {{-- Galeri Foto Dokumentasi Ruang Rapat --}}
+            <div class="mt-16 pt-12 border-t border-slate-200">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Dokumentasi Ruangan</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1 font-heading">Galeri Ruang Rapat</h3>
+                    <p class="text-slate-500 mt-2 text-xs sm:text-sm">
+                        Kondisi riil interior ruang rapat, konfigurasi meja konferensi, dan area pendukung di Gedung FT UNSIL.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/ruang-rapat-1.jpg') }}" alt="Konferensi Utama &amp; Smart Display TV"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 bg-white border-t border-slate-100">
+                            <h4 class="font-bold text-slate-900 text-sm">Ruang Konferensi Utama &amp; Smart Display TV</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Meja konferensi oval dengan fasilitas monitor presentasi interaktif</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/ruang-rapat-2.jpg') }}" alt="Meja Rapat Boardroom &amp; Tata Ruang"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 bg-white border-t border-slate-100">
+                            <h4 class="font-bold text-slate-900 text-sm">Meja Rapat Boardroom &amp; Tata Ruang</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Sudut pandang meja rapat menghadap partisi kaca dan koridor dalam</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/ruang-rapat-3.jpg') }}" alt="Partisi Kaca &amp; Ruang Diskusi Terbuka"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 bg-white border-t border-slate-100">
+                            <h4 class="font-bold text-slate-900 text-sm">Partisi Kaca &amp; Ruang Diskusi Terbuka</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Skat kaca transparan kedap suara yang menghubungkan ruang rapat dan staf</p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/ruang-rapat-4.jpg') }}" alt="Area Pendukung &amp; Meja Diskusi Bundar"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 bg-white border-t border-slate-100">
+                            <h4 class="font-bold text-slate-900 text-sm">Area Pendukung &amp; Meja Diskusi Bundar</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Fasilitas pendukung rapat, lemari arsip, dispenser, dan meja briefing cepat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
