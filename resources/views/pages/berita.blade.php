@@ -143,15 +143,12 @@
                         <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE" class="w-full h-full object-cover  ">
-                                    <span class="absolute top-3 left-3 bg-[#0070BA] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                                        Agenda Workshop
-                                    </span>
+                                    <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
-                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
-                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 27 November 2026
-                                    </span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Agenda Workshop &bull; 27 November 2026
+                                    </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         Workshop Penguatan Kurikulum Teknik Sipil Berbasis Outcome-Based Education (OBE)
                                     </h3>
@@ -170,18 +167,15 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/lab-civil.jpg') }}" alt="Kuliah Tamu BIM" class="w-full h-full object-cover  " onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
-                                    <span class="absolute top-3 left-3 bg-purple-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                                        Kuliah Tamu
-                                    </span>
+                                    <img src="{{ asset('images/lab-civil.jpg') }}" alt="Kuliah Tamu BIM" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
                                 </div>
                                 <div class="p-5">
-                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
-                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 08 Januari 2026
-                                    </span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Kuliah Tamu &bull; 08 Januari 2026
+                                    </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         Kuliah Tamu Building Information Modelling (BIM) untuk Infrastruktur Modern
                                     </h3>
@@ -200,18 +194,15 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Pelepasan Calon Wisudawan Teknik Sipil" class="w-full h-full object-cover  " onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
-                                    <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                                        Wisuda &amp; Alumni
-                                    </span>
+                                    <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Pelepasan Calon Wisudawan Teknik Sipil" class="w-full h-full object-cover" onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
                                 </div>
                                 <div class="p-5">
-                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
-                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 24 Oktober 2025
-                                    </span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Wisuda &amp; Alumni &bull; 24 Oktober 2025
+                                    </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         Pelepasan Calon Wisudawan Sarjana Teknik Sipil FT Universitas Siliwangi
                                     </h3>
@@ -230,18 +221,15 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat Amanulloh Mahasiswa Teknik Sipil UNSIL" class="w-full h-full object-cover  ">
-                                    <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                                        Liputan unsil.ac.id
-                                    </span>
+                                    <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat Amanulloh Mahasiswa Teknik Sipil UNSIL" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
-                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
-                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 23 Oktober 2025
-                                    </span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Prestasi Riset &bull; 23 Oktober 2025
+                                    </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         "Mahasiswa Ajaib" dari UNSIL: Fahmi Rahmat Amanulloh Tembus 3 Jurnal Scopus &amp; 2 Nasional di Semester 7
                                     </h3>
@@ -251,7 +239,7 @@
                                 </div>
                             </div>
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Prestasi Riset &bull; unsil.ac.id</span>
+                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.fahmi-rahmat') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -260,18 +248,15 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka El Ghifari Lulusan Teknik Sipil UNSIL" class="w-full h-full object-cover  ">
-                                    <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                                        Liputan unsil.ac.id
-                                    </span>
+                                    <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka El Ghifari Lulusan Teknik Sipil UNSIL" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
-                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
-                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 22 Agustus 2025
-                                    </span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Prestasi Riset &bull; 22 Agustus 2025
+                                    </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         Lulusan Teknik Sipil UNSIL Taklukkan Dua Jurnal Internasional Bereputasi Scopus: Muhammad Raka El Ghifari
                                     </h3>
@@ -281,7 +266,7 @@
                                 </div>
                             </div>
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Prestasi Riset &bull; unsil.ac.id</span>
+                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.muhammad-raka') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -290,18 +275,15 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 NPC 2023" class="w-full h-full object-cover  ">
-                                    <span class="absolute top-3 left-3 bg-pink-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                                        Liputan unsil.ac.id
-                                    </span>
+                                    <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 NPC 2023" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
-                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
-                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 9 November 2023
-                                    </span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Prestasi Kompetisi &bull; 9 November 2023
+                                    </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1 National Paper Competition 2023 di Aceh
                                     </h3>
@@ -311,7 +293,7 @@
                                 </div>
                             </div>
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Prestasi Kompetisi &bull; unsil.ac.id</span>
+                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.tirta-adhipermana') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -320,18 +302,15 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="HATHI FGD Sedimentasi Segara Anakan Teknik Sipil UNSIL" class="w-full h-full object-cover  ">
-                                    <span class="absolute top-3 left-3 bg-cyan-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                                        Liputan unsil.ac.id
-                                    </span>
+                                    <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="HATHI FGD Sedimentasi Segara Anakan Teknik Sipil UNSIL" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
-                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
-                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 22 Maret 2024
-                                    </span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Kolaborasi &bull; 22 Maret 2024
+                                    </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         Pelantikan HATHI Cabang Banjar &amp; FGD Penanganan Sedimentasi Segara Anakan bersama Teknik Sipil UNSIL
                                     </h3>
@@ -341,7 +320,7 @@
                                 </div>
                             </div>
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Kolaborasi &bull; unsil.ac.id</span>
+                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.hathi-segara-anakan') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -350,18 +329,15 @@
                         </article>
 
                         
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
-                                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar Nasional HATHI Sumber Daya Air Berkelanjutan 2024" class="w-full h-full object-cover  ">
-                                    <span class="absolute top-3 left-3 bg-blue-700 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow">
-                                        Liputan unsil.ac.id
-                                    </span>
+                                    <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Seminar Nasional HATHI Sumber Daya Air Berkelanjutan 2024" class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5">
-                                    <span class="text-[11px] font-semibold text-amber-600 flex items-center gap-1 mb-1.5">
-                                        <i class="fa-solid fa-calendar-day text-[10px]"></i> 3 Juni 2024
-                                    </span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        Seminar Ilmiah &bull; 3 Juni 2024
+                                    </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         Seminar Nasional Perdana HATHI: Pemanfaatan Teknologi Modern untuk Pengelolaan Sumber Daya Air Berkelanjutan
                                     </h3>
@@ -371,7 +347,7 @@
                                 </div>
                             </div>
                             <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                <span class="text-[11px] text-slate-400">Seminar &bull; unsil.ac.id</span>
+                                <span class="text-[11px] text-slate-400">Liputan unsil.ac.id</span>
                                 <a href="{{ route('berita.seminar-hathi-air') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -417,7 +393,7 @@
                             <div class="p-3.5 rounded-xl bg-blue-50/80 border border-blue-200 hover:shadow-sm transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-bold text-blue-700 block uppercase">27 November 2026</span>
-                                    <span class="text-[9px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Segera Hadir</span>
+                                    <span class="text-[10px] font-bold text-amber-600">Segera Hadir</span>
                                 </div>
                                 <h4 class="text-xs font-bold text-slate-900 mt-1 leading-snug">
                                     Workshop Kurikulum Berbasis Outcome-Based Education (OBE)
@@ -434,8 +410,8 @@
                             
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 hover:shadow-sm transition">
                                 <div class="flex items-center justify-between">
-                                    <span class="text-[10px] font-bold text-indigo-700 block uppercase">15 &ndash; 24 Desember 2026</span>
-                                    <span class="text-[9px] font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded-full">Mendatang</span>
+                                    <span class="text-[10px] font-bold text-slate-700 block uppercase">15 &ndash; 24 Desember 2026</span>
+                                    <span class="text-[10px] font-medium text-slate-500">Mendatang</span>
                                 </div>
                                 <h4 class="text-xs font-bold text-slate-900 mt-1 leading-snug">
                                     Ujian Akhir Semester (UAS) Ganjil T.A. 2026/2027
@@ -452,9 +428,7 @@
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-90 hover:opacity-100 transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-semibold text-slate-500 block uppercase">12 Oktober 2026</span>
-                                    <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full flex items-center gap-1">
-                                        <i class="fa-solid fa-check text-[8px]"></i> Selesai
-                                    </span>
+                                    <span class="text-[10px] font-medium text-slate-400">Selesai</span>
                                 </div>
                                 <h4 class="text-xs font-bold text-slate-800 mt-1 leading-snug">
                                     Seminar Internasional Indonesia - Taiwan (NCKU)
@@ -472,9 +446,7 @@
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-semibold text-slate-500 block uppercase">Juni 2026</span>
-                                    <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full flex items-center gap-1">
-                                        <i class="fa-solid fa-check text-[8px]"></i> Selesai
-                                    </span>
+                                    <span class="text-[10px] font-medium text-slate-400">Selesai</span>
                                 </div>
                                 <h4 class="text-xs font-bold text-slate-800 mt-1 leading-snug">
                                     Civil Expo &amp; Seminar Nasional 2026
@@ -488,9 +460,7 @@
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-semibold text-slate-500 block uppercase">01 &ndash; 10 Mei 2026</span>
-                                    <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full flex items-center gap-1">
-                                        <i class="fa-solid fa-check text-[8px]"></i> Selesai
-                                    </span>
+                                    <span class="text-[10px] font-medium text-slate-400">Selesai</span>
                                 </div>
                                 <h4 class="text-xs font-bold text-slate-800 mt-1 leading-snug">
                                     Pendaftaran Seminar Proposal &amp; Sidang TA
@@ -504,9 +474,7 @@
                             <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 opacity-80 hover:opacity-100 transition">
                                 <div class="flex items-center justify-between">
                                     <span class="text-[10px] font-semibold text-slate-500 block uppercase">12 &ndash; 15 April 2026</span>
-                                    <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full flex items-center gap-1">
-                                        <i class="fa-solid fa-check text-[8px]"></i> Selesai
-                                    </span>
+                                    <span class="text-[10px] font-medium text-slate-400">Selesai</span>
                                 </div>
                                 <h4 class="text-xs font-bold text-slate-800 mt-1 leading-snug">
                                     Ujian Tengah Semester (UTS) Genap
