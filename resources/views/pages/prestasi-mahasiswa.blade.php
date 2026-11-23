@@ -94,424 +94,246 @@
                 <div class="lg:col-span-2 space-y-6">
 
                     {{-- 1. Tirta Adhipermana Juara 1 NPC 2023 --}}
-                    <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="lomba">
-                        <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
-                            <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 National Paper Competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
-                            
-                            <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
-                                <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">26</span>
-                                <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">OKT</span>
-                                <span class="block text-[8px] text-slate-400 leading-none">2023</span>
+                    <article class="prestasi-card bg-[#0B2A4A] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-md border border-blue-900/60 hover:border-amber-400/40 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-6 items-start group" data-category="lomba">
+                        <div class="w-full md:w-52 lg:w-56 shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-full aspect-[4/3] md:aspect-square rounded-2xl overflow-hidden bg-slate-900 shadow">
+                                <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana Juara 1 National Paper Competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
-
-                            <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
-                                <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-md">
-                                    <i class="fa-solid fa-trophy text-xs"></i> Juara 1 Nasional
-                                </span>
-                            </div>
+                            <h4 class="text-sm sm:text-base font-bold text-white mt-3 text-center md:text-left leading-snug font-heading">
+                                Tim "Tirta Adhipermana"
+                            </h4>
+                            <p class="text-xs font-semibold text-amber-400 mt-1 text-center md:text-left">
+                                Teknik Sipil FT UNSIL
+                            </p>
+                            <p class="text-[11px] text-slate-300 mt-0.5 text-center md:text-left leading-tight">
+                                Ria (Ketua), Farhan, Alfarozi &bull; Pembimbing: Andhy Romdani, Ph.D.
+                            </p>
                         </div>
 
-                        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div class="flex-1 flex flex-col justify-between h-full w-full">
                             <div>
-                                <div class="flex flex-wrap items-center gap-2 mb-2.5">
-                                    <span class="inline-flex items-center gap-1 text-[10px] font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-200">
-                                        <i class="fa-solid fa-medal text-[9px]"></i> National Paper Competition (NPC)
-                                    </span>
-                                    <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                                        Menyisihkan 81 Peserta
-                                    </span>
-                                </div>
-
-                                <h2 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-700 transition leading-snug font-heading">
-                                    <a href="{{ route('berita.tirta-adhipermana') }}">
-                                        Tim "Tirta Adhipermana" Jurusan Teknik Sipil UNSIL Menyabet Juara 1 National Paper Competition 2023
+                                <h3 class="text-lg sm:text-xl lg:text-2xl font-extrabold italic font-heading text-white leading-snug mb-3">
+                                    <a href="{{ route('berita.tirta-adhipermana') }}" class="hover:text-amber-300 transition">
+                                        &ldquo;Aplikasi Sumur Artesis Inovatif Solusi Krisis Air Pasca-Bencana Gempa&rdquo;
                                     </a>
-                                </h2>
-
-                                <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Kapan:</strong> 25 &ndash; 26 Oktober 2023</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-location-dot text-rose-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Dimana:</strong> Universitas Syiah Kuala (USK), Banda Aceh</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-shapes text-blue-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Ajang:</strong> The 4th Aceh International Symposium on Civil Engineering (AISCE 2023)</span>
-                                    </p>
-                                </div>
-
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Humas UNSIL &mdash; Tim Tirta Adhipermana dari Jurusan Teknik Sipil Universitas Siliwangi berhasil meraih Juara 1 dengan karya inovatif <em>"Aplikasi Sumur Artesis Inovatif sebagai Solusi Krisis Air Bersih Pasca-Bencana Gempa Bumi dan Strategi Perwujudan SDGs"</em>.
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed text-justify sm:text-left">
+                                    Tim Tirta Adhipermana dari Jurusan Teknik Sipil Universitas Siliwangi sukses menyabet Juara 1 National Paper Competition pada ajang The 4th Aceh International Symposium on Civil Engineering (AISCE 2023) di Universitas Syiah Kuala Banda Aceh, berhasil menyisihkan 81 tim dari perguruan tinggi se-Indonesia.
                                 </p>
                             </div>
 
-                            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-users text-blue-600"></i>
-                                    <strong>Tim:</strong> Ria (Ketua), Farhan, Alfarozi
+                            <div class="mt-5 pt-3.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                                <span class="text-[11px] text-slate-400">
+                                    26 Oktober 2023 &bull; Banda Aceh
                                 </span>
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-user-tie text-amber-600"></i>
-                                    <strong>Pembimbing:</strong> Andhy Romdani, Ph.D.
-                                </span>
-                                <a href="{{ route('berita.tirta-adhipermana') }}" class="text-[11px] text-blue-700 font-bold hover:underline flex items-center gap-1 ml-auto">
+                                <a href="{{ route('berita.tirta-adhipermana') }}" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 ml-auto transition">
                                     <span>Baca Berita</span>
-                                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </div>
                     </article>
 
                     {{-- 2. Fahmi Rahmat Publikasi Scopus --}}
-                    <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="publikasi">
-                        <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
-                            <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat Publikasi Scopus Teknik Sipil UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
-                            
-                            <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
-                                <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">21</span>
-                                <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">AGU</span>
-                                <span class="block text-[8px] text-slate-400 leading-none">2025</span>
+                    <article class="prestasi-card bg-[#0B2A4A] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-md border border-blue-900/60 hover:border-amber-400/40 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-6 items-start group" data-category="publikasi">
+                        <div class="w-full md:w-52 lg:w-56 shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-full aspect-[4/3] md:aspect-square rounded-2xl overflow-hidden bg-slate-900 shadow">
+                                <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat Publikasi Scopus Teknik Sipil UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
-
-                            <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
-                                <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-indigo-600 text-white shadow-md">
-                                    <i class="fa-solid fa-globe text-xs text-amber-300"></i> Rekor Scopus Q1 &amp; Q2
-                                </span>
-                            </div>
+                            <h4 class="text-sm sm:text-base font-bold text-white mt-3 text-center md:text-left leading-snug font-heading">
+                                Fahmi Rahmat Amanulloh
+                            </h4>
+                            <p class="text-xs font-semibold text-amber-400 mt-1 text-center md:text-left">
+                                Teknik Sipil FT UNSIL
+                            </p>
+                            <p class="text-[11px] text-slate-300 mt-0.5 text-center md:text-left leading-tight">
+                                Mahasiswa Berprestasi &bull; Pembimbing: Andhy Romdani, Ph.D.
+                            </p>
                         </div>
 
-                        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div class="flex-1 flex flex-col justify-between h-full w-full">
                             <div>
-                                <div class="flex flex-wrap items-center gap-2 mb-2.5">
-                                    <span class="inline-flex items-center gap-1 text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2.5 py-0.5 rounded-md border border-indigo-200">
-                                        <i class="fa-solid fa-book-bookmark text-[9px]"></i> Jurnal Internasional Bereputasi
-                                    </span>
-                                    <span class="text-[10px] text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
-                                        Mahasiswa Ajaib UNSIL
-                                    </span>
-                                </div>
-
-                                <h2 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-700 transition leading-snug font-heading">
-                                    <a href="{{ route('berita.fahmi-rahmat') }}">
-                                        Prestasi Riset Internasional: Fahmi Rahmat Amanulloh Publikasikan 5 Karya Ilmiah Sebelum Lulus
+                                <h3 class="text-lg sm:text-xl lg:text-2xl font-extrabold italic font-heading text-white leading-snug mb-3">
+                                    <a href="{{ route('berita.fahmi-rahmat') }}" class="hover:text-amber-300 transition">
+                                        &ldquo;Dedikasi Riset &amp; Rekor Publikasi 5 Karya Ilmiah Scopus Sebelum Lulus&rdquo;
                                     </a>
-                                </h2>
-
-                                <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Kapan:</strong> Agustus 2025</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-location-dot text-rose-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Penerbit:</strong> Scopus Indexed (Journal of Natural Hazards Research Q1, J. Water &amp; Climate Change Q2)</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-shapes text-blue-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Capaian:</strong> 3 Jurnal Internasional Scopus &amp; 2 Jurnal Nasional Sinta</span>
-                                    </p>
-                                </div>
-
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Humas UNSIL &mdash; Fahmi Rahmat Amanulloh, mahasiswa semester 7 Teknik Sipil UNSIL, menorehkan sejarah membanggakan dengan mempublikasikan lima karya ilmiah sekaligus sebelum lulus dan bersaing di kancah riset internasional.
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed text-justify sm:text-left">
+                                    Fahmi Rahmat Amanulloh, mahasiswa Teknik Sipil UNSIL, menorehkan sejarah membanggakan dengan mempublikasikan lima karya ilmiah sekaligus sebelum lulus, menembus jurnal internasional terindeks Scopus Q1 (Journal of Natural Hazards Research) dan Scopus Q2 (Water and Climate Change), serta 2 jurnal nasional Sinta.
                                 </p>
                             </div>
 
-                            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-user-graduate text-blue-600"></i>
-                                    <strong>Mahasiswa:</strong> Fahmi Rahmat Amanulloh
+                            <div class="mt-5 pt-3.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                                <span class="text-[11px] text-slate-400">
+                                    Agustus 2025 &bull; Scopus Q1 &amp; Q2
                                 </span>
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-user-tie text-amber-600"></i>
-                                    <strong>Pembimbing:</strong> Andhy Romdani, Ph.D.
-                                </span>
-                                <a href="{{ route('berita.fahmi-rahmat') }}" class="text-[11px] text-blue-700 font-bold hover:underline flex items-center gap-1 ml-auto">
+                                <a href="{{ route('berita.fahmi-rahmat') }}" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 ml-auto transition">
                                     <span>Baca Berita</span>
-                                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </div>
                     </article>
 
                     {{-- 3. Muhammad Raka Publikasi Scopus --}}
-                    <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="publikasi">
-                        <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
-                            <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka Publikasi Scopus Teknik Sipil UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
-                            
-                            <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
-                                <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">21</span>
-                                <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">AGU</span>
-                                <span class="block text-[8px] text-slate-400 leading-none">2025</span>
+                    <article class="prestasi-card bg-[#0B2A4A] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-md border border-blue-900/60 hover:border-amber-400/40 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-6 items-start group" data-category="publikasi">
+                        <div class="w-full md:w-52 lg:w-56 shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-full aspect-[4/3] md:aspect-square rounded-2xl overflow-hidden bg-slate-900 shadow">
+                                <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka Publikasi Scopus Teknik Sipil UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
-
-                            <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
-                                <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-cyan-700 text-white shadow-md">
-                                    <i class="fa-solid fa-file-shield text-xs text-amber-300"></i> Scopus Q2 &amp; Sinta
-                                </span>
-                            </div>
+                            <h4 class="text-sm sm:text-base font-bold text-white mt-3 text-center md:text-left leading-snug font-heading">
+                                Muhammad Raka El Ghifari
+                            </h4>
+                            <p class="text-xs font-semibold text-amber-400 mt-1 text-center md:text-left">
+                                Teknik Sipil FT UNSIL
+                            </p>
+                            <p class="text-[11px] text-slate-300 mt-0.5 text-center md:text-left leading-tight">
+                                Lulusan Berprestasi &bull; Pembimbing: Andhy Romdani, Ph.D.
+                            </p>
                         </div>
 
-                        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div class="flex-1 flex flex-col justify-between h-full w-full">
                             <div>
-                                <div class="flex flex-wrap items-center gap-2 mb-2.5">
-                                    <span class="inline-flex items-center gap-1 text-[10px] font-bold text-cyan-800 bg-cyan-50 px-2.5 py-0.5 rounded-md border border-cyan-200">
-                                        <i class="fa-solid fa-microscope text-[9px]"></i> Publikasi Internasional
-                                    </span>
-                                    <span class="text-[10px] text-slate-400 font-medium">Lulusan Berprestasi</span>
-                                </div>
-
-                                <h2 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-700 transition leading-snug font-heading">
-                                    <a href="{{ route('berita.muhammad-raka') }}">
-                                        Muhammad Raka El Ghifari Tembus Jurnal Internasional Bereputasi Scopus Q2 Sebelum Hari Wisuda
+                                <h3 class="text-lg sm:text-xl lg:text-2xl font-extrabold italic font-heading text-white leading-snug mb-3">
+                                    <a href="{{ route('berita.muhammad-raka') }}" class="hover:text-amber-300 transition">
+                                        &ldquo;Menembus Jurnal Bereputasi Internasional Scopus Q2 Menjelang Hari Wisuda&rdquo;
                                     </a>
-                                </h2>
-
-                                <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Kapan:</strong> 21 Agustus 2025</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-location-dot text-rose-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Penerbit:</strong> Jurnal Internasional Bereputasi Terindeks Scopus Q2 &amp; Sinta</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-shapes text-blue-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Bidang:</strong> Rekayasa Ketekniksipilan &amp; Pengelolaan Sumber Daya Air Terapan</span>
-                                    </p>
-                                </div>
-
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Humas UNSIL &mdash; Muhammad Raka El Ghifari, sarjana baru Teknik Sipil Universitas Siliwangi, menorehkan prestasi istimewa dengan mempublikasikan dua karya ilmiah di jurnal internasional terindeks Scopus Q2 dan satu artikel Sinta sebelum resmi diwisuda.
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed text-justify sm:text-left">
+                                    Muhammad Raka El Ghifari menorehkan prestasi istimewa dengan mempublikasikan dua karya ilmiah di jurnal internasional bereputasi terindeks Scopus Q2 pada bidang pengelolaan sumber daya air terapan serta satu artikel Sinta sebelum resmi diwisuda sebagai sarjana teknik.
                                 </p>
                             </div>
 
-                            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-user-graduate text-blue-600"></i>
-                                    <strong>Mahasiswa:</strong> Muhammad Raka El Ghifari
+                            <div class="mt-5 pt-3.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                                <span class="text-[11px] text-slate-400">
+                                    21 Agustus 2025 &bull; Scopus Q2 &amp; Sinta
                                 </span>
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-user-tie text-amber-600"></i>
-                                    <strong>Pembimbing:</strong> Andhy Romdani, Ph.D.
-                                </span>
-                                <a href="{{ route('berita.muhammad-raka') }}" class="text-[11px] text-blue-700 font-bold hover:underline flex items-center gap-1 ml-auto">
+                                <a href="{{ route('berita.muhammad-raka') }}" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 ml-auto transition">
                                     <span>Baca Berita</span>
-                                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </div>
                     </article>
 
                     {{-- 4. Final National Bridge Design Competition SCIENCE 2026 --}}
-                    <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="jembatan">
-                        <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
-                            <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Final National Bridge Design Competition SCIENCE 2026 HMS UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
-                            
-                            <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
-                                <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">20</span>
-                                <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">OKT</span>
-                                <span class="block text-[8px] text-slate-400 leading-none">2026</span>
+                    <article class="prestasi-card bg-[#0B2A4A] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-md border border-blue-900/60 hover:border-amber-400/40 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-6 items-start group" data-category="jembatan">
+                        <div class="w-full md:w-52 lg:w-56 shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-full aspect-[4/3] md:aspect-square rounded-2xl overflow-hidden bg-slate-900 shadow">
+                                <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Final National Bridge Design Competition SCIENCE 2026 HMS UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
-
-                            <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
-                                <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-slate-800 text-amber-300 border border-amber-400/30 shadow-md">
-                                    <i class="fa-solid fa-bridge text-xs text-amber-400"></i> Event Nasional
-                                </span>
-                            </div>
+                            <h4 class="text-sm sm:text-base font-bold text-white mt-3 text-center md:text-left leading-snug font-heading">
+                                Final National Bridge Competition
+                            </h4>
+                            <p class="text-xs font-semibold text-amber-400 mt-1 text-center md:text-left">
+                                HMS FT UNSIL &bull; SCIENCE 2026
+                            </p>
+                            <p class="text-[11px] text-slate-300 mt-0.5 text-center md:text-left leading-tight">
+                                Finalis Perguruan Tinggi Nasional Se-Indonesia
+                            </p>
                         </div>
 
-                        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div class="flex-1 flex flex-col justify-between h-full w-full">
                             <div>
-                                <div class="flex flex-wrap items-center gap-2 mb-2.5">
-                                    <span class="inline-flex items-center gap-1 text-[10px] font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-md border border-amber-200">
-                                        <i class="fa-solid fa-trophy text-[9px]"></i> Kompetisi Perancangan Jembatan
-                                    </span>
-                                    <span class="text-[10px] text-blue-700 font-bold bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
-                                        SCIENCE 2026
-                                    </span>
-                                </div>
-
-                                <h2 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-700 transition leading-snug font-heading">
-                                    <a href="{{ route('berita.kompetisi-jembatan') }}">
-                                        HMS FT-Unsil Selenggarakan Babak Final National Bridge Design Competition dalam Ajang Bergengsi SCIENCE 2026
+                                <h3 class="text-lg sm:text-xl lg:text-2xl font-extrabold italic font-heading text-white leading-snug mb-3">
+                                    <a href="{{ route('berita.kompetisi-jembatan') }}" class="hover:text-amber-300 transition">
+                                        &ldquo;Inovasi Rancang Jembatan Efisien, Kuat, dan Berkelanjutan Masa Depan&rdquo;
                                     </a>
-                                </h2>
-
-                                <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Kapan:</strong> 19 &ndash; 20 Oktober 2026</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-location-dot text-rose-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Dimana:</strong> Aula Gedung Teknik Sipil UNSIL, Kampus Mugarsari</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-shapes text-blue-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Kegiatan:</strong> Babak Final National Bridge Design Competition (Finalis PTN Se-Indonesia)</span>
-                                    </p>
-                                </div>
-
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Humas UNSIL &mdash; Himpunan Mahasiswa Sipil (HMS) Universitas Siliwangi mempertemukan para inovator muda teknik sipil dari berbagai perguruan tinggi nasional untuk berkompetisi menguji efisiensi struktur dan ketahanan perancangan jembatan.
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed text-justify sm:text-left">
+                                    Himpunan Mahasiswa Sipil (HMS) Universitas Siliwangi mempertemukan para inovator muda teknik sipil dari berbagai perguruan tinggi nasional untuk berkompetisi menguji efisiensi struktur, keandalan beban, dan ketahanan rancangan jembatan pada ajang bergengsi SCIENCE 2026.
                                 </p>
                             </div>
 
-                            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-users text-blue-600"></i>
-                                    <strong>Penyelenggara:</strong> Pengurus HMS FT UNSIL
+                            <div class="mt-5 pt-3.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                                <span class="text-[11px] text-slate-400">
+                                    20 Oktober 2026 &bull; Kampus Mugarsari
                                 </span>
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-user-tie text-amber-600"></i>
-                                    <strong>Ketua Jurusan:</strong> Andhy Romdani, Ph.D.
-                                </span>
-                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-[11px] text-blue-700 font-bold hover:underline flex items-center gap-1 ml-auto">
+                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 ml-auto transition">
                                     <span>Baca Berita</span>
-                                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </div>
                     </article>
 
                     {{-- 5. Seminar Nasional Jalan Tol Berkelanjutan SCIENCE 2026 --}}
-                    <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="lomba">
-                        <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
-                            <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol Berkelanjutan SCIENCE 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
-                            
-                            <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
-                                <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">22</span>
-                                <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">OKT</span>
-                                <span class="block text-[8px] text-slate-400 leading-none">2026</span>
+                    <article class="prestasi-card bg-[#0B2A4A] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-md border border-blue-900/60 hover:border-amber-400/40 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-6 items-start group" data-category="lomba">
+                        <div class="w-full md:w-52 lg:w-56 shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-full aspect-[4/3] md:aspect-square rounded-2xl overflow-hidden bg-slate-900 shadow">
+                                <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol Berkelanjutan SCIENCE 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
-
-                            <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
-                                <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-emerald-600 text-white shadow-md">
-                                    <i class="fa-solid fa-road text-xs text-amber-300"></i> Forum Nasional
-                                </span>
-                            </div>
+                            <h4 class="text-sm sm:text-base font-bold text-white mt-3 text-center md:text-left leading-snug font-heading">
+                                Seminar Nasional Jalan Tol
+                            </h4>
+                            <p class="text-xs font-semibold text-amber-400 mt-1 text-center md:text-left">
+                                HMS FT UNSIL &bull; SCIENCE 2026
+                            </p>
+                            <p class="text-[11px] text-slate-300 mt-0.5 text-center md:text-left leading-tight">
+                                Geoteknik &bull; Perkerasan &bull; Keselamatan Jalan Tol
+                            </p>
                         </div>
 
-                        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div class="flex-1 flex flex-col justify-between h-full w-full">
                             <div>
-                                <div class="flex flex-wrap items-center gap-2 mb-2.5">
-                                    <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">
-                                        <i class="fa-solid fa-chalkboard-user text-[9px]"></i> Seminar Nasional
-                                    </span>
-                                    <span class="text-[10px] text-slate-400 font-medium">Pengembangan Kapasitas Mahasiswa</span>
-                                </div>
-
-                                <h2 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-700 transition leading-snug font-heading">
-                                    <a href="{{ route('berita.seminar-jalan-tol') }}">
-                                        HMS FT-Unsil Selenggarakan Seminar Nasional Pembangunan Jalan Tol Berkelanjutan (SCIENCE 2026)
+                                <h3 class="text-lg sm:text-xl lg:text-2xl font-extrabold italic font-heading text-white leading-snug mb-3">
+                                    <a href="{{ route('berita.seminar-jalan-tol') }}" class="hover:text-amber-300 transition">
+                                        &ldquo;Pembangunan Jalan Tol Berkelanjutan &amp; Tantangan Rekayasa Modern&rdquo;
                                     </a>
-                                </h2>
-
-                                <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Kapan:</strong> 22 Oktober 2026</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-location-dot text-rose-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Dimana:</strong> Gedung Rektorat / Fakultas Teknik Universitas Siliwangi</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-shapes text-blue-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Fokus:</strong> Geoteknik, Perkerasan Jalan, &amp; Manajemen Keselamatan Jalan Tol</span>
-                                    </p>
-                                </div>
-
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Humas UNSIL &mdash; Menghadirkan praktisi Kementerian PUPR dan pakar transportasi nasional untuk membekali mahasiswa teknik sipil dalam menyongsong standar rekayasa jalan tol modern dan ramah lingkungan.
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed text-justify sm:text-left">
+                                    Menghadirkan praktisi Kementerian PUPR dan pakar transportasi nasional untuk membekali civitas akademika dan mahasiswa teknik sipil dalam menyongsong standar rekayasa jalan tol modern, stabilisasi geoteknik tanah bermasalah, dan keselamatan konstruksi ramah lingkungan.
                                 </p>
                             </div>
 
-                            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-users text-blue-600"></i>
-                                    <strong>Penyelenggara:</strong> HMS FT UNSIL
+                            <div class="mt-5 pt-3.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                                <span class="text-[11px] text-slate-400">
+                                    22 Oktober 2026 &bull; Fakultas Teknik UNSIL
                                 </span>
-                                <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-[11px] text-blue-700 font-bold hover:underline flex items-center gap-1 ml-auto">
+                                <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 ml-auto transition">
                                     <span>Baca Berita</span>
-                                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </div>
                     </article>
 
                     {{-- 6. Riset HATHI Segara Anakan --}}
-                    <article class="prestasi-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row group" data-category="publikasi">
-                        <div class="relative sm:w-5/12 h-64 sm:h-auto overflow-hidden bg-slate-900 flex-shrink-0">
-                            <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="Kolaborasi Riset HATHI Teknik Sipil UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent sm:hidden"></div>
-                            
-                            <div class="absolute top-3 left-3 bg-[#071c32]/95 backdrop-blur-md text-white border border-amber-400/40 rounded-xl px-2.5 py-1.5 text-center shadow-xl z-10 min-w-[50px]">
-                                <span class="block text-base sm:text-lg font-black text-amber-400 leading-none">15</span>
-                                <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-200 mt-0.5">SEP</span>
-                                <span class="block text-[8px] text-slate-400 leading-none">2024</span>
+                    <article class="prestasi-card bg-[#0B2A4A] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-md border border-blue-900/60 hover:border-amber-400/40 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-6 items-start group" data-category="publikasi">
+                        <div class="w-full md:w-52 lg:w-56 shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-full aspect-[4/3] md:aspect-square rounded-2xl overflow-hidden bg-slate-900 shadow">
+                                <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="Kolaborasi Riset HATHI Teknik Sipil UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
-
-                            <div class="absolute bottom-3 left-3 sm:bottom-3 sm:left-3">
-                                <span class="inline-flex items-center gap-1.5 text-[10px] font-extrabold px-3 py-1 rounded-full bg-blue-700 text-white shadow-md">
-                                    <i class="fa-solid fa-water text-xs text-amber-300"></i> Forum Ilmiah HATHI
-                                </span>
-                            </div>
+                            <h4 class="text-sm sm:text-base font-bold text-white mt-3 text-center md:text-left leading-snug font-heading">
+                                Sivitas Akademika Keairan
+                            </h4>
+                            <p class="text-xs font-semibold text-amber-400 mt-1 text-center md:text-left">
+                                Teknik Sipil FT UNSIL
+                            </p>
+                            <p class="text-[11px] text-slate-300 mt-0.5 text-center md:text-left leading-tight">
+                                Kolaborasi BBWS Citanduy &amp; HATHI Jawa Barat
+                            </p>
                         </div>
 
-                        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                        <div class="flex-1 flex flex-col justify-between h-full w-full">
                             <div>
-                                <div class="flex flex-wrap items-center gap-2 mb-2.5">
-                                    <span class="inline-flex items-center gap-1 text-[10px] font-bold text-blue-800 bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-200">
-                                        <i class="fa-solid fa-droplet text-[9px]"></i> Sumber Daya Air
-                                    </span>
-                                    <span class="text-[10px] text-slate-400 font-medium">Kolaborasi Riset Terapan</span>
-                                </div>
-
-                                <h2 class="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-700 transition leading-snug font-heading">
-                                    <a href="{{ route('berita.hathi-segara-anakan') }}">
-                                        Kolaborasi Riset Sivitas Akademika Teknik Sipil UNSIL dalam Penanganan Sedimentasi Segara Anakan
+                                <h3 class="text-lg sm:text-xl lg:text-2xl font-extrabold italic font-heading text-white leading-snug mb-3">
+                                    <a href="{{ route('berita.hathi-segara-anakan') }}" class="hover:text-amber-300 transition">
+                                        &ldquo;Konservasi Laguna Segara Anakan Berbasis Pemodelan Hidraulik Terapan&rdquo;
                                     </a>
-                                </h2>
-
-                                <div class="mt-3.5 mb-3 p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600 space-y-1">
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-regular fa-clock text-amber-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Kapan:</strong> September 2024</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-location-dot text-rose-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Mitra:</strong> Balai Besar Wilayah Sungai (BBWS) Citanduy &amp; HATHI</span>
-                                    </p>
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-shapes text-blue-600 mt-0.5 flex-shrink-0"></i>
-                                        <span><strong>Fokus:</strong> Dinamika Estuari, Erosi DAS, &amp; Konservasi Laguna Pesisir</span>
-                                    </p>
-                                </div>
-
-                                <p class="text-xs text-slate-600 leading-relaxed">
-                                    Keterlibatan aktif dosen dan mahasiswa Teknik Sipil UNSIL dalam riset ilmiah dan diskusi kelompok terpumpun (FGD) perumusan strategi penanganan sedimentasi laguna Segara Anakan berbasis pemodelan hidraulik.
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed text-justify sm:text-left">
+                                    Keterlibatan aktif dosen dan mahasiswa Teknik Sipil UNSIL dalam riset ilmiah kolaboratif dan perumusan strategi penanganan sedimentasi kritis laguna Segara Anakan, mengintegrasikan analisis dinamika estuari dan pengendalian erosi daerah aliran sungai.
                                 </p>
                             </div>
 
-                            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-users text-blue-600"></i>
-                                    <strong>Tim:</strong> Dosen &amp; Mahasiswa Bidang Keairan FT UNSIL
+                            <div class="mt-5 pt-3.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                                <span class="text-[11px] text-slate-400">
+                                    September 2024 &bull; Riset Terapan SDA
                                 </span>
-                                <a href="{{ route('berita.hathi-segara-anakan') }}" class="text-[11px] text-blue-700 font-bold hover:underline flex items-center gap-1 ml-auto">
+                                <a href="{{ route('berita.hathi-segara-anakan') }}" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 ml-auto transition">
                                     <span>Baca Berita</span>
-                                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
                                 </a>
                             </div>
                         </div>
@@ -609,26 +431,7 @@
                         </div>
                     </div>
 
-                    {{-- Card Info Pendampingan & Pembinaan Prestasi --}}
-                    <div class="bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] rounded-2xl p-6 text-white shadow-md relative overflow-hidden">
-                        <div class="relative z-10">
-                            <span class="inline-block bg-amber-400/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3">
-                                Pembinaan Mahasiswa
-                            </span>
-                            <h3 class="text-base font-black font-heading leading-snug">
-                                Ingin Berkompetisi &amp; Meraih Prestasi?
-                            </h3>
-                            <p class="text-xs text-slate-200 mt-2 leading-relaxed">
-                                Program Studi Teknik Sipil FT UNSIL bersama himpunan mahasiswa (HMS) menyediakan pembimbingan riset, bimbingan penulisan karya ilmiah, dan pendanaan delegasi lomba ketekniksipilan.
-                            </p>
-                            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs">
-                                <span class="text-amber-300 font-semibold">Ruang Kaprodi / Dosen Pembina</span>
-                                <a href="{{ route('dosen') }}" class="text-xs font-bold text-white bg-amber-500 hover:bg-amber-600 px-3 py-1.5 rounded-lg transition">
-                                    Lihat Dosen
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
 
                 </aside>
 
