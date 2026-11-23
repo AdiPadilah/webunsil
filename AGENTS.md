@@ -16,12 +16,19 @@ Before relying on a package's API, confirm its installed version:
 This project has domain-specific skills available in `**/skills/**`. You MUST activate the relevant skill whenever you work in that domain—don't wait until you're stuck.
 
 **Standing Instruction (user-defined):** Setiap mengerjakan project webunsil, aktifkan SEMUA skill yang relevan sebelum mulai coding:
+- `caveman` — hemat token, respon cepat & to the point, tanpa basa-basi
+- `ponytail` — kode minimalis, cegah bloatware & over-engineering, diff ringkas
 - `ui-ux-pro-max` — desain layout, tipografi, warna, UX
 - `frontend-design` — aesthetic direction, visual identity
 - `ui-styling` — Tailwind, shadcn/ui, komponen aksesibel
 - `clean-user-facing-text` — polish teks UI dan narasi halaman
 - `prompt-master` — saat user minta generate/perbaiki prompt AI
 - Laravel Boost rules (foundation + boost + php + deployments) — selalu aktif
+
+**Eksekusi Kilat & Presisi (Permanent Rule):**
+- Langsung eksekusi tanpa penjelasan teori panjang.
+- Eksekusi tool serentak (edit -> `view:clear` -> `git pull --rebase` -> `git push`).
+- Pertahankan akurasi 100% data riil UNSIL, hemat token maksimal di model Gemini maupun Claude.
 
 ## Conventions
 
