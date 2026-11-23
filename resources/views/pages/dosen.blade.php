@@ -237,7 +237,7 @@ $dosenList = [
             <!-- Grid Kartu Dosen (Responsif: 1 col HP, 2 col Tablet, 4 col Desktop) -->
             <div id="dosen-grid" class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-7 mb-14">
                 @foreach($dosenList as $dosen)
-                <div class="dosen-item bg-white rounded-lg overflow-hidden border hover:border-slate-300 hover:shadow-md transition-all duration-200 flex flex-col group" data-kbk="{{ $dosen['kbk'] }}">
+                <div class="dosen-item bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 flex flex-col group" data-kbk="{{ $dosen['kbk'] }}">
                     <!-- Foto Portrait Persegi -->
                     <div class="aspect-square overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/dosen/' . $dosen['slug'] . '.jpg') }}?v={{ @filemtime(public_path('images/dosen/' . $dosen['slug'] . '.jpg')) ?: 2 }}"
