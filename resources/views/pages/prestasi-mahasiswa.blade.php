@@ -47,10 +47,7 @@
                 </button>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
-
-                {{-- Kolom Utama --}}
-                <div class="lg:col-span-2 space-y-6">
+            <div class="space-y-6">
 
                     {{-- 1. Tirta Adhipermana --}}
                     <article class="prestasi-card bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group" data-category="lomba">
@@ -207,63 +204,6 @@
                             </div>
                         </div>
                     </article>
-
-                </div>
-
-                {{-- Sidebar --}}
-                <aside class="space-y-6">
-                    <div class="bg-white rounded-xl p-5 border border-slate-200">
-                        <h3 class="text-xs font-bold text-slate-800 uppercase tracking-wider pb-3 border-b border-slate-100 mb-4">
-                            Berita Prestasi Lainnya
-                        </h3>
-                        <div class="space-y-4">
-                            <a href="{{ route('berita.tirta-adhipermana') }}" class="flex items-start gap-3 group">
-                                <div class="w-14 h-14 rounded-lg overflow-hidden bg-slate-100 flex-shrink-0">
-                                    <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tirta Adhipermana" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <h4 class="text-xs font-semibold text-slate-800 group-hover:text-blue-700 leading-snug line-clamp-2">
-                                        Juara 1 National Paper Competition 2023
-                                    </h4>
-                                    <span class="text-[10px] text-slate-400 mt-0.5 block">26 Okt 2023</span>
-                                </div>
-                            </a>
-                            <a href="{{ route('berita.fahmi-rahmat') }}" class="flex items-start gap-3 group border-t border-slate-100 pt-3">
-                                <div class="w-14 h-14 rounded-lg overflow-hidden bg-slate-100 flex-shrink-0">
-                                    <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <h4 class="text-xs font-semibold text-slate-800 group-hover:text-blue-700 leading-snug line-clamp-2">
-                                        5 Publikasi Scopus &amp; Sinta Sebelum Lulus
-                                    </h4>
-                                    <span class="text-[10px] text-slate-400 mt-0.5 block">Agustus 2025</span>
-                                </div>
-                            </a>
-                            <a href="{{ route('berita.muhammad-raka') }}" class="flex items-start gap-3 group border-t border-slate-100 pt-3">
-                                <div class="w-14 h-14 rounded-lg overflow-hidden bg-slate-100 flex-shrink-0">
-                                    <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <h4 class="text-xs font-semibold text-slate-800 group-hover:text-blue-700 leading-snug line-clamp-2">
-                                        Tembus Scopus Q2 Sebelum Wisuda
-                                    </h4>
-                                    <span class="text-[10px] text-slate-400 mt-0.5 block">21 Agt 2025</span>
-                                </div>
-                            </a>
-                            <a href="{{ route('berita.kompetisi-jembatan') }}" class="flex items-start gap-3 group border-t border-slate-100 pt-3">
-                                <div class="w-14 h-14 rounded-lg overflow-hidden bg-slate-100 flex-shrink-0">
-                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="SCIENCE 2026" class="w-full h-full object-cover">
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <h4 class="text-xs font-semibold text-slate-800 group-hover:text-blue-700 leading-snug line-clamp-2">
-                                        Final Bridge Competition SCIENCE 2026
-                                    </h4>
-                                    <span class="text-[10px] text-slate-400 mt-0.5 block">20 Okt 2026</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </aside>
 
             </div>
         </div>
