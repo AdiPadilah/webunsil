@@ -57,7 +57,7 @@
                             </div>
                             <div class="p-6 sm:p-7 md:p-8 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <span class="inline-block text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">Kompetisi Nasional</span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase">Kompetisi Nasional</p>
                                     <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mt-2.5 leading-snug">
                                         <a href="{{ route('berita.tirta-adhipermana') }}" class="hover:text-blue-700 transition">
                                             Tim Tirta Adhipermana Raih Juara 1 National Paper Competition 2023
@@ -86,7 +86,7 @@
                             </div>
                             <div class="p-6 sm:p-7 md:p-8 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <span class="inline-block text-xs font-semibold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-md border border-indigo-100">Publikasi Scopus</span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase">Publikasi Scopus</p>
                                     <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mt-2.5 leading-snug">
                                         <a href="{{ route('berita.fahmi-rahmat') }}" class="hover:text-blue-700 transition">
                                             Fahmi Rahmat Publikasikan 5 Karya Ilmiah di Jurnal Scopus dan Sinta Sebelum Lulus
@@ -115,7 +115,7 @@
                             </div>
                             <div class="p-6 sm:p-7 md:p-8 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <span class="inline-block text-xs font-semibold text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-100">Publikasi Scopus</span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase">Publikasi Scopus</p>
                                     <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mt-2.5 leading-snug">
                                         <a href="{{ route('berita.muhammad-raka') }}" class="hover:text-blue-700 transition">
                                             Muhammad Raka El Ghifari Tembus Dua Jurnal Scopus Q2 Sebelum Wisuda
@@ -144,7 +144,7 @@
                             </div>
                             <div class="p-6 sm:p-7 md:p-8 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <span class="inline-block text-xs font-semibold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-100">Kompetisi Jembatan</span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase">Kompetisi Jembatan</p>
                                     <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mt-2.5 leading-snug">
                                         <a href="{{ route('berita.kompetisi-jembatan') }}" class="hover:text-blue-700 transition">
                                             Babak Final National Bridge Design Competition di SCIENCE 2026
@@ -173,7 +173,7 @@
                             </div>
                             <div class="p-6 sm:p-7 md:p-8 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <span class="inline-block text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-100">Seminar Nasional</span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase">Seminar Nasional</p>
                                     <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mt-2.5 leading-snug">
                                         <a href="{{ route('berita.seminar-jalan-tol') }}" class="hover:text-blue-700 transition">
                                             Seminar Pembangunan Jalan Tol Berkelanjutan di SCIENCE 2026
@@ -202,7 +202,7 @@
                             </div>
                             <div class="p-6 sm:p-7 md:p-8 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <span class="inline-block text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">Riset Kolaboratif</span>
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase">Riset Kolaboratif</p>
                                     <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mt-2.5 leading-snug">
                                         <a href="{{ route('berita.hathi-segara-anakan') }}" class="hover:text-blue-700 transition">
                                             Kolaborasi Riset Teknik Sipil UNSIL dalam Penanganan Sedimentasi Segara Anakan
