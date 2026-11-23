@@ -52,7 +52,7 @@
                     {{-- 1. Tirta Adhipermana --}}
                     <article class="prestasi-card bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group" data-category="lomba">
                         <div class="sm:flex">
-                            <div class="sm:w-5/12 h-56 sm:h-auto overflow-hidden bg-slate-100 flex-shrink-0">
+                            <div class="sm:w-5/12 h-56 sm:h-56 overflow-hidden bg-slate-100 flex-shrink-0">
                                 <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana saat presentasi NPC di USK Banda Aceh" class="w-full h-full object-cover">
                             </div>
                             <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -78,7 +78,7 @@
                     {{-- 2. Fahmi Rahmat --}}
                     <article class="prestasi-card bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group" data-category="publikasi">
                         <div class="sm:flex">
-                            <div class="sm:w-5/12 h-56 sm:h-auto overflow-hidden bg-slate-100 flex-shrink-0">
+                            <div class="sm:w-5/12 h-56 sm:h-56 overflow-hidden bg-slate-100 flex-shrink-0">
                                 <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat bersama dosen pembimbing" class="w-full h-full object-cover">
                             </div>
                             <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -104,7 +104,7 @@
                     {{-- 3. Muhammad Raka --}}
                     <article class="prestasi-card bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group" data-category="publikasi">
                         <div class="sm:flex">
-                            <div class="sm:w-5/12 h-56 sm:h-auto overflow-hidden bg-slate-100 flex-shrink-0">
+                            <div class="sm:w-5/12 h-56 sm:h-56 overflow-hidden bg-slate-100 flex-shrink-0">
                                 <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka El Ghifari bersama tim riset" class="w-full h-full object-cover">
                             </div>
                             <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -130,7 +130,7 @@
                     {{-- 4. Bridge Competition SCIENCE 2026 --}}
                     <article class="prestasi-card bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group" data-category="jembatan">
                         <div class="sm:flex">
-                            <div class="sm:w-5/12 h-56 sm:h-auto overflow-hidden bg-slate-100 flex-shrink-0">
+                            <div class="sm:w-5/12 h-56 sm:h-56 overflow-hidden bg-slate-100 flex-shrink-0">
                                 <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Babak final kompetisi jembatan SCIENCE 2026" class="w-full h-full object-cover">
                             </div>
                             <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -156,7 +156,7 @@
                     {{-- 5. Seminar Jalan Tol --}}
                     <article class="prestasi-card bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group" data-category="lomba">
                         <div class="sm:flex">
-                            <div class="sm:w-5/12 h-56 sm:h-auto overflow-hidden bg-slate-100 flex-shrink-0">
+                            <div class="sm:w-5/12 h-56 sm:h-56 overflow-hidden bg-slate-100 flex-shrink-0">
                                 <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar jalan tol berkelanjutan SCIENCE 2026" class="w-full h-full object-cover">
                             </div>
                             <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
@@ -182,7 +182,7 @@
                     {{-- 6. Riset HATHI --}}
                     <article class="prestasi-card bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group" data-category="publikasi">
                         <div class="sm:flex">
-                            <div class="sm:w-5/12 h-56 sm:h-auto overflow-hidden bg-slate-100 flex-shrink-0">
+                            <div class="sm:w-5/12 h-56 sm:h-56 overflow-hidden bg-slate-100 flex-shrink-0">
                                 <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="FGD riset sedimentasi Segara Anakan bersama HATHI" class="w-full h-full object-cover">
                             </div>
                             <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
