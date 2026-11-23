@@ -55,27 +55,16 @@
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}"
-                                 alt="Lab. Teknologi Bahan Konstruksi FT UNSIL"
+                                 alt="Lab - Teknologi Bahan Konstruksi FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/lab-civil.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#0070BA]">Struktur &amp; Bahan</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight">
-                            Lab. Teknologi Bahan Konstruksi (TBK)
+                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
+                            Lab - Teknologi Bahan Konstruksi
                         </h3>
-                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-slate-500 my-3">
-                            <span class="flex items-center gap-1.5">
-                                <i class="fa-solid fa-location-dot text-slate-400"></i> Gedung FT UNSIL Kampus 2 Mugarsari
-                            </span>
-                            <span class="flex items-center gap-1.5 text-emerald-700 font-semibold">
-                                <i class="fa-solid fa-circle-check"></i> Standar SNI &bull; ASTM
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">
+                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             Melayani praktikum dan pengujian sifat fisis maupun mekanis bahan bangunan seperti beton, semen, agregat kasar/halus, serta baja tulangan untuk memastikan keandalan mutu konstruksi sipil.
                         </p>
                     </div>
@@ -86,27 +75,16 @@
                     <div class="lg:col-span-6 lg:order-2">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}"
-                                 alt="Lab. Hidraulika & Bangunan Air FT UNSIL"
+                                 alt="Lab - Hidraulika & Bangunan Air FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/unsil-seminar-hathi-air.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6 lg:order-1">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#0070BA]">Sumber Daya Air</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight">
-                            Lab. Hidraulika &amp; Bangunan Air
+                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
+                            Lab - Hidraulika &amp; Bangunan Air
                         </h3>
-                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-slate-500 my-3">
-                            <span class="flex items-center gap-1.5">
-                                <i class="fa-solid fa-location-dot text-slate-400"></i> Gedung FT UNSIL Kampus 2 Mugarsari
-                            </span>
-                            <span class="flex items-center gap-1.5 text-emerald-700 font-semibold">
-                                <i class="fa-solid fa-circle-check"></i> Standar SNI SDA &bull; PUPR
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">
+                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             Pusat pengujian dinamika fluida saluran terbuka dan tertutup, debit limpasan pelimpah bendung, fenomena hidraulis peredam energi (kolam olak), serta kalibrasi debit pintu air irigasi.
                         </p>
                     </div>
@@ -117,26 +95,15 @@
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}"
-                                 alt="Lab. Mekanika Tanah & Geoteknik FT UNSIL"
+                                 alt="Lab - Mekanika Tanah & Geoteknik FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                     </div>
                     <div class="lg:col-span-6">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#0070BA]">Geoteknik</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight">
-                            Lab. Mekanika Tanah &amp; Geoteknik
+                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
+                            Lab - Mekanika Tanah &amp; Geoteknik
                         </h3>
-                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-slate-500 my-3">
-                            <span class="flex items-center gap-1.5">
-                                <i class="fa-solid fa-location-dot text-slate-400"></i> Gedung FT UNSIL Kampus 2 Mugarsari
-                            </span>
-                            <span class="flex items-center gap-1.5 text-emerald-700 font-semibold">
-                                <i class="fa-solid fa-circle-check"></i> Standar SNI &bull; ASTM D
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">
+                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             Menganalisis sifat fisis tanah (kadar air, berat jenis, batas-batas Atterberg) dan kekuatan mekanis tanah (uji geser langsung, daya dukung fondasi, konsolidasi, dan permeabilitas).
                         </p>
                     </div>
@@ -147,27 +114,16 @@
                     <div class="lg:col-span-6 lg:order-2">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}"
-                                 alt="Lab. Transportasi & Jalan Raya FT UNSIL"
+                                 alt="Lab - Transportasi & Jalan Raya FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6 lg:order-1">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#0070BA]">Transportasi</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight">
-                            Lab. Transportasi &amp; Jalan Raya
+                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
+                            Lab - Transportasi &amp; Jalan Raya
                         </h3>
-                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-slate-500 my-3">
-                            <span class="flex items-center gap-1.5">
-                                <i class="fa-solid fa-location-dot text-slate-400"></i> Gedung FT UNSIL Kampus 2 Mugarsari
-                            </span>
-                            <span class="flex items-center gap-1.5 text-emerald-700 font-semibold">
-                                <i class="fa-solid fa-circle-check"></i> Spesifikasi Bina Marga &bull; SNI
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">
+                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             Pengujian mutu material aspal (penetrasi, daktilitas, titik nyala, titik lembek) dan perancangan proporsi campuran aspal beton (hot mix) menggunakan pengujian Marshall Test.
                         </p>
                     </div>
@@ -178,27 +134,16 @@
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/workshop-obe.jpg') }}"
-                                 alt="Lab. Komputasi & Pemodelan Struktur FT UNSIL"
+                                 alt="Lab - Komputasi & Pemodelan Struktur FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#0070BA]">Desain &amp; Komputasi BIM</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight">
-                            Lab. Komputasi &amp; Pemodelan Struktur
+                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
+                            Lab - Komputasi &amp; Pemodelan Struktur
                         </h3>
-                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-slate-500 my-3">
-                            <span class="flex items-center gap-1.5">
-                                <i class="fa-solid fa-location-dot text-slate-400"></i> Gedung FT UNSIL Kampus 2 Mugarsari
-                            </span>
-                            <span class="flex items-center gap-1.5 text-emerald-700 font-semibold">
-                                <i class="fa-solid fa-circle-check"></i> Workstation PC &bull; Gigabit LAN
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">
+                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             Sarana komputasi rekayasa untuk analisis elemen hingga (FEA) gedung bertingkat tahan gempa, simulasi hidraulika saluran banjir, pemodelan lereng, serta gambar kerja perancangan sipil berbasis CAD dan BIM.
                         </p>
                     </div>
@@ -209,26 +154,15 @@
                     <div class="lg:col-span-6 lg:order-2">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/gedung-unsil.jpg') }}"
-                                 alt="Lab. Perpetaan & Ukur Tanah FT UNSIL"
+                                 alt="Lab - Perpetaan & Ukur Tanah FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                     </div>
                     <div class="lg:col-span-6 lg:order-1">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#0070BA]">Geomatika &amp; Survei Rekayasa</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight">
-                            Lab. Perpetaan &amp; Ukur Tanah
+                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
+                            Lab - Perpetaan &amp; Ukur Tanah
                         </h3>
-                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-slate-500 my-3">
-                            <span class="flex items-center gap-1.5">
-                                <i class="fa-solid fa-location-dot text-slate-400"></i> Gedung FT UNSIL Kampus 2 Mugarsari
-                            </span>
-                            <span class="flex items-center gap-1.5 text-emerald-700 font-semibold">
-                                <i class="fa-solid fa-circle-check"></i> Standar BIG &bull; SNI Survei
-                            </span>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">
+                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             Pelatihan pemetaan terestris lapangan, penentuan koordinat poligon tertutup/terbuka, pengukuran profil memanjang/melintang trase infrastruktur, serta pembuatan peta kontur topografi digital.
                         </p>
                     </div>
