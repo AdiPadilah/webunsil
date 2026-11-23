@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="p-5">
                                     <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
-                                        Riset &amp; Kolaborasi &bull; 29 Oktober 2026
+                                        Manajemen Rekayasa Konstruksi &bull; 29 Oktober 2026
                                     </p>
                                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-700 leading-snug line-clamp-2 transition">
                                         Dosen Teknik Sipil UNSIL Diundang sebagai Penguji Eksternal Seminar Hasil Disertasi di Pascasarjana FT UNS
@@ -108,7 +108,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                <span class="text-[11px] text-slate-400">Manajemen Rekayasa Konstruksi</span>
                                 <a href="{{ route('berita.seminar-hasil-uns') }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
                                     <span>Selengkapnya</span>
                                     <i class="fa-solid fa-arrow-right text-[10px]"></i>

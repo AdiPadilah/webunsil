@@ -27,9 +27,13 @@
                     
                     {{-- Header Berita --}}
                     <div class="mb-6">
-                        <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
-                            Riset &amp; Kolaborasi &bull; 29 Oktober 2026 &bull; Universitas Sebelas Maret, Surakarta
-                        </p>
+                        <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide mb-3 flex-wrap">
+                            <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-purple-100 text-purple-800">Manajemen Rekayasa Konstruksi</span>
+                            <span class="text-slate-400">&bull;</span>
+                            <span class="text-slate-500">29 Oktober 2026</span>
+                            <span class="text-slate-400">&bull;</span>
+                            <span class="text-slate-500">Universitas Sebelas Maret, Surakarta</span>
+                        </div>
                         <h1 class="text-2xl sm:text-3xl font-black text-slate-900 font-heading leading-tight">
                             Dosen Teknik Sipil UNSIL Diundang sebagai Penguji Eksternal Seminar Hasil Disertasi di Program Pascasarjana Teknik Sipil FT UNS
                         </h1>
@@ -59,7 +63,7 @@
                         </p>
 
                         <p>
-                            Disertasi yang diseminarkan berjudul <em>"Optimasi Kekuatan Mekanik dan Peningkatan Ketahanan Paparan Cuaca Sambungan Ethylene Propylene Diene Monomer (EPDM) untuk Peningkatan Performa Sambungan Ekspansi Jembatan Kareta"</em>. Penelitian ini berfokus pada inovasi material rekayasa jembatan dan optimasi performa sambungan ekspansi yang sangat aplikatif untuk menunjang keandalan infrastruktur jembatan nasional.
+                            Disertasi yang diseminarkan berjudul <em>"Optimasi Kekuatan Mekanik dan Peningkatan Ketahanan Paparan Cuaca Sambungan Ethylene Propylene Diene Monomer (EPDM) untuk Peningkatan Performa Sambungan Ekspansi Jembatan Kareta"</em>. Penelitian ini berfokus pada inovasi material rekayasa jembatan dan optimasi performa sambungan ekspansi yang sangat aplikatif untuk menunjang keandalan infrastruktur jembatan nasional, sekaligus memperkuat pengembangan riset pada Kelompok Bidang Keahlian (KBK) Manajemen Rekayasa Konstruksi.
                         </p>
 
                         <p>
