@@ -138,11 +138,9 @@
                                 </a>
                             </div>
                         </article>
-                            </div>
-                        </article>
 
                         
-                        <article class="bg-white rounded-xl overflow-hidden shadow-sm  transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
                             <div>
                                 <div class="relative h-48 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop Penguatan Kurikulum OBE" class="w-full h-full object-cover  ">
@@ -387,8 +385,8 @@
                 
                 <aside class="lg:col-span-1 space-y-6">
 
-                    
-                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                    <!-- Widget Agenda -->
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200 sticky top-24">
                         <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
                             <h3 class="text-sm font-bold text-slate-900 flex items-center gap-2">
                                 <i class="fa-solid fa-calendar-days text-[#0070BA]"></i>
@@ -519,10 +517,6 @@
                             </div>
                         </div>
                     </div>
-
-                    
-
-
 
                 </aside>
 
