@@ -178,6 +178,18 @@
                                 </div>
                             </div>
 
+                            {{-- Foto 6: Banner Layar Seminar --}}
+                            <div class="group rounded-xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition sm:col-span-2">
+                                <div class="aspect-[16/9] overflow-hidden bg-slate-100">
+                                    <img src="{{ asset('images/seminar-taiwan/seminar-taiwan-banner-layar.jpg') }}"
+                                         alt="Banner layar Seminar Internasional Bridging Futures UNSIL"
+                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <div class="p-3 text-xs text-slate-600 bg-slate-50 border-t border-slate-100 leading-relaxed">
+                                    Layar backdrop Seminar Internasional "Bridging Futures" menampilkan narasumber Yanuar Haryanto, Ph.D. (NCKU Taiwan), testimoni M. Raka El Ghifari, S.T. (penerima beasiswa S2 NCKU), dan moderator Intan Nursikha Rahma, M.— di Auditorium Fakultas Teknik UNSIL, 12 Oktober 2026.
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
