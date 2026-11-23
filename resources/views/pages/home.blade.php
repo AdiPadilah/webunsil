@@ -182,44 +182,44 @@
                     
                     {{-- Baris 1: Card Kiri (4 Kolom ~ Persis rasio card kiri UNPAD) --}}
                     <a href="{{ route('kurikulum') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Program Studi Teknik Sipil" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
+                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Capaian Pembelajaran Lulusan" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Capaian Pembelajaran Lulusan
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 1: Card Kanan (8 Kolom ~ Persis rasio card kanan UNPAD) --}}
                     <a href="{{ route('visi-misi') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Program Studi Teknik Sipil" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
+                        <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Profil Profesional Mandiri" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Profil Profesional Mandiri
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 2: Card Kiri (8 Kolom ~ Bersilangan dengan baris 1) --}}
                     <a href="{{ route('kurikulum') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Program Studi Teknik Sipil" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
+                        <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Kurikulum Berbasis Outcome-Based Education (OBE)" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Kurikulum Berbasis OBE &amp; MBKM
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 2: Card Kanan (4 Kolom ~ Bersilangan dengan baris 1) --}}
                     <a href="{{ route('prestasi-mahasiswa') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Program Studi Teknik Sipil" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
+                        <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa Teknik Sipil" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Prestasi Mahasiswa
                             </h3>
                         </div>
                     </a>
@@ -250,44 +250,44 @@
                     
                     {{-- Baris 1: Card Kiri (4 Kolom) --}}
                     <a href="{{ route('berita.kompetisi-jembatan') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Kegiatan Mahasiswa" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
+                        <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="SCIENCE Bridge Competition" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                SCIENCE: Bridge Competition
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 1: Card Kanan (8 Kolom) --}}
                     <a href="{{ route('mahasiswa-alumni') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Kegiatan Mahasiswa" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
+                        <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Organisasi HMS FT UNSIL" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Organisasi HMS FT UNSIL
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 2: Card Kiri (8 Kolom) --}}
                     <a href="{{ route('berita.seminar-taiwan') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Kegiatan Mahasiswa" class="w-full h-full object-cover object-center">
+                        <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan NCKU" class="w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Seminar Internasional Indonesia-Taiwan
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 2: Card Kanan (4 Kolom) --}}
                     <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kegiatan Mahasiswa" class="w-full h-full object-cover object-center">
+                        <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Ilmiah Mahasiswa Bendungan Leuwikeris" class="w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Kunjungan Ilmiah Leuwikeris
                             </h3>
                         </div>
                     </a>
@@ -315,44 +315,44 @@
                     
                     {{-- Baris 1: Card Kiri (4 Kolom ~ Persis 'Kawasan Sains dan Teknologi' di UNPAD) --}}
                     <a href="{{ route('laboratorium') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Fasilitas Laboratorium" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
+                        <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Bahan Konstruksi" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Lab. Teknologi Bahan Konstruksi
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 1: Card Kanan (8 Kolom ~ Persis 'Laboratorium Sentral' di UNPAD) --}}
                     <a href="{{ route('laboratorium') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Fasilitas Laboratorium" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
+                        <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Laboratorium Mekanika Tanah dan Geoteknik" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Lab. Mekanika Tanah &amp; Geoteknik
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 2: Card Kiri (8 Kolom ~ Persis 'Transportasi Kampus' di UNPAD) --}}
                     <a href="{{ route('fasilitas') }}" class="col-span-1 sm:col-span-7 lg:col-span-8 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Fasilitas Laboratorium" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
+                        <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Studio Komputasi dan BIM" class="w-full h-full object-cover object-center" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Studio Komputasi &amp; BIM
                             </h3>
                         </div>
                     </a>
 
                     {{-- Baris 2: Card Kanan (4 Kolom ~ Persis 'Masjid Raya Unpad' di UNPAD) --}}
                     <a href="{{ route('fasilitas') }}" class="col-span-1 sm:col-span-5 lg:col-span-4 group relative rounded-xl overflow-hidden block h-64 sm:h-72 lg:h-[340px] shadow-sm hover:shadow-md transition bg-slate-900">
-                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Fasilitas Laboratorium" class="w-full h-full object-cover object-center">
+                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Sarana Kampus Terpadu Mugarsari" class="w-full h-full object-cover object-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 via-40% to-transparent"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-white">
                             <h3 class="text-lg sm:text-xl lg:text-2xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors duration-300">
-                                -
+                                Sarana Kampus Mugarsari
                             </h3>
                         </div>
                     </a>
