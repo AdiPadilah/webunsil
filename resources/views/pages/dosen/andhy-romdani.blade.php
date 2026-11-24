@@ -120,7 +120,7 @@
                         </h3>
                         <div class="grid grid-cols-2 gap-2.5 text-center">
                             <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-xl sm:text-2xl font-black text-[#0B2A4A] block">19</span>
+                                <span class="text-xl sm:text-2xl font-black text-[#0B2A4A] block">16</span>
                                 <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Karya Buku</span>
                             </div>
                             <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
@@ -303,7 +303,7 @@
 
                     </div>
 
-                    {{-- 3. Karya Buku (Koleksi 19 Buku) --}}
+                    {{-- 3. Karya Buku --}}
                     <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
                         <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
                             <div class="flex items-center gap-3">
@@ -314,12 +314,9 @@
                                     <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
                                         Koleksi Karya Buku
                                     </h3>
-                                    <p class="text-xs text-slate-400 font-medium">19 judul buku non-fiksi keteknik-sipilan dan sastra fiksi ber-ISBN</p>
+                                    <p class="text-xs text-slate-400 font-medium">Koleksi buku non-fiksi keteknik-sipilan dan sastra fiksi ber-ISBN</p>
                                 </div>
                             </div>
-                            <span class="text-xs font-bold px-3.5 py-1 bg-emerald-50 text-emerald-800 rounded-full border border-emerald-200 shadow-2xs">
-                                <i class="fa-solid fa-check-circle text-emerald-600 mr-1"></i> Total 19 Buku Diterbitkan
-                            </span>
                         </div>
 
                         {{-- Buku Non-Fiksi Keteknik-sipilan (12 Buku) --}}
