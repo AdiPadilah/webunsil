@@ -119,25 +119,25 @@
 
                     
                     <div class="relative dropdown">
-                        <a href="{{ route('tentang-kami') }}" id="nav-tentang" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('tentang-kami') }}" id="nav-tentang" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah') ? 'active-nav text-amber-400' : '' }}">
                             <span>Tentang Kami</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
                         <div class="dropdown-menu hidden absolute top-full left-0 w-48 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
                             <a href="{{ route('visi-misi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('visi-misi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Visi &amp; Misi</a>
                             <a href="{{ route('sejarah') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sejarah') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sejarah Program Studi</a>
-                            <a href="{{ route('dosen') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('dosen') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Dosen</a>
                         </div>
                     </div>
 
                     
                     <div class="relative dropdown">
-                        <a href="{{ route('akademik') }}" id="nav-akademik" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'download') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('akademik') }}" id="nav-akademik" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('akademik', 'kurikulum', 'dosen', 'layanan', 'download') ? 'active-nav text-amber-400' : '' }}">
                             <span>Akademik</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
                         <div class="dropdown-menu hidden absolute top-full left-0 w-52 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
                             <a href="{{ route('kurikulum') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kurikulum') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kurikulum</a>
+                            <a href="{{ route('dosen') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('dosen') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Dosen</a>
                             <a href="{{ route('layanan') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('layanan') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Layanan Terpadu</a>
                             <a href="{{ route('download') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('download') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Download</a>
                         </div>
@@ -244,13 +244,13 @@
 
         
         <div id="mobile-menu" class="hidden xl:hidden bg-slate-900 border-b border-slate-800 px-6 pt-3 pb-6 space-y-2 text-sm text-slate-200">
-            <a href="{{ route('tentang-kami') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'text-amber-400 font-bold' : '' }}">Tentang Kami</a>
+            <a href="{{ route('tentang-kami') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah') ? 'text-amber-400 font-bold' : '' }}">Tentang Kami</a>
             <a href="{{ route('visi-misi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('visi-misi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Visi &amp; Misi</a>
             <a href="{{ route('sejarah') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sejarah') ? 'text-amber-400 font-bold' : '' }}">&mdash; Sejarah Program Studi</a>
-            <a href="{{ route('dosen') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('dosen') ? 'text-amber-400 font-bold' : '' }}">&mdash; Dosen</a>
 
-            <a href="{{ route('akademik') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'download') ? 'text-amber-400 font-bold' : '' }}">Akademik</a>
+            <a href="{{ route('akademik') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('akademik', 'kurikulum', 'dosen', 'layanan', 'download') ? 'text-amber-400 font-bold' : '' }}">Akademik</a>
             <a href="{{ route('kurikulum') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kurikulum') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kurikulum</a>
+            <a href="{{ route('dosen') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('dosen') ? 'text-amber-400 font-bold' : '' }}">&mdash; Dosen</a>
             <a href="{{ route('layanan') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('layanan') ? 'text-amber-400 font-bold' : '' }}">&mdash; Layanan Terpadu</a>
             <a href="{{ route('download') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('download') ? 'text-amber-400 font-bold' : '' }}">&mdash; Download</a>
 
