@@ -35,7 +35,7 @@
                 Andhy Romdani, S.T., M.Eng., Ph.D.
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Pakar Hidrodinamika Pantai, Pemodelan Transpor Sedimen &amp; Manajemen Sumber Daya Air. Penulis produktif 19 karya buku serta peneliti aktif di jurnal-jurnal internasional bereputasi.
+                Pakar Hidrodinamika Pantai, Pemodelan Transpor Sedimen &amp; Manajemen Sumber Daya Air. Penulis produktif 19 karya buku dan peneliti senior di bidang rekayasa pantai &amp; sumber daya air.
             </p>
         </div>
     </section>
@@ -125,10 +125,6 @@
                             <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
                                 <span class="text-2xl font-black text-[#0B2A4A] block">19</span>
                                 <span class="text-[11px] text-slate-500 font-medium">Karya Buku</span>
-                            </div>
-                            <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-2xl font-black text-[#0070BA] block">14</span>
-                                <span class="text-[11px] text-slate-500 font-medium">Jurnal Internasional</span>
                             </div>
                             <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
                                 <span class="text-2xl font-black text-amber-600 block">4</span>
@@ -393,199 +389,6 @@
                             </div>
                         </div>
 
-                    </div>
-
-                    {{-- 4. Publikasi Jurnal Internasional (14 Artikel Peer-Reviewed) --}}
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6">
-                            <div class="flex items-center gap-2.5">
-                                <div class="w-9 h-9 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
-                                    <i class="fa-solid fa-newspaper"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading">
-                                        Publikasi Jurnal Internasional
-                                    </h3>
-                                    <p class="text-xs text-slate-400">Artikel ilmiah peer-reviewed bereputasi global</p>
-                                </div>
-                            </div>
-                            <span class="text-xs font-semibold px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full border border-indigo-200">
-                                14 Artikel Terindeks
-                            </span>
-                        </div>
-
-                        <div class="space-y-4">
-                            @php
-                            $jurnalList = [
-                                [
-                                    'no' => 1,
-                                    'authors' => 'Romdani, A., Chen, J.-L., Chien, H., Lin, J.-H., Hung, C.-K., Huang, Y.-Q.',
-                                    'year' => '2022',
-                                    'title' => 'Adjacent to a River Mouth: Mechanisms and Effects of Littoral Sediment Transport to the Navigation Channel',
-                                    'journal' => 'Journal of Waterway, Port, Coastal, and Ocean Engineering (ASCE)',
-                                    'vol' => '148(5), 05022001',
-                                    'doi' => 'https://doi.org/10.1061/(ASCE)WW.1943-5460.0000700',
-                                    'doi_label' => '10.1061/(ASCE)WW.1943-5460.0000700',
-                                ],
-                                [
-                                    'no' => 2,
-                                    'authors' => 'Romdani, A., Tsai, S.-D., Tsai, W.-Z., Lin, Y.-C., Chen, J.-L.',
-                                    'year' => '2022',
-                                    'title' => 'A numerical investigation on the occurrence of the typhoon-triggered density currents of the 2008-flood event',
-                                    'journal' => 'Journal of Coastal and Offshore Science and Engineering',
-                                    'vol' => '1, 100-116',
-                                    'doi' => 'https://doi.org/10.53256/COSE_220106',
-                                    'doi_label' => '10.53256/COSE_220106',
-                                ],
-                                [
-                                    'no' => 3,
-                                    'authors' => 'Romdani, A., Chen, J.-L., Chien, H., Lin, J.-H., Liao, C.-Y., Hou, C.-Q.',
-                                    'year' => '2022',
-                                    'title' => 'Downdrift Port Siltation Adjacent to a River Mouth: Effects of Meso-tidal Conditions and Typhoon',
-                                    'journal' => 'Journal of Waterway, Port, Coastal, and Ocean Engineering (ASCE)',
-                                    'vol' => 'JWPED5/WWENG-1940',
-                                    'doi' => 'https://doi.org/10.1061/JWPED5/WWENG-1940',
-                                    'doi_label' => '10.1061/JWPED5/WWENG-1940',
-                                ],
-                                [
-                                    'no' => 4,
-                                    'authors' => 'Tsai, S.-D., Lin, Y.-C., Romdani, A., Chen, J.-L., Hsu, R.T., Liu, J.T.',
-                                    'year' => '2023',
-                                    'title' => 'On the Occurrence of Low Concentration Hyperpycnal River Plumes in a Small Mountainous River-Canyon System',
-                                    'journal' => 'Continental Shelf Research (Elsevier)',
-                                    'vol' => '267, 104952',
-                                    'doi' => 'https://doi.org/10.1016/j.csr.2023.104952',
-                                    'doi_label' => '10.1016/j.csr.2023.104952',
-                                ],
-                                [
-                                    'no' => 5,
-                                    'authors' => 'Tsai, S.-D., Chen, J.-L., Hsu, W.-Y., Tsai, W.-Z., Romdani, A.',
-                                    'year' => '2023',
-                                    'title' => 'A numerical investigation of the transport process of density currents over steep slopes and its implications for subsea fiber-optic cables: breaks, ocean engineering',
-                                    'journal' => 'Ocean Engineering (Elsevier)',
-                                    'vol' => '281, 113446',
-                                    'doi' => 'https://doi.org/10.1016/j.oceaneng.2023.113446',
-                                    'doi_label' => '10.1016/j.oceaneng.2023.113446',
-                                ],
-                                [
-                                    'no' => 6,
-                                    'authors' => 'Pan, C.-H., Romdani, A., Chen, J.-L.',
-                                    'year' => '2023',
-                                    'title' => 'Salinity intrusion and tidally-modulated stratification in a channel-shoal estuary',
-                                    'journal' => 'Estuarine, Coastal and Shelf Science (Elsevier)',
-                                    'vol' => '108279',
-                                    'doi' => 'https://doi.org/10.1016/j.ecss.2023.108279',
-                                    'doi_label' => '10.1016/j.ecss.2023.108279',
-                                ],
-                                [
-                                    'no' => 7,
-                                    'authors' => 'Amanulloh, F.-R. and Romdani, A.',
-                                    'year' => '2024',
-                                    'title' => 'Morpho-hydrodynamic processes impacted by the 2022-extreme La Niña event and high river discharge conditions in the southern coastal area of West Java, Indonesia',
-                                    'journal' => 'Journal of Water and Climate Change (IWA Publishing)',
-                                    'vol' => '15(4), 1836-1854',
-                                    'doi' => 'https://doi.org/10.2166/wcc.2024.343',
-                                    'doi_label' => '10.2166/wcc.2024.343',
-                                ],
-                                [
-                                    'no' => 8,
-                                    'authors' => 'Romdani, A., Amanulloh, F. R., Mudatsir, El Ghifari, M. R., Gusnadi, Z., Putri, T. S., Empung, & Al-Huseiny, M. S.',
-                                    'year' => '2025',
-                                    'title' => 'The Effectiveness of Groin Modifications to Reduce the Impacts of Indian Ocean Dipole (IOD)-induced Port Siltation in Adapting to Climate Change',
-                                    'journal' => 'Journal of the Civil Engineering Forum (JCEF UGM)',
-                                    'vol' => '11(2), 125-136',
-                                    'doi' => 'https://doi.org/10.22146/jcef.16683',
-                                    'doi_label' => '10.22146/jcef.16683',
-                                ],
-                                [
-                                    'no' => 9,
-                                    'authors' => 'Mudatsir, M., Ghifari, M. R. E., Amanulloh, F. R., Putri, T. S., & Romdani, A.',
-                                    'year' => '2025',
-                                    'title' => 'Spatial and Temporal Analysis of Gallbladder Stone Cases at dr. Soekardjo Hospital, West Java: An Evidence-Based Study',
-                                    'journal' => 'Medico Hospitalia: Journal of Clinical Medicine',
-                                    'vol' => '12(2), 131–139',
-                                    'doi' => 'https://doi.org/10.36408/mhjcm.v12i2.1249',
-                                    'doi_label' => '10.36408/mhjcm.v12i2.1249',
-                                ],
-                                [
-                                    'no' => 10,
-                                    'authors' => 'Ghifari, M.R.E., Romdani, A., Rasyadi, I.S., Dey, L., Mudatsir, M., Empung, E., Putra, A.S.',
-                                    'year' => '2025',
-                                    'title' => 'Integrating Hydrodynamic Modelling and Hazard Assessment to Mitigate Flood Risks in the Pemali River Basin, Central Java, Indonesia',
-                                    'journal' => 'International Journal of River Basin Management (Taylor & Francis)',
-                                    'vol' => '2025',
-                                    'doi' => 'https://doi.org/10.1080/15715124.2025.2551574',
-                                    'doi_label' => '10.1080/15715124.2025.2551574',
-                                ],
-                                [
-                                    'no' => 11,
-                                    'authors' => 'Ghifari, M.R.E., Romdani, A., Amanulloh, F.R., Empung, E., Putri, T.S., Mudatsir, M.',
-                                    'year' => '2025',
-                                    'title' => 'Exploring Coastal Green Infrastructure (CGI): A Promising Approach to Mitigating Climate Change-related Disasters in West Java\'s Southern Coast, Indonesia',
-                                    'journal' => 'Omni-Akuatika',
-                                    'vol' => '21(1)',
-                                    'doi' => 'https://doi.org/10.20884/1.oa.2025.21.1.1207',
-                                    'doi_label' => '10.20884/1.oa.2025.21.1.1207',
-                                ],
-                                [
-                                    'no' => 12,
-                                    'authors' => 'Pamungkas, M. T. P., Romdani, A., Gusnadi, Z., Senyaji, H., Atlie, D. B. P.',
-                                    'year' => '2026',
-                                    'title' => 'Soil Improvement Analysis for Container Yard Using Prefabricated Vertical Drains (PVD) and Preloading: a Case Study of Reclaimed Land in the Madura Strait',
-                                    'journal' => 'Balanga: Jurnal Pendidikan Teknologi dan Kejuruan',
-                                    'vol' => '14(1)',
-                                    'doi' => 'https://doi.org/10.37304/balanga.v14i1.26433',
-                                    'doi_label' => '10.37304/balanga.v14i1.26433',
-                                ],
-                                [
-                                    'no' => 13,
-                                    'authors' => 'Romdani, A., Mudatsir, Amanulloh, F. R., El Ghifari, M. R., Cosmaad, R., Atlie, D. B. P.',
-                                    'year' => '2026',
-                                    'title' => 'Mapping Climate and Air Quality Risks for Acute Respiratory Infections in Eastern Priangan, Indonesia',
-                                    'journal' => 'Jurnal Ilmiah Kandang Tilagang',
-                                    'vol' => '17(2)',
-                                    'doi' => 'https://doi.org/10.37304/jikt.v17i2.46',
-                                    'doi_label' => '10.37304/jikt.v17i2.46',
-                                ],
-                                [
-                                    'no' => 14,
-                                    'authors' => 'Romdani, A.',
-                                    'year' => '2027',
-                                    'title' => 'Advanced Spatial Mapping of River-Wave-Compound Flooding in a Tropical Monsoon Coast Using Statistical-Hydrodynamic Integration: Insights from Brebes Coast, Indonesia',
-                                    'journal' => 'Marine Development',
-                                    'vol' => 'In Press / Accepted',
-                                    'doi' => '#',
-                                    'doi_label' => 'Marine Development 2027',
-                                ],
-                            ];
-                            @endphp
-
-                            @foreach($jurnalList as $jurnal)
-                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-indigo-400 hover:bg-white hover:shadow-sm transition duration-200">
-                                <div class="flex items-start justify-between gap-3 mb-1.5 flex-wrap">
-                                    <span class="text-xs font-semibold text-slate-500">
-                                        {{ $jurnal['authors'] }} ({{ $jurnal['year'] }})
-                                    </span>
-                                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-100">
-                                        #{{ $jurnal['no'] }} &bull; Peer-Reviewed
-                                    </span>
-                                </div>
-                                <h5 class="text-sm font-bold text-slate-900 leading-snug">
-                                    {{ $jurnal['title'] }}
-                                </h5>
-                                <p class="text-xs text-slate-600 italic mt-1">
-                                    {{ $jurnal['journal'] }}, {{ $jurnal['vol'] }}.
-                                </p>
-                                @if(!empty($jurnal['doi_label']) && $jurnal['doi_label'] !== '#')
-                                <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                    <span class="text-xs text-slate-500 font-mono">
-                                        DOI: {{ $jurnal['doi_label'] }}
-                                    </span>
-                                </div>
-                                @endif
-                            </div>
-                            @endforeach
-                        </div>
                     </div>
 
                     {{-- 5. Konferensi Internasional --}}
