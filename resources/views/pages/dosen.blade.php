@@ -6,44 +6,7 @@
 @section('content')
 @php
 $dosenList = [
-    // 1. Rekayasa Struktur dan Bahan (5 dosen)
-    [
-        'slug' => 'yusep-ramdani',
-        'nama' => 'Dr. Ir. Yusep Ramdani, S.T., M.T.',
-        'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur dan Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50',
-    ],
-    [
-        'slug' => 'rosi-nursani',
-        'nama' => 'Rosi Nursani, S.T., M.T.',
-        'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur dan Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50',
-    ],
-    [
-        'slug' => 'syarif-al-huseiny',
-        'nama' => 'Mohammad Syarif Al-Huseiny, S.T., M.T.',
-        'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur dan Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50',
-    ],
-    [
-        'slug' => 'intan-nuriskha',
-        'nama' => 'Intan Nuriskha Rachma, S.T., M.T.',
-        'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur dan Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50',
-    ],
-    [
-        'slug' => 'sri-wanto',
-        'nama' => 'Sri Wanto, S.T., M.T.',
-        'kbk' => 'struktur',
-        'kbk_label' => 'Rekayasa Struktur dan Bahan',
-        'badge_class' => 'text-blue-800 bg-blue-50',
-    ],
-
-    // 2. Rekayasa Sumber Daya Air (6 dosen)
+    // 1. Rekayasa Sumber Daya Air (6 dosen)
     [
         'slug' => 'empung',
         'nama' => 'Dr. Ir. Empung, S.T., M.T.',
@@ -87,30 +50,7 @@ $dosenList = [
         'badge_class' => 'text-cyan-800 bg-cyan-50',
     ],
 
-    // 3. Rekayasa Geoteknik (3 dosen)
-    [
-        'slug' => 'iman-handiman',
-        'nama' => 'Dr. Ir. Iman Handiman, S.T., M.T.',
-        'kbk' => 'geoteknik',
-        'kbk_label' => 'Rekayasa Geoteknik',
-        'badge_class' => 'text-amber-800 bg-amber-50',
-    ],
-    [
-        'slug' => 'fitriana-sarifah',
-        'nama' => 'Ir. Fitriana Sarifah, S.T., M.T.',
-        'kbk' => 'geoteknik',
-        'kbk_label' => 'Rekayasa Geoteknik',
-        'badge_class' => 'text-amber-800 bg-amber-50',
-    ],
-    [
-        'slug' => 'zakwan-gusnadi',
-        'nama' => 'Zakwan Gusnadi, S.T., M.T.',
-        'kbk' => 'geoteknik',
-        'kbk_label' => 'Rekayasa Geoteknik',
-        'badge_class' => 'text-amber-800 bg-amber-50',
-    ],
-
-    // 4. Rekayasa Transportasi dan Jalan Raya (7 dosen)
+    // 2. Rekayasa Transportasi dan Jalan Raya (7 dosen)
     [
         'slug' => 'nina-herlina',
         'nama' => 'Ir. Nina Herlina, Dra., M.T.',
@@ -159,6 +99,66 @@ $dosenList = [
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
+    ],
+
+    // 3. Rekayasa Struktur dan Bahan (5 dosen)
+    [
+        'slug' => 'yusep-ramdani',
+        'nama' => 'Dr. Ir. Yusep Ramdani, S.T., M.T.',
+        'kbk' => 'struktur',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
+        'badge_class' => 'text-blue-800 bg-blue-50',
+    ],
+    [
+        'slug' => 'rosi-nursani',
+        'nama' => 'Rosi Nursani, S.T., M.T.',
+        'kbk' => 'struktur',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
+        'badge_class' => 'text-blue-800 bg-blue-50',
+    ],
+    [
+        'slug' => 'syarif-al-huseiny',
+        'nama' => 'Mohammad Syarif Al-Huseiny, S.T., M.T.',
+        'kbk' => 'struktur',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
+        'badge_class' => 'text-blue-800 bg-blue-50',
+    ],
+    [
+        'slug' => 'intan-nuriskha',
+        'nama' => 'Intan Nuriskha Rachma, S.T., M.T.',
+        'kbk' => 'struktur',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
+        'badge_class' => 'text-blue-800 bg-blue-50',
+    ],
+    [
+        'slug' => 'sri-wanto',
+        'nama' => 'Sri Wanto, S.T., M.T.',
+        'kbk' => 'struktur',
+        'kbk_label' => 'Rekayasa Struktur dan Bahan',
+        'badge_class' => 'text-blue-800 bg-blue-50',
+    ],
+
+    // 4. Rekayasa Geoteknik (3 dosen)
+    [
+        'slug' => 'iman-handiman',
+        'nama' => 'Dr. Ir. Iman Handiman, S.T., M.T.',
+        'kbk' => 'geoteknik',
+        'kbk_label' => 'Rekayasa Geoteknik',
+        'badge_class' => 'text-amber-800 bg-amber-50',
+    ],
+    [
+        'slug' => 'fitriana-sarifah',
+        'nama' => 'Ir. Fitriana Sarifah, S.T., M.T.',
+        'kbk' => 'geoteknik',
+        'kbk_label' => 'Rekayasa Geoteknik',
+        'badge_class' => 'text-amber-800 bg-amber-50',
+    ],
+    [
+        'slug' => 'zakwan-gusnadi',
+        'nama' => 'Zakwan Gusnadi, S.T., M.T.',
+        'kbk' => 'geoteknik',
+        'kbk_label' => 'Rekayasa Geoteknik',
+        'badge_class' => 'text-amber-800 bg-amber-50',
     ],
 
     // 5. Manajemen Rekayasa Konstruksi (3 dosen)
