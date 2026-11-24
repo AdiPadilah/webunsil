@@ -59,8 +59,8 @@ $dosenList = [
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
-        'slug' => 'gary-raya-prima',
-        'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.',
+        'slug' => 'herianto',
+        'nama' => 'Herianto, S.T., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
@@ -73,8 +73,8 @@ $dosenList = [
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
-        'slug' => 'herianto',
-        'nama' => 'Herianto, S.T., M.T.',
+        'slug' => 'gary-raya-prima',
+        'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
