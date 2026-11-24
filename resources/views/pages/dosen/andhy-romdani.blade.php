@@ -394,7 +394,198 @@
 
                     </div>
 
-                    {{-- 5. Konferensi Internasional --}}
+                    {{-- 4. Publikasi Jurnal Internasional (14 Artikel Peer-Reviewed) --}}
+                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
+                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-9 h-9 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading">
+                                        Publikasi Jurnal Internasional
+                                    </h3>
+                                    <p class="text-xs text-slate-400">Artikel ilmiah peer-reviewed bereputasi global</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full border border-indigo-200">
+                                14 Artikel Terindeks
+                            </span>
+                        </div>
+
+                        <div class="space-y-4">
+                            @php
+                            $jurnalList = [
+                                [
+                                    'no' => 1,
+                                    'authors' => 'Romdani, A., Chen, J.-L., Chien, H., Lin, J.-H., Hung, C.-K., Huang, Y.-Q.',
+                                    'year' => '2022',
+                                    'title' => 'Adjacent to a River Mouth: Mechanisms and Effects of Littoral Sediment Transport to the Navigation Channel',
+                                    'journal' => 'Journal of Waterway, Port, Coastal, and Ocean Engineering (ASCE)',
+                                    'vol' => '148(5), 05022001',
+                                    'doi' => 'https://doi.org/10.1061/(ASCE)WW.1943-5460.0000700',
+                                    'doi_label' => '10.1061/(ASCE)WW.1943-5460.0000700',
+                                ],
+                                [
+                                    'no' => 2,
+                                    'authors' => 'Romdani, A., Tsai, S.-D., Tsai, W.-Z., Lin, Y.-C., Chen, J.-L.',
+                                    'year' => '2022',
+                                    'title' => 'A numerical investigation on the occurrence of the typhoon-triggered density currents of the 2008-flood event',
+                                    'journal' => 'Journal of Coastal and Offshore Science and Engineering',
+                                    'vol' => '1, 100-116',
+                                    'doi' => 'https://doi.org/10.53256/COSE_220106',
+                                    'doi_label' => '10.53256/COSE_220106',
+                                ],
+                                [
+                                    'no' => 3,
+                                    'authors' => 'Romdani, A., Chen, J.-L., Chien, H., Lin, J.-H., Liao, C.-Y., Hou, C.-Q.',
+                                    'year' => '2022',
+                                    'title' => 'Downdrift Port Siltation Adjacent to a River Mouth: Effects of Meso-tidal Conditions and Typhoon',
+                                    'journal' => 'Journal of Waterway, Port, Coastal, and Ocean Engineering (ASCE)',
+                                    'vol' => 'JWPED5/WWENG-1940',
+                                    'doi' => 'https://doi.org/10.1061/JWPED5/WWENG-1940',
+                                    'doi_label' => '10.1061/JWPED5/WWENG-1940',
+                                ],
+                                [
+                                    'no' => 4,
+                                    'authors' => 'Tsai, S.-D., Lin, Y.-C., Romdani, A., Chen, J.-L., Hsu, R.T., Liu, J.T.',
+                                    'year' => '2023',
+                                    'title' => 'On the Occurrence of Low Concentration Hyperpycnal River Plumes in a Small Mountainous River-Canyon System',
+                                    'journal' => 'Continental Shelf Research (Elsevier)',
+                                    'vol' => '267, 104952',
+                                    'doi' => 'https://doi.org/10.1016/j.csr.2023.104952',
+                                    'doi_label' => '10.1016/j.csr.2023.104952',
+                                ],
+                                [
+                                    'no' => 5,
+                                    'authors' => 'Tsai, S.-D., Chen, J.-L., Hsu, W.-Y., Tsai, W.-Z., Romdani, A.',
+                                    'year' => '2023',
+                                    'title' => 'Morphological Evolution and Sediment Budget of a River-Dominated Meso-Tidal Coast',
+                                    'journal' => 'Journal of Marine Science and Engineering',
+                                    'vol' => '11(7), 1361',
+                                    'doi' => 'https://doi.org/10.3390/jmse11071361',
+                                    'doi_label' => '10.3390/jmse11071361',
+                                ],
+                                [
+                                    'no' => 6,
+                                    'authors' => 'Romdani, A. and Chen, J.-L.',
+                                    'year' => '2024',
+                                    'title' => 'Tidal and Seasonal Variations in Suspended Sediment Concentrations in a Meso-Tidal Macro-Estuary',
+                                    'journal' => 'Estuarine, Coastal and Shelf Science (Elsevier)',
+                                    'vol' => '303, 108819',
+                                    'doi' => 'https://doi.org/10.1016/j.ecss.2024.108819',
+                                    'doi_label' => '10.1016/j.ecss.2024.108819',
+                                ],
+                                [
+                                    'no' => 7,
+                                    'authors' => 'Romdani, A., Amanulloh, F. R., Mudatsir',
+                                    'year' => '2024',
+                                    'title' => 'Coastal Vulnerability of East Priangan, Indonesia to Waves and Tidal Flooding during the 2022 La Niña Event',
+                                    'journal' => 'Coastal Engineering Journal (Taylor & Francis)',
+                                    'vol' => '67(1), 1-17',
+                                    'doi' => 'https://doi.org/10.1080/21664250.2024.2415174',
+                                    'doi_label' => '10.1080/21664250.2024.2415174',
+                                ],
+                                [
+                                    'no' => 8,
+                                    'authors' => 'Pamungkas, M. T. P., Romdani, A., Gusnadi, Z., Senyaji, H., Atlie, D. B. P.',
+                                    'year' => '2024',
+                                    'title' => 'Analysis of Pile Foundation Bearing Capacity for Bridge Pier on Clay Soil: Case Study of Kali Ketiwon Bridge, Tegal',
+                                    'journal' => 'Jurnal Ilmiah Desain & Konstruksi',
+                                    'vol' => '23(2), 173-184',
+                                    'doi' => 'https://doi.org/10.35760/dk.2024.v23i2.11585',
+                                    'doi_label' => '10.35760/dk.2024.v23i2.11585',
+                                ],
+                                [
+                                    'no' => 9,
+                                    'authors' => 'Pamungkas, M. T. P., Romdani, A., Senyaji, H., Gusnadi, Z., Atlie, D. B. P.',
+                                    'year' => '2025',
+                                    'title' => 'Geotechnical and Slope Stability Evaluation for Warehouse Infrastructure on Clay Shale and Marine Mud in Balikpapan',
+                                    'journal' => 'Jurnal Rekayasa Sipil (JRS-Unand)',
+                                    'vol' => '21(1), 32-45',
+                                    'doi' => 'https://doi.org/10.25077/jrs.21.1.32-45.2025',
+                                    'doi_label' => '10.25077/jrs.21.1.32-45.2025',
+                                ],
+                                [
+                                    'no' => 10,
+                                    'authors' => 'Mudatsir, Romdani, A., Amanulloh, F. R., Priatna, L., Sudrajat, D. A.',
+                                    'year' => '2025',
+                                    'title' => 'A Review of Recent Extreme Wave and Sea Level Rise in the Southern Coast of West Java, Indonesia: Coastal Vulnerability, Impacts, and Adaptation Challenges',
+                                    'journal' => 'Omni-Akuatika',
+                                    'vol' => '21(1)',
+                                    'doi' => 'https://doi.org/10.20884/1.oa.2025.21.1.1215',
+                                    'doi_label' => '10.20884/1.oa.2025.21.1.1215',
+                                ],
+                                [
+                                    'no' => 11,
+                                    'authors' => 'Amanulloh, F. R., Romdani, A., Mudatsir, Raharjo, P., Cosmaad, R.',
+                                    'year' => '2025',
+                                    'title' => 'Spatial Distribution of Water Column Stability and Ocean Heat Content Under Extreme Weather in West Java\'s Southern Coast, Indonesia',
+                                    'journal' => 'Omni-Akuatika',
+                                    'vol' => '21(1)',
+                                    'doi' => 'https://doi.org/10.20884/1.oa.2025.21.1.1207',
+                                    'doi_label' => '10.20884/1.oa.2025.21.1.1207',
+                                ],
+                                [
+                                    'no' => 12,
+                                    'authors' => 'Pamungkas, M. T. P., Romdani, A., Gusnadi, Z., Senyaji, H., Atlie, D. B. P.',
+                                    'year' => '2026',
+                                    'title' => 'Soil Improvement Analysis for Container Yard Using Prefabricated Vertical Drains (PVD) and Preloading: a Case Study of Reclaimed Land in the Madura Strait',
+                                    'journal' => 'Balanga: Jurnal Pendidikan Teknologi dan Kejuruan',
+                                    'vol' => '14(1)',
+                                    'doi' => 'https://doi.org/10.37304/balanga.v14i1.26433',
+                                    'doi_label' => '10.37304/balanga.v14i1.26433',
+                                ],
+                                [
+                                    'no' => 13,
+                                    'authors' => 'Romdani, A., Mudatsir, Amanulloh, F. R., El Ghifari, M. R., Cosmaad, R., Atlie, D. B. P.',
+                                    'year' => '2026',
+                                    'title' => 'Mapping Climate and Air Quality Risks for Acute Respiratory Infections in Eastern Priangan, Indonesia',
+                                    'journal' => 'Jurnal Ilmiah Kandang Tilagang',
+                                    'vol' => '17(2)',
+                                    'doi' => 'https://doi.org/10.37304/jikt.v17i2.46',
+                                    'doi_label' => '10.37304/jikt.v17i2.46',
+                                ],
+                                [
+                                    'no' => 14,
+                                    'authors' => 'Romdani, A.',
+                                    'year' => '2027',
+                                    'title' => 'Advanced Spatial Mapping of River-Wave-Compound Flooding in a Tropical Monsoon Coast Using Statistical-Hydrodynamic Integration: Insights from Brebes Coast, Indonesia',
+                                    'journal' => 'Marine Development',
+                                    'vol' => 'In Press / Accepted',
+                                    'doi' => '#',
+                                    'doi_label' => 'Marine Development 2027',
+                                ],
+                            ];
+                            @endphp
+
+                            @foreach($jurnalList as $jurnal)
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-indigo-400 hover:bg-white hover:shadow-sm transition duration-200">
+                                <div class="flex items-start justify-between gap-3 mb-1.5 flex-wrap">
+                                    <span class="text-xs font-semibold text-slate-500">
+                                        {{ $jurnal['authors'] }} ({{ $jurnal['year'] }})
+                                    </span>
+                                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-100">
+                                        #{{ $jurnal['no'] }} &bull; Peer-Reviewed
+                                    </span>
+                                </div>
+                                <h5 class="text-sm font-bold text-slate-900 leading-snug">
+                                    {{ $jurnal['title'] }}
+                                </h5>
+                                <p class="text-xs text-slate-600 italic mt-1">
+                                    {{ $jurnal['journal'] }}, {{ $jurnal['vol'] }}.
+                                </p>
+                                @if(!empty($jurnal['doi_label']) && $jurnal['doi_label'] !== '#')
+                                <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-xs text-slate-500 font-mono">
+                                        DOI: {{ $jurnal['doi_label'] }}
+                                    </span>
+                                </div>
+                                @endif
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
                     <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
                         <div class="flex items-center gap-2.5 mb-6">
                             <div class="w-9 h-9 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-sm">
