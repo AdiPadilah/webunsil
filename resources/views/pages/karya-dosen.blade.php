@@ -34,7 +34,7 @@
             </div>
 
             {{-- Baris 1: Jurnal besar + Buku kecil --}}
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 mb-5">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 mb-5 reveal">
 
                 {{-- Jurnal — Kartu besar --}}
                 <div class="lg:col-span-3 group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 min-h-[340px] flex flex-col">

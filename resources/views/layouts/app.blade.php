@@ -42,8 +42,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
+        /* Smooth Dropdown Animation */
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(8px);
+            transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.22s;
+            pointer-events: none;
+            display: block !important;
+        }
         .dropdown:hover > .dropdown-menu,
-        .dropdown:focus-within > .dropdown-menu { display: block; }
+        .dropdown:focus-within > .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        .dropdown > a i.fa-chevron-down {
+            transition: transform 0.22s ease;
+        }
+        .dropdown:hover > a i.fa-chevron-down {
+            transform: rotate(180deg);
+        }
         .sub-dropdown:hover > .sub-dropdown-menu,
         .sub-dropdown:focus-within > .sub-dropdown-menu { display: block; }
         .nav-link.active-nav { color: #FBBF24 !important; }
@@ -56,8 +79,22 @@
         .counter-num { transition: all 0.3s ease; }
         .ig-card:hover .ig-overlay { opacity: 1; }
         .ig-overlay { opacity: 0; transition: opacity 0.3s ease; }
-        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
-        .reveal.visible { opacity: 1; transform: translateY(0); }
+        
+        /* Smooth Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 100ms; }
+        .reveal-delay-2 { transition-delay: 200ms; }
+        .reveal-delay-3 { transition-delay: 300ms; }
+        .reveal-delay-4 { transition-delay: 400ms; }
         .img-fallback { background: linear-gradient(135deg, #0B2A4A 0%, #1e4d8c 100%); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
@@ -899,7 +936,7 @@
                         observer.unobserve(e.target);
                     }
                 });
-            }, { threshold: 0.15 });
+            }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
             revealEls.forEach(el => observer.observe(el));
             counterEls.forEach(el => observer.observe(el));

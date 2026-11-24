@@ -7,7 +7,7 @@
     
     <section id="beranda" class="hero-banner relative min-h-[560px] lg:min-h-[640px] flex items-center py-20 lg:py-28 border-b border-slate-800 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-            <div class="max-w-2xl lg:max-w-3xl space-y-4">
+            <div class="max-w-2xl lg:max-w-3xl space-y-4 reveal">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white font-heading tracking-tight leading-tight drop-shadow-lg">
                     Program Studi<br><span class="text-amber-400">Teknik Sipil</span>
                 </h1>
@@ -29,12 +29,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 
-                <div class="lg:col-span-4 flex justify-center">
-                    <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[250px] sm:max-w-[270px]">
+                <div class="lg:col-span-4 flex justify-center reveal">
+                    <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[250px] sm:max-w-[270px] hover:shadow-md transition-shadow">
                         <div class="aspect-[4/5] overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
                                  alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
-                                 class="w-full h-full object-cover object-top"
+                                 class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                                  onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
                         </div>
                         <div class="p-3 bg-[#0B2A4A] text-white text-center">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <div class="lg:col-span-8 space-y-4">
+                <div class="lg:col-span-8 space-y-4 reveal reveal-delay-1">
                     <p class="text-[#0070BA] font-semibold text-xs sm:text-sm uppercase tracking-wide">
                         Sambutan Ketua Program Studi
                     </p>
@@ -83,19 +83,19 @@
     <section class="py-10 bg-[#0B2A4A] border-b border-blue-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-                <div class="text-center py-3">
+                <div class="text-center py-3 reveal reveal-delay-1">
                     <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="567">567</span>
                     <span class="block text-xs font-medium text-slate-300 mt-1">Populasi</span>
                 </div>
-                <div class="text-center py-3">
+                <div class="text-center py-3 reveal reveal-delay-2">
                     <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="1186">1.186</span>
                     <span class="block text-xs font-medium text-slate-300 mt-1">Total Kelulusan</span>
                 </div>
-                <div class="text-center py-3">
+                <div class="text-center py-3 reveal reveal-delay-3">
                     <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="80">80</span>
                     <span class="block text-xs font-medium text-slate-300 mt-1">Aktivitas Mahasiswa</span>
                 </div>
-                <div class="text-center py-3">
+                <div class="text-center py-3 reveal reveal-delay-4">
                     <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="264">264</span>
                     <span class="block text-xs font-medium text-slate-300 mt-1">Aktivitas Dosen</span>
                 </div>
@@ -112,19 +112,19 @@
                 <div class="lg:col-span-8 space-y-10">
                     
                     
-                    <div>
+                    <div class="reveal">
                         <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading mb-5">
                             Program Studi Teknik Sipil
                         </h2>
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-1">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Capaian Pembelajaran Lulusan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
                                 </div>
                                 <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
                                         Capaian Pembelajaran Lulusan
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -137,12 +137,12 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-2">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Profil Profesional Mandiri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
                                 </div>
                                 <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
                                         Profil Profesional Mandiri
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -155,12 +155,12 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-3">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
                                 </div>
                                 <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
                                         Prestasi Mahasiswa
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -175,7 +175,7 @@
                     </div>
 
                     
-                    <div>
+                    <div class="reveal">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
                             <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading">
                                 Kegiatan Mahasiswa
@@ -193,12 +193,12 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-1">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/event-1.jpg') }}" alt="Kompetisi Jembatan Nasional SCIENCE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=600'">
                                 </div>
                                 <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
                                         SCIENCE: Bridge Competition
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -211,12 +211,12 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-2">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Himpunan Mahasiswa Sipil FT UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600'">
                                 </div>
                                 <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
                                         Organisasi HMS FT UNSIL
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -229,13 +229,13 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-3">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan NCKU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 </div>
                                 <div class="p-4">
                                     <span class="text-[11px] font-semibold text-slate-400">12 Oktober 2026</span>
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug mt-0.5">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug mt-0.5 group-hover:text-[#0070BA] transition-colors">
                                         Seminar Internasional Indonesia-Taiwan
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -250,7 +250,7 @@
                     </div>
 
                     
-                    <div>
+                    <div class="reveal">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
                             <div>
                                 <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading">
@@ -264,12 +264,12 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-1">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Bahan Konstruksi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/event-1.jpg') }}'">
                                 </div>
                                 <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
                                         Lab. Teknologi Bahan Konstruksi
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -282,12 +282,12 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-2">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Laboratorium Mekanika Tanah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/unsil-campus-hd.jpg') }}'">
                                 </div>
                                 <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
                                         Lab. Mekanika Tanah & Geoteknik
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -300,12 +300,12 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white group">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-3">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/gedung-unsil.jpg') }}" alt="Studio Komputasi dan BIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/event-3.jpg') }}'">
                                 </div>
                                 <div class="p-4">
-                                    <h3 class="text-sm font-bold text-slate-900 leading-snug">
+                                    <h3 class="text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
                                         Studio Komputasi & BIM
                                     </h3>
                                     <p class="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -325,7 +325,7 @@
                 <div class="lg:col-span-4 space-y-8 lg:pl-2">
                     
                     
-                    <div>
+                    <div class="reveal">
                         <div class="flex items-center justify-between mb-4">
                             <h2 class="text-2xl font-bold text-[#0B2A4A] font-heading">
                                 Agenda
@@ -333,7 +333,7 @@
                         </div>
                         
                         
-                        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
+                        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 group">
                             <div class="overflow-hidden bg-slate-100">
                                 <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop OBE" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>

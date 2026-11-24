@@ -31,7 +31,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
             {{-- Layout Bento Grid Persis Gambar Pertama (1 Kartu Tinggi Kiri, 2 Kartu Ditumpuk Kanan) --}}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch reveal">
 
                 {{-- Kolom Kiri: 1 Kartu Tinggi (Program) --}}
                 <a href="{{ route('kurikulum') }}" class="group relative rounded-3xl overflow-hidden block min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end">
@@ -90,7 +90,7 @@
 
             {{-- Seksi 5 Bidang Keahlian / Konsentrasi Sipil UNSIL (Bento Grid) --}}
             <div class="mt-16 sm:mt-20 pt-12 border-t border-slate-200">
-                <div class="mb-8 sm:mb-10 max-w-3xl">
+                <div class="mb-8 sm:mb-10 max-w-3xl reveal">
                     <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1">
                         Disiplin Ilmu &amp; Peminatan
                     </p>
@@ -103,7 +103,7 @@
                 </div>
 
                 {{-- Bagian Atas: Bento Grid 1 Tinggi Kiri, 2 Tumpuk Kanan (Persis Image 1 UNPAD) --}}
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch reveal">
 
                     {{-- Kolom Kiri: 1 Kartu Tinggi (Pilar 01: Rekayasa Struktur dan Bahan) --}}
                     <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 sm:p-8">

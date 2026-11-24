@@ -33,7 +33,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch reveal">
 
                 {{-- Foto kiri --}}
                 <div class="relative rounded-xl overflow-hidden min-h-[320px] bg-slate-100 border border-slate-200">

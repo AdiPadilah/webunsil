@@ -31,16 +31,16 @@
             
             
             {{-- Sambutan Ketua Program Studi (Proporsional & Relevan) --}}
-            <div class="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm p-6 sm:p-8 lg:p-10">
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm p-6 sm:p-8 lg:p-10 reveal">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     
                     {{-- Foto Pimpinan / Ketua Program Studi --}}
                     <div class="lg:col-span-4 flex justify-center">
-                        <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[250px] sm:max-w-[270px]">
+                        <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[250px] sm:max-w-[270px] hover:shadow-md transition-shadow">
                             <div class="aspect-[4/5] overflow-hidden bg-slate-100">
                                 <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
                                      alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
-                                     class="w-full h-full object-cover object-top"
+                                     class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                                      onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
                             </div>
                             <div class="p-3 bg-[#0B2A4A] text-white text-center">
@@ -93,25 +93,25 @@
 
             
             {{-- 2 Card Sejarah & Dosen (Gaya Gambar 2: Full-bleed Image, Rounded-2xl, Judul di Kiri Bawah) --}}
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
 
                 {{-- Card 1: Sejarah Program Studi --}}
-                <a href="{{ route('sejarah') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-md transition bg-slate-900">
+                <a href="{{ route('sejarah') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900">
                     <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Sejarah Program Studi" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight drop-shadow-md text-white">
+                        <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors">
                             Sejarah Program Studi
                         </h3>
                     </div>
                 </a>
 
                 {{-- Card 2: Dosen & Tenaga Pengajar --}}
-                <a href="{{ route('dosen') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-md transition bg-slate-900">
+                <a href="{{ route('dosen') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900">
                     <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Dosen & Tenaga Pengajar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight drop-shadow-md text-white">
+                        <h3 class="text-lg sm:text-xl font-bold font-heading leading-tight drop-shadow-md text-white group-hover:text-amber-300 transition-colors">
                             Dosen &amp; Tenaga Pengajar
                         </h3>
                     </div>

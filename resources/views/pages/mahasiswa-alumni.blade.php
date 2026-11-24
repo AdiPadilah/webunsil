@@ -32,7 +32,8 @@
             </div>
 
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 items-stretch">
+            {{-- Seksi Utama: HMS & Alumni --}}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 items-stretch reveal">
                 
                 {{-- HMS --}}
                 <div id="hms" class="bg-white rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between scroll-mt-28">
