@@ -110,9 +110,6 @@
                         <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Rekayasa Struktur dan Bahan" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
-                            <p class="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1.5">
-                                Pilar 01 &bull; Rekayasa Struktur dan Bahan
-                            </p>
                             <h3 class="text-2xl sm:text-3xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
                                 Rekayasa Struktur dan Bahan
                             </h3>
@@ -127,9 +124,6 @@
                             <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Rekayasa Sumber Daya Air" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                             <div class="relative z-10">
-                                <p class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider mb-1">
-                                    Pilar 02 &bull; Rekayasa Sumber Daya Air
-                                </p>
                                 <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-cyan-300 transition-colors">
                                     Rekayasa Sumber Daya Air
                                 </h3>
@@ -141,9 +135,6 @@
                             <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Rekayasa Geoteknik" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                             <div class="relative z-10">
-                                <p class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-1">
-                                    Pilar 03 &bull; Rekayasa Geoteknik
-                                </p>
                                 <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
                                     Rekayasa Geoteknik
                                 </h3>
@@ -162,9 +153,6 @@
                         <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Rekayasa Transportasi dan Jalan Raya" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
-                            <p class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-1">
-                                Pilar 04 &bull; Rekayasa Transportasi dan Jalan Raya
-                            </p>
                             <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-amber-300 transition-colors">
                                 Rekayasa Transportasi dan Jalan Raya
                             </h3>
@@ -176,9 +164,6 @@
                         <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Manajemen Rekayasa Konstruksi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
-                            <p class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider mb-1">
-                                Pilar 05 &bull; Manajemen Rekayasa Konstruksi
-                            </p>
                             <h3 class="text-xl sm:text-2xl font-bold text-white font-heading leading-tight group-hover:text-emerald-300 transition-colors">
                                 Manajemen Rekayasa Konstruksi
                             </h3>
