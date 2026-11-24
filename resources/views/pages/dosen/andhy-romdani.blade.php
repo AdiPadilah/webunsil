@@ -153,46 +153,59 @@
                 <div class="lg:col-span-8 space-y-8">
                     
                     {{-- 1. Biografi Naratif Lengkap --}}
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-                        <div class="flex items-center gap-2.5 mb-4">
-                            <div class="w-9 h-9 rounded-xl bg-blue-50 text-[#0070BA] flex items-center justify-center font-bold text-sm">
+                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center gap-3 mb-5 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0070BA] border border-blue-100/80 flex items-center justify-center font-bold text-base shadow-2xs">
                                 <i class="fa-solid fa-user-tie"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading">
+                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
                                     Biografi &amp; Profil Akademik
                                 </h3>
-                                <p class="text-xs text-slate-400">Ringkasan perjalanan akademik dan dedikasi profesional</p>
+                                <p class="text-xs text-slate-400 font-medium">Ringkasan perjalanan akademik dan dedikasi profesional</p>
                             </div>
                         </div>
 
-                        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                        {{-- Lead Highlight --}}
+                        <div class="p-4 rounded-xl bg-gradient-to-r from-blue-50/80 to-slate-50/50 border-l-4 border-[#0070BA] text-slate-700 text-sm leading-relaxed mb-5 shadow-2xs">
+                            <p class="font-medium">
+                                <strong>Andhy Romdani, S.T., M.Eng., Ph.D.</strong> adalah akademisi dan peneliti di bidang Hidrodinamika Pantai, Pemodelan Transpor Sedimen, serta Manajemen Rekayasa Sumber Daya Air. Beliau mengemban amanah sebagai Ketua Program Studi S-1 Teknik Sipil FT Universitas Siliwangi serta aktif menulis 19 judul buku ber-ISBN.
+                            </p>
+                        </div>
+
+                        <div class="space-y-3.5 text-sm text-slate-600 leading-relaxed">
                             <p>
-                                Andhy Romdani menempuh studi sarjana di Jurusan Teknik Sipil, Fakultas Teknik, Universitas Gadjah Mada (UGM), Yogyakarta. Ia masuk melalui jalur seleksi PBUD (Penelusuran Bibit Unggul Daerah) mewakili Kabupaten Grobogan, Jawa Tengah, pada tahun 1998, dan berhasil menyelesaikan gelar Sarjana Teknik (S.T.) serta Master of Engineering (M.Eng.) dari kampus yang sama.
+                                Andhy Romdani menempuh studi sarjana di Jurusan Teknik Sipil, Fakultas Teknik, Universitas Gadjah Mada (UGM), Yogyakarta. Beliau diterima melalui jalur seleksi bergengsi PBUD (Penelusuran Bibit Unggul Daerah) mewakili Kabupaten Grobogan, Jawa Tengah, pada tahun 1998, dan berhasil menyelesaikan gelar Sarjana Teknik (S.T.) serta Master of Engineering (M.Eng.) dari almamater yang sama.
                             </p>
                             <p>
-                                Perjalanan akademiknya berlanjut ke jenjang doktoral (Ph.D.) di National Cheng Kung University (NCKU), Taiwan, pada Department of Hydraulic and Ocean Engineering. Atas keunggulan riset dan capaian akademiknya, ia dinobatkan sebagai salah satu lulusan terbaik program doktoral dan menerima penghargaan dari The Phi Tau Phi Scholastic Honor Society of the Republic of China pada tahun 2023.
+                                Perjalanan keilmuannya berlanjut ke jenjang doktoral (Ph.D.) di National Cheng Kung University (NCKU), Taiwan, pada Department of Hydraulic and Ocean Engineering. Berkat kualitas riset dan capaian akademiknya yang unggul, beliau dinobatkan sebagai salah satu lulusan terbaik program doktoral dan dianugerahi penghargaan kehormatan dari <em>The Phi Tau Phi Scholastic Honor Society of the Republic of China</em> pada tahun 2023.
                             </p>
                             <p>
-                                Saat ini ia aktif mengajar dan mengemban amanah sebagai Ketua Program Studi S-1 Teknik Sipil, Fakultas Teknik, Universitas Siliwangi, Tasikmalaya, Jawa Barat.
+                                Sebelum mendedikasikan diri sepenuhnya di dunia akademik, beliau menimba pengalaman praktis di industri konstruksi skala nasional melalui BUMN terkemuka, yaitu PT Wijaya Karya (Persero) Tbk dan PT Pembangunan Perumahan (Persero) Tbk. Beliau juga memiliki rekam jejak kepemimpinan literasi sebagai <em>Editor in Chief</em> di Penerbit Mizan, Bandung.
                             </p>
-                            <p>
-                                Sebelum berkarier penuh di dunia akademik, ia aktif di industri konstruksi nasional melalui BUMN terkemuka, yaitu PT. Wijaya Karya dan PT. Pembangunan Perumahan. Ia juga memiliki pengalaman di bidang penulisan kreatif sebagai Editor in Chief di Penerbit Mizan, Bandung.
-                            </p>
+                        </div>
+
+                        {{-- Fokus Keahlian --}}
+                        <div class="mt-6 pt-5 border-t border-slate-100 flex flex-wrap items-center gap-2">
+                            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mr-1">Fokus Bidang:</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">Hidrodinamika Pantai</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">Transpor Sedimen</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">Mitigasi Banjir &amp; Muara Sungai</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">Rekayasa Sumber Daya Air</span>
                         </div>
                     </div>
 
-                    {{-- 2. Riwayat Pendidikan & Penghargaan --}}
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-                        <div class="flex items-center gap-2.5 mb-6">
-                            <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-sm">
+                    {{-- 2. Riwayat Pendidikan & Rekognisi --}}
+                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 border border-amber-100/80 flex items-center justify-center font-bold text-base shadow-2xs">
                                 <i class="fa-solid fa-graduation-cap"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading">
+                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
                                     Pendidikan &amp; Rekognisi
                                 </h3>
-                                <p class="text-xs text-slate-400">Kualifikasi gelar akademik dan penghargaan kehormatan</p>
+                                <p class="text-xs text-slate-400 font-medium">Kualifikasi gelar akademik, rekognisi internasional, dan rekam jejak industri</p>
                             </div>
                         </div>
 
@@ -202,67 +215,73 @@
                                 <i class="fa-solid fa-landmark text-[#0070BA]"></i> Jenjang Pendidikan Formal
                             </h4>
 
-                            <div class="border-l-2 border-[#0070BA]/30 pl-4 sm:pl-6 space-y-5 ml-2">
+                            <div class="border-l-2 border-[#0070BA]/25 pl-4 sm:pl-6 space-y-6 ml-2.5 my-3">
                                 {{-- S3 --}}
                                 <div class="relative group">
-                                    <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-[#0070BA] ring-4 ring-blue-50"></div>
-                                    <span class="inline-block text-[11px] font-semibold text-[#0070BA] bg-blue-50 px-2 py-0.5 rounded">
-                                        Program Doktoral (Ph.D.)
-                                    </span>
-                                    <h5 class="text-sm font-bold text-slate-800 mt-1">National Cheng Kung University (NCKU), Taiwan</h5>
-                                    <p class="text-xs text-slate-600">Department of Hydraulic and Ocean Engineering</p>
-                                    <p class="text-[11px] text-amber-600 font-medium mt-1">
-                                        <i class="fa-solid fa-award"></i> Lulusan Terbaik Doktoral — The Phi Tau Phi Scholastic Honor Society (2023)
-                                    </p>
+                                    <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-[#0070BA] ring-4 ring-blue-100"></div>
+                                    <div class="flex items-center gap-2 flex-wrap">
+                                        <span class="inline-block text-[11px] font-bold text-[#0070BA] bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-100">
+                                            Program Doktoral (Ph.D.)
+                                        </span>
+                                        <span class="text-xs font-semibold text-slate-400 font-mono">Lulus 2023</span>
+                                    </div>
+                                    <h5 class="text-sm sm:text-base font-bold text-slate-900 mt-1.5">National Cheng Kung University (NCKU), Taiwan</h5>
+                                    <p class="text-xs text-slate-600 mt-0.5">Department of Hydraulic and Ocean Engineering</p>
+                                    <div class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-700 bg-amber-50/80 border border-amber-200/70 px-2.5 py-1 rounded-lg mt-2">
+                                        <i class="fa-solid fa-award text-amber-500"></i> Lulusan Terbaik Doktoral — The Phi Tau Phi Scholastic Honor Society (2023)
+                                    </div>
                                 </div>
 
                                 {{-- S2 --}}
                                 <div class="relative group">
                                     <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-400 ring-4 ring-slate-100"></div>
-                                    <span class="inline-block text-[11px] font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded">
+                                    <span class="inline-block text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md border border-slate-200/60">
                                         Program Magister (M.Eng.)
                                     </span>
-                                    <h5 class="text-sm font-bold text-slate-800 mt-1">Universitas Gadjah Mada (UGM), Yogyakarta</h5>
-                                    <p class="text-xs text-slate-600">Jurusan Teknik Sipil, Fakultas Teknik</p>
+                                    <h5 class="text-sm sm:text-base font-bold text-slate-900 mt-1.5">Universitas Gadjah Mada (UGM), Yogyakarta</h5>
+                                    <p class="text-xs text-slate-600 mt-0.5">Jurusan Teknik Sipil, Fakultas Teknik</p>
                                 </div>
 
                                 {{-- S1 --}}
                                 <div class="relative group">
                                     <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-300 ring-4 ring-slate-100"></div>
-                                    <span class="inline-block text-[11px] font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded">
-                                        Program Sarjana (S.T.)
-                                    </span>
-                                    <h5 class="text-sm font-bold text-slate-800 mt-1">Universitas Gadjah Mada (UGM), Yogyakarta</h5>
-                                    <p class="text-xs text-slate-600">Jurusan Teknik Sipil, Fakultas Teknik (Masuk Jalur PBUD Grobogan, 1998)</p>
+                                    <div class="flex items-center gap-2 flex-wrap">
+                                        <span class="inline-block text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md border border-slate-200/60">
+                                            Program Sarjana (S.T.)
+                                        </span>
+                                        <span class="text-xs text-slate-500 font-medium">Jalur PBUD Grobogan (1998)</span>
+                                    </div>
+                                    <h5 class="text-sm sm:text-base font-bold text-slate-900 mt-1.5">Universitas Gadjah Mada (UGM), Yogyakarta</h5>
+                                    <p class="text-xs text-slate-600 mt-0.5">Jurusan Teknik Sipil, Fakultas Teknik</p>
                                 </div>
                             </div>
                         </div>
 
                         {{-- Penghargaan --}}
                         <div class="pt-6 border-t border-slate-100">
-                            <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3 flex items-center gap-2">
-                                <i class="fa-solid fa-trophy text-amber-500"></i> Penghargaan &amp; Rekognisi
+                            <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3.5 flex items-center gap-2">
+                                <i class="fa-solid fa-trophy text-amber-500"></i> Penghargaan &amp; Rekognisi Kehormatan
                             </h4>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                                <div class="p-3.5 rounded-xl bg-amber-50/60 border border-amber-200/60 flex items-start gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center shrink-0 text-sm">
+                                <div class="p-4 rounded-xl bg-gradient-to-br from-amber-50/70 to-amber-50/20 border border-amber-200/80 flex items-start gap-3.5 hover:shadow-2xs transition">
+                                    <div class="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 text-base shadow-2xs">
                                         <i class="fa-solid fa-medal"></i>
                                     </div>
                                     <div>
-                                        <span class="text-[10px] text-amber-700 font-bold uppercase tracking-wider">Tahun 2023 &bull; Taiwan</span>
-                                        <h6 class="text-xs font-bold text-slate-900 mt-0.5">The Phi Tau Phi Scholastic Honor Society</h6>
-                                        <p class="text-[11px] text-slate-600 mt-0.5">Salah satu lulusan terbaik pada program doktoral (Ph.D.) di Taiwan.</p>
+                                        <span class="text-[10px] text-amber-700 font-bold uppercase tracking-wider block">Tahun 2023 &bull; Taiwan</span>
+                                        <h6 class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5 leading-snug">The Phi Tau Phi Scholastic Honor Society</h6>
+                                        <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Dianugerahi sebagai salah satu lulusan terbaik pada program doktoral (Ph.D.) di Taiwan.</p>
                                     </div>
                                 </div>
 
-                                <div class="p-3.5 rounded-xl bg-blue-50/60 border border-blue-200/60 flex items-start gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-[#0070BA] text-white flex items-center justify-center shrink-0 text-sm">
+                                <div class="p-4 rounded-xl bg-gradient-to-br from-blue-50/70 to-blue-50/20 border border-blue-200/80 flex items-start gap-3.5 hover:shadow-2xs transition">
+                                    <div class="w-9 h-9 rounded-xl bg-[#0070BA] text-white flex items-center justify-center shrink-0 text-base shadow-2xs">
                                         <i class="fa-solid fa-pen-nib"></i>
                                     </div>
                                     <div>
-                                        <span class="text-[10px] text-[#0070BA] font-bold uppercase tracking-wider">Penghargaan Penerbitan</span>
-                                        <h6 class="text-xs font-bold text-slate-900 mt-0.5">Penulis Terfavorit</h6>
-                                        <p class="text-[11px] text-slate-600 mt-0.5">Dianugerahi oleh Penerbit Mega Press, Bandung atas produktivitas karya buku.</p>
+                                        <span class="text-[10px] text-[#0070BA] font-bold uppercase tracking-wider block">Penghargaan Penerbitan</span>
+                                        <h6 class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5 leading-snug">Penulis Terfavorit Nasional</h6>
+                                        <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Dianugerahi oleh Penerbit Mega Press, Bandung atas produktivitas dan mutu penulisan karya buku.</p>
                                     </div>
                                 </div>
                             </div>
@@ -270,21 +289,30 @@
 
                         {{-- Pengalaman Profesional --}}
                         <div class="pt-6 border-t border-slate-100 mt-6">
-                            <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3.5 flex items-center gap-2">
                                 <i class="fa-solid fa-briefcase text-slate-600"></i> Pengalaman Praktis &amp; Industri
                             </h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                                <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                    <span class="font-bold text-slate-800 block">Akademisi &amp; Pimpinan</span>
-                                    <p class="text-slate-500 mt-1 text-[11px]">Ketua Program Studi S-1 Teknik Sipil FT Universitas Siliwangi</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 hover:border-slate-300 transition">
+                                    <div class="w-7 h-7 rounded-lg bg-blue-100/80 text-[#0070BA] flex items-center justify-center text-xs mb-2">
+                                        <i class="fa-solid fa-chalkboard-user"></i>
+                                    </div>
+                                    <span class="font-bold text-slate-900 block text-xs">Akademisi &amp; Pimpinan</span>
+                                    <p class="text-slate-500 mt-1 text-[11px] leading-relaxed">Ketua Program Studi S-1 Teknik Sipil FT Universitas Siliwangi</p>
                                 </div>
-                                <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                    <span class="font-bold text-slate-800 block">Kontraktor BUMN</span>
-                                    <p class="text-slate-500 mt-1 text-[11px]">PT. Wijaya Karya (Persero) Tbk &bull; PT. Pembangunan Perumahan (Persero) Tbk</p>
+                                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 hover:border-slate-300 transition">
+                                    <div class="w-7 h-7 rounded-lg bg-emerald-100/80 text-emerald-700 flex items-center justify-center text-xs mb-2">
+                                        <i class="fa-solid fa-city"></i>
+                                    </div>
+                                    <span class="font-bold text-slate-900 block text-xs">Kontraktor BUMN</span>
+                                    <p class="text-slate-500 mt-1 text-[11px] leading-relaxed">PT Wijaya Karya (Persero) Tbk &bull; PT Pembangunan Perumahan (Persero) Tbk</p>
                                 </div>
-                                <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                    <span class="font-bold text-slate-800 block">Penulisan &amp; Media</span>
-                                    <p class="text-slate-500 mt-1 text-[11px]">Editor in Chief di Penerbit Mizan, Bandung</p>
+                                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 hover:border-slate-300 transition">
+                                    <div class="w-7 h-7 rounded-lg bg-purple-100/80 text-purple-700 flex items-center justify-center text-xs mb-2">
+                                        <i class="fa-solid fa-newspaper"></i>
+                                    </div>
+                                    <span class="font-bold text-slate-900 block text-xs">Penulisan &amp; Media</span>
+                                    <p class="text-slate-500 mt-1 text-[11px] leading-relaxed">Editor in Chief di Penerbit Mizan, Bandung</p>
                                 </div>
                             </div>
                         </div>
@@ -292,30 +320,30 @@
                     </div>
 
                     {{-- 3. Karya Buku (Koleksi 19 Buku) --}}
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6">
-                            <div class="flex items-center gap-2.5">
-                                <div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm">
+                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100/80 flex items-center justify-center font-bold text-base shadow-2xs">
                                     <i class="fa-solid fa-book-bookmark"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading">
+                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
                                         Koleksi Karya Buku
                                     </h3>
-                                    <p class="text-xs text-slate-400">19 judul buku non-fiksi keteknik-sipilan dan sastra fiksi ber-ISBN</p>
+                                    <p class="text-xs text-slate-400 font-medium">19 judul buku non-fiksi keteknik-sipilan dan sastra fiksi ber-ISBN</p>
                                 </div>
                             </div>
-                            <span class="text-xs font-semibold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full border border-emerald-200">
-                                Total 19 Buku Diterbitkan
+                            <span class="text-xs font-bold px-3.5 py-1 bg-emerald-50 text-emerald-800 rounded-full border border-emerald-200 shadow-2xs">
+                                <i class="fa-solid fa-check-circle text-emerald-600 mr-1"></i> Total 19 Buku Diterbitkan
                             </span>
                         </div>
 
                         {{-- Buku Non-Fiksi Keteknik-sipilan (12 Buku) --}}
                         <div class="mb-8">
-                            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-100">
+                            <div class="flex items-center gap-2 mb-3.5 pb-2 border-b border-slate-100">
                                 <i class="fa-solid fa-helmet-safety text-cyan-600 text-sm"></i>
                                 <h4 class="text-sm font-bold text-slate-800">Buku Non-Fiksi (Keteknik-sipilan)</h4>
-                                <span class="text-[10px] text-cyan-800 font-semibold bg-cyan-50 px-2 py-0.5 rounded-full ml-auto">12 Judul</span>
+                                <span class="text-[10px] text-cyan-800 font-semibold bg-cyan-50 border border-cyan-200/60 px-2.5 py-0.5 rounded-full ml-auto">12 Judul</span>
                             </div>
 
                             <div class="space-y-2.5">
@@ -337,18 +365,18 @@
                                 @endphp
 
                                 @foreach($bukuSipil as $buku)
-                                <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-cyan-500/50 hover:bg-white hover:shadow-sm transition duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                                <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:border-cyan-400 hover:bg-white hover:shadow-sm transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 group">
                                     <div class="flex items-start sm:items-center gap-3">
-                                        <span class="w-6 h-6 rounded-md bg-cyan-100 text-cyan-800 font-bold text-xs flex items-center justify-center shrink-0">
+                                        <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-cyan-50 to-cyan-100 text-cyan-800 font-bold text-xs flex items-center justify-center shrink-0 border border-cyan-200/70 shadow-2xs group-hover:scale-105 transition-transform">
                                             {{ $buku['no'] }}
                                         </span>
-                                        <h5 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
+                                        <h5 class="text-xs sm:text-[13.5px] font-bold text-slate-800 leading-snug group-hover:text-cyan-950 transition-colors">
                                             {{ $buku['judul'] }}
                                         </h5>
                                     </div>
                                     <div class="flex items-center gap-2.5 shrink-0 self-end sm:self-center text-[11px] pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-100 w-full sm:w-auto justify-between sm:justify-end">
-                                        <span class="text-slate-400 font-mono text-[11px]">ISBN: {{ $buku['isbn'] }}</span>
-                                        <span class="text-cyan-700 bg-cyan-50 font-medium text-[10px] px-2 py-0.5 rounded border border-cyan-100">Non-Fiksi</span>
+                                        <span class="text-slate-500 font-mono text-[11px] bg-white px-2.5 py-1 rounded-md border border-slate-200/80 shadow-2xs">ISBN: {{ $buku['isbn'] }}</span>
+                                        <span class="text-cyan-700 bg-cyan-50 font-semibold text-[10px] px-2.5 py-0.5 rounded-full border border-cyan-200/70">Non-Fiksi</span>
                                     </div>
                                 </div>
                                 @endforeach
@@ -357,10 +385,10 @@
 
                         {{-- Buku Fiksi / Novel (4 Buku) --}}
                         <div>
-                            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-100">
+                            <div class="flex items-center gap-2 mb-3.5 pb-2 border-b border-slate-100">
                                 <i class="fa-solid fa-feather-pointed text-amber-600 text-sm"></i>
                                 <h4 class="text-sm font-bold text-slate-800">Buku Fiksi (Novel Kreatif)</h4>
-                                <span class="text-[10px] text-amber-800 font-semibold bg-amber-50 px-2 py-0.5 rounded-full ml-auto">Karya Sastra</span>
+                                <span class="text-[10px] text-amber-800 font-semibold bg-amber-50 border border-amber-200/60 px-2.5 py-0.5 rounded-full ml-auto">Karya Sastra</span>
                             </div>
 
                             <div class="space-y-2.5">
@@ -374,18 +402,18 @@
                                 @endphp
 
                                 @foreach($bukuFiksi as $novel)
-                                <div class="p-3 sm:p-3.5 rounded-xl bg-amber-50/40 border border-amber-200/70 hover:border-amber-400 hover:bg-white hover:shadow-sm transition duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                                <div class="p-3 sm:p-3.5 rounded-xl bg-amber-50/30 border border-amber-200/70 hover:border-amber-400 hover:bg-white hover:shadow-sm transition-all duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 group">
                                     <div class="flex items-start sm:items-center gap-3">
-                                        <span class="w-6 h-6 rounded-md bg-amber-100 text-amber-800 font-bold text-xs flex items-center justify-center shrink-0">
+                                        <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-amber-50 to-amber-100 text-amber-800 font-bold text-xs flex items-center justify-center shrink-0 border border-amber-200/70 shadow-2xs group-hover:scale-105 transition-transform">
                                             {{ $novel['no'] }}
                                         </span>
-                                        <h5 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
+                                        <h5 class="text-xs sm:text-[13.5px] font-bold text-slate-800 leading-snug group-hover:text-amber-950 transition-colors">
                                             {{ $novel['judul'] }}
                                         </h5>
                                     </div>
                                     <div class="flex items-center gap-2.5 shrink-0 self-end sm:self-center text-[11px] pt-1 sm:pt-0 border-t sm:border-t-0 border-amber-100/60 w-full sm:w-auto justify-between sm:justify-end">
-                                        <span class="text-slate-400 font-mono text-[11px]">ISBN: {{ $novel['isbn'] }}</span>
-                                        <span class="text-amber-700 bg-amber-100/60 font-medium text-[10px] px-2 py-0.5 rounded border border-amber-200">Novel Fiksi</span>
+                                        <span class="text-slate-500 font-mono text-[11px] bg-white px-2.5 py-1 rounded-md border border-slate-200/80 shadow-2xs">ISBN: {{ $novel['isbn'] }}</span>
+                                        <span class="text-amber-700 bg-amber-100/70 font-semibold text-[10px] px-2.5 py-0.5 rounded-full border border-amber-200">Novel Fiksi</span>
                                     </div>
                                 </div>
                                 @endforeach
@@ -395,25 +423,25 @@
                     </div>
 
                     {{-- 4. Publikasi Jurnal Internasional (14 Artikel Peer-Reviewed) --}}
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6">
-                            <div class="flex items-center gap-2.5">
-                                <div class="w-9 h-9 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm">
+                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 border border-indigo-100/80 flex items-center justify-center font-bold text-base shadow-2xs">
                                     <i class="fa-solid fa-newspaper"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading">
+                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
                                         Publikasi Jurnal Internasional
                                     </h3>
-                                    <p class="text-xs text-slate-400">Artikel ilmiah peer-reviewed bereputasi global</p>
+                                    <p class="text-xs text-slate-400 font-medium">Artikel ilmiah peer-reviewed bereputasi global (ASCE, Elsevier, Taylor &amp; Francis)</p>
                                 </div>
                             </div>
-                            <span class="text-xs font-semibold px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full border border-indigo-200">
-                                14 Artikel Terindeks
+                            <span class="text-xs font-bold px-3.5 py-1 bg-indigo-50 text-indigo-800 rounded-full border border-indigo-200 shadow-2xs">
+                                <i class="fa-solid fa-globe text-indigo-600 mr-1"></i> 14 Artikel Terindeks
                             </span>
                         </div>
 
-                        <div class="space-y-4">
+                        <div class="space-y-3.5">
                             @php
                             $jurnalList = [
                                 [
@@ -560,42 +588,51 @@
                             @endphp
 
                             @foreach($jurnalList as $jurnal)
-                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-indigo-400 hover:bg-white hover:shadow-sm transition duration-200">
-                                <div class="flex items-start justify-between gap-3 mb-1.5 flex-wrap">
-                                    <span class="text-xs font-semibold text-slate-500">
-                                        {{ $jurnal['authors'] }} ({{ $jurnal['year'] }})
-                                    </span>
-                                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-100">
+                            <div class="p-4 sm:p-4.5 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-indigo-400 hover:bg-white hover:shadow-sm transition-all duration-200 group">
+                                <div class="flex items-center justify-between gap-3 mb-1.5 flex-wrap">
+                                    <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60 shadow-2xs">
                                         #{{ $jurnal['no'] }} &bull; Peer-Reviewed
                                     </span>
+                                    <span class="text-[11px] font-bold text-slate-500 bg-slate-100/90 px-2.5 py-0.5 rounded-md border border-slate-200/60 font-mono">
+                                        {{ $jurnal['year'] }}
+                                    </span>
                                 </div>
-                                <h5 class="text-sm font-bold text-slate-900 leading-snug">
+                                <h5 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug group-hover:text-indigo-950 transition-colors">
                                     {{ $jurnal['title'] }}
                                 </h5>
-                                <p class="text-xs text-slate-600 italic mt-1">
-                                    {{ $jurnal['journal'] }}, {{ $jurnal['vol'] }}.
+                                <p class="text-xs text-indigo-950/80 font-medium italic mt-1.5 flex items-center gap-1.5 flex-wrap">
+                                    <i class="fa-solid fa-book-open text-indigo-500 text-[11px]"></i>
+                                    <span>{{ $jurnal['journal'] }}</span>
+                                    <span class="text-slate-400 not-italic">&bull;</span>
+                                    <span class="text-slate-600 not-italic">{{ $jurnal['vol'] }}</span>
+                                </p>
+                                <p class="text-[11px] text-slate-500 mt-1">
+                                    <strong class="text-slate-700">Penulis:</strong> {{ $jurnal['authors'] }}
                                 </p>
                                 @if(!empty($jurnal['doi_label']) && $jurnal['doi_label'] !== '#')
-                                <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                    <span class="text-xs text-slate-500 font-mono">
-                                        DOI: {{ $jurnal['doi_label'] }}
+                                <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
+                                    <span class="text-[11px] text-slate-500 font-mono inline-flex items-center gap-1.5 bg-white px-2 py-0.5 rounded border border-slate-200/70 shadow-2xs">
+                                        <i class="fa-solid fa-link text-[10px] text-slate-400"></i> DOI: {{ $jurnal['doi_label'] }}
                                     </span>
+                                    <span class="text-[10px] text-indigo-600 font-semibold bg-indigo-50/60 px-2 py-0.5 rounded">Scopus / Global</span>
                                 </div>
                                 @endif
                             </div>
                             @endforeach
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-                        <div class="flex items-center gap-2.5 mb-6">
-                            <div class="w-9 h-9 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-sm">
+
+                    {{-- 5. Konferensi Internasional --}}
+                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 border border-purple-100/80 flex items-center justify-center font-bold text-base shadow-2xs">
                                 <i class="fa-solid fa-earth-americas"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading">
+                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
                                     Konferensi Internasional
                                 </h3>
-                                <p class="text-xs text-slate-400">Penyajian hasil riset di forum ilmiah dunia</p>
+                                <p class="text-xs text-slate-400 font-medium">Penyajian hasil riset di forum ilmiah dunia</p>
                             </div>
                         </div>
 
@@ -634,21 +671,21 @@
                             @endphp
 
                             @foreach($konferensiList as $item)
-                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-purple-400 hover:bg-white hover:shadow-sm transition duration-200">
-                                <div class="flex items-center justify-between gap-2 text-xs mb-1">
-                                    <span class="font-semibold text-purple-700 bg-purple-50 px-2 py-0.5 rounded text-[11px] border border-purple-100">
-                                        {{ $item['event'] }}
+                            <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-purple-400 hover:bg-white hover:shadow-sm transition-all duration-200 group">
+                                <div class="flex items-center justify-between gap-2 text-xs mb-1.5 flex-wrap">
+                                    <span class="font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-md text-[11px] border border-purple-200/70 shadow-2xs">
+                                        <i class="fa-solid fa-users-viewfinder text-[10px] mr-1"></i> {{ $item['event'] }}
                                     </span>
-                                    <span class="text-slate-400 font-mono text-[11px]">{{ $item['year'] }}</span>
+                                    <span class="text-slate-500 font-mono text-[11px] font-bold bg-slate-100 px-2 py-0.5 rounded">{{ $item['year'] }}</span>
                                 </div>
-                                <h5 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug mt-1">
+                                <h5 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug mt-1 group-hover:text-purple-950 transition-colors">
                                     {{ $item['title'] }}
                                 </h5>
-                                <p class="text-[11px] text-slate-500 mt-1">
-                                    <strong>Penulis:</strong> {{ $item['authors'] }}
+                                <p class="text-[11px] text-slate-500 mt-1.5">
+                                    <strong class="text-slate-700">Penulis:</strong> {{ $item['authors'] }}
                                 </p>
-                                <p class="text-[11px] text-slate-500 flex items-center gap-1.5 mt-0.5">
-                                    <i class="fa-solid fa-location-dot text-slate-400 text-[10px]"></i> {{ $item['location'] }}
+                                <p class="text-[11px] text-slate-600 font-medium flex items-center gap-1.5 mt-1">
+                                    <i class="fa-solid fa-location-dot text-rose-500 text-[10px]"></i> {{ $item['location'] }}
                                 </p>
                             </div>
                             @endforeach
