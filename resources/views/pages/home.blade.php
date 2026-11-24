@@ -83,12 +83,12 @@
                     <span class="block text-xs font-medium text-slate-300 mt-1">Bidang Keahlian</span>
                 </div>
                 <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="1200">1.200+</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Mahasiswa Aktif</span>
+                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="567">567</span>
+                    <span class="block text-xs font-medium text-slate-300 mt-1">Populasi</span>
                 </div>
                 <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="3500">3.500+</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Alumni</span>
+                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="1186">1.186</span>
+                    <span class="block text-xs font-medium text-slate-300 mt-1">Total Kelulusan</span>
                 </div>
                 <div class="text-center py-3">
                     <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="40">40</span>
