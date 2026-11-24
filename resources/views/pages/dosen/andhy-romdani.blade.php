@@ -576,13 +576,11 @@
                                 <p class="text-xs text-slate-600 italic mt-1">
                                     {{ $jurnal['journal'] }}, {{ $jurnal['vol'] }}.
                                 </p>
-                                @if($jurnal['doi'] !== '#')
+                                @if(!empty($jurnal['doi_label']) && $jurnal['doi_label'] !== '#')
                                 <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between">
-                                    <a href="{{ $jurnal['doi'] }}" target="_blank" rel="noopener noreferrer" 
-                                       class="inline-flex items-center gap-1.5 text-xs text-[#0070BA] font-semibold hover:underline">
-                                        <i class="fa-solid fa-link text-[10px]"></i> DOI: {{ $jurnal['doi_label'] }}
-                                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-slate-400"></i>
-                                    </a>
+                                    <span class="text-xs text-slate-500 font-mono">
+                                        DOI: {{ $jurnal['doi_label'] }}
+                                    </span>
                                 </div>
                                 @endif
                             </div>
