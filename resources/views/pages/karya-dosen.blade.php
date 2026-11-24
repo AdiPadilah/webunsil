@@ -42,19 +42,15 @@
                          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/95 via-[#0B2A4A]/50 to-transparent"></div>
                     <div class="relative z-10 mt-auto p-7">
-                        <span class="inline-flex items-center gap-1.5 bg-blue-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
-                            <i class="fa-solid fa-book-open-reader text-[9px]"></i> Jurnal Ilmiah · SINTA 4
-                        </span>
-                        <h3 class="text-2xl font-black text-white leading-tight mb-2">Akselerasi: Jurnal Ilmiah Teknik Sipil</h3>
+                        <span class="text-amber-400 text-xs font-semibold block mb-1">Jurnal Ilmiah Terakreditasi SINTA 4</span>
+                        <h3 class="text-2xl font-bold text-white leading-tight mb-2">Akselerasi: Jurnal Ilmiah Teknik Sipil</h3>
                         <p class="text-slate-300 text-xs leading-relaxed mb-4 max-w-md">
-                            Jurnal berkala resmi Prodi Teknik Sipil FT UNSIL. Menerbitkan riset bidang struktur, transportasi, geoteknik, manajemen konstruksi, dan sumber daya air. Terbit 3 kali setahun (Maret, Juli, November).
+                            Jurnal berkala resmi Prodi Teknik Sipil FT UNSIL (E-ISSN: 2715-7296). Menerbitkan riset bidang struktur, transportasi, geoteknik, manajemen konstruksi, dan sumber daya air. Terbit 3 kali setahun (Maret, Juli, November).
                         </p>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <span class="bg-white/10 backdrop-blur-sm text-white text-[10px] font-semibold px-3 py-1 rounded-full border border-white/20">E-ISSN: 2715-7296</span>
-                            <span class="bg-white/10 backdrop-blur-sm text-white text-[10px] font-semibold px-3 py-1 rounded-full border border-white/20">Mar · Jul · Nov</span>
+                        <div>
                             <a href="https://jurnal.unsil.ac.id" target="_blank"
-                               class="ml-auto bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-xs px-4 py-2 rounded-xl transition flex items-center gap-1.5">
-                                Buka OJS <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                               class="inline-flex items-center gap-2 bg-[#0070BA] hover:bg-[#005a96] text-white font-semibold text-xs px-4 py-2 rounded-lg transition">
+                                Buka Portal OJS <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
                             </a>
                         </div>
                     </div>
@@ -69,10 +65,8 @@
                              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/95 via-emerald-900/60 to-transparent"></div>
                         <div class="relative z-10 mt-auto p-6">
-                            <span class="inline-flex items-center gap-1.5 bg-emerald-400 text-slate-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
-                                <i class="fa-solid fa-book text-[9px]"></i> Buku Ajar · 2024
-                            </span>
-                            <h3 class="text-sm font-black text-white leading-tight">Manajemen Proyek: Manajemen Kualitas Proyek</h3>
+                            <span class="text-amber-400 text-xs font-semibold block mb-1">Buku Ajar &bull; 2024</span>
+                            <h3 class="text-sm font-bold text-white leading-tight">Manajemen Proyek: Manajemen Kualitas Proyek</h3>
                             <p class="text-emerald-200 text-[11px] mt-1">Hidayanto, S.T., M.T. · ISBN: 978-623-8722-77-8</p>
                         </div>
                     </div>
@@ -83,10 +77,8 @@
                              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900/95 via-blue-900/60 to-transparent"></div>
                         <div class="relative z-10 mt-auto p-6">
-                            <span class="inline-flex items-center gap-1.5 bg-blue-400 text-slate-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
-                                <i class="fa-solid fa-book text-[9px]"></i> Buku Ajar · 2025
-                            </span>
-                            <h3 class="text-sm font-black text-white leading-tight">Manajemen Konstruksi</h3>
+                            <span class="text-amber-400 text-xs font-semibold block mb-1">Buku Ajar &bull; 2025</span>
+                            <h3 class="text-sm font-bold text-white leading-tight">Manajemen Konstruksi</h3>
                             <p class="text-blue-200 text-[11px] mt-1">M. Ridha Al Mustafa, S.T., M.T. · ISBN: 978-634-7310-43-9</p>
                         </div>
                     </div>
