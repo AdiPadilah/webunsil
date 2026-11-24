@@ -35,6 +35,11 @@ Route::get('/dosen', function () {
     return view('pages.dosen');
 })->name('dosen');
 
+// Profil Dosen Spesifik: Andhy Romdani
+Route::get('/dosen/andhy-romdani', function () {
+    return view('pages.dosen.andhy-romdani');
+})->name('dosen.andhy-romdani');
+
 // 5. Akademik (Hub Page sesuai layout ITS)
 Route::get('/akademik', function () {
     return view('pages.akademik');
