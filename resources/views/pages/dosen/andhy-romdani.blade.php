@@ -162,16 +162,40 @@
                             </div>
                         </div>
 
-                        <div class="prose prose-slate max-w-none text-sm text-slate-600 leading-relaxed space-y-4">
-                            <p>
-                                <strong>Andhy Romdani, S.T., M.Eng., Ph.D.</strong> menempuh pendidikan tinggi di Jurusan Teknik Sipil, Fakultas Teknik, <strong>Universitas Gadjah Mada (UGM)</strong>, Yogyakarta, melalui jalur seleksi bergengsi <strong>PBUD (Penelusuran Bibit Unggul Daerah)</strong> mewakili Kabupaten Grobogan, Jawa Tengah, pada tahun 1998. Ia sukses menuntaskan gelar Sarjana Teknik (S.T.) serta gelar Magister of Engineering (M.Eng.) dari kampus UGM.
-                            </p>
-                            <p>
-                                Komitmen keilmuannya dalam rekayasa keairan berlanjut hingga jenjang doktoral (Ph.D.) di kampus terkemuka Taiwan, yakni <strong>National Cheng Kung University (NCKU)</strong>, pada <em>Department of Hydraulic and Ocean Engineering</em>. Atas dedikasi riset dan keunggulan akademiknya, pada tahun 2023 ia dinobatkan sebagai salah satu lulusan terbaik doktoral dan menerima penghargaan prestisius dari <strong>The Phi Tau Phi Scholastic Honor Society of the Republic of China (Taiwan)</strong>.
-                            </p>
-                            <p>
-                                Saat ini ia aktif mengajar dan mengemban amanah sebagai <strong>Ketua Program Studi S-1 Teknik Sipil Universitas Siliwangi</strong>, Tasikmalaya, Jawa Barat. Selain pengabdian di dunia akademik, ia memiliki latar belakang kaya di industri konstruksi nasional melalui kiprah di BUMN terkemuka (<strong>PT. Wijaya Karya</strong> dan <strong>PT. Pembangunan Perumahan</strong>), serta kiprah kepenulisan kreatif sebagai <em>Editor in Chief</em> di Penerbit Mizan, Bandung.
-                            </p>
+                        <div class="space-y-6 text-sm text-slate-600 leading-relaxed">
+
+                            {{-- Latar Belakang Pendidikan --}}
+                            <div>
+                                <p class="text-[10px] font-bold text-[#0070BA] uppercase tracking-widest mb-1.5">Latar Belakang Pendidikan</p>
+                                <p>
+                                    Andhy Romdani menempuh studi sarjana di <strong class="text-slate-800">Jurusan Teknik Sipil, Fakultas Teknik, Universitas Gadjah Mada (UGM)</strong>, Yogyakarta. Ia masuk melalui jalur <strong class="text-slate-800">PBUD (Penelusuran Bibit Unggul Daerah)</strong> mewakili Kabupaten Grobogan, Jawa Tengah, pada tahun 1998, dan berhasil menyelesaikan gelar S.T. serta M.Eng. dari kampus yang sama.
+                                </p>
+                            </div>
+
+                            {{-- Studi Doktoral --}}
+                            <div>
+                                <p class="text-[10px] font-bold text-[#0070BA] uppercase tracking-widest mb-1.5">Studi Doktoral</p>
+                                <p>
+                                    Perjalanan akademiknya berlanjut ke jenjang doktoral (Ph.D.) di <strong class="text-slate-800">National Cheng Kung University (NCKU)</strong>, Taiwan, pada <em>Department of Hydraulic and Ocean Engineering</em>. Atas keunggulan riset dan prestasi akademiknya, ia dinobatkan sebagai salah satu lulusan terbaik program doktoral dan menerima penghargaan dari <strong class="text-slate-800">The Phi Tau Phi Scholastic Honor Society of the Republic of China</strong> pada tahun 2023.
+                                </p>
+                            </div>
+
+                            {{-- Peran Saat Ini --}}
+                            <div>
+                                <p class="text-[10px] font-bold text-[#0070BA] uppercase tracking-widest mb-1.5">Peran Saat Ini</p>
+                                <p>
+                                    Saat ini ia aktif mengajar dan menjabat sebagai <strong class="text-slate-800">Ketua Program Studi S-1 Teknik Sipil, Fakultas Teknik, Universitas Siliwangi</strong>, Tasikmalaya, Jawa Barat.
+                                </p>
+                            </div>
+
+                            {{-- Pengalaman Profesional --}}
+                            <div>
+                                <p class="text-[10px] font-bold text-[#0070BA] uppercase tracking-widest mb-1.5">Pengalaman Profesional</p>
+                                <p>
+                                    Sebelum berkarier di dunia akademik, ia aktif di industri konstruksi nasional melalui BUMN terkemuka — <strong class="text-slate-800">PT. Wijaya Karya</strong> dan <strong class="text-slate-800">PT. Pembangunan Perumahan</strong>. Ia juga pernah menjabat sebagai <em>Editor in Chief</em> di <strong class="text-slate-800">Penerbit Mizan</strong>, Bandung, mencerminkan dedikasi yang melampaui batas keilmuan teknik.
+                                </p>
+                            </div>
+
                         </div>
                     </div>
 
