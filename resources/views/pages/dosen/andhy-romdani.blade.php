@@ -121,18 +121,18 @@
                         <h3 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-4 flex items-center gap-2">
                             <i class="fa-solid fa-chart-simple text-[#0070BA]"></i> Ringkasan Rekam Jejak
                         </h3>
-                        <div class="grid grid-cols-2 gap-3 text-center">
-                            <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-2xl font-black text-[#0B2A4A] block">19</span>
-                                <span class="text-[11px] text-slate-500 font-medium">Karya Buku</span>
+                        <div class="grid grid-cols-3 gap-2 text-center">
+                            <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <span class="text-xl sm:text-2xl font-black text-[#0B2A4A] block">19</span>
+                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Karya Buku</span>
                             </div>
-                            <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-2xl font-black text-amber-600 block">4</span>
-                                <span class="text-[11px] text-slate-500 font-medium">Konferensi Global</span>
+                            <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <span class="text-xl sm:text-2xl font-black text-amber-600 block">4</span>
+                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Konferensi</span>
                             </div>
-                            <div class="p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-2xl font-black text-emerald-600 block">2</span>
-                                <span class="text-[11px] text-slate-500 font-medium">Penghargaan Prestisius</span>
+                            <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <span class="text-xl sm:text-2xl font-black text-emerald-600 block">2</span>
+                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Penghargaan</span>
                             </div>
                         </div>
 
