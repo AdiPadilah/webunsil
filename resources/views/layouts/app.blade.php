@@ -42,33 +42,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        /* Smooth Dropdown Animation */
+        /* Smooth Dropdown & Nav Link Animations */
         .dropdown {
             position: relative;
         }
         .dropdown-menu {
             opacity: 0;
             visibility: hidden;
-            transform: translateY(8px);
-            transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.22s;
+            transform: translateY(10px) scale(0.97);
+            transform-origin: top center;
+            transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
             pointer-events: none;
             display: block !important;
+            box-shadow: 0 16px 36px -8px rgba(11, 42, 74, 0.22), 0 4px 12px rgba(0, 0, 0, 0.05);
         }
         .dropdown:hover > .dropdown-menu,
         .dropdown:focus-within > .dropdown-menu {
             opacity: 1;
             visibility: visible;
-            transform: translateY(0);
+            transform: translateY(0) scale(1);
             pointer-events: auto;
         }
         .dropdown > a i.fa-chevron-down {
-            transition: transform 0.22s ease;
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .dropdown:hover > a i.fa-chevron-down {
             transform: rotate(180deg);
         }
         .sub-dropdown:hover > .sub-dropdown-menu,
         .sub-dropdown:focus-within > .sub-dropdown-menu { display: block; }
+        
+        /* Modern Animated Underline for Navbar */
+        nav .nav-link {
+            position: relative;
+            transition: color 0.25s ease, background-color 0.25s ease;
+        }
+        nav > .dropdown > .nav-link::after,
+        nav > a.nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #F59E0B, #FBBF24);
+            border-radius: 9999px;
+            transition: width 0.28s cubic-bezier(0.16, 1, 0.3, 1), left 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: none;
+        }
+        nav > .dropdown:hover > .nav-link::after,
+        nav > .dropdown > .nav-link:hover::after,
+        nav > a.nav-link:hover::after,
+        nav > .dropdown > .nav-link.active-nav::after,
+        nav > a.nav-link.active-nav::after {
+            width: calc(100% - 14px);
+            left: 7px;
+        }
+
+        /* Dropdown Item Micro-Interactions */
+        .dropdown-menu a {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .dropdown-menu a:hover {
+            transform: translateX(5px);
+            padding-left: 1.15rem;
+        }
+
         .nav-link.active-nav { color: #FBBF24 !important; }
         .nav-link.active-nav span { color: #FBBF24; }
         .hero-banner {
@@ -80,10 +119,10 @@
         .ig-card:hover .ig-overlay { opacity: 1; }
         .ig-overlay { opacity: 0; transition: opacity 0.3s ease; }
         
-        /* Smooth Reveal Animation */
+        /* Smooth Modern Reveal Animations */
         .reveal {
             opacity: 0;
-            transform: translateY(22px);
+            transform: translateY(26px);
             transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: opacity, transform;
         }
@@ -91,10 +130,64 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-32px);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(32px);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.94);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
         .reveal-delay-1 { transition-delay: 100ms; }
         .reveal-delay-2 { transition-delay: 200ms; }
         .reveal-delay-3 { transition-delay: 300ms; }
         .reveal-delay-4 { transition-delay: 400ms; }
+
+        /* Card Hover Lift & Scale Utilities */
+        .hover-lift {
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 28px -10px rgba(11, 42, 74, 0.16);
+        }
+        .hover-scale {
+            transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+
+        /* Subtle Floating Animation */
+        @keyframes subtle-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .animate-subtle-float {
+            animation: subtle-float 3.5s ease-in-out infinite;
+        }
         .img-fallback { background: linear-gradient(135deg, #0B2A4A 0%, #1e4d8c 100%); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
@@ -920,7 +1013,7 @@
         }
 
         // 6. Scroll Reveal Observer
-        const revealEls = document.querySelectorAll('.reveal');
+        const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
         const counterEls = document.querySelectorAll('.counter-num');
 
         if (window.IntersectionObserver) {

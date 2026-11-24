@@ -37,7 +37,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 mb-5 reveal">
 
                 {{-- Jurnal — Kartu besar --}}
-                <div class="lg:col-span-3 group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 min-h-[340px] flex flex-col">
+                <div class="lg:col-span-3 group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 min-h-[340px] flex flex-col hover-lift">
                     <img src="{{ asset('images/unsil-prestasi-scopus-sipil.png') }}" alt="Jurnal Akselerasi"
                          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/95 via-[#0B2A4A]/50 to-transparent"></div>
@@ -60,7 +60,7 @@
                 <div class="lg:col-span-2 flex flex-col gap-5" id="buku">
 
                     {{-- Buku 1 --}}
-                    <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex-1 min-h-[160px] flex flex-col">
+                    <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex-1 min-h-[160px] flex flex-col hover-lift">
                         <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Buku Manajemen Proyek"
                              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/95 via-emerald-900/60 to-transparent"></div>
@@ -72,7 +72,7 @@
                     </div>
 
                     {{-- Buku 2 --}}
-                    <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex-1 min-h-[160px] flex flex-col">
+                    <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex-1 min-h-[160px] flex flex-col hover-lift">
                         <img src="{{ asset('images/lab-civil.jpg') }}" alt="Buku Manajemen Konstruksi"
                              class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-blue-900/95 via-blue-900/60 to-transparent"></div>
@@ -87,9 +87,9 @@
             </div>
 
             {{-- Baris 2: Artikel jurnal terbaru + 1 buku lagi --}}
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 reveal">
 
-                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col">
+                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col hover-lift">
                     <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Taiwan"
                          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col">
+                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col hover-lift">
                     <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Erosi DAS Citanduy"
                          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col">
+                <div class="group relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-52 flex flex-col hover-lift">
                     <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Redesign Struktur Gedung"
                          class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>

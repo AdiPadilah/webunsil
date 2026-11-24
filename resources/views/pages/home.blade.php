@@ -119,7 +119,7 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-1">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200 bg-white group reveal reveal-delay-1 hover-lift">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Capaian Pembelajaran Lulusan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?q=80&w=600'">
                                 </div>
@@ -137,7 +137,7 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-2">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200 bg-white group reveal reveal-delay-2 hover-lift">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Profil Profesional Mandiri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600'">
                                 </div>
@@ -155,7 +155,7 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-3">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200 bg-white group reveal reveal-delay-3 hover-lift">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Prestasi Mahasiswa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/event-2.jpg') }}'">
                                 </div>
@@ -193,7 +193,7 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-1">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200 bg-white group reveal reveal-delay-1 hover-lift">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/event-1.jpg') }}" alt="Kompetisi Jembatan Nasional SCIENCE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=600'">
                                 </div>
@@ -211,7 +211,7 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-2">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200 bg-white group reveal reveal-delay-2 hover-lift">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/hms-unsil.jpg') }}" alt="Himpunan Mahasiswa Sipil FT UNSIL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600'">
                                 </div>
@@ -229,7 +229,7 @@
                             </div>
 
                             
-                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 bg-white group reveal reveal-delay-3">
+                            <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200 bg-white group reveal reveal-delay-3 hover-lift">
                                 <div class="h-44 overflow-hidden bg-slate-100">
                                     <img src="{{ asset('images/seminar-taiwan-ncku.jpg') }}" alt="Seminar Internasional Indonesia-Taiwan NCKU" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 </div>

@@ -48,7 +48,7 @@
 
                 {{-- 3 kartu kanan --}}
                 <div class="flex flex-col gap-4">
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4">
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4 hover-lift">
                         <div class="w-10 h-10 rounded-lg bg-blue-100 text-[#0070BA] flex items-center justify-center text-lg shrink-0">
                             <i class="fa-solid fa-building-flag"></i>
                         </div>
@@ -57,7 +57,7 @@
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Program magang industri bersertifikat MBKM, rekrutmen lulusan, serta kuliah tamu pakar konstruksi nasional.</p>
                         </div>
                     </div>
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4">
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4 hover-lift">
                         <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-lg shrink-0">
                             <i class="fa-solid fa-landmark"></i>
                         </div>
@@ -66,7 +66,7 @@
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Sinergi bersama Dinas Bina Marga & Penataan Ruang, BBWS Citanduy, dan Pemda dalam kajian infrastruktur dan mitigasi SDA.</p>
                         </div>
                     </div>
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4">
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-start gap-4 hover-lift">
                         <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg shrink-0">
                             <i class="fa-solid fa-certificate"></i>
                         </div>
@@ -90,10 +90,10 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 reveal">
 
                 {{-- Fokus Penelitian --}}
-                <div id="penelitian" class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+                <div id="penelitian" class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between hover-lift">
                     <div>
                         <div class="h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/unsil-seminar-hathi-air.jpg') }}" alt="Fokus Penelitian Dosen"
@@ -130,7 +130,7 @@
                 </div>
 
                 {{-- PKM --}}
-                <div id="pengabdian" class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+                <div id="pengabdian" class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between hover-lift">
                     <div>
                         <div class="h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/event-1.jpg') }}" alt="Pengabdian Kepada Masyarakat"

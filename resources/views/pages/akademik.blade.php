@@ -34,7 +34,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch reveal">
 
                 {{-- Kolom Kiri: 1 Kartu Tinggi (Program) --}}
-                <a href="{{ route('kurikulum') }}" class="group relative rounded-3xl overflow-hidden block min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end">
+                <a href="{{ route('kurikulum') }}" class="group relative rounded-3xl overflow-hidden block min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end hover-lift">
                     <img src="{{ asset('images/lab-civil.jpg') }}" alt="Program" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 via-50% to-transparent"></div>
                     <div class="relative z-10 p-6 sm:p-8">
@@ -53,7 +53,7 @@
                 <div class="grid grid-rows-2 gap-6 sm:gap-7">
 
                     {{-- Kanan Atas: Peraturan & Informasi --}}
-                    <a href="{{ route('download') }}" class="group relative rounded-3xl overflow-hidden block min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end">
+                    <a href="{{ route('download') }}" class="group relative rounded-3xl overflow-hidden block min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end hover-lift">
                         <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Peraturan & Informasi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 via-50% to-transparent"></div>
                         <div class="relative z-10 p-5 sm:p-6">
@@ -69,7 +69,7 @@
                     </a>
 
                     {{-- Kanan Bawah: Pengumuman Akademik --}}
-                    <a href="{{ route('berita.index') }}" class="group relative rounded-3xl overflow-hidden block min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end">
+                    <a href="{{ route('berita.index') }}" class="group relative rounded-3xl overflow-hidden block min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end hover-lift">
                         <img src="{{ asset('images/wisuda-unsil.jpg') }}" alt="Pengumuman Akademik" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 via-50% to-transparent"></div>
                         <div class="relative z-10 p-5 sm:p-6">
@@ -106,7 +106,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 items-stretch reveal">
 
                     {{-- Kolom Kiri: 1 Kartu Tinggi (Pilar 01: Rekayasa Struktur dan Bahan) --}}
-                    <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 sm:p-8">
+                    <div class="group relative rounded-3xl overflow-hidden min-h-[380px] sm:min-h-[460px] lg:min-h-[500px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 sm:p-8 hover-lift">
                         <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Rekayasa Struktur dan Bahan" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
@@ -120,7 +120,7 @@
                     <div class="grid grid-rows-2 gap-6 sm:gap-7">
 
                         {{-- Pilar 02: Rekayasa Sumber Daya Air --}}
-                        <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-5 sm:p-6">
+                        <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-5 sm:p-6 hover-lift">
                             <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Rekayasa Sumber Daya Air" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                             <div class="relative z-10">
@@ -131,7 +131,7 @@
                         </div>
 
                         {{-- Pilar 03: Rekayasa Geoteknik --}}
-                        <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-5 sm:p-6">
+                        <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-5 sm:p-6 hover-lift">
                             <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Rekayasa Geoteknik" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                             <div class="relative z-10">
@@ -149,7 +149,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 mt-6 sm:mt-7">
 
                     {{-- Pilar 04: Rekayasa Transportasi dan Jalan Raya --}}
-                    <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[240px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
+                    <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[240px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 hover-lift">
                         <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Rekayasa Transportasi dan Jalan Raya" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">
@@ -160,7 +160,7 @@
                     </div>
 
                     {{-- Pilar 05: Manajemen Rekayasa Konstruksi --}}
-                    <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[240px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6">
+                    <div class="group relative rounded-3xl overflow-hidden min-h-[220px] sm:min-h-[240px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end p-6 hover-lift">
                         <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Manajemen Rekayasa Konstruksi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 via-50% to-transparent"></div>
                         <div class="relative z-10">

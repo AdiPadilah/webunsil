@@ -36,7 +36,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14 items-stretch reveal">
                 
                 {{-- HMS --}}
-                <div id="hms" class="bg-white rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between scroll-mt-28">
+                <div id="hms" class="bg-white rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between scroll-mt-28 hover-lift transition-all duration-300">
                     <div>
                         <div class="mb-4">
                             <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider block">Organisasi Kemahasiswaan</span>
@@ -56,7 +56,7 @@
 
                 
                 {{-- Alumni --}}
-                <div id="alumni" class="bg-white rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between scroll-mt-28">
+                <div id="alumni" class="bg-white rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col justify-between scroll-mt-28 hover-lift transition-all duration-300">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <div>

@@ -96,7 +96,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
 
                 {{-- Card 1: Sejarah Program Studi --}}
-                <a href="{{ route('sejarah') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900">
+                <a href="{{ route('sejarah') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 hover-lift">
                     <img src="{{ asset('images/gedung-rektorat-unsil.jpg') }}" alt="Sejarah Program Studi" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -107,7 +107,7 @@
                 </a>
 
                 {{-- Card 2: Dosen & Tenaga Pengajar --}}
-                <a href="{{ route('dosen') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900">
+                <a href="{{ route('dosen') }}" class="group relative rounded-2xl overflow-hidden block h-64 sm:h-72 lg:h-[280px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 hover-lift">
                     <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Dosen & Tenaga Pengajar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white">

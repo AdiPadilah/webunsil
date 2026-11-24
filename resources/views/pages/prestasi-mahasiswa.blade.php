@@ -47,7 +47,7 @@
             <div class="divide-y divide-slate-200/80">
 
                 {{-- 1. Tirta Adhipermana --}}
-                <article class="prestasi-card py-12 lg:py-16 first:pt-0" data-category="lomba">
+                <article class="prestasi-card py-12 lg:py-16 first:pt-0 reveal group" data-category="lomba">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
                         <div class="lg:col-span-7 flex flex-col items-start">
                             <span class="text-xs font-semibold uppercase tracking-wider text-[#0070BA] mb-2">
@@ -65,14 +65,14 @@
                         </div>
                         <div class="lg:col-span-5 order-first lg:order-last">
                             <div class="w-full aspect-[4/3] rounded-[28px] overflow-hidden bg-slate-100 shadow-sm">
-                                <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana saat presentasi NPC di USK Banda Aceh" class="w-full h-full object-cover">
+                                <img src="{{ asset('images/unsil-tirta-adhipermana-npc.jpeg') }}" alt="Tim Tirta Adhipermana saat presentasi NPC di USK Banda Aceh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                         </div>
                     </div>
                 </article>
 
                 {{-- 2. Fahmi Rahmat --}}
-                <article class="prestasi-card py-12 lg:py-16" data-category="publikasi">
+                <article class="prestasi-card py-12 lg:py-16 reveal group" data-category="publikasi">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
                         <div class="lg:col-span-7 flex flex-col items-start">
                             <span class="text-xs font-semibold uppercase tracking-wider text-[#0070BA] mb-2">
@@ -90,14 +90,14 @@
                         </div>
                         <div class="lg:col-span-5 order-first lg:order-last">
                             <div class="w-full aspect-[4/3] rounded-[28px] overflow-hidden bg-slate-100 shadow-sm">
-                                <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat bersama dosen pembimbing" class="w-full h-full object-cover">
+                                <img src="{{ asset('images/unsil-fahmi-rahmat.jpeg') }}" alt="Fahmi Rahmat bersama dosen pembimbing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                         </div>
                     </div>
                 </article>
 
                 {{-- 3. Muhammad Raka --}}
-                <article class="prestasi-card py-12 lg:py-16" data-category="publikasi">
+                <article class="prestasi-card py-12 lg:py-16 reveal group" data-category="publikasi">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
                         <div class="lg:col-span-7 flex flex-col items-start">
                             <span class="text-xs font-semibold uppercase tracking-wider text-[#0070BA] mb-2">
@@ -115,14 +115,14 @@
                         </div>
                         <div class="lg:col-span-5 order-first lg:order-last">
                             <div class="w-full aspect-[4/3] rounded-[28px] overflow-hidden bg-slate-100 shadow-sm">
-                                <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka El Ghifari bersama tim riset" class="w-full h-full object-cover">
+                                <img src="{{ asset('images/unsil-muhammad-raka.jpeg') }}" alt="Muhammad Raka El Ghifari bersama tim riset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                         </div>
                     </div>
                 </article>
 
                 {{-- 4. Bridge Competition SCIENCE 2026 --}}
-                <article class="prestasi-card py-12 lg:py-16" data-category="jembatan">
+                <article class="prestasi-card py-12 lg:py-16 reveal group" data-category="jembatan">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
                         <div class="lg:col-span-7 flex flex-col items-start">
                             <span class="text-xs font-semibold uppercase tracking-wider text-[#0070BA] mb-2">
@@ -140,14 +140,14 @@
                         </div>
                         <div class="lg:col-span-5 order-first lg:order-last">
                             <div class="w-full aspect-[4/3] rounded-[28px] overflow-hidden bg-slate-100 shadow-sm">
-                                <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Babak final kompetisi jembatan SCIENCE 2026" class="w-full h-full object-cover">
+                                <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Babak final kompetisi jembatan SCIENCE 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                         </div>
                     </div>
                 </article>
 
                 {{-- 5. Seminar Jalan Tol --}}
-                <article class="prestasi-card py-12 lg:py-16" data-category="lomba">
+                <article class="prestasi-card py-12 lg:py-16 reveal group" data-category="lomba">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
                         <div class="lg:col-span-7 flex flex-col items-start">
                             <span class="text-xs font-semibold uppercase tracking-wider text-[#0070BA] mb-2">
@@ -165,14 +165,14 @@
                         </div>
                         <div class="lg:col-span-5 order-first lg:order-last">
                             <div class="w-full aspect-[4/3] rounded-[28px] overflow-hidden bg-slate-100 shadow-sm">
-                                <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar jalan tol berkelanjutan SCIENCE 2026" class="w-full h-full object-cover">
+                                <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar jalan tol berkelanjutan SCIENCE 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                         </div>
                     </div>
                 </article>
 
                 {{-- 6. Riset HATHI --}}
-                <article class="prestasi-card py-12 lg:py-16" data-category="publikasi">
+                <article class="prestasi-card py-12 lg:py-16 reveal group" data-category="publikasi">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
                         <div class="lg:col-span-7 flex flex-col items-start">
                             <span class="text-xs font-semibold uppercase tracking-wider text-[#0070BA] mb-2">
@@ -190,7 +190,7 @@
                         </div>
                         <div class="lg:col-span-5 order-first lg:order-last">
                             <div class="w-full aspect-[4/3] rounded-[28px] overflow-hidden bg-slate-100 shadow-sm">
-                                <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="FGD riset sedimentasi Segara Anakan bersama HATHI" class="w-full h-full object-cover">
+                                <img src="{{ asset('images/unsil-hathi-segara-anakan.png') }}" alt="FGD riset sedimentasi Segara Anakan bersama HATHI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                         </div>
                     </div>

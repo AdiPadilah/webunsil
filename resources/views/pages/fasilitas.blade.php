@@ -36,7 +36,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 reveal">
                 
                 {{-- 1. Laboratorium --}}
-                <div id="laboratorium" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+                <div id="laboratorium" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow hover-lift">
                     <div>
                         <a href="{{ route('laboratorium') }}" class="block h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/lab-civil.jpg') }}" alt="Laboratorium Teknik Sipil"
@@ -62,7 +62,7 @@
                 </div>
 
                 {{-- 2. Ruang Kelas --}}
-                <div id="kelas" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+                <div id="kelas" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow hover-lift">
                     <div>
                         <a href="{{ route('kelas') }}" class="block h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Ruang Kelas & Perkuliahan"
@@ -88,7 +88,7 @@
                 </div>
 
                 {{-- 3. Aula --}}
-                <div id="aula" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+                <div id="aula" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow hover-lift">
                     <div>
                         <a href="{{ route('aula') }}" class="block h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/event-1.jpg') }}" alt="Aula Fakultas Teknik"
@@ -114,7 +114,7 @@
                 </div>
 
                 {{-- 4. Kantin --}}
-                <div id="kantin" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+                <div id="kantin" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow hover-lift">
                     <div>
                         <a href="{{ route('kantin') }}" class="block h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Kantin Kampus FT UNSIL"
@@ -140,7 +140,7 @@
                 </div>
 
                 {{-- 5. Auditorium --}}
-                <div id="auditorium" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+                <div id="auditorium" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow hover-lift">
                     <div>
                         <a href="{{ route('auditorium') }}" class="block h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/event-2.jpg') }}" alt="Auditorium &amp; Ruang Sidang Teknik Sipil"
@@ -166,7 +166,7 @@
                 </div>
 
                 {{-- 6. Ruang Rapat --}}
-                <div id="ruang-rapat" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+                <div id="ruang-rapat" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow hover-lift">
                     <div>
                         <a href="{{ route('ruang-rapat') }}" class="block h-48 overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/ruang-rapat-1.jpg') }}" alt="Ruang Rapat &amp; Diskusi Teknik Sipil"
