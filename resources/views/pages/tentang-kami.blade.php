@@ -31,25 +31,28 @@
             
             
             {{-- Sambutan Ketua Program Studi (Proporsional & Relevan) --}}
-            <div class="max-w-5xl mx-auto bg-white rounded-xl overflow-hidden border border-slate-200">
-                <div class="grid grid-cols-1 md:grid-cols-12">
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm p-6 sm:p-8 lg:p-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     
                     {{-- Foto Pimpinan / Ketua Program Studi --}}
-                    <div class="md:col-span-4 bg-slate-900 flex flex-col justify-between">
-                        <div class="relative w-full aspect-[4/5] md:aspect-auto md:h-full overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
-                                 alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
-                                 class="w-full h-full object-cover object-top"
-                                 onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
-                        </div>
-                        <div class="p-3.5 sm:p-4 bg-[#0B2A4A] text-white border-t border-blue-900 flex-shrink-0 text-center md:text-left">
-                            <h4 class="text-xs sm:text-sm font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
-                            <p class="text-[11px] text-amber-400 font-medium mt-0.5">Ketua Program Studi S-1 Teknik Sipil</p>
+                    <div class="lg:col-span-4 flex justify-center">
+                        <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[250px] sm:max-w-[270px]">
+                            <div class="aspect-[4/5] overflow-hidden bg-slate-100">
+                                <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
+                                     alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
+                                     class="w-full h-full object-cover object-top"
+                                     onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
+                            </div>
+                            <div class="p-3 bg-[#0B2A4A] text-white text-center">
+                                <h4 class="text-xs sm:text-sm font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
+                                <p class="text-[11px] text-amber-400 font-medium mt-0.5">Ketua Program Studi Teknik Sipil</p>
+                                <p class="text-[10px] text-slate-300">Fakultas Teknik Universitas Siliwangi</p>
+                            </div>
                         </div>
                     </div>
 
                     {{-- Isi Sambutan --}}
-                    <div class="md:col-span-8 p-5 sm:p-6 lg:p-7 flex flex-col justify-between">
+                    <div class="lg:col-span-8 flex flex-col justify-between space-y-4">
                         <div>
                             <span class="text-[11px] font-semibold text-[#0070BA] uppercase tracking-wider block mb-1">
                                 Pimpinan Program Studi
@@ -58,7 +61,7 @@
                                 Sambutan Ketua Program Studi
                             </h2>
                             
-                            <div class="text-xs sm:text-[13px] text-slate-600 space-y-2.5 leading-relaxed text-justify">
+                            <div class="text-xs sm:text-[13px] text-slate-600 space-y-3 leading-relaxed text-justify">
                                 <p class="font-semibold text-slate-800">
                                     Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
                                 </p>
@@ -74,7 +77,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between gap-4">
+                        <div class="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between gap-4">
                             <div class="text-[11px] text-slate-500">
                                 <span class="font-semibold text-slate-700">Fakultas Teknik UNSIL</span>
                             </div>
