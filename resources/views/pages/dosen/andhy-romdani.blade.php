@@ -34,9 +34,6 @@
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-heading tracking-tight text-white mt-2 leading-tight">
                 Andhy Romdani, S.T., M.Eng., Ph.D.
             </h1>
-            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Pakar Hidrodinamika Pantai, Pemodelan Transpor Sedimen &amp; Manajemen Sumber Daya Air. Penulis produktif 19 karya buku serta peneliti aktif di jurnal-jurnal internasional bereputasi.
-            </p>
         </div>
     </section>
 
