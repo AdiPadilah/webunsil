@@ -179,14 +179,7 @@
                             </p>
                         </div>
 
-                        {{-- Fokus Keahlian --}}
-                        <div class="mt-6 pt-5 border-t border-slate-100 flex flex-wrap items-center gap-2">
-                            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mr-1">Fokus Bidang:</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">Hidrodinamika Pantai</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">Transpor Sedimen</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">Mitigasi Banjir &amp; Muara Sungai</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">Rekayasa Sumber Daya Air</span>
-                        </div>
+
                     </div>
 
                     {{-- 2. Riwayat Pendidikan & Rekognisi --}}
