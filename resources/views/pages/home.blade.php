@@ -82,19 +82,7 @@
     {{-- Statistik --}}
     <section class="py-10 bg-[#0B2A4A] border-b border-blue-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="6">6</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Laboratorium</span>
-                </div>
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="27">27</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Dosen Tetap</span>
-                </div>
-                <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="5">5</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Bidang Keahlian</span>
-                </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <div class="text-center py-3">
                     <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="567">567</span>
                     <span class="block text-xs font-medium text-slate-300 mt-1">Populasi</span>
@@ -104,8 +92,12 @@
                     <span class="block text-xs font-medium text-slate-300 mt-1">Total Kelulusan</span>
                 </div>
                 <div class="text-center py-3">
-                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="40">40</span>
-                    <span class="block text-xs font-medium text-slate-300 mt-1">Tahun Berdiri</span>
+                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="80">80</span>
+                    <span class="block text-xs font-medium text-slate-300 mt-1">Aktivitas Mahasiswa</span>
+                </div>
+                <div class="text-center py-3">
+                    <span class="block text-3xl sm:text-4xl font-bold text-amber-400 counter-num" data-target="264">264</span>
+                    <span class="block text-xs font-medium text-slate-300 mt-1">Aktivitas Dosen</span>
                 </div>
             </div>
         </div>
