@@ -28,7 +28,7 @@
                     {{-- Header Berita --}}
                     <div class="mb-6">
                         <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide mb-3 flex-wrap">
-                            <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-purple-100 text-purple-800">Manajemen Rekayasa Konstruksi</span>
+                            <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-blue-100 text-blue-800">Manajemen Rekayasa Konstruksi</span>
                             <span class="text-slate-400">&bull;</span>
                             <span class="text-slate-500">29 Oktober 2026</span>
                             <span class="text-slate-400">&bull;</span>

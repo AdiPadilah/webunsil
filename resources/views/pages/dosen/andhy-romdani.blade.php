@@ -295,7 +295,7 @@
                                     <p class="text-slate-500 mt-1 text-[11px] leading-relaxed">PT Wijaya Karya (Persero) Tbk &bull; PT Pembangunan Perumahan (Persero) Tbk</p>
                                 </div>
                                 <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 hover:border-slate-300 transition">
-                                    <div class="w-7 h-7 rounded-lg bg-purple-100/80 text-purple-700 flex items-center justify-center text-xs mb-2">
+                                    <div class="w-7 h-7 rounded-lg bg-blue-100/80 text-blue-700 flex items-center justify-center text-xs mb-2">
                                         <i class="fa-solid fa-newspaper"></i>
                                     </div>
                                     <span class="font-bold text-slate-900 block text-xs">Penulisan &amp; Media</span>
@@ -658,7 +658,7 @@
                     {{-- 5. Konferensi Internasional --}}
                     <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
                         <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
-                            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 border border-purple-100/80 flex items-center justify-center font-bold text-base shadow-2xs">
+                            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 border border-blue-100/80 flex items-center justify-center font-bold text-base shadow-2xs">
                                 <i class="fa-solid fa-earth-americas"></i>
                             </div>
                             <div>
@@ -704,14 +704,14 @@
                             @endphp
 
                             @foreach($konferensiList as $item)
-                            <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-purple-400 hover:bg-white hover:shadow-sm transition-all duration-200 group">
+                            <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-blue-400 hover:bg-white hover:shadow-sm transition-all duration-200 group">
                                 <div class="flex items-center justify-between gap-2 text-xs mb-1.5 flex-wrap">
-                                    <span class="font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-md text-[11px] border border-purple-200/70 shadow-2xs">
+                                    <span class="font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-md text-[11px] border border-blue-200/70 shadow-2xs">
                                         <i class="fa-solid fa-users-viewfinder text-[10px] mr-1"></i> {{ $item['event'] }}
                                     </span>
                                     <span class="text-slate-500 font-mono text-[11px] font-bold bg-slate-100 px-2 py-0.5 rounded">{{ $item['year'] }}</span>
                                 </div>
-                                <h5 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug mt-1 group-hover:text-purple-950 transition-colors">
+                                <h5 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug mt-1 group-hover:text-blue-950 transition-colors">
                                     {{ $item['title'] }}
                                 </h5>
                                 <p class="text-[11px] text-slate-500 mt-1.5">

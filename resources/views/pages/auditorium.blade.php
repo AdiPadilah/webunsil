@@ -1,7 +1,7 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Ruang Seminar & Sidang Teknik Sipil | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
-@section('meta_description', 'Fasilitas Ruang Seminar dan Sidang Tugas Akhir Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari â€” dilengkapi proyektor, AC, sound system, dan layar motorized.')
+@section('meta_description', 'Fasilitas Ruang Seminar dan Sidang Tugas Akhir Program Studi S-1 Teknik Sipil FT Universitas Siliwangi Kampus 2 Mugarsari — dilengkapi proyektor, AC, sound system, dan layar motorized.')
 
 @section('content')
 
@@ -45,15 +45,15 @@
                 {{-- Card 1 --}}
                 <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-users-viewfinder"></i>
                         </div>
-                        <h3 class="font-bold text-slate-900 text-base font-heading">Kapasitas 60â€“100 Orang</h3>
+                        <h3 class="font-bold text-slate-900 text-base font-heading">Kapasitas 60–100 Orang</h3>
                         <p class="text-xs text-slate-600 mt-2 leading-relaxed">
                             Penataan kursi fleksibel model teater dan classroom, cocok untuk sidang tugas akhir, seminar terbuka, maupun kuliah tamu program studi.
                         </p>
                     </div>
-                    <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-purple-600 font-semibold">
+                    <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-blue-600 font-semibold">
                         Layout Fleksibel
                     </div>
                 </div>

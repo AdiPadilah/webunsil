@@ -168,21 +168,21 @@ $dosenList = [
         'nama' => 'Hidayanto, S.T., M.T.',
         'kbk' => 'manajemen',
         'kbk_label' => 'Manajemen Rekayasa Konstruksi',
-        'badge_class' => 'text-purple-800 bg-purple-50',
+        'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'shanti-astri-noviani',
         'nama' => 'Shanti Astri Noviani, S.Pd., M.T.',
         'kbk' => 'manajemen',
         'kbk_label' => 'Manajemen Rekayasa Konstruksi',
-        'badge_class' => 'text-purple-800 bg-purple-50',
+        'badge_class' => 'text-blue-800 bg-blue-50',
     ],
     [
         'slug' => 'ridha-al-mustafa',
         'nama' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.',
         'kbk' => 'manajemen',
         'kbk_label' => 'Manajemen Rekayasa Konstruksi',
-        'badge_class' => 'text-purple-800 bg-purple-50',
+        'badge_class' => 'text-blue-800 bg-blue-50',
     ],
 ];
 @endphp

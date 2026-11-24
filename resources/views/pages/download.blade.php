@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Download Berkas | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Pusat unduhan dokumen resmi, modul praktikum, panduan kerja praktik, pedoman skripsi, dan SOP Program Studi Teknik Sipil FT UNSIL.')
@@ -95,7 +95,7 @@
                 
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-4">
                             <i class="fa-solid fa-shield-halved"></i>
                         </div>
                         <h4 class="text-base font-bold text-slate-900">SOP Laboratorium</h4>
@@ -103,7 +103,7 @@
                             Tata tertib praktikum, standar keselamatan dan kesehatan kerja (K3), serta prosedur peminjaman alat laboratorium.
                         </p>
                     </div>
-                    <a href="#tabel-unduhan" class="inline-flex items-center gap-1.5 mt-5 text-xs font-bold text-purple-600 hover:text-purple-800">
+                    <a href="#tabel-unduhan" class="inline-flex items-center gap-1.5 mt-5 text-xs font-bold text-blue-600 hover:text-blue-800">
                         <span>Lihat Berkas</span>
                         <i class="fa-solid fa-arrow-down text-[10px]"></i>
                     </a>

@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Kurikulum | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Struktur kurikulum dan bidang keahlian akademik Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')
@@ -104,7 +104,7 @@
                 
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
                             <i class="fa-solid fa-helmet-safety"></i>
                         </div>
                         <h3 class="text-base font-bold text-slate-900 mb-2">Manajemen Rekayasa Konstruksi</h3>
@@ -112,7 +112,7 @@
                             Perencanaan dan penjadwalan proyek, estimasi anggaran biaya (RAB), manajemen mutu dan risiko K3 konstruksi, metode pelaksanaan lapangan, serta Building Information Modelling (BIM).
                         </p>
                     </div>
-                    <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-purple-700 font-semibold flex items-center gap-1">
+                    <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-blue-700 font-semibold flex items-center gap-1">
                         <i class="fa-solid fa-check text-[10px]"></i> MS Project &bull; RAB &bull; BIM
                     </div>
                 </div>

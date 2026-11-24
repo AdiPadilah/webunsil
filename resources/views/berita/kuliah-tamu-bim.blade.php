@@ -57,11 +57,11 @@
                             Peserta yang terdiri dari mahasiswa tingkat tiga dan empat antusias mengikuti studi kasus pendeteksian tabrakan elemen struktur (clash detection) pada proyek jembatan layang dan gedung bertingkat. Pemateri menekankan bahwa sertifikasi keahlian BIM saat ini menjadi nilai tambah yang sangat dicari oleh kontraktor dan konsultan perencana skala internasional.
                         </p>
 
-                        <div class="p-5 bg-purple-50 border-l-4 border-purple-700 rounded-r-xl my-6">
-                            <p class="text-sm font-semibold text-purple-950 italic">
+                        <div class="p-5 bg-blue-50 border-l-4 border-purple-700 rounded-r-xl my-6">
+                            <p class="text-sm font-semibold text-blue-950 italic">
                                 "Teknik Sipil UNSIL terus beradaptasi dengan kebutuhan industri era konstruksi 4.0. Pengenalan BIM ini melengkapi mata kuliah Manajemen Konstruksi dan Analisis Komputasi yang telah dipelajari mahasiswa."
                             </p>
-                            <span class="text-xs text-purple-800 font-bold block mt-2">&mdash; Ketua Pelaksana Kuliah Tamu FT UNSIL</span>
+                            <span class="text-xs text-blue-800 font-bold block mt-2">&mdash; Ketua Pelaksana Kuliah Tamu FT UNSIL</span>
                         </div>
 
                         <p>

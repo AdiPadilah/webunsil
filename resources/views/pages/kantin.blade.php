@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Kantin Kampus Sehat & Halal | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Fasilitas kantin kampus Fakultas Teknik UNSIL Kampus 2 Mugarsari dengan sajian higienis, tersertifikasi halal, harga ramah mahasiswa, dan area semi-outdoor.')
@@ -93,7 +93,7 @@
                 {{-- Card 4 --}}
                 <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-tree"></i>
                         </div>
                         <h3 class="font-bold text-slate-900 text-base font-heading">Suasana Semi-Outdoor</h3>
@@ -101,7 +101,7 @@
                             Konsep arsitektur terbuka yang memaksimalkan hembusan angin segar dan pemandangan hijau kawasan Mugarsari, cocok untuk bersantai dan diskusi kelompok.
                         </p>
                     </div>
-                    <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-purple-600 font-semibold flex items-center gap-1.5">
+                    <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] text-blue-600 font-semibold flex items-center gap-1.5">
                         <i class="fa-solid fa-wind text-[10px]"></i> Sirkulasi Udara Bebas
                     </div>
                 </div>

@@ -151,7 +151,7 @@
                             </article>
                             <article class="pt-3 border-t border-slate-100">
                                 <a href="{{ route('berita.kuliah-tamu-bim') }}" class="group block">
-                                    <span class="text-[10px] font-bold text-purple-700 block mb-0.5">08 Januari 2026</span>
+                                    <span class="text-[10px] font-bold text-blue-700 block mb-0.5">08 Januari 2026</span>
                                     <h4 class="text-xs font-bold text-slate-800 group-hover:text-blue-700 transition leading-snug">
                                         Kuliah Tamu Building Information Modelling (BIM) untuk Infrastruktur Modern
                                     </h4>
