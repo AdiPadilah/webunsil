@@ -27,25 +27,25 @@
     {{-- Section Sambutan Ketua Program Studi --}}
     <section class="py-14 lg:py-20 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 
-                <div class="lg:col-span-5">
-                    <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white max-w-sm mx-auto lg:max-w-none">
+                <div class="lg:col-span-4 flex justify-center">
+                    <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[250px] sm:max-w-[270px]">
                         <div class="aspect-[4/5] overflow-hidden bg-slate-100">
                             <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
                                  alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
                                  class="w-full h-full object-cover object-top"
                                  onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
                         </div>
-                        <div class="p-4 bg-[#0B2A4A] text-white">
-                            <h4 class="text-sm sm:text-base font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
-                            <p class="text-xs text-amber-400 font-medium mt-1">Ketua Program Studi Teknik Sipil</p>
-                            <p class="text-[11px] text-slate-300">Fakultas Teknik Universitas Siliwangi</p>
+                        <div class="p-3 bg-[#0B2A4A] text-white text-center">
+                            <h4 class="text-xs sm:text-sm font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
+                            <p class="text-[11px] text-amber-400 font-medium mt-0.5">Ketua Program Studi Teknik Sipil</p>
+                            <p class="text-[10px] text-slate-300">Fakultas Teknik Universitas Siliwangi</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-7 space-y-4">
+                <div class="lg:col-span-8 space-y-4">
                     <p class="text-[#0070BA] font-semibold text-xs sm:text-sm uppercase tracking-wide">
                         Sambutan Ketua Program Studi
                     </p>
