@@ -162,40 +162,19 @@
                             </div>
                         </div>
 
-                        <div class="space-y-6 text-sm text-slate-600 leading-relaxed">
-
-                            {{-- Latar Belakang Pendidikan --}}
-                            <div>
-                                <p class="text-[10px] font-bold text-[#0070BA] uppercase tracking-widest mb-1.5">Latar Belakang Pendidikan</p>
-                                <p>
-                                    Andhy Romdani menempuh studi sarjana di <strong class="text-slate-800">Jurusan Teknik Sipil, Fakultas Teknik, Universitas Gadjah Mada (UGM)</strong>, Yogyakarta. Ia masuk melalui jalur <strong class="text-slate-800">PBUD (Penelusuran Bibit Unggul Daerah)</strong> mewakili Kabupaten Grobogan, Jawa Tengah, pada tahun 1998, dan berhasil menyelesaikan gelar S.T. serta M.Eng. dari kampus yang sama.
-                                </p>
-                            </div>
-
-                            {{-- Studi Doktoral --}}
-                            <div>
-                                <p class="text-[10px] font-bold text-[#0070BA] uppercase tracking-widest mb-1.5">Studi Doktoral</p>
-                                <p>
-                                    Perjalanan akademiknya berlanjut ke jenjang doktoral (Ph.D.) di <strong class="text-slate-800">National Cheng Kung University (NCKU)</strong>, Taiwan, pada <em>Department of Hydraulic and Ocean Engineering</em>. Atas keunggulan riset dan prestasi akademiknya, ia dinobatkan sebagai salah satu lulusan terbaik program doktoral dan menerima penghargaan dari <strong class="text-slate-800">The Phi Tau Phi Scholastic Honor Society of the Republic of China</strong> pada tahun 2023.
-                                </p>
-                            </div>
-
-                            {{-- Peran Saat Ini --}}
-                            <div>
-                                <p class="text-[10px] font-bold text-[#0070BA] uppercase tracking-widest mb-1.5">Peran Saat Ini</p>
-                                <p>
-                                    Saat ini ia aktif mengajar dan menjabat sebagai <strong class="text-slate-800">Ketua Program Studi S-1 Teknik Sipil, Fakultas Teknik, Universitas Siliwangi</strong>, Tasikmalaya, Jawa Barat.
-                                </p>
-                            </div>
-
-                            {{-- Pengalaman Profesional --}}
-                            <div>
-                                <p class="text-[10px] font-bold text-[#0070BA] uppercase tracking-widest mb-1.5">Pengalaman Profesional</p>
-                                <p>
-                                    Sebelum berkarier di dunia akademik, ia aktif di industri konstruksi nasional melalui BUMN terkemuka — <strong class="text-slate-800">PT. Wijaya Karya</strong> dan <strong class="text-slate-800">PT. Pembangunan Perumahan</strong>. Ia juga pernah menjabat sebagai <em>Editor in Chief</em> di <strong class="text-slate-800">Penerbit Mizan</strong>, Bandung, mencerminkan dedikasi yang melampaui batas keilmuan teknik.
-                                </p>
-                            </div>
-
+                        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                            <p>
+                                Andhy Romdani menempuh studi sarjana di Jurusan Teknik Sipil, Fakultas Teknik, Universitas Gadjah Mada (UGM), Yogyakarta. Ia masuk melalui jalur seleksi PBUD (Penelusuran Bibit Unggul Daerah) mewakili Kabupaten Grobogan, Jawa Tengah, pada tahun 1998, dan berhasil menyelesaikan gelar Sarjana Teknik (S.T.) serta Master of Engineering (M.Eng.) dari kampus yang sama.
+                            </p>
+                            <p>
+                                Perjalanan akademiknya berlanjut ke jenjang doktoral (Ph.D.) di National Cheng Kung University (NCKU), Taiwan, pada Department of Hydraulic and Ocean Engineering. Atas keunggulan riset dan capaian akademiknya, ia dinobatkan sebagai salah satu lulusan terbaik program doktoral dan menerima penghargaan dari The Phi Tau Phi Scholastic Honor Society of the Republic of China pada tahun 2023.
+                            </p>
+                            <p>
+                                Saat ini ia aktif mengajar dan mengemban amanah sebagai Ketua Program Studi S-1 Teknik Sipil, Fakultas Teknik, Universitas Siliwangi, Tasikmalaya, Jawa Barat.
+                            </p>
+                            <p>
+                                Sebelum berkarier penuh di dunia akademik, ia aktif di industri konstruksi nasional melalui BUMN terkemuka, yaitu PT. Wijaya Karya dan PT. Pembangunan Perumahan. Ia juga memiliki pengalaman di bidang penulisan kreatif sebagai Editor in Chief di Penerbit Mizan, Bandung.
+                            </p>
                         </div>
                     </div>
 
@@ -335,7 +314,7 @@
                                 <span class="text-[10px] text-cyan-800 font-semibold bg-cyan-50 px-2 py-0.5 rounded-full ml-auto">12 Judul</span>
                             </div>
 
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            <div class="space-y-2.5">
                                 @php
                                 $bukuSipil = [
                                     ['no' => 1, 'judul' => 'Manajemen Sungai dan Banjir: Adaptasi terhadap Perubahan Iklim Global', 'isbn' => '978-623-8221-10-3'],
@@ -354,20 +333,18 @@
                                 @endphp
 
                                 @foreach($bukuSipil as $buku)
-                                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-cyan-500/50 hover:bg-white hover:shadow-sm transition duration-200 flex flex-col justify-between">
-                                    <div class="flex items-start gap-2.5">
-                                        <span class="w-6 h-6 rounded-md bg-cyan-100 text-cyan-800 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                                <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-cyan-500/50 hover:bg-white hover:shadow-sm transition duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                                    <div class="flex items-start sm:items-center gap-3">
+                                        <span class="w-6 h-6 rounded-md bg-cyan-100 text-cyan-800 font-bold text-xs flex items-center justify-center shrink-0">
                                             {{ $buku['no'] }}
                                         </span>
-                                        <div>
-                                            <h5 class="text-xs font-bold text-slate-800 leading-snug">
-                                                {{ $buku['judul'] }}
-                                            </h5>
-                                        </div>
+                                        <h5 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
+                                            {{ $buku['judul'] }}
+                                        </h5>
                                     </div>
-                                    <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                                        <span class="text-slate-400 font-mono">ISBN: {{ $buku['isbn'] }}</span>
-                                        <span class="text-cyan-700 font-medium text-[10px]">Non-Fiksi</span>
+                                    <div class="flex items-center gap-2.5 shrink-0 self-end sm:self-center text-[11px] pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-100 w-full sm:w-auto justify-between sm:justify-end">
+                                        <span class="text-slate-400 font-mono text-[11px]">ISBN: {{ $buku['isbn'] }}</span>
+                                        <span class="text-cyan-700 bg-cyan-50 font-medium text-[10px] px-2 py-0.5 rounded border border-cyan-100">Non-Fiksi</span>
                                     </div>
                                 </div>
                                 @endforeach
