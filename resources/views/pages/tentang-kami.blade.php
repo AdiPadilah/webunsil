@@ -60,13 +60,16 @@
                             
                             <div class="text-xs sm:text-[13px] text-slate-600 space-y-2.5 leading-relaxed text-justify">
                                 <p class="font-semibold text-slate-800">
-                                    Selamat datang di Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.
+                                    Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
                                 </p>
                                 <p>
-                                    Perkembangan teknologi, transformasi digital, dan tantangan keberlanjutan lingkungan terus mengubah lanskap dunia rekayasa infrastruktur. Teknik Sipil Universitas Siliwangi hadir sebagai ruang akademik untuk mengeksplorasi potensi tersebut melalui pendidikan berstandar mutu, riset terapan, dan penguatan fasilitas laboratorium di Kampus 2 Mugarsari.
+                                    Perkembangan teknologi, transformasi digital, dan tantangan lingkungan terus mengubah wajah dunia teknik sipil. Kondisi ini membuka peluang baru bagi pengembangan ilmu pengetahuan, inovasi rekayasa, dan solusi infrastruktur yang lebih cerdas, tangguh, serta berkelanjutan. Teknik Sipil Universitas Siliwangi hadir sebagai ruang akademik untuk mengeksplorasi potensi tersebut melalui pendidikan, penelitian, dan pengembangan teknologi.
                                 </p>
                                 <p>
-                                    Kami berkomitmen memperkuat kualitas pembelajaran berbasis Outcome-Based Education (OBE), mendorong lahirnya inovasi keteknikan yang relevan, serta memperluas kolaborasi dengan industri jasa konstruksi dan para alumni. Mari bersama-sama membangun masa depan infrastruktur bangsa yang tangguh dan berwawasan kebangsaan.
+                                    Ke depan, pengembangan program studi diarahkan pada penguatan kualitas pendidikan, riset inovatif, pemanfaatan teknologi, serta kolaborasi dengan berbagai mitra di tingkat nasional dan internasional. Lingkungan akademik yang terbuka dan kolaboratif menjadi fondasi untuk mendorong lahirnya gagasan, karya, dan kontribusi yang relevan dengan perkembangan dunia rekayasa. Peningkatan mutu dan daya saing akademik menjadi bagian penting dalam perjalanan menuju program studi yang semakin progresif dan berwawasan global.
+                                </p>
+                                <p>
+                                    Masa depan Teknik Sipil Universitas Siliwangi dibangun melalui semangat untuk terus belajar, berinovasi, berkolaborasi, dan memberikan dampak nyata. Setiap gagasan, penelitian, prestasi, dan kontribusi sivitas akademika merupakan bagian dari perjalanan tersebut. Mari menjadi bagian dari perjalanan Teknik Sipil UNSIL dalam membangun pengetahuan, menciptakan inovasi, dan menghadirkan masa depan infrastruktur yang lebih baik.
                                 </p>
                             </div>
                         </div>

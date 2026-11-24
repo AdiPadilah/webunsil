@@ -24,41 +24,54 @@
     </section>
 
     
-    {{-- Section Sejarah Singkat --}}
+    {{-- Section Sambutan Ketua Program Studi --}}
     <section class="py-14 lg:py-20 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
                 
-                <div>
-                    <div class="rounded-xl overflow-hidden shadow-md bg-slate-100">
-                        <img src="{{ asset('images/sejarah-singkat-beranda.jpg') }}?v={{ time() }}" 
-                             alt="Sejarah Singkat Program Studi S-1 Teknik Sipil FT UNSIL" 
-                             class="w-full h-auto object-cover">
+                <div class="lg:col-span-5">
+                    <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white max-w-sm mx-auto lg:max-w-none">
+                        <div class="aspect-[4/5] overflow-hidden bg-slate-100">
+                            <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
+                                 alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
+                                 class="w-full h-full object-cover object-top"
+                                 onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
+                        </div>
+                        <div class="p-4 bg-[#0B2A4A] text-white">
+                            <h4 class="text-sm sm:text-base font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
+                            <p class="text-xs text-amber-400 font-medium mt-1">Ketua Program Studi Teknik Sipil</p>
+                            <p class="text-[11px] text-slate-300">Fakultas Teknik Universitas Siliwangi</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="space-y-4">
-                    <p class="text-[#0070BA] font-semibold text-sm uppercase tracking-wide">
-                        Sejarah Singkat
+                <div class="lg:col-span-7 space-y-4">
+                    <p class="text-[#0070BA] font-semibold text-xs sm:text-sm uppercase tracking-wide">
+                        Sambutan Ketua Program Studi
                     </p>
 
-                    <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading leading-snug">
-                        Empat Dekade Teknik Sipil FT UNSIL Membangun Infrastruktur dan Peradaban Bangsa
+                    <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0B2A4A] font-heading leading-snug">
+                        Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
                     </h2>
 
-                    <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed">
-                        Berdiri sejak 31 Desember 1984 di bawah naungan Yayasan Universitas Siliwangi dan resmi bertransformasi menjadi Perguruan Tinggi Negeri (PTN) melalui Perpres RI No. 24 Tahun 2014, Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi telah mencetak lebih dari 3.500 alumni yang berkiprah di sektor konstruksi nasional maupun internasional.
-                    </p>
+                    <div class="space-y-3.5 text-slate-600 text-sm sm:text-[15px] leading-relaxed">
+                        <p>
+                            Perkembangan teknologi, transformasi digital, dan tantangan lingkungan terus mengubah wajah dunia teknik sipil. Kondisi ini membuka peluang baru bagi pengembangan ilmu pengetahuan, inovasi rekayasa, dan solusi infrastruktur yang lebih cerdas, tangguh, serta berkelanjutan. Teknik Sipil Universitas Siliwangi hadir sebagai ruang akademik untuk mengeksplorasi potensi tersebut melalui pendidikan, penelitian, dan pengembangan teknologi.
+                        </p>
 
-                    <p class="text-slate-600 text-sm sm:text-[15px] leading-relaxed">
-                        Kini berpusat di Kampus 2 Mugarsari dengan fasilitas 6 laboratorium modern terakreditasi LAM Teknik, kami berkomitmen menyelenggarakan pendidikan tinggi keteknikan yang unggul berbasis <em>Outcome-Based Education</em> (OBE), adaptif terhadap perkembangan teknologi terapan, dan berjiwa wirausaha kebangsaan.
-                    </p>
+                        <p>
+                            Ke depan, pengembangan program studi diarahkan pada penguatan kualitas pendidikan, riset inovatif, pemanfaatan teknologi, serta kolaborasi dengan berbagai mitra di tingkat nasional dan internasional. Lingkungan akademik yang terbuka dan kolaboratif menjadi fondasi untuk mendorong lahirnya gagasan, karya, dan kontribusi yang relevan dengan perkembangan dunia rekayasa. Peningkatan mutu dan daya saing akademik menjadi bagian penting dalam perjalanan menuju program studi yang semakin progresif dan berwawasan global.
+                        </p>
 
-                    <div class="pt-1">
-                        <a href="{{ route('sejarah') }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0070BA] hover:bg-[#005a96] text-white text-sm font-semibold rounded-lg transition">
-                            Baca Selengkapnya
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
+                        <p>
+                            Masa depan Teknik Sipil Universitas Siliwangi dibangun melalui semangat untuk terus belajar, berinovasi, berkolaborasi, dan memberikan dampak nyata. Setiap gagasan, penelitian, prestasi, dan kontribusi sivitas akademika merupakan bagian dari perjalanan tersebut. Mari menjadi bagian dari perjalanan Teknik Sipil UNSIL dalam membangun pengetahuan, menciptakan inovasi, dan menghadirkan masa depan infrastruktur yang lebih baik.
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <p class="font-bold text-slate-900 text-sm sm:text-base">Andhy Romdani, S.T., M.Eng., Ph.D.</p>
+                        <p class="text-xs text-slate-600">Ketua Program Studi Teknik Sipil</p>
+                        <p class="text-xs text-slate-500">Fakultas Teknik Universitas Siliwangi</p>
                     </div>
                 </div>
 
