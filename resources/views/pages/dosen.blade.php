@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Dosen | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Daftar dosen resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi berkualifikasi S-2 dan S-3.')
@@ -6,7 +6,7 @@
 @section('content')
 @php
 $dosenList = [
-    // 1. Rekayasa Sumber Daya Air (6 dosen)
+    // 1. Rekayasa Sumber Daya Air (6 dosen) - Dimulai dari Empung
     [
         'slug' => 'empung',
         'nama' => 'Dr. Ir. Empung, S.T., M.T.',
@@ -59,8 +59,8 @@ $dosenList = [
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
-        'slug' => 'herianto',
-        'nama' => 'Herianto, S.T., M.T.',
+        'slug' => 'gary-raya-prima',
+        'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
@@ -73,8 +73,8 @@ $dosenList = [
         'badge_class' => 'text-emerald-800 bg-emerald-50',
     ],
     [
-        'slug' => 'gary-raya-prima',
-        'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.',
+        'slug' => 'herianto',
+        'nama' => 'Herianto, S.T., M.T.',
         'kbk' => 'transportasi',
         'kbk_label' => 'Rekayasa Transportasi dan Jalan Raya',
         'badge_class' => 'text-emerald-800 bg-emerald-50',
@@ -213,17 +213,17 @@ $dosenList = [
                     <button type="button" onclick="filterKbk('all', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 shadow-md bg-[#0B2A4A] text-amber-400 border border-amber-400/40">
                         Semua Dosen
                     </button>
-                    <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
-                        Rekayasa Struktur dan Bahan (5)
-                    </button>
                     <button type="button" onclick="filterKbk('keairan', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
                         Rekayasa Sumber Daya Air (6)
                     </button>
-                    <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
-                        Rekayasa Geoteknik (3)
-                    </button>
                     <button type="button" onclick="filterKbk('transportasi', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
                         Rekayasa Transportasi dan Jalan Raya (7)
+                    </button>
+                    <button type="button" onclick="filterKbk('struktur', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
+                        Rekayasa Struktur dan Bahan (5)
+                    </button>
+                    <button type="button" onclick="filterKbk('geoteknik', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
+                        Rekayasa Geoteknik (3)
                     </button>
                     <button type="button" onclick="filterKbk('manajemen', this)" class="kbk-tab-btn whitespace-nowrap px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wide transition-all duration-200 bg-white hover:bg-blue-50 text-slate-700 hover:text-[#0B2A4A] border">
                         Manajemen Rekayasa Konstruksi (3)
@@ -294,4 +294,3 @@ $dosenList = [
     
     @endpush
 @endsection
-
