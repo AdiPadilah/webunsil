@@ -152,7 +152,7 @@
                 </a>
 
                 
-                <nav class="hidden xl:flex items-center space-x-0.5 2xl:space-x-1.5 text-[13px] lg:text-[13.5px] font-semibold text-slate-200 whitespace-nowrap">
+                <nav class="hidden lg:flex items-center space-x-0.5 xl:space-x-1 2xl:space-x-1.5 text-[12px] xl:text-[13px] 2xl:text-[13.5px] font-semibold text-slate-200 whitespace-nowrap">
 
                     
                     <div class="relative dropdown">
@@ -271,7 +271,7 @@
                 </div>
 
                 
-                <div class="flex xl:hidden items-center">
+                <div class="flex lg:hidden items-center">
                     <button id="mobile-menu-btn" class="text-white hover:text-amber-400 p-2 rounded-lg focus:outline-none">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
@@ -280,7 +280,7 @@
         </div>
 
         
-        <div id="mobile-menu" class="hidden xl:hidden bg-slate-900 border-b border-slate-800 px-6 pt-3 pb-6 space-y-2 text-sm text-slate-200">
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-6 pt-3 pb-6 space-y-2 text-sm text-slate-200">
             <a href="{{ route('tentang-kami') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'text-amber-400 font-bold' : '' }}">Tentang Kami</a>
             <a href="{{ route('visi-misi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('visi-misi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Visi &amp; Misi</a>
             <a href="{{ route('sejarah') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sejarah') ? 'text-amber-400 font-bold' : '' }}">&mdash; Sejarah Program Studi</a>
