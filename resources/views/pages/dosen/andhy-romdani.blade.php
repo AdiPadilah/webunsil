@@ -166,12 +166,6 @@
                             </div>
                         </div>
 
-                        {{-- Lead Highlight --}}
-                        <div class="p-4 rounded-xl bg-gradient-to-r from-blue-50/80 to-slate-50/50 border-l-4 border-[#0070BA] text-slate-700 text-sm leading-relaxed mb-5 shadow-2xs">
-                            <p class="font-medium">
-                                <strong>Andhy Romdani, S.T., M.Eng., Ph.D.</strong> adalah akademisi dan peneliti di bidang Hidrodinamika Pantai, Pemodelan Transpor Sedimen, serta Manajemen Rekayasa Sumber Daya Air. Beliau mengemban amanah sebagai Ketua Program Studi S-1 Teknik Sipil FT Universitas Siliwangi serta aktif menulis 19 judul buku ber-ISBN.
-                            </p>
-                        </div>
 
                         <div class="space-y-3.5 text-sm text-slate-600 leading-relaxed">
                             <p>
