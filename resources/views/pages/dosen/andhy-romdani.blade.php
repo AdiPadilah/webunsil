@@ -460,7 +460,6 @@
                                     'vol' => '148(5), 05022001',
                                     'doi' => 'https://doi.org/10.1061/(ASCE)WW.1943-5460.0000700',
                                     'doi_label' => '10.1061/(ASCE)WW.1943-5460.0000700',
-                                    'cover' => 'asce_jwpcoe.png',
                                 ],
                                 [
                                     'no' => 2,
@@ -471,7 +470,6 @@
                                     'vol' => '1, 100-116',
                                     'doi' => 'https://doi.org/10.53256/COSE_220106',
                                     'doi_label' => '10.53256/COSE_220106',
-                                    'cover' => 'jcose_coastal_offshore.jpg',
                                 ],
                                 [
                                     'no' => 3,
@@ -482,7 +480,6 @@
                                     'vol' => 'JWPED5/WWENG-1940',
                                     'doi' => 'https://doi.org/10.1061/JWPED5/WWENG-1940',
                                     'doi_label' => '10.1061/JWPED5/WWENG-1940',
-                                    'cover' => 'asce_jwpcoe.png',
                                 ],
                                 [
                                     'no' => 4,
@@ -493,7 +490,6 @@
                                     'vol' => '267, 104952',
                                     'doi' => 'https://doi.org/10.1016/j.csr.2023.104952',
                                     'doi_label' => '10.1016/j.csr.2023.104952',
-                                    'cover' => 'continental_shelf.jpg',
                                 ],
                                 [
                                     'no' => 5,
@@ -504,7 +500,6 @@
                                     'vol' => '11(7), 1361',
                                     'doi' => 'https://doi.org/10.3390/jmse11071361',
                                     'doi_label' => '10.3390/jmse11071361',
-                                    'cover' => 'ocean_engineering.jpg',
                                 ],
                                 [
                                     'no' => 6,
@@ -515,7 +510,6 @@
                                     'vol' => '303, 108819',
                                     'doi' => 'https://doi.org/10.1016/j.ecss.2024.108819',
                                     'doi_label' => '10.1016/j.ecss.2024.108819',
-                                    'cover' => 'estuarine_coastal.jpg',
                                 ],
                                 [
                                     'no' => 7,
@@ -526,7 +520,6 @@
                                     'vol' => '67(1), 1-17',
                                     'doi' => 'https://doi.org/10.1080/21664250.2024.2415174',
                                     'doi_label' => '10.1080/21664250.2024.2415174',
-                                    'cover' => 'tandf_trbm2.jpg',
                                 ],
                                 [
                                     'no' => 8,
@@ -537,7 +530,6 @@
                                     'vol' => '23(2), 173-184',
                                     'doi' => 'https://doi.org/10.35760/dk.2024.v23i2.11585',
                                     'doi_label' => '10.35760/dk.2024.v23i2.11585',
-                                    'cover' => 'ugm_jcef_header.png',
                                 ],
                                 [
                                     'no' => 9,
@@ -548,7 +540,6 @@
                                     'vol' => '21(1), 32-45',
                                     'doi' => 'https://doi.org/10.25077/jrs.21.1.32-45.2025',
                                     'doi_label' => '10.25077/jrs.21.1.32-45.2025',
-                                    'cover' => 'ugm_jcef_poster.png',
                                 ],
                                 [
                                     'no' => 10,
@@ -559,7 +550,6 @@
                                     'vol' => '21(1)',
                                     'doi' => 'https://doi.org/10.20884/1.oa.2025.21.1.1215',
                                     'doi_label' => '10.20884/1.oa.2025.21.1.1215',
-                                    'cover' => 'omni_akuatika.jpg',
                                 ],
                                 [
                                     'no' => 11,
@@ -570,7 +560,6 @@
                                     'vol' => '21(1)',
                                     'doi' => 'https://doi.org/10.20884/1.oa.2025.21.1.1207',
                                     'doi_label' => '10.20884/1.oa.2025.21.1.1207',
-                                    'cover' => 'omni_akuatika.jpg',
                                 ],
                                 [
                                     'no' => 12,
@@ -581,7 +570,6 @@
                                     'vol' => '14(1)',
                                     'doi' => 'https://doi.org/10.37304/balanga.v14i1.26433',
                                     'doi_label' => '10.37304/balanga.v14i1.26433',
-                                    'cover' => 'balanga_jurnal.jpg',
                                 ],
                                 [
                                     'no' => 13,
@@ -592,7 +580,6 @@
                                     'vol' => '17(2)',
                                     'doi' => 'https://doi.org/10.37304/jikt.v17i2.46',
                                     'doi_label' => '10.37304/jikt.v17i2.46',
-                                    'cover' => 'kanderang_tingang.jpg',
                                 ],
                                 [
                                     'no' => 14,
@@ -603,24 +590,12 @@
                                     'vol' => 'In Press / Accepted',
                                     'doi' => '#',
                                     'doi_label' => 'Marine Development 2027',
-                                    'cover' => 'springer_marine_development.jpg',
                                 ],
                             ];
                             @endphp
 
                             @foreach($jurnalList as $jurnal)
-                            <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-indigo-400 hover:bg-white hover:shadow-sm transition-all duration-200 group flex gap-3">
-                                {{-- Cover Thumbnail --}}
-                                @if(!empty($jurnal['cover']))
-                                <div class="shrink-0 w-14 h-20 rounded-md overflow-hidden border border-slate-200/70 shadow-sm bg-slate-100 group-hover:shadow-md transition-shadow self-start mt-0.5">
-                                    <img src="{{ asset('images/jurnal/' . $jurnal['cover']) }}"
-                                         alt="{{ $jurnal['journal'] }}"
-                                         class="w-full h-full object-cover"
-                                         onerror="this.style.display='none'">
-                                </div>
-                                @endif
-                                {{-- Konten --}}
-                                <div class="flex-1 min-w-0">
+                            <div class="p-4 sm:p-4.5 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-indigo-400 hover:bg-white hover:shadow-sm transition-all duration-200 group">
                                 <div class="flex items-center justify-between gap-3 mb-1.5 flex-wrap">
                                     <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60 shadow-2xs">
                                         #{{ $jurnal['no'] }} &bull; Peer-Reviewed
@@ -649,7 +624,6 @@
                                     <span class="text-[10px] text-indigo-600 font-semibold bg-indigo-50/60 px-2 py-0.5 rounded">Scopus / Global</span>
                                 </div>
                                 @endif
-                                </div>{{-- end flex-1 --}}
                             </div>
                             @endforeach
                         </div>
