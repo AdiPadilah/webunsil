@@ -35,7 +35,7 @@
                 Andhy Romdani, S.T., M.Eng., Ph.D.
             </h1>
             <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-                Pakar Hidrodinamika Pantai, Pemodelan Transpor Sedimen &amp; Manajemen Sumber Daya Air. Penulis produktif 19 karya buku dan peneliti senior di bidang rekayasa pantai &amp; sumber daya air.
+                Pakar Hidrodinamika Pantai, Pemodelan Transpor Sedimen &amp; Manajemen Sumber Daya Air. Penulis produktif 19 karya buku serta peneliti aktif di jurnal-jurnal internasional bereputasi.
             </p>
         </div>
     </section>
@@ -121,18 +121,22 @@
                         <h3 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-4 flex items-center gap-2">
                             <i class="fa-solid fa-chart-simple text-[#0070BA]"></i> Ringkasan Rekam Jejak
                         </h3>
-                        <div class="grid grid-cols-3 gap-2 text-center">
+                        <div class="grid grid-cols-2 gap-2.5 text-center">
                             <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
                                 <span class="text-xl sm:text-2xl font-black text-[#0B2A4A] block">19</span>
                                 <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Karya Buku</span>
                             </div>
                             <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <span class="text-xl sm:text-2xl font-black text-[#0070BA] block">14</span>
+                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Jurnal Internasional</span>
+                            </div>
+                            <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
                                 <span class="text-xl sm:text-2xl font-black text-amber-600 block">4</span>
-                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Konferensi</span>
+                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Konferensi Global</span>
                             </div>
                             <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
                                 <span class="text-xl sm:text-2xl font-black text-emerald-600 block">2</span>
-                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Penghargaan</span>
+                                <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Penghargaan Prestisius</span>
                             </div>
                         </div>
 
@@ -359,7 +363,7 @@
                                 <span class="text-[10px] text-amber-800 font-semibold bg-amber-50 px-2 py-0.5 rounded-full ml-auto">Karya Sastra</span>
                             </div>
 
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            <div class="space-y-2.5">
                                 @php
                                 $bukuFiksi = [
                                     ['no' => 1, 'judul' => '6 Hero dan Ancaman Bom di Borobudur (Seri 1): Aksi Penyelamatan Kocak Dimulai', 'isbn' => '978-623-508-060-4'],
@@ -370,20 +374,18 @@
                                 @endphp
 
                                 @foreach($bukuFiksi as $novel)
-                                <div class="p-3.5 rounded-xl bg-amber-50/40 border border-amber-200/70 hover:border-amber-400 hover:bg-white hover:shadow-sm transition duration-200 flex flex-col justify-between">
-                                    <div class="flex items-start gap-2.5">
-                                        <span class="w-6 h-6 rounded-md bg-amber-100 text-amber-800 font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                                <div class="p-3 sm:p-3.5 rounded-xl bg-amber-50/40 border border-amber-200/70 hover:border-amber-400 hover:bg-white hover:shadow-sm transition duration-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                                    <div class="flex items-start sm:items-center gap-3">
+                                        <span class="w-6 h-6 rounded-md bg-amber-100 text-amber-800 font-bold text-xs flex items-center justify-center shrink-0">
                                             {{ $novel['no'] }}
                                         </span>
-                                        <div>
-                                            <h5 class="text-xs font-bold text-slate-800 leading-snug">
-                                                {{ $novel['judul'] }}
-                                            </h5>
-                                        </div>
+                                        <h5 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
+                                            {{ $novel['judul'] }}
+                                        </h5>
                                     </div>
-                                    <div class="mt-2.5 pt-2 border-t border-amber-100/60 flex items-center justify-between text-[11px]">
-                                        <span class="text-slate-400 font-mono">ISBN: {{ $novel['isbn'] }}</span>
-                                        <span class="text-amber-700 font-medium text-[10px]">Novel Fiksi</span>
+                                    <div class="flex items-center gap-2.5 shrink-0 self-end sm:self-center text-[11px] pt-1 sm:pt-0 border-t sm:border-t-0 border-amber-100/60 w-full sm:w-auto justify-between sm:justify-end">
+                                        <span class="text-slate-400 font-mono text-[11px]">ISBN: {{ $novel['isbn'] }}</span>
+                                        <span class="text-amber-700 bg-amber-100/60 font-medium text-[10px] px-2 py-0.5 rounded border border-amber-200">Novel Fiksi</span>
                                     </div>
                                 </div>
                                 @endforeach
