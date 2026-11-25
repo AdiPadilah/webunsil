@@ -73,7 +73,15 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Program Studi Teknik Sipil')
             ->assertSee('Workshop Penguatan Kurikulum');
 
-        $this->get('/berita')->assertOk();
+        $beritaPage1 = $this->get('/berita')->assertOk();
+        $beritaPage1->assertDontSee('Berita Sebelumnya');
+        $beritaPage1->assertSee('Workshop Penguatan Kurikulum Teknik Sipil Berbasis Outcome-Based Education (OBE)');
+        $beritaPage1->assertDontSee('Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1');
+        $this->assertSame(9, substr_count($beritaPage1->getContent(), '<article class="bg-white rounded-xl'));
+
+        $beritaPage2 = $this->get('/berita?page=2')->assertOk();
+        $beritaPage2->assertSee('Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1');
+        $this->assertSame(5, substr_count($beritaPage2->getContent(), '<article class="bg-white rounded-xl'));
         $this->get('/publikasi')->assertOk();
         $this->get('/seminar-proposal')->assertOk();
         $this->get('/seminar-hasil')->assertOk();
@@ -126,6 +134,29 @@ class DynamicContentCmsTest extends TestCase
             'tahun' => 2026,
             'is_published' => true,
         ]);
+
+        Article::create([
+            'title' => 'Draft Berita Rahasia',
+            'slug' => 'draft-berita-rahasia',
+            'category' => 'Berita',
+            'content' => '<p>Draft</p>',
+            'published_at' => now(),
+            'is_published' => false,
+        ]);
+
+        Article::create([
+            'title' => 'Berita Aktif Terbaru',
+            'slug' => 'berita-aktif-terbaru',
+            'category' => 'Berita',
+            'content' => '<p>Publik</p>',
+            'published_at' => now(),
+            'is_published' => true,
+        ]);
+
+        $this->get('/berita')
+            ->assertOk()
+            ->assertSee('Berita Aktif Terbaru')
+            ->assertDontSee('Draft Berita Rahasia');
 
         $this->get('/')
             ->assertOk()

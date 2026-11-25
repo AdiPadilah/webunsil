@@ -156,7 +156,10 @@ class ArticleSeeder extends Seeder
 
         foreach ($articles as $data) {
             $source = public_path($data['thumbnail']);
-            $target = 'articles/' . basename($data['thumbnail']);
+            $relative = str_starts_with($data['thumbnail'], 'images/')
+                ? substr($data['thumbnail'], strlen('images/'))
+                : basename($data['thumbnail']);
+            $target = 'articles/' . str_replace(['/', '\\'], '-', $relative);
 
             if (is_file($source)) {
                 if (! Storage::disk('public')->exists($target)) {
