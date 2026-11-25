@@ -57,6 +57,30 @@
                         'Analisis spasial mengidentifikasi Kecamatan Brebes dan Wanasari sebagai wilayah paling terdampak banjir. Peta bahaya banjir diklasifikasikan menjadi empat kategori (rendah, sedang, signifikan, dan ekstrem), menekankan pentingnya integrasi pemodelan hidrodinamika ke dalam penilaian risiko banjir dan perencanaan mitigasi bencana di tingkat regional.',
                     ],
                 ],
+                [
+                    'article_id' => 'Hlm. 340–354',
+                    'cover' => 'images/jurnal/kanderang_tingang.jpg',
+                    'cover_alt' => 'Cover Jurnal Ilmiah Kanderang Tingang (Universitas Palangka Raya)',
+                    'cover_caption_title' => 'Jurnal Ilmiah Kanderang Tingang',
+                    'cover_caption_sub' => 'Universitas Palangka Raya (SINTA)',
+                    'cover_caption_meta' => 'ISSN: 2087-166X · 2721-012X · Vol. 17, No. 2',
+                    'lecturer_route' => 'dosen.andhy-romdani',
+                    'eyebrow' => 'Publikasi Jurnal Nasional',
+                    'title' => 'Mapping Climate and Air Quality Risks for Acute Respiratory Infections in Eastern Priangan, Indonesia',
+                    'authors' => 'Andhy Romdani, Mudatsir, Fahmi Rahmat Amanulloh, Muhammad Raka El Ghifari, Revianti Coenraad, Daniel Bara Padang Allo, Haniful Birri Ramdani',
+                    'journal' => 'Jurnal Ilmiah Kanderang Tingang (Universitas Palangka Raya)',
+                    'volume' => 'Volume 17',
+                    'issue' => 'Issue 2 (Hlm. 340–354), November 2026',
+                    'index_type' => 'SINTA',
+                    'index_detail' => 'SINTA · Diamond OA',
+                    'doi_label' => '10.37304/jikt.v17i2.466',
+                    'doi_url' => 'https://doi.org/10.37304/jikt.v17i2.466',
+                    'paragraphs' => [
+                        'Studi ini mengkaji hubungan antara parameter iklim, kualitas udara, dan angka rawat inap akibat infeksi saluran pernapasan akut (ISPA) di wilayah Priangan Timur, Indonesia, menggunakan data observasi periode 2022–2023.',
+                        'Hasil penelitian menunjukkan peningkatan signifikan kasus ISPA pada periode ekstrem iklim: curah hujan dan suhu tinggi selama September–November 2022, serta curah hujan dan suhu rendah dari Juli hingga Oktober 2023. Meskipun kualitas udara di wilayah ini secara umum memenuhi standar nasional, Indeks Kualitas Udara (AQI) memburuk selama musim kemarau panjang dan berkorelasi dengan lonjakan rawat inap. Kelompok anak-anak diidentifikasi sebagai yang paling rentan terhadap perubahan lingkungan ini.',
+                        'Temuan ini menegaskan sifat multifaktorial risiko ISPA yang dipengaruhi oleh efek langsung maupun tidak langsung variabilitas iklim. Studi ini merekomendasikan strategi mitigasi terpadu yang menggabungkan rekayasa teknik, kesiapan layanan kesehatan, dan tindakan pemerintah daerah untuk menghadapi risiko kesehatan berbasis iklim di masa mendatang.',
+                    ],
+                ],
             ];
             @endphp
 
