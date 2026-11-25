@@ -13,12 +13,64 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Sidang Akhir</span>
             </nav>
-            <p class="text-[#0070BA] font-medium text-xs">
-                Tahapan Skripsi 3 (Kelulusan)
-            </p>
+            <p class="text-[#0070BA] font-medium text-xs">Tahapan Skripsi 3 (Kelulusan)</p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
                 Sidang Akhir
             </h1>
+        </div>
+    </section>
+
+    <section class="py-12 lg:py-16 bg-slate-50 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="p-6 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">Jadwal Sidang Akhir Skripsi</h2>
+                        <p class="text-xs text-slate-500 mt-1">Jadwal resmi sidang akhir skripsi yang tercatat di sistem prodi</p>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 self-start sm:self-auto">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Update Real-time dari Prodi
+                    </span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs sm:text-sm">
+                        <thead class="bg-slate-50 text-slate-700 font-bold uppercase text-[11px] border-b border-slate-200">
+                            <tr>
+                                <th class="p-4 sm:px-6">Mahasiswa &amp; NIM</th>
+                                <th class="p-4 sm:px-6">Judul Skripsi</th>
+                                <th class="p-4 sm:px-6">Pembimbing &amp; Penguji</th>
+                                <th class="p-4 sm:px-6">Waktu &amp; Ruangan</th>
+                                <th class="p-4 sm:px-6 text-center">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            @forelse($schedules as $s)
+                            <tr class="hover:bg-slate-50/80 transition">
+                                <td class="p-4 sm:px-6">
+                                    <div class="font-bold text-slate-900">{{ $s->student_name }}</div>
+                                    <div class="text-[11px] text-slate-500">{{ $s->student_id }}</div>
+                                </td>
+                                <td class="p-4 sm:px-6 max-w-xs"><p class="text-slate-800 font-medium leading-relaxed">{{ $s->title }}</p></td>
+                                <td class="p-4 sm:px-6 text-slate-600">
+                                    <div class="font-medium">Pembimbing: {{ $s->supervisor_1 }}</div>
+                                    @if($s->examiner_1)<div class="text-[11px] text-slate-500">Penguji: {{ $s->examiner_1 }}</div>@endif
+                                </td>
+                                <td class="p-4 sm:px-6">
+                                    <div class="font-bold text-slate-900">{{ $s->date_time ? $s->date_time->translatedFormat('d M Y, H:i') : '-' }} WIB</div>
+                                    <div class="text-[11px] text-blue-700 font-medium flex items-center gap-1 mt-0.5"><i class="fa-solid fa-location-dot text-[10px]"></i> {{ $s->room }}</div>
+                                </td>
+                                <td class="p-4 sm:px-6 text-center">
+                                    <span class="inline-block px-2.5 py-1 rounded-full text-[11px] font-bold {{ $s->status == 'Terjadwal' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 text-slate-600' }}">{{ $s->status }}</span>
+                                </td>
+                            </tr>
+                            @empty
+                            <tr><td colspan="5" class="p-8 text-center text-slate-500">Belum ada jadwal sidang akhir yang terdaftar saat ini.</td></tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
 @endsection

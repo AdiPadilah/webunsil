@@ -5,8 +5,14 @@
 
 @section('content')
 @php
-    $initialPage = (int) request()->get('page', 1);
-    if ($initialPage !== 2) $initialPage = 1;
+    // 13 berita lama hardcoded dari routes khusus — ditampilkan setelah berita DB
+    $staticSlugs = [
+        'berita.seminar-jalan-tol','berita.seminar-hasil-uns','berita.kunjungan-leuwikeris',
+        'berita.kompetisi-jembatan','berita.seminar-taiwan','berita.workshop-pasti-q1',
+        'berita.kuliah-tamu-bim','berita.wisuda-sarjana','berita.fahmi-rahmat',
+        'berita.muhammad-raka','berita.seminar-hathi-air','berita.hathi-segara-anakan',
+        'berita.tirta-adhipermana','berita.workshop-obe',
+    ];
 @endphp
     
     <section class="bg-[#0B2A4A] text-white py-12 md:py-16 border-b border-blue-950">
@@ -37,8 +43,58 @@
                 
                 <div class="lg:col-span-2 space-y-8" id="daftar-berita">
 
-                    {{-- Featured Article (Hanya tampil di Halaman 1) --}}
-                    <div id="berita-featured" class="{{ $initialPage == 2 ? 'hidden' : '' }}">
+                    {{-- Berita dari Database (Admin) — terbaru di atas --}}
+                    @if($articles->count())
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        @foreach($articles as $art)
+                        <article class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 border border-slate-200 flex flex-col justify-between group">
+                            <div>
+                                <div class="relative h-48 overflow-hidden bg-slate-100">
+                                    @if($art->thumbnail)
+                                        @if(str_starts_with($art->thumbnail, 'images/'))
+                                            <img src="{{ asset($art->thumbnail) }}" alt="{{ $art->title }}" class="w-full h-full object-cover">
+                                        @else
+                                            <img src="{{ Storage::disk('public')->url($art->thumbnail) }}" alt="{{ $art->title }}" class="w-full h-full object-cover">
+                                        @endif
+                                    @else
+                                        <div class="w-full h-full bg-gradient-to-br from-[#0B2A4A] to-[#0070BA] flex items-center justify-center">
+                                            <i class="fa-solid fa-newspaper text-white/30 text-4xl"></i>
+                                        </div>
+                                    @endif
+                                </div>
+                                <div class="p-5">
+                                    <p class="text-xs font-bold text-[#0070BA] tracking-wide uppercase mb-1.5">
+                                        {{ $art->category }} &bull; {{ $art->published_at ? $art->published_at->translatedFormat('d F Y') : '' }}
+                                    </p>
+                                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2 transition">
+                                        {{ $art->title }}
+                                    </h3>
+                                    @if($art->excerpt)
+                                    <p class="text-xs text-slate-500 mt-2 line-clamp-3 leading-relaxed">{{ $art->excerpt }}</p>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end">
+                                <a href="{{ route('berita.show', $art->slug) }}" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 group-hover:translate-x-0.5 transition">
+                                    <span>Selengkapnya</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                        </article>
+                        @endforeach
+                    </div>
+                    {{ $articles->links() }}
+                    @endif
+
+                    {{-- Pembatas jika ada berita DB --}}
+                    @if($articles->count())
+                    <div class="border-t border-slate-200 pt-6">
+                        <p class="text-xs text-slate-400 font-medium mb-4 uppercase tracking-wide">Berita Sebelumnya</p>
+                    </div>
+                    @endif
+
+                    {{-- Featured Article (berita lama hardcoded) --}}
+                    <div id="berita-featured" class="{{ request('page') == 2 ? 'hidden' : '' }}">
                         <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
                             <div class="h-64 sm:h-72 overflow-hidden bg-slate-100">
                                 <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional SCIENCE 2026 Jalan Tol Berkelanjutan" class="w-full h-full object-cover  ">

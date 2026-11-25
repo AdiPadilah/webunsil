@@ -199,17 +199,23 @@ Route::get('/jadwal-sidang-skripsi', function () {
 
 // 11c. Seminar Proposal
 Route::get('/seminar-proposal', function () {
-    return view('pages.seminar-proposal');
+    $schedules = \App\Models\DefenseSchedule::where('type', 'Seminar Proposal')
+        ->orderBy('date_time', 'asc')->get();
+    return view('pages.seminar-proposal', compact('schedules'));
 })->name('seminar-proposal');
 
 // 11d. Seminar Hasil
 Route::get('/seminar-hasil', function () {
-    return view('pages.seminar-hasil');
+    $schedules = \App\Models\DefenseSchedule::where('type', 'Seminar Hasil')
+        ->orderBy('date_time', 'asc')->get();
+    return view('pages.seminar-hasil', compact('schedules'));
 })->name('seminar-hasil');
 
 // 11e. Sidang Akhir
 Route::get('/sidang-akhir', function () {
-    return view('pages.sidang-akhir');
+    $schedules = \App\Models\DefenseSchedule::where('type', 'Sidang Akhir Skripsi')
+        ->orderBy('date_time', 'asc')->get();
+    return view('pages.sidang-akhir', compact('schedules'));
 })->name('sidang-akhir');
 
 // 12. Portal Berita & Informasi
