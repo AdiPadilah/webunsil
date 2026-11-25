@@ -27,12 +27,6 @@
 
             @php
                 $books = [
-                    // Karya Hidayanto, S.T., M.T.
-                    ['judul' => 'Manajemen Proyek: Manajemen Kualitas Proyek', 'penulis' => 'Hidayanto, S.T., M.T.', 'penulis_url' => null, 'kategori' => 'non-fiksi', 'label' => 'Buku Ajar', 'tahun' => '2024', 'isbn' => '978-623-8722-77-8', 'cover' => null],
-
-                    // Karya Ir. M. Ridha Al Mustafa, S.T., M.T.
-                    ['judul' => 'Manajemen Konstruksi', 'penulis' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.', 'penulis_url' => null, 'kategori' => 'non-fiksi', 'label' => 'Buku Ajar', 'tahun' => '2025', 'isbn' => '978-634-7310-43-9', 'cover' => null],
-
                     // Karya Andhy Romdani, S.T., M.Eng., Ph.D. — Non-Fiksi Keteknik-sipilan (12 Judul)
                     ['judul' => 'Manajemen Sungai dan Banjir: Adaptasi terhadap Perubahan Iklim Global',                                           'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-8221-10-3', 'cover' => 'manajemen-sungai-dan-banjir-adaptasi-terhadap-perubahan-iklim-global.png'],
                     ['judul' => 'Hidrodinamika Pantai dan Proteksi Kawasan Pesisir',                                                               'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-8267-23-4', 'cover' => 'hidrodinamika-pantai-dan-proteksi-kawasan-pesisir.jpeg'],
