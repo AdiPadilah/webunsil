@@ -74,7 +74,13 @@ Route::get('/dosen/sri-wanto', function () {
         ->orWhere('profile_route', 'dosen.sri-wanto')
         ->first();
 
-    return view('pages.dosen.sri-wanto', compact('dosen'));
+    $books = \App\Models\Buku::published()
+        ->where('penulis_route', 'dosen.sri-wanto')
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+
+    return view('pages.dosen.sri-wanto', compact('dosen', 'books'));
 })->name('dosen.sri-wanto');
 
 // 5. Akademik (Hub Page sesuai layout ITS)

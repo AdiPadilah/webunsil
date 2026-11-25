@@ -11,6 +11,7 @@ class BukuSeeder extends Seeder
     public function run(): void
     {
         $books = [
+            ['judul' => 'Konstruksi Struktur Jembatan', 'penulis' => 'Sri Wanto, S.T., M.T.', 'penulis_route' => 'dosen.sri-wanto', 'kategori' => 'non-fiksi', 'label' => 'Buku Referensi', 'tahun' => 2026, 'isbn' => '978-634-7526-24-3', 'cover' => 'images/buku/konstruksi-struktur-jembatan.jpg'],
             ['judul' => 'Manajemen Sungai dan Banjir: Adaptasi terhadap Perubahan Iklim Global', 'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_route' => 'dosen.andhy-romdani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => null, 'isbn' => '978-623-8221-10-3', 'cover' => 'images/buku/manajemen-sungai-dan-banjir-adaptasi-terhadap-perubahan-iklim-global.png'],
             ['judul' => 'Hidrodinamika Pantai dan Proteksi Kawasan Pesisir', 'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_route' => 'dosen.andhy-romdani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => null, 'isbn' => '978-623-8267-23-4', 'cover' => 'images/buku/hidrodinamika-pantai-dan-proteksi-kawasan-pesisir.jpeg'],
             ['judul' => 'Mekanisme Pendangkalan di Alur Pelayaran Pelabuhan dan Solusi Komprehensifnya', 'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_route' => 'dosen.andhy-romdani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => null, 'isbn' => '978-623-8221-67-7', 'cover' => 'images/buku/mekanisme-pendangkalan-di-alur-pelayaran-pelabuhan-dan-solusi-komprehensifnya.png'],

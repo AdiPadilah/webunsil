@@ -66,7 +66,7 @@ class DynamicContentCmsTest extends TestCase
         $this->assertSame(1, SiteSetting::count());
         $this->assertSame(24, Penelitian::count());
         $this->assertSame(9, Pengabdian::count());
-        $this->assertSame(16, Buku::count());
+        $this->assertSame(17, Buku::count());
         $this->assertSame(6, Prestasi::count());
         $this->assertSame(24, Dosen::count());
 
@@ -101,6 +101,8 @@ class DynamicContentCmsTest extends TestCase
 
         $this->get('/buku')
             ->assertOk()
+            ->assertSee('Konstruksi Struktur Jembatan')
+            ->assertSee('978-634-7526-24-3')
             ->assertSee('Manajemen Sungai dan Banjir')
             ->assertSee('978-623-8221-10-3');
 
@@ -122,6 +124,9 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/dosen/sri-wanto')
             ->assertOk()
             ->assertSee('Sri Wanto, S.T., M.T.')
+            ->assertSee('Konstruksi Struktur Jembatan')
+            ->assertSee('978-634-7526-24-3')
+            ->assertSee('/storage/buku-covers/konstruksi-struktur-jembatan.jpg', false)
             ->assertSee('/storage/dosen/sri-wanto.jpg', false);
     }
 
@@ -286,5 +291,27 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Dr. Sri Wanto, S.T., M.T.')
             ->assertSee('Rekayasa Geoteknik')
             ->assertSee($sriWanto->foto_url, false);
+
+        Buku::create([
+            'judul' => 'Draft Buku Sri Wanto',
+            'penulis' => 'Sri Wanto, S.T., M.T.',
+            'penulis_route' => 'dosen.sri-wanto',
+            'kategori' => 'non-fiksi',
+            'is_published' => false,
+        ]);
+
+        Buku::create([
+            'judul' => 'Buku Baru Sri Wanto',
+            'penulis' => 'Sri Wanto, S.T., M.T.',
+            'penulis_route' => 'dosen.sri-wanto',
+            'kategori' => 'non-fiksi',
+            'tahun' => 2026,
+            'is_published' => true,
+        ]);
+
+        $this->get('/dosen/sri-wanto')
+            ->assertOk()
+            ->assertSee('Buku Baru Sri Wanto')
+            ->assertDontSee('Draft Buku Sri Wanto');
     }
 }
