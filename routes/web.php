@@ -222,7 +222,7 @@ Route::get('/sidang-akhir', function () {
 Route::get('/berita', function () {
     $articles = \App\Models\Article::where('is_published', true)
         ->orderBy('published_at', 'desc')
-        ->paginate(9);
+        ->paginate(8);
     return view('pages.berita', compact('articles'));
 })->name('berita.index');
 
