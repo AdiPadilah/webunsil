@@ -44,7 +44,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 
                 {{-- Sidebar Kiri: Kartu Identitas & Kontak --}}
-                <div class="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
+                <div class="lg:col-span-4 space-y-6 lg:sticky lg:top-24 lg:max-h-[calc(100vh-7.5rem)] lg:overflow-y-auto lg:overscroll-contain lg:pt-0.5 lg:pb-2 lg:pl-0.5 lg:pr-2 profile-sidebar-scroll">
                     
                     {{-- Kartu Foto & Info Pokok --}}
                     <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm p-6 text-center">
@@ -702,5 +702,29 @@
 
         </div>
     </section>
+
+    @push('styles')
+    <style>
+        @media (min-width: 1024px) {
+            .profile-sidebar-scroll::-webkit-scrollbar {
+                width: 5px;
+            }
+            .profile-sidebar-scroll::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .profile-sidebar-scroll::-webkit-scrollbar-thumb {
+                background-color: rgba(148, 163, 184, 0.55);
+                border-radius: 9999px;
+            }
+            .profile-sidebar-scroll::-webkit-scrollbar-thumb:hover {
+                background-color: rgba(100, 116, 139, 0.8);
+            }
+            .profile-sidebar-scroll {
+                scrollbar-width: thin;
+                scrollbar-color: rgba(148, 163, 184, 0.55) transparent;
+            }
+        }
+    </style>
+    @endpush
 
 @endsection
