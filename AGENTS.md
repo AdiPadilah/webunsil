@@ -27,7 +27,7 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 
 **Eksekusi Kilat & Presisi (Permanent Rule):**
 - Langsung eksekusi tanpa penjelasan teori panjang.
-- Eksekusi tool serentak (edit -> `view:clear` -> `git pull --rebase` -> `git push`).
+- Eksekusi tool serentak (edit -> `view:clear` -> `git add -A` -> `git commit` -> `git pull --rebase` -> `git push` otomatis setiap ada perubahan).
 - Pertahankan akurasi 100% data riil UNSIL, hemat token maksimal di model Gemini maupun Claude.
 
 ## Conventions
