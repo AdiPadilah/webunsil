@@ -19,11 +19,11 @@ class DefenseScheduleResource extends Resource
 {
     protected static ?string $model = DefenseSchedule::class;
 
-    protected static ?string $navigationLabel = 'Jadwal Sidang & Seminar';
+    protected static ?string $navigationLabel = 'Jadwal Sidang Skripsi';
 
     protected static ?string $modelLabel = 'Jadwal Sidang';
 
-    protected static ?string $pluralModelLabel = 'Jadwal Sidang & Seminar';
+    protected static ?string $pluralModelLabel = 'Jadwal Sidang Skripsi';
 
     protected static string | UnitEnum | null $navigationGroup = 'Layanan Akademik';
 

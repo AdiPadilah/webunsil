@@ -15,7 +15,7 @@ class DefenseScheduleForm
     {
         return $schema->components([
             Section::make('Data Mahasiswa & Judul Skripsi')
-                ->description('Jadwal langsung tampil pada halaman Jadwal Sidang & Seminar.')
+                ->description('Jadwal langsung tampil pada halaman Jadwal Sidang Skripsi.')
                 ->schema([
                     Select::make('type')
                         ->label('Tahapan Sidang / Seminar')
