@@ -172,11 +172,7 @@
                             <h2 class="text-2xl sm:text-3xl font-bold text-[#0B2A4A] font-heading">
                                 Kegiatan Mahasiswa
                             </h2>
-                            <div class="flex items-center space-x-2">
-                                <a href="https://instagram.com/hmsftunsil" target="_blank" class="inline-flex items-center text-xs font-semibold text-slate-600 hover:text-pink-600 gap-1 transition">
-                                    <i class="fa-brands fa-instagram text-sm"></i> @hmsftunsil
-                                </a>
-                                <span class="text-slate-300">|</span>
+                            <div class="flex items-center">
                                 <a href="https://instagram.com/sipilunsil" target="_blank" class="inline-flex items-center text-xs font-semibold text-slate-600 hover:text-pink-600 gap-1 transition">
                                     <i class="fa-brands fa-instagram text-sm"></i> @sipilunsil
                                 </a>
