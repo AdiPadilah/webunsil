@@ -65,7 +65,7 @@ Route::get('/prestasi-mahasiswa', function () {
 
 // 6. Layanan Terpadu
 Route::get('/layanan', function () {
-    return view('pages.layanan');
+    return redirect()->away('https://s.id/Tugas-akhir-TSipil');
 })->name('layanan');
 
 // 7. Redirect Download ke Layanan Terpadu
