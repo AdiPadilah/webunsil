@@ -15,7 +15,7 @@
                 <span class="text-slate-200">Tentang Kami</span>
             </nav>
 
-            <p class="text-[#0070BA] font-medium text-xs">
+            <p class="text-sky-300 font-semibold text-xs">
                 Profil Program Studi
             </p>
 
@@ -31,7 +31,7 @@
             
             
             {{-- Sambutan Ketua Program Studi (Proporsional & Relevan) --}}
-            <div class="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm p-6 sm:p-8 lg:p-10 reveal">
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs p-6 sm:p-8 lg:p-10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     
                     {{-- Foto Pimpinan / Ketua Program Studi --}}
@@ -43,7 +43,7 @@
                                      class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                                      onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
                             </div>
-                            <div class="p-3 bg-[#0B2A4A] text-white text-center">
+                            <div class="p-3.5 bg-[#0B2A4A] text-white text-center">
                                 <h4 class="text-xs sm:text-sm font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
                                 <p class="text-[11px] text-amber-400 font-medium mt-0.5">Ketua Program Studi Teknik Sipil</p>
                                 <p class="text-[10px] text-slate-300">Fakultas Teknik Universitas Siliwangi</p>
@@ -54,14 +54,14 @@
                     {{-- Isi Sambutan --}}
                     <div class="lg:col-span-8 flex flex-col justify-between space-y-4">
                         <div>
-                            <span class="text-[11px] font-semibold text-[#0070BA] uppercase tracking-wider block mb-1">
+                            <span class="text-xs font-bold text-[#0070BA] uppercase tracking-wider block mb-1">
                                 Pimpinan Program Studi
                             </span>
-                            <h2 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading leading-tight mb-3">
+                            <h2 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading leading-tight mb-4">
                                 Sambutan Ketua Program Studi
                             </h2>
                             
-                            <div class="text-xs sm:text-[13px] text-slate-600 space-y-3 leading-relaxed text-justify">
+                            <div class="text-sm sm:text-[15px] text-slate-600 space-y-3.5 leading-relaxed">
                                 <p class="font-semibold text-slate-800">
                                     Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
                                 </p>

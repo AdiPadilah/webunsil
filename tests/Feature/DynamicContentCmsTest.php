@@ -59,6 +59,11 @@ class DynamicContentCmsTest extends TestCase
         $this->assertSame(6, Prestasi::count());
         $this->assertSame(24, Dosen::count());
 
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('Mengenal Program Studi')
+            ->assertSee('Akses Cepat');
+
         $this->get('/penelitian')
             ->assertOk()
             ->assertSee('Natural Hazards Research')
@@ -107,10 +112,17 @@ class DynamicContentCmsTest extends TestCase
             'is_published' => true,
         ]);
 
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('Mengenal Program Studi')
+            ->assertSee('Akses Cepat');
+
         $this->get('/penelitian')
             ->assertOk()
             ->assertSee('Penelitian Aktif Terbaru')
             ->assertDontSee('Draft Penelitian Rahasia');
+
+        $this->assertTrue($user->canAccessPanel(filament()->getDefaultPanel()));
 
         $this->get('/admin/login')
             ->assertOk()

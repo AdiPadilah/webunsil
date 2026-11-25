@@ -13,7 +13,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200 truncate max-w-xs">{{ Str::limit($article->title, 40) }}</span>
             </nav>
-            <p class="text-[#0070BA] font-medium text-xs uppercase tracking-wide">
+            <p class="text-sky-300 font-semibold text-xs uppercase tracking-wide">
                 {{ $article->category }} &bull; {{ $article->published_at ? $article->published_at->translatedFormat('d F Y') : '-' }}
             </p>
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading tracking-tight text-white mt-1 leading-snug">

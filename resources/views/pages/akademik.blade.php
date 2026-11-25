@@ -16,7 +16,7 @@
                 <span class="text-slate-200">Akademik</span>
             </nav>
 
-            <p class="text-[#0070BA] font-medium text-xs">
+            <p class="text-sky-300 font-semibold text-xs">
                 Pendidikan &amp; Kurikulum
             </p>
 

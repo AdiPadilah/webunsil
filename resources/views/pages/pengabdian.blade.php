@@ -20,7 +20,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400" aria-hidden="true"></i>
                 <span class="text-slate-200">Pengabdian</span>
             </nav>
-            <p class="text-[#0070BA] font-medium text-xs">
+            <p class="text-sky-300 font-semibold text-xs">
                 Hilirisasi Keilmuan &amp; Pemberdayaan Masyarakat
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
@@ -30,13 +30,21 @@
     </section>
 
     {{-- Panel Pengabdian Masyarakat --}}
-    <section class="py-12 lg:py-16 bg-slate-50 min-h-screen">
+    <section class="py-10 lg:py-14 bg-slate-50 min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
 
             @if($abmasList->isNotEmpty())
-                <div class="flex items-center justify-between flex-wrap gap-2">
-                    <p class="text-xs text-slate-500">
-                        Menampilkan <strong id="abmasVisibleCount" class="text-[#0B2A4A]">{{ $abmasList->count() }}</strong> dari {{ $abmasList->count() }} kegiatan PkM
+                <div class="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div class="relative flex-1 max-w-md">
+                        <i class="fa-solid fa-magnifying-glass text-xs text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true"></i>
+                        <input type="search"
+                               id="abmasSearchInput"
+                               oninput="applyAbmasFilter()"
+                               placeholder="Cari judul kegiatan PkM, nama dosen, atau jurnal..."
+                               class="w-full pl-9 pr-3.5 py-2.5 text-sm rounded-xl border border-slate-200 bg-slate-50/70 focus:bg-white focus:border-[#0070BA] focus:ring-2 focus:ring-blue-100 outline-none transition">
+                    </div>
+                    <p class="text-xs text-slate-600">
+                        Menampilkan <strong id="abmasVisibleCount" class="text-[#0B2A4A]">{{ $abmasList->count() }}</strong> dari <span id="abmasMatchedCount">{{ $abmasList->count() }}</span> kegiatan PkM
                     </p>
                 </div>
 
@@ -46,6 +54,11 @@
                             @include('pages._publikasi-panel', ['item' => $abmas, 'nomor' => $index + 1])
                         </div>
                     @endforeach
+                </div>
+
+                <div id="abmasEmptyState" class="hidden bg-white rounded-2xl border border-slate-200 p-10 text-center text-slate-500 text-sm">
+                    <i class="fa-solid fa-magnifying-glass text-2xl text-slate-300 mb-2 block" aria-hidden="true"></i>
+                    Tidak ditemukan kegiatan PkM yang sesuai dengan kata kunci Anda.
                 </div>
 
                 <div id="abmasPagination" class="flex items-center justify-center gap-2 pt-4"></div>
@@ -63,20 +76,41 @@
     <script>
         (function () {
             const PER_PAGE = 8;
-            const cards    = Array.from(document.querySelectorAll('.abmas-card-wrap'));
-            const totalEl  = document.getElementById('abmasVisibleCount');
-            const pagEl    = document.getElementById('abmasPagination');
-            const totalPages = Math.ceil(cards.length / PER_PAGE);
+            const cards = Array.from(document.querySelectorAll('.abmas-card-wrap'));
+            const visibleEl = document.getElementById('abmasVisibleCount');
+            const matchedEl = document.getElementById('abmasMatchedCount');
+            const emptyEl = document.getElementById('abmasEmptyState');
+            const pagEl = document.getElementById('abmasPagination');
+            const searchInput = document.getElementById('abmasSearchInput');
+            let filteredCards = cards;
 
-            function render(page) {
-                const start = (page - 1) * PER_PAGE;
-                const end   = start + PER_PAGE;
-
-                cards.forEach(function (card, i) {
-                    card.style.display = (i >= start && i < end) ? '' : 'none';
+            window.applyAbmasFilter = function () {
+                const term = (searchInput ? searchInput.value : '').toLowerCase().trim();
+                filteredCards = cards.filter(function (wrap) {
+                    const article = wrap.querySelector('article');
+                    const searchText = article ? (article.getAttribute('data-search') || '') : '';
+                    return !term || searchText.includes(term);
                 });
 
-                totalEl.textContent = Math.max(0, Math.min(end, cards.length) - start);
+                cards.forEach(function (card) { card.style.display = 'none'; });
+                if (matchedEl) matchedEl.textContent = filteredCards.length;
+                if (emptyEl) emptyEl.classList.toggle('hidden', filteredCards.length > 0);
+                render(1);
+            };
+
+            function render(page) {
+                const totalPages = Math.ceil(filteredCards.length / PER_PAGE);
+                const start = (page - 1) * PER_PAGE;
+                const end = start + PER_PAGE;
+
+                cards.forEach(function (card) { card.style.display = 'none'; });
+                filteredCards.slice(start, end).forEach(function (card) {
+                    card.style.display = '';
+                });
+
+                if (visibleEl) {
+                    visibleEl.textContent = filteredCards.length === 0 ? 0 : Math.min(end, filteredCards.length) - start;
+                }
                 pagEl.innerHTML = '';
 
                 if (totalPages <= 1) {
