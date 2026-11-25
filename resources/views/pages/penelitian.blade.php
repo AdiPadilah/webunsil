@@ -129,6 +129,7 @@
                         'Temuan menunjukkan bahwa wilayah pesisir selatan Jawa Barat sangat rentan terhadap bahaya pesisir akibat perubahan iklim, dengan perlindungan eksisting yang tidak memadai dan potensi implementasi CGI yang relatif rendah. Studi ini mengisi kesenjangan metodologis dalam riset CGI dan memberikan wawasan berharga bagi pengembangan strategi pengelolaan pesisir di lingkungan tropis.',
                     ],
                 ],
+
             ];
             @endphp
 
