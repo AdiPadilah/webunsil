@@ -105,6 +105,30 @@
                         'Penurunan sisa selama periode operasional sebesar 27,84 cm masih di bawah batas desain 30 cm, dengan nilai FK meningkat menjadi 1,617 (FK > 1,3) pada periode konstruksi dan 1,617 (FK > 1,5) pada periode operasional. Kombinasi PVD dan preloading terbukti efektif mempercepat konsolidasi, mengendalikan penurunan, dan meningkatkan stabilitas tanah lunak pada proyek reklamasi terminal peti kemas.',
                     ],
                 ],
+                [
+                    'article_id' => 'Vol. 21, No. 1, Hlm. 34',
+                    'cover' => 'images/jurnal/omni_akuatika.jpg',
+                    'cover_alt' => 'Cover Omni-Akuatika (Universitas Jenderal Soedirman)',
+                    'cover_caption_title' => 'Omni-Akuatika',
+                    'cover_caption_sub' => 'Universitas Jenderal Soedirman (SINTA · Diamond OA)',
+                    'cover_caption_meta' => 'ISSN: 1858-3873 · 2476-9347 · Vol. 21, No. 1',
+                    'lecturer_route' => 'dosen.andhy-romdani',
+                    'eyebrow' => 'Publikasi Jurnal Nasional',
+                    'title' => 'Exploring Coastal Green Infrastructure (CGI): A Promising Approach to Mitigating Climate Change-Related Disasters in West Java\'s Southern Coast, Indonesia',
+                    'authors' => 'Muhammad Raka El Ghifari, Andhy Romdani, Fahmi Rahmat Amanulloh, Empung, Tryantini Sundi Putri, Mudatsir',
+                    'journal' => 'Omni-Akuatika (Universitas Jenderal Soedirman)',
+                    'volume' => 'Volume 21',
+                    'issue' => 'Issue 1 (Hlm. 34), Januari 2026',
+                    'index_type' => 'SINTA',
+                    'index_detail' => 'SINTA · Diamond OA',
+                    'doi_label' => '10.20884/1.oa.2025.21.1.1207',
+                    'doi_url' => 'https://doi.org/10.20884/1.oa.2025.21.1.1207',
+                    'paragraphs' => [
+                        'Coastal Green Infrastructure (CGI) semakin diakui sebagai solusi berbasis alam untuk menghadapi tantangan iklim seperti kenaikan muka air laut, erosi pantai, dan banjir pesisir. Namun, masih terdapat keterbatasan metode yang terstandarisasi dan adaptif secara global untuk mengidentifikasi serta memilih lokasi implementasi CGI optimal, khususnya di kawasan pesisir tropis dengan karakteristik lingkungan yang beragam.',
+                        'Studi ini mengembangkan pendekatan penilaian alternatif dengan membangun CGI Coastal Protection Index dan CGI Coastal Vulnerability Index yang disesuaikan khusus untuk pesisir tropis. Metode ini mengintegrasikan indikator ekologis dan fisik dari penginderaan jauh, analisis spasial, serta kerangka pengambilan keputusan, dan diterapkan pada kawasan pesisir selatan Jawa Barat, Indonesia.',
+                        'Temuan menunjukkan bahwa wilayah pesisir selatan Jawa Barat sangat rentan terhadap bahaya pesisir akibat perubahan iklim, dengan perlindungan eksisting yang tidak memadai dan potensi implementasi CGI yang relatif rendah. Studi ini mengisi kesenjangan metodologis dalam riset CGI dan memberikan wawasan berharga bagi pengembangan strategi pengelolaan pesisir di lingkungan tropis.',
+                    ],
+                ],
             ];
             @endphp
 
