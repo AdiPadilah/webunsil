@@ -325,7 +325,6 @@
                         {{-- Buku Non-Fiksi Keteknik-sipilan (12 Buku) --}}
                         <div class="mb-8">
                             <div class="flex items-center gap-2 mb-3.5 pb-2 border-b border-slate-100">
-                                <i class="fa-solid fa-helmet-safety text-cyan-600 text-sm"></i>
                                 <h4 class="text-sm font-bold text-slate-800">Buku Non-Fiksi (Keteknik-sipilan)</h4>
                                 <span class="text-[10px] text-cyan-800 font-semibold bg-cyan-50 border border-cyan-200/60 px-2.5 py-0.5 rounded-full ml-auto">12 Judul</span>
                             </div>
