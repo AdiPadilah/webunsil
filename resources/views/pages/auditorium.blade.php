@@ -16,13 +16,13 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <a href="{{ route('fasilitas') }}" class="hover:underline text-slate-300 hover:text-amber-400 transition">Fasilitas</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-slate-200">Ruang Seminar & Sidang</span>
+                <span class="text-slate-200">Auditorium</span>
             </nav>
             <p class="text-[#0070BA] font-medium text-xs">
                 Ruang Presentasi &amp; Sidang Ilmiah
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
-                Ruang Seminar <span class="text-amber-400">&amp; Sidang</span>
+                Auditorium
             </h1>
         </div>
     </section>

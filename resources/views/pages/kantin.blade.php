@@ -22,7 +22,7 @@
                 Kuliner Kampus Sehat &amp; Nyaman
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
-                Kantin Kampus <span class="text-amber-400">FT UNSIL</span>
+                Kantin
             </h1>
         </div>
     </section>

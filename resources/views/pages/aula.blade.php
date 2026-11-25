@@ -22,7 +22,7 @@
                 Pusat Pertemuan &amp; Konferensi Akademik
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white mt-1">
-                Aula Fakultas <span class="text-amber-400">Teknik</span>
+                Aula
             </h1>
         </div>
     </section>
