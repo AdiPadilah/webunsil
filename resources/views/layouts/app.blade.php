@@ -1066,22 +1066,6 @@
                 includedLanguages: 'en,id',
                 autoDisplay: false
             }, 'google_translate_element');
-
-            // Force remove margin/top injected by Google Translate
-            function fixGoogleTranslateTop() {
-                document.documentElement.style.setProperty('margin-top', '0', 'important');
-                document.documentElement.style.setProperty('top', '0', 'important');
-                document.body.style.setProperty('margin-top', '0', 'important');
-                document.body.style.setProperty('top', '0', 'important');
-                // Hide banner frame
-                const banners = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame');
-                banners.forEach(el => {
-                    el.style.setProperty('display', 'none', 'important');
-                    el.style.setProperty('height', '0', 'important');
-                });
-            }
-            fixGoogleTranslateTop();
-            setInterval(fixGoogleTranslateTop, 500);
         };
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
