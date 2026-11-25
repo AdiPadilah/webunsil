@@ -52,13 +52,6 @@
                     {{ $item['title'] }}
                 </h2>
 
-                {{-- Ringkasan / Abstrak --}}
-                <div class="text-xs sm:text-[13px] text-slate-600 space-y-3 leading-relaxed text-justify">
-                    @foreach($item['paragraphs'] as $paragraph)
-                        <p>{{ $paragraph }}</p>
-                    @endforeach
-                </div>
-
                 {{-- Rincian Bibliografis --}}
                 <dl class="mt-5 bg-slate-50 rounded-xl border border-slate-200/80 p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-xs">
                     <div>

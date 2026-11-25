@@ -51,12 +51,7 @@
                     'index_detail' => 'SCOPUS Q2',
                     'doi_label' => '10.1080/15715124.2025.2551574',
                     'doi_url' => 'https://doi.org/10.1080/15715124.2025.2551574',
-                    'paragraphs' => [
-                        'Studi ini mengkaji karakteristik hidrodinamika dan risiko banjir di Daerah Aliran Sungai (DAS) Pemali, Jawa Tengah, menggunakan model 2D HEC-RAS yang dikombinasikan dengan metode penilaian bahaya banjir terhadap manusia (\'Flood Hazard to People\') yang dikembangkan oleh DEFRA.',
-                        'Simulasi dilakukan pada empat skenario debit banjir, yaitu Q10, Q100, Q1000, dan QPMF, menunjukkan tren peningkatan kedalaman, kecepatan aliran, dan luas genangan seiring meningkatnya intensitas banjir. Kedalaman genangan umumnya kurang dari 1 m dan kecepatan aliran di bawah 0,5 m/s, namun kecepatan lokal dapat mencapai 1,8 m/s di tepi sungai bagian hulu dan kedalaman hingga 2 m di wilayah pesisir padat penduduk.',
-                        'Analisis spasial mengidentifikasi Kecamatan Brebes dan Wanasari sebagai wilayah paling terdampak banjir. Peta bahaya banjir diklasifikasikan menjadi empat kategori (rendah, sedang, signifikan, dan ekstrem), menekankan pentingnya integrasi pemodelan hidrodinamika ke dalam penilaian risiko banjir dan perencanaan mitigasi bencana di tingkat regional.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 340–354',
                     'cover' => 'images/jurnal/kanderang_tingang.jpg',
@@ -75,12 +70,7 @@
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.37304/jikt.v17i2.466',
                     'doi_url' => 'https://doi.org/10.37304/jikt.v17i2.466',
-                    'paragraphs' => [
-                        'Studi ini mengkaji hubungan antara parameter iklim, kualitas udara, dan angka rawat inap akibat infeksi saluran pernapasan akut (ISPA) di wilayah Priangan Timur, Indonesia, menggunakan data observasi periode 2022–2023.',
-                        'Hasil penelitian menunjukkan peningkatan signifikan kasus ISPA pada periode ekstrem iklim: curah hujan dan suhu tinggi selama September–November 2022, serta curah hujan dan suhu rendah dari Juli hingga Oktober 2023. Meskipun kualitas udara di wilayah ini secara umum memenuhi standar nasional, Indeks Kualitas Udara (AQI) memburuk selama musim kemarau panjang dan berkorelasi dengan lonjakan rawat inap. Kelompok anak-anak diidentifikasi sebagai yang paling rentan terhadap perubahan lingkungan ini.',
-                        'Temuan ini menegaskan sifat multifaktorial risiko ISPA yang dipengaruhi oleh efek langsung maupun tidak langsung variabilitas iklim. Studi ini merekomendasikan strategi mitigasi terpadu yang menggabungkan rekayasa teknik, kesiapan layanan kesehatan, dan tindakan pemerintah daerah untuk menghadapi risiko kesehatan berbasis iklim di masa mendatang.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 14, No. 1 (Hlm. 29–40)',
                     'cover' => 'images/jurnal/balanga_jurnal.jpg',
@@ -99,12 +89,7 @@
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.37304/balanga.v14i1.26433',
                     'doi_url' => 'https://doi.org/10.37304/balanga.v14i1.26433',
-                    'paragraphs' => [
-                        'Studi ini menganalisis efektivitas metode Prefabricated Vertical Drain (PVD) dan preloading dalam mempercepat proses konsolidasi serta meningkatkan stabilitas tanah dasar pada proyek reklamasi lahan untuk container yard di Selat Madura.',
-                        'Analisis dilakukan menggunakan perangkat lunak metode elemen hingga dua dimensi (FEM 2D). Kondisi tanah didominasi lempung dengan konsistensi bervariasi berdasarkan kedalaman uji SPT. Tanpa perbaikan, penurunan 90% mencapai 1,34 m dengan waktu konsolidasi sekitar ±39 tahun dan lereng tidak stabil. Setelah perbaikan, penurunan utama sebesar 1,64 m terjadi dalam masa tunggu 420 hari.',
-                        'Penurunan sisa selama periode operasional sebesar 27,84 cm masih di bawah batas desain 30 cm, dengan nilai FK meningkat menjadi 1,617 (FK > 1,3) pada masa konstruksi dan 1,617 (FK > 1,5) pada periode operasional. Kombinasi PVD dan preloading terbukti efektif mempercepat konsolidasi, mengendalikan penurunan, dan meningkatkan stabilitas tanah lunak pada proyek reklamasi terminal peti kemas.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 21, No. 1, Hlm. 34',
                     'cover' => 'images/jurnal/omni_akuatika.jpg',
@@ -123,12 +108,7 @@
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.20884/1.oa.2025.21.1.1207',
                     'doi_url' => 'https://doi.org/10.20884/1.oa.2025.21.1.1207',
-                    'paragraphs' => [
-                        'Coastal Green Infrastructure (CGI) semakin diakui sebagai solusi berbasis alam untuk menghadapi tantangan iklim seperti kenaikan muka air laut, erosi pantai, dan banjir pesisir. Namun, masih terdapat keterbatasan metode yang terstandarisasi dan adaptif secara global untuk mengidentifikasi serta memilih lokasi implementasi CGI optimal, khususnya di kawasan pesisir tropis dengan karakteristik lingkungan yang beragam.',
-                        'Studi ini mengembangkan pendekatan penilaian alternatif dengan membangun CGI Coastal Protection Index dan CGI Coastal Vulnerability Index yang disesuaikan khusus untuk pesisir tropis. Metode ini mengintegrasikan indikator ekologis dan fisik dari penginderaan jauh, analisis spasial, serta kerangka pengambilan keputusan, dan diterapkan pada kawasan pesisir selatan Jawa Barat, Indonesia.',
-                        'Temuan menunjukkan bahwa wilayah pesisir selatan Jawa Barat sangat rentan terhadap bahaya pesisir akibat perubahan iklim, dengan perlindungan eksisting yang tidak memadai dan potensi implementasi CGI yang relatif rendah. Studi ini mengisi kesenjangan metodologis dalam riset CGI dan memberikan wawasan berharga bagi pengembangan strategi pengelolaan pesisir di lingkungan tropis.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 1125–1136',
                     'cover' => 'images/jurnal/icore_unsoed.png',
@@ -147,12 +127,7 @@
                     'index_detail' => 'Prosiding Internasional',
                     'doi_label' => '10.32424/anr4hg09',
                     'doi_url' => 'https://doi.org/10.32424/anr4hg09',
-                    'paragraphs' => [
-                        'Frekuensi dan daya rusak banjir yang meningkat mengancam keberlangsungan usaha mikro, kecil, dan menengah (UMKM), terutama di kawasan rawan banjir. Penelitian ini menganalisis faktor penentu keberlanjutan usaha UMKM terhadap risiko banjir melalui peran kesiapsiagaan bencana dan ketahanan organisasi.',
-                        'Model konseptual diuji secara kuantitatif menggunakan Partial Least Squares Structural Equation Modeling (PLS-SEM) terhadap data survei dari 386 UMKM di Kabupaten Brebes, Indonesia.',
-                        'Hasil menunjukkan kesiapsiagaan bencana berdampak langsung negatif terhadap kontinuitas usaha karena keterbatasan sumber daya keuangan dan operasional saat implementasi awal, namun secara signifikan meningkatkan ketahanan organisasi yang memediasi keberlanjutan usaha secara positif. Temuan ini menegaskan pentingnya strategi penguatan ketahanan dalam kebijakan mitigasi bagi UMKM di wilayah rawan bencana.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 12, No. 1 (Hlm. 11–17)',
                     'cover' => 'images/jurnal/parentas_v12_cover.jpg',
@@ -171,12 +146,7 @@
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.37304/parentas.v12i1.26762',
                     'doi_url' => 'https://doi.org/10.37304/parentas.v12i1.26762',
-                    'paragraphs' => [
-                        'Kepadatan lalu lintas pada jam sibuk sering menimbulkan hambatan pergerakan pada simpang Jalan Ahmad Yani–Jalan Mohammad Hatta, Kota Tasikmalaya, yang menjadi jalur penghubung utama Kabupaten Ciamis dan Kota Tasikmalaya menuju pusat ekonomi, perkantoran, serta pendidikan.',
-                        'Studi ini menganalisis kinerja tundaan simpang tak bersinyal menggunakan metode gap acceptance dan Pedoman Kapasitas Jalan Indonesia (PKJI) 2023 berdasarkan survei lapangan selama 16 hari.',
-                        'Hasil penelitian menunjukkan nilai critical gap pada simpang tiga tak bersinyal tersebut sebesar 7,50 detik, dengan tundaan akibat konflik persilangan sebesar 12,37 detik melalui metode gap acceptance serta nilai tundaan 10,01 detik/SMP berdasarkan PKJI 2023.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 449–463 (PII: S2666592125000964)',
                     'cover' => 'images/jurnal/natural_hazards_research.jpg',
@@ -195,12 +165,7 @@
                     'index_detail' => 'SCOPUS Q1 · CiteScore 9.7',
                     'doi_label' => '10.1016/j.nhres.2025.10.004',
                     'doi_url' => 'https://doi.org/10.1016/j.nhres.2025.10.004',
-                    'paragraphs' => [
-                        'Penelitian ini mengkaji pengaruh fase El Niño–Southern Oscillation (ENSO) dalam memodulasi bahaya banjir pesisir di kawasan Kabupaten Brebes, Jawa Tengah, yang memiliki wilayah pertambakan dan permukiman dataran rendah rentan terhadap fluktuasi muka air laut.',
-                        'Dengan memadukan pemodelan hidrodinamika dan gelombang (MIKE 21) bersama simulasi genangan dataran banjir (HEC-RAS) pada periode representatif La Niña (2022), El Niño (2023), dan Netral (2024), studi ini menemukan bahwa kontrol langsung ENSO terhadap hidrodinamika skala besar relatif terbatas (kecepatan arus 0,035–0,091 m/s dan variasi muka air –0,34 hingga 0,36 m). Sebaliknya, banjir pesisir terutama dipicu oleh gelombang lokal.',
-                        'Hasil simulasi menunjukkan fase Netral justru menghasilkan genangan terluas sebesar 5.584,51 ha dengan tinggi gelombang puncak 0,78 m dan kedalaman hingga 0,2 m, diikuti La Niña (3.326 ha, kedalaman 0,15 m, gelombang 0,7 m), sedangkan El Niño berdampak sangat kecil (gelombang 0,45 m). Temuan ini menegaskan perlunya memperhitungkan sinyal iklim halus dalam perencanaan adaptasi dan mitigasi risiko banjir pesisir.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 7, No. 2',
                     'cover' => 'images/jurnal/akselerasi_cover.jpg',
@@ -219,12 +184,7 @@
                     'index_detail' => 'SINTA 4 · UNSIL',
                     'doi_label' => '10.37058/aks.v7i2.17625',
                     'doi_url' => 'https://doi.org/10.37058/aks.v7i2.17625',
-                    'paragraphs' => [
-                        'Penelitian ini menganalisis tingkat keselamatan lalu lintas pada simpang tiga tak bersinyal Jalan Mayor S.L. Tobing–Jalan Abr Cikurubuk, Kota Tasikmalaya, menggunakan metode Traffic Conflict Technique (TCT) untuk mengidentifikasi dan mengklasifikasikan konflik crossing, merging, serta diverging.',
-                        'Pada kondisi eksisting tanpa alat pemberi isyarat lalu lintas (APILL), konflik serius mendominasi sebanyak 1.438 konflik (96%) dibandingkan konflik tidak serius sebanyak 65 konflik (4%).',
-                        'Simulasi perbaikan dengan penerapan APILL berbasis PKJI 2023 mampu menurunkan jumlah konflik lalu lintas secara signifikan. Meskipun derajat kejenuhan meningkat dari 0,61 menjadi 0,80, kinerja simpang tetap berada pada kategori yang dapat diterima dengan keselamatan pengguna jalan yang lebih baik.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 11, No. 2 (Hlm. 84–90)',
                     'cover' => 'images/jurnal/parentas_v11_cover.jpg',
@@ -243,12 +203,7 @@
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.37304/parentas.v11i2.23769',
                     'doi_url' => 'https://doi.org/10.37304/parentas.v11i2.23769',
-                    'paragraphs' => [
-                        'Jarak yang berdekatan antara Simpang Rancabango dan Simpang Bantar di Kota Tasikmalaya membuat kendaraan sering berhenti di kedua lampu lalu lintas sehingga menimbulkan antrean dan tundaan. Studi ini menganalisis koordinasi antar-simpang bersinyal tersebut memakai PKJI 2023 berdasarkan survei lapangan pada 21 April hingga 6 Mei 2025.',
-                        'Hasil analisis menunjukkan kedua simpang belum terkoordinasi. Dari tiga rencana pengaturan, diperoleh waktu siklus baru 71 detik dengan offset 60 detik serta bandwidth 18 detik untuk arah Rancabango ke Bantar dan 31 detik untuk arah sebaliknya.',
-                        'Penerapan skema koordinasi simpang bersinyal ini memperbaiki kinerja lalu lintas, ditandai penurunan panjang antrean dari 69,22 m menjadi 62,39 m serta penurunan tundaan rata-rata dari 36,75 detik/SMP menjadi 35,63 detik/SMP.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 1824–1843',
                     'cover' => null,
@@ -267,12 +222,7 @@
                     'index_detail' => 'SINTA 4',
                     'doi_label' => '10.36312/6xcas314',
                     'doi_url' => 'https://doi.org/10.36312/6xcas314',
-                    'paragraphs' => [
-                        'Penelitian ini menganalisis pengaruh kualitas informasi dalam konten yang dihasilkan pengelola wisata (FCC) dan konten pengguna (UGC) terhadap perceived authenticity destinasi wisata serta niat wisatawan untuk berkunjung kembali di Jawa Barat.',
-                        'Melalui pendekatan survei kuantitatif terhadap 317 responden pengunjung destinasi wisata lokal, penelitian menunjukkan kualitas FCC berpengaruh positif terhadap perceived authenticity yang selanjutnya meningkatkan niat kunjungan kembali.',
-                        'Selain itu, kualitas UGC terbukti memoderasi dan memperkuat pengaruh FCC terhadap perceived authenticity, sedangkan kendala perjalanan berupa waktu, biaya, dan aksesibilitas dapat melemahkan dampak perceived authenticity terhadap niat berkunjung kembali.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 131–139',
                     'cover' => 'images/jurnal/medica_hospitalia.jpg',
@@ -291,12 +241,7 @@
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.36408/mhjcm.v12i2.1249',
                     'doi_url' => 'https://doi.org/10.36408/mhjcm.v12i2.1249',
-                    'paragraphs' => [
-                        'Studi observasional cross-sectional ini memetakan distribusi spasial dan variasi temporal kasus batu empedu di wilayah Priangan Timur berdasarkan data rekam medis RSUD dr. Soekardjo Tasikmalaya periode Januari 2022 hingga Desember 2023 dengan 2.032 catatan kunjungan rawat jalan maupun rawat inap.',
-                        'Analisis statistik menggunakan uji Chi-Square dan autokorelasi spasial Global Moran\'s I menunjukkan pengelompokan klaster spasial kasus pada 2022 (I = 0,434) maupun 2023 (I = 0,521).',
-                        'Temuan juga mengonfirmasi bahwa variasi bulanan (p = 0,001), usia (p = 0,023), serta jenis kelamin (p = 0,001) berkorelasi signifikan terhadap kejadian kasus batu empedu.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 125–136',
                     'cover' => 'images/jurnal/ugm_jcef_poster.png',
@@ -315,12 +260,7 @@
                     'index_detail' => 'SCOPUS · SINTA 1',
                     'doi_label' => '10.22146/jcef.16683',
                     'doi_url' => 'https://doi.org/10.22146/jcef.16683',
-                    'paragraphs' => [
-                        'Anomali iklim seperti Indian Ocean Dipole (IOD) memengaruhi hidrodinamika pantai dan memicu transpor sedimen yang menyebabkan pendangkalan pelabuhan. Penelitian ini mengkaji proses transpor sedimen di Titan Coal Port, pesisir barat Sumatra, selama kejadian IOD 2016 dan 2019.',
-                        'Dengan memadukan analisis deskriptif data Copernicus ERA-5 dan pemodelan numerik MIKE 21, studi menemukan bahwa pada kondisi IOD negatif tahun 2016, arus susur pantai dari timur laut memicu pendangkalan di kolam pelabuhan maupun alur pelayaran.',
-                        'Evaluasi terhadap dua skenario modifikasi groin menunjukkan struktur groin yang dimodifikasi mampu menurunkan kecepatan arus yang memasuki kolam pelabuhan dan mengubah pola transpor sedimen untuk mengurangi erosi dasar di hulu kolam.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 1–10',
                     'cover' => 'images/jurnal/jitel_cover.png',
@@ -339,12 +279,7 @@
                     'index_detail' => 'SINTA · Open Access',
                     'doi_label' => '10.35313/jitel.v5.i1.2025.1-10',
                     'doi_url' => 'https://doi.org/10.35313/jitel.v5.i1.2025.1-10',
-                    'paragraphs' => [
-                        'Penelitian ini mengembangkan purwarupa sistem peringatan dini longsor (Early Warning System) berbasis node sensor gerakan tanah dan teknologi Internet of Things (IoT). Sistem memantau perubahan kemiringan tanah menggunakan sensor GY-91 MPU9250+BMP280 10DOF 9-axis bersama pengukuran suhu, kelembaban tanah, dan percepatan secara waktu nyata.',
-                        'Data lapangan dari node sensor dikirimkan melalui gateway ke server sehingga kondisi parameter lereng dapat dipantau dari mana saja serta memberikan peringatan dini yang akurat.',
-                        'Hasil pengujian menunjukkan sensor kelembaban tanah memiliki galat maksimum 3,85% pada rentang kelembaban 20–55%, akselerometer efektif mendeteksi kemiringan 30, 45, 60, hingga 75 derajat, giroskop memantau kecepatan sudut 3 sumbu, dan data berhasil ditampilkan secara real-time melalui situs web.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 4157–4176',
                     'cover' => 'images/jurnal/iwa_water_climate_change.jpg',
@@ -363,12 +298,7 @@
                     'index_detail' => 'SCOPUS Q1',
                     'doi_label' => '10.2166/wcc.2024.343',
                     'doi_url' => 'https://doi.org/10.2166/wcc.2024.343',
-                    'paragraphs' => [
-                        'Studi ini menganalisis dampak kejadian La Niña ekstrem 2022 dan tingginya debit aliran sungai terhadap proses morfo-hidrodinamika di Pantai Bojong Salawe, Pangandaran, yang memiliki estuari besar dan menghadap langsung ke Samudra Hindia.',
-                        'Metode riset memadukan analisis data Copernicus ERA-5, pemodelan numerik MIKE 21, serta identifikasi erosi dan akresi garis pantai menggunakan Digital Shoreline Analysis System (DSAS).',
-                        'Hasil menunjukkan periode boreal autumn 2022 berdampak jauh lebih signifikan dibanding boreal winter 2022, dengan curah hujan tinggi meningkatkan debit sungai dan mentransfer total muatan sedimen sekitar 1,48 × 10⁻³ m³/detik/m. Analisis DSAS mengonfirmasi terjadinya erosi tinggi di sekitar muara estuari.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Artikel 108279',
                     'cover' => 'images/jurnal/estuarine_coastal.jpg',
@@ -387,12 +317,7 @@
                     'index_detail' => 'SCOPUS Q1',
                     'doi_label' => '10.1016/j.ecss.2023.108279',
                     'doi_url' => 'https://doi.org/10.1016/j.ecss.2023.108279',
-                    'paragraphs' => [
-                        'Penelitian ini mengintegrasikan observasi lapangan dan pemodelan numerik di Estuari Delaware sebagai representasi estuari berbatimetri alur dalam dan paparan dangkal (channel-shoal estuary) untuk memahami evolusi stratifikasi salinitas dan pencampuran vertikal akibat pasang surut.',
-                        'Berbeda dengan klasifikasi terdahulu yang menempatkan Estuari Delaware sebagai estuari terstratifikasi lemah, hasil pengamatan dan model membuktikan kolom air dapat mengalami stratifikasi kuat (Δs > 15 psu).',
-                        'Dengan menerapkan metode variansi salinitas (salinity variance method), studi ini mengungkap peran penting lateral tidal straining di akhir fase pasang dalam menginisiasi stratifikasi awal fase surut serta memperkuat longitudinal tidal straining melalui hambatan turbulensi.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 149, Issue 2',
                     'cover' => 'images/jurnal/asce_jwpcoe.png',
@@ -411,12 +336,7 @@
                     'index_detail' => 'SCOPUS Q2',
                     'doi_label' => '10.1061/jwped5.wweng-1940',
                     'doi_url' => 'https://doi.org/10.1061/jwped5.wweng-1940',
-                    'paragraphs' => [
-                        'Sungai Zhuoshui memiliki salah satu laju suplai sedimen tertinggi di dunia sehingga sedimen muara berisiko terbawa arus pasang surut kuat dan mengendap di alur pelayaran maupun kolam pelabuhan di sebelah selatan muara.',
-                        'Studi ini menguraikan mekanisme dispersi sedimen sungai dalam kondisi mesotidal serta peristiwa banjir topan, mencakup transpor plume sungai, pengendapan awal, resuspensi, hingga akumulasi bersih jangka panjang.',
-                        'Hasil menunjukkan distribusi konsentrasi sedimen tersuspensi (SSC) dimodulasi kuat oleh arus pasang surut utara–selatan. Pada debit tinggi, plume banjir topan menyebar ke utara akibat efek Coriolis atau mengendap di sekitar muara, lalu sedimen di inner shelf tersuspensi kembali dan terbawa sirkulasi residual ke selatan menuju alur pelayaran pelabuhan.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Artikel 104932',
                     'cover' => 'images/jurnal/continental_shelf.jpg',
@@ -435,12 +355,7 @@
                     'index_detail' => 'SCOPUS Q1',
                     'doi_label' => '10.1016/j.csr.2023.104932',
                     'doi_url' => 'https://doi.org/10.1016/j.csr.2023.104932',
-                    'paragraphs' => [
-                        'Studi ini mengkaji mekanisme terbentuknya plume sungai hiperpyknal pada konsentrasi sedimen rendah di sistem sungai pegunungan kecil dan ngarai bawah laut menggunakan data pengamatan lapangan Sungai Gaoping selama Topan Soudelor sebagai dasar simulasi numerik.',
-                        'Berdasarkan estimasi kekeruhan waktu nyata, konsentrasi sedimen tersuspensi (SSC) Sungai Gaoping saat Topan Soudelor berada di bawah 20 g/L dengan ukuran butir median 15,15 μm yang didominasi fraksi lanau.',
-                        'Simulasi tiga dimensi menunjukkan arus silang ngarai memusat di hulu ngarai sehingga topografi ngarai bawah laut membatasi jalur dan lebar plume hiperpyknal saat bergerak menuruni lereng curam. SSC plume hiperpyknal meningkat seiring mengecilnya ukuran butir sedimen, namun partikel lebih kecil dari 8 μm cenderung tetap bertahan pada plume permukaan laut.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Artikel 113446',
                     'cover' => 'images/jurnal/ocean_engineering.jpg',
@@ -459,12 +374,7 @@
                     'index_detail' => 'SCOPUS Q1',
                     'doi_label' => '10.1016/j.oceaneng.2022.113446',
                     'doi_url' => 'https://doi.org/10.1016/j.oceaneng.2022.113446',
-                    'paragraphs' => [
-                        'Studi ini memodelkan pembentukan dan proses transpor arus densitas bermuatan sedimen yang dipicu siklon tropis menggunakan model Reynolds-Averaged Navier-Stokes (RANS) yang divalidasi dengan data eksperimen laboratorium, lalu diterapkan pada Gaoping Submarine Canyon tempat tercatat sekitar 17 kejadian putusnya kabel bawah laut pada 2006–2015.',
-                        'Hasil menunjukkan konsentrasi aliran masuk yang dibutuhkan untuk memicu arus densitas adalah sekitar 21 g/L, jauh lebih rendah dari ambang batas konvensional 40–45 g/L. Bilangan Richardson lokal ditemukan sebagai penentu kondisi kritis kemunculan arus densitas.',
-                        'Kecepatan arus densitas dan beban gaya terdistribusi pada kabel meningkat sebanding dengan konsentrasi aliran masuk setelah melampaui nilai kritis, serta bertambah seiring peningkatan debit sungai dan kecepatan endap partikel sedimen, sehingga faktor lingkungan tersebut perlu diperhitungkan dalam desain kabel bawah laut.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 1, Hlm. 100–116',
                     'cover' => 'images/jurnal/jcose_coastal_offshore.jpg',
@@ -483,12 +393,7 @@
                     'index_detail' => 'Jurnal Internasional OA',
                     'doi_label' => '10.53256/COSE_220106',
                     'doi_url' => 'https://doi.org/10.53256/COSE_220106',
-                    'paragraphs' => [
-                        'Arus densitas yang dipicu peristiwa ekstrem seperti gempa bumi dan topan menimbulkan ancaman kerusakan peralatan bawah laut dan kabel serat optik antara Gaoping Submarine Canyon hingga Palung Manila, yang mencatat sekitar 150 hingga 200 kejadian putus kabel per tahun.',
-                        'Studi ini mereproduksi medan aliran dan transpor sedimen pada peristiwa banjir tahun 2008 akibat Topan Kalmaegi dan Fong Wong menggunakan pemodelan numerik. Model menunjukkan aliran sungai dipengaruhi arus pasang surut saat menuruni ngarai bawah laut, menguat selama pasang naik dan melemah saat pasang surut.',
-                        'Debit sungai dan konsentrasi sedimen tersuspensi (SSC) yang diperlukan untuk memicu arus densitas tercatat sekitar 1.500–3.200 m³/detik dan 12 g/L, dengan internal Froude number melampaui 0,8 namun pada ambang SSC jauh di bawah teori kritis konvensional.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 148, Issue 2',
                     'cover' => 'images/jurnal/asce_jwpcoe.png',
@@ -507,12 +412,7 @@
                     'index_detail' => 'SCOPUS Q2',
                     'doi_label' => '10.1061/(asce)ww.1943-5460.0000700',
                     'doi_url' => 'https://doi.org/10.1061/(asce)ww.1943-5460.0000700',
-                    'paragraphs' => [
-                        'Mekanisme transpor sedimen di muara sungai dan estuari dekat pelabuhan dipengaruhi interaksi kompleks gelombang, arus pasang surut, dan debit episodik sungai di atas batimetri kompleks. Sungai Zhuoshui di utara Pelabuhan Mailiao menjadi sumber suplai sedimen utama di kawasan tersebut.',
-                        'Pengamatan lapangan pasca-topan menunjukkan sedimen berbutir halus cepat mengendap di dekat muara sungai, lalu arus pasang surut dan gelombang kuat akibat angin musim dingin mengangkut sedimen tersebut menuju alur pelayaran pelabuhan.',
-                        'Simulasi numerik memetakan pola sirkulasi residual di berbagai skenario pasang purnama-perbani dan kondisi gelombang. Hasil model menunjukkan perpanjangan struktur North Jetty efektif memodifikasi sirkulasi antara pelabuhan dan muara sungai guna memitigasi masalah pendangkalan.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 143–149',
                     'cover' => 'images/jurnal/jem_unsil.jpg',
@@ -531,12 +431,7 @@
                     'index_detail' => 'SINTA · UNSIL',
                     'doi_label' => '10.37058/jem.v4i2.704',
                     'doi_url' => 'https://doi.org/10.37058/jem.v4i2.704',
-                    'paragraphs' => [
-                        'Penelitian ini menganalisis faktor pembentuk konstruk konsumsi status pada generasi milenial yang telah bekerja dan mandiri secara finansial melalui survei terhadap lebih dari 200 responden di Kota Tasikmalaya dan sekitarnya.',
-                        'Pengujian menggunakan Confirmatory Factor Analysis dengan pendekatan maximum likelihood estimation untuk mengidentifikasi dimensi penyusun konsumsi status.',
-                        'Hasil pengujian deskriptif menunjukkan kelima dimensi konstruk—yaitu self-directed symbolic/expressive value, other-directed symbolic/expressive value, experiential/hedonic value, utilitarian/functional value, dan cost/sacrifice value—secara keseluruhan berada pada klasifikasi baik.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 11–17',
                     'cover' => 'images/jurnal/jg_unnes.jpg',
@@ -555,12 +450,7 @@
                     'index_detail' => 'SINTA 3',
                     'doi_label' => '10.15294/jg.v14i2.11514',
                     'doi_url' => 'https://doi.org/10.15294/jg.v14i2.11514',
-                    'paragraphs' => [
-                        'Desa Cimanggu merupakan salah satu desa dengan populasi pohon aren yang masih melimpah di Kecamatan Langkaplancar, Kabupaten Pangandaran, sehingga berpotensi besar dijaga keberlanjutannya bagi lingkungan maupun kesejahteraan masyarakat sekitar.',
-                        'Penelitian deskriptif kuantitatif berbasis survei ini menganalisis manfaat pohon aren (Arenga pinnata) sebagai vegetasi konservasi pencegah erosi dan longsor di kawasan perbukitan Desa Cimanggu.',
-                        'Hasil studi menunjukkan tanaman aren layak dikembangkan sebagai vegetasi konservasi karena mampu menahan lereng serta tebing guna mencegah banjir, erosi permukaan, dan tanah longsor.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Hlm. 18–25',
                     'cover' => 'images/jurnal/jg_unnes.jpg',
@@ -579,12 +469,7 @@
                     'index_detail' => 'SINTA 3',
                     'doi_label' => '10.15294/jg.v14i1.9774',
                     'doi_url' => 'https://doi.org/10.15294/jg.v14i1.9774',
-                    'paragraphs' => [
-                        'Daerah Irigasi Panunggal di Kota Tasikmalaya menghadapi kendala pengambilan air dari Sungai Citanduy menuju lahan pertanian akibat sumbatan sampah di pintu air, kerusakan komponen pintu air, serta pengambilan air ilegal di tengah ancaman kekeringan musiman.',
-                        'Penelitian ini mengevaluasi efektivitas pengelolaan jaringan irigasi dengan membandingkan ketersediaan debit sumber air terhadap kebutuhan air tanaman pada lahan seluas 9,62 ha dengan pola tanam padi-padi sejak awal November.',
-                        'Hasil analisis menunjukkan ketersediaan air pada jaringan irigasi Panunggal mencapai debit 1,625 m³/detik, jauh melampaui kebutuhan air irigasi maksimum sebesar 0,021 m³/detik sehingga pasokan air daerah irigasi secara teknis dapat terpenuhi.',
-                    ],
-                ],
+                                    ],
                 [
                     'article_id' => 'Vol. 2, No. 2',
                     'cover' => 'images/jurnal/jssainstek_unsil.jpg',
@@ -603,12 +488,7 @@
                     'index_detail' => 'SINTA · UNSIL',
                     'doi_label' => '10.37058/jssainstek.v2i2.102',
                     'doi_url' => 'https://doi.org/10.37058/jssainstek.v2i2.102',
-                    'paragraphs' => [
-                        'Evapotranspirasi referensi merupakan komponen utama dalam memperkirakan kebutuhan air tanaman sebagai dasar pembagian air irigasi untuk mengatasi defisit pasokan air pertanian di Jawa Barat.',
-                        'Penelitian ini menghitung evapotranspirasi referensi tahun 2015 di Kota Tasikmalaya, Kabupaten Tasikmalaya, dan Kabupaten Garut menggunakan metode Blaney-Criddle serta Turc-Lungbein.',
-                        'Hasil kedua metode menunjukkan evapotranspirasi Kota Tasikmalaya lebih besar dibandingkan Kabupaten Tasikmalaya dan Kabupaten Garut, dengan perbandingan nilai tahunan Turc-Lungbein terhadap Blaney-Criddle sebesar 1 : 1,5 di Kota Tasikmalaya dan 1 : 1,6 di Kabupaten Tasikmalaya serta Garut.',
-                    ],
-                ],
+                                    ],
             ];
             @endphp
 
