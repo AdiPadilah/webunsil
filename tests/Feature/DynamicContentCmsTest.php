@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Filament\Pages\PengaturanWebsite;
 use App\Filament\Resources\Articles\Pages\CreateArticle;
 use App\Filament\Resources\Articles\Pages\ListArticles;
 use App\Filament\Resources\Bukus\Pages\CreateBuku;
@@ -19,17 +20,21 @@ use App\Filament\Resources\Prestasis\Pages\CreatePrestasi;
 use App\Filament\Resources\Prestasis\Pages\ListPrestasis;
 use App\Filament\Widgets\PanduanCepatWidget;
 use App\Filament\Widgets\ProdiStatsWidget;
+use App\Models\Article;
 use App\Models\Buku;
 use App\Models\Dosen;
 use App\Models\Penelitian;
 use App\Models\Pengabdian;
 use App\Models\Prestasi;
+use App\Models\SiteSetting;
 use App\Models\User;
+use Database\Seeders\ArticleSeeder;
 use Database\Seeders\BukuSeeder;
 use Database\Seeders\DosenSeeder;
 use Database\Seeders\PenelitianSeeder;
 use Database\Seeders\PengabdianSeeder;
 use Database\Seeders\PrestasiSeeder;
+use Database\Seeders\SiteSettingSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Livewire;
@@ -44,6 +49,8 @@ class DynamicContentCmsTest extends TestCase
         Storage::fake('public');
 
         $this->seed([
+            SiteSettingSeeder::class,
+            ArticleSeeder::class,
             PenelitianSeeder::class,
             PengabdianSeeder::class,
             BukuSeeder::class,
@@ -51,6 +58,8 @@ class DynamicContentCmsTest extends TestCase
             DosenSeeder::class,
         ]);
 
+        $this->assertSame(14, Article::count());
+        $this->assertSame(1, SiteSetting::count());
         $this->assertSame(24, Penelitian::count());
         $this->assertSame(9, Pengabdian::count());
         $this->assertSame(16, Buku::count());
@@ -60,7 +69,23 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/')
             ->assertOk()
             ->assertSee('Mengenal Program Studi')
-            ->assertSee('Akses Cepat');
+            ->assertSee('Workshop Penguatan Kurikulum');
+
+        $this->get('/berita')
+            ->assertOk()
+            ->assertSee('Bendungan Leuwikeris');
+
+        $this->get('/berita?kategori=Agenda')
+            ->assertOk()
+            ->assertSee('Workshop Penguatan Kurikulum');
+
+        $this->get('/publikasi')
+            ->assertOk()
+            ->assertSee('Akselerasi: Jurnal Ilmiah Teknik Sipil UNSIL');
+
+        $this->get('/seminar-proposal')->assertOk();
+        $this->get('/seminar-hasil')->assertOk();
+        $this->get('/sidang-akhir')->assertOk();
 
         $this->get('/penelitian')
             ->assertOk()
@@ -136,6 +161,18 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(ProdiStatsWidget::class)
             ->assertOk()
             ->assertSee('Penelitian Dosen');
+
+        Livewire::test(PengaturanWebsite::class)
+            ->assertOk()
+            ->set('data.mahasiswa_aktif', 750)
+            ->set('data.akreditasi_peringkat', 'UNGGUL')
+            ->call('save')
+            ->assertHasNoErrors();
+
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('Akreditasi UNGGUL')
+            ->assertSee('data-target="750"', false);
 
         Livewire::test(ListArticles::class)->assertOk();
         Livewire::test(CreateArticle::class)->assertOk();

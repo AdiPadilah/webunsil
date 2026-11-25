@@ -520,11 +520,14 @@
 
                 
                 <div>
+                    @php
+                        $settingLayout = $siteSetting ?? \App\Models\SiteSetting::current();
+                    @endphp
                     <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5">Kontak Resmi</h4>
                     <ul class="space-y-3 text-slate-300">
                         <li class="flex items-start gap-2">
                             <i class="fa-solid fa-envelope text-amber-400 mt-0.5 w-4" aria-hidden="true"></i>
-                            <a href="mailto:sipil@unsil.ac.id" class="hover:text-white transition">sipil@unsil.ac.id</a>
+                            <a href="mailto:{{ $settingLayout->kontak_email }}" class="hover:text-white transition">{{ $settingLayout->kontak_email }}</a>
                         </li>
                         <li class="flex items-start gap-2">
                             <i class="fa-solid fa-globe text-amber-400 mt-0.5 w-4" aria-hidden="true"></i>
@@ -588,23 +591,23 @@
                     </div>
                     <div>
                         <span class="text-emerald-800 text-[11px] font-bold uppercase tracking-wider block">Peringkat Akreditasi</span>
-                        <span class="text-2xl font-black text-emerald-950">BAIK</span>
-                        <span class="text-xs text-emerald-700 block">LAM Teknik &bull; Terakreditasi Aktif</span>
+                        <span class="text-2xl font-black text-emerald-950">{{ $settingLayout->akreditasi_peringkat }}</span>
+                        <span class="text-xs text-emerald-700 block">{{ \Illuminate\Support\Str::before($settingLayout->akreditasi_lembaga, ' (') }} &bull; Terakreditasi Aktif</span>
                     </div>
                 </div>
 
                 <div class="space-y-3 pt-2 text-xs">
                     <div class="flex justify-between py-2 border-b border-slate-100">
                         <span class="text-slate-500 font-medium">Lembaga Akreditasi:</span>
-                        <span class="text-slate-900 font-semibold text-right">LAM Teknik (Keteknikan)</span>
+                        <span class="text-slate-900 font-semibold text-right">{{ $settingLayout->akreditasi_lembaga }}</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-slate-100">
                         <span class="text-slate-500 font-medium">Nomor Keputusan SK:</span>
-                        <span class="text-slate-900 font-semibold text-right font-mono text-[11px]">0182/SK/LAM Teknik/AS/VIII/2023</span>
+                        <span class="text-slate-900 font-semibold text-right font-mono text-[11px]">{{ $settingLayout->akreditasi_sk }}</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-slate-100">
                         <span class="text-slate-500 font-medium">Masa Berlaku:</span>
-                        <span class="text-slate-900 font-semibold text-right">21 Agustus 2023 &ndash; 20 Agustus 2028</span>
+                        <span class="text-slate-900 font-semibold text-right">{{ $settingLayout->akreditasi_berlaku }}</span>
                     </div>
                     <div class="flex justify-between py-2 border-b border-slate-100">
                         <span class="text-slate-500 font-medium">Jenjang &amp; Gelar:</span>

@@ -4,6 +4,10 @@
 @section('meta_description', 'Website Resmi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL) Tasikmalaya. Akreditasi BAIK LAM Teknik.')
 
 @section('content')
+    @php
+        $setting = $siteSetting ?? \App\Models\SiteSetting::current();
+        $sambutanParagraphs = collect(preg_split('/\R{2,}/', trim((string) $setting->kaprodi_sambutan)))->filter();
+    @endphp
     
     <section id="beranda" class="hero-banner relative min-h-[580px] lg:min-h-[680px] flex items-center py-20 lg:py-28 border-b border-slate-800 overflow-hidden">
         {{-- Decorative floating shapes --}}
@@ -20,7 +24,7 @@
                         <button type="button" onclick="openModal('modal-akreditasi-top')"
                             class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-400/40 rounded-full text-emerald-200 text-xs font-semibold transition cursor-pointer">
                             <i class="fa-solid fa-award text-emerald-300 text-[11px]" aria-hidden="true"></i>
-                            Akreditasi BAIK (LAM Teknik)
+                            Akreditasi {{ $setting->akreditasi_peringkat }} ({{ \Illuminate\Support\Str::before($setting->akreditasi_lembaga, ' (') }})
                         </button>
                         <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-white/10 border border-white/20 rounded-full text-slate-100 text-xs font-semibold">
                             <i class="fa-solid fa-calendar-check text-amber-400 text-[11px]" aria-hidden="true"></i>
@@ -98,8 +102,8 @@
                             </a>
                         </div>
                         <div class="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
-                            <a href="mailto:sipil@unsil.ac.id" class="inline-flex items-center gap-2 hover:text-amber-300 transition">
-                                <i class="fa-solid fa-envelope text-amber-400" aria-hidden="true"></i> sipil@unsil.ac.id
+                            <a href="mailto:{{ $setting->kontak_email }}" class="inline-flex items-center gap-2 hover:text-amber-300 transition">
+                                <i class="fa-solid fa-envelope text-amber-400" aria-hidden="true"></i> {{ $setting->kontak_email }}
                             </a>
                             <a href="https://instagram.com/sipilunsil" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-pink-300 transition">
                                 <i class="fa-brands fa-instagram text-pink-400" aria-hidden="true"></i> @sipilunsil
@@ -123,14 +127,14 @@
                         <div class="absolute -top-3 -left-3 w-full h-full rounded-2xl bg-amber-400/20 border-2 border-amber-400/30"></div>
                         <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-white w-full max-w-[260px] sm:max-w-[280px]">
                             <div class="aspect-[4/5] overflow-hidden bg-slate-100">
-                                <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
-                                     alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
+                                <img src="{{ $setting->kaprodi_foto_url }}" 
+                                     alt="{{ $setting->kaprodi_nama }} - {{ $setting->kaprodi_jabatan }}" 
                                      class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                                      onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
                             </div>
                             <div class="p-4 bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] text-white text-center">
-                                <h4 class="text-sm font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
-                                <p class="text-[11px] text-amber-400 font-semibold mt-1">Ketua Program Studi</p>
+                                <h4 class="text-sm font-bold text-white leading-tight">{{ $setting->kaprodi_nama }}</h4>
+                                <p class="text-[11px] text-amber-400 font-semibold mt-1">{{ $setting->kaprodi_jabatan }}</p>
                                 <p class="text-[10px] text-slate-300 mt-0.5">Teknik Sipil FT UNSIL</p>
                             </div>
                         </div>
@@ -148,20 +152,18 @@
                         </h2>
                     </div>
 
-                    {{-- Quote highlight --}}
-                    <blockquote class="border-l-4 border-amber-400 pl-5 py-1 bg-amber-50 rounded-r-xl">
-                        <p class="text-[#0B2A4A] text-sm sm:text-base font-semibold leading-relaxed italic">
-                            "Masa depan Teknik Sipil dibangun melalui semangat belajar, inovasi, kolaborasi, dan dampak nyata."
-                        </p>
-                    </blockquote>
+                    @if($setting->kaprodi_kutipan)
+                        <blockquote class="border-l-4 border-amber-400 pl-5 py-1 bg-amber-50 rounded-r-xl">
+                            <p class="text-[#0B2A4A] text-sm sm:text-base font-semibold leading-relaxed italic">
+                                "{{ $setting->kaprodi_kutipan }}"
+                            </p>
+                        </blockquote>
+                    @endif
 
                     <div class="space-y-3.5 text-slate-600 text-sm sm:text-[15px] leading-relaxed">
-                        <p>
-                            Perkembangan teknologi, transformasi digital, dan tantangan lingkungan terus mengubah wajah dunia teknik sipil. Kondisi ini membuka peluang baru bagi pengembangan ilmu pengetahuan, inovasi rekayasa, dan solusi infrastruktur yang lebih cerdas, tangguh, serta berkelanjutan. Teknik Sipil Universitas Siliwangi hadir sebagai ruang akademik untuk mengeksplorasi potensi tersebut melalui pendidikan, penelitian, dan pengembangan teknologi.
-                        </p>
-                        <p>
-                            Ke depan, pengembangan program studi diarahkan pada penguatan kualitas pendidikan, riset inovatif, pemanfaatan teknologi, serta kolaborasi dengan berbagai mitra di tingkat nasional dan internasional.
-                        </p>
+                        @foreach($sambutanParagraphs as $paragraph)
+                            <p>{{ $paragraph }}</p>
+                        @endforeach
                     </div>
 
                     <div class="flex flex-wrap gap-3 pt-1">
@@ -171,7 +173,7 @@
                         </a>
                         <a href="{{ route('visi-misi') }}" class="inline-flex items-center gap-2 px-5 py-2.5 border border-[#0B2A4A] hover:bg-slate-50 text-[#0B2A4A] text-sm font-semibold rounded-xl transition-all duration-200">
                             <i class="fa-solid fa-bullseye text-[#0070BA]"></i>
-                            Visi & Misi
+                            Visi &amp; Misi
                         </a>
                     </div>
                 </div>
@@ -192,7 +194,7 @@
                     <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-amber-400/15 border border-amber-400/30 mb-3 group-hover:bg-amber-400/25 transition mx-auto">
                         <i class="fa-solid fa-user-graduate text-amber-400 text-lg"></i>
                     </div>
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num leading-none" data-target="567">567</span>
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num leading-none" data-target="{{ $setting->mahasiswa_aktif }}">{{ number_format($setting->mahasiswa_aktif, 0, ',', '.') }}</span>
                     <span class="block text-xs font-semibold text-white mt-1">Mahasiswa Aktif</span>
                     <span class="block text-[11px] text-slate-300 mt-0.5">saat ini</span>
                 </div>
@@ -200,7 +202,7 @@
                     <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-amber-400/15 border border-amber-400/30 mb-3 group-hover:bg-amber-400/25 transition mx-auto">
                         <i class="fa-solid fa-medal text-amber-400 text-lg"></i>
                     </div>
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num leading-none" data-target="1186">1.186</span>
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num leading-none" data-target="{{ $setting->total_lulusan }}">{{ number_format($setting->total_lulusan, 0, ',', '.') }}</span>
                     <span class="block text-xs font-semibold text-white mt-1">Lulusan</span>
                     <span class="block text-[11px] text-slate-300 mt-0.5">total kelulusan</span>
                 </div>
@@ -208,7 +210,7 @@
                     <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-amber-400/15 border border-amber-400/30 mb-3 group-hover:bg-amber-400/25 transition mx-auto">
                         <i class="fa-solid fa-trophy text-amber-400 text-lg"></i>
                     </div>
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num leading-none" data-target="80">80</span>
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num leading-none" data-target="{{ $setting->prestasi_mahasiswa }}">{{ number_format($setting->prestasi_mahasiswa, 0, ',', '.') }}</span>
                     <span class="block text-xs font-semibold text-white mt-1">Prestasi Mahasiswa</span>
                     <span class="block text-[11px] text-slate-300 mt-0.5">kompetisi &amp; kegiatan</span>
                 </div>
@@ -216,7 +218,7 @@
                     <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-amber-400/15 border border-amber-400/30 mb-3 group-hover:bg-amber-400/25 transition mx-auto">
                         <i class="fa-solid fa-flask text-amber-400 text-lg"></i>
                     </div>
-                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num leading-none" data-target="264">264</span>
+                    <span class="block text-3xl sm:text-4xl font-black text-amber-400 counter-num leading-none" data-target="{{ $setting->aktivitas_dosen }}">{{ number_format($setting->aktivitas_dosen, 0, ',', '.') }}</span>
                     <span class="block text-xs font-semibold text-white mt-1">Aktivitas Dosen</span>
                     <span class="block text-[11px] text-slate-300 mt-0.5">riset &amp; pengabdian</span>
                 </div>
@@ -459,39 +461,41 @@
                             <h2 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading">
                                 Agenda Terdekat
                             </h2>
-                            <span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 text-[11px] font-bold">Workshop</span>
+                            <span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 text-[11px] font-bold">Agenda</span>
                         </div>
                         
-                        <a href="{{ route('berita.workshop-obe') }}" class="block bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-200 border border-slate-200/90 hover:border-[#0070BA]/50 group">
-                            <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
-                                <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Workshop OBE" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                                <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-[#0B2A4A]/90 text-amber-300 text-[11px] font-bold backdrop-blur-xs">
-                                    27 November 2026
-                                </span>
-                            </div>
-                            <div class="p-5 space-y-3">
-                                <h3 class="text-[15px] font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
-                                    Workshop Penguatan Kurikulum Teknik Sipil Berbasis OBE
-                                </h3>
-                                <div class="text-xs text-slate-600 space-y-1.5 pt-2.5 border-t border-slate-100">
-                                    <p class="flex items-start gap-2">
-                                        <i class="fa-solid fa-user-tie text-[#0070BA] mt-0.5 w-3.5 text-center" aria-hidden="true"></i>
-                                        <span>Dr. Eng. Ir. Halwan Alfisa S., ST., MT., IPU. (UNS)</span>
-                                    </p>
-                                    <p class="flex items-center gap-2">
-                                        <i class="fa-regular fa-clock text-[#0070BA] w-3.5 text-center" aria-hidden="true"></i>
-                                        <span>Jumat, 27 Nov 2026, pukul 08.00 WIB</span>
-                                    </p>
-                                    <p class="flex items-center gap-2">
-                                        <i class="fa-solid fa-location-dot text-[#0070BA] w-3.5 text-center" aria-hidden="true"></i>
-                                        <span>Kampus 2 Universitas Siliwangi</span>
-                                    </p>
+                        @if(isset($agendaTerdekat) && $agendaTerdekat)
+                            @php
+                                $agThumb = $agendaTerdekat->thumbnail
+                                    ? (str_starts_with($agendaTerdekat->thumbnail, 'images/') ? asset($agendaTerdekat->thumbnail) : asset('storage/' . $agendaTerdekat->thumbnail))
+                                    : asset('images/workshop-obe.jpg');
+                            @endphp
+                            <a href="{{ route('berita.show', $agendaTerdekat->slug) }}" class="block bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-200 border border-slate-200/90 hover:border-[#0070BA]/50 group">
+                                <div class="aspect-[16/10] overflow-hidden bg-slate-100 relative">
+                                    <img src="{{ $agThumb }}" alt="{{ $agendaTerdekat->title }}" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                                    <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-[#0B2A4A]/90 text-amber-300 text-[11px] font-bold backdrop-blur-xs">
+                                        {{ $agendaTerdekat->published_at ? $agendaTerdekat->published_at->translatedFormat('d F Y') : 'Terjadwal' }}
+                                    </span>
                                 </div>
-                                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0070BA]">
-                                    Lihat detail agenda <i class="fa-solid fa-chevron-right text-[10px]" aria-hidden="true"></i>
-                                </span>
+                                <div class="p-5 space-y-3">
+                                    <h3 class="text-[15px] font-bold text-slate-900 leading-snug group-hover:text-[#0070BA] transition-colors">
+                                        {{ $agendaTerdekat->title }}
+                                    </h3>
+                                    @if($agendaTerdekat->excerpt)
+                                        <p class="text-xs text-slate-600 leading-relaxed pt-2 border-t border-slate-100">
+                                            {{ $agendaTerdekat->excerpt }}
+                                        </p>
+                                    @endif
+                                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-[#0070BA]">
+                                        Lihat detail agenda <i class="fa-solid fa-chevron-right text-[10px]" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        @else
+                            <div class="bg-white rounded-2xl p-6 border border-slate-200 text-xs text-slate-500">
+                                Belum ada agenda kegiatan mendatang.
                             </div>
-                        </a>
+                        @endif
                     </div>
 
                     
@@ -508,7 +512,7 @@
                         <div class="space-y-3">
                             @forelse($articles as $art)
                             @php
-                                $artUrl = Route::has('berita.' . $art->slug) ? route('berita.' . $art->slug) : route('berita.show', $art->slug);
+                                $artUrl = route('berita.show', $art->slug);
                                 $artThumb = $art->thumbnail ? (str_starts_with($art->thumbnail, 'images/') ? asset($art->thumbnail) : asset('storage/' . $art->thumbnail)) : asset('images/unsil-seminar-jalan-tol.jpeg');
                             @endphp
                             <a href="{{ $artUrl }}" class="flex items-start gap-3.5 p-3 bg-white rounded-xl border border-slate-200/80 hover:border-[#0070BA]/50 hover:shadow-md transition-all duration-200 group">
@@ -600,8 +604,8 @@
                             </span>
                             <div>
                                 <p class="text-[#0B2A4A] font-bold text-xs uppercase tracking-wide mb-0.5">Email</p>
-                                <a href="mailto:sipil@unsil.ac.id" class="text-[#0070BA] hover:underline font-semibold text-xs sm:text-[13px]">
-                                    sipil@unsil.ac.id
+                                <a href="mailto:{{ $setting->kontak_email }}" class="text-[#0070BA] hover:underline font-semibold text-xs sm:text-[13px]">
+                                    {{ $setting->kontak_email }}
                                 </a>
                             </div>
                         </div>
@@ -613,7 +617,7 @@
                             <div>
                                 <p class="text-[#0B2A4A] font-bold text-xs uppercase tracking-wide mb-0.5">Jam Layanan</p>
                                 <p class="text-slate-700 text-xs sm:text-[13px] leading-relaxed">
-                                    Senin s.d. Jumat, 07.30 - 16.00 WIB
+                                    {{ $setting->jam_layanan }}
                                 </p>
                             </div>
                         </div>

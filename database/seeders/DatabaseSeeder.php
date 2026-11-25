@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         );
 
         $this->call([
+            SiteSettingSeeder::class,
             ArticleSeeder::class,
             DefenseScheduleSeeder::class,
             PenelitianSeeder::class,

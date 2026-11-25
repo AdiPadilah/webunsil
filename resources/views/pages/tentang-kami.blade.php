@@ -4,6 +4,10 @@
 @section('meta_description', 'Profil lengkap, sambutan pimpinan, struktur organisasi, visi misi, sejarah, serta akreditasi Program Studi S-1 Teknik Sipil FT Universitas Siliwangi.')
 
 @section('content')
+    @php
+        $setting = $siteSetting ?? \App\Models\SiteSetting::current();
+        $sambutanParagraphs = collect(preg_split('/\R{2,}/', trim((string) $setting->kaprodi_sambutan)))->filter();
+    @endphp
     
     <section class="bg-[#0B2A4A] text-white py-12 md:py-16 border-b border-blue-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,14 +42,14 @@
                     <div class="lg:col-span-4 flex justify-center">
                         <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[250px] sm:max-w-[270px] hover:shadow-md transition-shadow">
                             <div class="aspect-[4/5] overflow-hidden bg-slate-100">
-                                <img src="{{ asset('images/koordinator-prodi.jpg') }}?v={{ time() }}" 
-                                     alt="Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi Teknik Sipil FT UNSIL" 
+                                <img src="{{ $setting->kaprodi_foto_url }}" 
+                                     alt="{{ $setting->kaprodi_nama }} - {{ $setting->kaprodi_jabatan }}" 
                                      class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                                      onerror="this.src='{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}'">
                             </div>
                             <div class="p-3.5 bg-[#0B2A4A] text-white text-center">
-                                <h4 class="text-xs sm:text-sm font-bold text-white leading-tight">Andhy Romdani, S.T., M.Eng., Ph.D.</h4>
-                                <p class="text-[11px] text-amber-400 font-medium mt-0.5">Ketua Program Studi Teknik Sipil</p>
+                                <h4 class="text-xs sm:text-sm font-bold text-white leading-tight">{{ $setting->kaprodi_nama }}</h4>
+                                <p class="text-[11px] text-amber-400 font-medium mt-0.5">{{ $setting->kaprodi_jabatan }}</p>
                                 <p class="text-[10px] text-slate-300">Fakultas Teknik Universitas Siliwangi</p>
                             </div>
                         </div>
@@ -65,15 +69,12 @@
                                 <p class="font-semibold text-slate-800">
                                     Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
                                 </p>
-                                <p>
-                                    Perkembangan teknologi, transformasi digital, dan tantangan lingkungan terus mengubah wajah dunia teknik sipil. Kondisi ini membuka peluang baru bagi pengembangan ilmu pengetahuan, inovasi rekayasa, dan solusi infrastruktur yang lebih cerdas, tangguh, serta berkelanjutan. Teknik Sipil Universitas Siliwangi hadir sebagai ruang akademik untuk mengeksplorasi potensi tersebut melalui pendidikan, penelitian, dan pengembangan teknologi.
-                                </p>
-                                <p>
-                                    Ke depan, pengembangan program studi diarahkan pada penguatan kualitas pendidikan, riset inovatif, pemanfaatan teknologi, serta kolaborasi dengan berbagai mitra di tingkat nasional dan internasional. Lingkungan akademik yang terbuka dan kolaboratif menjadi fondasi untuk mendorong lahirnya gagasan, karya, dan kontribusi yang relevan dengan perkembangan dunia rekayasa. Peningkatan mutu dan daya saing akademik menjadi bagian penting dalam perjalanan menuju program studi yang semakin progresif dan berwawasan global.
-                                </p>
-                                <p>
-                                    Masa depan Teknik Sipil Universitas Siliwangi dibangun melalui semangat untuk terus belajar, berinovasi, berkolaborasi, dan memberikan dampak nyata. Setiap gagasan, penelitian, prestasi, dan kontribusi sivitas akademika merupakan bagian dari perjalanan tersebut. Mari menjadi bagian dari perjalanan Teknik Sipil UNSIL dalam membangun pengetahuan, menciptakan inovasi, dan menghadirkan masa depan infrastruktur yang lebih baik.
-                                </p>
+                                @foreach($sambutanParagraphs as $paragraph)
+                                    <p>{{ $paragraph }}</p>
+                                @endforeach
+                                @if($setting->kaprodi_kutipan)
+                                    <p class="italic font-medium text-[#0B2A4A]">"{{ $setting->kaprodi_kutipan }}"</p>
+                                @endif
                             </div>
                         </div>
 
@@ -134,7 +135,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     @forelse($articles as $art)
                     @php
-                        $artUrl = Route::has('berita.' . $art->slug) ? route('berita.' . $art->slug) : route('berita.show', $art->slug);
+                        $artUrl = route('berita.show', $art->slug);
                         $artThumb = $art->thumbnail ? (str_starts_with($art->thumbnail, 'images/') ? asset($art->thumbnail) : asset('storage/' . $art->thumbnail)) : asset('images/unsil-seminar-jalan-tol.jpeg');
                     @endphp
                     <article class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col group">
@@ -190,14 +191,15 @@
                     </div>
                     <div>
                         <span class="block text-xs font-bold text-emerald-800">Peringkat Akreditasi</span>
-                        <span class="block text-lg font-black text-emerald-900">BAIK (LAM Teknik)</span>
+                        <span class="block text-lg font-black text-emerald-900">{{ $setting->akreditasi_peringkat }} ({{ \Illuminate\Support\Str::before($setting->akreditasi_lembaga, ' (') }})</span>
                     </div>
                 </div>
                 <div class="space-y-2 text-xs text-slate-600">
-                    <p><strong>Lembaga:</strong> Lembaga Akreditasi Mandiri Program Studi Keteknikan (LAM Teknik)</p>
+                    <p><strong>Lembaga:</strong> {{ $setting->akreditasi_lembaga }}</p>
+                    <p><strong>Nomor SK:</strong> {{ $setting->akreditasi_sk }}</p>
                     <p><strong>Jenjang Program:</strong> Sarjana (S-1)</p>
                     <p><strong>Program Studi:</strong> Teknik Sipil, Fakultas Teknik Universitas Siliwangi</p>
-                    <p><strong>Masa Berlaku:</strong> Hingga 20 Agustus 2028</p>
+                    <p><strong>Masa Berlaku:</strong> {{ $setting->akreditasi_berlaku }}</p>
                 </div>
 
             </div>

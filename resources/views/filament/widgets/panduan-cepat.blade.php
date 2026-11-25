@@ -49,6 +49,15 @@
 
                 <x-filament::button
                     tag="a"
+                    href="{{ \App\Filament\Pages\PengaturanWebsite::getUrl() }}"
+                    :icon="Heroicon::OutlinedAdjustmentsHorizontal"
+                    color="gray"
+                >
+                    Statistik &amp; Info Prodi
+                </x-filament::button>
+
+                <x-filament::button
+                    tag="a"
                     href="{{ route('home') }}"
                     target="_blank"
                     :icon="Heroicon::OutlinedGlobeAlt"
