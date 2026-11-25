@@ -1,7 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Andhy Romdani, S.T., M.Eng., Ph.D. | Profil Dosen Teknik Sipil FT UNSIL')
-@section('meta_description', 'Biodata dan profil akademik Andhy Romdani, S.T., M.Eng., Ph.D. - Ketua Program Studi S-1 Teknik Sipil FT Universitas Siliwangi, pakar Rekayasa Sumber Daya Air, penulis 19 buku dan belasan publikasi internasional.')
+@php
+    $dosen ??= \App\Models\Dosen::where('slug', 'andhy-romdani')->orWhere('profile_route', 'dosen.andhy-romdani')->first();
+    $namaDosen = $dosen?->nama ?? 'Andhy Romdani, S.T., M.Eng., Ph.D.';
+    $kbkLabel = $dosen?->kbk_label ?? 'Rekayasa Sumber Daya Air';
+    $fotoUrl = $dosen?->foto_url ?: asset('images/dosen/andhy-romdani.jpg') . '?v=' . (@filemtime(public_path('images/dosen/andhy-romdani.jpg')) ?: 2);
+@endphp
+
+@section('title', $namaDosen . ' | Profil Dosen Teknik Sipil FT UNSIL')
+@section('meta_description', 'Biodata dan profil akademik ' . $namaDosen . ' - Ketua Program Studi S-1 Teknik Sipil FT Universitas Siliwangi, pakar ' . $kbkLabel . ', penulis 19 buku dan belasan publikasi internasional.')
 
 @section('content')
 
@@ -19,7 +26,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <a href="{{ route('dosen') }}" class="hover:underline text-slate-300 hover:text-amber-400 transition">Dosen</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-slate-200">Andhy Romdani, S.T., M.Eng., Ph.D.</span>
+                <span class="text-slate-200">{{ $namaDosen }}</span>
             </nav>
 
             <div class="flex items-center gap-2">
@@ -27,12 +34,12 @@
                     Ketua Program Studi
                 </span>
                 <span class="bg-cyan-500/20 text-cyan-200 text-[11px] font-medium px-2.5 py-0.5 rounded-full border border-cyan-400/20">
-                    KBK Rekayasa Sumber Daya Air
+                    KBK {{ $kbkLabel }}
                 </span>
             </div>
 
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-heading tracking-tight text-white mt-2 leading-tight">
-                Andhy Romdani, S.T., M.Eng., Ph.D.
+                {{ $namaDosen }}
             </h1>
         </div>
     </section>
@@ -49,13 +56,13 @@
                     {{-- Kartu Foto & Info Pokok --}}
                     <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm p-6 text-center">
                         <div class="relative w-48 sm:w-56 mx-auto aspect-square rounded-2xl overflow-hidden shadow-md border-2 border-slate-100 bg-[#CDCFDA] mb-5">
-                            <img src="{{ asset('images/dosen/andhy-romdani.jpg') }}?v={{ @filemtime(public_path('images/dosen/andhy-romdani.jpg')) ?: 2 }}" 
-                                 alt="Andhy Romdani, S.T., M.Eng., Ph.D." 
+                            <img src="{{ $fotoUrl }}" 
+                                 alt="{{ $namaDosen }}" 
                                  class="w-full h-full object-cover object-center">
                         </div>
 
                         <h2 class="text-lg font-bold text-[#0B2A4A] font-heading leading-snug">
-                            Andhy Romdani, S.T., M.Eng., Ph.D.
+                            {{ $namaDosen }}
                         </h2>
                         <p class="text-xs font-semibold text-[#0070BA] mt-1">
                             Ketua Program Studi S-1 Teknik Sipil
@@ -66,7 +73,7 @@
 
                         <div class="mt-4 pt-4 border-t border-slate-100 flex flex-wrap gap-2 justify-center">
                             <span class="inline-flex items-center gap-1.5 text-[11px] font-medium text-cyan-800 bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-100">
-                                <i class="fa-solid fa-water text-cyan-600"></i> Rekayasa Sumber Daya Air
+                                <i class="fa-solid fa-water text-cyan-600"></i> {{ $kbkLabel }}
                             </span>
                         </div>
 

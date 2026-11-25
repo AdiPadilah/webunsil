@@ -9,6 +9,7 @@ use App\Filament\Resources\Bukus\Pages\ListBukus;
 use App\Filament\Resources\DefenseSchedules\Pages\CreateDefenseSchedule;
 use App\Filament\Resources\DefenseSchedules\Pages\ListDefenseSchedules;
 use App\Filament\Resources\Dosens\Pages\CreateDosen;
+use App\Filament\Resources\Dosens\Pages\EditDosen;
 use App\Filament\Resources\Dosens\Pages\ListDosens;
 use App\Filament\Resources\Penelitians\Pages\CreatePenelitian;
 use App\Filament\Resources\Penelitians\Pages\EditPenelitian;
@@ -38,6 +39,7 @@ use Database\Seeders\PengabdianSeeder;
 use Database\Seeders\PrestasiSeeder;
 use Database\Seeders\SiteSettingSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Livewire;
 use Tests\TestCase;
@@ -77,11 +79,11 @@ class DynamicContentCmsTest extends TestCase
         $beritaPage1->assertDontSee('Berita Sebelumnya');
         $beritaPage1->assertSee('Workshop Penguatan Kurikulum Teknik Sipil Berbasis Outcome-Based Education (OBE)');
         $beritaPage1->assertDontSee('Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1');
-        $this->assertSame(9, substr_count($beritaPage1->getContent(), '<article class="bg-white rounded-xl'));
+        $this->assertSame(8, substr_count($beritaPage1->getContent(), '<article class="bg-white rounded-xl'));
 
         $beritaPage2 = $this->get('/berita?page=2')->assertOk();
         $beritaPage2->assertSee('Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1');
-        $this->assertSame(5, substr_count($beritaPage2->getContent(), '<article class="bg-white rounded-xl'));
+        $this->assertSame(6, substr_count($beritaPage2->getContent(), '<article class="bg-white rounded-xl'));
         $this->get('/publikasi')->assertOk();
         $this->get('/seminar-proposal')->assertOk();
         $this->get('/seminar-hasil')->assertOk();
@@ -111,6 +113,16 @@ class DynamicContentCmsTest extends TestCase
             ->assertOk()
             ->assertSee('Andhy Romdani')
             ->assertSee('Rekayasa Sumber Daya Air (6)');
+
+        $this->get('/dosen/andhy-romdani')
+            ->assertOk()
+            ->assertSee('Andhy Romdani, S.T., M.Eng., Ph.D.')
+            ->assertSee('/storage/dosen/andhy-romdani.jpg', false);
+
+        $this->get('/dosen/sri-wanto')
+            ->assertOk()
+            ->assertSee('Sri Wanto, S.T., M.T.')
+            ->assertSee('/storage/dosen/sri-wanto.jpg', false);
     }
 
     public function test_unpublished_records_stay_hidden_and_filament_pages_render(): void
@@ -235,5 +247,44 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(CreatePrestasi::class)->assertOk();
         Livewire::test(ListDosens::class)->assertOk();
         Livewire::test(CreateDosen::class)->assertOk();
+
+        Storage::fake('public');
+
+        $sriWanto = Dosen::create([
+            'slug' => 'sri-wanto',
+            'nama' => 'Sri Wanto, S.T., M.T.',
+            'kbk' => 'struktur',
+            'profile_route' => 'dosen.sri-wanto',
+            'foto' => 'dosen/sri-wanto.jpg',
+            'urutan' => 1,
+            'is_published' => true,
+        ]);
+
+        Livewire::test(EditDosen::class, ['record' => $sriWanto->getKey()])
+            ->assertOk()
+            ->fillForm([
+                'nama' => 'Dr. Sri Wanto, S.T., M.T.',
+                'kbk' => 'geoteknik',
+                'foto' => UploadedFile::fake()->createWithContent(
+                    'sri-wanto-baru.jpg',
+                    file_get_contents(public_path('images/dosen/sri-wanto.jpg'))
+                ),
+            ])
+            ->call('save')
+            ->assertHasNoFormErrors();
+
+        $sriWanto->refresh();
+        $this->assertNotSame('dosen/sri-wanto.jpg', $sriWanto->foto);
+
+        $this->get('/dosen')
+            ->assertOk()
+            ->assertSee('Dr. Sri Wanto, S.T., M.T.')
+            ->assertSee($sriWanto->foto_url, false);
+
+        $this->get('/dosen/sri-wanto')
+            ->assertOk()
+            ->assertSee('Dr. Sri Wanto, S.T., M.T.')
+            ->assertSee('Rekayasa Geoteknik')
+            ->assertSee($sriWanto->foto_url, false);
     }
 }

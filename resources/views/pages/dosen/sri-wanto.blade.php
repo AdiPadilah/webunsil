@@ -1,7 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Sri Wanto, S.T., M.T. | Profil Dosen Teknik Sipil FT UNSIL')
-@section('meta_description', 'Biodata dan profil akademik Sri Wanto, S.T., M.T. - Dosen Program Studi S-1 Teknik Sipil FT Universitas Siliwangi, bidang keahlian Rekayasa Struktur dan Bahan, kandidat doktor Universitas Sebelas Maret (UNS).')
+@php
+    $dosen ??= \App\Models\Dosen::where('slug', 'sri-wanto')->orWhere('profile_route', 'dosen.sri-wanto')->first();
+    $namaDosen = $dosen?->nama ?? 'Sri Wanto, S.T., M.T.';
+    $kbkLabel = $dosen?->kbk_label ?? 'Rekayasa Struktur dan Bahan';
+    $fotoUrl = $dosen?->foto_url ?: asset('images/dosen/sri-wanto.jpg') . '?v=' . (@filemtime(public_path('images/dosen/sri-wanto.jpg')) ?: 2);
+@endphp
+
+@section('title', $namaDosen . ' | Profil Dosen Teknik Sipil FT UNSIL')
+@section('meta_description', 'Biodata dan profil akademik ' . $namaDosen . ' - Dosen Program Studi S-1 Teknik Sipil FT Universitas Siliwangi, bidang keahlian ' . $kbkLabel . ', kandidat doktor Universitas Sebelas Maret (UNS).')
 
 @section('content')
 
@@ -19,7 +26,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <a href="{{ route('dosen') }}" class="hover:underline text-slate-300 hover:text-amber-400 transition">Dosen</a>
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-                <span class="text-slate-200">Sri Wanto, S.T., M.T.</span>
+                <span class="text-slate-200">{{ $namaDosen }}</span>
             </nav>
 
             <div class="flex items-center gap-2 flex-wrap">
@@ -27,12 +34,12 @@
                     Dosen Tetap
                 </span>
                 <span class="bg-blue-500/20 text-blue-200 text-[11px] font-medium px-2.5 py-0.5 rounded-full border border-blue-400/25">
-                    KBK Rekayasa Struktur dan Bahan
+                    KBK {{ $kbkLabel }}
                 </span>
             </div>
 
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-heading tracking-tight text-white mt-2 leading-tight">
-                Sri Wanto, S.T., M.T.
+                {{ $namaDosen }}
             </h1>
         </div>
     </section>
@@ -49,13 +56,13 @@
                     {{-- Kartu Foto & Info Pokok --}}
                     <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm p-6 text-center">
                         <div class="relative w-48 sm:w-56 mx-auto aspect-square rounded-2xl overflow-hidden shadow-md border-2 border-slate-100 bg-[#CDCFDA] mb-5">
-                            <img src="{{ asset('images/dosen/sri-wanto.jpg') }}?v={{ @filemtime(public_path('images/dosen/sri-wanto.jpg')) ?: 2 }}"
-                                 alt="Sri Wanto, S.T., M.T."
+                            <img src="{{ $fotoUrl }}"
+                                 alt="{{ $namaDosen }}"
                                  class="w-full h-full object-cover object-top">
                         </div>
 
                         <h2 class="text-lg font-bold text-[#0B2A4A] font-heading leading-snug">
-                            Sri Wanto, S.T., M.T.
+                            {{ $namaDosen }}
                         </h2>
                         <p class="text-xs font-semibold text-[#0070BA] mt-1">
                             Dosen Program Studi S-1 Teknik Sipil
@@ -66,7 +73,7 @@
 
                         <div class="mt-4 pt-4 border-t border-slate-100 flex flex-wrap gap-2 justify-center">
                             <span class="inline-flex items-center gap-1.5 text-[11px] font-medium text-blue-800 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">
-                                <i class="fa-solid fa-building-columns text-blue-600"></i> Rekayasa Struktur dan Bahan
+                                <i class="fa-solid fa-building-columns text-blue-600"></i> {{ $kbkLabel }}
                             </span>
                         </div>
 

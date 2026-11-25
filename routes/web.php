@@ -61,12 +61,20 @@ Route::get('/dosen', function () {
 
 // Profil Dosen Spesifik: Andhy Romdani
 Route::get('/dosen/andhy-romdani', function () {
-    return view('pages.dosen.andhy-romdani');
+    $dosen = \App\Models\Dosen::where('slug', 'andhy-romdani')
+        ->orWhere('profile_route', 'dosen.andhy-romdani')
+        ->first();
+
+    return view('pages.dosen.andhy-romdani', compact('dosen'));
 })->name('dosen.andhy-romdani');
 
 // Profil Dosen Spesifik: Sri Wanto
 Route::get('/dosen/sri-wanto', function () {
-    return view('pages.dosen.sri-wanto');
+    $dosen = \App\Models\Dosen::where('slug', 'sri-wanto')
+        ->orWhere('profile_route', 'dosen.sri-wanto')
+        ->first();
+
+    return view('pages.dosen.sri-wanto', compact('dosen'));
 })->name('dosen.sri-wanto');
 
 // 5. Akademik (Hub Page sesuai layout ITS)

@@ -51,7 +51,7 @@ class DosenSeeder extends Seeder
             $target = 'dosen/' . $row['slug'] . '.jpg';
 
             if (is_file($source)) {
-                if (! Storage::disk('public')->exists($target)) {
+                if (! Storage::disk('public')->exists($target) || Storage::disk('public')->size($target) !== filesize($source)) {
                     Storage::disk('public')->put($target, file_get_contents($source));
                 }
 
