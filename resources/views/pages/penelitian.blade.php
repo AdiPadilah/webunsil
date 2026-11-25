@@ -46,7 +46,6 @@
                     'authors' => 'Fahmi Rahmat Amanulloh, Andhy Romdani, Empung, Yusep Ramdani, Hendra, Pengki Irawan',
                     'journal' => 'Natural Hazards Research (Elsevier BV / KeAi)',
                     'volume' => 'Volume 6',
-                    'issue_short' => 'Vol. 6 · Issue 2',
                     'issue' => 'Issue 2 (Hlm. 449–463), Juni 2026 (Terbit Daring: 22 Oktober 2025)',
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q1 · CiteScore 9.7',
@@ -89,15 +88,10 @@
                                 <span class="text-[11px] font-semibold text-[#0070BA] uppercase tracking-wider">
                                     {{ $riset['eyebrow'] }}
                                 </span>
-                                <div class="flex items-center gap-2">
-                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-[#0B2A4A] text-white text-[11px] font-bold">
-                                        {{ $riset['issue_short'] }}
-                                    </span>
-                                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold border {{ $riset['index_type'] === 'SCOPUS' ? 'bg-cyan-50 text-cyan-800 border-cyan-200' : 'bg-emerald-50 text-emerald-800 border-emerald-200' }}">
-                                        <i class="fa-solid fa-globe text-[10px]" aria-hidden="true"></i>
-                                        {{ $riset['index_detail'] }}
-                                    </span>
-                                </div>
+                                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold border {{ $riset['index_type'] === 'SCOPUS' ? 'bg-cyan-50 text-cyan-800 border-cyan-200' : 'bg-emerald-50 text-emerald-800 border-emerald-200' }}">
+                                    <i class="fa-solid fa-globe text-[10px]" aria-hidden="true"></i>
+                                    {{ $riset['index_detail'] }}
+                                </span>
                             </div>
 
                             <h2 class="text-xl sm:text-2xl font-bold text-[#0B2A4A] font-heading leading-snug mb-4">
