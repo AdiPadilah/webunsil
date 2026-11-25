@@ -127,10 +127,12 @@
                                     <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Nama Jurnal</dt>
                                     <dd class="font-semibold text-[#0B2A4A] mt-0.5">{{ $riset['journal'] }}</dd>
                                 </div>
+                                @if(!empty($riset['volume']) && $riset['volume'] !== 'Ahead-of-Print')
                                 <div>
                                     <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Volume</dt>
                                     <dd class="text-slate-800 font-medium mt-0.5">{{ $riset['volume'] }}</dd>
                                 </div>
+                                @endif
                                 <div>
                                     <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Terbitan</dt>
                                     <dd class="text-slate-800 mt-0.5">{{ $riset['issue'] }}</dd>
