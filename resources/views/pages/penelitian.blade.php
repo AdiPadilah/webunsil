@@ -50,6 +50,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q2',
                     'doi_label' => '10.1080/15715124.2025.2551574',
+                    'tahun' => 2025,
                     'doi_url' => 'https://doi.org/10.1080/15715124.2025.2551574',
                                     ],
                 [
@@ -69,6 +70,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.37304/jikt.v17i2.466',
+                    'tahun' => 2026,
                     'doi_url' => 'https://doi.org/10.37304/jikt.v17i2.466',
                                     ],
                 [
@@ -88,6 +90,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.37304/balanga.v14i1.26433',
+                    'tahun' => 2026,
                     'doi_url' => 'https://doi.org/10.37304/balanga.v14i1.26433',
                                     ],
                 [
@@ -107,6 +110,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.20884/1.oa.2025.21.1.1207',
+                    'tahun' => 2025,
                     'doi_url' => 'https://doi.org/10.20884/1.oa.2025.21.1.1207',
                                     ],
                 [
@@ -126,6 +130,7 @@
                     'index_type' => 'PROCEEDING',
                     'index_detail' => 'Prosiding Internasional',
                     'doi_label' => '10.32424/anr4hg09',
+                    'tahun' => 2026,
                     'doi_url' => 'https://doi.org/10.32424/anr4hg09',
                                     ],
                 [
@@ -145,6 +150,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.37304/parentas.v12i1.26762',
+                    'tahun' => 2026,
                     'doi_url' => 'https://doi.org/10.37304/parentas.v12i1.26762',
                                     ],
                 [
@@ -164,6 +170,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q1 · CiteScore 9.7',
                     'doi_label' => '10.1016/j.nhres.2025.10.004',
+                    'tahun' => 2026,
                     'doi_url' => 'https://doi.org/10.1016/j.nhres.2025.10.004',
                                     ],
                 [
@@ -183,6 +190,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA 4 · UNSIL',
                     'doi_label' => '10.37058/aks.v7i2.17625',
+                    'tahun' => 2026,
                     'doi_url' => 'https://doi.org/10.37058/aks.v7i2.17625',
                                     ],
                 [
@@ -202,6 +210,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.37304/parentas.v11i2.23769',
+                    'tahun' => 2025,
                     'doi_url' => 'https://doi.org/10.37304/parentas.v11i2.23769',
                                     ],
                 [
@@ -221,6 +230,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA 4',
                     'doi_label' => '10.36312/6xcas314',
+                    'tahun' => 2025,
                     'doi_url' => 'https://doi.org/10.36312/6xcas314',
                                     ],
                 [
@@ -240,6 +250,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · Diamond OA',
                     'doi_label' => '10.36408/mhjcm.v12i2.1249',
+                    'tahun' => 2025,
                     'doi_url' => 'https://doi.org/10.36408/mhjcm.v12i2.1249',
                                     ],
                 [
@@ -259,6 +270,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS · SINTA 1',
                     'doi_label' => '10.22146/jcef.16683',
+                    'tahun' => 2025,
                     'doi_url' => 'https://doi.org/10.22146/jcef.16683',
                                     ],
                 [
@@ -278,6 +290,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · Open Access',
                     'doi_label' => '10.35313/jitel.v5.i1.2025.1-10',
+                    'tahun' => 2025,
                     'doi_url' => 'https://doi.org/10.35313/jitel.v5.i1.2025.1-10',
                                     ],
                 [
@@ -297,6 +310,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q1',
                     'doi_label' => '10.2166/wcc.2024.343',
+                    'tahun' => 2024,
                     'doi_url' => 'https://doi.org/10.2166/wcc.2024.343',
                                     ],
                 [
@@ -316,6 +330,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q1',
                     'doi_label' => '10.1016/j.ecss.2023.108279',
+                    'tahun' => 2023,
                     'doi_url' => 'https://doi.org/10.1016/j.ecss.2023.108279',
                                     ],
                 [
@@ -335,6 +350,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q2',
                     'doi_label' => '10.1061/jwped5.wweng-1940',
+                    'tahun' => 2023,
                     'doi_url' => 'https://doi.org/10.1061/jwped5.wweng-1940',
                                     ],
                 [
@@ -354,6 +370,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q1',
                     'doi_label' => '10.1016/j.csr.2023.104932',
+                    'tahun' => 2023,
                     'doi_url' => 'https://doi.org/10.1016/j.csr.2023.104932',
                                     ],
                 [
@@ -373,6 +390,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q1',
                     'doi_label' => '10.1016/j.oceaneng.2022.113446',
+                    'tahun' => 2023,
                     'doi_url' => 'https://doi.org/10.1016/j.oceaneng.2022.113446',
                                     ],
                 [
@@ -392,6 +410,7 @@
                     'index_type' => 'PROCEEDING',
                     'index_detail' => 'Jurnal Internasional OA',
                     'doi_label' => '10.53256/COSE_220106',
+                    'tahun' => 2022,
                     'doi_url' => 'https://doi.org/10.53256/COSE_220106',
                                     ],
                 [
@@ -411,6 +430,7 @@
                     'index_type' => 'SCOPUS',
                     'index_detail' => 'SCOPUS Q2',
                     'doi_label' => '10.1061/(asce)ww.1943-5460.0000700',
+                    'tahun' => 2022,
                     'doi_url' => 'https://doi.org/10.1061/(asce)ww.1943-5460.0000700',
                                     ],
                 [
@@ -430,6 +450,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · UNSIL',
                     'doi_label' => '10.37058/jem.v4i2.704',
+                    'tahun' => 2019,
                     'doi_url' => 'https://doi.org/10.37058/jem.v4i2.704',
                                     ],
                 [
@@ -449,6 +470,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA 3',
                     'doi_label' => '10.15294/jg.v14i2.11514',
+                    'tahun' => 2018,
                     'doi_url' => 'https://doi.org/10.15294/jg.v14i2.11514',
                                     ],
                 [
@@ -468,6 +490,7 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA 3',
                     'doi_label' => '10.15294/jg.v14i1.9774',
+                    'tahun' => 2017,
                     'doi_url' => 'https://doi.org/10.15294/jg.v14i1.9774',
                                     ],
                 [
@@ -487,17 +510,97 @@
                     'index_type' => 'SINTA',
                     'index_detail' => 'SINTA · UNSIL',
                     'doi_label' => '10.37058/jssainstek.v2i2.102',
+                    'tahun' => 2016,
                     'doi_url' => 'https://doi.org/10.37058/jssainstek.v2i2.102',
                                     ],
             ];
             @endphp
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+            @php
+                // Urutkan terbaru → terlama berdasarkan tahun
+                usort($risetList, fn($a, $b) => ($b['tahun'] ?? 0) <=> ($a['tahun'] ?? 0));
+            @endphp
+
+            {{-- Info count --}}
+            <div class="flex items-center justify-between flex-wrap gap-2">
+                <p class="text-xs text-slate-500">
+                    Menampilkan <strong id="risetVisibleCount" class="text-[#0B2A4A">{{ count($risetList) }}</strong> dari {{ count($risetList) }} artikel
+                </p>
+            </div>
+
+            {{-- Grid --}}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5" id="risetGrid">
                 @foreach($risetList as $index => $riset)
-                    @include('pages._publikasi-panel', ['item' => $riset, 'nomor' => $index + 1])
+                    <div class="riset-card-wrap" data-index="{{ $index }}">
+                        @include('pages._publikasi-panel', ['item' => $riset, 'nomor' => $index + 1])
+                    </div>
                 @endforeach
             </div>
 
+            {{-- Pagination --}}
+            <div id="risetPagination" class="flex items-center justify-center gap-2 pt-4"></div>
+
         </div>
     </section>
+
+    <script>
+        (function () {
+            const PER_PAGE = 8;
+            const cards    = Array.from(document.querySelectorAll('.riset-card-wrap'));
+            const totalEl  = document.getElementById('risetVisibleCount');
+            const pagEl    = document.getElementById('risetPagination');
+            let currentPage = 1;
+            const totalPages = Math.ceil(cards.length / PER_PAGE);
+
+            function render(page) {
+                currentPage = page;
+                const start = (page - 1) * PER_PAGE;
+                const end   = start + PER_PAGE;
+
+                cards.forEach(function (card, i) {
+                    card.style.display = (i >= start && i < end) ? '' : 'none';
+                });
+
+                // Update count
+                const showing = Math.min(end, cards.length) - start;
+                totalEl.textContent = showing;
+
+                // Render pagination buttons
+                pagEl.innerHTML = '';
+
+                // Prev
+                const prev = document.createElement('button');
+                prev.textContent = '←';
+                prev.disabled = page === 1;
+                prev.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold border ' +
+                    (page === 1 ? 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed'
+                                : 'bg-white text-[#0B2A4A] border-slate-300 hover:bg-slate-50 cursor-pointer');
+                prev.onclick = function () { if (page > 1) render(page - 1); };
+                pagEl.appendChild(prev);
+
+                // Page numbers
+                for (let p = 1; p <= totalPages; p++) {
+                    const btn = document.createElement('button');
+                    btn.textContent = p;
+                    btn.className = 'w-8 h-8 rounded-lg text-xs font-bold border ' +
+                        (p === page ? 'bg-[#0B2A4A] text-white border-[#0B2A4A]'
+                                    : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50 cursor-pointer');
+                    btn.onclick = (function (pg) { return function () { render(pg); window.scrollTo({top: 0, behavior: 'smooth'}); }; })(p);
+                    pagEl.appendChild(btn);
+                }
+
+                // Next
+                const next = document.createElement('button');
+                next.textContent = '→';
+                next.disabled = page === totalPages;
+                next.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold border ' +
+                    (page === totalPages ? 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed'
+                                        : 'bg-white text-[#0B2A4A] border-slate-300 hover:bg-slate-50 cursor-pointer');
+                next.onclick = function () { if (page < totalPages) { render(page + 1); window.scrollTo({top: 0, behavior: 'smooth'}); } };
+                pagEl.appendChild(next);
+            }
+
+            render(1);
+        })();
+    </script>
 @endsection
