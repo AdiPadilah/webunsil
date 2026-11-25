@@ -6,6 +6,7 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 
 class PenelitianForm
@@ -13,32 +14,87 @@ class PenelitianForm
     public static function configure(Schema $schema): Schema
     {
         return $schema->components([
-            TextInput::make('judul')->label('Judul Artikel')->required()->columnSpanFull(),
-            TextInput::make('penulis')->label('Penulis')->required()->columnSpanFull(),
-            TextInput::make('nama_jurnal')->label('Nama Jurnal / Prosiding')->required()->columnSpanFull(),
-            Select::make('index_type')
-                ->label('Jenis Indeksasi')
-                ->options([
-                    'SCOPUS' => 'SCOPUS',
-                    'SINTA' => 'SINTA',
-                    'PROCEEDING' => 'Prosiding',
+            Section::make('Informasi Artikel & Penulis')
+                ->description('Isi data utama penelitian sesuai artikel yang terbit.')
+                ->schema([
+                    TextInput::make('judul')
+                        ->label('Judul Artikel')
+                        ->required()
+                        ->columnSpanFull(),
+                    TextInput::make('penulis')
+                        ->label('Daftar Penulis')
+                        ->placeholder('Contoh: Andhy Romdani, Empung, dkk.')
+                        ->required()
+                        ->columnSpanFull(),
+                    TextInput::make('nama_jurnal')
+                        ->label('Nama Jurnal / Prosiding')
+                        ->required(),
+                    TextInput::make('tahun')
+                        ->label('Tahun Terbit')
+                        ->numeric()
+                        ->default((int) date('Y'))
+                        ->helperText('Artikel otomatis diurutkan dari tahun terbaru ke terlama.'),
                 ])
-                ->default('SINTA')
-                ->required(),
-            TextInput::make('index_detail')->label('Detail Indeksasi')->placeholder('Contoh: SCOPUS Q2, SINTA 3'),
-            TextInput::make('eyebrow')
-                ->label('Kategori Tampilan')
-                ->default('Publikasi Jurnal Nasional')
-                ->placeholder('Publikasi Jurnal Internasional / Nasional'),
-            TextInput::make('volume')->label('Volume')->placeholder('Contoh: Volume 14'),
-            TextInput::make('terbitan')->label('Terbitan / Issue')->placeholder('Contoh: Issue 1 (Hlm. 29–40), Juni 2026'),
-            TextInput::make('tahun')->label('Tahun Terbit')->numeric()->default((int) date('Y')),
-            TextInput::make('article_id')->label('Halaman / ID Artikel')->placeholder('Contoh: Hlm. 1–11'),
-            TextInput::make('doi_label')->label('DOI / Tautan Label')->placeholder('Contoh: 10.xxxx/xxxxx'),
-            TextInput::make('doi_url')->label('URL DOI Lengkap')->url()->placeholder('https://doi.org/10.xxxx/xxxxx'),
-            FileUpload::make('cover')->label('Cover Jurnal (opsional)')->image()->disk('public')->directory('jurnal-covers'),
-            TextInput::make('cover_alt')->label('Alt Text Cover'),
-            Toggle::make('is_published')->label('Tampilkan di Website?')->default(true)->columnSpanFull(),
+                ->columns(2),
+
+            Section::make('Detail Terbitan, Indeksasi & Tautan')
+                ->description('Lengkapi peringkat indeksasi (SCOPUS/SINTA) dan tautan DOI bila tersedia.')
+                ->schema([
+                    Select::make('index_type')
+                        ->label('Jenis Indeksasi')
+                        ->options([
+                            'SCOPUS' => 'SCOPUS',
+                            'SINTA' => 'SINTA',
+                            'PROCEEDING' => 'Prosiding',
+                        ])
+                        ->default('SINTA')
+                        ->required(),
+                    TextInput::make('index_detail')
+                        ->label('Detail Peringkat')
+                        ->placeholder('Contoh: SCOPUS Q1, SINTA 4 · UNSIL')
+                        ->helperText('Ditampilkan sebagai label warna di kartu halaman penelitian.'),
+                    TextInput::make('eyebrow')
+                        ->label('Kategori Tampilan')
+                        ->default('Publikasi Jurnal Nasional')
+                        ->placeholder('Publikasi Jurnal Internasional / Nasional'),
+                    TextInput::make('volume')
+                        ->label('Volume')
+                        ->placeholder('Contoh: Volume 14 / Ahead-of-Print'),
+                    TextInput::make('terbitan')
+                        ->label('Terbitan / Halaman')
+                        ->placeholder('Contoh: Issue 1 (Hlm. 29–40), Juni 2026'),
+                    TextInput::make('article_id')
+                        ->label('Nomor Halaman / ID Artikel (Opsional)')
+                        ->placeholder('Contoh: Hlm. 1–11'),
+                    TextInput::make('doi_label')
+                        ->label('Nomor DOI')
+                        ->placeholder('Contoh: 10.1080/15715124.2025.2551574'),
+                    TextInput::make('doi_url')
+                        ->label('Link Artikel / DOI')
+                        ->url()
+                        ->placeholder('https://doi.org/10.xxxx/xxxxx')
+                        ->helperText('Awali dengan https:// agar bisa langsung diklik pembaca.'),
+                ])
+                ->columns(2),
+
+            Section::make('Cover Jurnal & Status Tayang')
+                ->schema([
+                    FileUpload::make('cover')
+                        ->label('Gambar Cover Jurnal (Opsional)')
+                        ->image()
+                        ->disk('public')
+                        ->directory('jurnal-covers')
+                        ->helperText('Rasio vertikal (3:4) paling rapi. Kosongkan jika belum ada.'),
+                    TextInput::make('cover_alt')
+                        ->label('Keterangan Gambar (Opsional)')
+                        ->placeholder('Contoh: Cover Jurnal Natural Hazards Research'),
+                    Toggle::make('is_published')
+                        ->label('Tampilkan di Halaman Penelitian?')
+                        ->helperText('Matikan sementara jika masih draft dan belum ingin tampil di website.')
+                        ->default(true)
+                        ->columnSpanFull(),
+                ])
+                ->columns(2),
         ]);
     }
 }

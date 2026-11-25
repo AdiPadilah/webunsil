@@ -2,8 +2,14 @@
 
 namespace Tests\Feature;
 
+use App\Filament\Resources\Articles\Pages\CreateArticle;
+use App\Filament\Resources\Articles\Pages\ListArticles;
 use App\Filament\Resources\Bukus\Pages\CreateBuku;
 use App\Filament\Resources\Bukus\Pages\ListBukus;
+use App\Filament\Resources\DefenseSchedules\Pages\CreateDefenseSchedule;
+use App\Filament\Resources\DefenseSchedules\Pages\ListDefenseSchedules;
+use App\Filament\Resources\Documents\Pages\CreateDocument;
+use App\Filament\Resources\Documents\Pages\ListDocuments;
 use App\Filament\Resources\Dosens\Pages\CreateDosen;
 use App\Filament\Resources\Dosens\Pages\ListDosens;
 use App\Filament\Resources\Penelitians\Pages\CreatePenelitian;
@@ -13,6 +19,8 @@ use App\Filament\Resources\Pengabdians\Pages\CreatePengabdian;
 use App\Filament\Resources\Pengabdians\Pages\ListPengabdians;
 use App\Filament\Resources\Prestasis\Pages\CreatePrestasi;
 use App\Filament\Resources\Prestasis\Pages\ListPrestasis;
+use App\Filament\Widgets\PanduanCepatWidget;
+use App\Filament\Widgets\ProdiStatsWidget;
 use App\Models\Buku;
 use App\Models\Dosen;
 use App\Models\Penelitian;
@@ -104,8 +112,27 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Penelitian Aktif Terbaru')
             ->assertDontSee('Draft Penelitian Rahasia');
 
-        $this->actingAs($user);
+        $this->get('/admin/login')
+            ->assertOk()
+            ->assertSee('Admin Teknik Sipil');
 
+        $this->actingAs($user);
+        app()->setLocale('id');
+
+        Livewire::test(PanduanCepatWidget::class)
+            ->assertOk()
+            ->assertSee('Pintasan & Panduan Singkat');
+
+        Livewire::test(ProdiStatsWidget::class)
+            ->assertOk()
+            ->assertSee('Penelitian Dosen');
+
+        Livewire::test(ListArticles::class)->assertOk();
+        Livewire::test(CreateArticle::class)->assertOk();
+        Livewire::test(ListDefenseSchedules::class)->assertOk();
+        Livewire::test(CreateDefenseSchedule::class)->assertOk();
+        Livewire::test(ListDocuments::class)->assertOk();
+        Livewire::test(CreateDocument::class)->assertOk();
         Livewire::test(ListPenelitians::class)->assertOk();
         Livewire::test(CreatePenelitian::class)->assertOk();
         Livewire::test(EditPenelitian::class, ['record' => $active->getKey()])->assertOk();
