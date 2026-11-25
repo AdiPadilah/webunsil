@@ -69,8 +69,23 @@
         .dropdown:hover > a i.fa-chevron-down {
             transform: rotate(180deg);
         }
+        .sub-dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-8px) scale(0.97);
+            transform-origin: top left;
+            transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+            pointer-events: none;
+            display: block !important;
+            box-shadow: 0 16px 36px -8px rgba(11, 42, 74, 0.22), 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
         .sub-dropdown:hover > .sub-dropdown-menu,
-        .sub-dropdown:focus-within > .sub-dropdown-menu { display: block; }
+        .sub-dropdown:focus-within > .sub-dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0) scale(1);
+            pointer-events: auto;
+        }
         
         /* Modern Animated Underline for Navbar */
         nav .nav-link {
@@ -105,6 +120,10 @@
         }
         .dropdown-menu a:hover {
             transform: translateX(5px);
+            padding-left: 1.15rem;
+        }
+        .sub-dropdown > a:hover {
+            transform: none;
             padding-left: 1.15rem;
         }
 
@@ -271,10 +290,17 @@
                             <a href="{{ route('layanan') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('layanan') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Layanan Terpadu</a>
                             <div class="border-t border-slate-100 my-1"></div>
                             <a href="{{ route('alur-pengurusan-kerja-praktik') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('alur-pengurusan-kerja-praktik') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Alur Pengurusan Kerja Praktik</a>
-                            <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('jadwal-sidang-skripsi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Jadwal Sidang Skripsi</a>
-                            <a href="{{ route('seminar-proposal') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-proposal') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Proposal</a>
-                            <a href="{{ route('seminar-hasil') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-hasil') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Hasil</a>
-                            <a href="{{ route('sidang-akhir') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sidang Akhir</a>
+                            <div class="relative sub-dropdown">
+                                <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link flex items-center justify-between px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                    <span>Jadwal Sidang Skripsi</span>
+                                    <i class="fa-solid fa-chevron-right text-[9px] text-slate-400 ml-2"></i>
+                                </a>
+                                <div class="sub-dropdown-menu hidden absolute left-full -top-2 w-48 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
+                                    <a href="{{ route('seminar-proposal') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-proposal') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Proposal</a>
+                                    <a href="{{ route('seminar-hasil') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-hasil') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Hasil</a>
+                                    <a href="{{ route('sidang-akhir') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sidang Akhir</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -383,9 +409,9 @@
             <a href="{{ route('layanan') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('layanan') ? 'text-amber-400 font-bold' : '' }}">&mdash; Layanan Terpadu</a>
             <a href="{{ route('alur-pengurusan-kerja-praktik') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('alur-pengurusan-kerja-praktik') ? 'text-amber-400 font-bold' : '' }}">&mdash; Alur Pengurusan Kerja Praktik</a>
             <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('jadwal-sidang-skripsi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Jadwal Sidang Skripsi</a>
-            <a href="{{ route('seminar-proposal') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-proposal') ? 'text-amber-400 font-bold' : '' }}">&mdash; Seminar Proposal</a>
-            <a href="{{ route('seminar-hasil') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-hasil') ? 'text-amber-400 font-bold' : '' }}">&mdash; Seminar Hasil</a>
-            <a href="{{ route('sidang-akhir') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sidang-akhir') ? 'text-amber-400 font-bold' : '' }}">&mdash; Sidang Akhir</a>
+            <a href="{{ route('seminar-proposal') }}" class="nav-link block py-1.5 pl-8 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-proposal') ? 'text-amber-400 font-bold' : '' }}">&bull; Seminar Proposal</a>
+            <a href="{{ route('seminar-hasil') }}" class="nav-link block py-1.5 pl-8 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-hasil') ? 'text-amber-400 font-bold' : '' }}">&bull; Seminar Hasil</a>
+            <a href="{{ route('sidang-akhir') }}" class="nav-link block py-1.5 pl-8 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sidang-akhir') ? 'text-amber-400 font-bold' : '' }}">&bull; Sidang Akhir</a>
 
             <a href="{{ route('fasilitas') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'text-amber-400 font-bold' : '' }}">Fasilitas</a>
             <a href="{{ route('laboratorium') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('laboratorium') ? 'text-amber-400 font-bold' : '' }}">&mdash; Laboratorium</a>
