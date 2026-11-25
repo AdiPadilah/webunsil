@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Dosens\Tables;
 
 use App\Models\Dosen;
 use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
@@ -32,7 +33,10 @@ class DosenTable
                 SelectFilter::make('kbk')->label('Filter KBK')->options(Dosen::kbkOptions()),
             ])
             ->defaultSort('urutan')
-            ->recordActions([EditAction::make()])
+            ->recordActions([
+                EditAction::make(),
+                DeleteAction::make(),
+            ])
             ->toolbarActions([BulkActionGroup::make([DeleteBulkAction::make()])]);
     }
 }

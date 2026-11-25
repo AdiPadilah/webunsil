@@ -172,7 +172,8 @@ class DynamicContentCmsTest extends TestCase
 
         Livewire::test(ListSiteSettings::class)
             ->assertOk()
-            ->assertCanSeeTableRecords([$setting]);
+            ->assertCanSeeTableRecords([$setting])
+            ->assertSee(['Ubah', 'Hapus']);
 
         Livewire::test(EditSiteSetting::class, ['record' => $setting->getKey()])
             ->assertOk()
@@ -189,7 +190,10 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(CreateArticle::class)->assertOk();
         Livewire::test(ListDefenseSchedules::class)->assertOk();
         Livewire::test(CreateDefenseSchedule::class)->assertOk();
-        Livewire::test(ListPenelitians::class)->assertOk();
+        Livewire::test(ListPenelitians::class)
+            ->assertOk()
+            ->assertCanSeeTableRecords([$active])
+            ->assertSee(['Ubah', 'Hapus']);
         Livewire::test(CreatePenelitian::class)->assertOk();
         Livewire::test(EditPenelitian::class, ['record' => $active->getKey()])->assertOk();
         Livewire::test(ListPengabdians::class)->assertOk();

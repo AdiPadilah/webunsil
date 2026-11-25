@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Prestasis\Tables;
 
 use App\Models\Prestasi;
 use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
@@ -43,7 +44,10 @@ class PrestasiTable
                 ]),
             ])
             ->defaultSort('tahun', 'desc')
-            ->recordActions([EditAction::make()])
+            ->recordActions([
+                EditAction::make(),
+                DeleteAction::make(),
+            ])
             ->toolbarActions([BulkActionGroup::make([DeleteBulkAction::make()])]);
     }
 }

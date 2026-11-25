@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Penelitians\Tables;
 
 use App\Models\Penelitian;
 use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
@@ -42,7 +43,10 @@ class PenelitianTable
                 ]),
             ])
             ->defaultSort('tahun', 'desc')
-            ->recordActions([EditAction::make()])
+            ->recordActions([
+                EditAction::make(),
+                DeleteAction::make(),
+            ])
             ->toolbarActions([BulkActionGroup::make([DeleteBulkAction::make()])]);
     }
 }
