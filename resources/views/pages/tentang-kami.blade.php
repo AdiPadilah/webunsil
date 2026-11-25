@@ -67,7 +67,7 @@
                             
                             <div class="text-xs sm:text-[13px] text-slate-600 space-y-3 leading-relaxed text-justify">
                                 <p class="font-semibold text-slate-800">
-                                    Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
+                                    Selamat datang di Program Studi Teknik Sipil
                                 </p>
                                 @foreach($sambutanParagraphs as $paragraph)
                                 <p>

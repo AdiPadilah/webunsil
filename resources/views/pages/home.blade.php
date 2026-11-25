@@ -55,7 +55,7 @@
                     </p>
 
                     <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0B2A4A] font-heading leading-snug">
-                        Selamat datang di Program Studi Teknik Sipil Universitas Siliwangi.
+                        Selamat datang di Program Studi Teknik Sipil
                     </h2>
 
                     <div class="space-y-3.5 text-slate-600 text-sm sm:text-[15px] leading-relaxed">
