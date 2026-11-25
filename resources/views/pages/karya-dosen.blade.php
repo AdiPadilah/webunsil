@@ -83,6 +83,12 @@
                         </div>
                     </div>
 
+                    <a href="{{ route('buku') }}"
+                       class="inline-flex items-center justify-between px-5 py-3 rounded-2xl bg-[#0B2A4A] hover:bg-[#133E6C] text-white text-xs font-semibold shadow-sm transition">
+                        <span>Lihat Katalog Buku Karya Dosen (16 Karya Ber-ISBN)</span>
+                        <i class="fa-solid fa-arrow-right text-amber-400 text-[11px]"></i>
+                    </a>
+
                 </div>
             </div>
 
