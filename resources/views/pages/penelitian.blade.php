@@ -34,21 +34,22 @@
             @php
             $risetList = [
                 [
-                    'no' => 1,
+                    'article_id' => 'Hlm. 449–463 (PII: S2666592125000964)',
                     'cover' => 'images/jurnal/natural_hazards_research.jpg',
-                    'cover_alt' => 'Cover Resmi Jurnal Natural Hazards Research (Elsevier)',
+                    'cover_alt' => 'Cover Resmi Jurnal Natural Hazards Research (Elsevier / KeAi)',
                     'cover_caption_title' => 'Natural Hazards Research',
-                    'cover_caption_sub' => 'Elsevier · ScienceDirect (SCOPUS Q1)',
+                    'cover_caption_sub' => 'Elsevier · KeAi (SCOPUS Q1)',
                     'cover_caption_meta' => 'ISSN: 2666-5921 · Vol. 6, Issue 2',
                     'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Riset & Publikasi Ilmiah',
+                    'eyebrow' => 'Publikasi Jurnal Internasional',
                     'title' => 'Does ENSO-driven climate variability increase coastal flooding? Insights from the Brebes coastal area, Indonesia',
                     'authors' => 'Fahmi Rahmat Amanulloh, Andhy Romdani, Empung, Yusep Ramdani, Hendra, Pengki Irawan',
-                    'journal' => 'Natural Hazards Research (Elsevier)',
+                    'journal' => 'Natural Hazards Research (Elsevier BV / KeAi)',
                     'volume' => 'Volume 6',
+                    'issue_short' => 'Vol. 6 · Issue 2',
                     'issue' => 'Issue 2 (Hlm. 449–463), Juni 2026 (Terbit Daring: 22 Oktober 2025)',
                     'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q1 (SJR 1.097)',
+                    'index_detail' => 'SCOPUS Q1 · CiteScore 9.7',
                     'doi_label' => '10.1016/j.nhres.2025.10.004',
                     'doi_url' => 'https://doi.org/10.1016/j.nhres.2025.10.004',
                     'paragraphs' => [
@@ -90,7 +91,7 @@
                                 </span>
                                 <div class="flex items-center gap-2">
                                     <span class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-[#0B2A4A] text-white text-[11px] font-bold">
-                                        Penelitian #{{ $riset['no'] }}
+                                        {{ $riset['issue_short'] }}
                                     </span>
                                     <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold border {{ $riset['index_type'] === 'SCOPUS' ? 'bg-cyan-50 text-cyan-800 border-cyan-200' : 'bg-emerald-50 text-emerald-800 border-emerald-200' }}">
                                         <i class="fa-solid fa-globe text-[10px]" aria-hidden="true"></i>
@@ -113,8 +114,8 @@
                             {{-- Rincian Bibliografis --}}
                             <dl class="mt-5 bg-slate-50 rounded-xl border border-slate-200/80 p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-xs">
                                 <div>
-                                    <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Nomor Penelitian</dt>
-                                    <dd class="font-bold text-slate-900 mt-0.5">Penelitian ke-{{ $riset['no'] }}</dd>
+                                    <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Halaman / ID Artikel</dt>
+                                    <dd class="font-bold text-slate-900 mt-0.5">{{ $riset['article_id'] }}</dd>
                                 </div>
                                 <div>
                                     <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Indeksasi</dt>
