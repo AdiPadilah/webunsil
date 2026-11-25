@@ -35,11 +35,11 @@
             $risetList = [
                 [
                     'no' => 1,
-                    'lecturer_name' => 'Andhy Romdani, S.T., M.Eng., Ph.D.',
-                    'lecturer_role' => 'Ketua Program Studi & Peneliti',
-                    'lecturer_unit' => 'Teknik Sipil · Universitas Siliwangi',
-                    'lecturer_photo' => 'images/koordinator-prodi.jpg',
-                    'lecturer_fallback' => 'images/dosen/andhy-romdani.jpg',
+                    'cover' => 'images/jurnal/natural_hazards_research.jpg',
+                    'cover_alt' => 'Cover Resmi Jurnal Natural Hazards Research (Elsevier)',
+                    'cover_caption_title' => 'Natural Hazards Research',
+                    'cover_caption_sub' => 'Elsevier · ScienceDirect (SCOPUS Q1)',
+                    'cover_caption_meta' => 'ISSN: 2666-5921 · Vol. 6, Issue 2',
                     'lecturer_route' => 'dosen.andhy-romdani',
                     'eyebrow' => 'Riset & Publikasi Ilmiah',
                     'title' => 'Does ENSO-driven climate variability increase coastal flooding? Insights from the Brebes coastal area, Indonesia',
@@ -64,21 +64,21 @@
             <article class="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm p-6 sm:p-8 lg:p-10 reveal">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 
-                    {{-- Foto Peneliti (Panel Kiri) --}}
+                    {{-- Cover Resmi Jurnal (Panel Kiri) --}}
                     <div class="lg:col-span-4 flex justify-center">
-                        <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[250px] sm:max-w-[270px] hover:shadow-md transition-shadow">
-                            <div class="aspect-[4/5] overflow-hidden bg-slate-100">
-                                <img src="{{ asset($riset['lecturer_photo']) }}"
-                                     alt="{{ $riset['lecturer_name'] }} - Peneliti Teknik Sipil FT UNSIL"
-                                     class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
-                                     onerror="this.src='{{ asset($riset['lecturer_fallback']) }}'">
+                        <a href="{{ $riset['doi_url'] }}" target="_blank" rel="noopener noreferrer"
+                           class="block rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[260px] sm:max-w-[280px] hover:shadow-md transition-shadow group">
+                            <div class="aspect-[3/4] overflow-hidden bg-slate-100">
+                                <img src="{{ asset($riset['cover']) }}"
+                                     alt="{{ $riset['cover_alt'] }}"
+                                     class="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-500">
                             </div>
-                            <div class="p-3 bg-[#0B2A4A] text-white text-center">
-                                <h3 class="text-xs sm:text-sm font-bold text-white leading-tight">{{ $riset['lecturer_name'] }}</h3>
-                                <p class="text-[11px] text-amber-400 font-medium mt-0.5">{{ $riset['lecturer_role'] }}</p>
-                                <p class="text-[10px] text-slate-300 mt-0.5">{{ $riset['lecturer_unit'] }}</p>
+                            <div class="p-3.5 bg-[#0B2A4A] text-white text-center">
+                                <h3 class="text-xs sm:text-sm font-bold text-white leading-tight">{{ $riset['cover_caption_title'] }}</h3>
+                                <p class="text-[11px] text-amber-400 font-medium mt-0.5">{{ $riset['cover_caption_sub'] }}</p>
+                                <p class="text-[10px] text-slate-300 mt-0.5">{{ $riset['cover_caption_meta'] }}</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     {{-- Penjelasan & Metadata Riset (Panel Kanan) --}}
