@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use App\Filament\Pages\PengaturanWebsite;
 use App\Filament\Resources\Articles\Pages\CreateArticle;
 use App\Filament\Resources\Articles\Pages\ListArticles;
 use App\Filament\Resources\Bukus\Pages\CreateBuku;
@@ -18,6 +17,9 @@ use App\Filament\Resources\Pengabdians\Pages\CreatePengabdian;
 use App\Filament\Resources\Pengabdians\Pages\ListPengabdians;
 use App\Filament\Resources\Prestasis\Pages\CreatePrestasi;
 use App\Filament\Resources\Prestasis\Pages\ListPrestasis;
+use App\Filament\Resources\SiteSettings\Pages\CreateSiteSetting;
+use App\Filament\Resources\SiteSettings\Pages\EditSiteSetting;
+use App\Filament\Resources\SiteSettings\Pages\ListSiteSettings;
 use App\Filament\Widgets\PanduanCepatWidget;
 use App\Filament\Widgets\ProdiStatsWidget;
 use App\Models\Article;
@@ -152,17 +154,36 @@ class DynamicContentCmsTest extends TestCase
             ->assertOk()
             ->assertSee('Penelitian Dosen');
 
-        Livewire::test(PengaturanWebsite::class)
+        Livewire::test(CreateSiteSetting::class)
             ->assertOk()
-            ->set('data.mahasiswa_aktif', 750)
-            ->set('data.akreditasi_peringkat', 'UNGGUL')
-            ->call('save')
-            ->assertHasNoErrors();
+            ->fillForm([
+                'mahasiswa_aktif' => 750,
+                'akreditasi_peringkat' => 'UNGGUL',
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $setting = SiteSetting::query()->latest('id')->firstOrFail();
 
         $this->get('/')
             ->assertOk()
             ->assertSee('UNGGUL')
             ->assertSee('data-target="750"', false);
+
+        Livewire::test(ListSiteSettings::class)
+            ->assertOk()
+            ->assertCanSeeTableRecords([$setting]);
+
+        Livewire::test(EditSiteSetting::class, ['record' => $setting->getKey()])
+            ->assertOk()
+            ->fillForm([
+                'mahasiswa_aktif' => 825,
+            ])
+            ->call('save')
+            ->assertHasNoFormErrors()
+            ->callAction('delete');
+
+        $this->assertDatabaseMissing('site_settings', ['id' => $setting->getKey()]);
 
         Livewire::test(ListArticles::class)->assertOk();
         Livewire::test(CreateArticle::class)->assertOk();

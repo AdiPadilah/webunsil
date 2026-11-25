@@ -52,7 +52,7 @@ class SiteSetting extends Model
     {
         try {
             if (Schema::hasTable('site_settings')) {
-                $existing = static::query()->first();
+                $existing = static::query()->latest('id')->first();
                 if ($existing) {
                     return $existing;
                 }

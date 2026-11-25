@@ -1,56 +1,20 @@
 <?php
 
-namespace App\Filament\Pages;
+namespace App\Filament\Resources\SiteSettings\Schemas;
 
 use App\Models\SiteSetting;
-use BackedEnum;
-use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
-use Filament\Notifications\Notification;
-use Filament\Pages\Page;
-use Filament\Schemas\Components\Actions;
-use Filament\Schemas\Components\EmbeddedSchema;
-use Filament\Schemas\Components\Form;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
-use Filament\Support\Icons\Heroicon;
-use UnitEnum;
 
-/**
- * @property-read Schema $form
- */
-class PengaturanWebsite extends Page
+class SiteSettingForm
 {
-    protected static ?string $navigationLabel = 'Statistik & Info Prodi';
-
-    protected static ?string $title = 'Statistik & Informasi Program Studi';
-
-    protected static string | UnitEnum | null $navigationGroup = 'Publikasi & Informasi';
-
-    protected static string | BackedEnum | null $navigationIcon = Heroicon::OutlinedAdjustmentsHorizontal;
-
-    protected static ?int $navigationSort = 4;
-
-    /**
-     * @var array<string, mixed> | null
-     */
-    public ?array $data = [];
-
-    public function mount(): void
+    public static function configure(Schema $schema): Schema
     {
-        $setting = SiteSetting::firstOrCreate([], SiteSetting::defaults());
-        $this->form->fill($setting->attributesToArray());
-    }
+        $defaults = SiteSetting::defaults();
 
-    public function defaultForm(Schema $schema): Schema
-    {
-        return $schema->statePath('data');
-    }
-
-    public function form(Schema $schema): Schema
-    {
         return $schema->components([
             Section::make('Angka Statistik Beranda')
                 ->description('Angka ini tampil di pita statistik halaman Beranda dan dapat diperbarui setiap semester/tahun.')
@@ -59,21 +23,25 @@ class PengaturanWebsite extends Page
                         ->label('Mahasiswa Aktif')
                         ->numeric()
                         ->minValue(0)
+                        ->default($defaults['mahasiswa_aktif'])
                         ->required(),
                     TextInput::make('total_lulusan')
                         ->label('Total Kelulusan')
                         ->numeric()
                         ->minValue(0)
+                        ->default($defaults['total_lulusan'])
                         ->required(),
                     TextInput::make('prestasi_mahasiswa')
                         ->label('Prestasi & Aktivitas Mahasiswa')
                         ->numeric()
                         ->minValue(0)
+                        ->default($defaults['prestasi_mahasiswa'])
                         ->required(),
                     TextInput::make('aktivitas_dosen')
                         ->label('Aktivitas Riset & PkM Dosen')
                         ->numeric()
                         ->minValue(0)
+                        ->default($defaults['aktivitas_dosen'])
                         ->required(),
                 ])
                 ->columns(2),
@@ -90,13 +58,16 @@ class PengaturanWebsite extends Page
                         ->columnSpanFull(),
                     TextInput::make('kaprodi_nama')
                         ->label('Nama Lengkap & Gelar')
+                        ->default($defaults['kaprodi_nama'])
                         ->required(),
                     TextInput::make('kaprodi_jabatan')
                         ->label('Jabatan')
+                        ->default($defaults['kaprodi_jabatan'])
                         ->required(),
                     Textarea::make('kaprodi_sambutan')
                         ->label('Isi Teks Sambutan')
                         ->rows(7)
+                        ->default($defaults['kaprodi_sambutan'])
                         ->helperText('Pisahkan antar-paragraf dengan satu baris kosong.')
                         ->columnSpanFull(),
                 ])
@@ -107,56 +78,31 @@ class PengaturanWebsite extends Page
                 ->schema([
                     TextInput::make('akreditasi_peringkat')
                         ->label('Peringkat Akreditasi')
+                        ->default($defaults['akreditasi_peringkat'])
                         ->required(),
                     TextInput::make('akreditasi_lembaga')
                         ->label('Lembaga Akreditasi')
+                        ->default($defaults['akreditasi_lembaga'])
                         ->required(),
                     TextInput::make('akreditasi_sk')
                         ->label('Nomor Keputusan SK')
+                        ->default($defaults['akreditasi_sk'])
                         ->required(),
                     TextInput::make('akreditasi_berlaku')
                         ->label('Masa Berlaku Akreditasi')
+                        ->default($defaults['akreditasi_berlaku'])
                         ->required(),
                     TextInput::make('kontak_email')
                         ->label('Email Resmi Prodi')
                         ->email()
+                        ->default($defaults['kontak_email'])
                         ->required(),
                     TextInput::make('jam_layanan')
                         ->label('Jam Layanan Akademik')
+                        ->default($defaults['jam_layanan'])
                         ->required(),
                 ])
                 ->columns(2),
         ]);
-    }
-
-    public function content(Schema $schema): Schema
-    {
-        return $schema->components([
-            Form::make([EmbeddedSchema::make('form')])
-                ->id('form')
-                ->livewireSubmitHandler('save')
-                ->footer([
-                    Actions::make([
-                        Action::make('save')
-                            ->label('Simpan Perubahan')
-                            ->submit('save')
-                            ->keyBindings(['mod+s']),
-                    ]),
-                ]),
-        ]);
-    }
-
-    public function save(): void
-    {
-        $state = $this->form->getState();
-
-        $setting = SiteSetting::firstOrCreate([], SiteSetting::defaults());
-        $setting->update($state);
-
-        Notification::make()
-            ->success()
-            ->title('Informasi program studi berhasil disimpan')
-            ->body('Perubahan langsung tampil di website publik.')
-            ->send();
     }
 }

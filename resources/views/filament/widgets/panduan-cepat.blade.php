@@ -49,7 +49,7 @@
 
                 <x-filament::button
                     tag="a"
-                    href="{{ \App\Filament\Pages\PengaturanWebsite::getUrl() }}"
+                    href="{{ \App\Filament\Resources\SiteSettings\SiteSettingResource::getUrl() }}"
                     :icon="Heroicon::OutlinedAdjustmentsHorizontal"
                     color="gray"
                 >

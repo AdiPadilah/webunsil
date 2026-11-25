@@ -5,14 +5,10 @@
 
 @section('content')
 @php
-    // 13 berita lama hardcoded dari routes khusus — ditampilkan setelah berita DB
-    $staticSlugs = [
-        'berita.seminar-jalan-tol','berita.seminar-hasil-uns','berita.kunjungan-leuwikeris',
-        'berita.kompetisi-jembatan','berita.seminar-taiwan','berita.workshop-pasti-q1',
-        'berita.kuliah-tamu-bim','berita.wisuda-sarjana','berita.fahmi-rahmat',
-        'berita.muhammad-raka','berita.seminar-hathi-air','berita.hathi-segara-anakan',
-        'berita.tirta-adhipermana','berita.workshop-obe',
-    ];
+    $initialPage = (int) request()->get('page', 1);
+    if ($initialPage !== 2) {
+        $initialPage = 1;
+    }
 @endphp
     
     <section class="bg-[#0B2A4A] text-white py-12 md:py-16 border-b border-blue-950">
