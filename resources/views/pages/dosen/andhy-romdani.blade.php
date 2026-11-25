@@ -329,7 +329,7 @@
                                 <span class="text-[10px] text-cyan-800 font-semibold bg-cyan-50 border border-cyan-200/60 px-2.5 py-0.5 rounded-full ml-auto">12 Judul</span>
                             </div>
 
-                            <div class="space-y-2.5 max-h-[420px] overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-cyan-200 scrollbar-track-transparent">
+                            <div class="space-y-2.5">
                                 @php
                                 $bukuSipil = [
                                     ['no' => 1,  'judul' => 'Manajemen Sungai dan Banjir: Adaptasi terhadap Perubahan Iklim Global',                                           'isbn' => '978-623-8221-10-3', 'cover' => 'manajemen-sungai-dan-banjir-adaptasi-terhadap-perubahan-iklim-global.png'],
@@ -384,7 +384,7 @@
                                 <span class="text-[10px] text-amber-800 font-semibold bg-amber-50 border border-amber-200/60 px-2.5 py-0.5 rounded-full ml-auto">Karya Sastra</span>
                             </div>
 
-                            <div class="space-y-2.5 max-h-[280px] overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-amber-200 scrollbar-track-transparent">
+                            <div class="space-y-2.5">
                                 @php
                                 $bukuFiksi = [
                                     ['no' => 1, 'judul' => '6 Hero dan Ancaman Bom di Borobudur (Seri 1): Aksi Penyelamatan Kocak Dimulai',              'isbn' => '978-623-508-060-4', 'cover' => '6-hero-dan-ancaman-bom-di-borobudur-seri-1.jpg'],
