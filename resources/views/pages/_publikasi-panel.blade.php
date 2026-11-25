@@ -19,11 +19,7 @@
                         </div>
                     @endif
                 </div>
-                <div class="p-3.5 bg-[#0B2A4A] text-white text-center">
-                    <h3 class="text-xs sm:text-sm font-bold text-white leading-tight">{{ $item['cover_caption_title'] }}</h3>
-                    <p class="text-[11px] text-amber-400 font-medium mt-0.5">{{ $item['cover_caption_sub'] }}</p>
-                    <p class="text-[10px] text-slate-300 mt-0.5">{{ $item['cover_caption_meta'] }}</p>
-                </div>
+
             </a>
         </div>
 
