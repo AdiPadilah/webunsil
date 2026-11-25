@@ -137,6 +137,7 @@ $dosenList = [
         'kbk' => 'struktur',
         'kbk_label' => 'Rekayasa Struktur dan Bahan',
         'badge_class' => 'text-blue-800 bg-blue-50',
+        'link' => route('dosen.sri-wanto'),
     ],
 
     // 4. Rekayasa Geoteknik (3 dosen)

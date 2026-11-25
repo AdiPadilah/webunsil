@@ -48,6 +48,11 @@ Route::get('/dosen/andhy-romdani', function () {
     return view('pages.dosen.andhy-romdani');
 })->name('dosen.andhy-romdani');
 
+// Profil Dosen Spesifik: Sri Wanto
+Route::get('/dosen/sri-wanto', function () {
+    return view('pages.dosen.sri-wanto');
+})->name('dosen.sri-wanto');
+
 // 5. Akademik (Hub Page sesuai layout ITS)
 Route::get('/akademik', function () {
     return view('pages.akademik');
