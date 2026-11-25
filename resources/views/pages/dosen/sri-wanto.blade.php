@@ -595,19 +595,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        {{-- Visi Akhir Roadmap --}}
-                        <div class="mt-5 p-4 rounded-xl bg-gradient-to-r from-[#0B2A4A] to-[#133E6C] text-white flex items-center gap-3.5">
-                            <div class="w-9 h-9 rounded-lg bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-400/30">
-                                <i class="fa-solid fa-microchip"></i>
-                            </div>
-                            <div>
-                                <span class="block text-[10px] font-bold text-amber-400 uppercase tracking-wider">Arah Riset Berkelanjutan</span>
-                                <p class="text-xs sm:text-sm font-semibold text-white mt-0.5">
-                                    Utilization of software and Artificial Intelligence for speed in analysis
-                                </p>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
