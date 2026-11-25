@@ -26,32 +26,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
 
             @php
-                $books = [
-                    // Karya Andhy Romdani, S.T., M.Eng., Ph.D. — Non-Fiksi Keteknik-sipilan (12 Judul)
-                    ['judul' => 'Manajemen Sungai dan Banjir: Adaptasi terhadap Perubahan Iklim Global',                                           'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-8221-10-3', 'cover' => 'manajemen-sungai-dan-banjir-adaptasi-terhadap-perubahan-iklim-global.png'],
-                    ['judul' => 'Hidrodinamika Pantai dan Proteksi Kawasan Pesisir',                                                               'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-8267-23-4', 'cover' => 'hidrodinamika-pantai-dan-proteksi-kawasan-pesisir.jpeg'],
-                    ['judul' => 'Mekanisme Pendangkalan di Alur Pelayaran Pelabuhan dan Solusi Komprehensifnya',                                   'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-8221-67-7', 'cover' => 'mekanisme-pendangkalan-di-alur-pelayaran-pelabuhan-dan-solusi-komprehensifnya.png'],
-                    ['judul' => 'Teknik Irigasi dan Perencanaan Swasembada Pangan',                                                               'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '973-623-8267-39-2', 'cover' => 'teknik-irigasi-dan-perencanaan-swasembada-pangan.png'],
-                    ['judul' => 'Estuari: Konsep Dasar dan Pengembangan Potensi Muara Sungai',                                                    'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-8313-56-1', 'cover' => 'estuari-konsep-dasar-dan-usaha-pengembangan-potensi-muara-sungai.png'],
-                    ['judul' => 'Transpor Sedimen: Proses, Efek, dan Morfodinamika Pantai',                                                       'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-8496-78-5', 'cover' => 'transpor-sedimen-proses-efek-dan-morfodinamika-pantai-2.png'],
-                    ['judul' => 'Mekanika Fluida: Teori Fundamental dan Aplikasinya',                                                             'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-508-029-1', 'cover' => 'mekanika-fluida-teori-fundamental-dan-aplikasinya.jpg'],
-                    ['judul' => 'How to Write and Publish your First Research Paper (Cara Jitu Tembus Publikasi Artikel di Jurnal Internasional)', 'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-624-226-022-7', 'cover' => 'how-to-write-and-publish-your-first-research-paper.jpg'],
-                    ['judul' => 'Soal dan Penyelesaian Mekanika Fluida Dasar',                                                                    'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-623-508-432-9', 'cover' => 'soal-dan-penyelesaian-mekanika-fluida-dasar.jpg'],
-                    ['judul' => 'Hidrolika: Dasar-dasar, Aplikasi, dan Perencanaan Saluran Terbuka',                                              'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-624-226-427-0', 'cover' => 'hidraulika-dasar-dasar-aplikasi-dan-perencanaan-saluran-terbuka.jpg'],
-                    ['judul' => 'Compound Flooding: Mekanisme, Risiko, dan Strategi Ketahanan terhadap Perubahan Iklim',                          'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-624-226-450-8', 'cover' => 'compound-flooding-di-pantai-dan-estuari.jpg'],
-                    ['judul' => 'Soal dan Solusi untuk Hidrolika',                                                                                'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi',   'tahun' => null, 'isbn' => '978-624-226-567-3', 'cover' => 'soal-dan-solusi-untuk-hidraulika.jpg'],
-
-                    // Karya Andhy Romdani, S.T., M.Eng., Ph.D. — Fiksi / Novel Kreatif (4 Judul)
-                    ['judul' => '6 Hero dan Ancaman Bom di Borobudur (Seri 1): Aksi Penyelamatan Kocak Dimulai',                                  'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'fiksi',     'label' => 'Novel Fiksi', 'tahun' => null, 'isbn' => '978-623-508-060-4', 'cover' => '6-hero-dan-ancaman-bom-di-borobudur-seri-1.jpg'],
-                    ['judul' => '6 Hero dan Ancaman Bom di Borobudur (Seri 2): Pelumpuhan Profesor Gila Peramu Formula Penghancur',               'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'fiksi',     'label' => 'Novel Fiksi', 'tahun' => null, 'isbn' => '978-623-508-074-1', 'cover' => '6-hero-dan-ancaman-bom-di-borobudur-seri-2.jpg'],
-                    ['judul' => 'Dua Burung Gereja di Kubah Emas Masjid',                                                                         'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'fiksi',     'label' => 'Novel Fiksi', 'tahun' => null, 'isbn' => '978-623-508-037-6', 'cover' => 'dua-burung-gereja-di-kubah-emas-masjid.jpg'],
-                    ['judul' => 'Adam dan Hawa: Ketika Mereka Bukan dari Surga',                                                                  'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_url' => route('dosen.andhy-romdani'), 'kategori' => 'fiksi',     'label' => 'Novel Fiksi', 'tahun' => null, 'isbn' => '978-624-226-110-1', 'cover' => 'adam-dan-hawa-ketika-mereka-bukan-dari-surga.jpg'],
-                ];
-
-                $totalBooks = count($books);
-                $authorCounts = collect($books)->countBy('penulis');
-                $nonFiksiCount = collect($books)->where('kategori', 'non-fiksi')->count();
-                $fiksiCount = collect($books)->where('kategori', 'fiksi')->count();
+                $books = $books ?? \App\Models\Buku::published()->orderByDesc('id')->get();
+                $totalBooks = $books->count();
+                $authorCounts = $books->countBy('penulis');
+                $nonFiksiCount = $books->where('kategori', 'non-fiksi')->count();
+                $fiksiCount = $books->where('kategori', 'fiksi')->count();
             @endphp
 
             {{-- Toolbar Filter Multi-Dosen & Kategori --}}
@@ -100,7 +79,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5" id="book-catalog-grid">
                 @foreach($books as $index => $book)
                     @php
-                        $isFiksi = $book['kategori'] === 'fiksi';
+                        $isFiksi = $book->kategori === 'fiksi';
+                        $labelText = $book->label ?: ($isFiksi ? 'Novel Fiksi' : 'Non-Fiksi');
                         $badgeClasses = $isFiksi
                             ? 'text-amber-800 bg-amber-50 border-amber-200/80'
                             : 'text-cyan-800 bg-cyan-50 border-cyan-200/80';
@@ -108,22 +88,27 @@
                             ? 'bg-amber-100 text-amber-800 border-amber-200/80'
                             : 'bg-cyan-100 text-cyan-800 border-cyan-200/80';
                         $hoverBorder = $isFiksi ? 'hover:border-amber-400' : 'hover:border-cyan-400';
+                        $coverUrl = $book->cover_url;
+                        $penulisUrl = (!empty($book->penulis_route) && Route::has($book->penulis_route))
+                            ? route($book->penulis_route)
+                            : null;
                     @endphp
-                    <article data-category="{{ $book['kategori'] }}"
-                             data-author="{{ $book['penulis'] }}"
-                             data-search="{{ strtolower($book['judul'] . ' ' . $book['penulis'] . ' ' . $book['isbn']) }}"
+                    <article data-category="{{ $book->kategori }}"
+                             data-author="{{ $book->penulis }}"
+                             data-search="{{ strtolower($book->judul . ' ' . $book->penulis . ' ' . ($book->isbn ?? '')) }}"
                              class="book-card bg-white rounded-2xl border border-slate-200/90 {{ $hoverBorder }} p-4 sm:p-5 shadow-xs hover:shadow-md transition-all duration-200 flex items-start gap-4 group">
-                        @if($book['cover'])
+                        @if($coverUrl)
                             <div class="shrink-0 w-20 sm:w-24 aspect-[3/4] rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow-xs">
-                                <img src="{{ asset('images/buku/' . $book['cover']) }}"
-                                     alt="{{ $book['judul'] }}"
+                                <img src="{{ $coverUrl }}"
+                                     alt="{{ $book->judul }}"
+                                     loading="lazy"
                                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                             </div>
                         @else
                             <div class="shrink-0 w-20 sm:w-24 aspect-[3/4] rounded-xl overflow-hidden border border-blue-950/20 bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] text-white p-2.5 flex flex-col justify-between shadow-xs">
-                                <span class="text-[9px] font-bold uppercase tracking-wider text-amber-400">{{ $book['label'] }}</span>
+                                <span class="text-[9px] font-bold uppercase tracking-wider text-amber-400">{{ $labelText }}</span>
                                 <i class="fa-solid fa-book text-lg text-white/30 self-center"></i>
-                                <span class="text-[9px] font-semibold leading-tight text-slate-200 line-clamp-2">{{ $book['judul'] }}</span>
+                                <span class="text-[9px] font-semibold leading-tight text-slate-200 line-clamp-2">{{ $book->judul }}</span>
                             </div>
                         @endif
 
@@ -134,17 +119,17 @@
                                         {{ $index + 1 }}
                                     </span>
                                     <span class="font-semibold text-[10px] px-2.5 py-0.5 rounded-full border {{ $badgeClasses }}">
-                                        {{ $book['label'] }}
+                                        {{ $labelText }}
                                     </span>
-                                    @if($book['tahun'])
+                                    @if($book->tahun)
                                         <span class="text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
-                                            {{ $book['tahun'] }}
+                                            {{ $book->tahun }}
                                         </span>
                                     @endif
                                 </div>
 
                                 <h3 class="text-sm sm:text-[15px] font-bold text-slate-900 leading-snug group-hover:text-[#0B2A4A] transition-colors">
-                                    {{ $book['judul'] }}
+                                    {{ $book->judul }}
                                 </h3>
                             </div>
 
@@ -152,23 +137,25 @@
                                 <p class="text-xs text-slate-700 font-medium flex items-center gap-1.5">
                                     <i class="fa-solid fa-user-pen text-[10px] text-[#0070BA] shrink-0"></i>
                                     <span>Karya:
-                                        @if($book['penulis_url'])
-                                            <a href="{{ $book['penulis_url'] }}" class="font-bold text-[#0B2A4A] hover:text-[#0070BA] hover:underline">{{ $book['penulis'] }}</a>
+                                        @if($penulisUrl)
+                                            <a href="{{ $penulisUrl }}" class="font-bold text-[#0B2A4A] hover:text-[#0070BA] hover:underline">{{ $book->penulis }}</a>
                                         @else
-                                            <span class="font-bold text-[#0B2A4A]">{{ $book['penulis'] }}</span>
+                                            <span class="font-bold text-[#0B2A4A]">{{ $book->penulis }}</span>
                                         @endif
                                     </span>
                                 </p>
-                                <span class="inline-block text-slate-500 font-mono text-[11px] bg-slate-50 px-2.5 py-0.5 rounded-md border border-slate-200/80">
-                                    ISBN: {{ $book['isbn'] }}
-                                </span>
+                                @if(!empty($book->isbn))
+                                    <span class="inline-block text-slate-500 font-mono text-[11px] bg-slate-50 px-2.5 py-0.5 rounded-md border border-slate-200/80">
+                                        ISBN: {{ $book->isbn }}
+                                    </span>
+                                @endif
                             </div>
                         </div>
                     </article>
                 @endforeach
             </div>
 
-            <div id="bookEmptyState" class="hidden bg-white rounded-2xl border border-slate-200 p-10 text-center text-slate-500 text-sm">
+            <div id="bookEmptyState" class="{{ $totalBooks > 0 ? 'hidden' : '' }} bg-white rounded-2xl border border-slate-200 p-10 text-center text-slate-500 text-sm">
                 <i class="fa-solid fa-book-open text-2xl text-slate-300 mb-2 block"></i>
                 Tidak ada karya buku yang cocok dengan filter atau pencarian tersebut.
             </div>
@@ -213,4 +200,3 @@
         }
     </script>
 @endsection
-

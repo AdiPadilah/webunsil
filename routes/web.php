@@ -40,7 +40,11 @@ Route::get('/sejarah', function () {
 
 // 4. Dosen & Tenaga Pengajar
 Route::get('/dosen', function () {
-    return view('pages.dosen');
+    $dosens = \App\Models\Dosen::published()
+        ->orderBy('urutan')
+        ->orderBy('id')
+        ->get();
+    return view('pages.dosen', compact('dosens'));
 })->name('dosen');
 
 // Profil Dosen Spesifik: Andhy Romdani
@@ -65,7 +69,11 @@ Route::get('/kurikulum', function () {
 
 // Prestasi Mahasiswa
 Route::get('/prestasi-mahasiswa', function () {
-    return view('pages.prestasi-mahasiswa');
+    $prestasis = \App\Models\Prestasi::published()
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+    return view('pages.prestasi-mahasiswa', compact('prestasis'));
 })->name('prestasi-mahasiswa');
 
 // 6. Layanan Terpadu
@@ -118,7 +126,11 @@ Route::get('/riset', function () {
 
 // 9a. Turunan Riset & Kolaborasi: Penelitian
 Route::get('/penelitian', function () {
-    return view('pages.penelitian');
+    $risetList = \App\Models\Penelitian::published()
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+    return view('pages.penelitian', compact('risetList'));
 })->name('penelitian');
 
 // 9b. Turunan Riset & Kolaborasi: Kolaborasi
@@ -128,12 +140,19 @@ Route::get('/kolaborasi', function () {
 
 // 9c. Turunan Riset & Kolaborasi: Pengabdian (PkM)
 Route::get('/pengabdian', function () {
-    return view('pages.pengabdian');
+    $abmasList = \App\Models\Pengabdian::published()
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+    return view('pages.pengabdian', compact('abmasList'));
 })->name('pengabdian');
 
 // 9d. Turunan Penelitian / Riset: Buku
 Route::get('/buku', function () {
-    return view('pages.buku');
+    $books = \App\Models\Buku::published()
+        ->orderByDesc('id')
+        ->get();
+    return view('pages.buku', compact('books'));
 })->name('buku');
 
 // 9e. Turunan Penelitian / Riset: Publikasi

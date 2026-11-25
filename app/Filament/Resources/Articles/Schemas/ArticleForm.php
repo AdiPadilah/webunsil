@@ -43,6 +43,7 @@ class ArticleForm
                 FileUpload::make('thumbnail')
                     ->label('Foto Utama / Thumbnail')
                     ->image()
+                    ->disk('public')
                     ->directory('articles')
                     ->imageEditor(),
 

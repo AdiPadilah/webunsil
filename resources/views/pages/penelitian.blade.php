@@ -4,6 +4,10 @@
 @section('meta_description', 'Publikasi dan ringkasan riset ilmiah dosen Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')
 
 @section('content')
+    @php
+        $risetList = $risetList ?? \App\Models\Penelitian::published()->orderByDesc('tahun')->orderByDesc('id')->get();
+    @endphp
+
     {{-- Hero --}}
     <section class="bg-[#0B2A4A] text-white py-12 md:py-16 border-b border-blue-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,529 +35,45 @@
     <section class="py-12 lg:py-16 bg-slate-50 min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
 
-            @php
-            $risetList = [
-                [
-                    'article_id' => 'Hlm. 1–11',
-                    'cover' => 'images/jurnal/tandf_trbm2.jpg',
-                    'cover_alt' => 'Cover Resmi International Journal of River Basin Management (Taylor & Francis)',
-                    'cover_caption_title' => 'International Journal of River Basin Management',
-                    'cover_caption_sub' => 'Taylor & Francis · Informa UK Limited (SCOPUS Q2)',
-                    'cover_caption_meta' => 'ISSN: 1571-5124 · 1814-2060',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'Integrating hydrodynamic modelling and hazard assessment to mitigate flood risks in the Pemali River Basin, Central Java, Indonesia',
-                    'authors' => 'Muhammad Raka El Ghifari, Andhy Romdani, Ilmiawan Surya Bayuaji, Litan Dey, Mudatsir, Empung, Aquinaldo Sistanto Putra',
-                    'journal' => 'International Journal of River Basin Management (Taylor & Francis / Informa UK Limited)',
-                    'volume' => 'Ahead-of-Print',
-                    'issue' => 'Hlm. 1–11 (Terbit Daring: 11 September 2025)',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q2',
-                    'doi_label' => '10.1080/15715124.2025.2551574',
-                    'tahun' => 2025,
-                    'doi_url' => 'https://doi.org/10.1080/15715124.2025.2551574',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 340–354',
-                    'cover' => 'images/jurnal/kanderang_tingang.jpg',
-                    'cover_alt' => 'Cover Jurnal Ilmiah Kanderang Tingang (Universitas Palangka Raya)',
-                    'cover_caption_title' => 'Jurnal Ilmiah Kanderang Tingang',
-                    'cover_caption_sub' => 'Universitas Palangka Raya (SINTA)',
-                    'cover_caption_meta' => 'ISSN: 2087-166X · 2721-012X · Vol. 17, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Mapping Climate and Air Quality Risks for Acute Respiratory Infections in Eastern Priangan, Indonesia',
-                    'authors' => 'Andhy Romdani, Mudatsir, Fahmi Rahmat Amanulloh, Muhammad Raka El Ghifari, Revianti Coenraad, Daniel Bara Padang Allo, Haniful Birri Ramdani',
-                    'journal' => 'Jurnal Ilmiah Kanderang Tingang (Universitas Palangka Raya)',
-                    'volume' => 'Volume 17',
-                    'issue' => 'Issue 2 (Hlm. 340–354), November 2026',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · Diamond OA',
-                    'doi_label' => '10.37304/jikt.v17i2.466',
-                    'tahun' => 2026,
-                    'doi_url' => 'https://doi.org/10.37304/jikt.v17i2.466',
-                                    ],
-                [
-                    'article_id' => 'Vol. 14, No. 1 (Hlm. 29–40)',
-                    'cover' => 'images/jurnal/balanga_jurnal.jpg',
-                    'cover_alt' => 'Cover BALANGA Jurnal Pendidikan Teknologi dan Kejuruan (Universitas Palangka Raya)',
-                    'cover_caption_title' => 'BALANGA: Jurnal Pendidikan Teknologi dan Kejuruan',
-                    'cover_caption_sub' => 'Universitas Palangka Raya (SINTA · Diamond OA)',
-                    'cover_caption_meta' => 'ISSN: 2338-462X · 2723-1216 · Vol. 14, No. 1',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Soil Improvement Analysis for Container Yard Using Prefabricated Vertical Drains (PVD) and Preloading: A Case Study of Reclaimed Land in the Madura Strait',
-                    'authors' => 'Muhammad Teja Pribadi Pamungkas, Andhy Romdani, Zakwan Gusnadi, Hery Setiyaji, Daniel Bara Padang Allo',
-                    'journal' => 'BALANGA: Jurnal Pendidikan Teknologi dan Kejuruan (Universitas Palangka Raya)',
-                    'volume' => 'Volume 14',
-                    'issue' => 'Issue 1 (Hlm. 29–40), Juni 2026',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · Diamond OA',
-                    'doi_label' => '10.37304/balanga.v14i1.26433',
-                    'tahun' => 2026,
-                    'doi_url' => 'https://doi.org/10.37304/balanga.v14i1.26433',
-                                    ],
-                [
-                    'article_id' => 'Vol. 21, No. 1, Hlm. 34',
-                    'cover' => 'images/jurnal/omni_akuatika.jpg',
-                    'cover_alt' => 'Cover Omni-Akuatika (Universitas Jenderal Soedirman)',
-                    'cover_caption_title' => 'Omni-Akuatika',
-                    'cover_caption_sub' => 'Universitas Jenderal Soedirman (SINTA · Diamond OA)',
-                    'cover_caption_meta' => 'ISSN: 1858-3873 · 2476-9347 · Vol. 21, No. 1',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Exploring Coastal Green Infrastructure (CGI): A Promising Approach to Mitigating Climate Change-Related Disasters in West Java\'s Southern Coast, Indonesia',
-                    'authors' => 'Muhammad Raka El Ghifari, Andhy Romdani, Fahmi Rahmat Amanulloh, Empung, Tryantini Sundi Putri, Mudatsir',
-                    'journal' => 'Omni-Akuatika (Universitas Jenderal Soedirman)',
-                    'volume' => 'Volume 21',
-                    'issue' => 'Issue 1 (Hlm. 34), Januari 2026',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · Diamond OA',
-                    'doi_label' => '10.20884/1.oa.2025.21.1.1207',
-                    'tahun' => 2025,
-                    'doi_url' => 'https://doi.org/10.20884/1.oa.2025.21.1.1207',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 1125–1136',
-                    'cover' => 'images/jurnal/icore_unsoed.png',
-                    'cover_alt' => 'Cover Proceedings of ICORE Universitas Jenderal Soedirman',
-                    'cover_caption_title' => 'Proceedings of ICORE',
-                    'cover_caption_sub' => 'Universitas Jenderal Soedirman (Prosiding)',
-                    'cover_caption_meta' => 'e-ISSN: 3030-654X · Vol. 8',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Prosiding Konferensi Internasional',
-                    'title' => 'Strengthening MSME Business Continuity in Flood-Prone Areas Through Disaster Preparedness and Resilience',
-                    'authors' => 'Edy Suroso, Andhy Romdani, Aquinaldo Sistanto Putra, Ilmiawan Surya Bayu Aji, Ira Amanda Hirbasari',
-                    'journal' => 'Proceedings of the International Conference on Rural Development and Entrepreneurship (ICORE)',
-                    'volume' => 'Volume 8',
-                    'issue' => 'Hlm. 1125–1136, Agustus 2026',
-                    'index_type' => 'PROCEEDING',
-                    'index_detail' => 'Prosiding Internasional',
-                    'doi_label' => '10.32424/anr4hg09',
-                    'tahun' => 2026,
-                    'doi_url' => 'https://doi.org/10.32424/anr4hg09',
-                                    ],
-                [
-                    'article_id' => 'Vol. 12, No. 1 (Hlm. 11–17)',
-                    'cover' => 'images/jurnal/parentas_v12_cover.jpg',
-                    'cover_alt' => 'Cover Jurnal PARENTAS Vol. 12 No. 1 (Universitas Palangka Raya)',
-                    'cover_caption_title' => 'PARENTAS: Jurnal Mahasiswa PTK',
-                    'cover_caption_sub' => 'Universitas Palangka Raya (SINTA · Diamond OA)',
-                    'cover_caption_meta' => 'ISSN: 2443-227X · 2777-144X · Vol. 12, No. 1',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Performance Analysis of Unsignalized Intersection of Delay Using Gap Acceptance Method',
-                    'authors' => 'Fajrina Aghnia Sya\'bani, Andhy Romdani',
-                    'journal' => 'PARENTAS: Jurnal Mahasiswa Pendidikan Teknologi dan Kejuruan (Universitas Palangka Raya)',
-                    'volume' => 'Volume 12',
-                    'issue' => 'Issue 1 (Hlm. 11–17), Juni 2026',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · Diamond OA',
-                    'doi_label' => '10.37304/parentas.v12i1.26762',
-                    'tahun' => 2026,
-                    'doi_url' => 'https://doi.org/10.37304/parentas.v12i1.26762',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 449–463 (PII: S2666592125000964)',
-                    'cover' => 'images/jurnal/natural_hazards_research.jpg',
-                    'cover_alt' => 'Cover Resmi Jurnal Natural Hazards Research (Elsevier / KeAi)',
-                    'cover_caption_title' => 'Natural Hazards Research',
-                    'cover_caption_sub' => 'Elsevier · KeAi (SCOPUS Q1)',
-                    'cover_caption_meta' => 'ISSN: 2666-5921 · Vol. 6, Issue 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'Does ENSO-driven climate variability increase coastal flooding? Insights from the Brebes coastal area, Indonesia',
-                    'authors' => 'Fahmi Rahmat Amanulloh, Andhy Romdani, Empung, Yusep Ramdani, Hendra, Pengki Irawan',
-                    'journal' => 'Natural Hazards Research (Elsevier BV / KeAi)',
-                    'volume' => 'Volume 6',
-                    'issue' => 'Issue 2 (Hlm. 449–463), Juni 2026 (Terbit Daring: 22 Oktober 2025)',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q1 · CiteScore 9.7',
-                    'doi_label' => '10.1016/j.nhres.2025.10.004',
-                    'tahun' => 2026,
-                    'doi_url' => 'https://doi.org/10.1016/j.nhres.2025.10.004',
-                                    ],
-                [
-                    'article_id' => 'Vol. 7, No. 2',
-                    'cover' => 'images/jurnal/akselerasi_cover.jpg',
-                    'cover_alt' => 'Cover Akselerasi Jurnal Ilmiah Teknik Sipil Universitas Siliwangi',
-                    'cover_caption_title' => 'Akselerasi: Jurnal Ilmiah Teknik Sipil',
-                    'cover_caption_sub' => 'Universitas Siliwangi (SINTA 4)',
-                    'cover_caption_meta' => 'e-ISSN: 2715-7296 · Vol. 7, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Penerapan Metode Traffic Conflict Technique (TCT) untuk Analisis Keselamatan Lalu Lintas pada Simpang (Studi Kasus: Simpang Tiga Jl. Mayor S.L. Tobing-Jl. Abr Cikurubuk Kota Tasikmalaya)',
-                    'authors' => 'Muhandis Ahmad Wijaya, Andhy Romdani, Hendra, Herianto, Iman Handiman, Indrajathie Aziz',
-                    'journal' => 'Akselerasi: Jurnal Ilmiah Teknik Sipil (Universitas Siliwangi)',
-                    'volume' => 'Volume 7',
-                    'issue' => 'Issue 2, Januari 2026',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA 4 · UNSIL',
-                    'doi_label' => '10.37058/aks.v7i2.17625',
-                    'tahun' => 2026,
-                    'doi_url' => 'https://doi.org/10.37058/aks.v7i2.17625',
-                                    ],
-                [
-                    'article_id' => 'Vol. 11, No. 2 (Hlm. 84–90)',
-                    'cover' => 'images/jurnal/parentas_v11_cover.jpg',
-                    'cover_alt' => 'Cover Jurnal PARENTAS Vol. 11 No. 2 (Universitas Palangka Raya)',
-                    'cover_caption_title' => 'PARENTAS: Jurnal Mahasiswa PTK',
-                    'cover_caption_sub' => 'Universitas Palangka Raya (SINTA · Diamond OA)',
-                    'cover_caption_meta' => 'ISSN: 2443-227X · 2777-144X · Vol. 11, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Analysis of Coordination Between Signalled Intersections (Case Study: Rancabango Intersection and Bantar Intersection, Tasikmalaya City)',
-                    'authors' => 'Mentari Pagi Febriana, Andhy Romdani, Empung',
-                    'journal' => 'PARENTAS: Jurnal Mahasiswa Pendidikan Teknologi dan Kejuruan (Universitas Palangka Raya)',
-                    'volume' => 'Volume 11',
-                    'issue' => 'Issue 2 (Hlm. 84–90), Desember 2025',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · Diamond OA',
-                    'doi_label' => '10.37304/parentas.v11i2.23769',
-                    'tahun' => 2025,
-                    'doi_url' => 'https://doi.org/10.37304/parentas.v11i2.23769',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 1824–1843',
-                    'cover' => null,
-                    'cover_alt' => 'Journal of Authentic Research (LITPAM)',
-                    'cover_caption_title' => 'Journal of Authentic Research',
-                    'cover_caption_sub' => 'LITPAM (SINTA 4)',
-                    'cover_caption_meta' => 'e-ISSN: 2828-3724 · Vol. 4, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Interaksi Kualitas Informasi Konten Pariwisata Dengan Niat Berkunjung Kembali: Peran Perceived Authenticity dan Travel Constraint',
-                    'authors' => 'Andina Eka Mandasari, Adhitya Rahmat Taufiq, Andhy Romdani, Muhammad Dzufri Hazazy',
-                    'journal' => 'Journal of Authentic Research (LITPAM)',
-                    'volume' => 'Volume 4',
-                    'issue' => 'Issue 2 (Hlm. 1824–1843), Desember 2025',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA 4',
-                    'doi_label' => '10.36312/6xcas314',
-                    'tahun' => 2025,
-                    'doi_url' => 'https://doi.org/10.36312/6xcas314',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 131–139',
-                    'cover' => 'images/jurnal/medica_hospitalia.jpg',
-                    'cover_alt' => 'Cover Medica Hospitalia Journal of Clinical Medicine',
-                    'cover_caption_title' => 'Medica Hospitalia: Journal of Clinical Medicine',
-                    'cover_caption_sub' => 'RSUP Dr. Kariadi Semarang (SINTA · Diamond OA)',
-                    'cover_caption_meta' => 'ISSN: 2301-4369 · 2685-7898 · Vol. 12, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Riset Kolaboratif',
-                    'title' => 'Spatial and Temporal Analysis of Gallbladder Stone Cases at dr. Soekardjo Hospital, West Java: An Evidence-Based Study',
-                    'authors' => 'Mudatsir, Muhammad Raka El Ghifari, Fahmi Rahmat Amanulloh, Tryantini Sundi Putri, Andhy Romdani',
-                    'journal' => 'Medica Hospitalia: Journal of Clinical Medicine (RSUP Dr. Kariadi Semarang)',
-                    'volume' => 'Volume 12',
-                    'issue' => 'Issue 2 (Hlm. 131–139), Juli 2025',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · Diamond OA',
-                    'doi_label' => '10.36408/mhjcm.v12i2.1249',
-                    'tahun' => 2025,
-                    'doi_url' => 'https://doi.org/10.36408/mhjcm.v12i2.1249',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 125–136',
-                    'cover' => 'images/jurnal/ugm_jcef_poster.png',
-                    'cover_alt' => 'Poster Resmi Journal of the Civil Engineering Forum (Universitas Gadjah Mada)',
-                    'cover_caption_title' => 'Journal of the Civil Engineering Forum',
-                    'cover_caption_sub' => 'Universitas Gadjah Mada (SCOPUS · SINTA 1)',
-                    'cover_caption_meta' => 'ISSN: 2549-5925 · 2581-1037 · Vol. 11, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'The Effectiveness of Groin Modifications to Reduce the Impacts of Indian Ocean Dipole (IOD)-induced Port Siltation in Adapting to Climate Change',
-                    'authors' => 'Andhy Romdani, Fahmi Rahmat Amanulloh, Mudatsir, Muhammad Raka El Ghifari, Zakwan Gusnadi, Tryantini Sundi Putri, Empung, Mohammad Syarif Al-Huseiny',
-                    'journal' => 'Journal of the Civil Engineering Forum (Universitas Gadjah Mada)',
-                    'volume' => 'Volume 11',
-                    'issue' => 'Issue 2 (Hlm. 125–136), April 2025',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS · SINTA 1',
-                    'doi_label' => '10.22146/jcef.16683',
-                    'tahun' => 2025,
-                    'doi_url' => 'https://doi.org/10.22146/jcef.16683',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 1–10',
-                    'cover' => 'images/jurnal/jitel_cover.png',
-                    'cover_alt' => 'Cover JITEL Vol. 5 No. 1 (Politeknik Negeri Bandung)',
-                    'cover_caption_title' => 'JITEL (Jurnal Ilmiah Telekomunikasi, Elektronika, dan Listrik Tenaga)',
-                    'cover_caption_sub' => 'Politeknik Negeri Bandung (SINTA)',
-                    'cover_caption_meta' => 'ISSN: 2774-7972 · 2775-6696 · Vol. 5, No. 1',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Pengembangan purwarupa sistem peringatan dini longsor berbasis Internet of Things (IoT)',
-                    'authors' => 'Asep Andang, Eka Wahyu Hidayat, Andhy Romdani, Prama Permana, Andre Taufik Firdaus, Miftahul Huda Pratama, Elpan Ahmad Rifansyah',
-                    'journal' => 'JITEL (Politeknik Negeri Bandung)',
-                    'volume' => 'Volume 5',
-                    'issue' => 'Issue 1 (Hlm. 1–10), Maret 2025',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · Open Access',
-                    'doi_label' => '10.35313/jitel.v5.i1.2025.1-10',
-                    'tahun' => 2025,
-                    'doi_url' => 'https://doi.org/10.35313/jitel.v5.i1.2025.1-10',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 4157–4176',
-                    'cover' => 'images/jurnal/iwa_water_climate_change.jpg',
-                    'cover_alt' => 'Cover Journal of Water and Climate Change (IWA Publishing)',
-                    'cover_caption_title' => 'Journal of Water and Climate Change',
-                    'cover_caption_sub' => 'IWA Publishing (SCOPUS Q1)',
-                    'cover_caption_meta' => 'ISSN: 2040-2244 · 2408-9354 · Vol. 15, Issue 8',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'Morpho-hydrodynamic processes impacted by the 2022-extreme La Niña event and high river discharge conditions in the southern coastal area of West Java, Indonesia',
-                    'authors' => 'Fahmi Rahmat Amanulloh, Andhy Romdani',
-                    'journal' => 'Journal of Water and Climate Change (IWA Publishing)',
-                    'volume' => 'Volume 15',
-                    'issue' => 'Issue 8 (Hlm. 4157–4176), Juli 2024',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q1',
-                    'doi_label' => '10.2166/wcc.2024.343',
-                    'tahun' => 2024,
-                    'doi_url' => 'https://doi.org/10.2166/wcc.2024.343',
-                                    ],
-                [
-                    'article_id' => 'Artikel 108279',
-                    'cover' => 'images/jurnal/estuarine_coastal.jpg',
-                    'cover_alt' => 'Cover Estuarine, Coastal and Shelf Science (Elsevier)',
-                    'cover_caption_title' => 'Estuarine, Coastal and Shelf Science',
-                    'cover_caption_sub' => 'Elsevier BV (SCOPUS Q1)',
-                    'cover_caption_meta' => 'ISSN: 0272-7714 · 1096-0015 · Vol. 284',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'Tidally-modulated stratification in a channel-shoal estuary',
-                    'authors' => 'Chung-Hung Pao, Andhy Romdani, Jia-Lin Chen',
-                    'journal' => 'Estuarine, Coastal and Shelf Science (Elsevier BV)',
-                    'volume' => 'Volume 284',
-                    'issue' => 'Mei 2023 (Terbit Daring: 3 Maret 2023)',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q1',
-                    'doi_label' => '10.1016/j.ecss.2023.108279',
-                    'tahun' => 2023,
-                    'doi_url' => 'https://doi.org/10.1016/j.ecss.2023.108279',
-                                    ],
-                [
-                    'article_id' => 'Vol. 149, Issue 2',
-                    'cover' => 'images/jurnal/asce_jwpcoe.png',
-                    'cover_alt' => 'Cover Journal of Waterway, Port, Coastal, and Ocean Engineering (ASCE)',
-                    'cover_caption_title' => 'Journal of Waterway, Port, Coastal, and Ocean Engineering',
-                    'cover_caption_sub' => 'ASCE (SCOPUS Q2)',
-                    'cover_caption_meta' => 'ISSN: 0733-950X · 1943-5460 · Vol. 149, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'Downdrift Port Siltation Adjacent to a River Mouth: Effects of Mesotidal Conditions and Typhoon',
-                    'authors' => 'Andhy Romdani, Jia-Lin Chen, Hwa Chien, Jing-Hua Lin, Ching-Yuan Liao, Cheng-Chien Hou',
-                    'journal' => 'Journal of Waterway, Port, Coastal, and Ocean Engineering (ASCE)',
-                    'volume' => 'Volume 149',
-                    'issue' => 'Issue 2, Maret 2023 (Terbit Daring: 6 Desember 2022)',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q2',
-                    'doi_label' => '10.1061/jwped5.wweng-1940',
-                    'tahun' => 2023,
-                    'doi_url' => 'https://doi.org/10.1061/jwped5.wweng-1940',
-                                    ],
-                [
-                    'article_id' => 'Artikel 104932',
-                    'cover' => 'images/jurnal/continental_shelf.jpg',
-                    'cover_alt' => 'Cover Continental Shelf Research (Elsevier)',
-                    'cover_caption_title' => 'Continental Shelf Research',
-                    'cover_caption_sub' => 'Elsevier BV (SCOPUS Q1)',
-                    'cover_caption_meta' => 'ISSN: 0278-4343 · 1873-6955 · Vol. 255',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'On the occurrence of low concentration hyperpycnal river plumes in a small mountainous river-canyon system',
-                    'authors' => 'Sheng-De Tsai, Yu-Chi Lin, Andhy Romdani, Jia-Lin Chen, Ray T. Hsu, James T. Liu',
-                    'journal' => 'Continental Shelf Research (Elsevier BV)',
-                    'volume' => 'Volume 255',
-                    'issue' => 'Februari 2023 (Terbit Daring: 14 Januari 2023)',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q1',
-                    'doi_label' => '10.1016/j.csr.2023.104932',
-                    'tahun' => 2023,
-                    'doi_url' => 'https://doi.org/10.1016/j.csr.2023.104932',
-                                    ],
-                [
-                    'article_id' => 'Artikel 113446',
-                    'cover' => 'images/jurnal/ocean_engineering.jpg',
-                    'cover_alt' => 'Cover Ocean Engineering (Elsevier)',
-                    'cover_caption_title' => 'Ocean Engineering',
-                    'cover_caption_sub' => 'Elsevier BV (SCOPUS Q1)',
-                    'cover_caption_meta' => 'ISSN: 0029-8018 · 1873-5258 · Vol. 269',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'A numerical investigation of the transport process of density currents over steep slopes and its implications for subsea cable breaks',
-                    'authors' => 'Sheng-De Tsai, Jia-Lin Chen, Wen-Yang Hsu, Wei-Zhan Tsai, Andhy Romdani',
-                    'journal' => 'Ocean Engineering (Elsevier BV)',
-                    'volume' => 'Volume 269',
-                    'issue' => 'Februari 2023 (Terbit Daring: 31 Desember 2022)',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q1',
-                    'doi_label' => '10.1016/j.oceaneng.2022.113446',
-                    'tahun' => 2023,
-                    'doi_url' => 'https://doi.org/10.1016/j.oceaneng.2022.113446',
-                                    ],
-                [
-                    'article_id' => 'Vol. 1, Hlm. 100–116',
-                    'cover' => 'images/jurnal/jcose_coastal_offshore.jpg',
-                    'cover_alt' => 'Cover Coastal and Offshore Science and Engineering',
-                    'cover_caption_title' => 'Coastal and Offshore Science and Engineering',
-                    'cover_caption_sub' => 'Studium Editore · eCampus (Open Access)',
-                    'cover_caption_meta' => 'ISSN: 2785-7972 · Vol. 1, Issue 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'A numerical investigation on the occurrence of the typhoon-triggered density currents of the 2008-flood event',
-                    'authors' => 'Andhy Romdani, Sheng-De Tsai, Wei-Zhan Tsai, Yu-Chi Lin, Jia-Lin Chen',
-                    'journal' => 'Coastal and Offshore Science and Engineering (Studium Editore)',
-                    'volume' => 'Volume 1',
-                    'issue' => 'Hlm. 100–116 · 2022',
-                    'index_type' => 'PROCEEDING',
-                    'index_detail' => 'Jurnal Internasional OA',
-                    'doi_label' => '10.53256/COSE_220106',
-                    'tahun' => 2022,
-                    'doi_url' => 'https://doi.org/10.53256/COSE_220106',
-                                    ],
-                [
-                    'article_id' => 'Vol. 148, Issue 2',
-                    'cover' => 'images/jurnal/asce_jwpcoe.png',
-                    'cover_alt' => 'Cover Journal of Waterway, Port, Coastal, and Ocean Engineering (ASCE)',
-                    'cover_caption_title' => 'Journal of Waterway, Port, Coastal, and Ocean Engineering',
-                    'cover_caption_sub' => 'ASCE (SCOPUS Q2)',
-                    'cover_caption_meta' => 'ISSN: 0733-950X · 1943-5460 · Vol. 148, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Internasional',
-                    'title' => 'Downdrift Port Siltation Adjacent to a River Mouth: Mechanisms and Effects of Littoral Sediment Transport to the Navigation Channel',
-                    'authors' => 'Andhy Romdani, Jia-Lin Chen, Hwa Chien, Jing-Hua Lin, Chuan-Kai Hung, Yu-Qi Huang',
-                    'journal' => 'Journal of Waterway, Port, Coastal, and Ocean Engineering (ASCE)',
-                    'volume' => 'Volume 148',
-                    'issue' => 'Issue 2, Maret 2022 (Terbit Daring: 13 Januari 2022)',
-                    'index_type' => 'SCOPUS',
-                    'index_detail' => 'SCOPUS Q2',
-                    'doi_label' => '10.1061/(asce)ww.1943-5460.0000700',
-                    'tahun' => 2022,
-                    'doi_url' => 'https://doi.org/10.1061/(asce)ww.1943-5460.0000700',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 143–149',
-                    'cover' => 'images/jurnal/jem_unsil.jpg',
-                    'cover_alt' => 'Cover Jurnal Ekonomi Manajemen Vol. 4 No. 2 Universitas Siliwangi',
-                    'cover_caption_title' => 'Jurnal Ekonomi Manajemen',
-                    'cover_caption_sub' => 'Universitas Siliwangi (SINTA)',
-                    'cover_caption_meta' => 'ISSN: 2477-2275 · 2685-7057 · Vol. 4, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Analisis Faktor-Faktor Pembentuk Konsumsi Status pada Generasi Millennial',
-                    'authors' => 'Adhitya Rahmat Taufiq, Andina Eka Mandasari, Andhy Romdani',
-                    'journal' => 'Jurnal Ekonomi Manajemen (Universitas Siliwangi)',
-                    'volume' => 'Volume 4',
-                    'issue' => 'Issue 2 (Hlm. 143–149), November 2018 (Terbit Daring: Maret 2019)',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · UNSIL',
-                    'doi_label' => '10.37058/jem.v4i2.704',
-                    'tahun' => 2019,
-                    'doi_url' => 'https://doi.org/10.37058/jem.v4i2.704',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 11–17',
-                    'cover' => 'images/jurnal/jg_unnes.jpg',
-                    'cover_alt' => 'Cover Jurnal Geografi Universitas Negeri Semarang',
-                    'cover_caption_title' => 'Jurnal Geografi',
-                    'cover_caption_sub' => 'Universitas Negeri Semarang (SINTA 3)',
-                    'cover_caption_meta' => 'ISSN: 2549-3078 · 2549-3094 · Vol. 14, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Pohon Aren Sebagai Tanaman Fungsi Konservasi',
-                    'authors' => 'Erni Mulyanie, Andhy Romdani',
-                    'journal' => 'Jurnal Geografi: Media Informasi Pengembangan dan Profesi Kegeografian (UNNES)',
-                    'volume' => 'Volume 14',
-                    'issue' => 'Issue 2 (Hlm. 11–17), April 2018',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA 3',
-                    'doi_label' => '10.15294/jg.v14i2.11514',
-                    'tahun' => 2018,
-                    'doi_url' => 'https://doi.org/10.15294/jg.v14i2.11514',
-                                    ],
-                [
-                    'article_id' => 'Hlm. 18–25',
-                    'cover' => 'images/jurnal/jg_unnes.jpg',
-                    'cover_alt' => 'Cover Jurnal Geografi Universitas Negeri Semarang',
-                    'cover_caption_title' => 'Jurnal Geografi',
-                    'cover_caption_sub' => 'Universitas Negeri Semarang (SINTA 3)',
-                    'cover_caption_meta' => 'ISSN: 2549-3078 · 2549-3094 · Vol. 14, No. 1',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Analisis Efektivitas Pengelolaan Sistem Irigasi di Daerah Irigasi Panunggal Kota Tasikmalaya',
-                    'authors' => 'Andhy Romdani, Triyantini S. Putri, Kusmetia',
-                    'journal' => 'Jurnal Geografi: Media Informasi Pengembangan dan Profesi Kegeografian (UNNES)',
-                    'volume' => 'Volume 14',
-                    'issue' => 'Issue 1 (Hlm. 18–25), Mei 2017',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA 3',
-                    'doi_label' => '10.15294/jg.v14i1.9774',
-                    'tahun' => 2017,
-                    'doi_url' => 'https://doi.org/10.15294/jg.v14i1.9774',
-                                    ],
-                [
-                    'article_id' => 'Vol. 2, No. 2',
-                    'cover' => 'images/jurnal/jssainstek_unsil.jpg',
-                    'cover_alt' => 'Cover Jurnal Siliwangi Seri Sains dan Teknologi Universitas Siliwangi',
-                    'cover_caption_title' => 'Jurnal Siliwangi: Seri Sains dan Teknologi',
-                    'cover_caption_sub' => 'Universitas Siliwangi (SINTA · Open Access)',
-                    'cover_caption_meta' => 'ISSN: 2477-3891 · 2615-4765 · Vol. 2, No. 2',
-                    'lecturer_route' => 'dosen.andhy-romdani',
-                    'eyebrow' => 'Publikasi Jurnal Nasional',
-                    'title' => 'Evapotranspirasi Referensi Dua Daerah di Jawa Barat untuk Analisis Perencanaan Kebutuhan Air Irigasi',
-                    'authors' => 'Herianto, Asep Kurnia Hidayat, Andhy Romdani',
-                    'journal' => 'Jurnal Siliwangi: Seri Sains dan Teknologi (Universitas Siliwangi)',
-                    'volume' => 'Volume 2',
-                    'issue' => 'Issue 2, 2016',
-                    'index_type' => 'SINTA',
-                    'index_detail' => 'SINTA · UNSIL',
-                    'doi_label' => '10.37058/jssainstek.v2i2.102',
-                    'tahun' => 2016,
-                    'doi_url' => 'https://doi.org/10.37058/jssainstek.v2i2.102',
-                                    ],
-            ];
-            @endphp
+            @if($risetList->isNotEmpty())
+                {{-- Info count --}}
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                    <p class="text-xs text-slate-500">
+                        Menampilkan <strong id="risetVisibleCount" class="text-[#0B2A4A]">{{ $risetList->count() }}</strong> dari {{ $risetList->count() }} artikel
+                    </p>
+                </div>
 
-            @php
-                // Urutkan terbaru → terlama berdasarkan tahun
-                usort($risetList, fn($a, $b) => ($b['tahun'] ?? 0) <=> ($a['tahun'] ?? 0));
-            @endphp
+                {{-- Grid --}}
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5" id="risetGrid">
+                    @foreach($risetList as $index => $riset)
+                        <div class="riset-card-wrap" data-index="{{ $index }}">
+                            @include('pages._publikasi-panel', ['item' => $riset, 'nomor' => $index + 1])
+                        </div>
+                    @endforeach
+                </div>
 
-            {{-- Info count --}}
-            <div class="flex items-center justify-between flex-wrap gap-2">
-                <p class="text-xs text-slate-500">
-                    Menampilkan <strong id="risetVisibleCount" class="text-[#0B2A4A">{{ count($risetList) }}</strong> dari {{ count($risetList) }} artikel
-                </p>
-            </div>
-
-            {{-- Grid --}}
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5" id="risetGrid">
-                @foreach($risetList as $index => $riset)
-                    <div class="riset-card-wrap" data-index="{{ $index }}">
-                        @include('pages._publikasi-panel', ['item' => $riset, 'nomor' => $index + 1])
-                    </div>
-                @endforeach
-            </div>
-
-            {{-- Pagination --}}
-            <div id="risetPagination" class="flex items-center justify-center gap-2 pt-4"></div>
+                {{-- Pagination --}}
+                <div id="risetPagination" class="flex items-center justify-center gap-2 pt-4"></div>
+            @else
+                <div class="bg-white rounded-2xl border border-slate-200 p-10 text-center text-slate-500 text-sm">
+                    <i class="fa-solid fa-flask text-2xl text-slate-300 mb-2 block" aria-hidden="true"></i>
+                    Belum ada data penelitian yang ditampilkan.
+                </div>
+            @endif
 
         </div>
     </section>
 
+    @if($risetList->isNotEmpty())
     <script>
         (function () {
             const PER_PAGE = 8;
             const cards    = Array.from(document.querySelectorAll('.riset-card-wrap'));
             const totalEl  = document.getElementById('risetVisibleCount');
             const pagEl    = document.getElementById('risetPagination');
-            let currentPage = 1;
             const totalPages = Math.ceil(cards.length / PER_PAGE);
 
             function render(page) {
-                currentPage = page;
                 const start = (page - 1) * PER_PAGE;
                 const end   = start + PER_PAGE;
 
@@ -561,24 +81,22 @@
                     card.style.display = (i >= start && i < end) ? '' : 'none';
                 });
 
-                // Update count
-                const showing = Math.min(end, cards.length) - start;
-                totalEl.textContent = showing;
-
-                // Render pagination buttons
+                totalEl.textContent = Math.max(0, Math.min(end, cards.length) - start);
                 pagEl.innerHTML = '';
 
-                // Prev
+                if (totalPages <= 1) {
+                    return;
+                }
+
                 const prev = document.createElement('button');
                 prev.textContent = '←';
                 prev.disabled = page === 1;
                 prev.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold border ' +
                     (page === 1 ? 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed'
                                 : 'bg-white text-[#0B2A4A] border-slate-300 hover:bg-slate-50 cursor-pointer');
-                prev.onclick = function () { if (page > 1) render(page - 1); };
+                prev.onclick = function () { if (page > 1) { render(page - 1); window.scrollTo({top: 0, behavior: 'smooth'}); } };
                 pagEl.appendChild(prev);
 
-                // Page numbers
                 for (let p = 1; p <= totalPages; p++) {
                     const btn = document.createElement('button');
                     btn.textContent = p;
@@ -589,13 +107,12 @@
                     pagEl.appendChild(btn);
                 }
 
-                // Next
                 const next = document.createElement('button');
                 next.textContent = '→';
                 next.disabled = page === totalPages;
                 next.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold border ' +
                     (page === totalPages ? 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed'
-                                        : 'bg-white text-[#0B2A4A] border-slate-300 hover:bg-slate-50 cursor-pointer');
+                                         : 'bg-white text-[#0B2A4A] border-slate-300 hover:bg-slate-50 cursor-pointer');
                 next.onclick = function () { if (page < totalPages) { render(page + 1); window.scrollTo({top: 0, behavior: 'smooth'}); } };
                 pagEl.appendChild(next);
             }
@@ -603,4 +120,5 @@
             render(1);
         })();
     </script>
+    @endif
 @endsection

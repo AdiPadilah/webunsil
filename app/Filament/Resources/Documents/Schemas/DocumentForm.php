@@ -35,6 +35,7 @@ class DocumentForm
 
                 FileUpload::make('file_path')
                     ->label('Upload File Dokumen (PDF, Word, Excel)')
+                    ->disk('public')
                     ->directory('documents')
                     ->acceptedFileTypes(['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'])
                     ->preserveFilenames()

@@ -18,6 +18,16 @@ class ArticlesTable
             ->columns([
                 ImageColumn::make('thumbnail')
                     ->label('Foto')
+                    ->disk('public')
+                    ->getStateUsing(function ($record): ?string {
+                        if (blank($record->thumbnail)) {
+                            return null;
+                        }
+
+                        return str_starts_with($record->thumbnail, 'images/')
+                            ? asset($record->thumbnail)
+                            : $record->thumbnail;
+                    })
                     ->square(),
 
                 TextColumn::make('title')

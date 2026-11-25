@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Article;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleSeeder extends Seeder
 {
@@ -45,7 +46,7 @@ class ArticleSeeder extends Seeder
                 'title' => 'Tim Tirta Adhipermana Mahasiswa Sipil UNSIL Raih Juara 1 National Paper Competition',
                 'slug' => 'tim-tirta-adhipermana-juara-1-national-paper-competition-2023',
                 'category' => 'Prestasi',
-                'thumbnail' => 'images/prestasi-juara-1-paper.jpg',
+                'thumbnail' => 'images/unsil-tirta-adhipermana-npc.jpeg',
                 'excerpt' => 'Mahasiswa Teknik Sipil UNSIL berhasil menjuarai kompetisi karya tulis ilmiah tingkat nasional dengan gagasan inovasi manajemen sumber daya air ramah lingkungan.',
                 'content' => '<p>Prestasi membanggakan kembali diraih mahasiswa Teknik Sipil Universitas Siliwangi. Tim Tirta Adhipermana sukses menyabet Juara 1 dalam National Paper Competition melalui riset inovatif konservasi air.</p>',
                 'published_at' => Carbon::parse('2026-09-15 10:00:00'),
@@ -55,7 +56,7 @@ class ArticleSeeder extends Seeder
                 'title' => 'Kuliah Tamu Aplikasi Building Information Modelling (BIM) dalam Konstruksi Modern',
                 'slug' => 'kuliah-tamu-bim-infrastruktur-modern',
                 'category' => 'Agenda',
-                'thumbnail' => 'images/kuliah-tamu-bim.jpg',
+                'thumbnail' => 'images/lab-civil.jpg',
                 'excerpt' => 'Mempersiapkan lulusan yang adaptif terhadap digitalisasi konstruksi, menghadirkan instruktur bersertifikasi Autodesk BIM Management.',
                 'content' => '<p>Perkembangan industri konstruksi 4.0 menuntut penguasaan Building Information Modelling (BIM). Teknik Sipil UNSIL menyelenggarakan kuliah tamu intensif mengenai pemodelan 3D hingga 5D konstruksi.</p>',
                 'published_at' => Carbon::parse('2026-08-10 13:00:00'),
@@ -65,7 +66,7 @@ class ArticleSeeder extends Seeder
                 'title' => 'Seminar Internasional Kolaborasi Riset Rekayasa Sipil Indonesia - Taiwan 2026',
                 'slug' => 'seminar-internasional-indonesia-taiwan-2026',
                 'category' => 'Berita',
-                'thumbnail' => 'images/seminar-taiwan.jpg',
+                'thumbnail' => 'images/seminar-taiwan-cover.jpg',
                 'excerpt' => 'Kerjasama riset dan pertukaran akademik antara FT Universitas Siliwangi dengan perguruan tinggi mitra terkemuka di Taiwan bidang mitigasi gempa.',
                 'content' => '<p>Fakultas Teknik UNSIL memperluas jejaring global melalui International Joint Symposium bersama universitas mitra dari Taiwan dalam bidang ketahanan gempa dan material cerdas.</p>',
                 'published_at' => Carbon::parse('2026-07-22 09:00:00'),
@@ -74,6 +75,17 @@ class ArticleSeeder extends Seeder
         ];
 
         foreach ($articles as $data) {
+            $source = public_path($data['thumbnail']);
+            $target = 'articles/' . basename($data['thumbnail']);
+
+            if (is_file($source)) {
+                if (! Storage::disk('public')->exists($target)) {
+                    Storage::disk('public')->put($target, file_get_contents($source));
+                }
+
+                $data['thumbnail'] = $target;
+            }
+
             Article::updateOrCreate(['slug' => $data['slug']], $data);
         }
     }
