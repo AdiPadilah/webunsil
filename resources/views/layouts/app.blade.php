@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -214,18 +214,21 @@
         /* Sembunyikan elemen bawaan Google Translate & Banner */
         .goog-te-banner-frame.skiptranslate,
         .goog-te-banner-frame,
-        iframe.goog-te-banner-frame {
+        iframe.goog-te-banner-frame,
+        .VIpgJd-ZVi9od-ORHb-OEVmcd,
+        iframe.VIpgJd-ZVi9od-ORHb-OEVmcd,
+        body > .skiptranslate,
+        html > .skiptranslate {
             display: none !important;
             visibility: hidden !important;
             height: 0 !important;
             opacity: 0 !important;
         }
-        body {
+        html, body {
             top: 0px !important;
             position: static !important;
-        }
-        body > .skiptranslate {
-            display: none !important;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
         }
         #goog-gt-tt, 
         .goog-te-balloon-frame, 

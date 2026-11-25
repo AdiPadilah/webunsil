@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Prestasi Mahasiswa | Program Studi S-1 Teknik Sipil FT Universitas Siliwangi')
 @section('meta_description', 'Prestasi mahasiswa Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi: juara kompetisi nasional, publikasi jurnal Scopus, dan kegiatan ilmiah.')

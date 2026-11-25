@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Seminar Proposal | Program Studi S-1 Teknik Sipil FT UNSIL')
 @section('meta_description', 'Informasi, jadwal, dan persyaratan pendaftaran Seminar Proposal Skripsi Program Studi Teknik Sipil FT Universitas Siliwangi.')

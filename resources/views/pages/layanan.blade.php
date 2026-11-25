@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Layanan Terpadu | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Layanan terpadu administrasi akademik, surat pengantar survei, bebas lab, dan legalisir Program Studi Teknik Sipil FT UNSIL.')

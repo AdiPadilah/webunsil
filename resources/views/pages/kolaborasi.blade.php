@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Kolaborasi & Kemitraan | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Kemitraan strategis Program Studi S-1 Teknik Sipil FT UNSIL dengan BUMN Karya, Kementerian PUPR, asosiasi profesi PII, dan universitas internasional.')

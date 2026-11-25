@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Mahasiswa dan Alumni | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Himpunan Mahasiswa Sipil (HMS), Ikatan Alumni, dan Galeri Dokumentasi @sipilunsil Fakultas Teknik Universitas Siliwangi.')

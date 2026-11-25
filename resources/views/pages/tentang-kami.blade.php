@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Tentang Kami | Program Studi S-1 Teknik Sipil FT Universitas Siliwangi')
 @section('meta_description', 'Profil lengkap, sambutan pimpinan, struktur organisasi, visi misi, sejarah, serta akreditasi Program Studi S-1 Teknik Sipil FT Universitas Siliwangi.')

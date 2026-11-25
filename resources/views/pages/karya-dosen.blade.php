@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Karya Dosen | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Publikasi jurnal ilmiah terindeks SINTA Akselerasi dan buku ajar dosen Program Studi Teknik Sipil FT UNSIL.')

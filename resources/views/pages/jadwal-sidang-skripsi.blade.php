@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Jadwal Sidang Skripsi | Program Studi S-1 Teknik Sipil FT UNSIL')
 @section('meta_description', 'Jadwal pelaksanaan Sidang Skripsi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')

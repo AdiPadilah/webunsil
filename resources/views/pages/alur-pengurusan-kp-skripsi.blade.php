@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Alur Pengurusan Kerja Praktik & Skripsi | Program Studi S-1 Teknik Sipil FT UNSIL')
 @section('meta_description', 'Panduan lengkap alur pengurusan Kerja Praktik dan Skripsi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.')

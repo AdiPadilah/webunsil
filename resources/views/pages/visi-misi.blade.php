@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Visi & Misi | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Visi 2030 dan Misi Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi (UNSIL) Tasikmalaya.')

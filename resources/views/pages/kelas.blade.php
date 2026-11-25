@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Ruang Kelas & Perkuliahan | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Fasilitas ruang kelas representatif ber-AC, proyektor multimedia, dan smart classroom di Gedung Fakultas Teknik UNSIL Kampus 2 Mugarsari.')

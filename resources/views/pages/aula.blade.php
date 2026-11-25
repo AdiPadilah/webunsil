@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'Aula Pertemuan Fakultas Teknik | Program Studi S-1 Teknik Sipil Universitas Siliwangi')
 @section('meta_description', 'Fasilitas Aula Fakultas Teknik Universitas Siliwangi untuk seminar nasional keteknikan, kuliah umum praktisi, yudisium kelulusan, dan kegiatan kemahasiswaan.')
