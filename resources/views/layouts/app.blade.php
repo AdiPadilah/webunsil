@@ -210,6 +210,11 @@
         .img-fallback { background: linear-gradient(135deg, #0B2A4A 0%, #1e4d8c 100%); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .scrollbar-thin::-webkit-scrollbar { width: 4px; }
+        .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+        .scrollbar-thumb-cyan-200::-webkit-scrollbar-thumb { background-color: #a5f3fc; border-radius: 9999px; }
+        .scrollbar-thumb-amber-200::-webkit-scrollbar-thumb { background-color: #fde68a; border-radius: 9999px; }
+        .scrollbar-thin { scrollbar-width: thin; }
 
         /* Sembunyikan elemen bawaan Google Translate & Banner */
         .goog-te-banner-frame.skiptranslate,
