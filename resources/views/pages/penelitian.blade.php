@@ -81,6 +81,30 @@
                         'Temuan ini menegaskan sifat multifaktorial risiko ISPA yang dipengaruhi oleh efek langsung maupun tidak langsung variabilitas iklim. Studi ini merekomendasikan strategi mitigasi terpadu yang menggabungkan rekayasa teknik, kesiapan layanan kesehatan, dan tindakan pemerintah daerah untuk menghadapi risiko kesehatan berbasis iklim di masa mendatang.',
                     ],
                 ],
+                [
+                    'article_id' => 'Vol. 14, No. 1',
+                    'cover' => 'images/jurnal/balanga_jurnal.jpg',
+                    'cover_alt' => 'Cover BALANGA Jurnal Pendidikan Teknologi dan Kejuruan (Universitas Palangka Raya)',
+                    'cover_caption_title' => 'BALANGA: Jurnal Pendidikan Teknologi dan Kejuruan',
+                    'cover_caption_sub' => 'Universitas Palangka Raya (SINTA · Diamond OA)',
+                    'cover_caption_meta' => 'ISSN: 2338-462X · 2723-1216 · Vol. 14, No. 1',
+                    'lecturer_route' => 'dosen.andhy-romdani',
+                    'eyebrow' => 'Publikasi Jurnal Nasional',
+                    'title' => 'Soil Improvement Analysis for Container Yard Using Prefabricated Vertical Drains (PVD) and Preloading: A Case Study of Reclaimed Land in the Madura Strait',
+                    'authors' => 'Muhammad Teja Pribadi Pamungkas, Andhy Romdani, Zakwan Gusnadi, Hery Setiyaji, Daniel Bara Padang Allo',
+                    'journal' => 'BALANGA: Jurnal Pendidikan Teknologi dan Kejuruan (Universitas Palangka Raya)',
+                    'volume' => 'Volume 14',
+                    'issue' => 'Issue 1 · 2026',
+                    'index_type' => 'SINTA',
+                    'index_detail' => 'SINTA · Diamond OA',
+                    'doi_label' => 'e-journal.upr.ac.id/index.php/JBL/article/view/26433',
+                    'doi_url' => 'https://e-journal.upr.ac.id/index.php/JBL/article/view/26433',
+                    'paragraphs' => [
+                        'Studi ini bertujuan menganalisis efektivitas metode Prefabricated Vertical Drain (PVD) dan preloading dalam mempercepat proses konsolidasi serta meningkatkan stabilitas tanah dasar pada proyek reklamasi lahan untuk container yard di Selat Madura.',
+                        'Analisis dilakukan menggunakan perangkat lunak metode elemen hingga dua dimensi (FEM 2D). Kondisi tanah didominasi oleh lempung dengan konsistensi yang bervariasi berdasarkan kedalaman uji SPT. Hasil simulasi menunjukkan bahwa tanpa perbaikan, penurunan 90% mencapai 1,34 m dengan waktu konsolidasi sekitar ±39 tahun dan lereng tidak stabil. Setelah perbaikan, penurunan utama sebesar 1,64 m terjadi dalam masa tunggu 420 hari.',
+                        'Penurunan sisa selama periode operasional sebesar 27,84 cm masih di bawah batas desain 30 cm, dengan nilai FK meningkat menjadi 1,617 (FK > 1,3) pada periode konstruksi dan 1,617 (FK > 1,5) pada periode operasional. Kombinasi PVD dan preloading terbukti efektif mempercepat konsolidasi, mengendalikan penurunan, dan meningkatkan stabilitas tanah lunak pada proyek reklamasi terminal peti kemas.',
+                    ],
+                ],
             ];
             @endphp
 
