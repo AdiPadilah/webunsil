@@ -51,7 +51,7 @@
                         <div class="relative w-48 sm:w-56 mx-auto aspect-square rounded-2xl overflow-hidden shadow-md border-2 border-slate-100 bg-[#CDCFDA] mb-5">
                             <img src="{{ asset('images/dosen/sri-wanto.jpg') }}?v={{ @filemtime(public_path('images/dosen/sri-wanto.jpg')) ?: 2 }}"
                                  alt="Sri Wanto, S.T., M.T."
-                                 class="w-full h-full object-cover object-center">
+                                 class="w-full h-full object-cover object-top">
                         </div>
 
                         <h2 class="text-lg font-bold text-[#0B2A4A] font-heading leading-snug">

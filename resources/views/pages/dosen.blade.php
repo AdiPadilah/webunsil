@@ -60,7 +60,7 @@
                             <div class="aspect-square overflow-hidden bg-slate-100 relative">
                                 <img src="{{ $fotoUrl }}"
                                      alt="{{ $dosen->nama }}"
-                                     class="w-full h-full object-cover object-center pointer-events-none group-hover:scale-105 transition-transform duration-300"
+                                     class="w-full h-full object-cover object-top pointer-events-none group-hover:scale-105 transition-transform duration-300"
                                      loading="lazy">
                                 <span class="absolute top-2 right-2 bg-[#0B2A4A]/80 backdrop-blur-sm text-amber-400 text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1 shadow-sm opacity-90 group-hover:opacity-100">
                                     <i class="fa-solid fa-address-card text-[9px]"></i> Profil
@@ -86,7 +86,7 @@
                             <div class="aspect-square overflow-hidden bg-slate-100">
                                 <img src="{{ $fotoUrl }}"
                                      alt="{{ $dosen->nama }}"
-                                     class="w-full h-full object-cover object-center pointer-events-none"
+                                     class="w-full h-full object-cover object-top pointer-events-none"
                                      loading="lazy">
                             </div>
                             <div class="p-4 flex-1 flex flex-col items-center text-center">
