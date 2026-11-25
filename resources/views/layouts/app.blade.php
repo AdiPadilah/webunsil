@@ -227,7 +227,8 @@
         }
         body {
             margin-top: 0 !important;
-        }        body > .skiptranslate {
+        }
+        body > .skiptranslate {
             display: none !important;
         }
         #goog-gt-tt, 
@@ -1072,23 +1073,15 @@
                 document.documentElement.style.setProperty('top', '0', 'important');
                 document.body.style.setProperty('margin-top', '0', 'important');
                 document.body.style.setProperty('top', '0', 'important');
-                document.body.style.removeProperty('top');
-                document.documentElement.style.removeProperty('top');
                 // Hide banner frame
-                const banners = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, .skiptranslate');
+                const banners = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame');
                 banners.forEach(el => {
                     el.style.setProperty('display', 'none', 'important');
                     el.style.setProperty('height', '0', 'important');
-                    el.style.setProperty('visibility', 'hidden', 'important');
                 });
             }
             fixGoogleTranslateTop();
-            setInterval(fixGoogleTranslateTop, 300);
-
-            // MutationObserver to catch body style changes by Google Translate
-            const bodyObserver = new MutationObserver(fixGoogleTranslateTop);
-            bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['style', 'class'] });
-            bodyObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['style', 'class'] });
+            setInterval(fixGoogleTranslateTop, 500);
         };
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
