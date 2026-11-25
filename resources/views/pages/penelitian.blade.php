@@ -90,7 +90,7 @@
                                 </span>
                                 <div class="flex items-center gap-2">
                                     <span class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-[#0B2A4A] text-white text-[11px] font-bold">
-                                        No. {{ $riset['no'] }}
+                                        Penelitian #{{ $riset['no'] }}
                                     </span>
                                     <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold border {{ $riset['index_type'] === 'SCOPUS' ? 'bg-cyan-50 text-cyan-800 border-cyan-200' : 'bg-emerald-50 text-emerald-800 border-emerald-200' }}">
                                         <i class="fa-solid fa-globe text-[10px]" aria-hidden="true"></i>
@@ -113,8 +113,8 @@
                             {{-- Rincian Bibliografis --}}
                             <dl class="mt-5 bg-slate-50 rounded-xl border border-slate-200/80 p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-xs">
                                 <div>
-                                    <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Nomor</dt>
-                                    <dd class="font-bold text-slate-900 mt-0.5">#{{ $riset['no'] }}</dd>
+                                    <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Nomor Penelitian</dt>
+                                    <dd class="font-bold text-slate-900 mt-0.5">Penelitian ke-{{ $riset['no'] }}</dd>
                                 </div>
                                 <div>
                                     <dt class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Indeksasi</dt>
