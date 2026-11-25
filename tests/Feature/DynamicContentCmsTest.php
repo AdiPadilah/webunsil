@@ -8,8 +8,6 @@ use App\Filament\Resources\Bukus\Pages\CreateBuku;
 use App\Filament\Resources\Bukus\Pages\ListBukus;
 use App\Filament\Resources\DefenseSchedules\Pages\CreateDefenseSchedule;
 use App\Filament\Resources\DefenseSchedules\Pages\ListDefenseSchedules;
-use App\Filament\Resources\Documents\Pages\CreateDocument;
-use App\Filament\Resources\Documents\Pages\ListDocuments;
 use App\Filament\Resources\Dosens\Pages\CreateDosen;
 use App\Filament\Resources\Dosens\Pages\ListDosens;
 use App\Filament\Resources\Penelitians\Pages\CreatePenelitian;
@@ -143,8 +141,6 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(CreateArticle::class)->assertOk();
         Livewire::test(ListDefenseSchedules::class)->assertOk();
         Livewire::test(CreateDefenseSchedule::class)->assertOk();
-        Livewire::test(ListDocuments::class)->assertOk();
-        Livewire::test(CreateDocument::class)->assertOk();
         Livewire::test(ListPenelitians::class)->assertOk();
         Livewire::test(CreatePenelitian::class)->assertOk();
         Livewire::test(EditPenelitian::class, ['record' => $active->getKey()])->assertOk();
