@@ -220,13 +220,9 @@
             height: 0 !important;
             opacity: 0 !important;
         }
-        html, body {
+        body {
             top: 0px !important;
             position: static !important;
-            margin-top: 0 !important;
-        }
-        body {
-            margin-top: 0 !important;
         }
         body > .skiptranslate {
             display: none !important;
