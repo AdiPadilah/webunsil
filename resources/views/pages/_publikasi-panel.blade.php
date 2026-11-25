@@ -2,9 +2,9 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 
         {{-- Cover Resmi Jurnal / Prosiding (Panel Kiri) --}}
-        <div class="lg:col-span-4 flex justify-center">
+        <div class="lg:col-span-3 flex justify-start">
             <a href="{{ $item['doi_url'] }}" target="_blank" rel="noopener noreferrer"
-               class="block rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[260px] sm:max-w-[280px] hover:shadow-md transition-shadow group">
+               class="block rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white w-full max-w-[140px] hover:shadow-md transition-shadow group">
                 <div class="aspect-[3/4] overflow-hidden bg-slate-100">
                     @if(!empty($item['cover']))
                         <img src="{{ asset($item['cover']) }}"
@@ -28,7 +28,7 @@
         </div>
 
         {{-- Penjelasan & Metadata (Panel Kanan) --}}
-        <div class="lg:col-span-8 flex flex-col justify-between space-y-5">
+        <div class="lg:col-span-9 flex flex-col justify-between space-y-5">
             <div>
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
                     <span class="text-[11px] font-semibold text-[#0070BA] uppercase tracking-wider">
