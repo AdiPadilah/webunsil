@@ -94,12 +94,9 @@ class PengaturanWebsite extends Page
                     TextInput::make('kaprodi_jabatan')
                         ->label('Jabatan')
                         ->required(),
-                    TextInput::make('kaprodi_kutipan')
-                        ->label('Kutipan Singkat Sambutan')
-                        ->columnSpanFull(),
                     Textarea::make('kaprodi_sambutan')
                         ->label('Isi Teks Sambutan')
-                        ->rows(6)
+                        ->rows(7)
                         ->helperText('Pisahkan antar-paragraf dengan satu baris kosong.')
                         ->columnSpanFull(),
                 ])

@@ -272,37 +272,37 @@
 
                     
                     <div class="relative dropdown">
-                        <a href="{{ route('tentang-kami') }}" id="nav-tentang" class="nav-link px-2.5 py-2 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('tentang-kami') }}" id="nav-tentang" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'active-nav text-amber-400' : '' }}">
                             <span>Tentang Kami</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
-                        <div class="dropdown-menu hidden absolute top-full left-0 w-52 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
-                            <a href="{{ route('visi-misi') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('visi-misi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Visi &amp; Misi</a>
-                            <a href="{{ route('sejarah') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sejarah') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sejarah Program Studi</a>
-                            <a href="{{ route('dosen') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('dosen') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Dosen</a>
+                        <div class="dropdown-menu hidden absolute top-full left-0 w-48 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
+                            <a href="{{ route('visi-misi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('visi-misi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Visi &amp; Misi</a>
+                            <a href="{{ route('sejarah') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sejarah') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sejarah Program Studi</a>
+                            <a href="{{ route('dosen') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('dosen') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Dosen</a>
                         </div>
                     </div>
 
                     
                     <div class="relative dropdown">
-                        <a href="{{ route('akademik') }}" id="nav-akademik" class="nav-link px-2.5 py-2 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'alur-pengurusan-kp-skripsi', 'alur-pengurusan-kerja-praktik', 'jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('akademik') }}" id="nav-akademik" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'alur-pengurusan-kp-skripsi', 'alur-pengurusan-kerja-praktik', 'jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'active-nav text-amber-400' : '' }}">
                             <span>Akademik</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
-                        <div class="dropdown-menu hidden absolute top-full left-0 w-64 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
-                            <a href="{{ route('kurikulum') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kurikulum') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kurikulum</a>
-                            <a href="{{ route('layanan') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('layanan') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Layanan Terpadu</a>
+                        <div class="dropdown-menu hidden absolute top-full left-0 w-60 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
+                            <a href="{{ route('kurikulum') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kurikulum') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kurikulum</a>
+                            <a href="{{ route('layanan') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('layanan') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Layanan Terpadu</a>
                             <div class="border-t border-slate-100 my-1"></div>
-                            <a href="{{ route('alur-pengurusan-kerja-praktik') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('alur-pengurusan-kerja-praktik') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Alur Pengurusan Kerja Praktik</a>
+                            <a href="{{ route('alur-pengurusan-kerja-praktik') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('alur-pengurusan-kerja-praktik') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Alur Pengurusan Kerja Praktik</a>
                             <div class="relative sub-dropdown">
-                                <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link flex items-center justify-between px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link flex items-center justify-between px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
                                     <span>Jadwal Sidang Skripsi</span>
                                     <i class="fa-solid fa-chevron-right text-[9px] text-slate-400 ml-2"></i>
                                 </a>
                                 <div class="sub-dropdown-menu hidden absolute left-full -top-2 w-48 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
-                                    <a href="{{ route('seminar-proposal') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-proposal') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Proposal</a>
-                                    <a href="{{ route('seminar-hasil') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-hasil') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Hasil</a>
-                                    <a href="{{ route('sidang-akhir') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sidang Akhir</a>
+                                    <a href="{{ route('seminar-proposal') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-proposal') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Proposal</a>
+                                    <a href="{{ route('seminar-hasil') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-hasil') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Hasil</a>
+                                    <a href="{{ route('sidang-akhir') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sidang Akhir</a>
                                 </div>
                             </div>
                         </div>
@@ -310,50 +310,57 @@
 
                     {{-- Fasilitas (Dropdown dengan turunan Laboratorium, Kelas, Aula, Kantin, Auditorium, Ruang Rapat) --}}
                     <div class="relative dropdown">
-                        <a href="{{ route('fasilitas') }}" id="nav-fasilitas" class="nav-link px-2.5 py-2 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('fasilitas') }}" id="nav-fasilitas" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'active-nav text-amber-400' : '' }}">
                             <span>Fasilitas</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
                         <div class="dropdown-menu hidden absolute top-full left-0 w-48 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
-                            <a href="{{ route('laboratorium') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('laboratorium') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Laboratorium</a>
-                            <a href="{{ route('kelas') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kelas') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kelas</a>
-                            <a href="{{ route('aula') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('aula') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Aula</a>
-                            <a href="{{ route('kantin') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kantin') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kantin</a>
-                            <a href="{{ route('auditorium') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('auditorium') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Auditorium</a>
-                            <a href="{{ route('ruang-rapat') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('ruang-rapat') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Ruang Rapat</a>
+                            <a href="{{ route('laboratorium') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('laboratorium') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Laboratorium</a>
+                            <a href="{{ route('kelas') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kelas') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kelas</a>
+                            <a href="{{ route('aula') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('aula') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Aula</a>
+                            <a href="{{ route('kantin') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kantin') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kantin</a>
+                            <a href="{{ route('auditorium') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('auditorium') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Auditorium</a>
+                            <a href="{{ route('ruang-rapat') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('ruang-rapat') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Ruang Rapat</a>
                         </div>
                     </div>
                     
                     {{-- Riset dan Kolaborasi (Dropdown: Penelitian, Kolaborasi, Pengabdian) --}}
                     <div class="relative dropdown">
-                        <a href="{{ route('riset') }}" id="nav-riset" class="nav-link px-2.5 py-2 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('riset') }}" id="nav-riset" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'active-nav text-amber-400' : '' }}">
                             <span>Riset dan Kolaborasi</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
                         <div class="dropdown-menu hidden absolute top-full left-0 w-48 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
-                            <a href="{{ route('penelitian') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('penelitian') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+
+                            {{-- Turunan 1: Penelitian --}}
+                            <a href="{{ route('penelitian') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('penelitian') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
                                 Penelitian
                             </a>
-                            <a href="{{ route('kolaborasi') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kolaborasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+
+                            {{-- Turunan 2: Kolaborasi --}}
+                            <a href="{{ route('kolaborasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kolaborasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
                                 Kolaborasi
                             </a>
-                            <a href="{{ route('pengabdian') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('pengabdian') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+
+                            {{-- Turunan 3: Pengabdian --}}
+                            <a href="{{ route('pengabdian') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('pengabdian') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
                                 Pengabdian
                             </a>
+
                         </div>
                     </div>
 
                     {{-- Karya Dosen (Dropdown: Buku, Publikasi) --}}
                     <div class="relative dropdown">
-                        <a href="{{ route('karya-dosen') }}" id="nav-karya-dosen" class="nav-link px-2.5 py-2 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('karya-dosen', 'buku', 'publikasi') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('karya-dosen') }}" id="nav-karya-dosen" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('karya-dosen', 'buku', 'publikasi') ? 'active-nav text-amber-400' : '' }}">
                             <span>Karya Dosen</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
                         <div class="dropdown-menu hidden absolute top-full left-0 w-44 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
-                            <a href="{{ route('buku') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('buku') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                            <a href="{{ route('buku') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('buku') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
                                 Buku
                             </a>
-                            <a href="{{ route('publikasi') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('publikasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                            <a href="{{ route('publikasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('publikasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
                                 Publikasi
                             </a>
                         </div>
@@ -361,24 +368,24 @@
                     
                     {{-- Mahasiswa dan Alumni (Dropdown dengan turunan Prestasi Mahasiswa, HMS, Ikatan Alumni, Tracer Study) --}}
                     <div class="relative dropdown">
-                        <a href="{{ route('mahasiswa-alumni') }}" id="nav-mahasiswa-alumni" class="nav-link px-2.5 py-2 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('mahasiswa-alumni', 'prestasi-mahasiswa') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('mahasiswa-alumni') }}" id="nav-mahasiswa-alumni" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('mahasiswa-alumni', 'prestasi-mahasiswa') ? 'active-nav text-amber-400' : '' }}">
                             <span>Mahasiswa dan Alumni</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
                         <div class="dropdown-menu hidden absolute top-full right-0 w-60 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
-                            <a href="{{ route('prestasi-mahasiswa') }}" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('prestasi-mahasiswa') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Prestasi Mahasiswa</a>
-                            <a href="{{ route('mahasiswa-alumni') }}#hms" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap">Himpunan Mahasiswa (HMS)</a>
-                            <a href="{{ route('mahasiswa-alumni') }}#alumni" class="nav-link block px-4 py-2.5 text-[13px] font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap">Ikatan Alumni</a>
+                            <a href="{{ route('prestasi-mahasiswa') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('prestasi-mahasiswa') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Prestasi Mahasiswa</a>
+                            <a href="{{ route('mahasiswa-alumni') }}#hms" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap">Himpunan Mahasiswa (HMS)</a>
+                            <a href="{{ route('mahasiswa-alumni') }}#alumni" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap">Ikatan Alumni</a>
                         </div>
                     </div>
                 </nav>
 
                 
                 <div class="hidden lg:flex items-center space-x-3 text-xs text-slate-300">
-                    <button type="button" onclick="openModal('modal-search-global')" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-amber-400 flex items-center justify-center transition shadow-sm" title="Cari halaman & informasi (Ctrl+K)" aria-label="Cari halaman dan informasi">
-                        <i class="fa-solid fa-magnifying-glass text-xs" aria-hidden="true"></i>
+                    <button type="button" onclick="openModal('modal-search-global')" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-amber-400 flex items-center justify-center transition shadow-sm" title="Cari halaman & informasi">
+                        <i class="fa-solid fa-magnifying-glass text-xs"></i>
                     </button>
-                    <div class="flex items-center bg-slate-800 px-2.5 py-1.5 rounded-full text-[11px] font-bold border border-slate-700/50">
+                    <div class="flex items-center bg-slate-800 px-2 py-1 rounded-full text-[11px] font-bold border border-slate-700/50">
                         <button type="button" onclick="switchLanguage('ID')" id="lang-btn-id" class="text-amber-400 px-1 font-extrabold cursor-pointer transition">ID</button>
                         <span class="text-slate-600">|</span>
                         <button type="button" onclick="switchLanguage('EN')" id="lang-btn-en" class="text-slate-400 px-1 hover:text-amber-300 cursor-pointer transition">EN</button>
@@ -386,103 +393,51 @@
                 </div>
 
                 
-                <div class="flex lg:hidden items-center gap-2">
-                    <button type="button" onclick="openModal('modal-search-global')" class="w-9 h-9 rounded-full bg-slate-800/80 text-slate-200 hover:text-amber-400 flex items-center justify-center transition" aria-label="Cari halaman dan informasi">
-                        <i class="fa-solid fa-magnifying-glass text-sm" aria-hidden="true"></i>
-                    </button>
-                    <button id="mobile-menu-btn" type="button" class="text-white hover:text-amber-400 p-2 rounded-lg focus:outline-none" aria-label="Buka menu navigasi">
-                        <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i>
+                <div class="flex lg:hidden items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-amber-400 p-2 rounded-lg focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
         
-        <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-4 sm:px-6 pt-3 pb-6 space-y-1.5 text-sm text-slate-200 max-h-[calc(100vh-5rem)] overflow-y-auto">
-            <details class="group rounded-lg bg-slate-800/40 border border-slate-800" {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'open' : '' }}>
-                <summary class="flex items-center justify-between px-3 py-2.5 cursor-pointer font-semibold {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'text-amber-400' : 'text-white' }}">
-                    <span>Tentang Kami</span>
-                    <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform group-open:rotate-180"></i>
-                </summary>
-                <div class="px-3 pb-2.5 space-y-1 border-t border-slate-800/80 pt-1.5 text-xs">
-                    <a href="{{ route('tentang-kami') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('tentang-kami') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Profil Prodi</a>
-                    <a href="{{ route('visi-misi') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('visi-misi') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Visi &amp; Misi</a>
-                    <a href="{{ route('sejarah') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('sejarah') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Sejarah Program Studi</a>
-                    <a href="{{ route('dosen') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('dosen') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Dosen</a>
-                </div>
-            </details>
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-6 pt-3 pb-6 space-y-2 text-sm text-slate-200">
+            <a href="{{ route('tentang-kami') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'text-amber-400 font-bold' : '' }}">Tentang Kami</a>
+            <a href="{{ route('visi-misi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('visi-misi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Visi &amp; Misi</a>
+            <a href="{{ route('sejarah') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sejarah') ? 'text-amber-400 font-bold' : '' }}">&mdash; Sejarah Program Studi</a>
+            <a href="{{ route('dosen') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('dosen') ? 'text-amber-400 font-bold' : '' }}">&mdash; Dosen</a>
 
-            <details class="group rounded-lg bg-slate-800/40 border border-slate-800" {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'alur-pengurusan-kp-skripsi', 'alur-pengurusan-kerja-praktik', 'jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'open' : '' }}>
-                <summary class="flex items-center justify-between px-3 py-2.5 cursor-pointer font-semibold {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'alur-pengurusan-kp-skripsi', 'alur-pengurusan-kerja-praktik', 'jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'text-amber-400' : 'text-white' }}">
-                    <span>Akademik</span>
-                    <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform group-open:rotate-180"></i>
-                </summary>
-                <div class="px-3 pb-2.5 space-y-1 border-t border-slate-800/80 pt-1.5 text-xs">
-                    <a href="{{ route('akademik') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('akademik') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Pusat Akademik</a>
-                    <a href="{{ route('kurikulum') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('kurikulum') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Kurikulum</a>
-                    <a href="{{ route('layanan') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('layanan') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Layanan Terpadu</a>
-                    <a href="{{ route('alur-pengurusan-kerja-praktik') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('alur-pengurusan-kerja-praktik') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Alur Pengurusan Kerja Praktik</a>
-                    <a href="{{ route('jadwal-sidang-skripsi') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('jadwal-sidang-skripsi') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Jadwal Sidang Skripsi</a>
-                    <a href="{{ route('seminar-proposal') }}" class="block py-1.5 px-4 rounded hover:bg-slate-800 {{ request()->routeIs('seminar-proposal') ? 'text-amber-400 font-bold' : 'text-slate-400' }}">&bull; Seminar Proposal</a>
-                    <a href="{{ route('seminar-hasil') }}" class="block py-1.5 px-4 rounded hover:bg-slate-800 {{ request()->routeIs('seminar-hasil') ? 'text-amber-400 font-bold' : 'text-slate-400' }}">&bull; Seminar Hasil</a>
-                    <a href="{{ route('sidang-akhir') }}" class="block py-1.5 px-4 rounded hover:bg-slate-800 {{ request()->routeIs('sidang-akhir') ? 'text-amber-400 font-bold' : 'text-slate-400' }}">&bull; Sidang Akhir</a>
-                </div>
-            </details>
+            <a href="{{ route('akademik') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'alur-pengurusan-kp-skripsi', 'alur-pengurusan-kerja-praktik', 'jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'text-amber-400 font-bold' : '' }}">Akademik</a>
+            <a href="{{ route('kurikulum') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kurikulum') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kurikulum</a>
+            <a href="{{ route('layanan') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('layanan') ? 'text-amber-400 font-bold' : '' }}">&mdash; Layanan Terpadu</a>
+            <a href="{{ route('alur-pengurusan-kerja-praktik') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('alur-pengurusan-kerja-praktik') ? 'text-amber-400 font-bold' : '' }}">&mdash; Alur Pengurusan Kerja Praktik</a>
+            <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('jadwal-sidang-skripsi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Jadwal Sidang Skripsi</a>
+            <a href="{{ route('seminar-proposal') }}" class="nav-link block py-1.5 pl-8 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-proposal') ? 'text-amber-400 font-bold' : '' }}">&bull; Seminar Proposal</a>
+            <a href="{{ route('seminar-hasil') }}" class="nav-link block py-1.5 pl-8 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-hasil') ? 'text-amber-400 font-bold' : '' }}">&bull; Seminar Hasil</a>
+            <a href="{{ route('sidang-akhir') }}" class="nav-link block py-1.5 pl-8 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sidang-akhir') ? 'text-amber-400 font-bold' : '' }}">&bull; Sidang Akhir</a>
 
-            <details class="group rounded-lg bg-slate-800/40 border border-slate-800" {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'open' : '' }}>
-                <summary class="flex items-center justify-between px-3 py-2.5 cursor-pointer font-semibold {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'text-amber-400' : 'text-white' }}">
-                    <span>Fasilitas</span>
-                    <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform group-open:rotate-180"></i>
-                </summary>
-                <div class="px-3 pb-2.5 space-y-1 border-t border-slate-800/80 pt-1.5 text-xs">
-                    <a href="{{ route('fasilitas') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('fasilitas') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Semua Fasilitas</a>
-                    <a href="{{ route('laboratorium') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('laboratorium') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Laboratorium</a>
-                    <a href="{{ route('kelas') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('kelas') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Kelas</a>
-                    <a href="{{ route('aula') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('aula') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Aula</a>
-                    <a href="{{ route('kantin') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('kantin') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Kantin</a>
-                    <a href="{{ route('auditorium') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('auditorium') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Auditorium</a>
-                    <a href="{{ route('ruang-rapat') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('ruang-rapat') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Ruang Rapat</a>
-                </div>
-            </details>
+            <a href="{{ route('fasilitas') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'text-amber-400 font-bold' : '' }}">Fasilitas</a>
+            <a href="{{ route('laboratorium') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('laboratorium') ? 'text-amber-400 font-bold' : '' }}">&mdash; Laboratorium</a>
+            <a href="{{ route('kelas') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kelas') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kelas</a>
+            <a href="{{ route('aula') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('aula') ? 'text-amber-400 font-bold' : '' }}">&mdash; Aula</a>
+            <a href="{{ route('kantin') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kantin') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kantin</a>
+            <a href="{{ route('auditorium') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('auditorium') ? 'text-amber-400 font-bold' : '' }}">&mdash; Auditorium</a>
+            <a href="{{ route('ruang-rapat') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('ruang-rapat') ? 'text-amber-400 font-bold' : '' }}">&mdash; Ruang Rapat</a>
+            <a href="{{ route('riset') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'text-amber-400 font-bold' : '' }}">Riset dan Kolaborasi</a>
+            <a href="{{ route('penelitian') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('penelitian') ? 'text-amber-400 font-bold' : '' }}">&mdash; Penelitian</a>
+            <a href="{{ route('kolaborasi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kolaborasi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kolaborasi</a>
+            <a href="{{ route('pengabdian') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('pengabdian') ? 'text-amber-400 font-bold' : '' }}">&mdash; Pengabdian</a>
+            <a href="{{ route('karya-dosen') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('karya-dosen', 'buku', 'publikasi') ? 'text-amber-400 font-bold' : '' }}">Karya Dosen</a>
+            <a href="{{ route('buku') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('buku') ? 'text-amber-400 font-bold' : '' }}">&mdash; Buku</a>
+            <a href="{{ route('publikasi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('publikasi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Publikasi</a>
+            <a href="{{ route('mahasiswa-alumni') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('mahasiswa-alumni', 'prestasi-mahasiswa') ? 'text-amber-400 font-bold' : '' }}">Mahasiswa dan Alumni</a>
+            <a href="{{ route('prestasi-mahasiswa') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('prestasi-mahasiswa') ? 'text-amber-400 font-bold' : '' }}">&mdash; Prestasi Mahasiswa</a>
+            <a href="{{ route('mahasiswa-alumni') }}#hms" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs">&mdash; Himpunan Mahasiswa (HMS)</a>
+            <a href="{{ route('mahasiswa-alumni') }}#alumni" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs">&mdash; Ikatan Alumni</a>
 
-            <details class="group rounded-lg bg-slate-800/40 border border-slate-800" {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'open' : '' }}>
-                <summary class="flex items-center justify-between px-3 py-2.5 cursor-pointer font-semibold {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'text-amber-400' : 'text-white' }}">
-                    <span>Riset dan Kolaborasi</span>
-                    <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform group-open:rotate-180"></i>
-                </summary>
-                <div class="px-3 pb-2.5 space-y-1 border-t border-slate-800/80 pt-1.5 text-xs">
-                    <a href="{{ route('riset') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('riset') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Ikhtisar Riset &amp; Kolaborasi</a>
-                    <a href="{{ route('penelitian') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('penelitian') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Penelitian</a>
-                    <a href="{{ route('kolaborasi') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('kolaborasi') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Kolaborasi</a>
-                    <a href="{{ route('pengabdian') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('pengabdian') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Pengabdian</a>
-                </div>
-            </details>
 
-            <details class="group rounded-lg bg-slate-800/40 border border-slate-800" {{ request()->routeIs('karya-dosen', 'buku', 'publikasi') ? 'open' : '' }}>
-                <summary class="flex items-center justify-between px-3 py-2.5 cursor-pointer font-semibold {{ request()->routeIs('karya-dosen', 'buku', 'publikasi') ? 'text-amber-400' : 'text-white' }}">
-                    <span>Karya Dosen</span>
-                    <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform group-open:rotate-180"></i>
-                </summary>
-                <div class="px-3 pb-2.5 space-y-1 border-t border-slate-800/80 pt-1.5 text-xs">
-                    <a href="{{ route('karya-dosen') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('karya-dosen') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Karya Dosen</a>
-                    <a href="{{ route('buku') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('buku') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Buku</a>
-                    <a href="{{ route('publikasi') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('publikasi') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Publikasi</a>
-                </div>
-            </details>
-
-            <details class="group rounded-lg bg-slate-800/40 border border-slate-800" {{ request()->routeIs('mahasiswa-alumni', 'prestasi-mahasiswa') ? 'open' : '' }}>
-                <summary class="flex items-center justify-between px-3 py-2.5 cursor-pointer font-semibold {{ request()->routeIs('mahasiswa-alumni', 'prestasi-mahasiswa') ? 'text-amber-400' : 'text-white' }}">
-                    <span>Mahasiswa dan Alumni</span>
-                    <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform group-open:rotate-180"></i>
-                </summary>
-                <div class="px-3 pb-2.5 space-y-1 border-t border-slate-800/80 pt-1.5 text-xs">
-                    <a href="{{ route('mahasiswa-alumni') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('mahasiswa-alumni') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Ikhtisar Mahasiswa &amp; Alumni</a>
-                    <a href="{{ route('prestasi-mahasiswa') }}" class="block py-1.5 px-2 rounded hover:bg-slate-800 {{ request()->routeIs('prestasi-mahasiswa') ? 'text-amber-400 font-bold' : 'text-slate-300' }}">Prestasi Mahasiswa</a>
-                    <a href="{{ route('mahasiswa-alumni') }}#hms" class="block py-1.5 px-2 rounded hover:bg-slate-800 text-slate-300">Himpunan Mahasiswa (HMS)</a>
-                    <a href="{{ route('mahasiswa-alumni') }}#alumni" class="block py-1.5 px-2 rounded hover:bg-slate-800 text-slate-300">Ikatan Alumni</a>
-                </div>
-            </details>
-
+            
             <div class="pt-3 mt-2 border-t border-slate-800 flex items-center justify-between">
                 <span class="text-xs text-slate-400 font-medium">Bahasa / Language:</span>
                 <div class="flex items-center bg-slate-800 px-2.5 py-1 rounded-full text-xs font-bold border border-slate-700/50">
@@ -513,11 +468,11 @@
                             <span class="block text-[10px] font-bold text-slate-300 uppercase tracking-wide leading-none">UNIVERSITAS SILIWANGI</span>
                         </div>
                     </div>
-                    <p class="text-slate-300 leading-relaxed mb-4 max-w-md">
+                    <p class="text-slate-400 leading-relaxed mb-4 max-w-md">
                         Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi menghasilkan lulusan insinyur sipil yang profesional, inovatif, berwawasan kebangsaan, dan berjiwa wirausaha.
                     </p>
-                    <p class="text-slate-300 leading-relaxed flex items-start gap-2">
-                        <i class="fa-solid fa-map-pin text-amber-400 mt-0.5" aria-hidden="true"></i>
+                    <p class="text-slate-400 leading-relaxed flex items-start gap-2">
+                        <i class="fa-solid fa-map-pin text-amber-400 mt-0.5"></i>
                         <span>Kampus 2 Mugarsari, Kec. Tamansari, Kota Tasikmalaya, Jawa Barat 46196</span>
                     </p>
                 </div>
@@ -528,18 +483,18 @@
                         $settingLayout = $siteSetting ?? \App\Models\SiteSetting::current();
                     @endphp
                     <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5">Kontak Resmi</h4>
-                    <ul class="space-y-3 text-slate-300">
+                    <ul class="space-y-3 text-slate-400">
                         <li class="flex items-start gap-2">
-                            <i class="fa-solid fa-envelope text-amber-400 mt-0.5 w-4" aria-hidden="true"></i>
-                            <a href="mailto:{{ $settingLayout->kontak_email }}" class="hover:text-white transition">{{ $settingLayout->kontak_email }}</a>
+                            <i class="fa-solid fa-envelope text-amber-400 mt-0.5 w-4"></i>
+                            <span>{{ $settingLayout->kontak_email }}</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fa-solid fa-globe text-amber-400 mt-0.5 w-4" aria-hidden="true"></i>
-                            <a href="https://unsil.ac.id" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">unsil.ac.id</a>
+                            <i class="fa-solid fa-globe text-amber-400 mt-0.5 w-4"></i>
+                            <a href="https://unsil.ac.id" target="_blank" class="hover:text-white transition">unsil.ac.id</a>
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fa-brands fa-instagram text-pink-400 mt-0.5 w-4" aria-hidden="true"></i>
-                            <a href="https://instagram.com/sipilunsil" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">@sipilunsil</a>
+                            <i class="fa-brands fa-instagram text-pink-400 mt-0.5 w-4"></i>
+                            <a href="https://instagram.com/sipilunsil" target="_blank" class="hover:text-white transition">@sipilunsil</a>
                         </li>
                     </ul>
                 </div>
@@ -547,31 +502,29 @@
                 
                 <div>
                     <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-5">Halaman Utama</h4>
-                    <div class="grid grid-cols-2 gap-x-2 gap-y-2 text-slate-300">
-                        <a href="{{ route('visi-misi') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Visi Misi</a>
-                        <a href="{{ route('sejarah') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Sejarah</a>
-                        <a href="{{ route('dosen') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Dosen</a>
-                        <a href="{{ route('kurikulum') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Kurikulum</a>
-                        <a href="{{ route('layanan') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Layanan</a>
-                        <a href="{{ route('fasilitas') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Fasilitas</a>
-                        <a href="{{ route('penelitian') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Penelitian</a>
-                        <a href="{{ route('buku') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Buku Dosen</a>
-                        <a href="{{ route('prestasi-mahasiswa') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Prestasi</a>
-                        <a href="{{ route('berita.index') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400" aria-hidden="true"></i> Berita</a>
+                    <div class="grid grid-cols-2 gap-x-2 gap-y-1.5 text-slate-400">
+                        <a href="{{ route('visi-misi') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Visi Misi</a>
+                        <a href="{{ route('sejarah') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Sejarah</a>
+                        <a href="{{ route('dosen') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Dosen</a>
+                        <a href="{{ route('kurikulum') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Kurikulum</a>
+                        <a href="{{ route('layanan') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Layanan</a>
+                        <a href="{{ route('fasilitas') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Fasilitas</a>
+                        <a href="{{ route('riset') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Riset</a>
+                        <a href="{{ route('karya-dosen') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Karya</a>
+                        <a href="{{ route('mahasiswa-alumni') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Mahasiswa</a>
+                        <a href="{{ route('berita.index') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Berita &amp; Informasi</a>
                     </div>
                 </div>
             </div>
 
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
-                <p>&copy; {{ date('Y') }} Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi.</p>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-3">
+                <p>&copy; {{ date('Y') }} Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi. Hak Cipta Dilindungi.</p>
                 <div class="flex items-center space-x-4">
-                    <a href="{{ route('home') }}" class="hover:text-white transition">Beranda</a>
-                    <span class="text-slate-600">&bull;</span>
-                    <a href="{{ route('jadwal-sidang-skripsi') }}" class="hover:text-white transition">Jadwal Sidang</a>
-                    <span class="text-slate-600">&bull;</span>
-                    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="hover:text-amber-400 transition inline-flex items-center gap-1">
-                        Ke Atas <i class="fa-solid fa-arrow-up text-[10px]" aria-hidden="true"></i>
-                    </a>
+                    <a href="{{ route('home') }}" class="hover:text-slate-300 transition">Beranda</a>
+                    <span>&bull;</span>
+                    <a href="{{ route('visi-misi') }}" class="hover:text-slate-300 transition">Visi Misi</a>
+                    <span>&bull;</span>
+                    <a href="{{ route('layanan') }}" class="hover:text-slate-300 transition">Layanan</a>
                 </div>
             </div>
         </div>
@@ -704,25 +657,12 @@
 
                 <a href="{{ route('dosen') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="dosen pengajar staf tenaga kependidikan kbk struktur guru besar lektor">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-user-tie text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Dosen &amp; Tenaga Pengajar</p>
-                            <p class="text-xs text-slate-500">Daftar dosen dan kepakaran bidang keahlian</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
-                </a>
-
-                <a href="{{ route('jadwal-sidang-skripsi') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="jadwal sidang skripsi seminar proposal hasil akhir ujian tugas akhir mahasiswa">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
-                            <i class="fa-solid fa-calendar-days text-sm"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Jadwal Sidang Skripsi &amp; Seminar</p>
-                            <p class="text-xs text-slate-500">Jadwal seminar proposal, seminar hasil, dan sidang akhir</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Dosen</p>
+                            <p class="text-[11px] text-slate-500">Daftar dosen dan kepakaran bidang keahlian</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
@@ -730,12 +670,12 @@
 
                 <a href="{{ route('akademik') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="akademik pendidikan perkuliahan kalender peraturan sarjana s1">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-graduation-cap text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Akademik</p>
-                            <p class="text-xs text-slate-500">Pusat informasi akademik, peraturan evaluasi studi, dan pengumuman</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Akademik</p>
+                            <p class="text-[11px] text-slate-500">Pusat informasi akademik, peraturan evaluasi studi, dan pengumuman</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
@@ -743,12 +683,12 @@
 
                 <a href="{{ route('kurikulum') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="kurikulum mata kuliah sks obe silabus semester struktur konsentrasi prasyarat">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-book-open text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Kurikulum OBE</p>
-                            <p class="text-xs text-slate-500">Sebaran 8 semester, 5 peminatan KBK, dan silabus mata kuliah</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Kurikulum OBE</p>
+                            <p class="text-[11px] text-slate-500">Sebaran 8 semester, 5 peminatan KBK, dan silabus mata kuliah</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
@@ -756,12 +696,12 @@
 
                 <a href="{{ route('layanan') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="layanan surat permohonan pengajuan krs cuti bebas lab tugas akhir skripsi sidang yudisium">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-bell-concierge text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Layanan Terpadu &amp; Persuratan</p>
-                            <p class="text-xs text-slate-500">Pengajuan surat aktif, izin penelitian, kerja praktik, dan ujian skripsi</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Layanan Terpadu &amp; Persuratan</p>
+                            <p class="text-[11px] text-slate-500">Pengajuan surat aktif, izin penelitian, kerja praktik, dan ujian skripsi</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
@@ -770,90 +710,38 @@
 
                 <a href="{{ route('fasilitas') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="fasilitas laboratorium alat uji struktur tanah hidrolika ukur tanah transportasi komputasi">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-flask-vial text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Fasilitas Kampus &amp; Laboratorium</p>
-                            <p class="text-xs text-slate-500">Laboratorium bahan struktur, mekanika tanah, keairan, ukur tanah, dsb</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Fasilitas Laboratorium (6 Unit)</p>
+                            <p class="text-[11px] text-slate-500">Laboratorium bahan struktur, mekanika tanah, keairan, ukur tanah, dsb</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
                 </a>
 
-                <a href="{{ route('penelitian') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="penelitian riset jurnal scopus sinta prosiding doi dosen">
+                <a href="{{ route('riset') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="riset kolaborasi penelitian pengabdian kerjasama industri bumn pemda lp2m hibah">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
-                            <i class="fa-solid fa-microscope text-sm"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Penelitian Dosen</p>
-                            <p class="text-xs text-slate-500">Publikasi jurnal internasional Scopus, SINTA, dan prosiding ilmiah</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
-                </a>
-
-                <a href="{{ route('pengabdian') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="pengabdian pkm abmas masyarakat desa pendampingan">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
-                            <i class="fa-solid fa-hand-holding-heart text-sm"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Pengabdian Masyarakat (PkM)</p>
-                            <p class="text-xs text-slate-500">Program hilirisasi keilmuan dan pendampingan infrastruktur masyarakat</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
-                </a>
-
-                <a href="{{ route('buku') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="buku ajar referensi karya dosen isbn penerbit">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
-                            <i class="fa-solid fa-book text-sm"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Buku Ajar &amp; Referensi Dosen</p>
-                            <p class="text-xs text-slate-500">Katalog buku ber-ISBN karya dosen Teknik Sipil UNSIL</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
-                </a>
-
-                <a href="{{ route('prestasi-mahasiswa') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="prestasi mahasiswa juara lomba jembatan beton nasional internasional">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
-                            <i class="fa-solid fa-trophy text-sm"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Prestasi Mahasiswa</p>
-                            <p class="text-xs text-slate-500">Capaian kompetisi nasional dan publikasi mahasiswa Teknik Sipil</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
-                </a>
-
-                <a href="{{ route('riset') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="riset kolaborasi kerjasama industri bumn pemda lp2m hibah">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-handshake text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Riset dan Kolaborasi</p>
-                            <p class="text-xs text-slate-500">Kemitraan industri BUMN, instansi pemerintah, dan asosiasi profesi</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Riset dan Kolaborasi</p>
+                            <p class="text-[11px] text-slate-500">Roadmap penelitian terapan, pengabdian masyarakat, dan kemitraan</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
                 </a>
 
-                <a href="{{ route('karya-dosen') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="karya dosen publikasi jurnal akselerasi paten hki">
+                <a href="{{ route('karya-dosen') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="karya dosen publikasi jurnal scopus sinta prosiding buku ajar paten hki">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-newspaper text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Karya Dosen &amp; Jurnal Akselerasi</p>
-                            <p class="text-xs text-slate-500">Portal Jurnal Akselerasi SINTA 4 dan sorotan karya dosen</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Karya Dosen &amp; Publikasi</p>
+                            <p class="text-[11px] text-slate-500">Karya ilmiah terindeks Sinta, Scopus, buku ajar, dan HKI</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
@@ -861,25 +749,25 @@
 
                 <a href="{{ route('berita.index') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="berita informasi agenda kegiatan seminar kompetensi lomba wisuda pengumuman">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-bullhorn text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Berita &amp; Informasi</p>
-                            <p class="text-xs text-slate-500">Portal berita resmi, seminar, prestasi kompetisi, dan agenda akademik</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Berita &amp; Informasi</p>
+                            <p class="text-[11px] text-slate-500">Portal berita resmi, seminar, prestasi kompetisi, dan agenda akademik</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
                 </a>
 
-                <a href="{{ route('mahasiswa-alumni') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="mahasiswa alumni himpunan hms ikatan alumni lulusan karir">
+                <a href="{{ route('mahasiswa-alumni') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="mahasiswa alumni himpunan hms prestasi ikatan alumni lulusan karir">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-users text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Mahasiswa dan Alumni</p>
-                            <p class="text-xs text-slate-500">Kegiatan Himpunan Mahasiswa Sipil (HMS) dan jejaring alumni</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Mahasiswa dan Alumni</p>
+                            <p class="text-[11px] text-slate-500">Kegiatan Himpunan Mahasiswa Sipil (HMS), prestasi lomba, dan jejaring alumni</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
@@ -887,12 +775,12 @@
 
                 <a href="{{ route('home') }}#lokasi" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="lokasi alamat maps google peta kampus 2 unsil mugarsari tamansari tasikmalaya">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-map-location-dot text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Lokasi Kampus 2 UNSIL Mugarsari</p>
-                            <p class="text-xs text-slate-500">Peta Google Maps, alamat resmi, rute transportasi, dan jam layanan</p>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Lokasi Kampus 2 UNSIL Mugarsari</p>
+                            <p class="text-[11px] text-slate-500">Peta Google Maps, alamat resmi, rute transportasi, dan jam layanan</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
@@ -902,13 +790,13 @@
             <div id="no-search-results" class="hidden p-8 text-center text-slate-500">
                 <i class="fa-solid fa-circle-exclamation text-2xl text-slate-400 mb-2"></i>
                 <p class="text-xs font-semibold">Tidak ditemukan hasil untuk kata kunci tersebut.</p>
-                <p class="text-[11px] text-slate-400 mt-0.5">Coba kata kunci lain seperti: kurikulum, jadwal, dosen, penelitian, atau buku.</p>
+                <p class="text-[11px] text-slate-400 mt-0.5">Coba kata kunci lain seperti: kurikulum, visi, dosen, atau layanan.</p>
             </div>
 
             
             <div class="p-3 bg-slate-50 border-t border-slate-200 text-[11px] text-slate-500 flex justify-between items-center px-5">
                 <span>Tekan <kbd class="px-1.5 py-0.5 bg-slate-200 text-slate-700 rounded text-[10px] font-mono">ESC</kbd> untuk menutup</span>
-                <span class="text-blue-600 font-medium">Pencarian Cepat Halaman &amp; Layanan</span>
+                <span class="text-blue-600 font-medium">14 Halaman &amp; Layanan Siap Diakses</span>
             </div>
         </div>
     </div>
@@ -970,11 +858,6 @@
         });
 
         window.addEventListener('keydown', function(e) {
-            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
-                e.preventDefault();
-                openModal('modal-search-global');
-                return;
-            }
             if (e.key === 'Escape') {
                 ['modal-akreditasi-top', 'modal-search-global', 'modal-regulasi', 'modal-sambutan', 'modal-angka'].forEach(id => {
                     closeModal(id);

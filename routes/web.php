@@ -169,11 +169,7 @@ Route::get('/buku', function () {
 
 // 9e. Turunan Penelitian / Riset: Publikasi
 Route::get('/publikasi', function () {
-    $risetList = \App\Models\Penelitian::published()
-        ->orderByDesc('tahun')
-        ->orderByDesc('id')
-        ->get();
-    return view('pages.publikasi', compact('risetList'));
+    return view('pages.publikasi');
 })->name('publikasi');
 
 // 10. Karya Dosen
@@ -203,64 +199,29 @@ Route::get('/jadwal-sidang-skripsi', function () {
 
 // 11c. Seminar Proposal
 Route::get('/seminar-proposal', function () {
-    $schedules = \App\Models\DefenseSchedule::where('type', 'Seminar Proposal')
-        ->orderBy('date_time', 'asc')
-        ->get();
-    return view('pages.seminar-proposal', compact('schedules'));
+    return view('pages.seminar-proposal');
 })->name('seminar-proposal');
 
 // 11d. Seminar Hasil
 Route::get('/seminar-hasil', function () {
-    $schedules = \App\Models\DefenseSchedule::where('type', 'Seminar Hasil')
-        ->orderBy('date_time', 'asc')
-        ->get();
-    return view('pages.seminar-hasil', compact('schedules'));
+    return view('pages.seminar-hasil');
 })->name('seminar-hasil');
 
 // 11e. Sidang Akhir
 Route::get('/sidang-akhir', function () {
-    $schedules = \App\Models\DefenseSchedule::where('type', 'Sidang Akhir Skripsi')
-        ->orderBy('date_time', 'asc')
-        ->get();
-    return view('pages.sidang-akhir', compact('schedules'));
+    return view('pages.sidang-akhir');
 })->name('sidang-akhir');
 
 // 12. Portal Berita & Informasi
-Route::get('/berita', function (\Illuminate\Http\Request $request) {
-    $kategori = $request->query('kategori');
-    $search = trim((string) $request->query('q', ''));
-
+Route::get('/berita', function () {
     $articles = \App\Models\Article::where('is_published', true)
-        ->when($kategori && $kategori !== 'Semua', fn ($q) => $q->where('category', $kategori))
-        ->when($search !== '', fn ($q) => $q->where(function ($sub) use ($search): void {
-            $sub->where('title', 'like', "%{$search}%")
-                ->orWhere('excerpt', 'like', "%{$search}%");
-        }))
         ->orderBy('published_at', 'desc')
-        ->paginate(9)
-        ->withQueryString();
-
-    $agendaMendatang = \App\Models\Article::where('is_published', true)
-        ->where('category', 'Agenda')
-        ->where('published_at', '>=', now()->startOfDay())
-        ->orderBy('published_at', 'asc')
-        ->take(4)
-        ->get();
-
-    $agendaSelesai = \App\Models\Article::where('is_published', true)
-        ->where('category', 'Agenda')
-        ->where('published_at', '<', now()->startOfDay())
-        ->orderBy('published_at', 'desc')
-        ->take(5)
-        ->get();
-
-    return view('pages.berita', compact('articles', 'agendaMendatang', 'agendaSelesai', 'kategori', 'search'));
+        ->paginate(9);
+    return view('pages.berita', compact('articles'));
 })->name('berita.index');
 
 Route::get('/berita/detail/{slug}', function ($slug) {
-    $article = \App\Models\Article::where('slug', $slug)
-        ->where('is_published', true)
-        ->firstOrFail();
+    $article = \App\Models\Article::where('slug', $slug)->firstOrFail();
     $article->increment('views');
     return view('pages.berita-detail', compact('article'));
 })->name('berita.show');

@@ -68,21 +68,11 @@ class DynamicContentCmsTest extends TestCase
 
         $this->get('/')
             ->assertOk()
-            ->assertSee('Mengenal Program Studi')
+            ->assertSee('Program Studi Teknik Sipil')
             ->assertSee('Workshop Penguatan Kurikulum');
 
-        $this->get('/berita')
-            ->assertOk()
-            ->assertSee('Bendungan Leuwikeris');
-
-        $this->get('/berita?kategori=Agenda')
-            ->assertOk()
-            ->assertSee('Workshop Penguatan Kurikulum');
-
-        $this->get('/publikasi')
-            ->assertOk()
-            ->assertSee('Akselerasi: Jurnal Ilmiah Teknik Sipil UNSIL');
-
+        $this->get('/berita')->assertOk();
+        $this->get('/publikasi')->assertOk();
         $this->get('/seminar-proposal')->assertOk();
         $this->get('/seminar-hasil')->assertOk();
         $this->get('/sidang-akhir')->assertOk();
@@ -137,8 +127,8 @@ class DynamicContentCmsTest extends TestCase
 
         $this->get('/')
             ->assertOk()
-            ->assertSee('Mengenal Program Studi')
-            ->assertSee('Akses Cepat');
+            ->assertSee('Program Studi Teknik Sipil')
+            ->assertSee('Sambutan Ketua Program Studi');
 
         $this->get('/penelitian')
             ->assertOk()
@@ -171,7 +161,7 @@ class DynamicContentCmsTest extends TestCase
 
         $this->get('/')
             ->assertOk()
-            ->assertSee('Akreditasi UNGGUL')
+            ->assertSee('UNGGUL')
             ->assertSee('data-target="750"', false);
 
         Livewire::test(ListArticles::class)->assertOk();

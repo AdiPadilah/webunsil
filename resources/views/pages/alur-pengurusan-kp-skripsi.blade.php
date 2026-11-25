@@ -13,7 +13,7 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
                 <span class="text-slate-200">Alur Pengurusan KP &amp; Skripsi</span>
             </nav>
-            <p class="text-sky-300 font-semibold text-xs">
+            <p class="text-[#0070BA] font-medium text-xs">
                 Panduan Akademik
             </p>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading tracking-tight text-white mt-1">
