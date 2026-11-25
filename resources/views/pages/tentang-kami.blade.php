@@ -77,10 +77,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between gap-4">
-                            <div class="text-[11px] text-slate-500">
-                                <span class="font-semibold text-slate-700">Fakultas Teknik UNSIL</span>
-                            </div>
+                        <div class="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-end gap-4">
                             <a href="{{ route('visi-misi') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline">
                                 <span>Lihat Visi &amp; Misi Prodi</span>
                                 <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -135,82 +132,41 @@
 
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-                    
+                    @forelse($articles as $art)
+                    @php
+                        $artUrl = Route::has('berita.' . $art->slug) ? route('berita.' . $art->slug) : route('berita.show', $art->slug);
+                        $artThumb = $art->thumbnail ? (str_starts_with($art->thumbnail, 'images/') ? asset($art->thumbnail) : asset('storage/' . $art->thumbnail)) : asset('images/unsil-seminar-jalan-tol.jpeg');
+                    @endphp
                     <article class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col group">
                         <div class="h-48 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover">
+                            <img src="{{ $artThumb }}" alt="{{ $art->title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-5 flex-1 flex flex-col justify-between">
                             <div>
-                                <span class="text-xs text-slate-400 block mb-1">23 Oktober 2026</span>
+                                <span class="text-xs text-slate-400 block mb-1">
+                                    {{ $art->published_at ? $art->published_at->translatedFormat('d F Y') : '-' }} &bull; {{ $art->category }}
+                                </span>
                                 <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                    <a href="{{ route('berita.kunjungan-leuwikeris') }}">
-                                        Kunjungan Ilmiah Mahasiswa Sipil ke Bendungan Leuwikeris
+                                    <a href="{{ $artUrl }}">
+                                        {{ $art->title }}
                                     </a>
                                 </h3>
                                 <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
-                                    Rangkaian kegiatan studi lapangan mempelajari struktur bendungan dan pengelolaan sumber daya air.
+                                    {{ $art->excerpt ?? Str::limit(strip_tags($art->content), 120) }}
                                 </p>
                             </div>
                             <div class="pt-4 mt-3 border-t border-slate-100">
-                                <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
+                                <a href="{{ $artUrl }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
                                     Baca Selengkapnya &rarr;
                                 </a>
                             </div>
                         </div>
                     </article>
-
-                    
-                    <article class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col group">
-                        <div class="h-48 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between">
-                            <div>
-                                <span class="text-xs text-slate-400 block mb-1">20 Oktober 2026</span>
-                                <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                    <a href="{{ route('berita.seminar-jalan-tol') }}">
-                                        Seminar Nasional SCIENCE 2026: Strategi Jalan Tol Berkelanjutan
-                                    </a>
-                                </h3>
-                                <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
-                                    Mengupas strategi konstruksi jalan tol berkelanjutan bersama praktisi BUMN PT Adhi Karya.
-                                </p>
-                            </div>
-                            <div class="pt-4 mt-3 border-t border-slate-100">
-                                <a href="{{ route('berita.seminar-jalan-tol') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    
-                    <article class="bg-white rounded-lg overflow-hidden border border-slate-200 flex flex-col group">
-                        <div class="h-48 overflow-hidden bg-slate-100">
-                            <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Bridge Design Competition" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-5 flex-1 flex flex-col justify-between">
-                            <div>
-                                <span class="text-xs text-slate-400 block mb-1">20 Oktober 2026</span>
-                                <h3 class="text-sm font-bold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                    <a href="{{ route('berita.kompetisi-jembatan') }}">
-                                        Babak Final National Bridge Design Competition SCIENCE 2026
-                                    </a>
-                                </h3>
-                                <p class="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
-                                    Ajang kompetisi perancangan jembatan berskala nasional di Aula Gedung Teknik Sipil UNSIL.
-                                </p>
-                            </div>
-                            <div class="pt-4 mt-3 border-t border-slate-100">
-                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="text-xs font-semibold text-[#0070BA] hover:underline">
-                                    Baca Selengkapnya &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
+                    @empty
+                    <div class="col-span-3 text-center py-6 text-slate-400 text-xs">
+                        Belum ada berita.
+                    </div>
+                    @endforelse
                 </div>
             </div>
 
@@ -243,11 +199,7 @@
                     <p><strong>Program Studi:</strong> Teknik Sipil, Fakultas Teknik Universitas Siliwangi</p>
                     <p><strong>Masa Berlaku:</strong> Hingga 20 Agustus 2028</p>
                 </div>
-                <div class="pt-3">
-                    <a href="{{ route('download') }}" class="inline-flex items-center gap-2 px-4 py-2 bg-[#0B2A4A] hover:bg-blue-900 text-white text-xs font-semibold rounded-lg transition">
-                        <i class="fa-solid fa-file-arrow-down text-amber-400"></i> Unduh Salinan Sertifikat Akreditasi
-                    </a>
-                </div>
+
             </div>
             <div class="p-4 bg-slate-50 rounded-b-xl border-t border-slate-100 flex justify-end">
                 <button type="button" onclick="closeModal('modal-akreditasi')" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-lg transition">

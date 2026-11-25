@@ -67,12 +67,6 @@
                             Masa depan Teknik Sipil Universitas Siliwangi dibangun melalui semangat untuk terus belajar, berinovasi, berkolaborasi, dan memberikan dampak nyata. Setiap gagasan, penelitian, prestasi, dan kontribusi sivitas akademika merupakan bagian dari perjalanan tersebut. Mari menjadi bagian dari perjalanan Teknik Sipil UNSIL dalam membangun pengetahuan, menciptakan inovasi, dan menghadirkan masa depan infrastruktur yang lebih baik.
                         </p>
                     </div>
-
-                    <div class="pt-2">
-                        <p class="font-bold text-slate-900 text-sm sm:text-base">Andhy Romdani, S.T., M.Eng., Ph.D.</p>
-                        <p class="text-xs text-slate-600">Ketua Program Studi Teknik Sipil</p>
-                        <p class="text-xs text-slate-500">Fakultas Teknik Universitas Siliwangi</p>
-                    </div>
                 </div>
 
             </div>
@@ -368,54 +362,27 @@
                         </div>
 
                         <div class="space-y-4">
-                            
+                            @forelse($articles as $art)
+                            @php
+                                $artUrl = Route::has('berita.' . $art->slug) ? route('berita.' . $art->slug) : route('berita.show', $art->slug);
+                                $artThumb = $art->thumbnail ? (str_starts_with($art->thumbnail, 'images/') ? asset($art->thumbnail) : asset('storage/' . $art->thumbnail)) : asset('images/unsil-seminar-jalan-tol.jpeg');
+                            @endphp
                             <article class="flex items-start gap-3 group">
-                                <a href="{{ route('berita.seminar-hasil-uns') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/seminar-hasil-uns/foto-2.jpg') }}" alt="Seminar Hasil Disertasi UNS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                <a href="{{ $artUrl }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
+                                    <img src="{{ $artThumb }}" alt="{{ $art->title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                                 </a>
                                 <div class="flex-1 min-w-0">
-                                    <span class="text-[11px] text-slate-400 block mb-0.5">29 Oktober 2026</span>
+                                    <span class="text-[11px] text-slate-400 block mb-0.5">
+                                        {{ $art->published_at ? $art->published_at->translatedFormat('d F Y') : '-' }}
+                                    </span>
                                     <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                        <a href="{{ route('berita.seminar-hasil-uns') }}">Dosen Teknik Sipil UNSIL Penguji Eksternal Seminar Hasil Disertasi di FT UNS</a>
+                                        <a href="{{ $artUrl }}">{{ $art->title }}</a>
                                     </h3>
                                 </div>
                             </article>
-
-                            <article class="flex items-start gap-3 group">
-                                <a href="{{ route('berita.kunjungan-leuwikeris') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}" alt="Kunjungan Bendungan Leuwikeris" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                                </a>
-                                <div class="flex-1 min-w-0">
-                                    <span class="text-[11px] text-slate-400 block mb-0.5">23 Oktober 2026</span>
-                                    <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                        <a href="{{ route('berita.kunjungan-leuwikeris') }}">Kunjungan Ilmiah Mahasiswa Sipil ke Bendungan Leuwikeris</a>
-                                    </h3>
-                                </div>
-                            </article>
-
-                            <article class="flex items-start gap-3 group">
-                                <a href="{{ route('berita.seminar-jalan-tol') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}" alt="Seminar Nasional Jalan Tol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                                </a>
-                                <div class="flex-1 min-w-0">
-                                    <span class="text-[11px] text-slate-400 block mb-0.5">20 Oktober 2026</span>
-                                    <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                        <a href="{{ route('berita.seminar-jalan-tol') }}">Seminar Nasional SCIENCE 2026: Strategi Jalan Tol Berkelanjutan</a>
-                                    </h3>
-                                </div>
-                            </article>
-
-                            <article class="flex items-start gap-3 group">
-                                <a href="{{ route('berita.kompetisi-jembatan') }}" class="w-24 flex-shrink-0 rounded-lg overflow-hidden bg-slate-200 aspect-video block">
-                                    <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}" alt="Bridge Design Competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                                </a>
-                                <div class="flex-1 min-w-0">
-                                    <span class="text-[11px] text-slate-400 block mb-0.5">20 Oktober 2026</span>
-                                    <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0070BA] leading-snug line-clamp-2">
-                                        <a href="{{ route('berita.kompetisi-jembatan') }}">Final National Bridge Design Competition SCIENCE 2026</a>
-                                    </h3>
-                                </div>
-                            </article>
+                            @empty
+                            <p class="text-xs text-slate-400">Belum ada berita terbaru.</p>
+                            @endforelse
                         </div>
 
                         <div class="mt-5">

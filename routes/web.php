@@ -12,12 +12,20 @@ use Illuminate\Support\Facades\Route;
 
 // 1. Beranda
 Route::get('/', function () {
-    return view('pages.home');
+    $articles = \App\Models\Article::where('is_published', true)
+        ->orderBy('published_at', 'desc')
+        ->take(3)
+        ->get();
+    return view('pages.home', compact('articles'));
 })->name('home');
 
 // 2. Tentang Kami (Hub Page sesuai layout ITS)
 Route::get('/tentang-kami', function () {
-    return view('pages.tentang-kami');
+    $articles = \App\Models\Article::where('is_published', true)
+        ->orderBy('published_at', 'desc')
+        ->take(3)
+        ->get();
+    return view('pages.tentang-kami', compact('articles'));
 })->name('tentang-kami');
 
 // 3. Visi & Misi
@@ -60,10 +68,8 @@ Route::get('/layanan', function () {
     return view('pages.layanan');
 })->name('layanan');
 
-// 7. Pusat Unduhan (Download)
-Route::get('/download', function () {
-    return view('pages.download');
-})->name('download');
+// 7. Redirect Download ke Layanan Terpadu
+Route::redirect('/download', '/layanan');
 
 // 8. Fasilitas (Hub Page)
 Route::get('/fasilitas', function () {
@@ -147,7 +153,8 @@ Route::get('/alur-pengurusan-kp-skripsi', function () {
 
 // 11b. Jadwal Sidang Skripsi
 Route::get('/jadwal-sidang-skripsi', function () {
-    return view('pages.jadwal-sidang-skripsi');
+    $schedules = \App\Models\DefenseSchedule::orderBy('date_time', 'asc')->get();
+    return view('pages.jadwal-sidang-skripsi', compact('schedules'));
 })->name('jadwal-sidang-skripsi');
 
 // 11c. Seminar Proposal
@@ -167,8 +174,17 @@ Route::get('/sidang-akhir', function () {
 
 // 12. Portal Berita & Informasi
 Route::get('/berita', function () {
-    return view('pages.berita');
+    $articles = \App\Models\Article::where('is_published', true)
+        ->orderBy('published_at', 'desc')
+        ->paginate(9);
+    return view('pages.berita', compact('articles'));
 })->name('berita.index');
+
+Route::get('/berita/detail/{slug}', function ($slug) {
+    $article = \App\Models\Article::where('slug', $slug)->firstOrFail();
+    $article->increment('views');
+    return view('pages.berita-detail', compact('article'));
+})->name('berita.show');
 
 // Berita & Informasi Spesifik
 Route::get('/berita/seminar-internasional-indonesia-taiwan-2026', function () {

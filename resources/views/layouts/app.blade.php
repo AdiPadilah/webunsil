@@ -262,14 +262,19 @@
 
                     
                     <div class="relative dropdown">
-                        <a href="{{ route('akademik') }}" id="nav-akademik" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'download') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('akademik') }}" id="nav-akademik" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'alur-pengurusan-kp-skripsi', 'jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'active-nav text-amber-400' : '' }}">
                             <span>Akademik</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
-                        <div class="dropdown-menu hidden absolute top-full left-0 w-52 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
+                        <div class="dropdown-menu hidden absolute top-full left-0 w-60 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
                             <a href="{{ route('kurikulum') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kurikulum') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Kurikulum</a>
                             <a href="{{ route('layanan') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('layanan') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Layanan Terpadu</a>
-                            <a href="{{ route('download') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('download') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Download</a>
+                            <div class="border-t border-slate-100 my-1"></div>
+                            <a href="{{ route('alur-pengurusan-kp-skripsi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('alur-pengurusan-kp-skripsi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Alur Pengurusan KP &amp; Skripsi</a>
+                            <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('jadwal-sidang-skripsi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Jadwal Sidang Skripsi</a>
+                            <a href="{{ route('seminar-proposal') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-proposal') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Proposal</a>
+                            <a href="{{ route('seminar-hasil') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-hasil') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Hasil</a>
+                            <a href="{{ route('sidang-akhir') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sidang Akhir</a>
                         </div>
                     </div>
 
@@ -337,16 +342,10 @@
                             <span>Mahasiswa dan Alumni</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
-                        <div class="dropdown-menu hidden absolute top-full right-0 w-64 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
+                        <div class="dropdown-menu hidden absolute top-full right-0 w-60 bg-white border border-slate-200 shadow-2xl rounded-xl py-2 z-50 text-slate-800">
                             <a href="{{ route('prestasi-mahasiswa') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('prestasi-mahasiswa') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Prestasi Mahasiswa</a>
                             <a href="{{ route('mahasiswa-alumni') }}#hms" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap">Himpunan Mahasiswa (HMS)</a>
                             <a href="{{ route('mahasiswa-alumni') }}#alumni" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap">Ikatan Alumni</a>
-                            <div class="border-t border-slate-100 my-1"></div>
-                            <a href="{{ route('alur-pengurusan-kp-skripsi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('alur-pengurusan-kp-skripsi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Alur Pengurusan KP &amp; Skripsi</a>
-                            <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('jadwal-sidang-skripsi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Jadwal Sidang Skripsi</a>
-                            <a href="{{ route('seminar-proposal') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-proposal') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Proposal</a>
-                            <a href="{{ route('seminar-hasil') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('seminar-hasil') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Seminar Hasil</a>
-                            <a href="{{ route('sidang-akhir') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sidang-akhir') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sidang Akhir</a>
                         </div>
                     </div>
                 </nav>
@@ -379,10 +378,14 @@
             <a href="{{ route('sejarah') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sejarah') ? 'text-amber-400 font-bold' : '' }}">&mdash; Sejarah Program Studi</a>
             <a href="{{ route('dosen') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('dosen') ? 'text-amber-400 font-bold' : '' }}">&mdash; Dosen</a>
 
-            <a href="{{ route('akademik') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'download') ? 'text-amber-400 font-bold' : '' }}">Akademik</a>
+            <a href="{{ route('akademik') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'alur-pengurusan-kp-skripsi', 'jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'text-amber-400 font-bold' : '' }}">Akademik</a>
             <a href="{{ route('kurikulum') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kurikulum') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kurikulum</a>
             <a href="{{ route('layanan') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('layanan') ? 'text-amber-400 font-bold' : '' }}">&mdash; Layanan Terpadu</a>
-            <a href="{{ route('download') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('download') ? 'text-amber-400 font-bold' : '' }}">&mdash; Download</a>
+            <a href="{{ route('alur-pengurusan-kp-skripsi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('alur-pengurusan-kp-skripsi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Alur Pengurusan KP &amp; Skripsi</a>
+            <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('jadwal-sidang-skripsi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Jadwal Sidang Skripsi</a>
+            <a href="{{ route('seminar-proposal') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-proposal') ? 'text-amber-400 font-bold' : '' }}">&mdash; Seminar Proposal</a>
+            <a href="{{ route('seminar-hasil') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-hasil') ? 'text-amber-400 font-bold' : '' }}">&mdash; Seminar Hasil</a>
+            <a href="{{ route('sidang-akhir') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sidang-akhir') ? 'text-amber-400 font-bold' : '' }}">&mdash; Sidang Akhir</a>
 
             <a href="{{ route('fasilitas') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('fasilitas', 'laboratorium', 'kelas', 'aula', 'kantin', 'auditorium', 'ruang-rapat') ? 'text-amber-400 font-bold' : '' }}">Fasilitas</a>
             <a href="{{ route('laboratorium') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('laboratorium') ? 'text-amber-400 font-bold' : '' }}">&mdash; Laboratorium</a>
@@ -402,11 +405,7 @@
             <a href="{{ route('prestasi-mahasiswa') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('prestasi-mahasiswa') ? 'text-amber-400 font-bold' : '' }}">&mdash; Prestasi Mahasiswa</a>
             <a href="{{ route('mahasiswa-alumni') }}#hms" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs">&mdash; Himpunan Mahasiswa (HMS)</a>
             <a href="{{ route('mahasiswa-alumni') }}#alumni" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs">&mdash; Ikatan Alumni</a>
-            <a href="{{ route('alur-pengurusan-kp-skripsi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('alur-pengurusan-kp-skripsi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Alur Pengurusan KP &amp; Skripsi</a>
-            <a href="{{ route('jadwal-sidang-skripsi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('jadwal-sidang-skripsi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Jadwal Sidang Skripsi</a>
-            <a href="{{ route('seminar-proposal') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-proposal') ? 'text-amber-400 font-bold' : '' }}">&mdash; Seminar Proposal</a>
-            <a href="{{ route('seminar-hasil') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('seminar-hasil') ? 'text-amber-400 font-bold' : '' }}">&mdash; Seminar Hasil</a>
-            <a href="{{ route('sidang-akhir') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sidang-akhir') ? 'text-amber-400 font-bold' : '' }}">&mdash; Sidang Akhir</a>
+
 
             
             <div class="pt-3 mt-2 border-t border-slate-800 flex items-center justify-between">
@@ -476,7 +475,6 @@
                         <a href="{{ route('dosen') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Dosen</a>
                         <a href="{{ route('kurikulum') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Kurikulum</a>
                         <a href="{{ route('layanan') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Layanan</a>
-                        <a href="{{ route('download') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Download</a>
                         <a href="{{ route('fasilitas') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Fasilitas</a>
                         <a href="{{ route('riset') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Riset</a>
                         <a href="{{ route('karya-dosen') }}" class="hover:text-amber-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[8px] text-amber-400"></i> Karya</a>
@@ -542,10 +540,7 @@
                 </div>
 
                 <div class="pt-4 flex flex-wrap gap-2.5">
-                    <a href="{{ route('download') }}" class="inline-flex items-center gap-2 px-4 py-2.5 bg-[#0B2A4A] hover:bg-blue-900 text-white text-xs font-semibold rounded-lg transition">
-                        <i class="fa-solid fa-download text-amber-400"></i> Unduh Sertifikat &amp; SK (PDF)
-                    </a>
-                    <a href="{{ route('tentang-kami') }}" class="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold rounded-lg transition">
+                    <a href="{{ route('tentang-kami') }}" class="inline-flex items-center gap-2 px-4 py-2.5 bg-[#0B2A4A] hover:bg-blue-900 text-white text-xs font-semibold rounded-lg transition">
                         Profil Lengkap Prodi
                     </a>
                 </div>
@@ -679,18 +674,6 @@
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
                 </a>
 
-                <a href="{{ route('download') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="download unduh berkas pdf panduan format pedoman akademik formulir skripsi">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
-                            <i class="fa-solid fa-file-arrow-down text-sm"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Pusat Download Berkas</p>
-                            <p class="text-[11px] text-slate-500">Unduh buku pedoman skripsi, format laporan KP, dan sertifikat akreditasi</p>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
-                </a>
 
                 <a href="{{ route('fasilitas') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="fasilitas laboratorium alat uji struktur tanah hidrolika ukur tanah transportasi komputasi">
                     <div class="flex items-center gap-3">

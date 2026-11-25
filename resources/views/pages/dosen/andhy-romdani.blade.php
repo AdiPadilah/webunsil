@@ -166,7 +166,7 @@
 
                         <div class="space-y-3.5 text-sm text-slate-600 leading-relaxed">
                             <p>
-                                Andhy Romdani menempuh studi sarjana di Jurusan Teknik Sipil, Fakultas Teknik, Universitas Gadjah Mada (UGM), Yogyakarta. Beliau diterima melalui jalur seleksi bergengsi PBUD (Penelusuran Bibit Unggul Daerah) mewakili Kabupaten Grobogan, Jawa Tengah, pada tahun 1998, dan berhasil menyelesaikan gelar Sarjana Teknik (S.T.) serta Master of Engineering (M.Eng.) dari almamater yang sama.
+                                Andhy Romdani menempuh studi sarjana di Jurusan Teknik Sipil, Fakultas Teknik, Universitas Gadjah Mada (UGM), Yogyakarta, dan berhasil menyelesaikan gelar Sarjana Teknik (S.T.) serta Master of Engineering (M.Eng.) dari almamater yang sama.
                             </p>
                             <p>
                                 Perjalanan keilmuannya berlanjut ke jenjang doktoral (Ph.D.) di National Cheng Kung University (NCKU), Taiwan, pada Department of Hydraulic and Ocean Engineering. Berkat kualitas riset dan capaian akademiknya yang unggul, beliau dinobatkan sebagai salah satu lulusan terbaik program doktoral dan dianugerahi penghargaan kehormatan dari <em>The Phi Tau Phi Scholastic Honor Society of the Republic of China</em> pada tahun 2023.
@@ -219,9 +219,12 @@
                                 {{-- S2 --}}
                                 <div class="relative group">
                                     <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-400 ring-4 ring-slate-100"></div>
-                                    <span class="inline-block text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md border border-slate-200/60">
-                                        Program Magister (M.Eng.)
-                                    </span>
+                                    <div class="flex items-center gap-2 flex-wrap">
+                                        <span class="inline-block text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md border border-slate-200/60">
+                                            Program Magister (M.Eng.)
+                                        </span>
+                                        <span class="text-xs font-semibold text-slate-400 font-mono">Lulus 2012</span>
+                                    </div>
                                     <h5 class="text-sm sm:text-base font-bold text-slate-900 mt-1.5">Universitas Gadjah Mada (UGM), Yogyakarta</h5>
                                     <p class="text-xs text-slate-600 mt-0.5">Jurusan Teknik Sipil, Fakultas Teknik</p>
                                 </div>
@@ -233,7 +236,7 @@
                                         <span class="inline-block text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-md border border-slate-200/60">
                                             Program Sarjana (S.T.)
                                         </span>
-                                        <span class="text-xs text-slate-500 font-medium">Jalur PBUD Grobogan (1998)</span>
+                                        <span class="text-xs font-semibold text-slate-400 font-mono">Lulus 2004</span>
                                     </div>
                                     <h5 class="text-sm sm:text-base font-bold text-slate-900 mt-1.5">Universitas Gadjah Mada (UGM), Yogyakarta</h5>
                                     <p class="text-xs text-slate-600 mt-0.5">Jurusan Teknik Sipil, Fakultas Teknik</p>

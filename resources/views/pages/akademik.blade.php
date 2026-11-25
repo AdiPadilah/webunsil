@@ -53,7 +53,7 @@
                 <div class="grid grid-rows-2 gap-6 sm:gap-7">
 
                     {{-- Kanan Atas: Peraturan & Informasi --}}
-                    <a href="{{ route('download') }}" class="group relative rounded-3xl overflow-hidden block min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end hover-lift">
+                    <a href="{{ route('layanan') }}" class="group relative rounded-3xl overflow-hidden block min-h-[220px] sm:min-h-[238px] shadow-sm hover:shadow-xl transition-all duration-300 bg-slate-900 flex flex-col justify-end hover-lift">
                         <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" alt="Peraturan & Informasi" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 via-50% to-transparent"></div>
                         <div class="relative z-10 p-5 sm:p-6">
