@@ -85,17 +85,17 @@
                         <button type="button" data-filter="all" class="filter-pill active px-3 py-1.5 rounded-full text-xs font-semibold bg-[#0B2A4A] text-white transition">
                             Semua ({{ $schedules->count() }})
                         </button>
-                        <button type="button" data-filter="Sidang Akhir Skripsi" class="filter-pill px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition inline-flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                            Sidang Akhir Skripsi
+                        <button type="button" data-filter="Seminar Proposal" class="filter-pill px-3 py-1.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition inline-flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+                            Seminar Proposal
                         </button>
                         <button type="button" data-filter="Seminar Hasil" class="filter-pill px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition inline-flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-amber-500"></span>
                             Seminar Hasil
                         </button>
-                        <button type="button" data-filter="Seminar Proposal" class="filter-pill px-3 py-1.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition inline-flex items-center gap-1.5">
-                            <span class="w-2 h-2 rounded-full bg-purple-600"></span>
-                            Seminar Proposal
+                        <button type="button" data-filter="Sidang Akhir Skripsi" class="filter-pill px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition inline-flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                            Sidang Akhir Skripsi
                         </button>
                     </div>
 
