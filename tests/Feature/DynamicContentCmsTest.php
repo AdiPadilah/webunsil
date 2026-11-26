@@ -131,7 +131,13 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/pengabdian')
             ->assertOk()
             ->assertSee('DHIGANA')
-            ->assertSee('Optimizing Home Yards');
+            ->assertSee('Optimizing Home Yards')
+            ->assertSee('grid-cols-1 gap-4', false)
+            ->assertDontSee('md:grid-cols-2', false)
+            ->assertSee('id="abmasSearchInput"', false)
+            ->assertSee('id="abmasPagination"', false)
+            ->assertSee('Jurnal PkM (7)')
+            ->assertSee('SINTA (2)');
 
         $this->get('/buku')
             ->assertOk()
