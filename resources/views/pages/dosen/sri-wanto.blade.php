@@ -375,7 +375,107 @@
                         </div>
                     </div>
 
-                    {{-- 4. Publikasi Ilmiah --}}
+                    {{-- 4. Karya Buku --}}
+                    <div id="karya-buku" class="scroll-mt-24 bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 border border-cyan-100/80 flex items-center justify-center font-bold text-base shadow-sm">
+                                    <i class="fa-solid fa-book" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
+                                        Karya Buku
+                                    </h3>
+                                    <p class="text-xs text-slate-400 font-medium">Buku referensi dan buku ajar ber-ISBN yang terhubung ke katalog program studi</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="text-xs font-bold px-3.5 py-1 bg-cyan-50 text-cyan-800 rounded-full border border-cyan-200 shadow-sm">
+                                    <i class="fa-solid fa-book-bookmark text-cyan-600 mr-1" aria-hidden="true"></i> {{ $books->count() }} Buku
+                                </span>
+                                <a href="{{ route('buku') }}" class="text-xs font-semibold text-[#0070BA] hover:text-[#0B2A4A] hover:underline px-2 py-1">
+                                    Lihat Katalog
+                                </a>
+                            </div>
+                        </div>
+
+                        @php
+                            $bukuDetailsByIsbn = [
+                                '978-634-7526-24-3' => [
+                                    'penerbit' => 'CV Hei Publishing Indonesia',
+                                    'tim_penulis' => 'Munadrah, M. Sang Gumilar Panca Putra, Joey Limbongan, Budwi Harsono, Agus Subrianto, Sri Agustin, Sari Utama Dewi, Sri Wanto, Zikra Fauzan Virawan, Aprilia Wulandari, & Nurul Firkhati Hidayah',
+                                ],
+                            ];
+                        @endphp
+
+                        <div class="space-y-3.5">
+                            @forelse($books as $index => $book)
+                                @php
+                                    $coverUrl = $book->cover_url;
+                                    $detailMeta = $bukuDetailsByIsbn[$book->isbn ?? ''] ?? null;
+                                    $badgeLabel = $book->label ?: ($book->kategori === 'fiksi' ? 'Novel Fiksi' : 'Non-Fiksi');
+                                @endphp
+                                <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-cyan-400 hover:bg-white hover:shadow-sm transition-all duration-200 flex items-start gap-4 group">
+                                    @if($coverUrl)
+                                        <div class="shrink-0 w-16 sm:w-20 aspect-[3/4] rounded-lg overflow-hidden border border-slate-200 bg-slate-100 shadow-xs">
+                                            <img src="{{ $coverUrl }}"
+                                                 alt="Sampul {{ $book->judul }}"
+                                                 loading="lazy"
+                                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        </div>
+                                    @else
+                                        <div class="shrink-0 w-16 sm:w-20 aspect-[3/4] rounded-lg overflow-hidden border border-blue-950/20 bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] text-white p-2 flex flex-col justify-between shadow-xs">
+                                            <span class="text-[8px] font-bold uppercase tracking-wider text-amber-400">{{ $badgeLabel }}</span>
+                                            <i class="fa-solid fa-book text-base text-white/30 self-center" aria-hidden="true"></i>
+                                            <span class="text-[8px] font-semibold leading-tight text-slate-200 line-clamp-2">{{ $book->judul }}</span>
+                                        </div>
+                                    @endif
+
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+                                            <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-md bg-cyan-50 text-cyan-800 border border-cyan-200/70">
+                                                #{{ $index + 1 }} &bull; {{ $badgeLabel }}
+                                            </span>
+                                            @if($book->tahun)
+                                                <span class="text-[11px] font-bold text-slate-500 bg-slate-100/90 px-2.5 py-0.5 rounded-md border border-slate-200/60 font-mono">
+                                                    {{ $book->tahun }}
+                                                </span>
+                                            @endif
+                                        </div>
+
+                                        <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0B2A4A] transition-colors">
+                                            {{ $book->judul }}
+                                        </h4>
+
+                                        <p class="text-xs text-slate-600 mt-1">
+                                            <strong class="text-slate-700">Penulis:</strong>
+                                            {{ $detailMeta['tim_penulis'] ?? $book->penulis }}
+                                        </p>
+
+                                        @if(!empty($detailMeta['penerbit']))
+                                            <p class="text-[11px] text-slate-500 mt-0.5">
+                                                <strong class="text-slate-700">Penerbit:</strong> {{ $detailMeta['penerbit'] }}
+                                            </p>
+                                        @endif
+
+                                        @if(!empty($book->isbn))
+                                            <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
+                                                <span class="inline-block font-mono text-[11px] bg-white px-2.5 py-0.5 rounded-md border border-slate-200/80 text-slate-600">
+                                                    ISBN: {{ $book->isbn }}
+                                                </span>
+                                            </div>
+                                        @endif
+                                    </div>
+                                </div>
+                            @empty
+                                <div class="p-6 rounded-xl bg-slate-50 border border-slate-200/80 text-center text-xs text-slate-500">
+                                    Belum ada karya buku yang ditautkan ke profil ini.
+                                </div>
+                            @endforelse
+                        </div>
+                    </div>
+
+                    {{-- 5. Publikasi Ilmiah --}}
                     <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
                         <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
                             <div class="flex items-center gap-3">
@@ -510,106 +610,6 @@
                                 @endif
                             </div>
                             @endforeach
-                        </div>
-                    </div>
-
-                    {{-- 5. Karya Buku --}}
-                    <div id="karya-buku" class="scroll-mt-24 bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
-                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 border border-cyan-100/80 flex items-center justify-center font-bold text-base shadow-sm">
-                                    <i class="fa-solid fa-book" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
-                                        Karya Buku
-                                    </h3>
-                                    <p class="text-xs text-slate-400 font-medium">Buku referensi dan buku ajar ber-ISBN yang terhubung ke katalog program studi</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-2 flex-wrap">
-                                <span class="text-xs font-bold px-3.5 py-1 bg-cyan-50 text-cyan-800 rounded-full border border-cyan-200 shadow-sm">
-                                    <i class="fa-solid fa-book-bookmark text-cyan-600 mr-1" aria-hidden="true"></i> {{ $books->count() }} Buku
-                                </span>
-                                <a href="{{ route('buku') }}" class="text-xs font-semibold text-[#0070BA] hover:text-[#0B2A4A] hover:underline px-2 py-1">
-                                    Lihat Katalog
-                                </a>
-                            </div>
-                        </div>
-
-                        @php
-                            $bukuDetailsByIsbn = [
-                                '978-634-7526-24-3' => [
-                                    'penerbit' => 'CV Hei Publishing Indonesia',
-                                    'tim_penulis' => 'Munadrah, M. Sang Gumilar Panca Putra, Joey Limbongan, Budwi Harsono, Agus Subrianto, Sri Agustin, Sari Utama Dewi, Sri Wanto, Zikra Fauzan Virawan, Aprilia Wulandari, & Nurul Firkhati Hidayah',
-                                ],
-                            ];
-                        @endphp
-
-                        <div class="space-y-3.5">
-                            @forelse($books as $index => $book)
-                                @php
-                                    $coverUrl = $book->cover_url;
-                                    $detailMeta = $bukuDetailsByIsbn[$book->isbn ?? ''] ?? null;
-                                    $badgeLabel = $book->label ?: ($book->kategori === 'fiksi' ? 'Novel Fiksi' : 'Non-Fiksi');
-                                @endphp
-                                <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-cyan-400 hover:bg-white hover:shadow-sm transition-all duration-200 flex items-start gap-4 group">
-                                    @if($coverUrl)
-                                        <div class="shrink-0 w-16 sm:w-20 aspect-[3/4] rounded-lg overflow-hidden border border-slate-200 bg-slate-100 shadow-xs">
-                                            <img src="{{ $coverUrl }}"
-                                                 alt="Sampul {{ $book->judul }}"
-                                                 loading="lazy"
-                                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                                        </div>
-                                    @else
-                                        <div class="shrink-0 w-16 sm:w-20 aspect-[3/4] rounded-lg overflow-hidden border border-blue-950/20 bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] text-white p-2 flex flex-col justify-between shadow-xs">
-                                            <span class="text-[8px] font-bold uppercase tracking-wider text-amber-400">{{ $badgeLabel }}</span>
-                                            <i class="fa-solid fa-book text-base text-white/30 self-center" aria-hidden="true"></i>
-                                            <span class="text-[8px] font-semibold leading-tight text-slate-200 line-clamp-2">{{ $book->judul }}</span>
-                                        </div>
-                                    @endif
-
-                                    <div class="flex-1 min-w-0">
-                                        <div class="flex items-center gap-2 mb-1.5 flex-wrap">
-                                            <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-md bg-cyan-50 text-cyan-800 border border-cyan-200/70">
-                                                #{{ $index + 1 }} &bull; {{ $badgeLabel }}
-                                            </span>
-                                            @if($book->tahun)
-                                                <span class="text-[11px] font-bold text-slate-500 bg-slate-100/90 px-2.5 py-0.5 rounded-md border border-slate-200/60 font-mono">
-                                                    {{ $book->tahun }}
-                                                </span>
-                                            @endif
-                                        </div>
-
-                                        <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug group-hover:text-[#0B2A4A] transition-colors">
-                                            {{ $book->judul }}
-                                        </h4>
-
-                                        <p class="text-xs text-slate-600 mt-1">
-                                            <strong class="text-slate-700">Penulis:</strong>
-                                            {{ $detailMeta['tim_penulis'] ?? $book->penulis }}
-                                        </p>
-
-                                        @if(!empty($detailMeta['penerbit']))
-                                            <p class="text-[11px] text-slate-500 mt-0.5">
-                                                <strong class="text-slate-700">Penerbit:</strong> {{ $detailMeta['penerbit'] }}
-                                            </p>
-                                        @endif
-
-                                        @if(!empty($book->isbn))
-                                            <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between flex-wrap gap-2">
-                                                <span class="inline-block font-mono text-[11px] bg-white px-2.5 py-0.5 rounded-md border border-slate-200/80 text-slate-600">
-                                                    ISBN: {{ $book->isbn }}
-                                                </span>
-                                            </div>
-                                        @endif
-                                    </div>
-                                </div>
-                            @empty
-                                <div class="p-6 rounded-xl bg-slate-50 border border-slate-200/80 text-center text-xs text-slate-500">
-                                    Belum ada karya buku yang ditautkan ke profil ini.
-                                </div>
-                            @endforelse
                         </div>
                     </div>
 
