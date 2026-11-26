@@ -118,7 +118,7 @@ class DosenForm
                             })
                             ->disk('public')
                             ->directory('dosen-cv')
-                            ->helperText('Saat PDF diunggah, form biodata otomatis terisi sesuai CV agar tinggal direvisi sebelum disimpan. Tombol Unduh CV juga tampil di sidebar profil dosen.'),
+                            ->helperText('Saat PDF diunggah, form biodata otomatis terisi sesuai CV agar tinggal direvisi sebelum disimpan.'),
                         Toggle::make('is_published')
                             ->label('Tampilkan di Halaman Dosen?')
                             ->default(true)
@@ -406,7 +406,7 @@ class DosenForm
             ->icon(Heroicon::OutlinedBookOpen)
             ->schema([
                 Section::make('Sinkronisasi Otomatis Buku, Penelitian & Pengabdian')
-                    ->description('Atur penarikan data otomatis dari menu Buku, Penelitian, dan Pengabdian Masyarakat di Admin.')
+                    ->description('Atur penarikan data otomatis dari menu Buku, Penelitian, dan Pengabdian Masyarakat di Admin. Untuk menambah karya buku, buka menu Buku (Riset & Karya Dosen) di sidebar, lalu tautkan ke halaman biodata dosen ini.')
                     ->schema([
                         Toggle::make('sinkron_penelitian')
                             ->label('Gabungkan otomatis data dari menu Penelitian Admin?')
