@@ -117,7 +117,16 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/penelitian')
             ->assertOk()
             ->assertSee('Natural Hazards Research')
-            ->assertSee('Pemali River Basin');
+            ->assertSee('Pemali River Basin')
+            ->assertSee('grid-cols-1 gap-4', false)
+            ->assertDontSee('md:grid-cols-2', false)
+            ->assertSee('id="risetSearchInput"', false)
+            ->assertSee('id="risetDosenFilter"', false)
+            ->assertSee('Andhy Romdani, S.T., M.Eng., Ph.D. (24)')
+            ->assertSee('Dr. Ir. Empung, S.T., M.T. (5)')
+            ->assertSee('SCOPUS (9)')
+            ->assertSee('SINTA (13)')
+            ->assertSee('Prosiding (2)');
 
         $this->get('/pengabdian')
             ->assertOk()

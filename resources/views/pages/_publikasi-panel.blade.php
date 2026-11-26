@@ -57,7 +57,7 @@
         {{-- Baris atas: Nomor + Badge + Kategori --}}
         <div class="flex items-center gap-2 mb-2 flex-wrap">
             @if(!empty($nomor))
-                <span class="w-5 h-5 rounded-md text-[10px] font-bold flex items-center justify-center border {{ $numColor }} shrink-0">
+                <span class="riset-nomor w-5 h-5 rounded-md text-[10px] font-bold flex items-center justify-center border {{ $numColor }} shrink-0">
                     {{ $nomor }}
                 </span>
             @endif
