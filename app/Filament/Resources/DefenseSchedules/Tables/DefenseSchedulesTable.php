@@ -2,11 +2,13 @@
 
 namespace App\Filament\Resources\DefenseSchedules\Tables;
 
+use App\Models\DefenseSchedule;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
 class DefenseSchedulesTable
@@ -17,23 +19,36 @@ class DefenseSchedulesTable
             ->columns([
                 TextColumn::make('student_name')
                     ->label('Mahasiswa')
-                    ->description(fn ($record) => 'NIM: ' . $record->student_id)
+                    ->description(fn (DefenseSchedule $record): string => 'NIM: ' . $record->student_id)
                     ->weight('bold')
-                    ->searchable(),
+                    ->searchable(['student_name', 'student_id']),
 
                 TextColumn::make('type')
                     ->label('Tahapan Sidang')
-                    ->badge(),
+                    ->badge()
+                    ->colors([
+                        'primary' => 'Seminar Proposal',
+                        'warning' => 'Seminar Hasil',
+                        'info' => 'Sidang Akhir Skripsi',
+                    ]),
 
                 TextColumn::make('title')
                     ->label('Judul Skripsi')
                     ->limit(60)
-                    ->wrap(),
+                    ->wrap()
+                    ->searchable(),
+
+                TextColumn::make('supervisor_1')
+                    ->label('Pembimbing')
+                    ->description(fn (DefenseSchedule $record): string => $record->supervisor_2 ? '2. ' . $record->supervisor_2 : '')
+                    ->searchable()
+                    ->toggleable(),
 
                 TextColumn::make('date_time')
                     ->label('Jadwal & Ruang')
                     ->dateTime('d M Y, H:i')
-                    ->description(fn ($record) => $record->room)
+                    ->description(fn (DefenseSchedule $record): string => (string) $record->room)
+                    ->searchable(['room'])
                     ->sortable(),
 
                 TextColumn::make('status')
@@ -47,8 +62,14 @@ class DefenseSchedulesTable
                     ]),
             ])
             ->filters([
-                //
+                SelectFilter::make('type')
+                    ->label('Tahapan Sidang')
+                    ->options(DefenseSchedule::typeOptions()),
+                SelectFilter::make('status')
+                    ->label('Status Pelaksanaan')
+                    ->options(DefenseSchedule::statusOptions()),
             ])
+            ->defaultSort('date_time', 'desc')
             ->recordActions([
                 EditAction::make(),
                 DeleteAction::make(),

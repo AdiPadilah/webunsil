@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources\DefenseSchedules\Schemas;
 
+use App\Models\DefenseSchedule;
+use App\Models\Dosen;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -13,27 +15,24 @@ class DefenseScheduleForm
 {
     public static function configure(Schema $schema): Schema
     {
+        $lecturerSuggestions = fn (): array => Dosen::published()
+            ->orderBy('nama')
+            ->pluck('nama')
+            ->all();
+
         return $schema->components([
             Section::make('Data Mahasiswa & Judul Skripsi')
-                ->description('Jadwal langsung tampil pada halaman Jadwal Sidang Skripsi.')
+                ->description('Jadwal langsung tersinkron ke halaman Kalender Jadwal Sidang Skripsi, Seminar Proposal, Seminar Hasil, dan Sidang Akhir.')
                 ->schema([
                     Select::make('type')
                         ->label('Tahapan Sidang / Seminar')
-                        ->options([
-                            'Seminar Proposal' => 'Seminar Proposal',
-                            'Seminar Hasil' => 'Seminar Hasil',
-                            'Sidang Akhir Skripsi' => 'Sidang Akhir Skripsi',
-                        ])
+                        ->options(DefenseSchedule::typeOptions())
                         ->default('Seminar Proposal')
+                        ->helperText('Menentukan kategori warna di kalender dan halaman tahapan sidang.')
                         ->required(),
                     Select::make('status')
                         ->label('Status Pelaksanaan')
-                        ->options([
-                            'Terjadwal' => 'Terjadwal',
-                            'Sedang Berlangsung' => 'Sedang Berlangsung',
-                            'Selesai' => 'Selesai',
-                            'Ditunda' => 'Ditunda',
-                        ])
+                        ->options(DefenseSchedule::statusOptions())
                         ->default('Terjadwal')
                         ->required(),
                     TextInput::make('student_name')
@@ -54,19 +53,26 @@ class DefenseScheduleForm
                 ->schema([
                     TextInput::make('supervisor_1')
                         ->label('Dosen Pembimbing 1')
+                        ->datalist($lecturerSuggestions)
                         ->required(),
                     TextInput::make('supervisor_2')
-                        ->label('Dosen Pembimbing 2 (Opsional)'),
+                        ->label('Dosen Pembimbing 2 (Opsional)')
+                        ->datalist($lecturerSuggestions),
                     TextInput::make('examiner_1')
-                        ->label('Dosen Penguji 1 (Opsional)'),
+                        ->label('Dosen Penguji 1 (Opsional)')
+                        ->datalist($lecturerSuggestions),
                     TextInput::make('examiner_2')
-                        ->label('Dosen Penguji 2 (Opsional)'),
+                        ->label('Dosen Penguji 2 (Opsional)')
+                        ->datalist($lecturerSuggestions),
                     TextInput::make('room')
                         ->label('Ruangan / Lokasi / Link')
-                        ->placeholder('Contoh: Ruang Sidang FT 2 / Lab Komputasi')
+                        ->placeholder('Contoh: Ruang Sidang FT / Ruang Rapat FT')
+                        ->datalist(DefenseSchedule::roomSuggestions())
                         ->required(),
                     DateTimePicker::make('date_time')
                         ->label('Waktu & Tanggal Sidang')
+                        ->seconds(false)
+                        ->helperText('Format WIB — menentukan tanggal tampil di kalender event.')
                         ->required(),
                 ])
                 ->columns(2),

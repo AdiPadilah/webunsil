@@ -27,9 +27,21 @@ class DefenseScheduleResource extends Resource
 
     protected static string | UnitEnum | null $navigationGroup = 'Layanan Akademik';
 
+    protected static ?int $navigationSort = 1;
+
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedCalendarDays;
 
     protected static ?string $recordTitleAttribute = 'student_name';
+
+    public static function getNavigationBadge(): ?string
+    {
+        return (string) static::getModel()::count();
+    }
+
+    public static function getNavigationBadgeColor(): ?string
+    {
+        return 'primary';
+    }
 
     public static function form(Schema $schema): Schema
     {

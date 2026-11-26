@@ -40,6 +40,15 @@
 
                 <x-filament::button
                     tag="a"
+                    href="{{ route('filament.admin.resources.defense-schedules.create') }}"
+                    :icon="Heroicon::OutlinedCalendarDays"
+                    color="primary"
+                >
+                    Tambah Jadwal Sidang
+                </x-filament::button>
+
+                <x-filament::button
+                    tag="a"
                     href="{{ route('filament.admin.resources.bukus.create') }}"
                     :icon="Heroicon::OutlinedBookOpen"
                     color="warning"

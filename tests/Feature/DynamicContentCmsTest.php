@@ -277,11 +277,15 @@ class DynamicContentCmsTest extends TestCase
 
         Livewire::test(PanduanCepatWidget::class)
             ->assertOk()
-            ->assertSee('Pintasan & Panduan Singkat');
+            ->assertSee('Pintasan & Panduan Singkat')
+            ->assertSee('Tambah Jadwal Sidang')
+            ->assertSee(route('filament.admin.resources.defense-schedules.create'), false);
 
         Livewire::test(ProdiStatsWidget::class)
             ->assertOk()
-            ->assertSee('Penelitian Dosen');
+            ->assertSee('Penelitian Dosen')
+            ->assertSee('Jadwal Sidang Skripsi')
+            ->assertSee(route('filament.admin.resources.defense-schedules.index'), false);
 
         Livewire::test(CreateSiteSetting::class)
             ->assertOk()
@@ -517,7 +521,10 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/jadwal-sidang-skripsi')
             ->assertOk()
             ->assertSee('Rafi Pratama')
-            ->assertSee('Ir. Asep Kurnia, M.T.');
+            ->assertSee('Ir. Asep Kurnia, M.T.')
+            ->assertSee('Semua (1)')
+            ->assertSee('Sidang Akhir Skripsi (1)')
+            ->assertSee('bg-emerald-50 text-emerald-700', false);
         $this->get('/sidang-akhir')
             ->assertOk()
             ->assertSee('Rafi Pratama')
@@ -530,9 +537,20 @@ class DynamicContentCmsTest extends TestCase
             ->assertHasNoFormErrors()
             ->assertRedirect(DefenseScheduleResource::getUrl('index'));
 
+        $this->get('/jadwal-sidang-skripsi')
+            ->assertOk()
+            ->assertSee('Ruang Seminar Kampus 2')
+            ->assertSee('Selesai')
+            ->assertSee('bg-blue-50 text-blue-700', false);
         $this->get('/sidang-akhir')->assertOk()->assertSee('Ruang Seminar Kampus 2');
 
         Livewire::test(ListDefenseSchedules::class)
+            ->assertOk()
+            ->assertSee('Lihat Kalender di Web')
+            ->assertCanSeeTableRecords([$schedule])
+            ->filterTable('type', 'Sidang Akhir Skripsi')
+            ->assertCanSeeTableRecords([$schedule])
+            ->filterTable('status', 'Selesai')
             ->assertCanSeeTableRecords([$schedule])
             ->callTableAction('delete', $schedule);
 

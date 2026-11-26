@@ -20,6 +20,7 @@
                 'date_label' => $s->date_time->translatedFormat('l, d F Y'),
                 'room' => $s->room,
                 'status' => $s->status,
+                'status_badge_class' => $s->status_badge_class,
             ];
         })->values();
 
@@ -87,15 +88,15 @@
                         </button>
                         <button type="button" data-filter="Seminar Proposal" class="filter-pill px-3 py-1.5 rounded-full text-xs font-semibold bg-purple-50 text-purple-800 border border-purple-200 hover:bg-purple-100 transition inline-flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-purple-600"></span>
-                            Seminar Proposal
+                            Seminar Proposal ({{ $schedules->where('type', 'Seminar Proposal')->count() }})
                         </button>
                         <button type="button" data-filter="Seminar Hasil" class="filter-pill px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition inline-flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                            Seminar Hasil
+                            Seminar Hasil ({{ $schedules->where('type', 'Seminar Hasil')->count() }})
                         </button>
                         <button type="button" data-filter="Sidang Akhir Skripsi" class="filter-pill px-3 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 border border-blue-200 hover:bg-blue-100 transition inline-flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                            Sidang Akhir Skripsi
+                            Sidang Akhir Skripsi ({{ $schedules->where('type', 'Sidang Akhir Skripsi')->count() }})
                         </button>
                     </div>
 
@@ -188,8 +189,7 @@
                                         </div>
                                     </td>
                                     <td class="p-4 sm:px-6 text-center">
-                                        <span class="inline-block px-2.5 py-1 rounded-full text-[11px] font-bold
-                                            {{ $s->status == 'Terjadwal' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 text-slate-600' }}">
+                                        <span class="inline-block px-2.5 py-1 rounded-full text-[11px] font-bold {{ $s->status_badge_class }}">
                                             {{ $s->status }}
                                         </span>
                                     </td>
@@ -297,13 +297,31 @@
                 document.getElementById('modal-student-id').textContent = 'NIM: ' + ev.student_id;
                 document.getElementById('modal-thesis-title').textContent = ev.title;
                 document.getElementById('modal-datetime').textContent = `${ev.date_label} • ${ev.time} WIB`;
-                document.getElementById('modal-room').innerHTML = `<i class="fa-solid fa-location-dot text-[10px] mr-1"></i>${ev.room}`;
-                document.getElementById('modal-status').textContent = ev.status;
 
-                const supLines = [`<div><strong>Pembimbing 1:</strong> ${ev.supervisor_1}</div>`];
-                if (ev.supervisor_2) supLines.push(`<div><strong>Pembimbing 2:</strong> ${ev.supervisor_2}</div>`);
-                if (ev.examiners) supLines.push(`<div><strong>Penguji:</strong> ${ev.examiners}</div>`);
-                document.getElementById('modal-supervisors').innerHTML = supLines.join('');
+                const roomEl = document.getElementById('modal-room');
+                roomEl.replaceChildren();
+                const roomIcon = document.createElement('i');
+                roomIcon.className = 'fa-solid fa-location-dot text-[10px] mr-1';
+                roomEl.appendChild(roomIcon);
+                roomEl.appendChild(document.createTextNode(ev.room || ''));
+
+                const statusEl = document.getElementById('modal-status');
+                statusEl.className = `inline-block mt-1 px-2 py-0.5 rounded-full text-[11px] font-bold ${ev.status_badge_class || 'bg-slate-100 text-slate-600'}`;
+                statusEl.textContent = ev.status;
+
+                const supContainer = document.getElementById('modal-supervisors');
+                supContainer.replaceChildren();
+                const appendRole = (label, value) => {
+                    const row = document.createElement('div');
+                    const strong = document.createElement('strong');
+                    strong.textContent = label + ' ';
+                    row.appendChild(strong);
+                    row.appendChild(document.createTextNode(value));
+                    supContainer.appendChild(row);
+                };
+                appendRole('Pembimbing 1:', ev.supervisor_1 || '-');
+                if (ev.supervisor_2) appendRole('Pembimbing 2:', ev.supervisor_2);
+                if (ev.examiners) appendRole('Penguji:', ev.examiners);
 
                 modal.classList.remove('hidden');
                 modal.classList.add('flex');

@@ -2,6 +2,7 @@
 
 namespace App\Filament\Widgets;
 
+use App\Filament\Resources\SiteSettings\SiteSettingResource;
 use App\Models\Article;
 use App\Models\Buku;
 use App\Models\DefenseSchedule;
@@ -9,6 +10,7 @@ use App\Models\Dosen;
 use App\Models\Penelitian;
 use App\Models\Pengabdian;
 use App\Models\Prestasi;
+use App\Models\SiteSetting;
 use Filament\Support\Icons\Heroicon;
 use Filament\Widgets\StatsOverviewWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
@@ -20,7 +22,7 @@ class ProdiStatsWidget extends StatsOverviewWidget
     /**
      * @var int | array<string, ?int> | null
      */
-    protected int | array | null $columns = 3;
+    protected int | array | null $columns = ['default' => 1, 'sm' => 2, 'xl' => 4];
 
     protected ?string $heading = 'Ringkasan Konten Website';
 
@@ -62,11 +64,23 @@ class ProdiStatsWidget extends StatsOverviewWidget
                 ->color('info')
                 ->url(route('filament.admin.resources.dosens.index')),
 
-            Stat::make('Berita & Jadwal Sidang', Article::where('is_published', true)->count() . ' / ' . DefenseSchedule::count())
-                ->description('Berita tayang & jadwal aktif')
+            Stat::make('Berita & Pengumuman', Article::where('is_published', true)->count())
+                ->description('Artikel & pengumuman tayang')
                 ->descriptionIcon(Heroicon::OutlinedNewspaper)
                 ->color('primary')
                 ->url(route('filament.admin.resources.articles.index')),
+
+            Stat::make('Jadwal Sidang Skripsi', DefenseSchedule::count())
+                ->description('Terjadwal: ' . DefenseSchedule::where('status', 'Terjadwal')->count() . ' • Sempro, Semhas & Akhir')
+                ->descriptionIcon(Heroicon::OutlinedCalendarDays)
+                ->color('warning')
+                ->url(route('filament.admin.resources.defense-schedules.index')),
+
+            Stat::make('Statistik & Info Prodi', SiteSetting::current()->akreditasi_peringkat)
+                ->description('Populasi, lulusan & profil kaprodi')
+                ->descriptionIcon(Heroicon::OutlinedAdjustmentsHorizontal)
+                ->color('gray')
+                ->url(SiteSettingResource::getUrl()),
         ];
     }
 }

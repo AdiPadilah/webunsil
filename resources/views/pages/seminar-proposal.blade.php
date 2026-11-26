@@ -62,7 +62,7 @@
                                     <div class="text-[11px] text-blue-700 font-medium flex items-center gap-1 mt-0.5"><i class="fa-solid fa-location-dot text-[10px]"></i> {{ $s->room }}</div>
                                 </td>
                                 <td class="p-4 sm:px-6 text-center">
-                                    <span class="inline-block px-2.5 py-1 rounded-full text-[11px] font-bold {{ $s->status == 'Terjadwal' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-slate-100 text-slate-600' }}">{{ $s->status }}</span>
+                                    <span class="inline-block px-2.5 py-1 rounded-full text-[11px] font-bold {{ $s->status_badge_class }}">{{ $s->status }}</span>
                                 </td>
                             </tr>
                             @empty
