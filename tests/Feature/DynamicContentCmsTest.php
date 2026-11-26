@@ -80,7 +80,7 @@ class DynamicContentCmsTest extends TestCase
         $this->assertSame(1, SiteSetting::count());
         $this->assertSame(24, Penelitian::count());
         $this->assertSame(9, Pengabdian::count());
-        $this->assertSame(25, Buku::count());
+        $this->assertSame(26, Buku::count());
         $this->assertSame(6, Prestasi::count());
         $this->assertSame(24, Dosen::count());
 
@@ -242,6 +242,15 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Ir. M. Ridha Al Mustafa, S.T., M.T.')
             ->assertSee('Institut Teknologi Sepuluh Nopember (ITS)')
             ->assertSee('MANAJEMEN KONSTRUKSI (GREEN KONSTRUKSI)');
+
+        $this->get('/dosen/raden-roro-dita')
+            ->assertOk()
+            ->assertSee('Raden Roro Dita Arviananda, S.Pd., M.Eng.')
+            ->assertSee('NUPTK: 4661773674230262')
+            ->assertSee('arvianandadita@unsil.ac.id')
+            ->assertSee('Kimia Lingkungan')
+            ->assertSee('978-634-7526-21-2')
+            ->assertSee('Gemini Certified Educator');
     }
 
     public function test_unpublished_records_stay_hidden_and_filament_pages_render(): void

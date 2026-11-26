@@ -86,6 +86,10 @@
             'penerbit' => 'CV Hei Publishing Indonesia',
             'tim_penulis' => 'Munadrah, M. Sang Gumilar Panca Putra, Joey Limbongan, Budwi Harsono, Agus Subrianto, Sri Agustin, Sari Utama Dewi, Sri Wanto, Zikra Fauzan Virawan, Aprilia Wulandari, & Nurul Firkhati Hidayah',
         ],
+        '978-634-7526-21-2' => [
+            'penerbit' => 'CV Hei Publishing Indonesia',
+            'tim_penulis' => 'Faradika, M., Suyasa, W. B., Ikbal, M., Jatnika, G. R., Arviananda, R. R. D., Kusmardini, D., Fadillah, G., & Utami, C. R.',
+        ],
         'Transportasi Perkerasan Jalan' => ['penerbit' => 'CV. HEI Publishing • Juli 2025'],
         'Timbunan dan Konstruksi Penahan Tanah' => ['penerbit' => 'CV. HEI Publishing • Maret 2026'],
         'Manajemen Konstruksi' => ['penerbit' => 'Menara Press Indonesia • 2026'],
@@ -194,7 +198,7 @@
                             </span>
                             @if(filled($dosen->nidn))
                                 <span class="inline-flex items-center gap-1.5 text-[11px] font-mono font-semibold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200">
-                                    NIDN: {{ $dosen->nidn }}
+                                    {{ strlen(preg_replace('/\D/', '', (string) $dosen->nidn)) >= 15 ? 'NUPTK' : 'NIDN' }}: {{ $dosen->nidn }}
                                 </span>
                             @endif
                         </div>
