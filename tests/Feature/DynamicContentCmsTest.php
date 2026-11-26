@@ -91,6 +91,7 @@ class DynamicContentCmsTest extends TestCase
             ->assertOk()
             ->assertSee('Program Studi Teknik Sipil')
             ->assertSee('Workshop Penguatan Kurikulum')
+            ->assertSee(route('kerja-praktik'), false)
             ->assertSee(route('ruang-komunal-mahasiswa'), false)
             ->assertSee('Ruang Komunal Mahasiswa')
             ->assertSeeInOrder([
@@ -109,6 +110,7 @@ class DynamicContentCmsTest extends TestCase
         $beritaPage2->assertSee('Tim Tirta Adhipermana Teknik Sipil UNSIL Menyabet Juara 1');
         $this->assertSame(6, substr_count($beritaPage2->getContent(), '<article class="bg-white rounded-xl'));
         $this->get('/publikasi')->assertOk();
+        $this->get('/kerja-praktik')->assertOk()->assertSee('Kerja Praktik');
         $this->get('/alur-pengurusan-kerja-praktik')->assertOk();
         $this->get('/alur-pengurusan-skripsi')->assertOk()->assertSee('Alur Pengurusan Skripsi');
         $this->get('/fasilitas')

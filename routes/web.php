@@ -267,7 +267,11 @@ Route::get('/mahasiswa-alumni', function () {
     return view('pages.mahasiswa-alumni');
 })->name('mahasiswa-alumni');
 
-// 11a. Alur Pengurusan Kerja Praktik & Skripsi
+// 11a. Kerja Praktik & Alur Pengurusan Kerja Praktik & Skripsi
+Route::get('/kerja-praktik', function () {
+    return view('pages.kerja-praktik');
+})->name('kerja-praktik');
+
 Route::get('/alur-pengurusan-kerja-praktik', function () {
     return view('pages.alur-pengurusan-kerja-praktik');
 })->name('alur-pengurusan-kerja-praktik');
