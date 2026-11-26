@@ -182,6 +182,10 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Sri Wanto, S.T., M.T.')
             ->assertSee('Konstruksi Struktur Jembatan')
             ->assertSee('978-634-7526-24-3')
+            ->assertSee('Research Roadmap')
+            ->assertSee('Structural Retrofit')
+            ->assertSee('Doctoral Dissertation')
+            ->assertSee('Utilization of software and Artificial Intelligence for speed in analysis')
             ->assertSee('/storage/buku-covers/konstruksi-struktur-jembatan.jpg', false)
             ->assertSee('/storage/dosen/sri-wanto.jpg', false);
     }

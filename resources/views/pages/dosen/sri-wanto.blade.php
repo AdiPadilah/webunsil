@@ -613,110 +613,194 @@
                         </div>
                     </div>
 
-                    {{-- 6. Roadmap Penelitian (2024–2029) --}}
-                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
-                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 border border-blue-100/80 flex items-center justify-center font-bold text-base shadow-sm">
-                                    <i class="fa-solid fa-diagram-project"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
-                                        Roadmap Penelitian (2024 &ndash; 2029)
-                                    </h3>
-                                    <p class="text-xs text-slate-400 font-medium">Peta jalan riset dari perkuatan struktur hingga integrasi kecerdasan buatan (AI)</p>
-                                </div>
-                            </div>
-                            <span class="text-xs font-bold px-3.5 py-1 bg-blue-50 text-[#0B2A4A] rounded-full border border-blue-200/70">
-                                Structural Retrofit
-                            </span>
-                        </div>
-
-                        <div class="border-l-2 border-[#0070BA]/25 pl-4 sm:pl-6 space-y-5 ml-2.5 my-2">
-                            {{-- 2024 --}}
-                            <div class="relative">
-                                <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-400 ring-4 ring-slate-100"></div>
-                                <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200/80">
-                                    <div class="flex items-center gap-2 flex-wrap mb-2">
-                                        <span class="text-xs font-bold text-white bg-[#0B2A4A] px-2.5 py-0.5 rounded-md font-mono">2024</span>
-                                        <span class="text-[11px] font-semibold text-slate-600">Fondasi Structural Retrofit &amp; Evaluasi Kerentanan</span>
-                                    </div>
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
-                                        <div class="p-3 rounded-lg bg-white border border-slate-200/80">
-                                            <p class="text-xs font-semibold text-slate-800 leading-snug">
-                                                Evaluating Concrete Structures in Existing Buildings with the Addition of Base Isolation Systems Based on Seismic Fragility
-                                            </p>
-                                            <span class="inline-block mt-2 text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded">
-                                                Luaran: Semnastera Sinta 5
-                                            </span>
-                                        </div>
-                                        <div class="p-3 rounded-lg bg-white border border-slate-200/80">
-                                            <p class="text-xs font-semibold text-slate-800 leading-snug">
-                                                Numerical Methods and Computing Tools for Assessing Infrastructure System Reliability and Earthquake Hazard Vulnerability
-                                            </p>
-                                            <span class="inline-block mt-2 text-[10px] font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded">
-                                                Luaran: Jurnal Artikel Sinta 6
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {{-- 2024-2027 Long Term --}}
-                            <div class="relative">
-                                <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-[#0070BA] ring-4 ring-blue-100"></div>
-                                <div class="p-4 rounded-xl bg-blue-50/50 border border-blue-200/80">
-                                    <div class="flex items-center gap-2 flex-wrap mb-1.5">
-                                        <span class="text-xs font-bold text-white bg-[#0070BA] px-2.5 py-0.5 rounded-md font-mono">2024 &ndash; 2027</span>
-                                        <span class="text-[11px] font-bold text-[#0070BA] uppercase tracking-wider">Jangka Panjang &bull; Disertasi Doktoral</span>
-                                    </div>
-                                    <p class="text-xs sm:text-sm font-bold text-slate-900 leading-snug mt-1">
-                                        Study of reinforcement and strength degradation of rubber joints in rubber weir structures
-                                    </p>
-                                    <span class="inline-block mt-2 text-[10px] font-bold text-blue-800 bg-white border border-blue-200 px-2.5 py-0.5 rounded">
-                                        Target Luaran: Publikasi 2 Artikel Scopus Q2 &amp; Q3
-                                    </span>
-                                </div>
-                            </div>
-
-                            {{-- 2028 --}}
-                            <div class="relative">
-                                <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-amber-500 ring-4 ring-amber-100"></div>
-                                <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200/80">
-                                    <div class="flex items-center gap-2 flex-wrap mb-1.5">
-                                        <span class="text-xs font-bold text-white bg-amber-600 px-2.5 py-0.5 rounded-md font-mono">2028</span>
-                                        <span class="text-[11px] font-semibold text-slate-600">Topik Riset</span>
-                                    </div>
-                                    <p class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                                        Redundancy of structural by AI
-                                    </p>
-                                    <span class="inline-block mt-2 text-[10px] font-bold text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded">
-                                        Target Luaran: Publikasi Artikel Scopus Q2/Q3
-                                    </span>
-                                </div>
-                            </div>
-
-                            {{-- 2029 --}}
-                            <div class="relative">
-                                <div class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></div>
-                                <div class="p-4 rounded-xl bg-slate-50/80 border border-slate-200/80">
-                                    <div class="flex items-center gap-2 flex-wrap mb-1.5">
-                                        <span class="text-xs font-bold text-white bg-emerald-600 px-2.5 py-0.5 rounded-md font-mono">2029</span>
-                                        <span class="text-[11px] font-semibold text-slate-600">Topik Riset</span>
-                                    </div>
-                                    <p class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                                        Prediction of building collapse with AI
-                                    </p>
-                                    <span class="inline-block mt-2 text-[10px] font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded">
-                                        Target Luaran: Buku (Book)
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
+            </div>
+
+            {{-- 6. Roadmap Penelitian (2024–2029) — Diagram Alir Horizontal --}}
+            <div class="mt-8 bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 border border-blue-100/80 flex items-center justify-center font-bold text-base shadow-sm">
+                            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
+                                Research Roadmap (2024 &ndash; 2029)
+                            </h3>
+                            <p class="text-xs text-slate-400 font-medium">Peta jalan riset dari Structural Retrofit hingga pemanfaatan kecerdasan buatan (AI)</p>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold px-3.5 py-1 bg-blue-50 text-[#0B2A4A] rounded-full border border-blue-200/70">
+                        Structural Retrofit
+                    </span>
+                </div>
+
+                <p class="xl:hidden text-[11px] text-slate-400 flex items-center gap-1.5 mb-3">
+                    <i class="fa-solid fa-arrows-left-right text-[#0070BA]" aria-hidden="true"></i>
+                    Geser diagram ke kanan untuk melihat seluruh alur roadmap
+                </p>
+
+                <div class="overflow-x-auto pb-2 profile-sidebar-scroll">
+                    <div class="min-w-[1040px] w-full rounded-xl bg-slate-50/70 border border-slate-200/70 p-4 sm:p-5">
+                        <div class="grid grid-cols-[105px_2.4fr_1.45fr_1fr_1fr_155px] grid-rows-[auto_auto_auto] gap-x-2">
+
+                            {{-- ==================== BARIS ATAS: TOPIK PENELITIAN ==================== --}}
+                            <div class="row-start-1 col-start-1"></div>
+
+                            {{-- 2024 Topik (2 Kartu + Cabang Y) --}}
+                            <div class="row-start-1 col-start-2 flex flex-col justify-end">
+                                <div class="grid grid-cols-2 gap-2.5">
+                                    <div class="p-3 rounded-lg bg-white border border-slate-300/90 shadow-sm text-[11px] font-medium text-slate-800 leading-snug">
+                                        Evaluating Concrete Structures in Existing Buildings with the Addition of Base Isolation Systems Based on Seismic Fragility
+                                    </div>
+                                    <div class="p-3 rounded-lg bg-white border border-slate-300/90 shadow-sm text-[11px] font-medium text-slate-800 leading-snug">
+                                        Numerical Methods and Computing Tools for Assessing Infrastructure System Reliability and Earthquake Hazard Vulnerability
+                                    </div>
+                                </div>
+                                <svg class="w-full h-7 block" viewBox="0 0 320 28" preserveAspectRatio="none" aria-hidden="true">
+                                    <line x1="78" y1="0" x2="160" y2="28" stroke="#0B2A4A" stroke-opacity="0.55" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+                                    <line x1="242" y1="0" x2="160" y2="28" stroke="#0B2A4A" stroke-opacity="0.55" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+                                </svg>
+                            </div>
+
+                            {{-- 2024–2027 Topik --}}
+                            <div class="row-start-1 col-start-3 flex flex-col justify-end items-center">
+                                <div class="w-full p-3 rounded-lg bg-white border border-blue-300 shadow-sm text-[11px] font-medium text-slate-800 leading-snug">
+                                    Study of reinforcement and strength degradation of rubber joints in rubber weir structures
+                                </div>
+                                <div class="w-[1.5px] h-7 bg-[#0070BA]/60" aria-hidden="true"></div>
+                            </div>
+
+                            {{-- 2028 Topik --}}
+                            <div class="row-start-1 col-start-4 flex flex-col justify-end items-center">
+                                <div class="w-full p-3 rounded-lg bg-white border border-amber-300 shadow-sm text-[11px] font-medium text-slate-800 leading-snug">
+                                    <span class="block text-[10px] font-bold text-amber-700 uppercase tracking-wide mb-0.5">Topic</span>
+                                    Redundancy of structural by AI
+                                </div>
+                                <div class="w-[1.5px] h-7 bg-amber-600/60" aria-hidden="true"></div>
+                            </div>
+
+                            {{-- 2029 Topik --}}
+                            <div class="row-start-1 col-start-5 flex flex-col justify-end items-center">
+                                <div class="w-full p-3 rounded-lg bg-white border border-emerald-300 shadow-sm text-[11px] font-medium text-slate-800 leading-snug">
+                                    <span class="block text-[10px] font-bold text-emerald-700 uppercase tracking-wide mb-0.5">Topic</span>
+                                    Prediction of building collapse with AI
+                                </div>
+                                <div class="w-[1.5px] h-7 bg-emerald-600/60" aria-hidden="true"></div>
+                            </div>
+
+                            <div class="row-start-1 col-start-6"></div>
+
+                            {{-- ==================== BARIS TENGAH: PANAH & MILESTONE ==================== --}}
+                            {{-- Panah horizontal kontinu di belakang node tahun --}}
+                            <div class="row-start-2 col-start-1 col-end-7 relative pointer-events-none z-0" aria-hidden="true">
+                                <div class="absolute inset-y-0 left-[95px] right-[155px] flex items-center">
+                                    <div class="h-5 flex-1 bg-gradient-to-r from-[#0B2A4A]/15 via-[#0070BA]/25 to-[#0070BA]/40 border-y-2 border-[#0B2A4A]/60"></div>
+                                    <svg class="w-7 h-10 shrink-0 -ml-[1px]" viewBox="0 0 28 40" fill="none">
+                                        <path d="M0 11 H10 V3 L26 20 L10 37 V29 H0 Z" fill="#0070BA" fill-opacity="0.38" />
+                                        <path d="M0 11 H10 V3 L26 20 L10 37 V29 H0" stroke="#0B2A4A" stroke-opacity="0.6" stroke-width="2" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            {{-- Start Box --}}
+                            <div class="row-start-2 col-start-1 relative z-10 flex items-center justify-center py-2">
+                                <div class="w-full px-2.5 py-2.5 rounded-lg bg-white border-2 border-[#0B2A4A] text-center shadow-sm">
+                                    <span class="block text-xs font-bold text-[#0B2A4A] leading-tight">Structural Retrofit</span>
+                                </div>
+                            </div>
+
+                            {{-- Node 2024 --}}
+                            <div class="row-start-2 col-start-2 relative z-10 flex items-center justify-center py-2">
+                                <div class="w-[1.5px] h-full bg-[#0B2A4A]/55 absolute left-1/2 -translate-x-1/2 inset-y-0 z-0" aria-hidden="true"></div>
+                                <div class="relative z-10 px-4 py-1.5 rounded-lg bg-white border-2 border-[#0B2A4A] text-[#0B2A4A] font-extrabold font-mono text-xs shadow-sm">
+                                    2024
+                                </div>
+                            </div>
+
+                            {{-- Node Long Term 2024–2027 --}}
+                            <div class="row-start-2 col-start-3 relative z-10 flex items-center justify-center py-2">
+                                <div class="w-[1.5px] h-full bg-[#0070BA]/60 absolute left-1/2 -translate-x-1/2 inset-y-0 z-0" aria-hidden="true"></div>
+                                <div class="relative z-10 px-3 py-2 rounded-lg bg-[#0B2A4A] border-2 border-[#0B2A4A] text-white text-center shadow-sm">
+                                    <span class="block text-[11px] font-extrabold font-mono leading-tight">Long Term 2024 &ndash; 2027</span>
+                                    <span class="block text-[10px] font-medium text-blue-200 mt-0.5 leading-tight">Doctoral Dissertation</span>
+                                </div>
+                            </div>
+
+                            {{-- Node 2028 --}}
+                            <div class="row-start-2 col-start-4 relative z-10 flex items-center justify-center py-2">
+                                <div class="w-[1.5px] h-full bg-amber-600/60 absolute left-1/2 -translate-x-1/2 inset-y-0 z-0" aria-hidden="true"></div>
+                                <div class="relative z-10 px-4 py-1.5 rounded-lg bg-white border-2 border-amber-600 text-[#0B2A4A] font-extrabold font-mono text-xs shadow-sm">
+                                    2028
+                                </div>
+                            </div>
+
+                            {{-- Node 2029 --}}
+                            <div class="row-start-2 col-start-5 relative z-10 flex items-center justify-center py-2">
+                                <div class="w-[1.5px] h-full bg-emerald-600/60 absolute left-1/2 -translate-x-1/2 inset-y-0 z-0" aria-hidden="true"></div>
+                                <div class="relative z-10 px-4 py-1.5 rounded-lg bg-white border-2 border-emerald-600 text-[#0B2A4A] font-extrabold font-mono text-xs shadow-sm">
+                                    2029
+                                </div>
+                            </div>
+
+                            {{-- End Goal Box --}}
+                            <div class="row-start-2 col-start-6 relative z-10 flex items-center justify-center py-2">
+                                <div class="w-full p-3 rounded-xl bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] border-2 border-[#0B2A4A] text-white text-center shadow-sm">
+                                    <span class="block text-[11px] font-semibold leading-snug">
+                                        Utilization of software and Artificial Intelligence for speed in analysis
+                                    </span>
+                                </div>
+                            </div>
+
+                            {{-- ==================== BARIS BAWAH: LUARAN PENELITIAN ==================== --}}
+                            <div class="row-start-3 col-start-1"></div>
+
+                            {{-- 2024 Luaran (2 Kartu + Cabang Y Terbalik) --}}
+                            <div class="row-start-3 col-start-2 flex flex-col justify-start">
+                                <svg class="w-full h-7 block" viewBox="0 0 320 28" preserveAspectRatio="none" aria-hidden="true">
+                                    <line x1="160" y1="0" x2="78" y2="28" stroke="#0B2A4A" stroke-opacity="0.55" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+                                    <line x1="160" y1="0" x2="242" y2="28" stroke="#0B2A4A" stroke-opacity="0.55" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+                                </svg>
+                                <div class="grid grid-cols-2 gap-2.5">
+                                    <div class="p-2.5 rounded-lg bg-emerald-50/70 border border-emerald-300 shadow-sm text-center text-[11px] font-bold text-emerald-900 leading-snug">
+                                        Semnastera Sinta 5
+                                    </div>
+                                    <div class="p-2.5 rounded-lg bg-indigo-50/70 border border-indigo-300 shadow-sm text-center text-[11px] font-bold text-indigo-900 leading-snug">
+                                        Jurnal Artikel Sinta 6
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- 2024–2027 Luaran --}}
+                            <div class="row-start-3 col-start-3 flex flex-col justify-start items-center">
+                                <div class="w-[1.5px] h-7 bg-[#0070BA]/60" aria-hidden="true"></div>
+                                <div class="w-full p-2.5 rounded-lg bg-blue-50/70 border border-blue-300 shadow-sm text-center text-[11px] font-bold text-blue-950 leading-snug">
+                                    Publication 2 articles in Scopus Q2 &amp; Q3
+                                </div>
+                            </div>
+
+                            {{-- 2028 Luaran --}}
+                            <div class="row-start-3 col-start-4 flex flex-col justify-start items-center">
+                                <div class="w-[1.5px] h-7 bg-amber-600/60" aria-hidden="true"></div>
+                                <div class="w-full p-2.5 rounded-lg bg-amber-50/70 border border-amber-300 shadow-sm text-center text-[11px] font-bold text-amber-950 leading-snug">
+                                    Publication articles in Scopus Q2/Q3
+                                </div>
+                            </div>
+
+                            {{-- 2029 Luaran --}}
+                            <div class="row-start-3 col-start-5 flex flex-col justify-start items-center">
+                                <div class="w-[1.5px] h-7 bg-emerald-600/60" aria-hidden="true"></div>
+                                <div class="w-full p-2.5 rounded-lg bg-emerald-50/70 border border-emerald-300 shadow-sm text-center text-[11px] font-bold text-emerald-950 leading-snug">
+                                    Book
+                                </div>
+                            </div>
+
+                            <div class="row-start-3 col-start-6"></div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
