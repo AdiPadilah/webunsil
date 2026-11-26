@@ -37,14 +37,14 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                @for($i = 1; $i <= 4; $i++)
-                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
+                @foreach([1, 2, 4] as $i)
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300 {{ $loop->last ? 'sm:col-span-2 sm:w-[calc(50%-0.75rem)] sm:mx-auto' : '' }}">
                         <div class="aspect-[4/3] overflow-hidden bg-slate-100">
-                            <img src="{{ asset("images/ruang-sidang-{$i}.jpg") }}" alt="Ruang Sidang {{ $i }}"
+                            <img src="{{ asset("images/ruang-sidang-{$i}.jpg") }}" alt="Ruang Sidang {{ $loop->iteration }}"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
-                @endfor
+                @endforeach
             </div>
         </div>
     </section>

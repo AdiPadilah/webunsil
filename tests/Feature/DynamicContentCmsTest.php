@@ -120,10 +120,10 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/ruang-sidang')
             ->assertOk()
             ->assertSee('Galeri Ruang Sidang')
-            ->assertDontSee('sm:col-span-2 sm:w-[calc(50%-0.75rem)] sm:mx-auto', false)
+            ->assertSee('sm:col-span-2 sm:w-[calc(50%-0.75rem)] sm:mx-auto', false)
             ->assertSee('images/ruang-sidang-1.jpg', false)
             ->assertSee('images/ruang-sidang-2.jpg', false)
-            ->assertSee('images/ruang-sidang-3.jpg', false)
+            ->assertDontSee('images/ruang-sidang-3.jpg', false)
             ->assertSee('images/ruang-sidang-4.jpg', false);
         $this->get('/seminar-proposal')->assertOk();
         $this->get('/seminar-hasil')->assertOk();
