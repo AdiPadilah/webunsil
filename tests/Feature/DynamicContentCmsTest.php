@@ -92,6 +92,13 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/publikasi')->assertOk();
         $this->get('/alur-pengurusan-kerja-praktik')->assertOk();
         $this->get('/alur-pengurusan-skripsi')->assertOk()->assertSee('Alur Pengurusan Skripsi');
+        $this->get('/fasilitas')->assertOk()->assertSee('images/kelas-1.jpg', false);
+        $this->get('/kelas')
+            ->assertOk()
+            ->assertSee('Galeri Ruang Kelas')
+            ->assertSee('images/kelas-1.jpg', false)
+            ->assertSee('images/kelas-2.jpg', false)
+            ->assertSee('images/kelas-3.jpg', false);
         $this->get('/seminar-proposal')->assertOk();
         $this->get('/seminar-hasil')->assertOk();
         $this->get('/sidang-akhir')->assertOk();

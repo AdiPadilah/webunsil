@@ -59,7 +59,7 @@
                 {{-- 2. Ruang Kelas --}}
                 <div id="kelas" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
                     <a href="{{ route('kelas') }}" class="block h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/workshop-obe.jpg') }}" alt="Ruang Kelas & Perkuliahan"
+                        <img src="{{ asset('images/kelas-1.jpg') }}" alt="Ruang Kelas & Perkuliahan"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </a>
 
