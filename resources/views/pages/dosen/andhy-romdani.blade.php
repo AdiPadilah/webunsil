@@ -183,10 +183,10 @@
                                 Andhy Romdani menempuh studi sarjana di Jurusan Teknik Sipil, Fakultas Teknik, Universitas Gadjah Mada (UGM), Yogyakarta, dan berhasil menyelesaikan gelar Sarjana Teknik (S.T.) serta Master of Engineering (M.Eng.) dari almamater yang sama.
                             </p>
                             <p>
-                                Perjalanan keilmuannya berlanjut ke jenjang doktoral (Ph.D.) di National Cheng Kung University (NCKU), Taiwan, pada Department of Hydraulic and Ocean Engineering. Berkat kualitas riset dan capaian akademiknya yang unggul, beliau dinobatkan sebagai salah satu lulusan terbaik program doktoral dan dianugerahi penghargaan kehormatan dari <em>The Phi Tau Phi Scholastic Honor Society of the Republic of China</em> pada tahun 2023.
+                                Perjalanan keilmuannya berlanjut ke jenjang doktoral (Ph.D.) di National Cheng Kung University (NCKU), Taiwan, pada Department of Hydraulic and Ocean Engineering. Berkat kualitas riset dan capaian akademiknya yang unggul, ia dinobatkan sebagai salah satu lulusan terbaik program doktoral dan dianugerahi penghargaan kehormatan dari The Phi Tau Phi Scholastic Honor Society of the Republic of China pada 2023.
                             </p>
                             <p>
-                                Sebelum mendedikasikan diri sepenuhnya di dunia akademik, beliau menimba pengalaman praktis di industri konstruksi skala nasional melalui BUMN terkemuka, yaitu PT Wijaya Karya (Persero) Tbk dan PT Pembangunan Perumahan (Persero) Tbk. Beliau juga memiliki rekam jejak kepemimpinan literasi sebagai <em>Editor in Chief</em> di Penerbit Mizan, Bandung.
+                                Sebelum mendedikasikan diri sepenuhnya di dunia akademik, ia menimba pengalaman praktis di industri konstruksi skala nasional melalui BUMN terkemuka, yaitu PT. Wijaya Karya (Persero) Tbk dan PT. Pembangunan Perumahan (Persero) Tbk. Ia juga memiliki rekam jejak kepemimpinan literasi sebagai Editor in Chief di Penerbit Mizan, Bandung.
                             </p>
                         </div>
 
@@ -241,6 +241,9 @@
                                     </div>
                                     <h5 class="text-sm sm:text-base font-bold text-slate-900 mt-1.5">Universitas Gadjah Mada (UGM), Yogyakarta</h5>
                                     <p class="text-xs text-slate-600 mt-0.5">Jurusan Teknik Sipil, Fakultas Teknik</p>
+                                    <div class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-700 bg-amber-50/80 border border-amber-200/70 px-2.5 py-1 rounded-lg mt-2">
+                                        <i class="fa-solid fa-award text-amber-500"></i> Lulusan Terbaik Program Pascasarjana Teknik
+                                    </div>
                                 </div>
 
                                 {{-- S1 --}}
@@ -344,7 +347,7 @@
                                         <i class="fa-solid fa-city"></i>
                                     </div>
                                     <span class="font-bold text-slate-900 block text-xs">Kontraktor BUMN</span>
-                                    <p class="text-slate-500 mt-1 text-[11px] leading-relaxed">PT Wijaya Karya (Persero) Tbk &bull; PT Pembangunan Perumahan (Persero) Tbk</p>
+                                    <p class="text-slate-500 mt-1 text-[11px] leading-relaxed">PT. Wijaya Karya (Persero) Tbk &bull; PT. Pembangunan Perumahan (Persero) Tbk</p>
                                 </div>
                                 <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 hover:border-slate-300 transition">
                                     <div class="w-7 h-7 rounded-lg bg-blue-100/80 text-blue-700 flex items-center justify-center text-xs mb-2">
