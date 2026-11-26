@@ -19,6 +19,7 @@ use App\Filament\Resources\Dosens\Pages\CreateDosen;
 use App\Filament\Resources\Dosens\Pages\EditDosen;
 use App\Filament\Resources\Dosens\Pages\ListDosens;
 use App\Filament\Resources\Dosens\Support\CvAutoFiller;
+use App\Filament\Resources\Dosens\Support\PdfTextExtractor;
 use App\Filament\Resources\Penelitians\Pages\CreatePenelitian;
 use App\Filament\Resources\Penelitians\Pages\EditPenelitian;
 use App\Filament\Resources\Penelitians\Pages\ListPenelitians;
@@ -932,5 +933,21 @@ class DynamicContentCmsTest extends TestCase
         $this->assertSame('gemini', $geminiResult['source']);
         $this->assertSame('Ir. Rahmat Hidayat, M.T.', $geminiResult['fields']['nama']);
         $this->assertSame('struktur', $geminiResult['fields']['kbk']);
+
+        // Verifikasi ekstraktor PDF menangani Type0 Identity-H literal CID dan digit '0' pada bfrange.
+        $cmapStream = gzcompress("begincmap\n5 beginbfchar\n<0003> <0020>\n<0024> <0041>\n<0029> <0044>\n<001C> <0049>\nendbfchar\n1 beginbfrange\n<02A1> <02AA> <002E>\nendbfrange\nendcmap");
+        $xobjStream = gzcompress("BT\n/F10 24 Tf\n1 0 0 -1 50 40 Tm\n(\x00$) Tj\n20 0 Td\n(\x00\\)) Tj\n20 0 Td\n(\x00\x1C) Tj\n(\x00\x03) Tj\n<02A502A302A402AA> Tj\nET");
+        $pageStream = gzcompress("q 1 0 0 -1 0 842 cm\n/X1 Do\nQ");
+        $cidPdf = "%PDF-1.4\n"
+            ."1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj\n"
+            ."2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj\n"
+            ."3 0 obj << /Type /Page /Parent 2 0 R /Resources << /XObject << /X1 4 0 R >> >> /Contents 5 0 R >> endobj\n"
+            .'4 0 obj << /Type /XObject /Subtype /Form /Resources << /Font << /F10 6 0 R >> >> /Length '.strlen($xobjStream)." /Filter /FlateDecode >>\nstream\n{$xobjStream}\nendstream\nendobj\n"
+            .'5 0 obj << /Length '.strlen($pageStream)." /Filter /FlateDecode >>\nstream\n{$pageStream}\nendstream\nendobj\n"
+            ."6 0 obj << /Type /Font /Subtype /Type0 /Encoding /Identity-H /ToUnicode 7 0 R >> endobj\n"
+            .'7 0 obj << /Length '.strlen($cmapStream)." /Filter /FlateDecode >>\nstream\n{$cmapStream}\nendstream\nendobj\n%%EOF";
+
+        $decodedCid = app(PdfTextExtractor::class)->extractFromBinary($cidPdf);
+        $this->assertSame('ADI 2017', $decodedCid);
     }
 }

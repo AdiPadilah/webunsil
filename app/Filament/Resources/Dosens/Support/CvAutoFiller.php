@@ -412,7 +412,11 @@ class CvAutoFiller
         return array_filter([
             'nama' => $nama,
             'kbk' => $kbk,
-            'badge_peran' => $jabatanAkademik ? (str_contains(strtolower($jabatanAkademik), 'ketua') ? 'Ketua Program Studi' : 'Dosen Tetap') : null,
+            'badge_peran' => $jabatanAkademik
+                ? (str_contains(strtolower($jabatanAkademik), 'ketua')
+                    ? 'Ketua Program Studi'
+                    : (preg_match('/\b(dosen|lektor|guru besar|asisten ahli|pengajar)\b/i', $fullText) ? 'Dosen Tetap' : $jabatanAkademik))
+                : null,
             'jabatan_akademik' => $jabatanAkademik,
             'jabatan_fungsional' => $jabatanFungsional,
             'nidn' => $nidn,
@@ -473,22 +477,22 @@ class CvAutoFiller
             return null;
         }
 
-        if (preg_match('/^(identitas akademik|data pribadi|informasi kontak|personal details|identitas diri)$/u', $lower)) {
+        if (preg_match('/^(identitas akademik|data pribadi|informasi kontak|personal details|identitas diri|kontak|contact)$/u', $lower)) {
             return 'identitas';
         }
-        if (preg_match('/^(profil akademik|profil|biografi|tentang saya|ringkasan profil|summary|about me)$/u', $lower)) {
+        if (preg_match('/^(profil akademik|profil|biografi|tentang saya|tentang|ringkasan profil|summary|about|about me|profile)$/u', $lower)) {
             return 'biografi';
         }
         if (preg_match('/^(riwayat pendidikan|pendidikan formal|pendidikan|education|latar belakang pendidikan)$/u', $lower)) {
             return 'pendidikan';
         }
-        if (preg_match('/^(bidang keahlian.*|fokus keilmuan.*|minat riset.*|kompetensi utama|research interests?)$/u', $lower)) {
+        if (preg_match('/^(bidang keahlian.*|fokus keilmuan.*|minat riset.*|kompetensi utama|keahlian|kemampuan|skills|research interests?)$/u', $lower)) {
             return 'keahlian';
         }
-        if (preg_match('/^(keahlian perangkat lunak.*|software|keterampilan teknis|technical skills)$/u', $lower)) {
+        if (preg_match('/^(keahlian perangkat lunak.*|tools|perangkat lunak|software|keterampilan teknis|technical skills)$/u', $lower)) {
             return 'software';
         }
-        if (preg_match('/^(pengalaman akademik.*|pengalaman kerja.*|riwayat pekerjaan.*|pengalaman profesional|work experience|career history)$/u', $lower)) {
+        if (preg_match('/^(pengalaman akademik.*|pengalaman kerja.*|riwayat pekerjaan.*|pengalaman profesional|pengalaman|work experience|experience|career history|proyek|projects?)$/u', $lower)) {
             return 'pengalaman';
         }
         if (preg_match('/^(penghargaan.*|prestasi.*|awards?|honors?)$/u', $lower)) {
@@ -522,20 +526,38 @@ class CvAutoFiller
             return trim($match[1]);
         }
 
+        $candidates = [];
         foreach ($headerLines as $line) {
             $lower = mb_strtolower($line);
-            if (preg_match('/^(curriculum vitae|daftar riwayat hidup|cv|profil dosen|biodata|identitas|email|telepon|hp|nidn|nip|nuptk)/i', $lower)) {
+            if (preg_match('/^(curriculum vitae|daftar riwayat hidup|cv|profil dosen|biodata|identitas|kontak|email|telepon|hp|nidn|nip|nuptk)/i', $lower)) {
                 continue;
             }
-            if (str_contains($line, '@') || preg_match('/^\+?\d[\d\s-]{6,}$/', $line)) {
+            if (str_contains($line, '@') || str_contains($line, '&') || str_contains($line, '|') || preg_match('/^\+?\d[\d\s-]{6,}$/', $line)) {
+                continue;
+            }
+            if (preg_match('/\b(kab\.?|kabupaten|kota|kec\.?|provinsi|jawa|jl\.|jalan|developer|engineer|dosen|ketua|fakultas|universitas|program studi)\b/i', $lower)) {
                 continue;
             }
             if (preg_match('/^(?:Prof\.|Dr\.|Ir\.|H\.|Hj\.)|,\s*(?:S\.T\.|S\.Pd\.|M\.T\.|M\.Eng\.|M\.Sc\.|M\.Si\.|Ph\.D\.|IPM|IPU)/i', $line)) {
                 return $line;
             }
-            if (mb_strlen($line) >= 5 && mb_strlen($line) <= 90 && ! str_contains($line, ':')) {
-                return $line;
+            if (mb_strlen($line) >= 2 && mb_strlen($line) <= 90 && ! str_contains($line, ':')) {
+                $candidates[] = $line;
             }
+        }
+
+        if ($candidates !== []) {
+            // Gabungkan nama multi-baris huruf kapital di bagian paling atas CV (mis. Canva header).
+            $first = $candidates[0];
+            if (isset($candidates[1]) && preg_match('/^[A-Z.\s]+$/u', $first) && preg_match('/^[A-Z.\s]+$/u', $candidates[1])) {
+                $first = trim($first.' '.$candidates[1]);
+            }
+
+            if (preg_match('/^[A-Z.\s]+$/u', $first)) {
+                return mb_convert_case(mb_strtolower($first), MB_CASE_TITLE, 'UTF-8');
+            }
+
+            return $first;
         }
 
         return null;
@@ -595,6 +617,12 @@ class CvAutoFiller
         foreach ($headerLines as $line) {
             if (preg_match('/(Ketua Program Studi[^|•]*|Dosen(?:\s+Tetap)?\s+Program Studi[^|•]*)/i', $line, $match)) {
                 return trim($match[1]);
+            }
+        }
+
+        foreach ($headerLines as $line) {
+            if (preg_match('/\b(Developer|Engineer|Designer|Analyst|Manager|Consultant|Arsitek|Peneliti)\b/i', $line) && ! str_contains($line, '@')) {
+                return trim($line);
             }
         }
 
@@ -690,14 +718,38 @@ class CvAutoFiller
      */
     private function extractBiography(array $lines): ?string
     {
-        if ($lines === []) {
+        $cleaned = array_values(array_filter(array_map(
+            fn (string $l): string => $this->stripBullet($l),
+            $lines,
+        )));
+
+        if ($cleaned === []) {
             return null;
         }
 
-        return implode("\n\n", array_values(array_filter(array_map(
-            fn (string $l): string => $this->stripBullet($l),
-            $lines,
-        ))));
+        // Gabungkan baris yang terpotong margin PDF ke dalam satu paragraf utuh, pecah hanya pada kalimat penuh + baris baru yang panjang.
+        $paragraphs = [];
+        $current = '';
+        foreach ($cleaned as $line) {
+            if ($current === '') {
+                $current = $line;
+
+                continue;
+            }
+
+            if (preg_match('/[.!?]$/u', $current) && mb_strlen($current) > 220) {
+                $paragraphs[] = $current;
+                $current = $line;
+            } else {
+                $current .= ' '.$line;
+            }
+        }
+
+        if ($current !== '') {
+            $paragraphs[] = $current;
+        }
+
+        return implode("\n\n", $paragraphs);
     }
 
     /**
@@ -759,8 +811,28 @@ class CvAutoFiller
                 continue;
             }
 
+            $isDetailLine = preg_match('/^(?:Keterangan|Program\s+Keahlian|Jurusan|Konsentrasi|Fakultas|IPK|Predikat)\s*:/i', $clean)
+                || ($items !== [] && ! preg_match('/\b(19\d{2}|20\d{2}|Doktor|Ph\.?D|Magister|Master|Sarjana|S-?[123]|Profesi|Universitas|Institut|Politeknik|University|SMKN?|SMAN?|SMPN?|SDN?|MI|MTs|MA)\b/iu', $clean));
+
+            if ($isDetailLine && $items !== []) {
+                $lastIdx = count($items) - 1;
+                if (preg_match('/^Keterangan\s*:\s*(.+)$/i', $clean, $km)) {
+                    $items[$lastIdx]['predikat'] = trim($km[1]);
+                } elseif (preg_match('/^(?:Program\s+Keahlian|Jurusan|Konsentrasi)\s*:\s*(.*)$/i', $clean, $pm)) {
+                    $val = trim($pm[1]);
+                    $items[$lastIdx]['prodi'] = $val !== '' ? $val : null;
+                } else {
+                    $items[$lastIdx]['prodi'] = trim(implode(' ', array_filter([$items[$lastIdx]['prodi'], $clean])));
+                }
+
+                continue;
+            }
+
             $periode = null;
             if (preg_match('/\((?:Lulus\s*)?(\d{4}(?:\s*[–\-]\s*(?:\d{4}|Sekarang|Present))?)\)\s*$/ui', $clean, $m)) {
+                $periode = trim($m[1]);
+                $clean = trim(substr($clean, 0, -strlen($m[0])));
+            } elseif (preg_match('/\s+((?:19|20)\d{2}(?:\s*[–\-]\s*(?:(?:19|20)\d{2}|Sekarang|Present))?)\s*$/ui', $clean, $m)) {
                 $periode = trim($m[1]);
                 $clean = trim(substr($clean, 0, -strlen($m[0])));
             } elseif (preg_match('/\b(19\d{2}|20\d{2}(?:\s*[–\-]\s*(?:20\d{2}|Sekarang|Present))?)\b/u', $clean, $m)) {
@@ -771,14 +843,20 @@ class CvAutoFiller
             $left = trim($parts[0]);
             $institusi = trim($parts[1] ?? '');
 
-            $jenjang = 'Pendidikan Tinggi';
-            $prodi = $left;
+            $jenjang = 'Pendidikan';
+            $prodi = null;
             if (preg_match('/^(Doktor(?:al)?\s*\([^)]+\)|Ph\.D\.|Magister\s*\([^)]+\)|Master[^–-]*|Sarjana\s*\([^)]+\)|S-?[123]|Profesi)\s*(.*)$/iu', $left, $jm)) {
                 $jenjang = trim($jm[1]);
-                $prodi = trim($jm[2], ' ,:-');
+                $prodi = trim($jm[2], ' ,:-') ?: null;
+            } elseif (preg_match('/\b(SMKN?|SMAN?|MA)\b/i', $clean)) {
+                $jenjang = 'SMK / SMA';
+            } elseif (preg_match('/\b(SMPN?|MTs)\b/i', $clean)) {
+                $jenjang = 'SMP';
+            } elseif (preg_match('/\b(SDN?|MI)\b/i', $clean)) {
+                $jenjang = 'Sekolah Dasar';
             }
 
-            if ($institusi === '' && preg_match('/(Universitas[^,;]+|Institut[^,;]+|Politeknik[^,;]+|University[^,;]+)/iu', $clean, $im)) {
+            if ($institusi === '' && preg_match('/((?:Universitas|Institut|Politeknik|University|SMKN?|SMAN?|SMPN?|SDN?)[^,;]+)/iu', $clean, $im)) {
                 $institusi = trim($im[1]);
             }
 
@@ -786,7 +864,7 @@ class CvAutoFiller
                 'jenjang' => $jenjang,
                 'periode' => $periode,
                 'institusi' => $institusi !== '' ? $institusi : $left,
-                'prodi' => $prodi !== '' && $prodi !== $institusi ? $prodi : null,
+                'prodi' => $prodi !== $institusi ? $prodi : null,
                 'predikat' => null,
             ];
         }
@@ -802,8 +880,26 @@ class CvAutoFiller
     {
         $items = [];
         foreach ($lines as $line) {
+            $hadBullet = preg_match('/^(?:[\x{2022}\x{25AA}\x{25AB}\x{25CF}\x{25CB}\x{25A0}\-\*]|\d+\.)\s+/u', trim($line)) === 1;
             $clean = $this->stripBullet($line);
             if ($clean === '') {
+                continue;
+            }
+
+            $lastDesc = $items !== [] ? ($items[count($items) - 1]['deskripsi'] ?? null) : null;
+            $isNarrativeLine = $items !== [] && ! $hadBullet && (
+                preg_match('/^(?:Membuat|Mengembangkan|Bertanggung|Mendesain|Merancang|Mengelola|Menyusun|Melakukan|Menganalisis|Bekerja|Mengawasi|Membantu)\b/i', $clean)
+                || preg_match('/^[a-z]/u', $clean)
+                || ($lastDesc !== null && ! preg_match('/[.!?]$/u', $lastDesc) && preg_match('/^[0-9]/u', $clean))
+                || ($lastDesc !== null && preg_match('/\b(?:dan|atau|serta|berbasis|menggunakan|untuk|dalam|pada|dengan|yang|di|ke|dari)$/iu', $lastDesc))
+                || str_ends_with($clean, '.')
+                || mb_strlen($clean) > 75
+            );
+
+            if ($isNarrativeLine) {
+                $lastIdx = count($items) - 1;
+                $items[$lastIdx]['deskripsi'] = trim(implode(' ', array_filter([$items[$lastIdx]['deskripsi'], $clean])));
+
                 continue;
             }
 
@@ -816,12 +912,12 @@ class CvAutoFiller
             $parts = preg_split('/\s+[–—-]\s+/u', $clean, 2) ?: [$clean];
             $jabatan = trim($parts[0]);
             $instansi = trim($parts[1] ?? '');
-            $tag = preg_match('/\b(dosen|akademik|pengajar|asisten)\b/i', $jabatan) ? 'Akademisi' : 'Profesional';
+            $tag = preg_match('/\b(dosen|akademik|pengajar|asisten)\b/i', $jabatan) ? 'Akademisi' : 'Pengalaman / Proyek';
 
             $items[] = [
                 'tag' => $tag,
                 'jabatan' => $jabatan,
-                'instansi' => $instansi !== '' ? $instansi : '-',
+                'instansi' => $instansi !== '' ? $instansi : 'Mandiri / Tim',
                 'periode' => $periode,
                 'lokasi' => null,
                 'deskripsi' => null,
@@ -1141,6 +1237,8 @@ class CvAutoFiller
             $labels[] = 'Biografi';
         }
         foreach ([
+            'fokus_keahlian' => 'Fokus Keahlian',
+            'keahlian_grup' => 'Perangkat Lunak',
             'pendidikan' => 'Pendidikan',
             'pengalaman_kerja' => 'Pengalaman Kerja',
             'penghargaan' => 'Penghargaan',
