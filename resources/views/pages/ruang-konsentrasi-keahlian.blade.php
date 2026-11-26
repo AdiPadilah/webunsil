@@ -37,7 +37,7 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                @for($i = 1; $i <= 2; $i++)
+                @for($i = 1; $i <= 4; $i++)
                     <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
                         <div class="aspect-[4/3] overflow-hidden bg-slate-100">
                             <img src="{{ asset("images/ruang-kbk-{$i}.jpg") }}" alt="Ruang KBK {{ $i }}"
