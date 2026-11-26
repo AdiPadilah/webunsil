@@ -80,7 +80,7 @@ class DynamicContentCmsTest extends TestCase
         $this->assertSame(1, SiteSetting::count());
         $this->assertSame(24, Penelitian::count());
         $this->assertSame(9, Pengabdian::count());
-        $this->assertSame(22, Buku::count());
+        $this->assertSame(23, Buku::count());
         $this->assertSame(6, Prestasi::count());
         $this->assertSame(24, Dosen::count());
 
@@ -219,7 +219,17 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Transportasi Perkerasan Jalan')
             ->assertSee('Timbunan dan Konstruksi Penahan Tanah')
             ->assertSee('5D BIM Application Basic Level Cubicost TBQ')
-            ->assertSee('/storage/dosen/shanti-astri-noviani.jpg', false);
+            ->assertSee('/storage/dosen/shanti-astri-noviani.jpg', false)
+            ->assertSeeInOrder([
+                'Biografi &amp; Profil Akademik',
+                'Pendidikan Formal',
+                'Pelatihan &amp; Sertifikasi Perangkat Lunak',
+                'Buku ajar dan referensi yang terhubung langsung',
+                'Pengalaman Kerja',
+                'Riwayat Pengajaran',
+                'Pengabdian pada Masyarakat',
+                'Daftar penelitian &amp; tersinkron dengan menu Penelitian Admin',
+            ], false);
     }
 
     public function test_unpublished_records_stay_hidden_and_filament_pages_render(): void

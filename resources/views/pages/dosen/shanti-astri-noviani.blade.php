@@ -272,7 +272,36 @@
                         </div>
                     </div>
 
-                    {{-- 3. Karya Buku (Terhubung Admin Buku) --}}
+                    {{-- 3. Pelatihan & Sertifikasi --}}
+                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 border border-amber-100/80 flex items-center justify-center font-bold text-base shadow-sm">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
+                                    Pelatihan &amp; Sertifikasi Perangkat Lunak
+                                </h3>
+                                <p class="text-xs text-slate-400 font-medium">Kompetensi BIM 5D dan permodelan struktur</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            @foreach([
+                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TBQ'],
+                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TAS'],
+                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TRB'],
+                                ['tahun' => '2018', 'nama' => 'Tekla Structure Foundation Program'],
+                            ] as $tr)
+                                <div class="p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/70 flex items-center justify-between gap-3">
+                                    <span class="text-xs font-semibold text-slate-800">{{ $tr['nama'] }}</span>
+                                    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-md border border-amber-200 font-mono shrink-0">{{ $tr['tahun'] }}</span>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+
+                    {{-- 4. Karya Buku (Terhubung Admin Buku) --}}
                     <div id="karya-buku" class="scroll-mt-24 bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
                         <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
                             <div class="flex items-center gap-3">
@@ -355,7 +384,7 @@
                         </div>
                     </div>
 
-                    {{-- 4. Pengalaman Kerja --}}
+                    {{-- 5. Pengalaman Kerja --}}
                     <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
                         <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
                             <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100/80 flex items-center justify-center font-bold text-base shadow-sm">
@@ -389,35 +418,6 @@
                                             {{ $exp['periode'] }}
                                         </span>
                                     </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-
-                    {{-- 5. Pelatihan & Sertifikasi --}}
-                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
-                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
-                            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 border border-amber-100/80 flex items-center justify-center font-bold text-base shadow-sm">
-                                <i class="fa-solid fa-certificate"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
-                                    Pelatihan &amp; Sertifikasi Perangkat Lunak
-                                </h3>
-                                <p class="text-xs text-slate-400 font-medium">Kompetensi BIM 5D dan permodelan struktur</p>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            @foreach([
-                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TBQ'],
-                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TAS'],
-                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TRB'],
-                                ['tahun' => '2018', 'nama' => 'Tekla Structure Foundation Program'],
-                            ] as $tr)
-                                <div class="p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/70 flex items-center justify-between gap-3">
-                                    <span class="text-xs font-semibold text-slate-800">{{ $tr['nama'] }}</span>
-                                    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-md border border-amber-200 font-mono shrink-0">{{ $tr['tahun'] }}</span>
                                 </div>
                             @endforeach
                         </div>
