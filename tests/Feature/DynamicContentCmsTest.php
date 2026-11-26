@@ -521,7 +521,10 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/jadwal-sidang-skripsi')
             ->assertOk()
             ->assertSee('Rafi Pratama')
-            ->assertSee('Ir. Asep Kurnia, M.T.')
+            ->assertSee('Pembimbing 1: Dr. Ir. Empung, S.T., M.T.')
+            ->assertSee('Pembimbing 2: Sri Wanto, S.T., M.T.')
+            ->assertSee('Penguji 1: Andhy Romdani, S.T., M.Eng., Ph.D.')
+            ->assertSee('Penguji 2: Ir. Asep Kurnia, M.T.')
             ->assertSee('Semua (1)')
             ->assertSee('Sidang Akhir Skripsi (1)')
             ->assertSee('bg-emerald-50 text-emerald-700', false);
@@ -529,7 +532,8 @@ class DynamicContentCmsTest extends TestCase
             ->assertOk()
             ->assertSee('Rafi Pratama')
             ->assertSee('Sri Wanto, S.T., M.T.')
-            ->assertSee('Ir. Asep Kurnia, M.T.');
+            ->assertSee('Penguji 1: Andhy Romdani, S.T., M.Eng., Ph.D.')
+            ->assertSee('Penguji 2: Ir. Asep Kurnia, M.T.');
 
         Livewire::test(EditDefenseSchedule::class, ['record' => $schedule->getKey()])
             ->fillForm(['room' => 'Ruang Seminar Kampus 2', 'status' => 'Selesai'])

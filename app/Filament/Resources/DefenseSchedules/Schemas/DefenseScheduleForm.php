@@ -59,8 +59,9 @@ class DefenseScheduleForm
                         ->label('Dosen Pembimbing 2 (Opsional)')
                         ->datalist($lecturerSuggestions),
                     TextInput::make('examiner_1')
-                        ->label('Dosen Penguji 1 (Opsional)')
-                        ->datalist($lecturerSuggestions),
+                        ->label('Dosen Penguji 1')
+                        ->datalist($lecturerSuggestions)
+                        ->required(),
                     TextInput::make('examiner_2')
                         ->label('Dosen Penguji 2 (Opsional)')
                         ->datalist($lecturerSuggestions),

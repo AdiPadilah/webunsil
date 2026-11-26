@@ -40,8 +40,16 @@ class DefenseSchedulesTable
 
                 TextColumn::make('supervisor_1')
                     ->label('Pembimbing')
+                    ->formatStateUsing(fn (?string $state): string => $state ? '1. ' . $state : '-')
                     ->description(fn (DefenseSchedule $record): string => $record->supervisor_2 ? '2. ' . $record->supervisor_2 : '')
-                    ->searchable()
+                    ->searchable(['supervisor_1', 'supervisor_2'])
+                    ->toggleable(),
+
+                TextColumn::make('examiner_1')
+                    ->label('Penguji')
+                    ->formatStateUsing(fn (?string $state): string => $state ? '1. ' . $state : '-')
+                    ->description(fn (DefenseSchedule $record): string => $record->examiner_2 ? '2. ' . $record->examiner_2 : '')
+                    ->searchable(['examiner_1', 'examiner_2'])
                     ->toggleable(),
 
                 TextColumn::make('date_time')

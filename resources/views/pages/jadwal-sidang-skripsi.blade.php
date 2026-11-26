@@ -14,7 +14,8 @@
                 'title' => $s->title,
                 'supervisor_1' => $s->supervisor_1,
                 'supervisor_2' => $s->supervisor_2,
-                'examiners' => collect([$s->examiner_1, $s->examiner_2])->filter()->implode(', '),
+                'examiner_1' => $s->examiner_1,
+                'examiner_2' => $s->examiner_2,
                 'date' => $s->date_time->format('Y-m-d'),
                 'time' => $s->date_time->format('H:i'),
                 'date_label' => $s->date_time->translatedFormat('l, d F Y'),
@@ -152,7 +153,7 @@
                                     <th class="p-4 sm:px-6">Mahasiswa &amp; NIM</th>
                                     <th class="p-4 sm:px-6">Tahapan</th>
                                     <th class="p-4 sm:px-6">Judul Skripsi</th>
-                                    <th class="p-4 sm:px-6">Dosen Pembimbing</th>
+                                    <th class="p-4 sm:px-6">Pembimbing &amp; Penguji</th>
                                     <th class="p-4 sm:px-6">Waktu &amp; Ruangan</th>
                                     <th class="p-4 sm:px-6 text-center">Status</th>
                                 </tr>
@@ -174,12 +175,15 @@
                                         <p class="text-slate-800 font-medium leading-relaxed">{{ $s->title }}</p>
                                     </td>
                                     <td class="p-4 sm:px-6 text-slate-600">
-                                        <div class="font-medium">1. {{ $s->supervisor_1 }}</div>
+                                        <div class="font-medium">Pembimbing 1: {{ $s->supervisor_1 }}</div>
                                         @if($s->supervisor_2)
-                                        <div class="text-[11px] text-slate-500">2. {{ $s->supervisor_2 }}</div>
+                                        <div class="text-[11px] text-slate-500">Pembimbing 2: {{ $s->supervisor_2 }}</div>
                                         @endif
-                                        @if($s->examiner_1 || $s->examiner_2)
-                                        <div class="text-[11px] text-slate-500 mt-1">Penguji: {{ collect([$s->examiner_1, $s->examiner_2])->filter()->implode(', ') }}</div>
+                                        @if($s->examiner_1)
+                                        <div class="text-[11px] text-slate-500 mt-1">Penguji 1: {{ $s->examiner_1 }}</div>
+                                        @endif
+                                        @if($s->examiner_2)
+                                        <div class="text-[11px] text-slate-500">Penguji 2: {{ $s->examiner_2 }}</div>
                                         @endif
                                     </td>
                                     <td class="p-4 sm:px-6">
@@ -321,7 +325,8 @@
                 };
                 appendRole('Pembimbing 1:', ev.supervisor_1 || '-');
                 if (ev.supervisor_2) appendRole('Pembimbing 2:', ev.supervisor_2);
-                if (ev.examiners) appendRole('Penguji:', ev.examiners);
+                if (ev.examiner_1) appendRole('Penguji 1:', ev.examiner_1);
+                if (ev.examiner_2) appendRole('Penguji 2:', ev.examiner_2);
 
                 modal.classList.remove('hidden');
                 modal.classList.add('flex');
