@@ -164,7 +164,7 @@
                 {{-- 7. Ruang Konsentrasi Keahlian (KBK) --}}
                 <div id="ruang-konsentrasi-keahlian" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
                     <a href="{{ route('ruang-konsentrasi-keahlian') }}" class="block h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/ruang-rapat-4.jpg') }}" alt="Ruang Konsentrasi Keahlian (KBK)"
+                        <img src="{{ asset('images/ruang-kbk-1.jpg') }}" alt="Ruang Konsentrasi Keahlian (KBK)"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </a>
 

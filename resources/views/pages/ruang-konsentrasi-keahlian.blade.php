@@ -45,23 +45,23 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
                 <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
                     <div class="aspect-[4/3] overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/ruang-rapat-4.jpg') }}" alt="Ruang Diskusi KBK 1"
+                        <img src="{{ asset('images/ruang-kbk-1.jpg') }}" alt="Ruang Konsentrasi Keahlian (KBK) - Area Diskusi &amp; Bimbingan"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-slate-900 text-sm">Area Diskusi &amp; Asistensi Riset</h4>
-                        <p class="text-xs text-slate-500 mt-1">Dilengkapi meja konferensi, smart screen, dan akses WiFi Eduroam berkecepatan tinggi.</p>
+                        <p class="text-xs text-slate-500 mt-1">Dilengkapi meja konferensi oval, papan tulis, dan akses WiFi Eduroam untuk asistensi riset serta bimbingan skripsi.</p>
                     </div>
                 </div>
 
                 <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
                     <div class="aspect-[4/3] overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/ruang-rapat-2.jpg') }}" alt="Ruang Diskusi KBK 2"
+                        <img src="{{ asset('images/ruang-kbk-2.jpg') }}" alt="Ruang Konsentrasi Keahlian (KBK) - Ruang Koordinasi &amp; Mading Riset"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-slate-900 text-sm">Ruang Koordinasi Dosen Kelompok Keahlian</h4>
-                        <p class="text-xs text-slate-500 mt-1">Sarana musyawarah pengembangan kurikulum berbasis OBE dan penentuan topik skripsi mahasiswa.</p>
+                        <p class="text-xs text-slate-500 mt-1">Dilengkapi papan informasi publikasi KBK, lemari arsip prestasi, dan area musyawarah kurikulum berbasis OBE.</p>
                     </div>
                 </div>
             </div>
