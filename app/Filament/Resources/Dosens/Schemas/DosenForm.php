@@ -680,7 +680,7 @@ class DosenForm
                             ->label('Susunan Bagian Profil')
                             ->hintAction(
                                 Action::make('muatSusunanStandar')
-                                    ->label('Muat Susunan Standar (Acuan Pak Andhy)')
+                                    ->label('Muat Susunan Standar')
                                     ->icon(Heroicon::OutlinedArrowPath)
                                     ->action(function (callable $set): void {
                                         $set('urutan_bagian', Dosen::defaultSectionOrder());
