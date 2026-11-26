@@ -134,6 +134,11 @@ class DynamicContentCmsTest extends TestCase
                 'images/ruang-sidang-4.jpg',
                 'images/ruang-sidang-2.jpg',
             ], false);
+        $this->get('/ruang-konsentrasi-keahlian')
+            ->assertOk()
+            ->assertSee('Galeri Ruang KBK')
+            ->assertSee('images/ruang-kbk-1.jpg', false)
+            ->assertSee('images/ruang-kbk-2.jpg', false);
         $this->get('/ruang-komunal-mahasiswa')
             ->assertOk()
             ->assertSee('Galeri Ruang Komunal Mahasiswa')
