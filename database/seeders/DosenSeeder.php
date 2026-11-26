@@ -43,7 +43,7 @@ class DosenSeeder extends Seeder
             // Manajemen Rekayasa Konstruksi
             ['slug' => 'hidayanto', 'nama' => 'Hidayanto, S.T., M.T.', 'kbk' => 'manajemen', 'profile_route' => null],
             ['slug' => 'shanti-astri-noviani', 'nama' => 'Shanti Astri Noviani, S.Pd., M.T.', 'kbk' => 'manajemen', 'profile_route' => 'dosen.shanti-astri-noviani'],
-            ['slug' => 'ridha-al-mustafa', 'nama' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.', 'kbk' => 'manajemen', 'profile_route' => null],
+            ['slug' => 'ridha-al-mustafa', 'nama' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.', 'kbk' => 'manajemen', 'profile_route' => 'dosen.ridha-al-mustafa'],
         ];
 
         foreach ($dosens as $index => $row) {

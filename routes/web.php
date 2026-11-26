@@ -98,6 +98,21 @@ Route::get('/dosen/muhamad-anugerah', function () {
     return view('pages.dosen.muhamad-anugerah', compact('dosen', 'books'));
 })->name('dosen.muhamad-anugerah');
 
+// Profil Dosen Spesifik: Ir. M. Ridha Al Mustafa
+Route::get('/dosen/ridha-al-mustafa', function () {
+    $dosen = \App\Models\Dosen::where('slug', 'ridha-al-mustafa')
+        ->orWhere('profile_route', 'dosen.ridha-al-mustafa')
+        ->first();
+
+    $books = \App\Models\Buku::published()
+        ->where('penulis_route', 'dosen.ridha-al-mustafa')
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+
+    return view('pages.dosen.ridha-al-mustafa', compact('dosen', 'books'));
+})->name('dosen.ridha-al-mustafa');
+
 // 5. Akademik (Hub Page sesuai layout ITS)
 Route::get('/akademik', function () {
     return view('pages.akademik');
