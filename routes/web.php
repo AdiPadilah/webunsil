@@ -83,6 +83,21 @@ foreach ([
     })->name($routeName);
 }
 
+// Profil Dosen Spesifik: Muhamad Anugerah Ramadhan
+Route::get('/dosen/muhamad-anugerah', function () {
+    $dosen = \App\Models\Dosen::where('slug', 'muhamad-anugerah')
+        ->orWhere('profile_route', 'dosen.muhamad-anugerah')
+        ->first();
+
+    $books = \App\Models\Buku::published()
+        ->where('penulis_route', 'dosen.muhamad-anugerah')
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+
+    return view('pages.dosen.muhamad-anugerah', compact('dosen', 'books'));
+})->name('dosen.muhamad-anugerah');
+
 // 5. Akademik (Hub Page sesuai layout ITS)
 Route::get('/akademik', function () {
     return view('pages.akademik');
