@@ -210,6 +210,12 @@ Route::get('/ruang-komunal-mahasiswa', function () {
     return view('pages.ruang-komunal-mahasiswa');
 })->name('ruang-komunal-mahasiswa');
 
+// 8i. Turunan Fasilitas: Ruang Konsentrasi Keahlian (KBK)
+Route::get('/ruang-konsentrasi-keahlian', function () {
+    return view('pages.ruang-konsentrasi-keahlian');
+})->name('ruang-konsentrasi-keahlian');
+Route::redirect('/ruang-kbk', '/ruang-konsentrasi-keahlian');
+
 // 9. Riset dan Kolaborasi (Hub Page)
 Route::get('/riset', function () {
     return view('pages.riset');

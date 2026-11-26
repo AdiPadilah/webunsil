@@ -32,7 +32,7 @@
                 </p>
             </div>
 
-            {{-- Grid 6 Fasilitas --}}
+            {{-- Grid 9 Fasilitas --}}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 reveal">
                 
                 {{-- 1. Laboratorium --}}
@@ -65,19 +65,19 @@
 
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-[#0070BA] transition">
-                            <a href="{{ route('kelas') }}">Kelas</a>
+                            <a href="{{ route('kelas') }}">Ruang Kelas</a>
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
                             Ruang perkuliahan nyaman berpenyejuk udara, proyektor multimedia, kursi kuliah ergonomis, dan akses internet nirkabel Eduroam.
                         </p>
                         <a href="{{ route('kelas') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
-                            <span>Lihat Detail Kelas</span>
+                            <span>Lihat Detail Ruang Kelas</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                {{-- 3. Aula --}}
+                {{-- 3. Ruang Aula --}}
                 <div id="aula" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
                     <a href="{{ route('aula') }}" class="block h-48 overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/event-1.jpg') }}" alt="Aula Fakultas Teknik"
@@ -86,40 +86,19 @@
 
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-[#0070BA] transition">
-                            <a href="{{ route('aula') }}">Aula</a>
+                            <a href="{{ route('aula') }}">Ruang Aula</a>
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
                             Gedung pertemuan serbaguna untuk penyelenggaraan seminar nasional, kuliah tamu praktisi BUMN, yudisium, dan acara kemahasiswaan.
                         </p>
                         <a href="{{ route('aula') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
-                            <span>Lihat Detail Aula</span>
+                            <span>Lihat Detail Ruang Aula</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                {{-- 4. Kantin --}}
-                <div id="kantin" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
-                    <a href="{{ route('kantin') }}" class="block h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Kantin Kampus FT UNSIL"
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </a>
-
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-[#0070BA] transition">
-                            <a href="{{ route('kantin') }}">Kantin</a>
-                        </h3>
-                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
-                            Pusat santap kuliner mahasiswa dengan sajian higienis terjangkau dan area semi-outdoor untuk bersantai di sela perkuliahan.
-                        </p>
-                        <a href="{{ route('kantin') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
-                            <span>Lihat Detail Kantin</span>
-                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                {{-- 5. Auditorium --}}
+                {{-- 4. Ruang Auditorium --}}
                 <div id="auditorium" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
                     <a href="{{ route('auditorium') }}" class="block h-48 overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/event-2.jpg') }}" alt="Auditorium &amp; Ruang Sidang Teknik Sipil"
@@ -128,13 +107,34 @@
 
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-[#0070BA] transition">
-                            <a href="{{ route('auditorium') }}">Auditorium</a>
+                            <a href="{{ route('auditorium') }}">Ruang Auditorium</a>
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
-                            Ruang khusus pelaksanaan seminar proposal, seminar hasil, dan sidang akhir skripsi mahasiswa sarjana Teknik Sipil.
+                            Ruang teater dan seminar skala besar untuk kuliah umum keinsinyuran, presentasi ilmiah, dan seremonial akademik program studi.
                         </p>
                         <a href="{{ route('auditorium') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
-                            <span>Lihat Detail Auditorium</span>
+                            <span>Lihat Detail Ruang Auditorium</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                {{-- 5. Ruang Sidang --}}
+                <div id="ruang-sidang" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
+                    <a href="{{ route('ruang-sidang') }}" class="block h-48 overflow-hidden bg-slate-100">
+                        <img src="{{ asset('images/ruang-sidang-1.jpg') }}" alt="Ruang Sidang &amp; Ujian Teknik Sipil"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </a>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-[#0070BA] transition">
+                            <a href="{{ route('ruang-sidang') }}">Ruang Sidang</a>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+                            Ruang pelaksanaan seminar proposal, seminar hasil, dan sidang akhir skripsi lengkap dengan proyektor, papan tulis, dan tata kursi peserta.
+                        </p>
+                        <a href="{{ route('ruang-sidang') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
+                            <span>Lihat Detail Ruang Sidang</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
@@ -161,22 +161,22 @@
                     </div>
                 </div>
 
-                {{-- 7. Ruang Sidang --}}
-                <div id="ruang-sidang" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
-                    <a href="{{ route('ruang-sidang') }}" class="block h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/ruang-sidang-1.jpg') }}" alt="Ruang Sidang &amp; Ujian Teknik Sipil"
+                {{-- 7. Ruang Konsentrasi Keahlian (KBK) --}}
+                <div id="ruang-konsentrasi-keahlian" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
+                    <a href="{{ route('ruang-konsentrasi-keahlian') }}" class="block h-48 overflow-hidden bg-slate-100">
+                        <img src="{{ asset('images/ruang-rapat-4.jpg') }}" alt="Ruang Konsentrasi Keahlian (KBK)"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </a>
 
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-[#0070BA] transition">
-                            <a href="{{ route('ruang-sidang') }}">Ruang Sidang</a>
+                            <a href="{{ route('ruang-konsentrasi-keahlian') }}">Ruang Konsentrasi Keahlian (KBK)</a>
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
-                            Ruang pelaksanaan seminar proposal, seminar hasil, dan sidang akhir skripsi lengkap dengan proyektor, papan tulis, dan tata kursi peserta.
+                            Pusat kolaborasi riset 5 Kelompok Bidang Keahlian, koordinasi keilmuan dosen, bimbingan tugas akhir, dan asistensi kepakaran mahasiswa.
                         </p>
-                        <a href="{{ route('ruang-sidang') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
-                            <span>Lihat Detail Ruang Sidang</span>
+                        <a href="{{ route('ruang-konsentrasi-keahlian') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
+                            <span>Lihat Detail Ruang KBK</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
@@ -198,6 +198,27 @@
                         </p>
                         <a href="{{ route('ruang-komunal-mahasiswa') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
                             <span>Lihat Detail Ruang Komunal</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                {{-- 9. Kantin --}}
+                <div id="kantin" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
+                    <a href="{{ route('kantin') }}" class="block h-48 overflow-hidden bg-slate-100">
+                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Kantin Kampus FT UNSIL"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </a>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-[#0070BA] transition">
+                            <a href="{{ route('kantin') }}">Kantin</a>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+                            Pusat santap kuliner mahasiswa dengan sajian higienis terjangkau dan area semi-outdoor untuk bersantai di sela perkuliahan.
+                        </p>
+                        <a href="{{ route('kantin') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
+                            <span>Lihat Detail Kantin</span>
                             <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </a>
                     </div>
