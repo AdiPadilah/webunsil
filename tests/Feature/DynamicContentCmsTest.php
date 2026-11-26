@@ -121,9 +121,9 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('grid-cols-1 gap-4', false)
             ->assertDontSee('md:grid-cols-2', false)
             ->assertSee('id="risetSearchInput"', false)
-            ->assertSee('id="risetDosenFilter"', false)
-            ->assertSee('Andhy Romdani, S.T., M.Eng., Ph.D. (24)')
-            ->assertSee('Dr. Ir. Empung, S.T., M.T. (5)')
+            ->assertDontSee('id="risetDosenFilter"', false)
+            ->assertSee('id="risetPagination"', false)
+            ->assertSee('const PER_PAGE = 5;', false)
             ->assertSee('SCOPUS (9)')
             ->assertSee('SINTA (13)')
             ->assertSee('Prosiding (2)');
