@@ -37,7 +37,7 @@
                     Fasilitas Praktikum &amp; Riset Terpadu
                 </p>
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading tracking-tight">
-                    6 Unit Laboratorium Teknik Sipil UNSIL
+                    5 Unit Laboratorium Teknik Sipil UNSIL
                 </h2>
                 <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
                     Setiap laboratorium dikelola oleh dosen pembina dan pranata laboratorium bersertifikat untuk menjamin keselamatan kerja, akurasi data uji, serta kesesuaian dengan standar industri konstruksi nasional.
@@ -47,19 +47,19 @@
             {{-- Daftar Laboratorium: Alternating Editorial Rows --}}
             <div class="space-y-16 lg:space-y-24 border-t border-slate-200 pt-12 sm:pt-16">
 
-                {{-- 01. Lab TBK (Foto Kiri, Teks Kanan) --}}
-                <article id="lab-tbk" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                {{-- 01. Lab Rekayasa Struktur dan Bahan (Foto Kiri, Teks Kanan) --}}
+                <article id="lab-struktur" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/unsil-final-bridge-competition.jpeg') }}"
-                                 alt="Lab - Teknologi Bahan Konstruksi FT UNSIL"
+                                 alt="Laboratorium Rekayasa Struktur dan Bahan FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/lab-civil.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Teknologi Bahan Konstruksi
+                            Laboratorium Rekayasa Struktur dan Bahan
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             -
@@ -67,19 +67,19 @@
                     </div>
                 </article>
 
-                {{-- 02. Lab Hidraulika (Teks Kiri, Foto Kanan) --}}
-                <article id="lab-hidraulika" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                {{-- 02. Lab Rekayasa Sumber Daya Air (Teks Kiri, Foto Kanan) --}}
+                <article id="lab-sda" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     <div class="lg:col-span-6 lg:order-2">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/unsil-kunjungan-leuwikeris.jpeg') }}"
-                                 alt="Hidraulika & Bangunan Air FT UNSIL"
+                                 alt="Laboratorium Rekayasa Sumber Daya Air FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/unsil-seminar-hathi-air.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6 lg:order-1">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Hidraulika &amp; Bangunan Air
+                            Laboratorium Rekayasa Sumber Daya Air
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             -
@@ -87,18 +87,18 @@
                     </div>
                 </article>
 
-                {{-- 03. Lab Mekanika Tanah (Foto Kiri, Teks Kanan) --}}
+                {{-- 03. Lab Rekayasa Geoteknik (Foto Kiri, Teks Kanan) --}}
                 <article id="lab-geoteknik" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}"
-                                 alt="Mekanika Tanah & Geoteknik FT UNSIL"
+                                 alt="Laboratorium Rekayasa Geoteknik FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         </div>
                     </div>
                     <div class="lg:col-span-6">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Mekanika Tanah &amp; Geoteknik
+                            Laboratorium Rekayasa Geoteknik
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             -
@@ -106,19 +106,19 @@
                     </div>
                 </article>
 
-                {{-- 04. Lab Transportasi (Teks Kiri, Foto Kanan) --}}
+                {{-- 04. Lab Rekayasa Transportasi dan Jalan Raya (Teks Kiri, Foto Kanan) --}}
                 <article id="lab-transportasi" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     <div class="lg:col-span-6 lg:order-2">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/unsil-seminar-jalan-tol.jpeg') }}"
-                                 alt="Transportasi & Jalan Raya FT UNSIL"
+                                 alt="Laboratorium Rekayasa Transportasi dan Jalan Raya FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/gedung-unsil.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6 lg:order-1">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Transportasi &amp; Jalan Raya
+                            Laboratorium Rekayasa Transportasi dan Jalan Raya
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             -
@@ -126,38 +126,19 @@
                     </div>
                 </article>
 
-                {{-- 05. Lab Komputasi (Foto Kiri, Teks Kanan) --}}
-                <article id="lab-komputasi" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                {{-- 05. Lab Manajemen Rekayasa Konstruksi (Foto Kiri, Teks Kanan) --}}
+                <article id="lab-mrk" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
                             <img src="{{ asset('images/workshop-obe.jpg') }}"
-                                 alt="Komputasi & Pemodelan Struktur FT UNSIL"
+                                 alt="Laboratorium Manajemen Rekayasa Konstruksi FT UNSIL"
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                  onerror="this.src='{{ asset('images/gedung-rektorat-unsil.jpg') }}'">
                         </div>
                     </div>
                     <div class="lg:col-span-6">
                         <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Komputasi &amp; Pemodelan Struktur
-                        </h3>
-                        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                            -
-                        </p>
-                    </div>
-                </article>
-
-                {{-- 06. Lab Perpetaan (Teks Kiri, Foto Kanan) --}}
-                <article id="lab-perpetaan" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-                    <div class="lg:col-span-6 lg:order-2">
-                        <div class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[16/10] bg-slate-900 group">
-                            <img src="{{ asset('images/gedung-unsil.jpg') }}"
-                                 alt="Perpetaan & Ukur Tanah FT UNSIL"
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                        </div>
-                    </div>
-                    <div class="lg:col-span-6 lg:order-1">
-                        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight leading-tight mb-3">
-                            Perpetaan &amp; Ukur Tanah
+                            Laboratorium Manajemen Rekayasa Konstruksi
                         </h3>
                         <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
                             -
