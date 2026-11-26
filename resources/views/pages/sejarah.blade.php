@@ -106,12 +106,13 @@
                     <!-- Foto Tugu & Gedung Kebanggaan -->
                     <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 group">
                         <div class="relative h-80 sm:h-96 overflow-hidden">
-                            <img src="{{ asset('images/tugu-fakultas-teknik-unsil.jpg') }}" 
-                                 alt="Tugu Fakultas Teknik Universitas Siliwangi" 
-                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('images/arsip-unsil-1984.jpg') }}"
+                                 alt="Arsip Historis Persiapan Universitas Siliwangi 1984 — UPT Kearsipan UNSIL"
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-[#0B2A4A]/80 via-transparent to-transparent"></div>
                             <div class="absolute bottom-4 left-4 right-4 text-white">
-                                <h4 class="font-bold text-base sm:text-lg leading-snug">Gedung &amp; Tugu Fakultas Teknik</h4>
+                                <h4 class="font-bold text-base sm:text-lg leading-snug">Arsip Historis — Persiapan Universitas Siliwangi</h4>
+                                <p class="text-xs text-slate-300 mt-0.5">Sumber: UPT Kearsipan UNSIL</p>
                             </div>
                         </div>
                     </div>
