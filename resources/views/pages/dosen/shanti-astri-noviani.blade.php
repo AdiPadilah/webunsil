@@ -394,42 +394,30 @@
                         </div>
                     </div>
 
-                    {{-- 5. Penelitian --}}
+                    {{-- 5. Pelatihan & Sertifikasi --}}
                     <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
-                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 border border-indigo-100/80 flex items-center justify-center font-bold text-base shadow-sm">
-                                    <i class="fa-solid fa-flask"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
-                                        Penelitian
-                                    </h3>
-                                    <p class="text-xs text-slate-400 font-medium">Daftar penelitian &amp; tersinkron dengan menu Penelitian Admin</p>
-                                </div>
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 border border-amber-100/80 flex items-center justify-center font-bold text-base shadow-sm">
+                                <i class="fa-solid fa-certificate"></i>
                             </div>
-                            <span class="text-xs font-bold px-3.5 py-1 bg-indigo-50 text-indigo-800 rounded-full border border-indigo-200 shadow-sm">
-                                {{ $penelitianList->count() }} Penelitian
-                            </span>
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
+                                    Pelatihan &amp; Sertifikasi Perangkat Lunak
+                                </h3>
+                                <p class="text-xs text-slate-400 font-medium">Kompetensi BIM 5D dan permodelan struktur</p>
+                            </div>
                         </div>
 
-                        <div class="space-y-3">
-                            @foreach($penelitianList as $index => $item)
-                                <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-indigo-400 hover:bg-white transition-all duration-200">
-                                    <div class="flex items-center justify-between gap-2 mb-1">
-                                        <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60">
-                                            #{{ $index + 1 }}
-                                        </span>
-                                        @if(!empty($item['tahun']))
-                                            <span class="text-[11px] font-bold text-slate-500 bg-slate-100/90 px-2.5 py-0.5 rounded-md border border-slate-200/60 font-mono">
-                                                {{ $item['tahun'] }}
-                                            </span>
-                                        @endif
-                                    </div>
-                                    <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">{{ $item['judul'] }}</h4>
-                                    @if(!empty($item['meta']))
-                                        <p class="text-[11px] text-slate-500 mt-1">{{ $item['meta'] }}</p>
-                                    @endif
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            @foreach([
+                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TBQ'],
+                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TAS'],
+                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TRB'],
+                                ['tahun' => '2018', 'nama' => 'Tekla Structure Foundation Program'],
+                            ] as $tr)
+                                <div class="p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/70 flex items-center justify-between gap-3">
+                                    <span class="text-xs font-semibold text-slate-800">{{ $tr['nama'] }}</span>
+                                    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-md border border-amber-200 font-mono shrink-0">{{ $tr['tahun'] }}</span>
                                 </div>
                             @endforeach
                         </div>
@@ -508,30 +496,42 @@
                         </div>
                     </div>
 
-                    {{-- 8. Pelatihan yang Diikuti --}}
+                    {{-- 8. Penelitian --}}
                     <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
-                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
-                            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 border border-amber-100/80 flex items-center justify-center font-bold text-base shadow-sm">
-                                <i class="fa-solid fa-certificate"></i>
+                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 border border-indigo-100/80 flex items-center justify-center font-bold text-base shadow-sm">
+                                    <i class="fa-solid fa-flask"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
+                                        Penelitian
+                                    </h3>
+                                    <p class="text-xs text-slate-400 font-medium">Daftar penelitian &amp; tersinkron dengan menu Penelitian Admin</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
-                                    Pelatihan &amp; Sertifikasi Perangkat Lunak
-                                </h3>
-                                <p class="text-xs text-slate-400 font-medium">Kompetensi BIM 5D dan permodelan struktur</p>
-                            </div>
+                            <span class="text-xs font-bold px-3.5 py-1 bg-indigo-50 text-indigo-800 rounded-full border border-indigo-200 shadow-sm">
+                                {{ $penelitianList->count() }} Penelitian
+                            </span>
                         </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            @foreach([
-                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TBQ'],
-                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TAS'],
-                                ['tahun' => '2025', 'nama' => '5D BIM Application Basic Level Cubicost TRB'],
-                                ['tahun' => '2018', 'nama' => 'Tekla Structure Foundation Program'],
-                            ] as $tr)
-                                <div class="p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/70 flex items-center justify-between gap-3">
-                                    <span class="text-xs font-semibold text-slate-800">{{ $tr['nama'] }}</span>
-                                    <span class="text-[11px] font-bold text-amber-800 bg-white px-2.5 py-0.5 rounded-md border border-amber-200 font-mono shrink-0">{{ $tr['tahun'] }}</span>
+                        <div class="space-y-3">
+                            @foreach($penelitianList as $index => $item)
+                                <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-indigo-400 hover:bg-white transition-all duration-200">
+                                    <div class="flex items-center justify-between gap-2 mb-1">
+                                        <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60">
+                                            #{{ $index + 1 }}
+                                        </span>
+                                        @if(!empty($item['tahun']))
+                                            <span class="text-[11px] font-bold text-slate-500 bg-slate-100/90 px-2.5 py-0.5 rounded-md border border-slate-200/60 font-mono">
+                                                {{ $item['tahun'] }}
+                                            </span>
+                                        @endif
+                                    </div>
+                                    <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">{{ $item['judul'] }}</h4>
+                                    @if(!empty($item['meta']))
+                                        <p class="text-[11px] text-slate-500 mt-1">{{ $item['meta'] }}</p>
+                                    @endif
                                 </div>
                             @endforeach
                         </div>
