@@ -245,67 +245,7 @@
                         </div>
                     </div>
 
-                    {{-- 3. Pengalaman Penelitian --}}
-                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
-                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 border border-indigo-100/80 flex items-center justify-center font-bold text-base shadow-sm">
-                                    <i class="fa-solid fa-newspaper"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
-                                        Pengalaman Penelitian &amp; Publikasi
-                                    </h3>
-                                    <p class="text-xs text-slate-400 font-medium">Karya ilmiah yang terbit dan tersinkron dengan menu Penelitian Admin</p>
-                                </div>
-                            </div>
-                            <span class="text-xs font-bold px-3.5 py-1 bg-indigo-50 text-indigo-800 rounded-full border border-indigo-200 shadow-sm">
-                                {{ $publikasiList->count() }} Karya
-                            </span>
-                        </div>
-
-                        <div class="space-y-3.5">
-                            @foreach($publikasiList as $index => $pub)
-                                <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-indigo-400 hover:bg-white hover:shadow-sm transition-all duration-200">
-                                    <div class="flex items-center justify-between gap-3 mb-1.5 flex-wrap">
-                                        <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60">
-                                            #{{ $index + 1 }} &bull; {{ $pub['jenis'] }}
-                                        </span>
-                                        @if(!empty($pub['year']))
-                                            <span class="text-[11px] font-bold text-slate-500 bg-slate-100/90 px-2.5 py-0.5 rounded-md border border-slate-200/60 font-mono">
-                                                {{ $pub['year'] }}
-                                            </span>
-                                        @endif
-                                    </div>
-                                    <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                                        {{ $pub['title'] }}
-                                    </h4>
-                                    <p class="text-xs text-indigo-950/80 font-medium italic mt-1.5 flex items-center gap-1.5 flex-wrap">
-                                        <i class="fa-solid fa-book-open text-indigo-500 text-[11px]"></i>
-                                        <span>{{ $pub['venue'] }}</span>
-                                        @if(!empty($pub['vol']))
-                                            <span class="text-slate-400 not-italic">&bull;</span>
-                                            <span class="text-slate-600 not-italic">{{ $pub['vol'] }}</span>
-                                        @endif
-                                    </p>
-                                    <p class="text-[11px] text-slate-500 mt-1">
-                                        <strong class="text-slate-700">Penulis:</strong> {{ $pub['authors'] }}
-                                    </p>
-                                    @if(!empty($pub['doi']))
-                                        <div class="mt-2.5 pt-2 border-t border-slate-100">
-                                            <a href="{{ $pub['doi'] }}" target="_blank" rel="noopener noreferrer"
-                                               class="text-[11px] text-[#0070BA] hover:text-[#0B2A4A] font-mono inline-flex items-center gap-1.5 bg-white px-2.5 py-0.5 rounded border border-slate-200/80 hover:border-[#0070BA]/40 transition shadow-sm">
-                                                <i class="fa-solid fa-link text-[10px] text-slate-400"></i> DOI: {{ $pub['doi_label'] }}
-                                                <i class="fa-solid fa-arrow-up-right-from-square text-[9px] ml-0.5"></i>
-                                            </a>
-                                        </div>
-                                    @endif
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-
-                    {{-- 4. Karya Buku (Terhubung Admin Buku) --}}
+                    {{-- 3. Karya Buku (Terhubung Admin Buku) --}}
                     <div id="karya-buku" class="scroll-mt-24 bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
                         <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
                             <div class="flex items-center gap-3">
@@ -379,6 +319,66 @@
                                     Belum ada karya buku yang ditautkan ke profil ini.
                                 </div>
                             @endforelse
+                        </div>
+                    </div>
+
+                    {{-- 4. Pengalaman Penelitian & Publikasi --}}
+                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 border border-indigo-100/80 flex items-center justify-center font-bold text-base shadow-sm">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
+                                        Pengalaman Penelitian &amp; Publikasi
+                                    </h3>
+                                    <p class="text-xs text-slate-400 font-medium">Karya ilmiah yang terbit dan tersinkron dengan menu Penelitian Admin</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-bold px-3.5 py-1 bg-indigo-50 text-indigo-800 rounded-full border border-indigo-200 shadow-sm">
+                                {{ $publikasiList->count() }} Karya
+                            </span>
+                        </div>
+
+                        <div class="space-y-3.5">
+                            @foreach($publikasiList as $index => $pub)
+                                <div class="p-4 rounded-xl bg-slate-50/70 border border-slate-200/80 hover:border-indigo-400 hover:bg-white hover:shadow-sm transition-all duration-200">
+                                    <div class="flex items-center justify-between gap-3 mb-1.5 flex-wrap">
+                                        <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-200/60">
+                                            #{{ $index + 1 }} &bull; {{ $pub['jenis'] }}
+                                        </span>
+                                        @if(!empty($pub['year']))
+                                            <span class="text-[11px] font-bold text-slate-500 bg-slate-100/90 px-2.5 py-0.5 rounded-md border border-slate-200/60 font-mono">
+                                                {{ $pub['year'] }}
+                                            </span>
+                                        @endif
+                                    </div>
+                                    <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                                        {{ $pub['title'] }}
+                                    </h4>
+                                    <p class="text-xs text-indigo-950/80 font-medium italic mt-1.5 flex items-center gap-1.5 flex-wrap">
+                                        <i class="fa-solid fa-book-open text-indigo-500 text-[11px]"></i>
+                                        <span>{{ $pub['venue'] }}</span>
+                                        @if(!empty($pub['vol']))
+                                            <span class="text-slate-400 not-italic">&bull;</span>
+                                            <span class="text-slate-600 not-italic">{{ $pub['vol'] }}</span>
+                                        @endif
+                                    </p>
+                                    <p class="text-[11px] text-slate-500 mt-1">
+                                        <strong class="text-slate-700">Penulis:</strong> {{ $pub['authors'] }}
+                                    </p>
+                                    @if(!empty($pub['doi']))
+                                        <div class="mt-2.5 pt-2 border-t border-slate-100">
+                                            <a href="{{ $pub['doi'] }}" target="_blank" rel="noopener noreferrer"
+                                               class="text-[11px] text-[#0070BA] hover:text-[#0B2A4A] font-mono inline-flex items-center gap-1.5 bg-white px-2.5 py-0.5 rounded border border-slate-200/80 hover:border-[#0070BA]/40 transition shadow-sm">
+                                                <i class="fa-solid fa-link text-[10px] text-slate-400"></i> DOI: {{ $pub['doi_label'] }}
+                                                <i class="fa-solid fa-arrow-up-right-from-square text-[9px] ml-0.5"></i>
+                                            </a>
+                                        </div>
+                                    @endif
+                                </div>
+                            @endforeach
                         </div>
                     </div>
 

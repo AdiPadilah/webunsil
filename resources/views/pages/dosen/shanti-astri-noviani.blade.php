@@ -199,7 +199,7 @@
                 {{-- Konten Utama Kanan --}}
                 <div class="lg:col-span-8 space-y-8">
 
-                    {{-- 1. Fokus Riset & Profil --}}
+                    {{-- 1. Biografi & Profil Akademik --}}
                     <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
                         <div class="flex items-center gap-3 mb-5 pb-4 border-b border-slate-100">
                             <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0070BA] border border-blue-100/80 flex items-center justify-center font-bold text-base shadow-sm">
@@ -207,19 +207,24 @@
                             </div>
                             <div>
                                 <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
-                                    Fokus Riset &amp; Profil Akademik
+                                    Biografi &amp; Profil Akademik
                                 </h3>
-                                <p class="text-xs text-slate-400 font-medium">Bidang keahlian manajemen konstruksi dan transformasi digital konstruksi</p>
+                                <p class="text-xs text-slate-400 font-medium">Ringkasan fokus keahlian dan aktivitas riset di Program Studi Teknik Sipil</p>
                             </div>
                         </div>
 
-                        <div class="flex flex-wrap gap-2">
-                            @foreach([
-                                'Building Information Modeling (BIM)',
-                                'Green & Sustainable Construction',
-                                'Lean Construction',
-                            ] as $focus)
-                                <span class="text-xs font-semibold text-blue-900 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200/70">
+                        <div class="space-y-3.5 text-sm text-slate-600 leading-relaxed">
+                            <p>
+                                {{ $namaDosen }} adalah dosen tetap di Program Studi Teknik Sipil, Universitas Siliwangi, dengan fokus keahlian pada bidang Manajemen Rekayasa Konstruksi dan transformasi digital berbasis Building Information Modeling (BIM). Ia menyelesaikan pendidikan Magister Teknik Sipil di Universitas Mercu Buana.
+                            </p>
+                            <p>
+                                Sebelum bergabung sebagai akademisi, ia berpengalaman sebagai Tenaga Ahli Knowledge Management di Balai Penerapan Teknologi Konstruksi — Kementerian PUPR. Minat risetnya mencakup Green &amp; Sustainable Construction, Lean Construction, dan penerapan BIM 5D pada proyek konstruksi skala besar.
+                            </p>
+                        </div>
+
+                        <div class="mt-5 pt-5 border-t border-slate-100 flex flex-wrap gap-2">
+                            @foreach(['Building Information Modeling (BIM)', 'Green & Sustainable Construction', 'Lean Construction'] as $focus)
+                                <span class="text-xs font-semibold text-blue-900 bg-blue-50 px-3 py-1 rounded-lg border border-blue-200/70">
                                     {{ $focus }}
                                 </span>
                             @endforeach
@@ -267,46 +272,7 @@
                         </div>
                     </div>
 
-                    {{-- 3. Pengalaman Kerja --}}
-                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
-                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100/80 flex items-center justify-center font-bold text-base shadow-sm">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
-                                    Pengalaman Kerja
-                                </h3>
-                                <p class="text-xs text-slate-400 font-medium">Rekam jejak pengajaran, Kementerian PUPR, dan pendidikan vokasi</p>
-                            </div>
-                        </div>
-
-                        <div class="space-y-3.5">
-                            @foreach([
-                                ['periode' => '2024 – Sekarang', 'tag' => 'Akademisi', 'instansi' => 'Universitas Siliwangi', 'jabatan' => 'Dosen Tetap Program Studi Teknik Sipil'],
-                                ['periode' => '2016 – 2022', 'tag' => 'Kementerian PUPR', 'instansi' => 'Balai Penerapan Teknologi Konstruksi - Kementerian PUPR', 'jabatan' => 'Tenaga Ahli Knowledge Management Bidang Konstruksi'],
-                                ['periode' => '2015 – 2016', 'tag' => 'Pendidikan Vokasi (3T)', 'instansi' => 'SMKN 1 Cilaku', 'jabatan' => 'Guru Program Sarjana Mengajar SMK di daerah 3T, Jurusan Teknik Gambar Bangunan'],
-                                ['periode' => '2014 – 2015', 'tag' => 'Pendidikan Vokasi', 'instansi' => 'SMKN Rajapolah', 'jabatan' => 'Guru Produktif SMK Jurusan Teknik Gambar Bangunan'],
-                            ] as $exp)
-                                <div class="p-4 sm:p-5 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-300 hover:bg-white transition-all duration-200">
-                                    <div class="flex items-start justify-between gap-3 flex-wrap">
-                                        <div>
-                                            <span class="inline-block text-[10px] font-bold text-[#0070BA] bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-200/70 uppercase tracking-wider">
-                                                {{ $exp['tag'] }}
-                                            </span>
-                                            <h4 class="text-sm sm:text-base font-bold text-slate-900 mt-1.5">{{ $exp['jabatan'] }}</h4>
-                                            <p class="text-xs font-semibold text-slate-600 mt-0.5">{{ $exp['instansi'] }}</p>
-                                        </div>
-                                        <span class="text-[11px] font-bold text-slate-600 bg-white px-2.5 py-1 rounded-md border border-slate-200/80 font-mono inline-block">
-                                            {{ $exp['periode'] }}
-                                        </span>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-
-                    {{-- 4. Karya Buku (Terhubung Admin Buku) --}}
+                    {{-- 3. Karya Buku (Terhubung Admin Buku) --}}
                     <div id="karya-buku" class="scroll-mt-24 bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
                         <div class="flex items-center justify-between flex-wrap gap-3 mb-6 pb-4 border-b border-slate-100">
                             <div class="flex items-center gap-3">
@@ -386,6 +352,45 @@
                                     Belum ada karya buku yang ditautkan ke profil ini.
                                 </div>
                             @endforelse
+                        </div>
+                    </div>
+
+                    {{-- 4. Pengalaman Kerja --}}
+                    <div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 hover:shadow-md transition-shadow duration-300">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100/80 flex items-center justify-center font-bold text-base shadow-sm">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold text-[#0B2A4A] font-heading tracking-tight">
+                                    Pengalaman Kerja
+                                </h3>
+                                <p class="text-xs text-slate-400 font-medium">Rekam jejak pengajaran, Kementerian PUPR, dan pendidikan vokasi</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3.5">
+                            @foreach([
+                                ['periode' => '2024 – Sekarang', 'tag' => 'Akademisi', 'instansi' => 'Universitas Siliwangi', 'jabatan' => 'Dosen Tetap Program Studi Teknik Sipil'],
+                                ['periode' => '2016 – 2022', 'tag' => 'Kementerian PUPR', 'instansi' => 'Balai Penerapan Teknologi Konstruksi - Kementerian PUPR', 'jabatan' => 'Tenaga Ahli Knowledge Management Bidang Konstruksi'],
+                                ['periode' => '2015 – 2016', 'tag' => 'Pendidikan Vokasi (3T)', 'instansi' => 'SMKN 1 Cilaku', 'jabatan' => 'Guru Program Sarjana Mengajar SMK di daerah 3T, Jurusan Teknik Gambar Bangunan'],
+                                ['periode' => '2014 – 2015', 'tag' => 'Pendidikan Vokasi', 'instansi' => 'SMKN Rajapolah', 'jabatan' => 'Guru Produktif SMK Jurusan Teknik Gambar Bangunan'],
+                            ] as $exp)
+                                <div class="p-4 sm:p-5 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-300 hover:bg-white transition-all duration-200">
+                                    <div class="flex items-start justify-between gap-3 flex-wrap">
+                                        <div>
+                                            <span class="inline-block text-[10px] font-bold text-[#0070BA] bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-200/70 uppercase tracking-wider">
+                                                {{ $exp['tag'] }}
+                                            </span>
+                                            <h4 class="text-sm sm:text-base font-bold text-slate-900 mt-1.5">{{ $exp['jabatan'] }}</h4>
+                                            <p class="text-xs font-semibold text-slate-600 mt-0.5">{{ $exp['instansi'] }}</p>
+                                        </div>
+                                        <span class="text-[11px] font-bold text-slate-600 bg-white px-2.5 py-1 rounded-md border border-slate-200/80 font-mono inline-block">
+                                            {{ $exp['periode'] }}
+                                        </span>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
 
