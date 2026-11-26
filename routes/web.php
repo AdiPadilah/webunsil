@@ -65,7 +65,13 @@ Route::get('/dosen/andhy-romdani', function () {
         ->orWhere('profile_route', 'dosen.andhy-romdani')
         ->first();
 
-    return view('pages.dosen.andhy-romdani', compact('dosen'));
+    $books = \App\Models\Buku::published()
+        ->where('penulis_route', 'dosen.andhy-romdani')
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+
+    return view('pages.dosen.andhy-romdani', compact('dosen', 'books'));
 })->name('dosen.andhy-romdani');
 
 // Profil Dosen Spesifik: Sri Wanto
@@ -250,7 +256,9 @@ Route::get('/berita', function () {
 })->name('berita.index');
 
 Route::get('/berita/detail/{slug}', function ($slug) {
-    $article = \App\Models\Article::where('slug', $slug)->firstOrFail();
+    $article = \App\Models\Article::where('slug', $slug)
+        ->where('is_published', true)
+        ->firstOrFail();
     $article->increment('views');
     return view('pages.berita-detail', compact('article'));
 })->name('berita.show');

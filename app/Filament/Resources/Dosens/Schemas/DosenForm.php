@@ -51,6 +51,7 @@ class DosenForm
                         ->label('Urutan Tampil')
                         ->numeric()
                         ->default(0)
+                        ->dehydrateStateUsing(fn (mixed $state): int => (int) ($state ?? 0))
                         ->helperText('Angka lebih kecil tampil lebih awal.'),
                 ])
                 ->columns(2),

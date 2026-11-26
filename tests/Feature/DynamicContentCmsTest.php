@@ -3,10 +3,13 @@
 namespace Tests\Feature;
 
 use App\Filament\Resources\Articles\Pages\CreateArticle;
+use App\Filament\Resources\Articles\Pages\EditArticle;
 use App\Filament\Resources\Articles\Pages\ListArticles;
 use App\Filament\Resources\Bukus\Pages\CreateBuku;
+use App\Filament\Resources\Bukus\Pages\EditBuku;
 use App\Filament\Resources\Bukus\Pages\ListBukus;
 use App\Filament\Resources\DefenseSchedules\Pages\CreateDefenseSchedule;
+use App\Filament\Resources\DefenseSchedules\Pages\EditDefenseSchedule;
 use App\Filament\Resources\DefenseSchedules\Pages\ListDefenseSchedules;
 use App\Filament\Resources\Dosens\Pages\CreateDosen;
 use App\Filament\Resources\Dosens\Pages\EditDosen;
@@ -15,8 +18,10 @@ use App\Filament\Resources\Penelitians\Pages\CreatePenelitian;
 use App\Filament\Resources\Penelitians\Pages\EditPenelitian;
 use App\Filament\Resources\Penelitians\Pages\ListPenelitians;
 use App\Filament\Resources\Pengabdians\Pages\CreatePengabdian;
+use App\Filament\Resources\Pengabdians\Pages\EditPengabdian;
 use App\Filament\Resources\Pengabdians\Pages\ListPengabdians;
 use App\Filament\Resources\Prestasis\Pages\CreatePrestasi;
+use App\Filament\Resources\Prestasis\Pages\EditPrestasi;
 use App\Filament\Resources\Prestasis\Pages\ListPrestasis;
 use App\Filament\Resources\SiteSettings\Pages\CreateSiteSetting;
 use App\Filament\Resources\SiteSettings\Pages\EditSiteSetting;
@@ -25,6 +30,7 @@ use App\Filament\Widgets\PanduanCepatWidget;
 use App\Filament\Widgets\ProdiStatsWidget;
 use App\Models\Article;
 use App\Models\Buku;
+use App\Models\DefenseSchedule;
 use App\Models\Dosen;
 use App\Models\Penelitian;
 use App\Models\Pengabdian;
@@ -159,6 +165,8 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/dosen/andhy-romdani')
             ->assertOk()
             ->assertSee('Andhy Romdani, S.T., M.Eng., Ph.D.')
+            ->assertSee('Manajemen Sungai dan Banjir')
+            ->assertSee('6 Hero dan Ancaman Bom di Borobudur')
             ->assertSee('/storage/dosen/andhy-romdani.jpg', false);
 
         $this->get('/dosen/sri-wanto')
@@ -214,6 +222,13 @@ class DynamicContentCmsTest extends TestCase
             ->assertOk()
             ->assertSee('Berita Aktif Terbaru')
             ->assertDontSee('Draft Berita Rahasia');
+
+        $this->get('/berita/detail/draft-berita-rahasia')
+            ->assertNotFound();
+
+        $this->get('/berita/detail/berita-aktif-terbaru')
+            ->assertOk()
+            ->assertSee('Berita Aktif Terbaru');
 
         $this->get('/')
             ->assertOk()
@@ -353,5 +368,253 @@ class DynamicContentCmsTest extends TestCase
             ->assertOk()
             ->assertSee('Buku Baru Sri Wanto')
             ->assertDontSee('Draft Buku Sri Wanto');
+    }
+
+    public function test_all_admin_resources_support_full_crud_and_sync_public_pages(): void
+    {
+        Storage::fake('public');
+
+        $user = User::factory()->create();
+        $this->actingAs($user);
+        app()->setLocale('id');
+
+        // 1. Berita & Pengumuman (Articles) - Create, Read, Update, Delete
+        Livewire::test(CreateArticle::class)
+            ->fillForm([
+                'title' => 'Kuliah Umum Struktur Jembatan Baja',
+                'slug' => 'kuliah-umum-struktur-jembatan-baja',
+                'category' => 'Pengumuman',
+                'excerpt' => 'Ringkasan kuliah umum struktur jembatan.',
+                'content' => '<p>Konten lengkap kuliah umum struktur jembatan baja.</p>',
+                'is_published' => true,
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $article = Article::where('slug', 'kuliah-umum-struktur-jembatan-baja')->firstOrFail();
+
+        $this->get('/berita')->assertOk()->assertSee('Kuliah Umum Struktur Jembatan Baja');
+        $this->get('/berita/detail/' . $article->slug)->assertOk()->assertSee('Konten lengkap kuliah umum struktur jembatan baja.');
+
+        Livewire::test(EditArticle::class, ['record' => $article->getKey()])
+            ->fillForm(['title' => 'Kuliah Umum Struktur Jembatan Baja (Revisi)'])
+            ->call('save')
+            ->assertHasNoFormErrors();
+
+        $this->get('/berita')->assertOk()->assertSee('Kuliah Umum Struktur Jembatan Baja (Revisi)');
+
+        Livewire::test(ListArticles::class)
+            ->assertCanSeeTableRecords([$article])
+            ->filterTable('category', 'Pengumuman')
+            ->assertCanSeeTableRecords([$article])
+            ->callTableAction('delete', $article);
+
+        $this->assertDatabaseMissing('articles', ['id' => $article->getKey()]);
+
+        // 2. Buku - Create, Read (catalog + profil dosen Andhy Romdani), Update, Delete
+        Livewire::test(CreateBuku::class)
+            ->fillForm([
+                'judul' => 'Buku Dinamika Gelombang Uji',
+                'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.',
+                'penulis_route' => 'dosen.andhy-romdani',
+                'kategori' => 'non-fiksi',
+                'label' => 'Buku Referensi',
+                'tahun' => 2026,
+                'isbn' => '978-623-0000-11-1',
+                'is_published' => true,
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $buku = Buku::where('isbn', '978-623-0000-11-1')->firstOrFail();
+
+        $this->get('/buku')->assertOk()->assertSee('Buku Dinamika Gelombang Uji');
+        $this->get('/dosen/andhy-romdani')->assertOk()->assertSee('Buku Dinamika Gelombang Uji');
+
+        Livewire::test(EditBuku::class, ['record' => $buku->getKey()])
+            ->fillForm(['judul' => 'Buku Dinamika Gelombang Edisi 2'])
+            ->call('save')
+            ->assertHasNoFormErrors();
+
+        $this->get('/dosen/andhy-romdani')->assertOk()->assertSee('Buku Dinamika Gelombang Edisi 2');
+
+        Livewire::test(ListBukus::class)
+            ->assertCanSeeTableRecords([$buku])
+            ->callTableAction('delete', $buku);
+
+        $this->assertDatabaseMissing('bukus', ['id' => $buku->getKey()]);
+
+        // 3. Jadwal Sidang Skripsi (DefenseSchedules) - Create, Read, Update, Delete
+        Livewire::test(CreateDefenseSchedule::class)
+            ->fillForm([
+                'type' => 'Sidang Akhir Skripsi',
+                'status' => 'Terjadwal',
+                'student_name' => 'Rafi Pratama',
+                'student_id' => '217011001',
+                'title' => 'Analisis Stabilitas Lereng Bendungan Leuwikeris',
+                'supervisor_1' => 'Dr. Ir. Empung, S.T., M.T.',
+                'supervisor_2' => 'Sri Wanto, S.T., M.T.',
+                'examiner_1' => 'Andhy Romdani, S.T., M.Eng., Ph.D.',
+                'examiner_2' => 'Ir. Asep Kurnia, M.T.',
+                'room' => 'Ruang Sidang FT 1',
+                'date_time' => '2026-12-01 09:00:00',
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $schedule = DefenseSchedule::where('student_id', '217011001')->firstOrFail();
+
+        $this->get('/jadwal-sidang-skripsi')
+            ->assertOk()
+            ->assertSee('Rafi Pratama')
+            ->assertSee('Ir. Asep Kurnia, M.T.');
+        $this->get('/sidang-akhir')
+            ->assertOk()
+            ->assertSee('Rafi Pratama')
+            ->assertSee('Sri Wanto, S.T., M.T.')
+            ->assertSee('Ir. Asep Kurnia, M.T.');
+
+        Livewire::test(EditDefenseSchedule::class, ['record' => $schedule->getKey()])
+            ->fillForm(['room' => 'Ruang Seminar Kampus 2', 'status' => 'Selesai'])
+            ->call('save')
+            ->assertHasNoFormErrors();
+
+        $this->get('/sidang-akhir')->assertOk()->assertSee('Ruang Seminar Kampus 2');
+
+        Livewire::test(ListDefenseSchedules::class)
+            ->assertCanSeeTableRecords([$schedule])
+            ->callTableAction('delete', $schedule);
+
+        $this->assertDatabaseMissing('defense_schedules', ['id' => $schedule->getKey()]);
+
+        // 4. Dosen & Pengajar - Create (termasuk urutan null), Read, Update, Delete
+        Livewire::test(CreateDosen::class)
+            ->fillForm([
+                'nama' => 'Ir. Budi Santoso, M.T.',
+                'slug' => 'budi-santoso',
+                'kbk' => 'transportasi',
+                'urutan' => null,
+                'is_published' => true,
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $dosen = Dosen::where('slug', 'budi-santoso')->firstOrFail();
+        $this->assertSame(0, $dosen->urutan);
+
+        $this->get('/dosen')->assertOk()->assertSee('Ir. Budi Santoso, M.T.');
+
+        Livewire::test(EditDosen::class, ['record' => $dosen->getKey()])
+            ->fillForm(['nama' => 'Dr. Ir. Budi Santoso, M.T.', 'urutan' => ''])
+            ->call('save')
+            ->assertHasNoFormErrors();
+
+        $this->get('/dosen')->assertOk()->assertSee('Dr. Ir. Budi Santoso, M.T.');
+
+        Livewire::test(ListDosens::class)
+            ->assertCanSeeTableRecords([$dosen])
+            ->callTableAction('delete', $dosen);
+
+        $this->assertDatabaseMissing('dosens', ['id' => $dosen->getKey()]);
+
+        // 5. Penelitian - Create, Read, Update, Delete
+        Livewire::test(CreatePenelitian::class)
+            ->fillForm([
+                'judul' => 'Pemodelan Hidrolika Sungai Citanduy',
+                'penulis' => 'Andhy Romdani, Sri Wanto',
+                'nama_jurnal' => 'Akselerasi: Jurnal Ilmiah Teknik Sipil',
+                'tahun' => 2026,
+                'index_type' => 'SINTA',
+                'index_detail' => 'SINTA 4',
+                'is_published' => true,
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $penelitian = Penelitian::where('judul', 'Pemodelan Hidrolika Sungai Citanduy')->firstOrFail();
+
+        $this->get('/penelitian')->assertOk()->assertSee('Pemodelan Hidrolika Sungai Citanduy');
+
+        Livewire::test(EditPenelitian::class, ['record' => $penelitian->getKey()])
+            ->fillForm(['judul' => 'Pemodelan Hidrolika Sungai Citanduy Hilir'])
+            ->call('save')
+            ->assertHasNoFormErrors();
+
+        $this->get('/penelitian')->assertOk()->assertSee('Pemodelan Hidrolika Sungai Citanduy Hilir');
+
+        Livewire::test(ListPenelitians::class)
+            ->assertCanSeeTableRecords([$penelitian])
+            ->callTableAction('delete', $penelitian);
+
+        $this->assertDatabaseMissing('penelitians', ['id' => $penelitian->getKey()]);
+
+        // 6. Pengabdian Masyarakat - Create, Read, Filter PROCEEDING, Update, Delete
+        Livewire::test(CreatePengabdian::class)
+            ->fillForm([
+                'judul' => 'Pelatihan Konstruksi Tahan Gempa Warga Tasikmalaya',
+                'penulis' => 'Sri Wanto, dkk.',
+                'nama_jurnal' => 'Prosiding Seminar Nasional Pengabdian',
+                'tahun' => 2026,
+                'index_type' => 'PROCEEDING',
+                'index_detail' => 'Prosiding Nasional',
+                'is_published' => true,
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $pengabdian = Pengabdian::where('judul', 'Pelatihan Konstruksi Tahan Gempa Warga Tasikmalaya')->firstOrFail();
+
+        $this->get('/pengabdian')->assertOk()->assertSee('Pelatihan Konstruksi Tahan Gempa Warga Tasikmalaya');
+
+        Livewire::test(EditPengabdian::class, ['record' => $pengabdian->getKey()])
+            ->fillForm(['judul' => 'Pelatihan Rumah Tahan Gempa Desa Mugarsari'])
+            ->call('save')
+            ->assertHasNoFormErrors();
+
+        $this->get('/pengabdian')->assertOk()->assertSee('Pelatihan Rumah Tahan Gempa Desa Mugarsari');
+
+        Livewire::test(ListPengabdians::class)
+            ->assertCanSeeTableRecords([$pengabdian])
+            ->filterTable('index_type', 'PROCEEDING')
+            ->assertCanSeeTableRecords([$pengabdian])
+            ->callTableAction('delete', $pengabdian);
+
+        $this->assertDatabaseMissing('pengabdians', ['id' => $pengabdian->getKey()]);
+
+        // 7. Prestasi Mahasiswa - Create, Read (termasuk mahasiswa & penyelenggara), Update, Delete
+        Livewire::test(CreatePrestasi::class)
+            ->fillForm([
+                'judul' => 'Juara 1 Lomba Jembatan Baja Nasional',
+                'mahasiswa' => 'Tim Galunggung Sipil',
+                'kategori' => 'jembatan',
+                'tingkat' => 'Juara 1 Nasional',
+                'tahun' => 2026,
+                'penyelenggara' => 'ITB Bandung',
+                'deskripsi' => 'Merancang model jembatan baja ringan efisiensi tinggi.',
+                'is_published' => true,
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $prestasi = Prestasi::where('judul', 'Juara 1 Lomba Jembatan Baja Nasional')->firstOrFail();
+
+        $this->get('/prestasi-mahasiswa')
+            ->assertOk()
+            ->assertSee('Juara 1 Lomba Jembatan Baja Nasional')
+            ->assertSee('Tim Galunggung Sipil')
+            ->assertSee('ITB Bandung');
+
+        Livewire::test(EditPrestasi::class, ['record' => $prestasi->getKey()])
+            ->fillForm(['penyelenggara' => 'ITS Surabaya'])
+            ->call('save')
+            ->assertHasNoFormErrors();
+
+        $this->get('/prestasi-mahasiswa')->assertOk()->assertSee('ITS Surabaya');
+
+        Livewire::test(ListPrestasis::class)
+            ->assertCanSeeTableRecords([$prestasi])
+            ->callTableAction('delete', $prestasi);
+
+        $this->assertDatabaseMissing('prestasis', ['id' => $prestasi->getKey()]);
     }
 }

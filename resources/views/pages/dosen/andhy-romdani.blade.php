@@ -2,6 +2,13 @@
 
 @php
     $dosen ??= \App\Models\Dosen::where('slug', 'andhy-romdani')->orWhere('profile_route', 'dosen.andhy-romdani')->first();
+    $books ??= \App\Models\Buku::published()
+        ->where('penulis_route', 'dosen.andhy-romdani')
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+    $bukuSipil = $books->where('kategori', '!=', 'fiksi')->values();
+    $bukuFiksi = $books->where('kategori', 'fiksi')->values();
     $namaDosen = $dosen?->nama ?? 'Andhy Romdani, S.T., M.Eng., Ph.D.';
     $kbkLabel = $dosen?->kbk_label ?? 'Rekayasa Sumber Daya Air';
     $fotoUrl = $dosen?->foto_url ?: asset('images/dosen/andhy-romdani.jpg') . '?v=' . (@filemtime(public_path('images/dosen/andhy-romdani.jpg')) ?: 2);
@@ -127,7 +134,7 @@
                         </h3>
                         <div class="grid grid-cols-2 gap-2.5 text-center">
                             <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-xl sm:text-2xl font-black text-[#0B2A4A] block">16</span>
+                                <span class="text-xl sm:text-2xl font-black text-[#0B2A4A] block">{{ $books->count() }}</span>
                                 <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Karya Buku</span>
                             </div>
                             <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
@@ -367,104 +374,98 @@
                             </div>
                         </div>
 
-                        {{-- Buku Non-Fiksi Keteknik-sipilan (12 Buku) --}}
+                        {{-- Buku Non-Fiksi Keteknik-sipilan --}}
                         <div class="mb-8">
                             <div class="flex items-center gap-2 mb-3.5 pb-2 border-b border-slate-100">
                                 <h4 class="text-sm font-bold text-slate-800">Buku Non-Fiksi (Keteknik-sipilan)</h4>
-                                <span class="text-[10px] text-cyan-800 font-semibold bg-cyan-50 border border-cyan-200/60 px-2.5 py-0.5 rounded-full ml-auto">12 Judul</span>
+                                <span class="text-[10px] text-cyan-800 font-semibold bg-cyan-50 border border-cyan-200/60 px-2.5 py-0.5 rounded-full ml-auto">{{ $bukuSipil->count() }} Judul</span>
                             </div>
 
                             <div class="space-y-2.5">
-                                @php
-                                $bukuSipil = [
-                                    ['no' => 1,  'judul' => 'Manajemen Sungai dan Banjir: Adaptasi terhadap Perubahan Iklim Global',                                           'isbn' => '978-623-8221-10-3', 'cover' => 'manajemen-sungai-dan-banjir-adaptasi-terhadap-perubahan-iklim-global.png'],
-                                    ['no' => 2,  'judul' => 'Hidrodinamika Pantai dan Proteksi Kawasan Pesisir',                                                               'isbn' => '978-623-8267-23-4', 'cover' => 'hidrodinamika-pantai-dan-proteksi-kawasan-pesisir.jpeg'],
-                                    ['no' => 3,  'judul' => 'Mekanisme Pendangkalan di Alur Pelayaran Pelabuhan dan Solusi Komprehensifnya',                                   'isbn' => '978-623-8221-67-7', 'cover' => 'mekanisme-pendangkalan-di-alur-pelayaran-pelabuhan-dan-solusi-komprehensifnya.png'],
-                                    ['no' => 4,  'judul' => 'Teknik Irigasi dan Perencanaan Swasembada Pangan',                                                               'isbn' => '973-623-8267-39-2', 'cover' => 'teknik-irigasi-dan-perencanaan-swasembada-pangan.png'],
-                                    ['no' => 5,  'judul' => 'Estuari: Konsep Dasar dan Pengembangan Potensi Muara Sungai',                                                    'isbn' => '978-623-8313-56-1', 'cover' => 'estuari-konsep-dasar-dan-usaha-pengembangan-potensi-muara-sungai.png'],
-                                    ['no' => 6,  'judul' => 'Transpor Sedimen: Proses, Efek, dan Morfodinamika Pantai',                                                       'isbn' => '978-623-8496-78-5', 'cover' => 'transpor-sedimen-proses-efek-dan-morfodinamika-pantai-2.png'],
-                                    ['no' => 7,  'judul' => 'Mekanika Fluida: Teori Fundamental dan Aplikasinya',                                                             'isbn' => '978-623-508-029-1', 'cover' => 'mekanika-fluida-teori-fundamental-dan-aplikasinya.jpg'],
-                                    ['no' => 8,  'judul' => 'How to Write and Publish your First Research Paper (Cara Jitu Tembus Publikasi Artikel di Jurnal Internasional)', 'isbn' => '978-624-226-022-7', 'cover' => 'how-to-write-and-publish-your-first-research-paper.jpg'],
-                                    ['no' => 9,  'judul' => 'Soal dan Penyelesaian Mekanika Fluida Dasar',                                                                    'isbn' => '978-623-508-432-9', 'cover' => 'soal-dan-penyelesaian-mekanika-fluida-dasar.jpg'],
-                                    ['no' => 10, 'judul' => 'Hidrolika: Dasar-dasar, Aplikasi, dan Perencanaan Saluran Terbuka',                                              'isbn' => '978-624-226-427-0', 'cover' => 'hidraulika-dasar-dasar-aplikasi-dan-perencanaan-saluran-terbuka.jpg'],
-                                    ['no' => 11, 'judul' => 'Compound Flooding: Mekanisme, Risiko, dan Strategi Ketahanan terhadap Perubahan Iklim',                          'isbn' => '978-624-226-450-8', 'cover' => 'compound-flooding-di-pantai-dan-estuari.jpg'],
-                                    ['no' => 12, 'judul' => 'Soal dan Solusi untuk Hidrolika',                                                                                'isbn' => '978-624-226-567-3', 'cover' => 'soal-dan-solusi-untuk-hidraulika.jpg'],
-                                ];
-                                @endphp
-
-                                @foreach($bukuSipil as $buku)
+                                @forelse($bukuSipil as $index => $buku)
                                 <div class="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 hover:border-cyan-400 hover:bg-white hover:shadow-sm transition-all duration-200 flex items-center gap-3 group">
                                     {{-- Cover Thumbnail --}}
                                     <div class="shrink-0 w-10 h-14 sm:w-12 sm:h-16 rounded-md overflow-hidden border border-slate-200/70 shadow-sm bg-slate-100 group-hover:shadow-md transition-shadow">
-                                        <img src="{{ asset('images/buku/' . $buku['cover']) }}"
-                                             alt="{{ $buku['judul'] }}"
-                                             class="w-full h-full object-cover"
-                                             onerror="this.style.display='none'">
+                                        @if($buku->cover_url)
+                                            <img src="{{ $buku->cover_url }}"
+                                                 alt="{{ $buku->judul }}"
+                                                 class="w-full h-full object-cover"
+                                                 onerror="this.style.display='none'">
+                                        @else
+                                            <div class="w-full h-full bg-gradient-to-br from-[#0B2A4A] to-[#133E6C] flex items-center justify-center text-white/40">
+                                                <i class="fa-solid fa-book text-xs" aria-hidden="true"></i>
+                                            </div>
+                                        @endif
                                     </div>
                                     {{-- Nomor + Judul --}}
                                     <div class="flex-1 min-w-0">
                                         <div class="flex items-start gap-2">
                                             <span class="w-5 h-5 rounded bg-cyan-100 text-cyan-800 font-bold text-[10px] flex items-center justify-center shrink-0 mt-0.5 border border-cyan-200/70">
-                                                {{ $buku['no'] }}
+                                                {{ $index + 1 }}
                                             </span>
                                             <h5 class="text-xs sm:text-[13px] font-bold text-slate-800 leading-snug group-hover:text-cyan-950 transition-colors">
-                                                {{ $buku['judul'] }}
+                                                {{ $buku->judul }}
                                             </h5>
                                         </div>
                                         <div class="flex items-center gap-2 mt-1.5 flex-wrap">
-                                            <span class="text-slate-500 font-mono text-[10px] bg-white px-2 py-0.5 rounded border border-slate-200/80">ISBN: {{ $buku['isbn'] }}</span>
-                                            <span class="text-cyan-700 bg-cyan-50 font-semibold text-[10px] px-2 py-0.5 rounded-full border border-cyan-200/70">Non-Fiksi</span>
+                                            @if(!empty($buku->isbn))
+                                                <span class="text-slate-500 font-mono text-[10px] bg-white px-2 py-0.5 rounded border border-slate-200/80">ISBN: {{ $buku->isbn }}</span>
+                                            @endif
+                                            <span class="text-cyan-700 bg-cyan-50 font-semibold text-[10px] px-2 py-0.5 rounded-full border border-cyan-200/70">{{ $buku->label ?: 'Non-Fiksi' }}</span>
                                         </div>
                                     </div>
                                 </div>
-                                @endforeach
+                                @empty
+                                <p class="text-xs text-slate-400">Belum ada buku non-fiksi yang tertaut.</p>
+                                @endforelse
                             </div>
                         </div>
 
-                        {{-- Buku Fiksi / Novel (4 Buku) --}}
+                        {{-- Buku Fiksi / Novel --}}
                         <div>
                             <div class="flex items-center gap-2 mb-3.5 pb-2 border-b border-slate-100">
                                 <i class="fa-solid fa-feather-pointed text-amber-600 text-sm"></i>
                                 <h4 class="text-sm font-bold text-slate-800">Buku Fiksi (Novel Kreatif)</h4>
-                                <span class="text-[10px] text-amber-800 font-semibold bg-amber-50 border border-amber-200/60 px-2.5 py-0.5 rounded-full ml-auto">Karya Sastra</span>
+                                <span class="text-[10px] text-amber-800 font-semibold bg-amber-50 border border-amber-200/60 px-2.5 py-0.5 rounded-full ml-auto">{{ $bukuFiksi->count() }} Judul</span>
                             </div>
 
                             <div class="space-y-2.5">
-                                @php
-                                $bukuFiksi = [
-                                    ['no' => 1, 'judul' => '6 Hero dan Ancaman Bom di Borobudur (Seri 1): Aksi Penyelamatan Kocak Dimulai',              'isbn' => '978-623-508-060-4', 'cover' => '6-hero-dan-ancaman-bom-di-borobudur-seri-1.jpg'],
-                                    ['no' => 2, 'judul' => '6 Hero dan Ancaman Bom di Borobudur (Seri 2): Pelumpuhan Profesor Gila Peramu Formula Penghancur', 'isbn' => '978-623-508-074-1', 'cover' => '6-hero-dan-ancaman-bom-di-borobudur-seri-2.jpg'],
-                                    ['no' => 3, 'judul' => 'Dua Burung Gereja di Kubah Emas Masjid',                                                      'isbn' => '978-623-508-037-6', 'cover' => 'dua-burung-gereja-di-kubah-emas-masjid.jpg'],
-                                    ['no' => 4, 'judul' => 'Adam dan Hawa: Ketika Mereka Bukan dari Surga',                                                'isbn' => '978-624-226-110-1', 'cover' => 'adam-dan-hawa-ketika-mereka-bukan-dari-surga.jpg'],
-                                ];
-                                @endphp
-
-                                @foreach($bukuFiksi as $novel)
+                                @forelse($bukuFiksi as $index => $novel)
                                 <div class="p-3 rounded-xl bg-amber-50/30 border border-amber-200/70 hover:border-amber-400 hover:bg-white hover:shadow-sm transition-all duration-200 flex items-center gap-3 group">
                                     {{-- Cover Thumbnail --}}
                                     <div class="shrink-0 w-10 h-14 sm:w-12 sm:h-16 rounded-md overflow-hidden border border-amber-200/70 shadow-sm bg-amber-50 group-hover:shadow-md transition-shadow">
-                                        <img src="{{ asset('images/buku/' . $novel['cover']) }}"
-                                             alt="{{ $novel['judul'] }}"
-                                             class="w-full h-full object-cover"
-                                             onerror="this.style.display='none'">
+                                        @if($novel->cover_url)
+                                            <img src="{{ $novel->cover_url }}"
+                                                 alt="{{ $novel->judul }}"
+                                                 class="w-full h-full object-cover"
+                                                 onerror="this.style.display='none'">
+                                        @else
+                                            <div class="w-full h-full bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center text-white/60">
+                                                <i class="fa-solid fa-book text-xs" aria-hidden="true"></i>
+                                            </div>
+                                        @endif
                                     </div>
                                     {{-- Nomor + Judul --}}
                                     <div class="flex-1 min-w-0">
                                         <div class="flex items-start gap-2">
                                             <span class="w-5 h-5 rounded bg-amber-100 text-amber-800 font-bold text-[10px] flex items-center justify-center shrink-0 mt-0.5 border border-amber-200/70">
-                                                {{ $novel['no'] }}
+                                                {{ $index + 1 }}
                                             </span>
                                             <h5 class="text-xs sm:text-[13px] font-bold text-slate-800 leading-snug group-hover:text-amber-950 transition-colors">
-                                                {{ $novel['judul'] }}
+                                                {{ $novel->judul }}
                                             </h5>
                                         </div>
                                         <div class="flex items-center gap-2 mt-1.5 flex-wrap">
-                                            <span class="text-slate-500 font-mono text-[10px] bg-white px-2 py-0.5 rounded border border-slate-200/80">ISBN: {{ $novel['isbn'] }}</span>
-                                            <span class="text-amber-700 bg-amber-100/70 font-semibold text-[10px] px-2 py-0.5 rounded-full border border-amber-200">Novel Fiksi</span>
+                                            @if(!empty($novel->isbn))
+                                                <span class="text-slate-500 font-mono text-[10px] bg-white px-2 py-0.5 rounded border border-slate-200/80">ISBN: {{ $novel->isbn }}</span>
+                                            @endif
+                                            <span class="text-amber-700 bg-amber-100/70 font-semibold text-[10px] px-2 py-0.5 rounded-full border border-amber-200">{{ $novel->label ?: 'Novel Fiksi' }}</span>
                                         </div>
                                     </div>
                                 </div>
-                                @endforeach
+                                @empty
+                                <p class="text-xs text-slate-400">Belum ada karya fiksi yang tertaut.</p>
+                                @endforelse
                             </div>
                         </div>
 

@@ -36,6 +36,7 @@ class PengabdianTable
                     'PKM' => 'Jurnal PkM',
                     'SINTA' => 'SINTA',
                     'SCOPUS' => 'SCOPUS',
+                    'PROCEEDING' => 'Prosiding',
                 ]),
             ])
             ->defaultSort('tahun', 'desc')

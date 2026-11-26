@@ -53,8 +53,9 @@
                                 </td>
                                 <td class="p-4 sm:px-6 max-w-xs"><p class="text-slate-800 font-medium leading-relaxed">{{ $s->title }}</p></td>
                                 <td class="p-4 sm:px-6 text-slate-600">
-                                    <div class="font-medium">Pembimbing: {{ $s->supervisor_1 }}</div>
-                                    @if($s->examiner_1)<div class="text-[11px] text-slate-500">Penguji: {{ $s->examiner_1 }}</div>@endif
+                                    <div class="font-medium">Pembimbing 1: {{ $s->supervisor_1 }}</div>
+                                    @if($s->supervisor_2)<div class="text-[11px] text-slate-500">Pembimbing 2: {{ $s->supervisor_2 }}</div>@endif
+                                    @if($s->examiner_1 || $s->examiner_2)<div class="text-[11px] text-slate-500 mt-1">Penguji: {{ collect([$s->examiner_1, $s->examiner_2])->filter()->implode(', ') }}</div>@endif
                                 </td>
                                 <td class="p-4 sm:px-6">
                                     <div class="font-bold text-slate-900">{{ $s->date_time ? $s->date_time->translatedFormat('d M Y, H:i') : '-' }} WIB</div>

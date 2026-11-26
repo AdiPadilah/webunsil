@@ -66,6 +66,11 @@
                                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-heading leading-tight mb-4">
                                         {{ $item->judul }}
                                     </h2>
+                                    @if(!empty($item->mahasiswa) || !empty($item->penyelenggara))
+                                        <p class="text-xs sm:text-sm font-medium text-slate-500 mb-3">
+                                            {{ collect([$item->mahasiswa, $item->penyelenggara])->filter()->implode(' • ') }}
+                                        </p>
+                                    @endif
                                     @if(!empty($item->deskripsi))
                                         <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-justify sm:text-left">
                                             {{ $item->deskripsi }}
