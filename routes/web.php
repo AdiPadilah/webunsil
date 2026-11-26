@@ -145,6 +145,11 @@ Route::get('/ruang-rapat', function () {
     return view('pages.ruang-rapat');
 })->name('ruang-rapat');
 
+// 8g. Turunan Fasilitas: Ruang Sidang
+Route::get('/ruang-sidang', function () {
+    return view('pages.ruang-sidang');
+})->name('ruang-sidang');
+
 // 9. Riset dan Kolaborasi (Hub Page)
 Route::get('/riset', function () {
     return view('pages.riset');

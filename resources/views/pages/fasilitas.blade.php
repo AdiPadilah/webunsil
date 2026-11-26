@@ -161,6 +161,27 @@
                     </div>
                 </div>
 
+                {{-- 7. Ruang Sidang --}}
+                <div id="ruang-sidang" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift lg:col-start-2">
+                    <a href="{{ route('ruang-sidang') }}" class="block h-48 overflow-hidden bg-slate-100">
+                        <img src="{{ asset('images/ruang-sidang-1.jpg') }}" alt="Ruang Sidang &amp; Ujian Teknik Sipil"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </a>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-[#0070BA] transition">
+                            <a href="{{ route('ruang-sidang') }}">Ruang Sidang</a>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+                            Ruang pelaksanaan seminar proposal, seminar hasil, dan sidang akhir skripsi lengkap dengan proyektor, papan tulis, dan tata kursi peserta.
+                        </p>
+                        <a href="{{ route('ruang-sidang') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0070BA] hover:underline mt-4">
+                            <span>Lihat Detail Ruang Sidang</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
         </div>

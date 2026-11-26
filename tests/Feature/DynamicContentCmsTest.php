@@ -92,7 +92,10 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/publikasi')->assertOk();
         $this->get('/alur-pengurusan-kerja-praktik')->assertOk();
         $this->get('/alur-pengurusan-skripsi')->assertOk()->assertSee('Alur Pengurusan Skripsi');
-        $this->get('/fasilitas')->assertOk()->assertSee('images/kelas-1.jpg', false);
+        $this->get('/fasilitas')
+            ->assertOk()
+            ->assertSee('images/kelas-1.jpg', false)
+            ->assertSee('images/ruang-sidang-1.jpg', false);
         $this->get('/kelas')
             ->assertOk()
             ->assertSee('Galeri Ruang Kelas')
@@ -100,6 +103,13 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('images/kelas-1.jpg', false)
             ->assertSee('images/kelas-2.jpg', false)
             ->assertSee('images/kelas-3.jpg', false);
+        $this->get('/ruang-sidang')
+            ->assertOk()
+            ->assertSee('Galeri Ruang Sidang')
+            ->assertSee('sm:col-span-2 sm:w-[calc(50%-0.75rem)] sm:mx-auto', false)
+            ->assertSee('images/ruang-sidang-1.jpg', false)
+            ->assertSee('images/ruang-sidang-2.jpg', false)
+            ->assertSee('images/ruang-sidang-3.jpg', false);
         $this->get('/seminar-proposal')->assertOk();
         $this->get('/seminar-hasil')->assertOk();
         $this->get('/sidang-akhir')->assertOk();
