@@ -144,12 +144,13 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/ruang-komunal-mahasiswa')
             ->assertOk()
             ->assertSee('Galeri Ruang Komunal Mahasiswa')
-            ->assertSee('sm:col-span-2 sm:w-[calc(50%-0.75rem)] sm:mx-auto', false)
-            ->assertSee('images/ruang-komunal-1.jpg', false)
-            ->assertSee('images/ruang-komunal-2.jpg', false)
-            ->assertSee('images/ruang-komunal-3.jpg', false)
-            ->assertSee('images/ruang-komunal-4.jpg', false)
-            ->assertSee('images/ruang-komunal-5.jpg', false);
+            ->assertDontSee('images/ruang-komunal-3.jpg', false)
+            ->assertSeeInOrder([
+                'images/ruang-komunal-1.jpg',
+                'images/ruang-komunal-2.jpg',
+                'images/ruang-komunal-4.jpg',
+                'images/ruang-komunal-5.jpg',
+            ], false);
         $this->get('/seminar-proposal')->assertOk();
         $this->get('/seminar-hasil')->assertOk();
         $this->get('/sidang-akhir')->assertOk();
