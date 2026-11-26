@@ -139,7 +139,7 @@
                                 <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Konferensi Global</span>
                             </div>
                             <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50 border border-slate-100">
-                                <span class="text-xl sm:text-2xl font-black text-emerald-600 block">2</span>
+                                <span class="text-xl sm:text-2xl font-black text-emerald-600 block">4</span>
                                 <span class="text-[10px] sm:text-[11px] text-slate-500 font-medium leading-tight block mt-0.5">Penghargaan Prestisius</span>
                             </div>
                         </div>
@@ -256,28 +256,66 @@
                             <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3.5 flex items-center gap-2">
                                 <i class="fa-solid fa-trophy text-amber-500"></i> Penghargaan &amp; Rekognisi Kehormatan
                             </h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                                <div class="p-4 rounded-xl bg-gradient-to-br from-amber-50/70 to-amber-50/20 border border-amber-200/80 flex items-start gap-3.5 hover:shadow-2xs transition">
-                                    <div class="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 text-base shadow-2xs">
-                                        <i class="fa-solid fa-medal"></i>
-                                    </div>
-                                    <div>
-                                        <span class="text-[10px] text-amber-700 font-bold uppercase tracking-wider block">Tahun 2023 &bull; Taiwan</span>
-                                        <h6 class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5 leading-snug">The Phi Tau Phi Scholastic Honor Society</h6>
-                                        <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Dianugerahi sebagai salah satu lulusan terbaik pada program doktoral (Ph.D.) di Taiwan.</p>
-                                    </div>
-                                </div>
 
-                                <div class="p-4 rounded-xl bg-gradient-to-br from-blue-50/70 to-blue-50/20 border border-blue-200/80 flex items-start gap-3.5 hover:shadow-2xs transition">
-                                    <div class="w-9 h-9 rounded-xl bg-[#0070BA] text-white flex items-center justify-center shrink-0 text-base shadow-2xs">
-                                        <i class="fa-solid fa-pen-nib"></i>
-                                    </div>
-                                    <div>
-                                        <span class="text-[10px] text-[#0070BA] font-bold uppercase tracking-wider block">Penghargaan Penerbitan</span>
-                                        <h6 class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5 leading-snug">Penulis Terfavorit Nasional</h6>
-                                        <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Dianugerahi oleh Penerbit Mega Press, Bandung atas produktivitas dan mutu penulisan karya buku.</p>
+                            <div class="p-4 rounded-xl bg-gradient-to-br from-amber-50/70 to-amber-50/20 border border-amber-200/80 flex items-start gap-3.5 mb-3.5 hover:shadow-2xs transition">
+                                <div class="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 text-base shadow-2xs">
+                                    <i class="fa-solid fa-medal"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-amber-700 font-bold uppercase tracking-wider block">Tahun 2023 &bull; Taiwan</span>
+                                    <h6 class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5 leading-snug">The Phi Tau Phi Scholastic Honor Society</h6>
+                                    <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">Dianugerahi sebagai salah satu lulusan terbaik pada program doktoral (Ph.D.) di Taiwan.</p>
+                                </div>
+                            </div>
+
+                            @php
+                            $penghargaanPenerbit = [
+                                [
+                                    'meta' => 'Februari 2026 • LovRinz',
+                                    'title' => 'Penulis Dosen Terproduktif',
+                                    'desc' => 'Penghargaan Penulis Dosen Terproduktif dari Penerbit LovRinz (Cirebon, 7 Februari 2026).',
+                                    'img' => 'images/penghargaan/andhy-lovrinz-terproduktif-2026.jpg',
+                                ],
+                                [
+                                    'meta' => 'Tahun 2025 • Mega Press Nusantara',
+                                    'title' => 'Penulis Terbaik & Terproduktif',
+                                    'desc' => 'Sertifikat No. 122/II/e-serkep/MPNus/2025 atas kontribusi menerbitkan 11 judul buku ber-ISBN bersama CV. Mega Press Nusantara.',
+                                    'img' => 'images/penghargaan/andhy-mega-press-terproduktif-2025.jpg',
+                                ],
+                                [
+                                    'meta' => 'November 2023 • Mega Press Nusantara',
+                                    'title' => 'Penulis Terfavorit',
+                                    'desc' => 'Piagam Penghargaan No. 001/MP/xi/2023 sebagai Penulis Terfavorit dari CV. Mega Press Nusantara (Sumedang, 28 November 2023).',
+                                    'img' => 'images/penghargaan/andhy-mega-press-terfavorit-2023.jpg',
+                                ],
+                            ];
+                            @endphp
+
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                                @foreach($penghargaanPenerbit as $award)
+                                <div class="rounded-xl bg-gradient-to-br from-blue-50/60 to-white border border-blue-200/80 overflow-hidden flex flex-col hover:border-[#0070BA]/60 hover:shadow-sm transition group">
+                                    <button type="button"
+                                            onclick="openPiagamModal(this)"
+                                            data-src="{{ asset($award['img']) }}"
+                                            data-title="{{ $award['title'] }}"
+                                            data-meta="{{ $award['meta'] }}"
+                                            aria-label="Perbesar piagam {{ $award['title'] }}"
+                                            class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0070BA]">
+                                        <img src="{{ asset($award['img']) }}"
+                                             alt="Piagam {{ $award['title'] }} - Andhy Romdani"
+                                             loading="lazy"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                        <span class="absolute bottom-2 right-2 bg-[#0B2A4A]/80 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded-md inline-flex items-center gap-1 shadow-sm">
+                                            <i class="fa-solid fa-magnifying-glass-plus text-[9px] text-amber-400"></i> Perbesar
+                                        </span>
+                                    </button>
+                                    <div class="p-3.5 flex-1 flex flex-col">
+                                        <span class="text-[10px] text-[#0070BA] font-bold uppercase tracking-wider block">{{ $award['meta'] }}</span>
+                                        <h6 class="text-xs sm:text-[13px] font-bold text-slate-900 mt-1 leading-snug">{{ $award['title'] }}</h6>
+                                        <p class="text-[11px] text-slate-600 mt-1.5 leading-relaxed">{{ $award['desc'] }}</p>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
 
@@ -732,6 +770,64 @@
             }
         }
     </style>
+    @endpush
+
+    {{-- Lightbox Preview Piagam Penghargaan --}}
+    <div id="modal-piagam-andhy" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="piagam-modal-title">
+        <div class="bg-white rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl border border-slate-200">
+            <div class="bg-[#0B2A4A] px-5 py-3.5 flex items-center justify-between gap-4 text-white">
+                <div class="min-w-0">
+                    <span id="piagam-modal-meta" class="block text-[10px] font-bold uppercase tracking-wider text-amber-400"></span>
+                    <h4 id="piagam-modal-title" class="text-sm sm:text-base font-bold truncate"></h4>
+                </div>
+                <button type="button" onclick="closePiagamModal()" aria-label="Tutup pratinjau piagam" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white flex items-center justify-center shrink-0 transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="bg-slate-900/95 p-3 sm:p-5 flex items-center justify-center">
+                <img id="piagam-modal-img" src="" alt="Piagam Penghargaan" class="max-h-[75vh] w-auto max-w-full object-contain rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+
+    @push('scripts')
+    <script>
+        function openPiagamModal(trigger) {
+            const modal = document.getElementById('modal-piagam-andhy');
+            const img = document.getElementById('piagam-modal-img');
+            const title = document.getElementById('piagam-modal-title');
+            const meta = document.getElementById('piagam-modal-meta');
+            if (!modal || !img || !title || !meta) return;
+
+            img.src = trigger.dataset.src || '';
+            img.alt = 'Piagam ' + (trigger.dataset.title || 'Penghargaan');
+            title.textContent = trigger.dataset.title || '';
+            meta.textContent = trigger.dataset.meta || '';
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePiagamModal() {
+            const modal = document.getElementById('modal-piagam-andhy');
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('click', function (e) {
+            const modal = document.getElementById('modal-piagam-andhy');
+            if (modal && e.target === modal) {
+                closePiagamModal();
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closePiagamModal();
+            }
+        });
+    </script>
     @endpush
 
 @endsection
