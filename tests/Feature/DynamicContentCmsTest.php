@@ -80,7 +80,7 @@ class DynamicContentCmsTest extends TestCase
         $this->assertSame(1, SiteSetting::count());
         $this->assertSame(24, Penelitian::count());
         $this->assertSame(9, Pengabdian::count());
-        $this->assertSame(23, Buku::count());
+        $this->assertSame(25, Buku::count());
         $this->assertSame(6, Prestasi::count());
         $this->assertSame(24, Dosen::count());
 
