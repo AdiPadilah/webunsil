@@ -203,7 +203,7 @@
                             @endif
                         </div>
 
-                        @if(filled($dosen->email) || filled($dosen->telepon) || ! empty($tautanRiset) || filled($dosen->cv_url))
+                        @if(filled($dosen->email) || filled($dosen->telepon) || ! empty($tautanRiset))
                             <div class="mt-5 pt-4 border-t border-slate-100 space-y-2.5 text-left text-xs">
                                 @if(filled($dosen->email))
                                     <a href="mailto:{{ $dosen->email }}"
@@ -263,12 +263,6 @@
                                     @endif
                                 @endforeach
 
-                                @if(filled($dosen->cv_url))
-                                    <a href="{{ $dosen->cv_url }}" target="_blank" rel="noopener noreferrer"
-                                       class="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl bg-[#0070BA] hover:bg-[#0B2A4A] text-white text-xs font-bold transition shadow-sm mt-2">
-                                        <i class="fa-solid fa-file-pdf"></i> Unduh Berkas CV Lengkap (PDF)
-                                    </a>
-                                @endif
                             </div>
                         @endif
                     </div>

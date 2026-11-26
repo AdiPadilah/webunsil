@@ -674,7 +674,6 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Kepala Laboratorium Transportasi')
             ->assertSee('NIDN: 0412088501')
             ->assertSee('budisantoso@unsil.ac.id')
-            ->assertSee('Unduh Berkas CV Lengkap (PDF)')
             ->assertSeeInOrder([
                 'Tentang Budi Santoso',
                 'ITB Bandung',
@@ -892,8 +891,7 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Dr. Siti Aminah, S.T., M.Eng.')
             ->assertSee('Koordinator Riset Keairan')
             ->assertSee('Universitas Gadjah Mada')
-            ->assertSee('HEC-RAS 2D')
-            ->assertSee('Unduh Berkas CV Lengkap (PDF)');
+            ->assertSee('HEC-RAS 2D');
 
         // Verifikasi jalur Gemini API ketika GEMINI_API_KEY diatur.
         config(['services.gemini.key' => 'test-gemini-key']);
