@@ -156,6 +156,11 @@ Route::get('/ruang-sidang', function () {
     return view('pages.ruang-sidang');
 })->name('ruang-sidang');
 
+// 8h. Turunan Fasilitas: Ruang Komunal Mahasiswa
+Route::get('/ruang-komunal-mahasiswa', function () {
+    return view('pages.ruang-komunal-mahasiswa');
+})->name('ruang-komunal-mahasiswa');
+
 // 9. Riset dan Kolaborasi (Hub Page)
 Route::get('/riset', function () {
     return view('pages.riset');

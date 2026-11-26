@@ -88,6 +88,8 @@ class DynamicContentCmsTest extends TestCase
             ->assertOk()
             ->assertSee('Program Studi Teknik Sipil')
             ->assertSee('Workshop Penguatan Kurikulum')
+            ->assertSee(route('ruang-komunal-mahasiswa'), false)
+            ->assertSee('Ruang Komunal Mahasiswa')
             ->assertSeeInOrder([
                 route('penelitian'),
                 route('pengabdian'),
@@ -109,7 +111,9 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/fasilitas')
             ->assertOk()
             ->assertSee('images/kelas-1.jpg', false)
-            ->assertSee('images/ruang-sidang-1.jpg', false);
+            ->assertSee('images/ruang-sidang-1.jpg', false)
+            ->assertSee('images/ruang-komunal-1.jpg', false)
+            ->assertSee('Ruang Komunal Mahasiswa');
         $this->get('/kelas')
             ->assertOk()
             ->assertSee('Galeri Ruang Kelas')
@@ -127,6 +131,13 @@ class DynamicContentCmsTest extends TestCase
                 'images/ruang-sidang-4.jpg',
                 'images/ruang-sidang-2.jpg',
             ], false);
+        $this->get('/ruang-komunal-mahasiswa')
+            ->assertOk()
+            ->assertSee('Galeri Ruang Komunal Mahasiswa')
+            ->assertSee('sm:col-span-2 sm:w-[calc(50%-0.75rem)] sm:mx-auto', false)
+            ->assertSee('images/ruang-komunal-1.jpg', false)
+            ->assertSee('images/ruang-komunal-2.jpg', false)
+            ->assertSee('images/ruang-komunal-3.jpg', false);
         $this->get('/seminar-proposal')->assertOk();
         $this->get('/seminar-hasil')->assertOk();
         $this->get('/sidang-akhir')->assertOk();
