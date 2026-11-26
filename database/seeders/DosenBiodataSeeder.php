@@ -61,7 +61,7 @@ class DosenBiodataSeeder
                     ],
                     [
                         'jenjang' => 'Program Magister (M.Eng.)',
-                        'periode' => null,
+                        'periode' => 'Lulus 2012',
                         'institusi' => 'Universitas Gadjah Mada (UGM), Yogyakarta',
                         'prodi' => 'Jurusan Teknik Sipil, Fakultas Teknik',
                         'predikat' => 'Lulusan Terbaik Program Pascasarjana Teknik',
