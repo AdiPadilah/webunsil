@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Bukus\Schemas;
 
+use App\Models\Dosen;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -27,10 +28,7 @@ class BukuForm
                         ->required(),
                     Select::make('penulis_route')
                         ->label('Tautkan ke Halaman Biodata Dosen (Opsional)')
-                        ->options([
-                            'dosen.andhy-romdani' => 'Profil Andhy Romdani',
-                            'dosen.sri-wanto' => 'Profil Sri Wanto',
-                        ])
+                        ->options(Dosen::profileRouteOptions())
                         ->placeholder('Tidak perlu ditautkan')
                         ->nullable(),
                     Select::make('kategori')

@@ -26,7 +26,7 @@ class DosenSeeder extends Seeder
             ['slug' => 'gary-raya-prima', 'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
             ['slug' => 'muhamad-anugerah', 'nama' => 'Muhamad Anugerah Ramadhan, S.T., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
             ['slug' => 'indrajathie-aziz', 'nama' => 'Indrajathie Aziz, S.T., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
-            ['slug' => 'kartika-seinari', 'nama' => 'Kartika Seinari Manggala, S.T., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
+            ['slug' => 'kartika-seinari', 'nama' => 'Kartika Seinari Manggala, S.T., M.T.', 'kbk' => 'transportasi', 'profile_route' => 'dosen.kartika-seinari'],
 
             // Rekayasa Struktur dan Bahan
             ['slug' => 'yusep-ramdani', 'nama' => 'Dr. Ir. Yusep Ramdani, S.T., M.T.', 'kbk' => 'struktur', 'profile_route' => null],
@@ -42,7 +42,7 @@ class DosenSeeder extends Seeder
 
             // Manajemen Rekayasa Konstruksi
             ['slug' => 'hidayanto', 'nama' => 'Hidayanto, S.T., M.T.', 'kbk' => 'manajemen', 'profile_route' => null],
-            ['slug' => 'shanti-astri-noviani', 'nama' => 'Shanti Astri Noviani, S.Pd., M.T.', 'kbk' => 'manajemen', 'profile_route' => null],
+            ['slug' => 'shanti-astri-noviani', 'nama' => 'Shanti Astri Noviani, S.Pd., M.T.', 'kbk' => 'manajemen', 'profile_route' => 'dosen.shanti-astri-noviani'],
             ['slug' => 'ridha-al-mustafa', 'nama' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.', 'kbk' => 'manajemen', 'profile_route' => null],
         ];
 

@@ -63,6 +63,19 @@ class Dosen extends Model
     /**
      * @return array<string, string>
      */
+    public static function profileRouteOptions(): array
+    {
+        return [
+            'dosen.andhy-romdani' => 'Andhy Romdani',
+            'dosen.sri-wanto' => 'Sri Wanto',
+            'dosen.kartika-seinari' => 'Kartika Seinari Manggala',
+            'dosen.shanti-astri-noviani' => 'Shanti Astri Noviani',
+        ];
+    }
+
+    /**
+     * @return array<string, string>
+     */
     protected function casts(): array
     {
         return [

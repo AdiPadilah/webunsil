@@ -12,6 +12,11 @@ class BukuSeeder extends Seeder
     {
         $books = [
             ['judul' => 'Konstruksi Struktur Jembatan', 'penulis' => 'Sri Wanto, S.T., M.T.', 'penulis_route' => 'dosen.sri-wanto', 'kategori' => 'non-fiksi', 'label' => 'Buku Referensi', 'tahun' => 2026, 'isbn' => '978-634-7526-24-3', 'cover' => 'images/buku/konstruksi-struktur-jembatan.jpg'],
+            ['judul' => 'Konstruksi dan Pemeliharaan Jalan', 'penulis' => 'Kartika Seinari Manggala, S.T., M.T.', 'penulis_route' => 'dosen.kartika-seinari', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => null, 'isbn' => '9786347905208', 'cover' => null],
+            ['judul' => 'Manajemen Konstruksi', 'penulis' => 'Kartika Seinari Manggala, S.T., M.T.', 'penulis_route' => 'dosen.kartika-seinari', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => null, 'isbn' => '9786347310439', 'cover' => null],
+            ['judul' => 'Transportasi Perkerasan Jalan', 'penulis' => 'Shanti Astri Noviani, S.Pd., M.T.', 'penulis_route' => 'dosen.shanti-astri-noviani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => 2025, 'isbn' => null, 'cover' => null],
+            ['judul' => 'Timbunan dan Konstruksi Penahan Tanah', 'penulis' => 'Shanti Astri Noviani, S.Pd., M.T.', 'penulis_route' => 'dosen.shanti-astri-noviani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => 2026, 'isbn' => null, 'cover' => null],
+            ['judul' => 'Manajemen Konstruksi', 'penulis' => 'Shanti Astri Noviani, S.Pd., M.T.', 'penulis_route' => 'dosen.shanti-astri-noviani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => 2026, 'isbn' => null, 'cover' => null],
             ['judul' => 'Manajemen Sungai dan Banjir: Adaptasi terhadap Perubahan Iklim Global', 'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_route' => 'dosen.andhy-romdani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => null, 'isbn' => '978-623-8221-10-3', 'cover' => 'images/buku/manajemen-sungai-dan-banjir-adaptasi-terhadap-perubahan-iklim-global.png'],
             ['judul' => 'Hidrodinamika Pantai dan Proteksi Kawasan Pesisir', 'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_route' => 'dosen.andhy-romdani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => null, 'isbn' => '978-623-8267-23-4', 'cover' => 'images/buku/hidrodinamika-pantai-dan-proteksi-kawasan-pesisir.jpeg'],
             ['judul' => 'Mekanisme Pendangkalan di Alur Pelayaran Pelabuhan dan Solusi Komprehensifnya', 'penulis' => 'Andhy Romdani, S.T., M.Eng., Ph.D.', 'penulis_route' => 'dosen.andhy-romdani', 'kategori' => 'non-fiksi', 'label' => 'Non-Fiksi', 'tahun' => null, 'isbn' => '978-623-8221-67-7', 'cover' => 'images/buku/mekanisme-pendangkalan-di-alur-pelayaran-pelabuhan-dan-solusi-komprehensifnya.png'],
@@ -44,8 +49,12 @@ class BukuSeeder extends Seeder
                 }
             }
 
+            $lookup = ! empty($row['isbn'])
+                ? ['isbn' => $row['isbn']]
+                : ['judul' => $row['judul'], 'penulis' => $row['penulis']];
+
             Buku::updateOrCreate(
-                ['isbn' => $row['isbn']],
+                $lookup,
                 array_merge($row, ['is_published' => true])
             );
         }

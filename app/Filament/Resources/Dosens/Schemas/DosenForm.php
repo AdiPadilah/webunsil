@@ -41,10 +41,7 @@ class DosenForm
                         ->required(),
                     Select::make('profile_route')
                         ->label('Tautan Biodata Khusus (Opsional)')
-                        ->options([
-                            'dosen.andhy-romdani' => 'Biodata Andhy Romdani',
-                            'dosen.sri-wanto' => 'Biodata Sri Wanto',
-                        ])
+                        ->options(Dosen::profileRouteOptions())
                         ->placeholder('Tidak ada halaman biodata khusus')
                         ->nullable(),
                     TextInput::make('urutan')

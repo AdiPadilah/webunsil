@@ -80,7 +80,7 @@ class DynamicContentCmsTest extends TestCase
         $this->assertSame(1, SiteSetting::count());
         $this->assertSame(24, Penelitian::count());
         $this->assertSame(9, Pengabdian::count());
-        $this->assertSame(17, Buku::count());
+        $this->assertSame(22, Buku::count());
         $this->assertSame(6, Prestasi::count());
         $this->assertSame(24, Dosen::count());
 
@@ -202,6 +202,24 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Utilization of software and Artificial Intelligence for speed in analysis')
             ->assertSee('/storage/buku-covers/konstruksi-struktur-jembatan.jpg', false)
             ->assertSee('/storage/dosen/sri-wanto.jpg', false);
+
+        $this->get('/dosen/kartika-seinari')
+            ->assertOk()
+            ->assertSee('Kartika Seinari Manggala, S.T., M.T.')
+            ->assertSee('Institut Teknologi Bandung')
+            ->assertSee('Konstruksi dan Pemeliharaan Jalan')
+            ->assertSee('9786347905208')
+            ->assertSee('/storage/dosen/kartika-seinari.jpg', false);
+
+        $this->get('/dosen/shanti-astri-noviani')
+            ->assertOk()
+            ->assertSee('Shanti Astri Noviani, S.Pd., M.T.')
+            ->assertSee('shantinoviani@unsil.ac.id')
+            ->assertSee('Building Information Modeling (BIM)')
+            ->assertSee('Transportasi Perkerasan Jalan')
+            ->assertSee('Timbunan dan Konstruksi Penahan Tanah')
+            ->assertSee('5D BIM Application Basic Level Cubicost TBQ')
+            ->assertSee('/storage/dosen/shanti-astri-noviani.jpg', false);
     }
 
     public function test_unpublished_records_stay_hidden_and_filament_pages_render(): void

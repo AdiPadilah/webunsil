@@ -59,35 +59,29 @@ Route::get('/dosen', function () {
     return view('pages.dosen', compact('dosens'));
 })->name('dosen');
 
-// Profil Dosen Spesifik: Andhy Romdani
-Route::get('/dosen/andhy-romdani', function () {
-    $dosen = \App\Models\Dosen::where('slug', 'andhy-romdani')
-        ->orWhere('profile_route', 'dosen.andhy-romdani')
-        ->first();
+// Profil Dosen Khusus (terhubung ke Admin Dosen & Buku)
+foreach ([
+    'andhy-romdani',
+    'sri-wanto',
+    'kartika-seinari',
+    'shanti-astri-noviani',
+] as $dosenSlug) {
+    $routeName = 'dosen.' . $dosenSlug;
 
-    $books = \App\Models\Buku::published()
-        ->where('penulis_route', 'dosen.andhy-romdani')
-        ->orderByDesc('tahun')
-        ->orderByDesc('id')
-        ->get();
+    Route::get('/dosen/' . $dosenSlug, function () use ($dosenSlug, $routeName) {
+        $dosen = \App\Models\Dosen::where('slug', $dosenSlug)
+            ->orWhere('profile_route', $routeName)
+            ->first();
 
-    return view('pages.dosen.andhy-romdani', compact('dosen', 'books'));
-})->name('dosen.andhy-romdani');
+        $books = \App\Models\Buku::published()
+            ->where('penulis_route', $routeName)
+            ->orderByDesc('tahun')
+            ->orderByDesc('id')
+            ->get();
 
-// Profil Dosen Spesifik: Sri Wanto
-Route::get('/dosen/sri-wanto', function () {
-    $dosen = \App\Models\Dosen::where('slug', 'sri-wanto')
-        ->orWhere('profile_route', 'dosen.sri-wanto')
-        ->first();
-
-    $books = \App\Models\Buku::published()
-        ->where('penulis_route', 'dosen.sri-wanto')
-        ->orderByDesc('tahun')
-        ->orderByDesc('id')
-        ->get();
-
-    return view('pages.dosen.sri-wanto', compact('dosen', 'books'));
-})->name('dosen.sri-wanto');
+        return view('pages.' . $routeName, compact('dosen', 'books'));
+    })->name($routeName);
+}
 
 // 5. Akademik (Hub Page sesuai layout ITS)
 Route::get('/akademik', function () {
