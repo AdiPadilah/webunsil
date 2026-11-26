@@ -324,9 +324,9 @@
                         </div>
                     </div>
                     
-                    {{-- Riset dan Kolaborasi (Dropdown: Penelitian, Kolaborasi, Pengabdian) --}}
+                    {{-- Riset dan Kolaborasi (Dropdown: Penelitian, Pengabdian, Kolaborasi) --}}
                     <div class="relative dropdown">
-                        <a href="{{ route('riset') }}" id="nav-riset" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('riset') }}" id="nav-riset" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('riset', 'penelitian', 'pengabdian', 'kolaborasi') ? 'active-nav text-amber-400' : '' }}">
                             <span>Riset dan Kolaborasi</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
@@ -337,14 +337,14 @@
                                 Penelitian
                             </a>
 
-                            {{-- Turunan 2: Kolaborasi --}}
-                            <a href="{{ route('kolaborasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kolaborasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
-                                Kolaborasi
-                            </a>
-
-                            {{-- Turunan 3: Pengabdian --}}
+                            {{-- Turunan 2: Pengabdian --}}
                             <a href="{{ route('pengabdian') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('pengabdian') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
                                 Pengabdian
+                            </a>
+
+                            {{-- Turunan 3: Kolaborasi --}}
+                            <a href="{{ route('kolaborasi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('kolaborasi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">
+                                Kolaborasi
                             </a>
 
                         </div>
@@ -425,10 +425,10 @@
             <a href="{{ route('kantin') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kantin') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kantin</a>
             <a href="{{ route('auditorium') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('auditorium') ? 'text-amber-400 font-bold' : '' }}">&mdash; Auditorium</a>
             <a href="{{ route('ruang-rapat') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('ruang-rapat') ? 'text-amber-400 font-bold' : '' }}">&mdash; Ruang Rapat</a>
-            <a href="{{ route('riset') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('riset', 'penelitian', 'kolaborasi', 'pengabdian') ? 'text-amber-400 font-bold' : '' }}">Riset dan Kolaborasi</a>
+            <a href="{{ route('riset') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('riset', 'penelitian', 'pengabdian', 'kolaborasi') ? 'text-amber-400 font-bold' : '' }}">Riset dan Kolaborasi</a>
             <a href="{{ route('penelitian') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('penelitian') ? 'text-amber-400 font-bold' : '' }}">&mdash; Penelitian</a>
-            <a href="{{ route('kolaborasi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kolaborasi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kolaborasi</a>
             <a href="{{ route('pengabdian') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('pengabdian') ? 'text-amber-400 font-bold' : '' }}">&mdash; Pengabdian</a>
+            <a href="{{ route('kolaborasi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kolaborasi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kolaborasi</a>
             <a href="{{ route('karya-dosen') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('karya-dosen', 'buku', 'publikasi') ? 'text-amber-400 font-bold' : '' }}">Karya Dosen</a>
             <a href="{{ route('buku') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('buku') ? 'text-amber-400 font-bold' : '' }}">&mdash; Buku</a>
             <a href="{{ route('publikasi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('publikasi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Publikasi</a>

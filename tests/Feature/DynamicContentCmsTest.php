@@ -73,7 +73,12 @@ class DynamicContentCmsTest extends TestCase
         $this->get('/')
             ->assertOk()
             ->assertSee('Program Studi Teknik Sipil')
-            ->assertSee('Workshop Penguatan Kurikulum');
+            ->assertSee('Workshop Penguatan Kurikulum')
+            ->assertSeeInOrder([
+                route('penelitian'),
+                route('pengabdian'),
+                route('kolaborasi'),
+            ], false);
 
         $beritaPage1 = $this->get('/berita')->assertOk();
         $beritaPage1->assertDontSee('Berita Sebelumnya');
