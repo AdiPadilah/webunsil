@@ -2,30 +2,38 @@
 
 namespace Tests\Feature;
 
+use App\Filament\Resources\Articles\ArticleResource;
 use App\Filament\Resources\Articles\Pages\CreateArticle;
 use App\Filament\Resources\Articles\Pages\EditArticle;
 use App\Filament\Resources\Articles\Pages\ListArticles;
+use App\Filament\Resources\Bukus\BukuResource;
 use App\Filament\Resources\Bukus\Pages\CreateBuku;
 use App\Filament\Resources\Bukus\Pages\EditBuku;
 use App\Filament\Resources\Bukus\Pages\ListBukus;
+use App\Filament\Resources\DefenseSchedules\DefenseScheduleResource;
 use App\Filament\Resources\DefenseSchedules\Pages\CreateDefenseSchedule;
 use App\Filament\Resources\DefenseSchedules\Pages\EditDefenseSchedule;
 use App\Filament\Resources\DefenseSchedules\Pages\ListDefenseSchedules;
+use App\Filament\Resources\Dosens\DosenResource;
 use App\Filament\Resources\Dosens\Pages\CreateDosen;
 use App\Filament\Resources\Dosens\Pages\EditDosen;
 use App\Filament\Resources\Dosens\Pages\ListDosens;
 use App\Filament\Resources\Penelitians\Pages\CreatePenelitian;
 use App\Filament\Resources\Penelitians\Pages\EditPenelitian;
 use App\Filament\Resources\Penelitians\Pages\ListPenelitians;
+use App\Filament\Resources\Penelitians\PenelitianResource;
 use App\Filament\Resources\Pengabdians\Pages\CreatePengabdian;
 use App\Filament\Resources\Pengabdians\Pages\EditPengabdian;
 use App\Filament\Resources\Pengabdians\Pages\ListPengabdians;
+use App\Filament\Resources\Pengabdians\PengabdianResource;
 use App\Filament\Resources\Prestasis\Pages\CreatePrestasi;
 use App\Filament\Resources\Prestasis\Pages\EditPrestasi;
 use App\Filament\Resources\Prestasis\Pages\ListPrestasis;
+use App\Filament\Resources\Prestasis\PrestasiResource;
 use App\Filament\Resources\SiteSettings\Pages\CreateSiteSetting;
 use App\Filament\Resources\SiteSettings\Pages\EditSiteSetting;
 use App\Filament\Resources\SiteSettings\Pages\ListSiteSettings;
+use App\Filament\Resources\SiteSettings\SiteSettingResource;
 use App\Filament\Widgets\PanduanCepatWidget;
 use App\Filament\Widgets\ProdiStatsWidget;
 use App\Models\Article;
@@ -264,7 +272,8 @@ class DynamicContentCmsTest extends TestCase
                 'akreditasi_peringkat' => 'UNGGUL',
             ])
             ->call('create')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(SiteSettingResource::getUrl('index'));
 
         $setting = SiteSetting::query()->latest('id')->firstOrFail();
 
@@ -285,7 +294,9 @@ class DynamicContentCmsTest extends TestCase
             ])
             ->call('save')
             ->assertHasNoFormErrors()
-            ->callAction('delete');
+            ->assertRedirect(SiteSettingResource::getUrl('index'))
+            ->callAction('delete')
+            ->assertRedirect(SiteSettingResource::getUrl('index'));
 
         $this->assertDatabaseMissing('site_settings', ['id' => $setting->getKey()]);
 
@@ -378,7 +389,7 @@ class DynamicContentCmsTest extends TestCase
         $this->actingAs($user);
         app()->setLocale('id');
 
-        // 1. Berita & Pengumuman (Articles) - Create, Read, Update, Delete
+        // 1. Berita & Pengumuman (Articles) - Create, Create Another, Read, Update, Delete
         Livewire::test(CreateArticle::class)
             ->fillForm([
                 'title' => 'Kuliah Umum Struktur Jembatan Baja',
@@ -389,7 +400,24 @@ class DynamicContentCmsTest extends TestCase
                 'is_published' => true,
             ])
             ->call('create')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(ArticleResource::getUrl('index'));
+
+        Livewire::test(CreateArticle::class)
+            ->fillForm([
+                'title' => 'Kuliah Umum Fondasi Tiang Pancang',
+                'slug' => 'kuliah-umum-fondasi-tiang-pancang',
+                'category' => 'Berita',
+                'excerpt' => 'Ringkasan kuliah umum fondasi.',
+                'content' => '<p>Konten lengkap fondasi.</p>',
+                'is_published' => true,
+            ])
+            ->call('create', true)
+            ->assertHasNoFormErrors()
+            ->assertNoRedirect();
+
+        $articleAnother = Article::where('slug', 'kuliah-umum-fondasi-tiang-pancang')->firstOrFail();
+        $articleAnother->delete();
 
         $article = Article::where('slug', 'kuliah-umum-struktur-jembatan-baja')->firstOrFail();
 
@@ -399,7 +427,8 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(EditArticle::class, ['record' => $article->getKey()])
             ->fillForm(['title' => 'Kuliah Umum Struktur Jembatan Baja (Revisi)'])
             ->call('save')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(ArticleResource::getUrl('index'));
 
         $this->get('/berita')->assertOk()->assertSee('Kuliah Umum Struktur Jembatan Baja (Revisi)');
 
@@ -424,7 +453,8 @@ class DynamicContentCmsTest extends TestCase
                 'is_published' => true,
             ])
             ->call('create')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(BukuResource::getUrl('index'));
 
         $buku = Buku::where('isbn', '978-623-0000-11-1')->firstOrFail();
 
@@ -434,7 +464,8 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(EditBuku::class, ['record' => $buku->getKey()])
             ->fillForm(['judul' => 'Buku Dinamika Gelombang Edisi 2'])
             ->call('save')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(BukuResource::getUrl('index'));
 
         $this->get('/dosen/andhy-romdani')->assertOk()->assertSee('Buku Dinamika Gelombang Edisi 2');
 
@@ -460,7 +491,8 @@ class DynamicContentCmsTest extends TestCase
                 'date_time' => '2026-12-01 09:00:00',
             ])
             ->call('create')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(DefenseScheduleResource::getUrl('index'));
 
         $schedule = DefenseSchedule::where('student_id', '217011001')->firstOrFail();
 
@@ -477,7 +509,8 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(EditDefenseSchedule::class, ['record' => $schedule->getKey()])
             ->fillForm(['room' => 'Ruang Seminar Kampus 2', 'status' => 'Selesai'])
             ->call('save')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(DefenseScheduleResource::getUrl('index'));
 
         $this->get('/sidang-akhir')->assertOk()->assertSee('Ruang Seminar Kampus 2');
 
@@ -497,7 +530,8 @@ class DynamicContentCmsTest extends TestCase
                 'is_published' => true,
             ])
             ->call('create')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(DosenResource::getUrl('index'));
 
         $dosen = Dosen::where('slug', 'budi-santoso')->firstOrFail();
         $this->assertSame(0, $dosen->urutan);
@@ -507,7 +541,8 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(EditDosen::class, ['record' => $dosen->getKey()])
             ->fillForm(['nama' => 'Dr. Ir. Budi Santoso, M.T.', 'urutan' => ''])
             ->call('save')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(DosenResource::getUrl('index'));
 
         $this->get('/dosen')->assertOk()->assertSee('Dr. Ir. Budi Santoso, M.T.');
 
@@ -529,7 +564,8 @@ class DynamicContentCmsTest extends TestCase
                 'is_published' => true,
             ])
             ->call('create')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(PenelitianResource::getUrl('index'));
 
         $penelitian = Penelitian::where('judul', 'Pemodelan Hidrolika Sungai Citanduy')->firstOrFail();
 
@@ -538,7 +574,8 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(EditPenelitian::class, ['record' => $penelitian->getKey()])
             ->fillForm(['judul' => 'Pemodelan Hidrolika Sungai Citanduy Hilir'])
             ->call('save')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(PenelitianResource::getUrl('index'));
 
         $this->get('/penelitian')->assertOk()->assertSee('Pemodelan Hidrolika Sungai Citanduy Hilir');
 
@@ -560,7 +597,8 @@ class DynamicContentCmsTest extends TestCase
                 'is_published' => true,
             ])
             ->call('create')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(PengabdianResource::getUrl('index'));
 
         $pengabdian = Pengabdian::where('judul', 'Pelatihan Konstruksi Tahan Gempa Warga Tasikmalaya')->firstOrFail();
 
@@ -569,7 +607,8 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(EditPengabdian::class, ['record' => $pengabdian->getKey()])
             ->fillForm(['judul' => 'Pelatihan Rumah Tahan Gempa Desa Mugarsari'])
             ->call('save')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(PengabdianResource::getUrl('index'));
 
         $this->get('/pengabdian')->assertOk()->assertSee('Pelatihan Rumah Tahan Gempa Desa Mugarsari');
 
@@ -594,7 +633,8 @@ class DynamicContentCmsTest extends TestCase
                 'is_published' => true,
             ])
             ->call('create')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(PrestasiResource::getUrl('index'));
 
         $prestasi = Prestasi::where('judul', 'Juara 1 Lomba Jembatan Baja Nasional')->firstOrFail();
 
@@ -607,7 +647,8 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(EditPrestasi::class, ['record' => $prestasi->getKey()])
             ->fillForm(['penyelenggara' => 'ITS Surabaya'])
             ->call('save')
-            ->assertHasNoFormErrors();
+            ->assertHasNoFormErrors()
+            ->assertRedirect(PrestasiResource::getUrl('index'));
 
         $this->get('/prestasi-mahasiswa')->assertOk()->assertSee('ITS Surabaya');
 

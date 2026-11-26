@@ -40,6 +40,8 @@ class AdminPanelProvider extends PanelProvider
             ->favicon(asset('images/logo-unsil.png'))
             ->defaultThemeMode(ThemeMode::Light)
             ->sidebarCollapsibleOnDesktop()
+            ->resourceCreatePageRedirect('index')
+            ->resourceEditPageRedirect('index')
             ->colors([
                 'primary' => Color::hex('#0070BA'),
                 'info' => Color::Sky,
