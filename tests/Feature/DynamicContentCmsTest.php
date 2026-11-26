@@ -18,6 +18,7 @@ use App\Filament\Resources\Dosens\DosenResource;
 use App\Filament\Resources\Dosens\Pages\CreateDosen;
 use App\Filament\Resources\Dosens\Pages\EditDosen;
 use App\Filament\Resources\Dosens\Pages\ListDosens;
+use App\Filament\Resources\Dosens\Support\CvAutoFiller;
 use App\Filament\Resources\Penelitians\Pages\CreatePenelitian;
 use App\Filament\Resources\Penelitians\Pages\EditPenelitian;
 use App\Filament\Resources\Penelitians\Pages\ListPenelitians;
@@ -54,6 +55,7 @@ use Database\Seeders\PrestasiSeeder;
 use Database\Seeders\SiteSettingSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Livewire;
 use Tests\TestCase;
@@ -493,7 +495,7 @@ class DynamicContentCmsTest extends TestCase
         $article = Article::where('slug', 'kuliah-umum-struktur-jembatan-baja')->firstOrFail();
 
         $this->get('/berita')->assertOk()->assertSee('Kuliah Umum Struktur Jembatan Baja');
-        $this->get('/berita/detail/' . $article->slug)->assertOk()->assertSee('Konten lengkap kuliah umum struktur jembatan baja.');
+        $this->get('/berita/detail/'.$article->slug)->assertOk()->assertSee('Konten lengkap kuliah umum struktur jembatan baja.');
 
         Livewire::test(EditArticle::class, ['record' => $article->getKey()])
             ->fillForm(['title' => 'Kuliah Umum Struktur Jembatan Baja (Revisi)'])
@@ -815,5 +817,120 @@ class DynamicContentCmsTest extends TestCase
             ->callTableAction('delete', $prestasi);
 
         $this->assertDatabaseMissing('prestasis', ['id' => $prestasi->getKey()]);
+    }
+
+    public function test_cv_pdf_upload_auto_fills_dosen_form_and_supports_gemini(): void
+    {
+        Storage::fake('public');
+
+        $admin = User::factory()->create();
+        $this->actingAs($admin);
+
+        $cvLines = [
+            'Dr. Siti Aminah, S.T., M.Eng.',
+            'Dosen Tetap Program Studi Teknik Sipil | Lektor',
+            'Email: sitiaminah@unsil.ac.id | Telepon: 081234567890',
+            'NIDN: 0415098802',
+            'ORCID iD: 0009-0001-2345-6789 | SINTA ID: 6123456',
+            'PROFIL AKADEMIK',
+            'Siti Aminah menekuni bidang Rekayasa Sumber Daya Air, hidrolika sungai, dan pemodelan banjir.',
+            'RIWAYAT PENDIDIKAN',
+            'Magister (S2) Teknik Sipil - Universitas Gadjah Mada (2015 - 2017)',
+            'Sarjana (S1) Teknik Sipil - Institut Teknologi Bandung (2010 - 2014)',
+            'PENGALAMAN KERJA',
+            'Dosen Program Studi Teknik Sipil - Universitas Siliwangi (2019 - Sekarang)',
+            'PELATIHAN',
+            'Pemodelan Banjir HEC-RAS 2D - HATHI (2024)',
+            'PUBLIKASI ILMIAH',
+            'Aminah, S. (2025). Pemodelan Debit Banjir DAS Citanduy Menggunakan HEC-HMS. Jurnal Teknik Hidraulik, 12(1). https://doi.org/10.1000/test.2025',
+        ];
+
+        $commands = "BT\n/F1 11 Tf\n50 760 Td\n14 TL\n";
+        foreach ($cvLines as $idx => $line) {
+            $escaped = str_replace(['\\', '(', ')'], ['\\\\', '\\(', '\\)'], $line);
+            $commands .= ($idx === 0 ? "({$escaped}) Tj\n" : "({$escaped}) '\n");
+        }
+        $commands .= 'ET';
+
+        $compressed = gzcompress($commands);
+        $pdf = "%PDF-1.4\n"
+            ."1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj\n"
+            ."2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj\n"
+            ."3 0 obj << /Type /Page /Parent 2 0 R /Contents 4 0 R >> endobj\n"
+            .'4 0 obj << /Length '.strlen($compressed)." /Filter /FlateDecode >>\nstream\n{$compressed}\nendstream\nendobj\n%%EOF";
+
+        $uploadedPdf = UploadedFile::fake()->createWithContent('cv-siti-aminah.pdf', $pdf);
+
+        $livewire = Livewire::test(CreateDosen::class)
+            ->fillForm(['cv_file' => $uploadedPdf]);
+
+        $formState = $livewire->get('data');
+        $this->assertSame('Dr. Siti Aminah, S.T., M.Eng.', $formState['nama']);
+        $this->assertSame('dr-siti-aminah-st-meng', $formState['slug']);
+        $this->assertSame('sitiaminah@unsil.ac.id', $formState['email']);
+        $this->assertSame('0415098802', $formState['nidn']);
+        $this->assertSame('keairan', $formState['kbk']);
+        $this->assertNotEmpty($formState['pendidikan']);
+        $this->assertNotEmpty($formState['pengalaman_kerja']);
+        $this->assertNotEmpty($formState['pelatihan']);
+        $this->assertNotEmpty($formState['publikasi']);
+
+        // Admin merevisi satu kolom lalu menyimpan.
+        $livewire
+            ->fillForm(['badge_peran' => 'Koordinator Riset Keairan'])
+            ->call('create')
+            ->assertHasNoFormErrors()
+            ->assertRedirect(DosenResource::getUrl('index'));
+
+        $dosen = Dosen::where('slug', 'dr-siti-aminah-st-meng')->firstOrFail();
+        $this->assertSame('Koordinator Riset Keairan', $dosen->badge_peran);
+        $this->assertNotNull($dosen->cv_file);
+
+        $this->get('/dosen/dr-siti-aminah-st-meng')
+            ->assertOk()
+            ->assertSee('Dr. Siti Aminah, S.T., M.Eng.')
+            ->assertSee('Koordinator Riset Keairan')
+            ->assertSee('Universitas Gadjah Mada')
+            ->assertSee('HEC-RAS 2D')
+            ->assertSee('Unduh Berkas CV Lengkap (PDF)');
+
+        // Verifikasi jalur Gemini API ketika GEMINI_API_KEY diatur.
+        config(['services.gemini.key' => 'test-gemini-key']);
+        Http::fake([
+            'generativelanguage.googleapis.com/*' => Http::response([
+                'status' => 'completed',
+                'steps' => [[
+                    'type' => 'model_output',
+                    'content' => [[
+                        'type' => 'text',
+                        'text' => json_encode([
+                            'nama' => 'Ir. Rahmat Hidayat, M.T.',
+                            'kbk' => 'struktur',
+                            'email' => 'rahmathidayat@unsil.ac.id',
+                            'biografi' => 'Dosen bidang rekayasa struktur tahan gempa.',
+                            'pendidikan' => [[
+                                'jenjang' => 'Magister (S2)',
+                                'periode' => '2018',
+                                'institusi' => 'ITS Surabaya',
+                                'prodi' => 'Teknik Sipil',
+                                'predikat' => 'Cum Laude',
+                            ]],
+                        ]),
+                    ]],
+                ]],
+            ], 200),
+        ]);
+
+        $tmpPdf = tempnam(sys_get_temp_dir(), 'gem_');
+        file_put_contents($tmpPdf, $pdf);
+        try {
+            $geminiResult = app(CvAutoFiller::class)->extractFromPath($tmpPdf, 'application/pdf');
+        } finally {
+            @unlink($tmpPdf);
+        }
+
+        $this->assertSame('gemini', $geminiResult['source']);
+        $this->assertSame('Ir. Rahmat Hidayat, M.T.', $geminiResult['fields']['nama']);
+        $this->assertSame('struktur', $geminiResult['fields']['kbk']);
     }
 }

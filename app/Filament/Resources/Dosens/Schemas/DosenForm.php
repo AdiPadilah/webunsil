@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Dosens\Schemas;
 
+use App\Filament\Resources\Dosens\Support\CvAutoFiller;
 use App\Models\Dosen;
 use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
@@ -11,12 +12,15 @@ use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 
 class DosenForm
 {
@@ -108,9 +112,13 @@ class DosenForm
                             ->maxSize(10240)
                             ->openable()
                             ->downloadable()
+                            ->live()
+                            ->afterStateUpdated(function (mixed $state, callable $set, callable $get, ?string $operation): void {
+                                static::autoFillFromCv($state, $set, $get, $operation);
+                            })
                             ->disk('public')
                             ->directory('dosen-cv')
-                            ->helperText('Jika diunggah, tombol Unduh CV tampil di sidebar profil dosen.'),
+                            ->helperText('Saat PDF diunggah, form biodata otomatis terisi sesuai CV agar tinggal direvisi sebelum disimpan. Tombol Unduh CV juga tampil di sidebar profil dosen.'),
                         Toggle::make('is_published')
                             ->label('Tampilkan di Halaman Dosen?')
                             ->default(true)
@@ -188,7 +196,7 @@ class DosenForm
                             ->defaultItems(0)
                             ->collapsible()
                             ->collapsed()
-                            ->itemLabel(fn (array $state): string => trim(($state['nilai'] ?? '') . ' ' . ($state['label'] ?? '')) ?: 'Kotak Statistik')
+                            ->itemLabel(fn (array $state): string => trim(($state['nilai'] ?? '').' '.($state['label'] ?? '')) ?: 'Kotak Statistik')
                             ->addActionLabel('Tambah Kotak Statistik')
                             ->columnSpanFull(),
                     ])
@@ -298,7 +306,7 @@ class DosenForm
                             ->defaultItems(0)
                             ->collapsible()
                             ->collapsed()
-                            ->itemLabel(fn (array $state): string => trim(($state['jenjang'] ?? '') . ' — ' . ($state['institusi'] ?? '')) ?: 'Pendidikan')
+                            ->itemLabel(fn (array $state): string => trim(($state['jenjang'] ?? '').' — '.($state['institusi'] ?? '')) ?: 'Pendidikan')
                             ->addActionLabel('Tambah Riwayat Pendidikan')
                             ->columnSpanFull(),
                     ]),
@@ -333,7 +341,7 @@ class DosenForm
                             ->defaultItems(0)
                             ->collapsible()
                             ->collapsed()
-                            ->itemLabel(fn (array $state): string => trim(($state['jabatan'] ?? '') . ' — ' . ($state['instansi'] ?? '')) ?: 'Pengalaman')
+                            ->itemLabel(fn (array $state): string => trim(($state['jabatan'] ?? '').' — '.($state['instansi'] ?? '')) ?: 'Pengalaman')
                             ->addActionLabel('Tambah Pengalaman Kerja')
                             ->columnSpanFull(),
                     ]),
@@ -385,7 +393,7 @@ class DosenForm
                             ->defaultItems(0)
                             ->collapsible()
                             ->collapsed()
-                            ->itemLabel(fn (array $state): string => trim(($state['tahun'] ?? '') . ' ' . ($state['nama'] ?? '')) ?: 'Pelatihan / Sertifikasi')
+                            ->itemLabel(fn (array $state): string => trim(($state['tahun'] ?? '').' '.($state['nama'] ?? '')) ?: 'Pelatihan / Sertifikasi')
                             ->addActionLabel('Tambah Pelatihan / Sertifikasi')
                             ->columnSpanFull(),
                     ]),
@@ -474,7 +482,7 @@ class DosenForm
                             ->defaultItems(0)
                             ->collapsible()
                             ->collapsed()
-                            ->itemLabel(fn (array $state): string => trim(($state['tahun'] ?? '') . ' — ' . Str::limit((string) ($state['judul'] ?? 'Publikasi'), 65)))
+                            ->itemLabel(fn (array $state): string => trim(($state['tahun'] ?? '').' — '.Str::limit((string) ($state['judul'] ?? 'Publikasi'), 65)))
                             ->addActionLabel('Tambah Publikasi / Penelitian')
                             ->columnSpanFull(),
                     ]),
@@ -506,7 +514,7 @@ class DosenForm
                             ->defaultItems(0)
                             ->collapsible()
                             ->collapsed()
-                            ->itemLabel(fn (array $state): string => trim(($state['tahun'] ?? '') . ' — ' . ($state['acara'] ?? 'Konferensi')))
+                            ->itemLabel(fn (array $state): string => trim(($state['tahun'] ?? '').' — '.($state['acara'] ?? 'Konferensi')))
                             ->addActionLabel('Tambah Konferensi')
                             ->columnSpanFull(),
 
@@ -527,7 +535,7 @@ class DosenForm
                             ->defaultItems(0)
                             ->collapsible()
                             ->collapsed()
-                            ->itemLabel(fn (array $state): string => trim(($state['tahun'] ?? '') . ' — ' . Str::limit((string) ($state['judul'] ?? 'Pengabdian'), 65)))
+                            ->itemLabel(fn (array $state): string => trim(($state['tahun'] ?? '').' — '.Str::limit((string) ($state['judul'] ?? 'Pengabdian'), 65)))
                             ->addActionLabel('Tambah Pengabdian Masyarakat')
                             ->columnSpanFull(),
                     ]),
@@ -704,11 +712,74 @@ class DosenForm
                                 $custom = $state['judul'] ?? null;
                                 $status = ($state['tampil'] ?? true) ? '' : ' (Tersembunyi)';
 
-                                return ($custom ?: $base) . $status;
+                                return ($custom ?: $base).$status;
                             })
                             ->addActionLabel('Tambah / Atur Bagian CV')
                             ->columnSpanFull(),
                     ]),
             ]);
+    }
+
+    private static function autoFillFromCv(mixed $state, callable $set, callable $get, ?string $operation): void
+    {
+        $file = collect(Arr::wrap($state))->first();
+        if (! $file instanceof TemporaryUploadedFile) {
+            return;
+        }
+
+        $result = app(CvAutoFiller::class)->extractFromUploadedFile($file);
+        $fields = $result['fields'];
+
+        if ($fields === []) {
+            $realPath = $file->getRealPath();
+            $header = is_string($realPath) && is_file($realPath) ? @file_get_contents($realPath, false, null, 0, 5) : '';
+
+            if (is_string($header) && str_starts_with($header, '%PDF')) {
+                Notification::make()
+                    ->warning()
+                    ->title('Teks PDF tidak terbaca')
+                    ->body('Kemungkinan PDF berasal dari hasil scan gambar. Silakan isi form secara manual atau atur GEMINI_API_KEY di .env untuk ekstraksi AI.')
+                    ->send();
+            }
+
+            return;
+        }
+
+        $repeaterKeys = [
+            'tautan_riset',
+            'pendidikan',
+            'keahlian_grup',
+            'pengalaman_kerja',
+            'penghargaan',
+            'pelatihan',
+            'pengajaran',
+            'publikasi',
+            'konferensi',
+            'pengabdian_list',
+        ];
+
+        foreach ($fields as $key => $value) {
+            if (in_array($key, $repeaterKeys, true) && is_array($value)) {
+                $keyed = [];
+                foreach ($value as $item) {
+                    $keyed[(string) Str::uuid()] = $item;
+                }
+                $set($key, $keyed);
+
+                continue;
+            }
+
+            $set($key, $value);
+        }
+
+        if (filled($fields['nama'] ?? null) && ($operation === 'create' || blank($get('slug')))) {
+            $set('slug', Str::slug((string) $fields['nama']));
+        }
+
+        Notification::make()
+            ->success()
+            ->title('Biodata otomatis diisi dari CV')
+            ->body('Terisi: '.implode(', ', $result['filled_labels']).'. Silakan tinjau dan revisi sebelum menyimpan.')
+            ->send();
     }
 }
