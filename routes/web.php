@@ -123,6 +123,21 @@ foreach ([
 Route::get('/dosen/{slug}', fn (string $slug) => $renderDosenProfile($slug, 'dosen.' . $slug, true))
     ->name('dosen.show');
 
+// Profil Dosen Spesifik: Raden Roro Dita Arviananda
+Route::get('/dosen/raden-roro-dita', function () {
+    $dosen = \App\Models\Dosen::where('slug', 'raden-roro-dita')
+        ->orWhere('profile_route', 'dosen.raden-roro-dita')
+        ->first();
+
+    $books = \App\Models\Buku::published()
+        ->where('penulis_route', 'dosen.raden-roro-dita')
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+
+    return view('pages.dosen.raden-roro-dita', compact('dosen', 'books'));
+})->name('dosen.raden-roro-dita');
+
 // 5. Akademik (Hub Page sesuai layout ITS)
 Route::get('/akademik', function () {
     return view('pages.akademik');

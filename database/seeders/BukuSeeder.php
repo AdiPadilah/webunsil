@@ -12,6 +12,7 @@ class BukuSeeder extends Seeder
     {
         $books = [
             ['judul' => 'Konstruksi Struktur Jembatan', 'penulis' => 'Sri Wanto, S.T., M.T.', 'penulis_route' => 'dosen.sri-wanto', 'kategori' => 'non-fiksi', 'label' => 'Buku Referensi', 'tahun' => 2026, 'isbn' => '978-634-7526-24-3', 'cover' => 'images/buku/konstruksi-struktur-jembatan.jpg'],
+            ['judul' => 'Kimia Lingkungan', 'penulis' => 'Raden Roro Dita Arviananda, S.Pd., M.Eng., dkk.', 'penulis_route' => 'dosen.raden-roro-dita', 'kategori' => 'non-fiksi', 'label' => 'Book Chapter', 'tahun' => 2026, 'isbn' => '978-634-7526-21-2', 'cover' => null],
             ['judul' => 'Inovasi Keinsinyuran untuk Reindustrialisasi: Mewujudkan Kemandirian Teknologi dan Ekonomi', 'penulis' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.', 'penulis_route' => 'dosen.ridha-al-mustafa', 'kategori' => 'non-fiksi', 'label' => 'Buku Referensi', 'tahun' => 2025, 'isbn' => null, 'cover' => null],
             ['judul' => 'MANAJEMEN KONSTRUKSI (GREEN KONSTRUKSI)', 'penulis' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.', 'penulis_route' => 'dosen.ridha-al-mustafa', 'kategori' => 'non-fiksi', 'label' => 'Buku Referensi', 'tahun' => 2025, 'isbn' => null, 'cover' => null],
             ['judul' => 'Konstruksi dan Pemeliharaan Jalan', 'penulis' => 'Muhamad Anugerah Ramadhan, S.T., M.T.', 'penulis_route' => 'dosen.muhamad-anugerah', 'kategori' => 'non-fiksi', 'label' => 'Buku Referensi', 'tahun' => 2026, 'isbn' => '978-634-7905-20-8', 'cover' => null],

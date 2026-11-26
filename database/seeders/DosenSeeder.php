@@ -17,7 +17,7 @@ class DosenSeeder extends Seeder
             ['slug' => 'pengki-irawan', 'nama' => 'Ir. Pengki Irawan, S.TP., M.Si.', 'kbk' => 'keairan', 'profile_route' => null],
             ['slug' => 'novia-komala-sari', 'nama' => 'Novia Komala Sari, S.Pd., M.T.', 'kbk' => 'keairan', 'profile_route' => null],
             ['slug' => 'galih-rahmat-jatnika', 'nama' => 'Galih Rahmat Jatnika, S.T., M.T.', 'kbk' => 'keairan', 'profile_route' => null],
-            ['slug' => 'raden-roro-dita', 'nama' => 'Raden Roro Dita Arviananda, S.Pd., M.Eng.', 'kbk' => 'keairan', 'profile_route' => null],
+            ['slug' => 'raden-roro-dita', 'nama' => 'Raden Roro Dita Arviananda, S.Pd., M.Eng.', 'kbk' => 'keairan', 'profile_route' => 'dosen.raden-roro-dita'],
 
             // Rekayasa Transportasi dan Jalan Raya
             ['slug' => 'nina-herlina', 'nama' => 'Ir. Nina Herlina, Dra., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
