@@ -59,59 +59,69 @@ Route::get('/dosen', function () {
     return view('pages.dosen', compact('dosens'));
 })->name('dosen');
 
-// Profil Dosen Khusus (terhubung ke Admin Dosen & Buku)
+// Profil Dosen Khusus & Dinamis (terhubung penuh ke Admin Dosen, Buku, Penelitian & Pengabdian)
+$renderDosenProfile = function (string $dosenSlug, ?string $routeName = null, bool $requireDb = false) {
+    $dosen = \App\Models\Dosen::where('slug', $dosenSlug)
+        ->when($routeName, fn ($q) => $q->orWhere('profile_route', $routeName))
+        ->first();
+
+    if ($requireDb) {
+        if (! $dosen || ! $dosen->is_published) {
+            abort(404);
+        }
+    } elseif ($dosen && ! $dosen->is_published) {
+        abort(404);
+    }
+
+    if (! $dosen) {
+        $presets = \Database\Seeders\DosenBiodataSeeder::profiles();
+        $preset = $presets[$dosenSlug] ?? null;
+
+        if (! $preset) {
+            abort(404);
+        }
+
+        $dosen = new \App\Models\Dosen(array_merge([
+            'slug' => $dosenSlug,
+            'nama' => $preset['nama'] ?? \Illuminate\Support\Str::headline(str_replace('-', ' ', $dosenSlug)),
+            'kbk' => $preset['kbk'] ?? 'struktur',
+            'profile_route' => $routeName,
+            'is_published' => true,
+        ], $preset));
+    }
+
+    $bookRoutes = array_values(array_unique(array_filter([
+        'dosen.' . $dosen->slug,
+        'dosen.' . $dosenSlug,
+        $routeName,
+        $dosen->profile_route,
+    ])));
+
+    $books = \App\Models\Buku::published()
+        ->whereIn('penulis_route', $bookRoutes)
+        ->orderByDesc('tahun')
+        ->orderByDesc('id')
+        ->get();
+
+    return view('pages.dosen-detail', compact('dosen', 'books'));
+};
+
 foreach ([
     'andhy-romdani',
     'sri-wanto',
     'kartika-seinari',
     'shanti-astri-noviani',
+    'muhamad-anugerah',
+    'ridha-al-mustafa',
 ] as $dosenSlug) {
     $routeName = 'dosen.' . $dosenSlug;
 
-    Route::get('/dosen/' . $dosenSlug, function () use ($dosenSlug, $routeName) {
-        $dosen = \App\Models\Dosen::where('slug', $dosenSlug)
-            ->orWhere('profile_route', $routeName)
-            ->first();
-
-        $books = \App\Models\Buku::published()
-            ->where('penulis_route', $routeName)
-            ->orderByDesc('tahun')
-            ->orderByDesc('id')
-            ->get();
-
-        return view('pages.' . $routeName, compact('dosen', 'books'));
-    })->name($routeName);
+    Route::get('/dosen/' . $dosenSlug, fn () => $renderDosenProfile($dosenSlug, $routeName, false))
+        ->name($routeName);
 }
 
-// Profil Dosen Spesifik: Muhamad Anugerah Ramadhan
-Route::get('/dosen/muhamad-anugerah', function () {
-    $dosen = \App\Models\Dosen::where('slug', 'muhamad-anugerah')
-        ->orWhere('profile_route', 'dosen.muhamad-anugerah')
-        ->first();
-
-    $books = \App\Models\Buku::published()
-        ->where('penulis_route', 'dosen.muhamad-anugerah')
-        ->orderByDesc('tahun')
-        ->orderByDesc('id')
-        ->get();
-
-    return view('pages.dosen.muhamad-anugerah', compact('dosen', 'books'));
-})->name('dosen.muhamad-anugerah');
-
-// Profil Dosen Spesifik: Ir. M. Ridha Al Mustafa
-Route::get('/dosen/ridha-al-mustafa', function () {
-    $dosen = \App\Models\Dosen::where('slug', 'ridha-al-mustafa')
-        ->orWhere('profile_route', 'dosen.ridha-al-mustafa')
-        ->first();
-
-    $books = \App\Models\Buku::published()
-        ->where('penulis_route', 'dosen.ridha-al-mustafa')
-        ->orderByDesc('tahun')
-        ->orderByDesc('id')
-        ->get();
-
-    return view('pages.dosen.ridha-al-mustafa', compact('dosen', 'books'));
-})->name('dosen.ridha-al-mustafa');
+Route::get('/dosen/{slug}', fn (string $slug) => $renderDosenProfile($slug, 'dosen.' . $slug, true))
+    ->name('dosen.show');
 
 // 5. Akademik (Hub Page sesuai layout ITS)
 Route::get('/akademik', function () {

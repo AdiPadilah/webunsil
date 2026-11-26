@@ -50,9 +50,7 @@
             <div id="dosen-grid" class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-7 mb-14">
                 @foreach($dosens as $dosen)
                     @php
-                        $profileUrl = (!empty($dosen->profile_route) && Route::has($dosen->profile_route))
-                            ? route($dosen->profile_route)
-                            : null;
+                        $profileUrl = $dosen->profile_url;
                         $fotoUrl = $dosen->foto_url ?: asset('images/dosen/' . $dosen->slug . '.jpg');
                     @endphp
                     @if($profileUrl)

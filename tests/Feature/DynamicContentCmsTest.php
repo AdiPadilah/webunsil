@@ -230,6 +230,18 @@ class DynamicContentCmsTest extends TestCase
                 'Pengabdian pada Masyarakat',
                 'Daftar penelitian &amp; tersinkron dengan menu Penelitian Admin',
             ], false);
+
+        $this->get('/dosen/muhamad-anugerah')
+            ->assertOk()
+            ->assertSee('Muhamad Anugerah Ramadhan, S.T., M.T.')
+            ->assertSee('Konstruksi dan Pemeliharaan Jalan')
+            ->assertSee('Universitas Islam Indonesia (UII)');
+
+        $this->get('/dosen/ridha-al-mustafa')
+            ->assertOk()
+            ->assertSee('Ir. M. Ridha Al Mustafa, S.T., M.T.')
+            ->assertSee('Institut Teknologi Sepuluh Nopember (ITS)')
+            ->assertSee('MANAJEMEN KONSTRUKSI (GREEN KONSTRUKSI)');
     }
 
     public function test_unpublished_records_stay_hidden_and_filament_pages_render(): void
@@ -588,12 +600,47 @@ class DynamicContentCmsTest extends TestCase
 
         $this->assertDatabaseMissing('defense_schedules', ['id' => $schedule->getKey()]);
 
-        // 4. Dosen & Pengajar - Create (termasuk urutan null), Read, Update, Delete
+        // 4. Dosen & Pengajar - Create (termasuk urutan null & biodata CV lengkap), Read, Update, Delete
+        Storage::fake('public');
+
         Livewire::test(CreateDosen::class)
             ->fillForm([
                 'nama' => 'Ir. Budi Santoso, M.T.',
                 'slug' => 'budi-santoso',
                 'kbk' => 'transportasi',
+                'badge_peran' => 'Lektor Kepala',
+                'jabatan_akademik' => 'Kepala Laboratorium Transportasi',
+                'nidn' => '0412088501',
+                'email' => 'budisantoso@unsil.ac.id',
+                'biografi' => "Paragraf pertama biografi Budi Santoso.\n\nParagraf kedua fokus penelitian jalan.",
+                'fokus_keahlian' => ['Perkerasan Lentur', 'Transportasi Berkelanjutan'],
+                'pendidikan' => [
+                    ['jenjang' => 'Magister (S2)', 'periode' => '2014', 'institusi' => 'ITB Bandung', 'prodi' => 'Teknik Jalan Raya', 'predikat' => 'Cum Laude'],
+                ],
+                'pengalaman_kerja' => [
+                    ['tag' => 'Konsultan', 'jabatan' => 'Highway Engineer', 'instansi' => 'PT. Bina Jalan Nusantara', 'periode' => '2016 – 2022', 'lokasi' => 'Bandung', 'deskripsi' => "Merancang geometrik jalan\nSupervisi pengerasan lentur"],
+                ],
+                'pelatihan' => [
+                    ['nama' => 'Sertifikat Ahli Jalan Madya', 'penyelenggara' => 'LPJK', 'tahun' => '2024'],
+                ],
+                'bagian_tambahan' => [
+                    [
+                        'judul' => 'Hak Kekayaan Intelektual (HKI)',
+                        'subjudul' => 'Paten & Hak Cipta',
+                        'ikon' => 'certificate',
+                        'items' => [
+                            ['judul' => 'Modul Perkerasan Hijau Berkelanjutan', 'tahun' => '2025', 'subjudul' => 'EC0020259911', 'deskripsi' => 'Modul ajar berhak cipta Kemenkumham.'],
+                        ],
+                    ],
+                ],
+                'urutan_bagian' => [
+                    ['key' => 'biografi', 'judul' => 'Tentang Budi Santoso', 'tampil' => true],
+                    ['key' => 'pendidikan', 'judul' => 'Pendidikan & Prestasi', 'tampil' => true],
+                    ['key' => 'tambahan', 'tampil' => true],
+                    ['key' => 'pengalaman', 'judul' => 'Rekam Jejak Industri', 'tampil' => true],
+                    ['key' => 'pelatihan', 'tampil' => false],
+                ],
+                'cv_file' => UploadedFile::fake()->create('cv-budi.pdf', 120, 'application/pdf'),
                 'urutan' => null,
                 'is_published' => true,
             ])
@@ -604,15 +651,49 @@ class DynamicContentCmsTest extends TestCase
         $dosen = Dosen::where('slug', 'budi-santoso')->firstOrFail();
         $this->assertSame(0, $dosen->urutan);
 
-        $this->get('/dosen')->assertOk()->assertSee('Ir. Budi Santoso, M.T.');
+        $this->get('/dosen')
+            ->assertOk()
+            ->assertSee('Ir. Budi Santoso, M.T.')
+            ->assertSee(route('dosen.show', 'budi-santoso'), false)
+            ->assertSee('Lihat Biodata Lengkap');
+
+        $this->get('/dosen/budi-santoso')
+            ->assertOk()
+            ->assertSee('Kepala Laboratorium Transportasi')
+            ->assertSee('NIDN: 0412088501')
+            ->assertSee('budisantoso@unsil.ac.id')
+            ->assertSee('Unduh Berkas CV Lengkap (PDF)')
+            ->assertSeeInOrder([
+                'Tentang Budi Santoso',
+                'ITB Bandung',
+                'Cum Laude',
+                'Hak Kekayaan Intelektual (HKI)',
+                'Modul Perkerasan Hijau Berkelanjutan',
+                'Rekam Jejak Industri',
+                'PT. Bina Jalan Nusantara',
+            ], false)
+            ->assertDontSee('Sertifikat Ahli Jalan Madya');
 
         Livewire::test(EditDosen::class, ['record' => $dosen->getKey()])
-            ->fillForm(['nama' => 'Dr. Ir. Budi Santoso, M.T.', 'urutan' => ''])
+            ->fillForm([
+                'nama' => 'Dr. Ir. Budi Santoso, M.T.',
+                'is_published' => false,
+                'urutan' => '',
+            ])
+            ->call('save')
+            ->assertHasNoFormErrors()
+            ->assertRedirect(DosenResource::getUrl('index'));
+
+        $this->get('/dosen/budi-santoso')->assertNotFound();
+
+        Livewire::test(EditDosen::class, ['record' => $dosen->getKey()])
+            ->fillForm(['is_published' => true])
             ->call('save')
             ->assertHasNoFormErrors()
             ->assertRedirect(DosenResource::getUrl('index'));
 
         $this->get('/dosen')->assertOk()->assertSee('Dr. Ir. Budi Santoso, M.T.');
+        $this->get('/dosen/budi-santoso')->assertOk()->assertSee('Dr. Ir. Budi Santoso, M.T.');
 
         Livewire::test(ListDosens::class)
             ->assertCanSeeTableRecords([$dosen])

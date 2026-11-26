@@ -46,6 +46,8 @@ class DosenSeeder extends Seeder
             ['slug' => 'ridha-al-mustafa', 'nama' => 'Ir. M. Ridha Al Mustafa, S.T., M.T.', 'kbk' => 'manajemen', 'profile_route' => 'dosen.ridha-al-mustafa'],
         ];
 
+        $biodataProfiles = DosenBiodataSeeder::profiles();
+
         foreach ($dosens as $index => $row) {
             $source = public_path('images/dosen/' . $row['slug'] . '.jpg');
             $target = 'dosen/' . $row['slug'] . '.jpg';
@@ -58,9 +60,21 @@ class DosenSeeder extends Seeder
                 $row['foto'] = $target;
             }
 
+            $biodata = $biodataProfiles[$row['slug']] ?? [];
+            $existing = Dosen::where('slug', $row['slug'])->first();
+            $hasExistingBiodata = $existing && (
+                filled($existing->biografi)
+                || ! empty($existing->pendidikan)
+                || ! empty($existing->publikasi)
+            );
+
+            if ($hasExistingBiodata) {
+                $biodata = [];
+            }
+
             Dosen::updateOrCreate(
                 ['slug' => $row['slug']],
-                array_merge($row, [
+                array_merge($row, $biodata, [
                     'urutan' => $index + 1,
                     'is_published' => true,
                 ])
