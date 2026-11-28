@@ -165,7 +165,7 @@ Route::get('/prestasi-mahasiswa', function () {
 
 // 6. Layanan Terpadu (Portal Akademik & Tugas Akhir Terproteksi)
 Route::get('/layanan', function () {
-    return view('pages.layanan');
+    return view('pages.layanan-login');
 })->name('layanan');
 
 // Autentikasi Mahasiswa / Sivitas untuk Akses Dokumen Privat Layanan Terpadu
@@ -181,7 +181,7 @@ Route::post('/layanan/login', function (\Illuminate\Http\Request $request) {
     $user = \App\Models\User::where($field, $login)->first();
 
     if (! $user || ! \Illuminate\Support\Facades\Hash::check($credentials['password'], $user->password)) {
-        return back()->withInput()->with('login_error', 'NPM/Email atau Password yang Anda masukkan tidak sesuai.');
+        return back()->withInput()->with('login_error', 'NPM/Email atau kata sandi tidak sesuai.');
     }
 
     if (! $user->is_active) {
@@ -191,7 +191,8 @@ Route::post('/layanan/login', function (\Illuminate\Http\Request $request) {
     \Illuminate\Support\Facades\Auth::login($user, (bool) $request->boolean('remember'));
     $request->session()->regenerate();
 
-    return redirect()->route('layanan')->with('login_success', 'Autentikasi berhasil! Tautan Tugas Akhir telah terbuka.');
+    // Langsung redirect ke tautan Tugas Akhir
+    return redirect()->away('https://s.id/Tugas-akhir-TSipil');
 })->name('layanan.login')->middleware('throttle:10,1');
 
 Route::post('/layanan/logout', function (\Illuminate\Http\Request $request) {
