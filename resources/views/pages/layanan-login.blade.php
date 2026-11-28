@@ -135,10 +135,10 @@
             <form action="{{ route('layanan.login') }}" method="POST" class="space-y-4">
                 @csrf
                 
-                <!-- Email / NPM Input -->
+                <!-- Email / Username Input -->
                 <div>
                     <label for="login" class="block text-xs font-semibold text-slate-700 mb-1.5">
-                        Alamat email atau NPM<span class="text-rose-500 font-bold">*</span>
+                        Username atau Email<span class="text-rose-500 font-bold">*</span>
                     </label>
                     <input type="text"
                            name="login"
@@ -148,7 +148,7 @@
                            autofocus
                            autocomplete="username"
                            class="filament-input w-full px-3.5 py-2.5 text-sm rounded-lg border text-slate-900"
-                           placeholder="nama@unsil.ac.id atau NPM">
+                           placeholder="Username atau nama@email.com">
                 </div>
 
                 <!-- Password Input with Toggle Eye -->

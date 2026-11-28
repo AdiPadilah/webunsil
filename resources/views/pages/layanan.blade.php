@@ -191,14 +191,14 @@
                                         @csrf
                                         <div>
                                             <label for="login" class="block text-xs font-bold text-slate-700 mb-1">
-                                                NPM atau Alamat Email <span class="text-rose-500">*</span>
+                                                Username atau Email <span class="text-rose-500">*</span>
                                             </label>
                                             <div class="relative">
                                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 text-xs">
-                                                    <i class="fa-solid fa-id-card"></i>
+                                                    <i class="fa-solid fa-user"></i>
                                                 </div>
                                                 <input type="text" name="login" id="login" value="{{ old('login') }}" required
-                                                       placeholder="Contoh: 217002001 atau nama@unsil.ac.id"
+                                                       placeholder="Username atau nama@email.com"
                                                        class="w-full pl-9 pr-3 py-2.5 text-xs rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition bg-white">
                                             </div>
                                         </div>
