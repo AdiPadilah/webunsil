@@ -85,11 +85,6 @@ class DosenForm
                             ->label('Homebase / Unit Kerja')
                             ->placeholder('Contoh: Fakultas Teknik • Universitas Siliwangi')
                             ->columnSpanFull(),
-                        Select::make('profile_route')
-                            ->label('Tautan Halaman Khusus (Opsional)')
-                            ->options(Dosen::profileRouteOptions())
-                            ->placeholder('Otomatis gunakan /dosen/{slug} jika biodata diisi')
-                            ->nullable(),
                         TextInput::make('urutan')
                             ->label('Urutan Tampil')
                             ->numeric()
