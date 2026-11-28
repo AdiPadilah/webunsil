@@ -1,339 +1,497 @@
-/* ============================================================
-   Webunsil Admin Panel – Premium White Theme
-   Berlaku di SELURUH halaman admin (dashboard, list, form, dsb)
-   ============================================================ */
+/* ==========================================================================
+   Portal Admin Teknik Sipil UNSIL - 4K / 3D White Ceramic Spatial UI
+   Berlaku konsisten di seluruh halaman admin (Dashboard, CRUD, Modal, Login)
+   ========================================================================== */
 
-/* ---- Google Font: Plus Jakarta Sans ---- */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
-
-/* ---- Root variables ---- */
 :root {
-    --fi-brand: #0070BA;
-    --fi-brand-light: #E8F4FD;
-    --fi-sidebar-bg: #0B1E35;
-    --fi-sidebar-hover: rgba(255,255,255,0.08);
-    --fi-sidebar-active: rgba(0,112,186,0.85);
-    --fi-radius: 0.875rem;
-    --fi-shadow: 0 1px 3px 0 rgba(0,0,0,0.06), 0 1px 2px -1px rgba(0,0,0,0.06);
-    --fi-shadow-md: 0 4px 16px -4px rgba(0,0,0,0.08), 0 2px 8px -2px rgba(0,0,0,0.06);
+    --adm-canvas: #eef4fc;
+    --adm-surface: linear-gradient(155deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 250, 255, 0.94) 100%);
+    --adm-glass: rgba(255, 255, 255, 0.86);
+    --adm-brand: #0070ba;
+    --adm-brand-bright: #0ea5e9;
+    --adm-brand-deep: #00518a;
+    --adm-ink: #0b172a;
+    --adm-muted: #64748b;
+    --adm-rim: rgba(255, 255, 255, 0.95);
+    --adm-border: rgba(203, 213, 225, 0.65);
+    --adm-radius: 1.25rem;
+    --adm-radius-sm: 0.875rem;
+    --adm-shadow-3d:
+        inset 0 1.5px 0 rgba(255, 255, 255, 1),
+        inset 0 -3px 0 rgba(203, 213, 225, 0.42),
+        0 2px 4px rgba(15, 23, 42, 0.04),
+        0 10px 24px -8px rgba(15, 42, 84, 0.1),
+        0 24px 48px -18px rgba(0, 112, 186, 0.12);
+    --adm-shadow-3d-hover:
+        inset 0 1.5px 0 rgba(255, 255, 255, 1),
+        inset 0 -3px 0 rgba(14, 165, 233, 0.25),
+        0 6px 12px rgba(15, 23, 42, 0.06),
+        0 18px 36px -10px rgba(15, 42, 84, 0.14),
+        0 30px 60px -18px rgba(0, 112, 186, 0.2);
 }
 
-/* ---- Base font ---- */
-body,
-.fi-body,
-[class*="filament"] {
-    font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif !important;
+/* ---------- 4K Crisp Rendering & Typography ---------- */
+html.fi {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
-/* ======================================================
-   SIDEBAR — dark navy premium
-   ====================================================== */
+body.fi-body {
+    font-family: 'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+    background-color: var(--adm-canvas) !important;
+    background-image:
+        radial-gradient(60rem 42rem at 92% -6%, rgba(56, 189, 248, 0.19), transparent 62%),
+        radial-gradient(50rem 38rem at 8% 18%, rgba(0, 112, 186, 0.1), transparent 60%),
+        radial-gradient(45rem 35rem at 55% 98%, rgba(14, 165, 233, 0.12), transparent 65%),
+        linear-gradient(rgba(15, 42, 84, 0.032) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 42, 84, 0.032) 1px, transparent 1px) !important;
+    background-size: auto, auto, auto, 32px 32px, 32px 32px !important;
+    background-attachment: fixed !important;
+    color: var(--adm-ink) !important;
+}
+
+/* ---------- Topbar (Frosted 4K Glass) ---------- */
+.fi-topbar {
+    background: var(--adm-glass) !important;
+    backdrop-filter: blur(20px) saturate(185%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(185%) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9) !important;
+    box-shadow:
+        inset 0 -1px 0 rgba(203, 213, 225, 0.55),
+        0 8px 28px -12px rgba(15, 42, 84, 0.12) !important;
+}
+
+.fi-global-search-field .fi-input-wrp {
+    border-radius: 9999px !important;
+    background: rgba(244, 248, 255, 0.9) !important;
+    box-shadow:
+        inset 0 2px 4px rgba(15, 23, 42, 0.06),
+        0 1px 0 rgba(255, 255, 255, 0.95) !important;
+}
+
+/* ---------- Sidebar (White Luminous 3D Glass Rail) ---------- */
 .fi-sidebar {
-    background: var(--fi-sidebar-bg) !important;
-    border-right: none !important;
-    box-shadow: 4px 0 24px rgba(0,0,0,0.12) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(244, 249, 255, 0.9) 100%) !important;
+    backdrop-filter: blur(22px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(22px) saturate(180%) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.95) !important;
+    box-shadow:
+        inset -1px 0 0 rgba(203, 213, 225, 0.55),
+        8px 0 32px -12px rgba(15, 42, 84, 0.1) !important;
 }
 
-/* sidebar brand area */
 .fi-sidebar-header {
-    background: var(--fi-sidebar-bg) !important;
-    border-bottom: 1px solid rgba(255,255,255,0.07) !important;
-    padding: 1.25rem 1rem !important;
+    background: transparent !important;
+    border-bottom: 1px solid rgba(203, 213, 225, 0.45) !important;
 }
 
-/* sidebar nav group label */
 .fi-sidebar-group-label {
-    color: rgba(255,255,255,0.4) !important;
-    font-size: 0.65rem !important;
+    color: var(--adm-muted) !important;
+    font-size: 0.6875rem !important;
     font-weight: 700 !important;
     letter-spacing: 0.08em !important;
     text-transform: uppercase !important;
-    padding-left: 0.75rem !important;
-    margin-top: 0.25rem !important;
 }
 
-/* sidebar nav item */
-.fi-sidebar-item-button {
-    color: rgba(255,255,255,0.72) !important;
-    border-radius: 0.625rem !important;
-    margin: 0 0.5rem !important;
-    padding: 0.5rem 0.75rem !important;
-    transition: background 0.15s, color 0.15s !important;
+.fi-sidebar-item-btn {
+    border-radius: 0.75rem !important;
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s ease, background 0.2s ease !important;
 }
-.fi-sidebar-item-button:hover {
-    background: var(--fi-sidebar-hover) !important;
-    color: #fff !important;
+
+.fi-sidebar-item.fi-sidebar-item-has-url:not(.fi-active) > .fi-sidebar-item-btn:hover {
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow:
+        inset 0 1px 0 #ffffff,
+        inset 0 -2px 0 rgba(203, 213, 225, 0.4),
+        0 6px 14px -4px rgba(15, 42, 84, 0.1) !important;
+    transform: translateY(-1px);
 }
-.fi-sidebar-item-button[aria-current="page"],
-.fi-sidebar-item-button.fi-active {
-    background: var(--fi-sidebar-active) !important;
-    color: #fff !important;
+
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn {
+    background: linear-gradient(135deg, var(--adm-brand) 0%, var(--adm-brand-bright) 100%) !important;
+    box-shadow:
+        inset 0 1.5px 0 rgba(255, 255, 255, 0.42),
+        inset 0 -2.5px 0 rgba(0, 62, 112, 0.35),
+        0 8px 18px -4px rgba(0, 112, 186, 0.44) !important;
+}
+
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn > .fi-sidebar-item-label,
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn > .fi-icon {
+    color: #ffffff !important;
     font-weight: 600 !important;
-    box-shadow: 0 2px 8px rgba(0,112,186,0.4) !important;
 }
 
-/* sidebar icon */
-.fi-sidebar-item-button .fi-sidebar-item-icon {
-    color: inherit !important;
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn .fi-sidebar-item-grouped-border-part {
+    background-color: #ffffff !important;
 }
 
-/* sidebar footer */
 .fi-sidebar-footer {
-    background: var(--fi-sidebar-bg) !important;
-    border-top: 1px solid rgba(255,255,255,0.07) !important;
+    border-top: 1px solid rgba(203, 213, 225, 0.45) !important;
 }
 
-/* ======================================================
-   TOPBAR / HEADER
-   ====================================================== */
-.fi-topbar {
-    background: #fff !important;
-    border-bottom: 1px solid #E2E8F0 !important;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04) !important;
-    backdrop-filter: blur(8px) !important;
+/* ---------- Page Header Card (Berlaku di SEMUA halaman CRUD & Dashboard) ---------- */
+.fi-page-header-main-ctn {
+    gap: 1.75rem !important;
 }
 
-/* ======================================================
-   MAIN CONTENT AREA
-   ====================================================== */
-.fi-main {
-    background: #F6F8FB !important;
+.fi-header {
+    background: var(--adm-surface) !important;
+    border: 1px solid rgba(226, 232, 240, 0.85) !important;
+    border-radius: var(--adm-radius) !important;
+    padding: 1.25rem 1.625rem !important;
+    box-shadow: var(--adm-shadow-3d) !important;
 }
 
-.fi-page {
-    background: transparent !important;
-}
-
-/* Page header (title bar) */
-.fi-page-header {
-    background: #fff !important;
-    border-bottom: 1px solid #E8EDF3 !important;
-    padding: 1.25rem 1.5rem !important;
-    margin-bottom: 0 !important;
-}
-
-.fi-page-header-heading {
-    font-size: 1.375rem !important;
+.fi-header-heading {
+    font-size: 1.5rem !important;
     font-weight: 800 !important;
-    color: #0F172A !important;
-    letter-spacing: -0.02em !important;
+    letter-spacing: -0.025em !important;
+    color: var(--adm-ink) !important;
 }
 
-/* ======================================================
-   WIDGETS / DASHBOARD CARDS
-   ====================================================== */
-.fi-wi-stats-overview-stat {
-    background: #fff !important;
-    border: 1px solid #E8EDF3 !important;
-    border-radius: var(--fi-radius) !important;
-    box-shadow: var(--fi-shadow) !important;
-    transition: box-shadow 0.2s, transform 0.2s !important;
+@media (min-width: 640px) {
+    .fi-header-heading {
+        font-size: 1.75rem !important;
+    }
 }
-.fi-wi-stats-overview-stat:hover {
-    box-shadow: var(--fi-shadow-md) !important;
-    transform: translateY(-2px) !important;
+
+.fi-breadcrumbs-item-label {
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    color: var(--adm-muted) !important;
+}
+
+/* ---------- 3D Stat KPI Cards ---------- */
+.fi-wi-stats-overview-stat {
+    background: var(--adm-surface) !important;
+    border: 1px solid rgba(226, 232, 240, 0.85) !important;
+    border-radius: var(--adm-radius) !important;
+    box-shadow: var(--adm-shadow-3d) !important;
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease !important;
+    overflow: hidden !important;
+}
+
+a.fi-wi-stats-overview-stat:hover {
+    transform: translateY(-5px) scale(1.01) !important;
+    box-shadow: var(--adm-shadow-3d-hover) !important;
+}
+
+.fi-wi-stats-overview-stat-label-ctn > .fi-icon {
+    box-sizing: content-box !important;
+    width: 1.15rem !important;
+    height: 1.15rem !important;
+    padding: 0.42rem !important;
+    border-radius: 0.65rem !important;
+    background: linear-gradient(145deg, #f0f7ff 0%, #dceeff 100%) !important;
+    color: var(--adm-brand) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.95),
+        inset 0 -2px 0 rgba(0, 112, 186, 0.14),
+        0 4px 10px -3px rgba(0, 112, 186, 0.24) !important;
+}
+
+.fi-wi-stats-overview-stat-label {
+    font-size: 0.8125rem !important;
+    font-weight: 700 !important;
+    color: #475569 !important;
 }
 
 .fi-wi-stats-overview-stat-value {
     font-size: 2rem !important;
     font-weight: 800 !important;
-    color: #0F172A !important;
     letter-spacing: -0.03em !important;
+    color: var(--adm-ink) !important;
+    font-variant-numeric: tabular-nums !important;
 }
 
-.fi-wi-stats-overview-stat-label {
-    font-size: 0.8125rem !important;
-    font-weight: 600 !important;
-    color: #475569 !important;
+.fi-wi-stats-overview-stat-description {
+    font-size: 0.78rem !important;
+    font-weight: 500 !important;
 }
 
-/* ======================================================
-   SECTION / CARD
-   ====================================================== */
-.fi-section {
-    background: #fff !important;
-    border: 1px solid #E8EDF3 !important;
-    border-radius: var(--fi-radius) !important;
-    box-shadow: var(--fi-shadow) !important;
+.fi-wi-stats-overview-stat:has(.fi-wi-stats-overview-stat-chart) .fi-wi-stats-overview-stat-content {
+    padding-bottom: 1.5rem !important;
 }
 
-.fi-section-header {
-    border-bottom: 1px solid #EEF2F7 !important;
-    padding: 1.125rem 1.25rem !important;
+/* ---------- 3D Porcelain Section & Chart Cards ---------- */
+.fi-section:not(.fi-section-not-contained) {
+    background: var(--adm-surface) !important;
+    border: 1px solid rgba(226, 232, 240, 0.85) !important;
+    border-radius: var(--adm-radius) !important;
+    box-shadow: var(--adm-shadow-3d) !important;
+}
+
+.fi-section:not(.fi-section-not-contained) > .fi-section-header {
+    background: linear-gradient(180deg, rgba(248, 251, 255, 0.85) 0%, rgba(255, 255, 255, 0.35) 100%) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.7) !important;
+    border-top-left-radius: var(--adm-radius) !important;
+    border-top-right-radius: var(--adm-radius) !important;
 }
 
 .fi-section-header-heading {
-    font-size: 1rem !important;
     font-weight: 700 !important;
-    color: #0F172A !important;
+    color: var(--adm-ink) !important;
+    letter-spacing: -0.015em !important;
 }
 
-/* ======================================================
-   TABLE
-   ====================================================== */
+/* ---------- Tables Across ALL Resources ---------- */
 .fi-ta-ctn {
-    background: #fff !important;
-    border: 1px solid #E8EDF3 !important;
-    border-radius: var(--fi-radius) !important;
-    box-shadow: var(--fi-shadow) !important;
-    overflow: hidden !important;
+    background: var(--adm-surface) !important;
+    border: 1px solid rgba(226, 232, 240, 0.88) !important;
+    border-radius: var(--adm-radius) !important;
+    box-shadow: var(--adm-shadow-3d) !important;
 }
 
-/* Table header row */
+.fi-ta-header-toolbar {
+    background: linear-gradient(180deg, rgba(248, 251, 255, 0.92) 0%, rgba(255, 255, 255, 0.72) 100%) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.75) !important;
+    border-top-left-radius: var(--adm-radius) !important;
+    border-top-right-radius: var(--adm-radius) !important;
+}
+
+.fi-ta-table > thead > tr {
+    background: linear-gradient(180deg, #f8fbff 0%, #eff5fd 100%) !important;
+}
+
 .fi-ta-header-cell {
-    background: #F8FAFC !important;
-    color: #64748B !important;
     font-size: 0.72rem !important;
     font-weight: 700 !important;
-    letter-spacing: 0.05em !important;
+    letter-spacing: 0.055em !important;
     text-transform: uppercase !important;
-    border-bottom: 1px solid #E8EDF3 !important;
-    padding: 0.75rem 1rem !important;
+    color: #475569 !important;
+    border-bottom: 1px solid rgba(203, 213, 225, 0.65) !important;
 }
 
-/* Table row */
-.fi-ta-row {
-    border-bottom: 1px solid #F1F5F9 !important;
-    transition: background 0.1s !important;
-}
-.fi-ta-row:hover {
-    background: #F8FAFC !important;
-}
-.fi-ta-row:last-child {
-    border-bottom: none !important;
+.fi-ta-table > tbody > tr.fi-ta-row {
+    transition: background 0.16s ease, box-shadow 0.16s ease !important;
 }
 
-/* Table cell */
+.fi-ta-table > tbody > tr.fi-ta-row:hover {
+    background: linear-gradient(90deg, rgba(224, 242, 254, 0.45) 0%, rgba(248, 251, 255, 0.8) 100%) !important;
+    box-shadow: inset 3.5px 0 0 var(--adm-brand) !important;
+}
+
 .fi-ta-cell {
-    padding: 0.875rem 1rem !important;
-    font-size: 0.875rem !important;
-    color: #1E293B !important;
+    color: #1e293b !important;
+    font-variant-numeric: tabular-nums !important;
 }
 
-/* ======================================================
-   FORMS
-   ====================================================== */
-.fi-fo-field-wrp {
-    margin-bottom: 0.25rem !important;
+.fi-pagination {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(244, 248, 255, 0.92) 100%) !important;
+    border-top: 1px solid rgba(226, 232, 240, 0.75) !important;
+    border-bottom-left-radius: var(--adm-radius) !important;
+    border-bottom-right-radius: var(--adm-radius) !important;
 }
 
-.fi-input {
-    border: 1.5px solid #CBD5E1 !important;
-    border-radius: 0.625rem !important;
-    background: #F8FAFC !important;
-    font-size: 0.875rem !important;
-    color: #0F172A !important;
-    transition: border-color 0.15s, box-shadow 0.15s, background 0.15s !important;
-    padding: 0.5625rem 0.875rem !important;
-}
-.fi-input:focus,
-.fi-input:focus-within {
-    border-color: var(--fi-brand) !important;
-    background: #fff !important;
-    box-shadow: 0 0 0 3px rgba(0,112,186,0.12) !important;
-    outline: none !important;
+.fi-pagination-items {
+    border-radius: 0.75rem !important;
+    box-shadow:
+        inset 0 1px 0 #ffffff,
+        0 2px 6px rgba(15, 42, 84, 0.07) !important;
 }
 
-.fi-fo-field-wrp-label label {
-    font-size: 0.8125rem !important;
+/* ---------- Tactile 3D Push-Buttons Everywhere ---------- */
+.fi-btn {
+    border-radius: 0.75rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.005em !important;
+    transition: transform 0.16s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.16s ease, filter 0.16s ease !important;
+}
+
+.fi-btn.fi-color:not(.fi-outlined) {
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.38),
+        inset 0 -2.5px 0 rgba(15, 23, 42, 0.24),
+        0 6px 14px -4px rgba(15, 42, 84, 0.24) !important;
+}
+
+.fi-btn:not(.fi-color):not(.fi-outlined),
+.fi-btn.fi-outlined {
+    background: linear-gradient(180deg, #ffffff 0%, #f3f7fc 100%) !important;
+    border: 1px solid rgba(203, 213, 225, 0.85) !important;
+    box-shadow:
+        inset 0 1px 0 #ffffff,
+        inset 0 -2px 0 rgba(203, 213, 225, 0.5),
+        0 4px 10px -3px rgba(15, 42, 84, 0.09) !important;
+}
+
+.fi-btn:not(.fi-disabled):not([disabled]):hover {
+    transform: translateY(-1.5px) !important;
+    filter: brightness(1.03);
+}
+
+.fi-btn:not(.fi-disabled):not([disabled]):active {
+    transform: translateY(1px) !important;
+    box-shadow:
+        inset 0 2px 4px rgba(15, 23, 42, 0.18),
+        0 1px 2px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* ---------- Recessed 3D Form Wells & Tabs ---------- */
+.fi-input-wrp {
+    border-radius: var(--adm-radius-sm) !important;
+    background: #f7faff !important;
+    border: 1px solid rgba(203, 213, 225, 0.82) !important;
+    box-shadow:
+        inset 0 2px 4px rgba(15, 23, 42, 0.05),
+        0 1px 0 rgba(255, 255, 255, 0.95) !important;
+    transition: background 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease !important;
+}
+
+.fi-input-wrp:not(.fi-disabled):focus-within {
+    background: #ffffff !important;
+    border-color: var(--adm-brand) !important;
+    box-shadow:
+        0 0 0 3.5px rgba(14, 165, 233, 0.18),
+        0 6px 14px -4px rgba(0, 112, 186, 0.16) !important;
+}
+
+.fi-fo-field-label-content {
     font-weight: 600 !important;
     color: #334155 !important;
 }
 
-/* ======================================================
-   BUTTONS
-   ====================================================== */
-.fi-btn {
-    border-radius: 0.625rem !important;
-    font-weight: 600 !important;
-    font-size: 0.8125rem !important;
-    transition: all 0.15s !important;
-    letter-spacing: 0.01em !important;
-}
-.fi-btn-color-primary {
-    background: var(--fi-brand) !important;
-    border-color: var(--fi-brand) !important;
-}
-.fi-btn-color-primary:hover {
-    background: #005C9A !important;
-    transform: translateY(-1px) !important;
-    box-shadow: 0 4px 12px rgba(0,112,186,0.3) !important;
+.fi-tabs:not(.fi-contained) {
+    background: var(--adm-surface) !important;
+    border-radius: 1rem !important;
+    border: 1px solid rgba(226, 232, 240, 0.85) !important;
+    box-shadow: var(--adm-shadow-3d) !important;
 }
 
-/* ======================================================
-   BADGE
-   ====================================================== */
+.fi-tabs-item.fi-active {
+    background: linear-gradient(135deg, var(--adm-brand) 0%, var(--adm-brand-bright) 100%) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        0 4px 12px -3px rgba(0, 112, 186, 0.4) !important;
+}
+
+.fi-tabs-item.fi-active .fi-tabs-item-label,
+.fi-tabs-item.fi-active > .fi-icon {
+    color: #ffffff !important;
+}
+
+/* ---------- 3D Badges ---------- */
 .fi-badge {
-    border-radius: 999px !important;
-    font-size: 0.6875rem !important;
+    border-radius: 9999px !important;
     font-weight: 700 !important;
-    padding: 0.2rem 0.625rem !important;
-    letter-spacing: 0.03em !important;
+    letter-spacing: 0.025em !important;
+    padding: 0.25rem 0.65rem !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.72),
+        0 2px 5px -1px rgba(15, 23, 42, 0.08) !important;
 }
 
-/* ======================================================
-   BREADCRUMB
-   ====================================================== */
-.fi-breadcrumbs {
-    font-size: 0.8125rem !important;
-    color: #94A3B8 !important;
+/* ---------- Floating 4K Modals, Dropdowns, Notifications & Avatars ---------- */
+.fi-modal-window,
+.fi-dropdown-panel,
+.fi-no-notification {
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.99) 0%, rgba(246, 250, 255, 0.97) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.95) !important;
+    border-radius: 1.375rem !important;
+    box-shadow:
+        inset 0 1.5px 0 #ffffff,
+        0 24px 60px -15px rgba(15, 42, 84, 0.22),
+        0 0 0 1px rgba(203, 213, 225, 0.55) !important;
 }
 
-/* ======================================================
-   PAGINATION
-   ====================================================== */
-.fi-pagination {
-    background: #fff !important;
-    border-top: 1px solid #F1F5F9 !important;
-    padding: 0.75rem 1rem !important;
-}
-
-/* ======================================================
-   MODAL / DIALOG
-   ====================================================== */
-.fi-modal-window {
-    border-radius: 1.125rem !important;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.15) !important;
-    border: 1px solid #E8EDF3 !important;
-}
-
-/* ======================================================
-   NOTIFICATION
-   ====================================================== */
-.fi-notification {
-    border-radius: 0.875rem !important;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
-    border: 1px solid #E8EDF3 !important;
-}
-
-/* ======================================================
-   AVATAR (top-right account)
-   ====================================================== */
 .fi-avatar {
-    border-radius: 999px !important;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(0,112,186,0.2) !important;
+    box-shadow:
+        0 0 0 2px #ffffff,
+        0 4px 12px -2px rgba(0, 112, 186, 0.32) !important;
 }
 
-/* ======================================================
-   DROPDOWN MENU
-   ====================================================== */
-.fi-dropdown-panel {
-    border-radius: 0.875rem !important;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
-    border: 1px solid #E8EDF3 !important;
-    overflow: hidden !important;
+/* ---------- Login Page (4K White Spatial Card) ---------- */
+.fi-simple-layout {
+    position: relative;
 }
 
-/* ======================================================
-   SCROLLBAR (Webkit)
-   ====================================================== */
-.fi-sidebar ::-webkit-scrollbar {
-    width: 4px !important;
+.fi-simple-main {
+    background: var(--adm-surface) !important;
+    border: 1px solid rgba(255, 255, 255, 0.98) !important;
+    border-radius: 1.5rem !important;
+    box-shadow:
+        inset 0 2px 0 #ffffff,
+        inset 0 -4px 0 rgba(203, 213, 225, 0.45),
+        0 24px 64px -16px rgba(15, 42, 84, 0.16),
+        0 8px 24px -8px rgba(0, 112, 186, 0.14) !important;
 }
-.fi-sidebar ::-webkit-scrollbar-track {
-    background: transparent !important;
+
+.fi-simple-header-heading {
+    font-weight: 800 !important;
+    letter-spacing: -0.025em !important;
+    color: var(--adm-ink) !important;
 }
-.fi-sidebar ::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.15) !important;
-    border-radius: 999px !important;
+
+/* ---------- Dashboard Command Tiles ---------- */
+.adm-quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 0.75rem;
+}
+
+.adm-quick-tile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    border-radius: 0.95rem;
+    background: linear-gradient(160deg, #ffffff 0%, #f4f8ff 100%);
+    border: 1px solid rgba(203, 213, 225, 0.75);
+    box-shadow:
+        inset 0 1.5px 0 #ffffff,
+        inset 0 -2.5px 0 rgba(203, 213, 225, 0.45),
+        0 4px 12px -4px rgba(15, 42, 84, 0.08);
+    text-decoration: none;
+    color: var(--adm-ink);
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.adm-quick-tile:hover {
+    transform: translateY(-3px);
+    border-color: rgba(14, 165, 233, 0.5);
+    box-shadow:
+        inset 0 1.5px 0 #ffffff,
+        inset 0 -2.5px 0 rgba(14, 165, 233, 0.28),
+        0 12px 24px -8px rgba(0, 112, 186, 0.2);
+}
+
+.adm-quick-tile:active {
+    transform: translateY(1px);
+}
+
+.adm-quick-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.65rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: linear-gradient(145deg, #e0f2fe 0%, #bae6fd 100%);
+    color: var(--adm-brand);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -2px 0 rgba(0, 112, 186, 0.16),
+        0 4px 10px -3px rgba(0, 112, 186, 0.25);
+}
+
+/* ---------- Subtle Scrollbars & Reduced Motion ---------- */
+.fi-sidebar-nav::-webkit-scrollbar {
+    width: 5px;
+}
+
+.fi-sidebar-nav::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.35);
+    border-radius: 9999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fi-sidebar-item-btn,
+    a.fi-wi-stats-overview-stat,
+    .fi-btn,
+    .adm-quick-tile {
+        transition: none !important;
+        transform: none !important;
+    }
 }

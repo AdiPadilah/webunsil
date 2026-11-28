@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Widgets\AnalitikKontenWidget;
 use App\Filament\Widgets\PanduanCepatWidget;
 use App\Filament\Widgets\ProdiStatsWidget;
 use App\Http\Middleware\SetAdminLocale;
@@ -37,10 +38,10 @@ class AdminPanelProvider extends PanelProvider
             ->spa()
             ->brandName('Portal Admin Teknik Sipil UNSIL')
             ->brandLogo(fn () => view('filament.brand-logo'))
-            ->brandLogoHeight('2.25rem')
+            ->brandLogoHeight('2.5rem')
             ->favicon(asset('images/logo-unsil.png'))
             ->defaultThemeMode(ThemeMode::Light)
-            ->renderHook('panels::head.end', fn () => '<link rel="stylesheet" href="' . asset('css/admin-premium.css') . '?v=' . filemtime(public_path('css/admin-premium.css')) . '">')
+            ->renderHook('panels::head.end', fn () => '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="' . asset('css/admin-premium.css') . '?v=' . filemtime(public_path('css/admin-premium.css')) . '">')
             ->sidebarCollapsibleOnDesktop()
             ->resourceCreatePageRedirect('index')
             ->resourceEditPageRedirect('index')
@@ -73,6 +74,7 @@ class AdminPanelProvider extends PanelProvider
                 AccountWidget::class,
                 PanduanCepatWidget::class,
                 ProdiStatsWidget::class,
+                AnalitikKontenWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

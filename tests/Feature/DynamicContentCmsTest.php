@@ -36,6 +36,7 @@ use App\Filament\Resources\SiteSettings\Pages\CreateSiteSetting;
 use App\Filament\Resources\SiteSettings\Pages\EditSiteSetting;
 use App\Filament\Resources\SiteSettings\Pages\ListSiteSettings;
 use App\Filament\Resources\SiteSettings\SiteSettingResource;
+use App\Filament\Widgets\AnalitikKontenWidget;
 use App\Filament\Widgets\PanduanCepatWidget;
 use App\Filament\Widgets\ProdiStatsWidget;
 use App\Models\Article;
@@ -348,6 +349,10 @@ class DynamicContentCmsTest extends TestCase
             ->assertSee('Penelitian Dosen')
             ->assertSee('Jadwal Sidang Skripsi')
             ->assertSee(route('filament.admin.resources.defense-schedules.index'), false);
+
+        Livewire::test(AnalitikKontenWidget::class)
+            ->assertOk()
+            ->assertSee('Analitik Publikasi &amp; Tridharma', false);
 
         Livewire::test(CreateSiteSetting::class)
             ->assertOk()
