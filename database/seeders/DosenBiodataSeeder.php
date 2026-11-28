@@ -1288,26 +1288,7 @@ class DosenBiodataSeeder
                         'deskripsi' => 'Terlibat dalam berbagai proyek nasional bidang transportasi sebagai konsultan dan kontraktor.',
                     ],
                 ],
-                'penelitian' => [
-                    [
-                        'tahun'      => '2022',
-                        'judul'      => 'Kajian Kinerja Serta Upaya Peningkatan Keselamatan Pada Simpang (Studi Kasus: Simpang Padayungan).',
-                        'pendanaan'  => 'Unsil',
-                        'jumlah'     => 'Rp 20 Juta',
-                    ],
-                    [
-                        'tahun'      => '2022',
-                        'judul'      => 'Evaluasi Kebutuhan Air dan Ketersediaan Air Irigasi Dalam Rangka Peningkatan Hasil Pertanian di Daerah Irigasi Cikunten II.',
-                        'pendanaan'  => 'Unsil',
-                        'jumlah'     => 'Rp 7,2 Juta',
-                    ],
-                    [
-                        'tahun'      => '2021',
-                        'judul'      => 'Kajian Struktur Perkerasan dan Saluran Drainase Ruas Jalan Puspahiang Kabupaten Tasikmalaya.',
-                        'pendanaan'  => 'Unsil',
-                        'jumlah'     => 'Rp 9 Juta',
-                    ],
-                ],
+                // penelitian disinkron dari DB penelitian via kata_kunci_riset (sinkron_penelitian = true)
                 'pengabdian_list' => [
                     [
                         'tahun'  => '2021',

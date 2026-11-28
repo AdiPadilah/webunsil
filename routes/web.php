@@ -118,6 +118,7 @@ foreach ([
     'shanti-astri-noviani',
     'muhamad-anugerah',
     'ridha-al-mustafa',
+    'gary-raya-prima',
 ] as $dosenSlug) {
     $routeName = 'dosen.' . $dosenSlug;
 

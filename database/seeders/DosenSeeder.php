@@ -23,7 +23,7 @@ class DosenSeeder extends Seeder
             ['slug' => 'nina-herlina', 'nama' => 'Ir. Nina Herlina, Dra., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
             ['slug' => 'herianto', 'nama' => 'Herianto, S.T., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
             ['slug' => 'hendra', 'nama' => 'Ir. Hendra, S.T., M.Sc.', 'kbk' => 'transportasi', 'profile_route' => null],
-            ['slug' => 'gary-raya-prima', 'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
+            ['slug' => 'gary-raya-prima', 'nama' => 'Dr. Gary Raya Prima, S.Pd., M.T.', 'kbk' => 'transportasi', 'profile_route' => 'dosen.gary-raya-prima'],
             ['slug' => 'muhamad-anugerah', 'nama' => 'Muhamad Anugerah Ramadhan, S.T., M.T.', 'kbk' => 'transportasi', 'profile_route' => 'dosen.muhamad-anugerah'],
             ['slug' => 'indrajathie-aziz', 'nama' => 'Indrajathie Aziz, S.T., M.T.', 'kbk' => 'transportasi', 'profile_route' => null],
             ['slug' => 'kartika-seinari', 'nama' => 'Kartika Seinari Manggala, S.T., M.T.', 'kbk' => 'transportasi', 'profile_route' => 'dosen.kartika-seinari'],
