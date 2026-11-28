@@ -192,7 +192,7 @@ Route::post('/layanan/login', function (\Illuminate\Http\Request $request) {
     $request->session()->regenerate();
 
     return redirect()->route('layanan')->with('login_success', 'Autentikasi berhasil! Tautan Tugas Akhir telah terbuka.');
-})->name('layanan.login');
+})->name('layanan.login')->middleware('throttle:10,1');
 
 Route::post('/layanan/logout', function (\Illuminate\Http\Request $request) {
     \Illuminate\Support\Facades\Auth::logout();
