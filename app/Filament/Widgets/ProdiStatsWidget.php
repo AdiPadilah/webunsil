@@ -56,70 +56,69 @@ class ProdiStatsWidget extends StatsOverviewWidget
         $bookTrend = $this->yearlySeries(Buku::class);
         $achievementTrend = $this->yearlySeries(Prestasi::class);
 
-        $penelitianCount = Penelitian::published()->count();
-        $pengabdianCount = Pengabdian::published()->count();
-        $bukuCount = Buku::published()->count();
-        $prestasiCount = Prestasi::published()->count();
-        $dosenCount = Dosen::published()->count();
-        $articleCount = Article::where('is_published', true)->count();
-        $sidangCount = DefenseSchedule::count();
-
         return [
-            Stat::make('Penelitian Dosen', $penelitianCount)
+            Stat::make('Penelitian Dosen', Penelitian::published()->count())
                 ->icon(Heroicon::OutlinedBeaker)
                 ->description('Artikel jurnal & prosiding aktif')
                 ->descriptionIcon(Heroicon::OutlinedBeaker)
                 ->chart($researchTrend)
                 ->chartColor('info')
                 ->color('info')
+                ->extraAttributes(['data-stat-tone' => 'sky'])
                 ->url(route('filament.admin.resources.penelitians.index')),
 
-            Stat::make('Pengabdian (PkM)', $pengabdianCount)
+            Stat::make('Pengabdian (PkM)', Pengabdian::published()->count())
                 ->icon(Heroicon::OutlinedHandRaised)
                 ->description('Kegiatan pemberdayaan aktif')
                 ->descriptionIcon(Heroicon::OutlinedHandRaised)
                 ->chart($serviceTrend)
                 ->chartColor('success')
                 ->color('success')
+                ->extraAttributes(['data-stat-tone' => 'emerald'])
                 ->url(route('filament.admin.resources.pengabdians.index')),
 
-            Stat::make('Buku Karya Dosen', $bukuCount)
+            Stat::make('Buku Karya Dosen', Buku::published()->count())
                 ->icon(Heroicon::OutlinedBookOpen)
                 ->description('Buku ajar & referensi ber-ISBN')
                 ->descriptionIcon(Heroicon::OutlinedBookOpen)
                 ->chart($bookTrend)
                 ->chartColor('warning')
                 ->color('warning')
+                ->extraAttributes(['data-stat-tone' => 'amber'])
                 ->url(route('filament.admin.resources.bukus.index')),
 
-            Stat::make('Prestasi Mahasiswa', $prestasiCount)
+            Stat::make('Prestasi Mahasiswa', Prestasi::published()->count())
                 ->icon(Heroicon::OutlinedTrophy)
                 ->description('Kompetisi & publikasi terbit')
                 ->descriptionIcon(Heroicon::OutlinedTrophy)
                 ->chart($achievementTrend)
-                ->chartColor('success')
-                ->color('success')
+                ->chartColor('info')
+                ->color('info')
+                ->extraAttributes(['data-stat-tone' => 'indigo'])
                 ->url(route('filament.admin.resources.prestasis.index')),
 
-            Stat::make('Dosen & Pengajar', $dosenCount)
+            Stat::make('Dosen & Pengajar', Dosen::published()->count())
                 ->icon(Heroicon::OutlinedAcademicCap)
                 ->description('Terdaftar di direktori dosen')
                 ->descriptionIcon(Heroicon::OutlinedAcademicCap)
-                ->color('info')
+                ->color('primary')
+                ->extraAttributes(['data-stat-tone' => 'blue'])
                 ->url(route('filament.admin.resources.dosens.index')),
 
-            Stat::make('Berita & Pengumuman', $articleCount)
+            Stat::make('Berita & Pengumuman', Article::where('is_published', true)->count())
                 ->icon(Heroicon::OutlinedNewspaper)
                 ->description('Artikel & pengumuman tayang')
                 ->descriptionIcon(Heroicon::OutlinedNewspaper)
                 ->color('primary')
+                ->extraAttributes(['data-stat-tone' => 'cyan'])
                 ->url(route('filament.admin.resources.articles.index')),
 
-            Stat::make('Jadwal Sidang Skripsi', $sidangCount)
+            Stat::make('Jadwal Sidang Skripsi', DefenseSchedule::count())
                 ->icon(Heroicon::OutlinedCalendarDays)
                 ->description('Terjadwal: ' . DefenseSchedule::where('status', 'Terjadwal')->count() . ' • Sempro, Semhas & Akhir')
                 ->descriptionIcon(Heroicon::OutlinedCalendarDays)
                 ->color('warning')
+                ->extraAttributes(['data-stat-tone' => 'violet'])
                 ->url(route('filament.admin.resources.defense-schedules.index')),
 
             Stat::make('Statistik & Info Prodi', SiteSetting::current()->akreditasi_peringkat)
@@ -127,6 +126,7 @@ class ProdiStatsWidget extends StatsOverviewWidget
                 ->description('Populasi, lulusan & profil kaprodi')
                 ->descriptionIcon(Heroicon::OutlinedAdjustmentsHorizontal)
                 ->color('gray')
+                ->extraAttributes(['data-stat-tone' => 'slate'])
                 ->url(SiteSettingResource::getUrl()),
         ];
     }

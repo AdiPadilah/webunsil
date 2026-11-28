@@ -3,8 +3,10 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Widgets\AnalitikKontenWidget;
+use App\Filament\Widgets\KomposisiKontenWidget;
 use App\Filament\Widgets\PanduanCepatWidget;
 use App\Filament\Widgets\ProdiStatsWidget;
+use App\Filament\Widgets\WelcomeHeroWidget;
 use App\Http\Middleware\SetAdminLocale;
 use Filament\Enums\ThemeMode;
 use Filament\Http\Middleware\Authenticate;
@@ -18,7 +20,6 @@ use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Support\Icons\Heroicon;
-use Filament\Widgets\AccountWidget;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -71,10 +72,11 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
-                AccountWidget::class,
+                WelcomeHeroWidget::class,
                 PanduanCepatWidget::class,
                 ProdiStatsWidget::class,
                 AnalitikKontenWidget::class,
+                KomposisiKontenWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

@@ -10,7 +10,6 @@
             'icon' => Heroicon::OutlinedBeaker,
             'bg' => 'linear-gradient(145deg, #e0f2fe 0%, #bae6fd 100%)',
             'color' => '#0284c7',
-            'newTab' => false,
         ],
         [
             'label' => 'Tambah Pengabdian',
@@ -19,7 +18,6 @@
             'icon' => Heroicon::OutlinedHandRaised,
             'bg' => 'linear-gradient(145deg, #dcfce7 0%, #bbf7d0 100%)',
             'color' => '#059669',
-            'newTab' => false,
         ],
         [
             'label' => 'Tulis Berita',
@@ -28,7 +26,6 @@
             'icon' => Heroicon::OutlinedNewspaper,
             'bg' => 'linear-gradient(145deg, #dbeafe 0%, #bfdbfe 100%)',
             'color' => '#0070ba',
-            'newTab' => false,
         ],
         [
             'label' => 'Tambah Jadwal Sidang',
@@ -37,7 +34,6 @@
             'icon' => Heroicon::OutlinedCalendarDays,
             'bg' => 'linear-gradient(145deg, #ede9fe 0%, #ddd6fe 100%)',
             'color' => '#6d28d9',
-            'newTab' => false,
         ],
         [
             'label' => 'Tambah Buku',
@@ -46,7 +42,22 @@
             'icon' => Heroicon::OutlinedBookOpen,
             'bg' => 'linear-gradient(145deg, #fef3c7 0%, #fde68a 100%)',
             'color' => '#b45309',
-            'newTab' => false,
+        ],
+        [
+            'label' => 'Tambah Prestasi',
+            'sub' => 'Kejuaraan Mahasiswa',
+            'href' => route('filament.admin.resources.prestasis.create'),
+            'icon' => Heroicon::OutlinedTrophy,
+            'bg' => 'linear-gradient(145deg, #e0e7ff 0%, #c7d2fe 100%)',
+            'color' => '#4338ca',
+        ],
+        [
+            'label' => 'Direktori Dosen',
+            'sub' => 'Profil & CV Pengajar',
+            'href' => route('filament.admin.resources.dosens.index'),
+            'icon' => Heroicon::OutlinedAcademicCap,
+            'bg' => 'linear-gradient(145deg, #cffafe 0%, #a5f3fc 100%)',
+            'color' => '#0e7490',
         ],
         [
             'label' => 'Statistik & Info Prodi',
@@ -55,16 +66,6 @@
             'icon' => Heroicon::OutlinedAdjustmentsHorizontal,
             'bg' => 'linear-gradient(145deg, #f1f5f9 0%, #e2e8f0 100%)',
             'color' => '#334155',
-            'newTab' => false,
-        ],
-        [
-            'label' => 'Lihat Website Publik',
-            'sub' => 'Pratinjau Halaman Utama',
-            'href' => route('home'),
-            'icon' => Heroicon::OutlinedGlobeAlt,
-            'bg' => 'linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%)',
-            'color' => '#0369a1',
-            'newTab' => true,
         ],
     ];
 @endphp
@@ -76,14 +77,10 @@
         :icon="Heroicon::OutlinedSparkles"
         icon-color="info"
     >
-        <div style="display: grid; gap: 1rem;">
+        <div style="display: grid; gap: 0.85rem;">
             <div class="adm-quick-grid">
                 @foreach ($shortcuts as $item)
-                    <a
-                        href="{{ $item['href'] }}"
-                        @if ($item['newTab']) target="_blank" rel="noopener noreferrer" @endif
-                        class="adm-quick-tile"
-                    >
+                    <a href="{{ $item['href'] }}" class="adm-quick-tile">
                         <span class="adm-quick-icon" style="background: {{ $item['bg'] }}; color: {{ $item['color'] }};">
                             {{ \Filament\Support\generate_icon_html($item['icon']) }}
                         </span>
@@ -99,11 +96,9 @@
                 @endforeach
             </div>
 
-            <div style="font-size: 0.8125rem; color: #475569; line-height: 1.6; padding: 0.65rem 0.9rem; border-radius: 0.75rem; background: rgba(241, 245, 249, 0.75); border: 1px solid rgba(203, 213, 225, 0.55);">
-                <strong style="color: #0b172a;">Cara pakai:</strong>
-                1) Pilih menu di sebelah kiri sesuai halaman website &rarr;
-                2) Klik <strong>Buat baru</strong> untuk menambah data atau ikon <strong>Ubah</strong> untuk memperbarui &rarr;
-                3) Klik <strong>Simpan</strong>, lalu refresh website publik.
+            <div class="adm-tip-bar">
+                <strong style="color: #0b172a;">Alur cepat:</strong>
+                Pilih menu kiri &rarr; klik <strong>Buat baru</strong> atau <strong>Ubah</strong> &rarr; klik <strong>Simpan</strong> untuk langsung tayang di website publik.
             </div>
         </div>
     </x-filament::section>

@@ -37,8 +37,10 @@ use App\Filament\Resources\SiteSettings\Pages\EditSiteSetting;
 use App\Filament\Resources\SiteSettings\Pages\ListSiteSettings;
 use App\Filament\Resources\SiteSettings\SiteSettingResource;
 use App\Filament\Widgets\AnalitikKontenWidget;
+use App\Filament\Widgets\KomposisiKontenWidget;
 use App\Filament\Widgets\PanduanCepatWidget;
 use App\Filament\Widgets\ProdiStatsWidget;
+use App\Filament\Widgets\WelcomeHeroWidget;
 use App\Models\Article;
 use App\Models\Buku;
 use App\Models\DefenseSchedule;
@@ -338,6 +340,11 @@ class DynamicContentCmsTest extends TestCase
         $this->actingAs($user);
         app()->setLocale('id');
 
+        Livewire::test(WelcomeHeroWidget::class)
+            ->assertOk()
+            ->assertSee('Selamat Datang, '.$user->name)
+            ->assertSee('Buka Website');
+
         Livewire::test(PanduanCepatWidget::class)
             ->assertOk()
             ->assertSee('Pintasan & Panduan Singkat')
@@ -353,6 +360,10 @@ class DynamicContentCmsTest extends TestCase
         Livewire::test(AnalitikKontenWidget::class)
             ->assertOk()
             ->assertSee('Analitik Publikasi &amp; Tridharma', false);
+
+        Livewire::test(KomposisiKontenWidget::class)
+            ->assertOk()
+            ->assertSee('Komposisi Repositori &amp; Sidang', false);
 
         Livewire::test(CreateSiteSetting::class)
             ->assertOk()

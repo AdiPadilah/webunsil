@@ -12,11 +12,11 @@ class AnalitikKontenWidget extends ChartWidget
 {
     protected static ?int $sort = 3;
 
-    protected int | string | array $columnSpan = 'full';
+    protected int | string | array $columnSpan = 1;
 
     protected ?string $heading = 'Analitik Publikasi & Tridharma';
 
-    protected ?string $description = 'Grafik pertumbuhan karya Penelitian, Pengabdian (PkM), Buku, dan Prestasi 5 tahun terakhir.';
+    protected ?string $description = 'Pertumbuhan karya Penelitian, Pengabdian, Buku, dan Prestasi 5 tahun terakhir.';
 
     protected ?string $maxHeight = '280px';
 
@@ -52,7 +52,7 @@ class AnalitikKontenWidget extends ChartWidget
                     'borderColor' => '#0070BA',
                     'backgroundColor' => 'rgba(0, 112, 186, 0.14)',
                     'fill' => true,
-                    'tension' => 0.38,
+                    'tension' => 0.4,
                     'borderWidth' => 2.5,
                     'pointRadius' => 4,
                     'pointHoverRadius' => 6,
@@ -63,7 +63,7 @@ class AnalitikKontenWidget extends ChartWidget
                     'borderColor' => '#10B981',
                     'backgroundColor' => 'rgba(16, 185, 129, 0.10)',
                     'fill' => true,
-                    'tension' => 0.38,
+                    'tension' => 0.4,
                     'borderWidth' => 2.5,
                     'pointRadius' => 4,
                     'pointHoverRadius' => 6,
@@ -74,7 +74,7 @@ class AnalitikKontenWidget extends ChartWidget
                     'borderColor' => '#F59E0B',
                     'backgroundColor' => 'rgba(245, 158, 11, 0.08)',
                     'fill' => false,
-                    'tension' => 0.38,
+                    'tension' => 0.4,
                     'borderWidth' => 2.5,
                     'pointRadius' => 4,
                     'pointHoverRadius' => 6,
@@ -85,10 +85,50 @@ class AnalitikKontenWidget extends ChartWidget
                     'borderColor' => '#6366F1',
                     'backgroundColor' => 'rgba(99, 102, 241, 0.08)',
                     'fill' => false,
-                    'tension' => 0.38,
+                    'tension' => 0.4,
                     'borderWidth' => 2.5,
                     'pointRadius' => 4,
                     'pointHoverRadius' => 6,
+                ],
+            ],
+        ];
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    protected function getOptions(): array
+    {
+        return [
+            'maintainAspectRatio' => false,
+            'interaction' => [
+                'mode' => 'index',
+                'intersect' => false,
+            ],
+            'scales' => [
+                'y' => [
+                    'beginAtZero' => true,
+                    'ticks' => [
+                        'precision' => 0,
+                    ],
+                    'grid' => [
+                        'color' => 'rgba(148, 163, 184, 0.16)',
+                    ],
+                ],
+                'x' => [
+                    'grid' => [
+                        'display' => false,
+                    ],
+                ],
+            ],
+            'plugins' => [
+                'legend' => [
+                    'position' => 'bottom',
+                    'labels' => [
+                        'usePointStyle' => true,
+                        'boxWidth' => 9,
+                        'padding' => 14,
+                    ],
                 ],
             ],
         ];
