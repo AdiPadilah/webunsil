@@ -23,7 +23,6 @@
             <div class="adm-hero-meta">
                 <div class="adm-hero-badges">
                     <span class="adm-hero-pill adm-hero-pill-primary">{{ $roleLabel }}</span>
-                    <span class="adm-hero-pill">Akreditasi {{ $setting->akreditasi_peringkat }}</span>
                     <span class="adm-hero-pill">{{ now()->translatedFormat('d M Y') }}</span>
                 </div>
                 <h2 class="adm-hero-title">Selamat Datang, {{ $name }}</h2>

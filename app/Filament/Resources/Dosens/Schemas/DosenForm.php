@@ -168,7 +168,6 @@ class DosenForm
 
                         Repeater::make('ringkasan_statistik')
                             ->label('Kotak Ringkasan Rekam Jejak di Sidebar (Opsional)')
-                            ->helperText('Boleh pakai kode __BOOKS_COUNT__, __PUBS_COUNT__, __PKM_COUNT__, __TRAININGS_COUNT__ agar hitung otomatis, atau tulis angka/teks manual. Jika dikosongkan, statistik dihitung otomatis.')
                             ->schema([
                                 TextInput::make('nilai')
                                     ->label('Angka / Nilai')

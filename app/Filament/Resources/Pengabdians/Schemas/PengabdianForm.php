@@ -23,7 +23,6 @@ class PengabdianForm
                         ->columnSpanFull(),
                     TextInput::make('penulis')
                         ->label('Tim Penulis / Pelaksana')
-                        ->placeholder('Contoh: Andhy Romdani, Empung, dkk.')
                         ->required()
                         ->columnSpanFull(),
                     TextInput::make('nama_jurnal')

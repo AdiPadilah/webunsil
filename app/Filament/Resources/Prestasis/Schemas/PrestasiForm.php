@@ -40,8 +40,7 @@ class PrestasiForm
                         ->placeholder('Contoh: Juara 1 Nasional / Scopus Q1'),
                     TextInput::make('label_meta')
                         ->label('Teks Keterangan Atas Judul')
-                        ->placeholder('Contoh: Kompetisi Nasional • 26 Oktober 2023')
-                        ->helperText('Ditampilkan kecil di atas judul prestasi.'),
+                        ->placeholder('Contoh: Kompetisi Nasional • 26 Oktober 2023'),
                     TextInput::make('tahun')
                         ->label('Tahun')
                         ->numeric()

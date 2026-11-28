@@ -28,7 +28,6 @@ class DefenseScheduleForm
                         ->label('Tahapan Sidang / Seminar')
                         ->options(DefenseSchedule::typeOptions())
                         ->default('Seminar Proposal')
-                        ->helperText('Menentukan kategori warna di kalender dan halaman tahapan sidang.')
                         ->required(),
                     Select::make('status')
                         ->label('Status Pelaksanaan')
@@ -73,7 +72,6 @@ class DefenseScheduleForm
                     DateTimePicker::make('date_time')
                         ->label('Waktu & Tanggal Sidang')
                         ->seconds(false)
-                        ->helperText('Format WIB — menentukan tanggal tampil di kalender event.')
                         ->required(),
                 ])
                 ->columns(2),

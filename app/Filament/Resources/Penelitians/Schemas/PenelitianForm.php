@@ -23,7 +23,6 @@ class PenelitianForm
                         ->columnSpanFull(),
                     TextInput::make('penulis')
                         ->label('Daftar Penulis')
-                        ->placeholder('Contoh: Andhy Romdani, Empung, dkk.')
                         ->required()
                         ->columnSpanFull(),
                     TextInput::make('nama_jurnal')
@@ -32,8 +31,7 @@ class PenelitianForm
                     TextInput::make('tahun')
                         ->label('Tahun Terbit')
                         ->numeric()
-                        ->default((int) date('Y'))
-                        ->helperText('Artikel otomatis diurutkan dari tahun terbaru ke terlama.'),
+                        ->default((int) date('Y')),
                 ])
                 ->columns(2),
 
@@ -51,8 +49,7 @@ class PenelitianForm
                         ->required(),
                     TextInput::make('index_detail')
                         ->label('Detail Peringkat')
-                        ->placeholder('Contoh: SCOPUS Q1, SINTA 4 · UNSIL')
-                        ->helperText('Ditampilkan sebagai label warna di kartu halaman penelitian.'),
+                        ->placeholder('Contoh: SCOPUS Q1, SINTA 4 · UNSIL'),
                     TextInput::make('eyebrow')
                         ->label('Kategori Tampilan')
                         ->default('Publikasi Jurnal Nasional')

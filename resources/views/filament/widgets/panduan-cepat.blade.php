@@ -73,7 +73,6 @@
 <x-filament-widgets::widget>
     <x-filament::section
         heading="Pintasan & Panduan Singkat"
-        description="Perubahan yang disimpan di panel ini langsung tampil di website prodi tanpa mengubah kode."
         :icon="Heroicon::OutlinedSparkles"
         icon-color="info"
     >
@@ -94,11 +93,6 @@
                         </span>
                     </a>
                 @endforeach
-            </div>
-
-            <div class="adm-tip-bar">
-                <strong style="color: #0b172a;">Alur cepat:</strong>
-                Pilih menu kiri &rarr; klik <strong>Buat baru</strong> atau <strong>Ubah</strong> &rarr; klik <strong>Simpan</strong> untuk langsung tayang di website publik.
             </div>
         </div>
     </x-filament::section>

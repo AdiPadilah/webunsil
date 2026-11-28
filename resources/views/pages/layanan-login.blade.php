@@ -70,35 +70,44 @@
         </div>
 
         @auth
-            @if (Auth::user()->isAdmin())
-                {{-- ADMIN DETECTED: tampilkan form login biasa, bukan portal mahasiswa --}}
-                <div class="text-center mb-6">
-                    <h1 class="text-2xl font-bold text-slate-900 tracking-tight mb-1">
-                        Masuk
-                    </h1>
-                    <p class="text-xs text-slate-500">
-                        Portal ini khusus untuk mahasiswa &amp; sivitas akademika.
-                    </p>
-                </div>
+            <!-- STATE: SUDAH LOGIN -->
+            <div class="text-center">
+                <h1 class="text-2xl font-bold text-slate-900 tracking-tight mb-2">
+                    Akses Terverifikasi
+                </h1>
+                <p class="text-xs text-slate-500 mb-6">
+                    Anda saat ini telah masuk menggunakan akun resmi sivitas akademika.
+                </p>
 
-                {{-- Pesan peringatan admin --}}
-                <div class="mb-5 p-3.5 rounded-xl bg-amber-50 border border-amber-200 flex gap-3 items-start text-left">
-                    <svg class="w-4 h-4 mt-0.5 shrink-0 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
-                    </svg>
-                    <div>
-                        <p class="text-xs font-semibold text-amber-800">Akun Admin Terdeteksi</p>
-                        <p class="text-xs text-amber-700 mt-0.5">Anda sedang masuk sebagai <strong>{{ Auth::user()->name }}</strong>. Portal layanan hanya untuk mahasiswa. Gunakan akun mahasiswa atau keluar terlebih dahulu.</p>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 mb-6 text-left">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-sm shrink-0">
+                            {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
+                        </div>
+                        <div class="overflow-hidden">
+                            <div class="text-sm font-bold text-slate-800 truncate">
+                                {{ Auth::user()->name }}
+                            </div>
+                            <div class="text-xs text-slate-500 flex items-center gap-1.5 flex-wrap">
+                                <span class="font-semibold text-slate-700">{{ Auth::user()->role_label }}</span>
+                                @if (Auth::user()->npm)
+                                    <span>&bull;</span>
+                                    <span class="font-mono text-slate-600">NPM: {{ Auth::user()->npm }}</span>
+                                @endif
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="space-y-3">
-                    <a href="/admin" class="w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-900 text-white font-semibold text-sm rounded-lg shadow-sm hover:shadow transition flex items-center justify-center gap-2">
+                    <a href="https://s.id/Tugas-akhir-TSipil" target="_blank" rel="noopener noreferrer"
+                       class="w-full py-2.5 px-4 bg-[#38BDF8] hover:bg-[#0284C7] text-white font-semibold text-sm rounded-lg shadow-sm hover:shadow transition flex items-center justify-center gap-2">
+                        <span>Lanjut ke Portal Tugas Akhir (s.id)</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                         </svg>
-                        <span>Buka Panel Admin</span>
                     </a>
+
                     <form action="{{ route('layanan.logout') }}" method="POST">
                         @csrf
                         <button type="submit"
@@ -107,55 +116,7 @@
                         </button>
                     </form>
                 </div>
-            @else
-                {{-- STATE: SUDAH LOGIN sebagai mahasiswa/sivitas --}}
-                <div class="text-center">
-                    <h1 class="text-2xl font-bold text-slate-900 tracking-tight mb-2">
-                        Akses Terverifikasi
-                    </h1>
-                    <p class="text-xs text-slate-500 mb-6">
-                        Anda saat ini telah masuk menggunakan akun resmi sivitas akademika.
-                    </p>
-
-                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 mb-6 text-left">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-sm shrink-0">
-                                {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
-                            </div>
-                            <div class="overflow-hidden">
-                                <div class="text-sm font-bold text-slate-800 truncate">
-                                    {{ Auth::user()->name }}
-                                </div>
-                                <div class="text-xs text-slate-500 flex items-center gap-1.5 flex-wrap">
-                                    <span class="font-semibold text-slate-700">{{ Auth::user()->role_label }}</span>
-                                    @if (Auth::user()->npm)
-                                        <span>&bull;</span>
-                                        <span class="font-mono text-slate-600">NPM: {{ Auth::user()->npm }}</span>
-                                    @endif
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="space-y-3">
-                        <a href="https://s.id/Tugas-akhir-TSipil" target="_blank" rel="noopener noreferrer"
-                           class="w-full py-2.5 px-4 bg-[#38BDF8] hover:bg-[#0284C7] text-white font-semibold text-sm rounded-lg shadow-sm hover:shadow transition flex items-center justify-center gap-2">
-                            <span>Lanjut ke Portal Tugas Akhir (s.id)</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                            </svg>
-                        </a>
-
-                        <form action="{{ route('layanan.logout') }}" method="POST">
-                            @csrf
-                            <button type="submit"
-                                    class="w-full py-2 px-4 bg-white hover:bg-slate-50 text-slate-600 hover:text-rose-600 text-xs font-medium rounded-lg border border-slate-200 transition">
-                                Keluar / Ganti Akun Lain
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            @endif
+            </div>
         @else
             <!-- STATE: FORM LOGIN (PERSIS GAMBAR LOGIN ADMIN) -->
             <h1 class="text-2xl font-bold text-slate-900 text-center tracking-tight mb-7">
