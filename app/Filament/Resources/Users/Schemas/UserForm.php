@@ -24,18 +24,20 @@ class UserForm
                         ->maxLength(255),
 
                     TextInput::make('email')
-                        ->label('Alamat Email')
+                        ->label('Username / Email')
                         ->email()
                         ->required()
                         ->unique(ignoreRecord: true)
-                        ->maxLength(255),
+                        ->maxLength(255)
+                        ->helperText('Digunakan sebagai username login ke admin panel maupun layanan terpadu.'),
 
                     TextInput::make('npm')
                         ->label('NPM (Nomor Pokok Mahasiswa)')
                         ->placeholder('Contoh: 217002001 (khusus role mahasiswa)')
                         ->unique(ignoreRecord: true)
                         ->maxLength(30)
-                        ->nullable(),
+                        ->nullable()
+                        ->helperText('NPM dapat digunakan mahasiswa untuk login ke layanan terpadu.'),
 
                     Select::make('role')
                         ->label('Role / Hak Akses')
