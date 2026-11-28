@@ -188,6 +188,11 @@ Route::post('/layanan/login', function (\Illuminate\Http\Request $request) {
         return back()->withInput()->with('login_error', 'Akun Anda dinonaktifkan. Silakan hubungi admin prodi.');
     }
 
+    // Block admin/super_admin dari layanan mahasiswa
+    if ($user->isAdmin()) {
+        return back()->withInput()->with('login_error', 'Akun admin tidak dapat mengakses portal layanan mahasiswa.');
+    }
+
     \Illuminate\Support\Facades\Auth::login($user, (bool) $request->boolean('remember'));
     $request->session()->regenerate();
 
