@@ -149,7 +149,7 @@
                             <i class="fa-solid fa-file-lines text-amber-400"></i>
                             <span>Layanan Pengurusan Dokumen</span>
                         </a>
-                        <a href="{{ route('kontak') }}" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 text-xs font-bold transition">
+                        <a href="mailto:sipil@unsil.ac.id" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 text-xs font-bold transition">
                             <i class="fa-solid fa-envelope text-blue-600"></i>
                             <span>Hubungi Sekretariat</span>
                         </a>
