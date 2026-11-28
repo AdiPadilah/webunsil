@@ -108,8 +108,29 @@
 
             </div>
 
+        </div>
+    </section>
 
+    {{-- Galeri Foto Dokumentasi Kantin --}}
+    <section class="py-12 md:py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Dokumentasi Fasilitas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 font-heading">Galeri Kantin</h2>
+                <div class="w-14 h-1 bg-amber-500 mx-auto mt-3.5 rounded-full"></div>
+            </div>
 
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                @for($i = 1; $i <= 10; $i++)
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition duration-300">
+                        <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                            <img src="{{ asset("images/kantin-{$i}.jpg") }}" alt="Kantin FT UNSIL {{ $i }}"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                @endfor
+            </div>
         </div>
     </section>
 

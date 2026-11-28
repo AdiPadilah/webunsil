@@ -206,7 +206,7 @@
                 {{-- 9. Kantin --}}
                 <div id="kantin" class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm group hover:shadow-md transition-shadow hover-lift">
                     <a href="{{ route('kantin') }}" class="block h-48 overflow-hidden bg-slate-100">
-                        <img src="{{ asset('images/unsil-campus-hd.jpg') }}" alt="Kantin Kampus FT UNSIL"
+                        <img src="{{ asset('images/kantin-1.jpg') }}" alt="Kantin Kampus FT UNSIL"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </a>
 
