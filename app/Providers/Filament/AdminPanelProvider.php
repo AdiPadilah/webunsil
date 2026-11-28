@@ -34,6 +34,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->spa()
             ->brandName('Portal Admin Teknik Sipil UNSIL')
             ->brandLogo(fn () => view('filament.brand-logo'))
             ->brandLogoHeight('2.25rem')

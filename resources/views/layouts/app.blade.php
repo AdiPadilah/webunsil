@@ -1080,7 +1080,33 @@
     </script>
     @stack('scripts')
 
-    
+    <!-- Instant Page Hover Prefetcher for Lightning-Fast Navigation -->
+    <script>
+        (function() {
+            const prefetched = new Set();
+            function prefetchLink(url) {
+                if (!url || prefetched.has(url) || url.startsWith('#') || url.startsWith('javascript:')) return;
+                try {
+                    const u = new URL(url, window.location.origin);
+                    if (u.origin !== window.location.origin || u.pathname.startsWith('/admin')) return;
+                    prefetched.add(u.href);
+                    const link = document.createElement('link');
+                    link.rel = 'prefetch';
+                    link.href = u.href;
+                    document.head.appendChild(link);
+                } catch (e) {}
+            }
+            document.addEventListener('mouseover', function(e) {
+                const a = e.target.closest('a');
+                if (a && a.href) prefetchLink(a.href);
+            }, { passive: true });
+            document.addEventListener('touchstart', function(e) {
+                const a = e.target.closest('a');
+                if (a && a.href) prefetchLink(a.href);
+            }, { passive: true });
+        })();
+    </script>
+
     <div id="google_translate_element" style="display:none !important; visibility:hidden !important; height:0 !important; overflow:hidden !important;"></div>
 
     <script type="text/javascript">
@@ -1091,8 +1117,14 @@
                 autoDisplay: false
             }, 'google_translate_element');
         };
+        window.addEventListener('load', function() {
+            const gtScript = document.createElement('script');
+            gtScript.type = 'text/javascript';
+            gtScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+            gtScript.defer = true;
+            document.body.appendChild(gtScript);
+        });
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
 
