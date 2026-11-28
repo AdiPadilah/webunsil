@@ -134,29 +134,6 @@
 
             </div>
 
-            {{-- Informasi Jam Pelayanan & Kontak Resmi --}}
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                    <div>
-                        <span class="text-blue-700 font-bold uppercase text-[11px] tracking-wider">Jam Operasional Kantor</span>
-                        <h3 class="text-xl sm:text-2xl font-black text-slate-900 font-heading mt-1">Layanan Tata Usaha &amp; Administrasi Prodi</h3>
-                        <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-                            Senin s.d. Jumat pukul 07.30 - 16.00 WIB (Istirahat: 12.00 - 13.00 WIB, Jumat: 11.30 - 13.00 WIB).
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-3 flex-wrap">
-                        <a href="{{ route('layanan') }}" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0B2A4A] text-white text-xs font-bold hover:bg-blue-900 transition">
-                            <i class="fa-solid fa-file-lines text-amber-400"></i>
-                            <span>Layanan Pengurusan Dokumen</span>
-                        </a>
-                        <a href="mailto:sipil@unsil.ac.id" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 text-xs font-bold transition">
-                            <i class="fa-solid fa-envelope text-blue-600"></i>
-                            <span>Hubungi Sekretariat</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
