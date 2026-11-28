@@ -31,17 +31,6 @@
     <section class="py-12 md:py-16 bg-slate-50 min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {{-- Pengantar Singkat --}}
-            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-                <span class="text-blue-700 font-bold uppercase text-xs tracking-wider">Sumber Daya Manusia</span>
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2 font-heading">
-                    Dukungan Profesional Tridharma &amp; Layanan Akademik
-                </h2>
-                <div class="w-14 h-1 bg-amber-500 mx-auto mt-3.5 rounded-full"></div>
-                <p class="text-slate-600 mt-4 text-xs sm:text-sm leading-relaxed">
-                    Tenaga Kependidikan Program Studi S-1 Teknik Sipil Fakultas Teknik Universitas Siliwangi bertugas memberikan pelayanan prima dalam pengelolaan administrasi akademik, kemahasiswaan, tata kelola operasional laboratorium terpadu, dan fasilitas sarana prasarana penunjang kegiatan perkuliahan serta riset.
-                </p>
-            </div>
 
             {{-- Grid Layanan & Peran Tendik --}}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
