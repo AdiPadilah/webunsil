@@ -40,6 +40,7 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogoHeight('2.25rem')
             ->favicon(asset('images/logo-unsil.png'))
             ->defaultThemeMode(ThemeMode::Light)
+            ->renderHook('panels::head.end', fn () => '<link rel="stylesheet" href="' . asset('css/admin-premium.css') . '?v=' . filemtime(public_path('css/admin-premium.css')) . '">')
             ->sidebarCollapsibleOnDesktop()
             ->resourceCreatePageRedirect('index')
             ->resourceEditPageRedirect('index')

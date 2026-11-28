@@ -1,0 +1,339 @@
+/* ============================================================
+   Webunsil Admin Panel – Premium White Theme
+   Berlaku di SELURUH halaman admin (dashboard, list, form, dsb)
+   ============================================================ */
+
+/* ---- Google Font: Plus Jakarta Sans ---- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* ---- Root variables ---- */
+:root {
+    --fi-brand: #0070BA;
+    --fi-brand-light: #E8F4FD;
+    --fi-sidebar-bg: #0B1E35;
+    --fi-sidebar-hover: rgba(255,255,255,0.08);
+    --fi-sidebar-active: rgba(0,112,186,0.85);
+    --fi-radius: 0.875rem;
+    --fi-shadow: 0 1px 3px 0 rgba(0,0,0,0.06), 0 1px 2px -1px rgba(0,0,0,0.06);
+    --fi-shadow-md: 0 4px 16px -4px rgba(0,0,0,0.08), 0 2px 8px -2px rgba(0,0,0,0.06);
+}
+
+/* ---- Base font ---- */
+body,
+.fi-body,
+[class*="filament"] {
+    font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif !important;
+}
+
+/* ======================================================
+   SIDEBAR — dark navy premium
+   ====================================================== */
+.fi-sidebar {
+    background: var(--fi-sidebar-bg) !important;
+    border-right: none !important;
+    box-shadow: 4px 0 24px rgba(0,0,0,0.12) !important;
+}
+
+/* sidebar brand area */
+.fi-sidebar-header {
+    background: var(--fi-sidebar-bg) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.07) !important;
+    padding: 1.25rem 1rem !important;
+}
+
+/* sidebar nav group label */
+.fi-sidebar-group-label {
+    color: rgba(255,255,255,0.4) !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+    padding-left: 0.75rem !important;
+    margin-top: 0.25rem !important;
+}
+
+/* sidebar nav item */
+.fi-sidebar-item-button {
+    color: rgba(255,255,255,0.72) !important;
+    border-radius: 0.625rem !important;
+    margin: 0 0.5rem !important;
+    padding: 0.5rem 0.75rem !important;
+    transition: background 0.15s, color 0.15s !important;
+}
+.fi-sidebar-item-button:hover {
+    background: var(--fi-sidebar-hover) !important;
+    color: #fff !important;
+}
+.fi-sidebar-item-button[aria-current="page"],
+.fi-sidebar-item-button.fi-active {
+    background: var(--fi-sidebar-active) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 8px rgba(0,112,186,0.4) !important;
+}
+
+/* sidebar icon */
+.fi-sidebar-item-button .fi-sidebar-item-icon {
+    color: inherit !important;
+}
+
+/* sidebar footer */
+.fi-sidebar-footer {
+    background: var(--fi-sidebar-bg) !important;
+    border-top: 1px solid rgba(255,255,255,0.07) !important;
+}
+
+/* ======================================================
+   TOPBAR / HEADER
+   ====================================================== */
+.fi-topbar {
+    background: #fff !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04) !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+/* ======================================================
+   MAIN CONTENT AREA
+   ====================================================== */
+.fi-main {
+    background: #F6F8FB !important;
+}
+
+.fi-page {
+    background: transparent !important;
+}
+
+/* Page header (title bar) */
+.fi-page-header {
+    background: #fff !important;
+    border-bottom: 1px solid #E8EDF3 !important;
+    padding: 1.25rem 1.5rem !important;
+    margin-bottom: 0 !important;
+}
+
+.fi-page-header-heading {
+    font-size: 1.375rem !important;
+    font-weight: 800 !important;
+    color: #0F172A !important;
+    letter-spacing: -0.02em !important;
+}
+
+/* ======================================================
+   WIDGETS / DASHBOARD CARDS
+   ====================================================== */
+.fi-wi-stats-overview-stat {
+    background: #fff !important;
+    border: 1px solid #E8EDF3 !important;
+    border-radius: var(--fi-radius) !important;
+    box-shadow: var(--fi-shadow) !important;
+    transition: box-shadow 0.2s, transform 0.2s !important;
+}
+.fi-wi-stats-overview-stat:hover {
+    box-shadow: var(--fi-shadow-md) !important;
+    transform: translateY(-2px) !important;
+}
+
+.fi-wi-stats-overview-stat-value {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    color: #0F172A !important;
+    letter-spacing: -0.03em !important;
+}
+
+.fi-wi-stats-overview-stat-label {
+    font-size: 0.8125rem !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
+}
+
+/* ======================================================
+   SECTION / CARD
+   ====================================================== */
+.fi-section {
+    background: #fff !important;
+    border: 1px solid #E8EDF3 !important;
+    border-radius: var(--fi-radius) !important;
+    box-shadow: var(--fi-shadow) !important;
+}
+
+.fi-section-header {
+    border-bottom: 1px solid #EEF2F7 !important;
+    padding: 1.125rem 1.25rem !important;
+}
+
+.fi-section-header-heading {
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+}
+
+/* ======================================================
+   TABLE
+   ====================================================== */
+.fi-ta-ctn {
+    background: #fff !important;
+    border: 1px solid #E8EDF3 !important;
+    border-radius: var(--fi-radius) !important;
+    box-shadow: var(--fi-shadow) !important;
+    overflow: hidden !important;
+}
+
+/* Table header row */
+.fi-ta-header-cell {
+    background: #F8FAFC !important;
+    color: #64748B !important;
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    border-bottom: 1px solid #E8EDF3 !important;
+    padding: 0.75rem 1rem !important;
+}
+
+/* Table row */
+.fi-ta-row {
+    border-bottom: 1px solid #F1F5F9 !important;
+    transition: background 0.1s !important;
+}
+.fi-ta-row:hover {
+    background: #F8FAFC !important;
+}
+.fi-ta-row:last-child {
+    border-bottom: none !important;
+}
+
+/* Table cell */
+.fi-ta-cell {
+    padding: 0.875rem 1rem !important;
+    font-size: 0.875rem !important;
+    color: #1E293B !important;
+}
+
+/* ======================================================
+   FORMS
+   ====================================================== */
+.fi-fo-field-wrp {
+    margin-bottom: 0.25rem !important;
+}
+
+.fi-input {
+    border: 1.5px solid #CBD5E1 !important;
+    border-radius: 0.625rem !important;
+    background: #F8FAFC !important;
+    font-size: 0.875rem !important;
+    color: #0F172A !important;
+    transition: border-color 0.15s, box-shadow 0.15s, background 0.15s !important;
+    padding: 0.5625rem 0.875rem !important;
+}
+.fi-input:focus,
+.fi-input:focus-within {
+    border-color: var(--fi-brand) !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 3px rgba(0,112,186,0.12) !important;
+    outline: none !important;
+}
+
+.fi-fo-field-wrp-label label {
+    font-size: 0.8125rem !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+}
+
+/* ======================================================
+   BUTTONS
+   ====================================================== */
+.fi-btn {
+    border-radius: 0.625rem !important;
+    font-weight: 600 !important;
+    font-size: 0.8125rem !important;
+    transition: all 0.15s !important;
+    letter-spacing: 0.01em !important;
+}
+.fi-btn-color-primary {
+    background: var(--fi-brand) !important;
+    border-color: var(--fi-brand) !important;
+}
+.fi-btn-color-primary:hover {
+    background: #005C9A !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0,112,186,0.3) !important;
+}
+
+/* ======================================================
+   BADGE
+   ====================================================== */
+.fi-badge {
+    border-radius: 999px !important;
+    font-size: 0.6875rem !important;
+    font-weight: 700 !important;
+    padding: 0.2rem 0.625rem !important;
+    letter-spacing: 0.03em !important;
+}
+
+/* ======================================================
+   BREADCRUMB
+   ====================================================== */
+.fi-breadcrumbs {
+    font-size: 0.8125rem !important;
+    color: #94A3B8 !important;
+}
+
+/* ======================================================
+   PAGINATION
+   ====================================================== */
+.fi-pagination {
+    background: #fff !important;
+    border-top: 1px solid #F1F5F9 !important;
+    padding: 0.75rem 1rem !important;
+}
+
+/* ======================================================
+   MODAL / DIALOG
+   ====================================================== */
+.fi-modal-window {
+    border-radius: 1.125rem !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15) !important;
+    border: 1px solid #E8EDF3 !important;
+}
+
+/* ======================================================
+   NOTIFICATION
+   ====================================================== */
+.fi-notification {
+    border-radius: 0.875rem !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
+    border: 1px solid #E8EDF3 !important;
+}
+
+/* ======================================================
+   AVATAR (top-right account)
+   ====================================================== */
+.fi-avatar {
+    border-radius: 999px !important;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(0,112,186,0.2) !important;
+}
+
+/* ======================================================
+   DROPDOWN MENU
+   ====================================================== */
+.fi-dropdown-panel {
+    border-radius: 0.875rem !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
+    border: 1px solid #E8EDF3 !important;
+    overflow: hidden !important;
+}
+
+/* ======================================================
+   SCROLLBAR (Webkit)
+   ====================================================== */
+.fi-sidebar ::-webkit-scrollbar {
+    width: 4px !important;
+}
+.fi-sidebar ::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+.fi-sidebar ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.15) !important;
+    border-radius: 999px !important;
+}
