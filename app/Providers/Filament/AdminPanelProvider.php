@@ -54,6 +54,7 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make('Publikasi & Informasi'),
                 NavigationGroup::make('Riset & Karya Dosen'),
                 NavigationGroup::make('Layanan Akademik'),
+                NavigationGroup::make('Akses & Pengaturan'),
             ])
             ->navigationItems([
                 NavigationItem::make('Buka Website Publik')
