@@ -59,6 +59,11 @@ Route::get('/dosen', function () {
     return view('pages.dosen', compact('dosens'));
 })->name('dosen');
 
+// 4b. Tenaga Kependidikan
+Route::get('/tenaga-kependidikan', function () {
+    return view('pages.tenaga-kependidikan');
+})->name('tenaga-kependidikan');
+
 // Profil Dosen Khusus & Dinamis (terhubung penuh ke Admin Dosen, Buku, Penelitian & Pengabdian)
 $renderDosenProfile = function (string $dosenSlug, ?string $routeName = null, bool $requireDb = false) {
     $dosen = \App\Models\Dosen::where('slug', $dosenSlug)

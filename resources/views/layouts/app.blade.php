@@ -271,7 +271,7 @@
 
                     
                     <div class="relative dropdown">
-                        <a href="{{ route('tentang-kami') }}" id="nav-tentang" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'active-nav text-amber-400' : '' }}">
+                        <a href="{{ route('tentang-kami') }}" id="nav-tentang" class="nav-link px-2 py-1.5 hover:text-amber-400 hover:bg-unsil-navhover rounded-lg flex items-center space-x-1 transition whitespace-nowrap {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen', 'tenaga-kependidikan') ? 'active-nav text-amber-400' : '' }}">
                             <span>Tentang Kami</span>
                             <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 ml-0.5"></i>
                         </a>
@@ -279,6 +279,7 @@
                             <a href="{{ route('visi-misi') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('visi-misi') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Visi &amp; Misi</a>
                             <a href="{{ route('sejarah') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('sejarah') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Sejarah Program Studi</a>
                             <a href="{{ route('dosen') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('dosen') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Dosen</a>
+                            <a href="{{ route('tenaga-kependidikan') }}" class="nav-link block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-blue-700 whitespace-nowrap {{ request()->routeIs('tenaga-kependidikan') ? 'text-blue-700 font-bold bg-blue-50/60' : '' }}">Tenaga Kependidikan</a>
                         </div>
                     </div>
 
@@ -407,10 +408,11 @@
 
         
         <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-6 pt-3 pb-6 space-y-2 text-sm text-slate-200">
-            <a href="{{ route('tentang-kami') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen') ? 'text-amber-400 font-bold' : '' }}">Tentang Kami</a>
+            <a href="{{ route('tentang-kami') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('tentang-kami', 'visi-misi', 'sejarah', 'dosen', 'tenaga-kependidikan') ? 'text-amber-400 font-bold' : '' }}">Tentang Kami</a>
             <a href="{{ route('visi-misi') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('visi-misi') ? 'text-amber-400 font-bold' : '' }}">&mdash; Visi &amp; Misi</a>
             <a href="{{ route('sejarah') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('sejarah') ? 'text-amber-400 font-bold' : '' }}">&mdash; Sejarah Program Studi</a>
             <a href="{{ route('dosen') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('dosen') ? 'text-amber-400 font-bold' : '' }}">&mdash; Dosen</a>
+            <a href="{{ route('tenaga-kependidikan') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('tenaga-kependidikan') ? 'text-amber-400 font-bold' : '' }}">&mdash; Tenaga Kependidikan</a>
 
             <a href="{{ route('akademik') }}" class="nav-link block py-2 hover:text-amber-400 border-b border-slate-800 {{ request()->routeIs('akademik', 'kurikulum', 'layanan', 'kerja-praktik', 'alur-pengurusan-kp-skripsi', 'alur-pengurusan-kerja-praktik', 'alur-pengurusan-skripsi', 'jadwal-sidang-skripsi', 'seminar-proposal', 'seminar-hasil', 'sidang-akhir') ? 'text-amber-400 font-bold' : '' }}">Akademik</a>
             <a href="{{ route('kurikulum') }}" class="nav-link block py-1.5 pl-4 text-slate-400 hover:text-amber-400 border-b border-slate-800 text-xs {{ request()->routeIs('kurikulum') ? 'text-amber-400 font-bold' : '' }}">&mdash; Kurikulum</a>
@@ -664,7 +666,7 @@
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
                 </a>
 
-                <a href="{{ route('dosen') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="dosen pengajar staf tenaga kependidikan kbk struktur guru besar lektor">
+                <a href="{{ route('dosen') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="dosen pengajar staf tenaga pengajar kbk struktur guru besar lektor">
                     <div class="flex items-center gap-3">
                         <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
                             <i class="fa-solid fa-user-tie text-sm"></i>
@@ -672,6 +674,19 @@
                         <div>
                             <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Dosen</p>
                             <p class="text-[11px] text-slate-500">Daftar dosen dan kepakaran bidang keahlian</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
+                </a>
+
+                <a href="{{ route('tenaga-kependidikan') }}" class="search-item flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition group" data-keywords="tenaga kependidikan tendik staf laboran tata usaha administrasi plp">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-slate-100 text-slate-500 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0B2A4A] group-hover:text-white transition">
+                            <i class="fa-solid fa-users-gear text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-900 group-hover:text-blue-700">Tenaga Kependidikan</p>
+                            <p class="text-[11px] text-slate-500">Layanan administrasi, laboratorium, dan tata usaha prodi</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[10px] text-slate-400 group-hover:text-blue-700 transition"></i>
